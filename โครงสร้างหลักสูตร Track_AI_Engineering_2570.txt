@@ -1,0 +1,258 @@
+[TABLE]
+โครงสร้างหมวดวิชาเฉพาะ (ปรับปรุง) หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และอุตสาหกรรมอัจฉริยะ (หลักสูตรปรับปรุง พ.ศ. 2570) — มหาวิทยาลัยกาฬสินธุ์
+[/TABLE]
+[TABLE]
+Track 1: Smart Agriculture AI | Track 2: Industrial AI | Track 3: AI Innovation
+[/TABLE]
+[TABLE]
+หลักการปรับปรุง: ปรับโครงสร้างทั้งหมด (กลุ่มวิชาพื้นฐานทางวิศวกรรม + กลุ่มวิชาชีพบังคับ + กลุ่มวิชาชีพเลือก) ให้สอดคล้องกับ 3 Track อย่างเป็นระบบ โดยกลุ่มวิชาชีพเลือกจัดสรรให้แต่ละ Track มีจำนวนเท่ากันที่ 12 หน่วยกิต (รวม 36 หน่วยกิต) ตามหลักการ Constructive Alignment ของ AUN-QA Criterion 1–2
+[/TABLE]
+[TABLE]
+ภาพรวมหมวดวิชาเฉพาะ (ไม่น้อยกว่า 94 หน่วยกิต)
+[/TABLE]
+[TABLE]
+กลุ่มวิชา | หน่วยกิต (เดิม) | หน่วยกิต (ปรับปรุง)
+2.1 กลุ่มวิชาพื้นฐานคณิตศาสตร์และวิทยาศาสตร์ | 17 | 17 (คงเดิม)
+2.2 กลุ่มวิชาพื้นฐานทางวิศวกรรม | 27 | 27 (ปรับเนื้อหา)
+2.3 กลุ่มวิชาชีพบังคับ | 51 | 51 (ปรับเนื้อหา)
+2.4 กลุ่มวิชาชีพเลือก (3 Track) | ไม่น้อยกว่า 12 | ไม่น้อยกว่า 12 ต่อ Track (รวมคลัง 129)
+2.5 กลุ่มฝึกประสบการณ์วิชาชีพ/สหกิจศึกษา | 7 | 7 (คงเดิม)
+รวมหมวดวิชาเฉพาะ (หน่วยกิตที่นักศึกษาต้องเรียนจริง) | ไม่น้อยกว่า 94 | ไม่น้อยกว่า 106
+[/TABLE]
+[TABLE]
+2.2 กลุ่มวิชาพื้นฐานทางวิศวกรรม (27 หน่วยกิต)
+[/TABLE]
+ปรับเนื้อหาให้ทุกวิชาวางรากฐาน AI และระบบอัจฉริยะที่ใช้ร่วมกันทั้ง 3 Track (Track-Agnostic Foundation)
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | กลศาสตร์วิศวกรรม Engineering Mechanics | 3(3-0-6) | ร่วม
+xx-xxx-xxx | การเขียนแบบวิศวกรรมด้วยคอมพิวเตอร์ Computer-Aided Engineering Drawing | 3(2-2-6) | ร่วม
+xx-xxx-xxx | คอมพิวเตอร์ช่วยออกแบบเครื่องจักรกลอัจฉริยะ Computer Aided Design for Smart Machinery | 3(2-2-6) | T1/T2
+xx-xxx-xxx | การเขียนโปรแกรมคอมพิวเตอร์ Computer Programming | 3(2-2-6) | ร่วม
+xx-xxx-xxx | วงจรไฟฟ้าและอิเล็กทรอนิกส์พื้นฐาน Basic Electrical and Electronic Circuits | 3(3-0-6) | ร่วม
+xx-xxx-xxx | ระบบดิจิทัลและตรรกะทางวิศวกรรม Digital Systems and Engineering Logic | 3(3-0-6) | ร่วม
+xx-xxx-xxx | วิศวกรรมการตรวจวัดและระบบเซนเซอร์อัจฉริยะ Measurement Engineering and Smart Sensor Systems | 3(3-0-6) | ร่วม
+xx-xxx-xxx | อุณหพลศาสตร์และกลศาสตร์ของไหล Thermodynamics and Fluid Mechanics | 3(3-0-6) | ร่วม
+xx-xxx-xxx | ความรู้เบื้องต้นทางปัญญาประดิษฐ์ Introduction to Artificial Intelligence | 3(3-0-6) | ร่วม
+[/TABLE]
+[TABLE]
+2.3 กลุ่มวิชาชีพบังคับ (51 หน่วยกิต)
+[/TABLE]
+ปรับให้เป็น “AI Core” ที่ทุก Track ต้องเรียนร่วมกัน วางรากฐาน AI/ML, IoT, Embedded Systems, Computer Vision และ Industrial AI ก่อนแยกเข้าสู่วิชาชีพเลือกเฉพาะ Track
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | เครื่องจักรกลอัจฉริยะ Smart Machinery | 3(2-2-5) | ร่วม
+xx-xxx-xxx | เศรษฐศาสตร์วิศวกรรม Engineering Economics | 3(2-2-5) | ร่วม
+xx-xxx-xxx | พื้นฐานการออกแบบระบบควบคุมด้วย PLC และ SCADA Fundamentals of PLC and SCADA Control System Design | 3(3-0-6) | T2
+xx-xxx-xxx | แพลนแฟคทอรี่ Plant Factory | 3(3-0-6) | T1/T2
+xx-xxx-xxx | อากาศยานไร้คนขับและการตรวจวัดระยะไกล Unmanned Aerial Vehicles and Remote Sensing | 3(2-2-5) | T1
+xx-xxx-xxx | ไฟฟ้าและอิเล็กทรอนิกส์สำหรับเครื่องจักรกลอัจฉริยะ Electrical and Electronics for Intelligent Machinery | 3(2-2-5) | ร่วม
+xx-xxx-xxx | เซนเซอร์และทรานสดิวเซอร์สำหรับระบบอัจฉริยะ Sensors and Transducers for Intelligent Systems | 3(3-0-6) | ร่วม
+xx-xxx-xxx | อินเทอร์เน็ตสรรพสิ่งสำหรับเครื่องจักรกลอัจฉริยะ Internet of Things for Intelligent Machines | 3(3-0-6) | ร่วม
+xx-xxx-xxx | ไมโครคอนโทรลเลอร์และระบบฝังตัว Microcontrollers and Embedded Systems | 3(3-0-6) | ร่วม
+xx-xxx-xxx | โครงสร้างข้อมูลและอัลกอริทึมสำหรับวิศวกร Data Structures and Algorithms for Engineers | 3(3-0-6) | ร่วม
+xx-xxx-xxx | เทคโนโลยีคลาวด์สำหรับการเรียนรู้ปัญญาประดิษฐ์ Cloud Technology for Artificial Intelligence Learning | 3(3-0-6) | ร่วม
+xx-xxx-xxx | การประมวลผลภาพและคอมพิวเตอร์วิทัศน์ Image Processing and Computer Vision | 3(3-0-6) | ร่วม
+xx-xxx-xxx | การเรียนรู้ของเครื่องจักร Machine Learning | 3(3-0-6) | ร่วม
+xx-xxx-xxx | ปัญญาประดิษฐ์ในอุตสาหกรรมการผลิต Artificial Intelligence in Manufacturing Industry | 3(3-0-6) | T2
+xx-xxx-xxx | การประมวลผลภาพถ่ายทางอากาศ Aerial Image Processing | 3(3-0-6) | T1
+xx-xxx-xxx | โครงงานทางด้านวิศวกรรม Engineering Project | 3(1-4-3) | ร่วม
+xx-xxx-xxx | สัมมนาทางด้านวิศวกรรม Seminar in Engineering | 3(2-1-3) | ร่วม
+หมายเหตุ: วิชาที่ติดป้าย T1/T2 ในกลุ่มวิชาชีพบังคับ ยังคงเป็นวิชาบังคับสำหรับทุก Track เนื่องจากมีความสำคัญเชิงโครงสร้างหลักสูตร (Plant Factory และ UAV เป็นพื้นฐานร่วมของ Smart Agriculture และ Industrial AI) คณะกรรมการหลักสูตรสามารถพิจารณาย้ายไปกลุ่มวิชาชีพเลือกได้ตามความเหมาะสม
+[/TABLE]
+[TABLE]
+2.4 กลุ่มวิชาชีพเลือก แบ่งตาม 3 Track (36 หน่วยกิต)
+[/TABLE]
+นักศึกษาเลือกเรียน 1 ใน 3 Track ครบ 12 หน่วยกิตขึ้นไป หรือเรียนข้าม Track ได้ตามความสนใจ (Track Elective with Cross-enrollment)
+[TABLE]
+Track 1:  Smart Agriculture AI ไม่น้อยกว่า 12 หน่วยกิต — Precision Agriculture / AI for Rice Farming / Smart Livestock / Agricultural Robotics / Agricultural Drone
+[/TABLE]
+Precision Agriculture
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-322 | เทคโนโลยีเครื่องจักรกลสำหรับสมาร์ทฟาร์ม Mechanized Technology for Smart Farming | 3(3-0-6) | T1
+EN-053-329 | ปัญญาประดิษฐ์สำหรับฟาร์มอัจฉริยะ Artificial Intelligence for Smart Farming | 3(3-0-6) | T1
+EN-053-353 | ระบบนำทางอัตโนมัติ GNSS และ RTK GNSS and RTK Automatic Navigation Systems | 3(2-2-5) | T1
+[/TABLE]
+AI for Rice Farming
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-301 | เทคโนโลยีและการจัดการโรงสีข้าว Rice Mill Management and Technology | 3(2-2-5) | T1
+xx-xxx-xxx | ปัญญาประดิษฐ์สำหรับการปลูกข้าวแม่นยำสูง AI for Precision Rice Farming | 3(2-2-5) | T1
+xx-xxx-xxx | คอมพิวเตอร์วิทัศน์สำหรับการคัดแยกและตรวจสอบคุณภาพข้าว Computer Vision for Rice Grading and Quality Inspection | 3(2-2-5) | T1
+[/TABLE]
+AI for Sugarcane & Cassava Industry  (พืชเศรษฐกิจหลักของภูมิภาค: อ้อยและมันสำปะหลัง)
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-302 | เทคโนโลยีในการผลิตอ้อยและน้ำตาล Cane and Sugar Process Technology | 3(2-2-5) | T1
+EN-053-303 | เทคโนโลยีในการผลิตมันสำปะหลังและแป้ง Cassava and Starch Process Technology | 3(2-2-5) | T1
+xx-xxx-xxx | ปัญญาประดิษฐ์สำหรับการเพาะปลูกอ้อยและมันสำปะหลังแม่นยำสูง AI for Precision Sugarcane and Cassava Farming | 3(2-2-5) | T1
+xx-xxx-xxx | การพยากรณ์ผลผลิตและคุณภาพอ้อย-มันสำปะหลังด้วยปัญญาประดิษฐ์ AI-based Yield and Quality Forecasting for Sugarcane and Cassava | 3(2-2-5) | T1
+xx-xxx-xxx | ระบบอัตโนมัติและหุ่นยนต์สำหรับโรงงานน้ำตาลและแป้งมันสำปะหลัง Automation and Robotics for Sugar and Starch Mills | 3(2-2-5) | T1
+[/TABLE]
+Agricultural Machinery & Plant Process Engineering  (พื้นฐานวิศวกรรมเครื่องจักรกลเกษตรและกระบวนการผลิตในโรงงาน — ไม่เน้น AI)
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | วิศวกรรมเครื่องจักรกลเกษตร Agricultural Machinery Engineering | 3(2-2-5) | T1
+xx-xxx-xxx | การออกแบบและบำรุงรักษาเครื่องจักรกลฟาร์ม Design and Maintenance of Farm Machinery | 3(2-2-5) | T1
+xx-xxx-xxx | กระบวนการหีบและสกัดน้ำอ้อยในอุตสาหกรรมน้ำตาล Sugarcane Milling and Juice Extraction Process | 3(2-2-5) | T1
+xx-xxx-xxx | กระบวนการสีข้าวและเครื่องจักรในโรงสี Rice Milling Process and Mill Machinery | 3(2-2-5) | T1
+xx-xxx-xxx | กระบวนการสกัดและแปรรูปแป้งมันสำปะหลัง Cassava Starch Extraction and Processing | 3(2-2-5) | T1
+xx-xxx-xxx | วิศวกรรมโรงงานต้นกำลังและหม้อไอน้ำสำหรับอุตสาหกรรมเกษตร Power Plant and Boiler Engineering for Agro-Industry | 3(3-0-6) | T1
+xx-xxx-xxx | การวางผังโรงงานและการจัดการสายการผลิตเกษตรอุตสาหกรรม Plant Layout and Production Line Management for Agro-Industry | 3(3-0-6) | T1
+[/TABLE]
+Agricultural Robotics
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-354 | หุ่นยนต์เก็บเกี่ยวผลผลิต Crop Harvesting Robots | 3(2-2-5) | T1
+EN-053-338 | ไมโครคอนโทรลเลอร์สำหรับอุตสาหกรรมเกษตร Microcontroller for Agricultural Industry | 3(2-2-5) | T1
+[/TABLE]
+Agricultural Drone
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | ปฏิบัติการโดรนการเกษตรและการวิเคราะห์ภาพมัลติสเปกตรัม Agricultural Drone Operations and Multispectral Image Analysis | 3(2-2-5) | T1
+EN-053-307 | เทคโนโลยีการอบแห้งในอุตสาหกรรมเกษตร Drying Technology in Agricultural Industry | 3(3-0-6) | T1
+[/TABLE]
+[TABLE]
+รวมรายวิชา Track 1 ทั้งหมด 26 รายวิชา 78 หน่วยกิต (เลือกเรียนไม่น้อยกว่า 12 หน่วยกิต / 4 รายวิชา) — เพิ่มกลุ่ม AI for Sugarcane & Cassava Industry และ Agricultural Machinery & Plant Process Engineering เพื่อให้นักศึกษามีพื้นฐานเครื่องจักรกลและกระบวนการผลิตจริงในโรงงาน ก่อนนำ AI ไปประยุกต์ใช้
+[/TABLE]
+[TABLE]
+Track 2:  Industrial AI ไม่น้อยกว่า 12 หน่วยกิต — Machine Vision / Industrial Automation / Predictive Maintenance / Smart Manufacturing
+[/TABLE]
+Machine Vision
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | การตรวจสอบคุณภาพด้วยคอมพิวเตอร์วิทัศน์เชิงอุตสาหกรรม Industrial Machine Vision for Quality Inspection | 3(2-2-5) | T2
+xx-xxx-xxx | ระบบกล้องอัจฉริยะและการประมวลผลภาพแบบเรียลไทม์ Smart Camera Systems and Real-time Image Processing | 3(2-2-5) | T2
+[/TABLE]
+Industrial Automation
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-334 | ไฟฟ้าสำหรับวิศวกรรมปัญญาประดิษฐ์ Electricity for Artificial Intelligence Engineering | 3(2-2-6) | T2
+EN-053-335 | เครื่องจักรกลไฟฟ้าและระบบควบคุมระบบอัจฉริยะ Electrical Machinery and Intelligent Control Systems | 3(2-2-5) | T2
+EN-053-336 | ระบบนิวแมติกส์และไฮดรอลิกส์ขับเคลื่อนด้วยปัญญาประดิษฐ์ AI-Driven Pneumatic and Hydraulic Systems | 3(2-2-5) | T2
+EN-053-309 | พัดลม เครื่องสูบ และเครื่องอัดลม Fans, Pumps and Compressors | 3(2-2-5) | T2
+[/TABLE]
+Predictive Maintenance
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-354 | การบำรุงรักษาเชิงพยากรณ์ด้วยปัญญาประดิษฐ์ AI-Powered Predictive Maintenance | 3(3-0-6) | T2
+xx-xxx-xxx | การวิเคราะห์สัญญาณการสั่นสะเทือนและเสียงเพื่อวินิจฉัยเครื่องจักร Vibration and Acoustic Signal Analysis for Machine Diagnostics | 3(2-2-5) | T2
+[/TABLE]
+Smart Manufacturing
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-323 | วิทยาการข้อมูลสำหรับอุตสาหกรรม Industrial Data Science | 3(3-0-6) | T2
+EN-053-321 | การอนุรักษ์พลังงานในอุตสาหกรรมอัจฉริยะ Energy Conservation in Smart Industries | 3(3-0-6) | T2
+xx-xxx-xxx | ดิจิทัลทวินสำหรับโรงงานอัจฉริยะ Digital Twin for Smart Factory | 3(2-2-5) | T2
+EN-053-311 | การทำความเย็นและการเก็บรักษาผลผลิต Cooling and Storage Technology | 3(3-0-6) | T2
+EN-053-314 | พลังงานความร้อนและแสงอาทิตย์ Heat and Solar Energy Technology | 3(2-2-5) | T2
+EN-053-316 | เทคโนโลยีพลังงานชีวมวล Biomass Technology | 3(2-2-5) | T2
+EN-053-317 | เทคโนโลยีการเผาไหม้อุตสาหกรรม Combustion Technology for Industry | 3(3-0-6) | T2
+EN-053-318 | การไพโรไลซิสแบบเร็ว Fast Pyrolysis | 3(3-0-6) | T2
+EN-053-319 | พลังงานทดแทนและการแปลงรูปพลังงาน Renewable and Conversion Energy | 3(3-0-6) | T2
+[/TABLE]
+[TABLE]
+รวมรายวิชา Track 2 ทั้งหมด 21 รายวิชา 63 หน่วยกิต (เลือกเรียนไม่น้อยกว่า 12 หน่วยกิต / 4 รายวิชา) — เพิ่มรายวิชากลุ่มวิศวกรรมพลังงาน (เดิม 2.4.2) และไฟฟ้า (EN-053-334) ที่ตกหล่นจากฉบับเดิม เนื่องจากเป็นพื้นฐานสำคัญของ Industrial AI และโรงงานแปรรูปอ้อย/มันสำปะหลัง
+[/TABLE]
+[TABLE]
+Track 3:  AI Innovation ไม่น้อยกว่า 12 หน่วยกิต — Generative AI / AI Startup / AI Product Development / Technology Commercialization
+[/TABLE]
+Generative AI
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+EN-053-351 | Deep Learning สำหรับระบบอัจฉริยะ Deep Learning for Intelligent Systems | 3(3-0-6) | T3
+xx-xxx-xxx | ปัญญาประดิษฐ์เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่ Generative AI and Large Language Models | 3(2-2-5) | T3
+EN-053-352 | Edge AI และระบบประมวลผลอัจฉริยะ Edge AI and Intelligent Computing Systems | 3(2-2-5) | T3
+[/TABLE]
+AI Startup
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | การออกแบบความคิดเชิงนวัตกรรมและการสร้างต้นแบบทางธุรกิจ Design Thinking and Business Model Prototyping | 3(2-2-5) | T3
+xx-xxx-xxx | การเป็นผู้ประกอบการเทคโนโลยีปัญญาประดิษฐ์ AI Technology Entrepreneurship | 3(2-2-5) | T3
+[/TABLE]
+AI Product Development
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | การพัฒนาผลิตภัณฑ์ปัญญาประดิษฐ์และการบริหารวงจรชีวิตโมเดล AI Product Development and MLOps | 3(2-2-5) | T3
+xx-xxx-xxx | การออกแบบประสบการณ์ผู้ใช้สำหรับผลิตภัณฑ์ปัญญาประดิษฐ์ UX Design for AI Products | 3(2-2-5) | T3
+[/TABLE]
+Technology Commercialization
+[TABLE]
+รหัสวิชา | ชื่อรายวิชา | หน่วยกิต | กลุ่ม
+xx-xxx-xxx | การจัดการทรัพย์สินทางปัญญาและการถ่ายทอดเทคโนโลยี IP Management and Technology Transfer | 3(3-0-6) | T3
+xx-xxx-xxx | กลยุทธ์การออกสู่ตลาดและการระดมทุนสำหรับธุรกิจเทคโนโลยี Go-to-Market Strategy and Fundraising for Tech Ventures | 3(3-0-6) | T3
+[/TABLE]
+[TABLE]
+รวมรายวิชา Track 3 ทั้งหมด 12 รายวิชา 36 หน่วยกิต (เลือกเรียนไม่น้อยกว่า 12 หน่วยกิต / 4 รายวิชา)
+[/TABLE]
+[TABLE]
+ตารางเทียบรายวิชาเดิมที่จัดเข้า Track ใหม่
+[/TABLE]
+รายวิชาเดิมจากกลุ่มวิศวกรรมเกษตร / พลังงาน / ไฟฟ้าและระบบควบคุม ที่ถูกจัดสรรเข้า Track ใหม่ หรือคงเหลือเป็นวิชาเลือกเสรีในกลุ่มเดิม
+[TABLE]
+รหัสเดิม | รายวิชาเดิม | กลุ่มเดิม | จัดเข้า Track
+EN-053-301 | เทคโนโลยีและการจัดการโรงสีข้าว | วิศวกรรมเกษตร | Track 1
+EN-053-302 | เทคโนโลยีในการผลิตอ้อยและน้ำตาล | วิศวกรรมเกษตร | Track 1
+EN-053-303 | เทคโนโลยีในการผลิตมันสำปะหลังและแป้ง | วิศวกรรมเกษตร | Track 1
+EN-053-307 | เทคโนโลยีการอบแห้งในอุตสาหกรรมเกษตร | วิศวกรรมเกษตร | Track 1
+EN-053-335 | เครื่องจักรกลไฟฟ้าและระบบควบคุมระบบอัจฉริยะ | ไฟฟ้า/ระบบควบคุม | Track 2
+EN-053-336 | ระบบนิวแมติกส์และไฮดรอลิกส์ขับเคลื่อนด้วยปัญญาประดิษฐ์ | ไฟฟ้า/ระบบควบคุม | Track 2
+EN-053-338 | ไมโครคอนโทรลเลอร์สำหรับอุตสาหกรรมเกษตร | ไฟฟ้า/ระบบควบคุม | Track 1
+EN-053-351 | Deep Learning สำหรับระบบอัจฉริยะ | ปัญญาประดิษฐ์ | Track 3
+EN-053-352 | Edge AI และระบบประมวลผลอัจฉริยะ | ปัญญาประดิษฐ์ | Track 3
+EN-053-353 | ระบบนำทางอัตโนมัติ GNSS และ RTK | ปัญญาประดิษฐ์ | Track 1
+EN-053-354 | หุ่นยนต์เก็บเกี่ยวผลผลิต | ปัญญาประดิษฐ์ | Track 1
+EN-053-354* | การบำรุงรักษาเชิงพยากรณ์ด้วยปัญญาประดิษฐ์ (*แก้รหัสซ้ำ) | ปัญญาประดิษฐ์ | Track 2
+EN-053-322 | เทคโนโลยีเครื่องจักรกลสำหรับสมาร์ทฟาร์ม | ปัญญาประดิษฐ์ | Track 1
+EN-053-323 | วิทยาการข้อมูลสำหรับอุตสาหกรรม | ปัญญาประดิษฐ์ | Track 2
+EN-053-329 | ปัญญาประดิษฐ์สำหรับฟาร์มอัจฉริยะ | ปัญญาประดิษฐ์ | Track 1
+EN-053-309 | พัดลม เครื่องสูบ และเครื่องอัดลม | วิศวกรรมเกษตร | Track 2
+EN-053-311 | การทำความเย็นและการเก็บรักษาผลผลิต | วิศวกรรมพลังงาน | Track 2
+EN-053-314 | พลังงานความร้อนและแสงอาทิตย์ | วิศวกรรมพลังงาน | Track 2
+EN-053-316 | เทคโนโลยีพลังงานชีวมวล | วิศวกรรมพลังงาน | Track 2
+EN-053-317 | เทคโนโลยีการเผาไหม้อุตสาหกรรม | วิศวกรรมพลังงาน | Track 2
+EN-053-318 | การไพโรไลซิสแบบเร็ว | วิศวกรรมพลังงาน | Track 2
+EN-053-319 | พลังงานทดแทนและการแปลงรูปพลังงาน | วิศวกรรมพลังงาน | Track 2
+EN-053-334 | ไฟฟ้าสำหรับวิศวกรรมปัญญาประดิษฐ์ | ไฟฟ้า/ระบบควบคุม | Track 2
+EN-053-321 | การอนุรักษ์พลังงานในอุตสาหกรรมอัจฉริยะ | วิศวกรรมพลังงาน | Track 2
+[/TABLE]
+[TABLE]
+หมายเหตุ: รหัสวิชา EN-053-354 ปรากฏซ้ำในเอกสารต้นฉบับ (หุ่นยนต์เก็บเกี่ยวผลผลิต และ การบำรุงรักษาเชิงพยากรณ์ฯ) ต้องแก้ไขรหัสให้ไม่ซ้ำกันก่อนเสนอสภามหาวิทยาลัย
+[/TABLE]
+[TABLE]
+รายวิชาใหม่ที่ต้องพัฒนาเพิ่มเติม (ยังไม่มีในหลักสูตรเดิม)
+[/TABLE]
+เพื่อให้ครอบคลุมหัวข้อย่อยทั้ง 4 หัวข้อในแต่ละ Track ตามที่กำหนด จำเป็นต้องพัฒนารายวิชาใหม่เพิ่มเติมดังนี้
+[TABLE]
+รายวิชาใหม่ที่ควรพัฒนา | หน่วยกิต | Track
+ปัญญาประดิษฐ์สำหรับการปลูกข้าวแม่นยำสูง (AI for Precision Rice Farming) | 3 | Track 1
+คอมพิวเตอร์วิทัศน์สำหรับการคัดแยกและตรวจสอบคุณภาพข้าว (Computer Vision for Rice Grading and Quality Inspection) | 3 | Track 1
+ปัญญาประดิษฐ์สำหรับการเพาะปลูกอ้อยและมันสำปะหลังแม่นยำสูง (AI for Precision Sugarcane and Cassava Farming) | 3 | Track 1
+การพยากรณ์ผลผลิตและคุณภาพอ้อย-มันสำปะหลังด้วยปัญญาประดิษฐ์ (AI-based Yield and Quality Forecasting for Sugarcane and Cassava) | 3 | Track 1
+ระบบอัตโนมัติและหุ่นยนต์สำหรับโรงงานน้ำตาลและแป้งมันสำปะหลัง (Automation and Robotics for Sugar and Starch Mills) | 3 | Track 1
+ปัญญาประดิษฐ์สำหรับการปศุสัตว์อัจฉริยะ (AI for Smart Livestock) | 3 | Track 1
+วิศวกรรมเครื่องจักรกลเกษตร (Agricultural Machinery Engineering) | 3 | Track 1
+การออกแบบและบำรุงรักษาเครื่องจักรกลฟาร์ม (Design and Maintenance of Farm Machinery) | 3 | Track 1
+กระบวนการหีบและสกัดน้ำอ้อยในอุตสาหกรรมน้ำตาล (Sugarcane Milling and Juice Extraction Process) | 3 | Track 1
+กระบวนการสีข้าวและเครื่องจักรในโรงสี (Rice Milling Process and Mill Machinery) | 3 | Track 1
+กระบวนการสกัดและแปรรูปแป้งมันสำปะหลัง (Cassava Starch Extraction and Processing) | 3 | Track 1
+วิศวกรรมโรงงานต้นกำลังและหม้อไอน้ำสำหรับอุตสาหกรรมเกษตร (Power Plant and Boiler Engineering for Agro-Industry) | 3 | Track 1
+การวางผังโรงงานและการจัดการสายการผลิตเกษตรอุตสาหกรรม (Plant Layout and Production Line Management for Agro-Industry) | 3 | Track 1
+ระบบเฝ้าระวังสุขภาพสัตว์ด้วยคอมพิวเตอร์วิทัศน์ (Computer Vision for Livestock Health Monitoring) | 3 | Track 1
+ปฏิบัติการโดรนการเกษตรและการวิเคราะห์ภาพมัลติสเปกตรัม (Agricultural Drone Operations and Multispectral Image Analysis) | 3 | Track 1
+การตรวจสอบคุณภาพด้วยคอมพิวเตอร์วิทัศน์เชิงอุตสาหกรรม (Industrial Machine Vision for Quality Inspection) | 3 | Track 2
+ระบบกล้องอัจฉริยะและการประมวลผลภาพแบบเรียลไทม์ (Smart Camera Systems and Real-time Image Processing) | 3 | Track 2
+การวิเคราะห์สัญญาณการสั่นสะเทือนและเสียงเพื่อวินิจฉัยเครื่องจักร (Vibration and Acoustic Signal Analysis for Machine Diagnostics) | 3 | Track 2
+ดิจิทัลทวินสำหรับโรงงานอัจฉริยะ (Digital Twin for Smart Factory) | 3 | Track 2
+ปัญญาประดิษฐ์เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่ (Generative AI and Large Language Models) | 3 | Track 3
+การออกแบบความคิดเชิงนวัตกรรมและการสร้างต้นแบบทางธุรกิจ (Design Thinking and Business Model Prototyping) | 3 | Track 3
+การเป็นผู้ประกอบการเทคโนโลยีปัญญาประดิษฐ์ (AI Technology Entrepreneurship) | 3 | Track 3
+การพัฒนาผลิตภัณฑ์ปัญญาประดิษฐ์และการบริหารวงจรชีวิตโมเดล (AI Product Development and MLOps) | 3 | Track 3
+การออกแบบประสบการณ์ผู้ใช้สำหรับผลิตภัณฑ์ปัญญาประดิษฐ์ (UX Design for AI Products) | 3 | Track 3
+การจัดการทรัพย์สินทางปัญญาและการถ่ายทอดเทคโนโลยี (IP Management and Technology Transfer) | 3 | Track 3
+กลยุทธ์การออกสู่ตลาดและการระดมทุนสำหรับธุรกิจเทคโนโลยี (Go-to-Market Strategy and Fundraising for Tech Ventures) | 3 | Track 3
+[/TABLE]
+[TABLE]
+เอกสารนี้เป็นร่างเบื้องต้นสำหรับการพิจารณาของคณะกรรมการพัฒนาหลักสูตร — ควรตรวจสอบรหัสวิชา จำนวนหน่วยกิตชั่วโมงบรรยาย-ปฏิบัติ-ศึกษาด้วยตนเอง ให้สอดคล้องกับระเบียบมหาวิทยาลัยก่อนเสนอสภาวิชาการ
+[/TABLE]

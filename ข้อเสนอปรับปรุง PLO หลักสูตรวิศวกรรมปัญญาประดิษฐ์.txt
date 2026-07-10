@@ -1,0 +1,204 @@
+--- page 1 ---
+
+
+--- page 2 ---
+ขอ้ เสนอปรบั ปรุงผลลัพธก์ ารเรยี นรูท้ คี่ าดหวงั
+(PLOs) และโครงสรา้ งหลักสูตรให้สอดคล้องกับ
+ความเชยี่ วชาญ (Tracks) และความต้องการของ
+ตลาดแรงงาน
+หลักสูตรวศิ วกรรมศาสตรบณั ฑติ สาขาวชิ าวศิ วกรรมปัญญาประดิษฐ์และระบบอัจฉรยิ ะ (หลักสูตรปรบั ปรุง พ.
+ศ. 2570)
+มหาวทิ ยาลัยกาฬสินธ ุ์
+1. ทมี่ าและความสําคัญของการปรบั ปรุงกล่มุ วชิ าความเชยี่ วชาญ
+(Tracks)
+เพอื่ สรา้ งบณั ฑติ ทมี่ สี มรรถนะตรงตามความต้องการของภาคเอกชนและทศิ ทางการพฒั นาประเทศ หลักสตู รจงึ ได้
+ปรบั ปรงุ กล่มุ วชิ าความเชยี่ วชาญเป็น 3 แทรค (Tracks) โดยมที มี่ าและความสําคัญดังนี้:
+● Track 1: Smart Agriculture Engineering
+ประเทศไทยมฐี านรากเป็นเกษตรกรรม การบรู ณาการ AI โดรน และระบบอัตโนมตั ิจงึ มคี วามสําคัญอยา่ งยงิ่
+ในการยกระดับห่วงโซก่ ารผลิต แก้ปัญหาขาดแคลนแรงงาน และเปลี่ยนผา่ นส่เู กษตรกรรมแมน่ ยาํ มลู ค่าสงู
+อยา่ งยงั่ ยนื
+● Track 2: Industrial AI Engineering
+ภาคอตุ สาหกรรมและการผลิตกําลังก้าวส่ยู คุ Industry 4.0 อยา่ งเต็มรปู แบบ การใช ้ AI ควบค่กู ับระบบ
+ควบคมุ อัตโนมตั ิและ Digital Twin จงึ เป็นกลไกหลักในการลดต้นทนุ เพมิ่ ประสิทธภิ าพ และยกระดับการ
+บาํ รงุ รกั ษาเชงิ คาดการณ์
+● Track 3: Enterprise AI Innovation
+องค์กรธรุ กิจยคุ ใหมต่ ้องการนวตั กรรมเชงิ ลึกเพอื่ สรา้ งความได้เปรยี บทางการแขง่ ขนั การสรา้ งบคุ ลากรที่
+เชยี่ วชาญ Deep Learning และ MLOps จงึ ตอบโจทยก์ ารขยายตัวอยา่ งรวดเรว็ ของกล่มุ ธรุ กิจเทคโนโลย ี
+องค์กรการเงนิ และสขุ ภาพ
+2. ผลลัพธก์ ารเรยี นรูท้ คี่ าดหวงั (PLOs) ฉบบั ปรบั ปรุงใหม ่
+การปรบั ปรงุ PLOs ในครงั้ นี้ มงุ่ เน้นความสอดคล้องเชงิ โครงสรา้ ง (Constructive Alignment) ระหวา่ งทกั ษะที่
+เรยี นกับเส้นทางอาชพี (Career Paths) ในตลาดแรงงานจรงิ ดังตารางต่อไปนี้
+กล่มุ วชิ าความเชยี่ วชาญ ผลลัพธก์ ารเรยี นรูท้ คี่ าดหวงั ตลาดแรงงานรองรบั จรงิ
+
+--- page 3 ---
+(Track) (PLO) ฉบบั ปรบั ปรุงใหม ่ (Career Paths)
+Track 1: Smart Agriculture การประยกุ ต์ใชป้ ัญญาประดิษฐ ์ วศิ วกรเกษตรอัจฉรยิ ะ (Smart
+Engineering ระบบอัตโนมตั ิ และเทคโนโลยี Farming Engineer), นัก
+วศิ วกรรมขนั้ สงู (เชน่ เกษตร วเิ คราะห์ขอ้ มลู เกษตร (AgTech
+แมน่ ยาํ โดรน หุ่นยนต์ และไอโอ Data Analyst), ผเู้ ชยี่ วชาญ
+ท)ี เพอื่ เพมิ่ ประสิทธภิ าพ ยก ระบบโดรนและหุ่นยนต์เกษตร
+ระดับห่วงโซก่ ารผลิต และแก้
+ปัญหาเชงิ โครงสรา้ งในภาคการ
+เกษตรและปศสุ ัตวย์ คุ ใหม ่
+Track 2: Industrial AI การออกแบบและบรู ณาการเทค วศิ วกรระบบอัตโนมตั ิและ AI
+Engineering โนโลยปี ัญญาประดิษฐ ์ ระบบ (Automation & AI Engineer),
+ควบคมุ อัตโนมตั ิ (PLC/SCADA) วศิ วกรโรงงานอัจฉรยิ ะ (Smart
+และเทคโนโลยฝี าแฝดดิจทิ ลั Factory Engineer), นัก
+(Digital Twin) เพอื่ ปรบั ปรงุ วเิ คราะห์กระบวนการผลิต
+ประสิทธภิ าพการผลิต อตุ สาหกรรม
+(Optimization) การบาํ รงุ รกั ษา
+เชงิ คาดการณ์ (Predictive
+Maintenance) และการควบคมุ
+คณุ ภาพในโรงงานและ
+อตุ สาหกรรมยคุ ใหม ่
+Track 3: Enterprise AI การพฒั นาระบบ บรู ณาการ และ วศิ วกรเอไอ/แมชชนี เลิรน์ นิง
+Innovation สรา้ งสรรค์นวตั กรรมด้วย (AI/ML Engineer), วศิ วกร
+เทคโนโลย ี AI เชงิ ลึก (Deep เอ็มแอลออปส์ (MLOps
+Learning, Generative AI, Engineer), นักพฒั นาโซลชู นั AI
+MLOps) เพอื่ ขบั เคลื่อน สเก องค์กร (Enterprise AI
+ลระบบ และแก้ปัญหาทซี่ บั ซอ้ น Solution Developer)
+ในภาคธรุ กิจ โครงสรา้ งพนื้ ฐาน
+ทางการเงนิ (FinTech) และ
+เทคโนโลยกี ารแพทยแ์ ละสขุ ภาพ
+(HealthTech)
+3. โครงสรา้ งหน่วยกิต (130 หน่วยกิต)
+หมวดวชิ า หน่วยกิต หมายเหต ุ
+วชิ าศึกษาทวั่ ไป (GE) 24
+วชิ าแกนวศิ วกรรม (Core EN) 21 เศรษฐศาสตรว์ ศิ วกรรม, สถิติ,
+
+--- page 4 ---
+เทอรโ์ มฟลอู ิด, Drawing,
+กลศาสตรว์ สั ด,ุ Programming,
+ไฟฟ้าและอิเล็กทรอนิกส์
+วชิ าแกนปัญญาประดิษฐ์ (Core 24 Intro AI, Math for AI, CV, IoT,
+AI) Cloud & ML Opt, ML & DL,
+Data, AI Infrastructure &
+Networking
+วชิ าพนื้ ฐานเฉพาะแทรค (Basic 12 วชิ าบงั คับรว่ มปี 3 ทที่ กุ คนต้อง
+Core Track) เรยี น
+วชิ าเลือกเฉพาะแทรค (Track 15 เลือกเรยี น 5 วชิ าในแทรคของตน
+Selective) เอง
+วชิ าเลือกเสร ี (Selective) 6
+วชิ าปฏิบตั ิการ (Workshop 4 1 หน่วยกิต x 4 วชิ า
+1-4)
+โครงงาน (Project 1, 2 + 5
+Seminar)
+สหกิจศึกษา (Prep + Coop) 7 เตรยี มสหกิจฯ (1 นก.) + สหกิจ
+ศึกษา (6 นก.)
+รวมทงั้ หมด 130
+4. แผนการเรยี น 4 ปี (Study Plan)
+บรู ณาการรายวชิ ารว่ มทงั้ 3 แทรคในชว่ งปี 1-3 และแยกแทรคในปีท ี่ 4
+ชนั้ ปีท ี่ 1 — รากฐานวศิ วกรรมและการเขยี นโปรแกรม (เรยี นรว่ มกันทกุ Track)
+ภาคเรยี นท ี่ 1 (16 หน่วยกิต)
+● [Core EN] การเขยี นโปรแกรมคอมพวิ เตอร ์ (Computer Programming) - 3(2-2-5)
+● [Core EN] การเขยี นแบบวศิ วกรรม (Engineering Drawing) - 3(2-2-5)
+● [Core AI] ความรเู้ บอื้ งต้นสําหรบั ปัญญาประดิษฐ ์ (Introduction to Artificial Intelligence) - 3(3-0-6)
+● [Elective] วชิ าเลือกเสร ี 1 (Free Elective 1) - 3(3-0-6)
+● [Workshop] ปฏิบตั ิการวศิ วกรรมและ AI 1 (Workshop 1) - 1(0-2-1)
+● (วชิ าปรบั พนื้ ฐานเพ่มิ เติม ถ้าม)ี
+ภาคเรยี นท ี่ 2 (19 หน่วยกิต)
+
+--- page 5 ---
+● [Core EN] สถิติสําหรบั วศิ วกรรม (Statistics for Engineering) - 3(3-0-6)
+● [Core EN] กลศาสตรว์ สั ด ุ (Mechanics of Materials) - 3(3-0-6)
+● [Core AI] คณิตศาสตรว์ ศิ วกรรมปัญญาประดิษฐ ์ (Mathematics for AI Engineering) - 3(3-0-6)
+● [Core AI] วทิ ยาการขอ้ มลู (Data Science) - 3(2-2-5)
+● [Elective] วชิ าเลือกเสร ี 2 (Free Elective 2) - 3(3-0-6)
+● [Workshop] ปฏิบตั ิการวศิ วกรรมและ AI 2 (Workshop 2) - 1(0-2-1)
+ชนั้ ปีท ี่ 2 — ทกั ษะทาง Machine Learning, IoT และระบบวศิ วกรรม (เรยี นรว่ มกัน
+ทกุ Track)
+ภาคเรยี นท ี่ 1 (16 หน่วยกิต)
+● [Core EN] วศิ วกรรมไฟฟ้าและอิเล็กทรอนิกส์ (Electrical and Electronics Engineering) - 3(2-2-5)
+● [Core AI] การเรยี นรขู้ องเครอื่ งและการเรยี นรเู้ ชงิ ลึก (Machine Learning and Deep Learning) -
+3(2-2-5)
+● [Core AI] ระบบไอโอทอี ัจฉรยิ ะ (Intelligent IoT System) - 3(2-2-5)
+● [Core AI] คอมพวิ เตอรว์ ทิ ศั น์และการวเิ คราะห์ภาพ (Computer Vision and Image Analysis) -
+3(2-2-5)
+● [Workshop] ปฏิบตั ิการวศิ วกรรมและ AI 3 (Workshop 3) - 1(0-2-1)
+ภาคเรยี นท ี่ 2 (16 หน่วยกิต)
+● [Core EN] เทอรโ์ มฟลอู ิด (Thermo-fluids) - 3(3-0-6)
+● [Core EN] เศรษฐศาสตรว์ ศิ วกรรม (Engineering Economics) - 3(3-0-6)
+● [Core AI] คลาวด์เอไอและการเพมิ่ ประสิทธภิ าพเแมชชนี เลิรน์ นิง (Cloud AI and ML Opt) - 3(2-2-5)
+● [Core AI] โครงสรา้ งพนื้ ฐานเอไอและเครอื ขา่ ย (AI Infrastructure and Networking) - 3(2-2-5)
+● [Workshop] ปฏิบตั ิการวศิ วกรรมและ AI 4 (Workshop 4) - 1(0-2-1)
+ชนั้ ปีท ี่ 3 — วชิ าแกนบรู ณาการกลาง (Common Core - เรยี นรว่ มกันทกุ Track)
+เน้นทกั ษะขา้ มสายงาน (Cross-functional) เพอื่ ให้นักศึกษาเห็นภาพรวมการประยกุ ต์ใช ้ AI ในอตุ สาหกรรม
+ต่างๆ ก่อนเลือก Track ในปี 4
+ภาคเรยี นท ี่ 1 (19 หน่วยกิต)
+● [Basic Core] การออกแบบธรุ กิจและผลิตภัณฑ ์ AI (AI Business and Product Design) - 3(2-2-5)
+● [Basic Core] ฟารม์ อัจฉรยิ ะ (Smart Farming) - 3(2-2-5)
+● [Basic Core] โรงงานอัจฉรยิ ะ (Smart Factory) - 3(2-2-5)
+● [Basic Core] การพฒั นาซอฟต์แวรป์ ัญญาประดิษฐ ์ (AI Software Development) - 3(2-2-5)
+● [GE] วชิ าศึกษาทวั่ ไป 1 (General Education 1) - 3(3-0-6)
+● [GE] วชิ าศึกษาทวั่ ไป 2 (General Education 2) - 3(3-0-6)
+● [Seminar] สัมมนาทางวศิ วกรรมปัญญาประดิษฐ ์ (Seminar in AI Engineering) - 1(0-2-1)
+ภาคเรยี นท ี่ 2 (19 หน่วยกิต)
+● [Basic Core] AI สําหรบั การผลิตและห่วงโซอ่ ปุ ทาน (AI Production and Supply Chain) - 3(3-0-6)
+● [Basic Core] อากาศยานไรค้ นขบั และการตรวจวดั ระยะไกล (UAV and Remote Sensing) - 3(2-2-5)
+● [Basic Core] ระบบควบคมุ อัตโนมตั ิ (PLC and Automatic Control) - 3(2-2-5)
+
+--- page 6 ---
+● [Basic Core] เอไอเอเจนต์ (AI Agent) - 3(2-2-5)
+● [GE] วชิ าศึกษาทวั่ ไป 3 (General Education 3) - 3(3-0-6)
+● [GE] วชิ าศึกษาทวั่ ไป 4 (General Education 4) - 3(3-0-6)
+● [Project] โครงงานวศิ วกรรมปัญญาประดิษฐ ์ 1 (AI Engineering Project 1) - 1(0-2-1)
+ชนั้ ปีท ี่ 4 — วชิ าเลือกเฉพาะแทรค โครงงาน และสหกิจศึกษา (Track Selective)
+ภาคเรยี นท ี่ 1 (25 หน่วยกิต) นักศึกษาเลือกเรยี นกล่มุ วชิ าเฉพาะแทรค (Track Selective) จาํ นวน 5 วชิ า (15
+หน่วยกิต) จากคลังรายวชิ าในหัวขอ้ ท ี่ 5
+วชิ าบงั คับรว่ มในภาคเรยี นท ี่ 4/1:
+● [GE] วชิ าศึกษาทวั่ ไป 5 (General Education 5) - 3(3-0-6)
+● [GE] วชิ าศึกษาทวั่ ไป 6 (General Education 6) - 3(3-0-6)
+● [Project] โครงงานวศิ วกรรมปัญญาประดิษฐ ์ 2 (AI Engineering Project 2) - 3(1-4-4)
+● [Co-op] การเตรยี มความพรอ้ มสหกิจศึกษา (Preparation for Co-operative Education) - 1(0-2-1)
+ภาคเรยี นท ี่ 2 (6 หน่วยกิต)
+● [Co-op] สหกิจศึกษา (Co-operative Education) - 6(0-40-0)
+5. คลังรายวชิ าเลือกเฉพาะแทรค (Track Selective Courses
+Pool)
+นักศึกษาเลือกเรยี น 5 วชิ า (15 หน่วยกิต) จากกล่มุ ใดกล่มุ หน่ึง หรอื บรู ณาการขา้ มกล่มุ ได้ตามระเบยี บของ
+หลักสตู ร
+Track 1: Smart Agriculture Engineering (เกษตรอัจฉรยิ ะ)
+1. ปัญญาประดิษฐส์ ําหรบั การเกษตรแมน่ ยาํ (AI for Precision Agriculture)
+2. หุ่นยนต์และระบบอัตโนมตั ิสําหรบั การเกษตร (Robotics and Automation for Agriculture)
+3. อากาศยานไรค้ นขบั สําหรบั การวเิ คราะห์ภาพถ่ายทางการเกษตร (UAV for Agricultural Image Analysis)
+4. ปัญญาประดิษฐส์ ําหรบั การจดั การปศสุ ัตวอ์ ัจฉรยิ ะ (AI for Smart Livestock Management)
+5. วศิ วกรรมเครอื่ งจกั รกลเกษตรอัจฉรยิ ะ (Smart Agricultural Machinery Engineering)
+6. ระบบตรวจวดั และเซนเซอรส์ ําหรบั สมารท์ ฟารม์ (Measurement and Sensor Systems for Smart
+Farming)
+7. เทคโนโลยกี ารผลิตและแปรรปู ผลผลิตทางการเกษตรด้วย AI (AI in Agricultural Production and
+Processing Technology)
+8. ปัญญาประดิษฐส์ ําหรบั การพยากรณ์ผลผลิตและจดั การทรพั ยากรน า (AI for Yield Forecasting and
+Water Resource Management)
+9. ดิจทิ ลั ทวนิ สําหรบั ระบบนิเวศการเกษตร (Digital Twin for Agricultural Ecosystems)
+10. การวเิ คราะห์ขอ้ มลู ขนาดใหญส่ ําหรบั อตุ สาหกรรมเกษตร (Big Data Analytics for Agro-Industry)
+Track 2: Industrial AI Engineering (ปัญญาประดิษฐ์เชงิ อตุ สาหกรรม)
+1. คอมพวิ เตอรว์ ทิ ศั น์สําหรบั การตรวจสอบคณุ ภาพอตุ สาหกรรม (Industrial Computer Vision for
+Quality Inspection)
+
+--- page 7 ---
+2. การบาํ รงุ รกั ษาเชงิ คาดการณ์ด้วยปัญญาประดิษฐ ์ (AI-Powered Predictive Maintenance)
+3. เทคโนโลยฝี าแฝดดิจทิ ลั สําหรบั โรงงานอัจฉรยิ ะ (Digital Twin for Smart Factory)
+4. ระบบหุ่นยนต์อตุ สาหกรรมและเอไอ (Industrial Robotics and AI)
+5. การวเิ คราะห์ขอ้ มลู และอินเทอรเ์ น็ตสรรพสิ่งเชงิ อตุ สาหกรรม (Industrial IoT and Data Analytics)
+6. การจดั การพลังงานอัจฉรยิ ะและระบบโครงขา่ ยไฟฟ้าอัจฉรยิ ะ (Smart Energy Management and
+Smart Grid)
+7. ระบบอัตโนมตั ิและการควบคมุ สายการผลิตขนั้ สงู (Advanced Automation and Production Line
+Control)
+8. ปัญญาประดิษฐส์ ําหรบั การปรบั ปรงุ ประสิทธภิ าพกระบวนการผลิต (AI for Manufacturing Process
+Optimization)
+9. วศิ วกรรมความปลอดภัยและระบบควบคมุ แบบกระจายศนู ย ์ (Safety Engineering and Distributed
+Control Systems)
+10. การจาํ ลองสถานการณ์และการวางผงั โรงงานอตุ สาหกรรม (Industrial Plant Layout and Simulation)
+Track 3: Enterprise AI Innovation (นวตั กรรมปัญญาประดิษฐ์องค์กร)
+1. ปัญญาประดิษฐเ์ ชงิ สรา้ งสรรค์และโมเดลภาษาขนาดใหญ ่ (Generative AI and Large Language
+Models)
+2. ปัญญาประดิษฐส์ ําหรบั เทคโนโลยที างการเงนิ และบล็อกเชน (AI for FinTech and Blockchain)
+3. ปัญญาประดิษฐส์ ําหรบั เทคโนโลยที างการแพทยแ์ ละสขุ ภาพ (AI for HealthTech and Healthcare)
+4. การบรหิ ารจดั การวงจรชวี ติ โมเดลปัญญาประดิษฐ ์ (MLOps and AI Model Lifecycle Management)
+5. การสรา้ งและบรหิ ารธรุ กิจสตารท์ อัพด้านเทคโนโลยปี ัญญาประดิษฐ ์ (AI Tech Startup Creation and
+Management)
+6. จรยิ ธรรม กฎหมาย และนโยบายด้านปัญญาประดิษฐ ์ (Ethics, Law, and Policy in AI)
+7. ระบบแนะนําอัจฉรยิ ะและปัญญาประดิษฐส์ ําหรบั ธรุ กิจค้าปลีก (Smart Recommendation Systems
+and AI for Retail)
+8. การวเิ คราะห์ขอ้ มลู เชงิ ลึกทางธรุ กิจและการแสดงผล (Business Data Analytics and Visualization)
+9. การประมวลผลภาษาธรรมชาติขนั้ สงู (Advanced Natural Language Processing)
+10. ความมนั่ คงปลอดภัยทางไซเบอรส์ ําหรบั ระบบปัญญาประดิษฐ ์ (Cybersecurity for AI Systems)

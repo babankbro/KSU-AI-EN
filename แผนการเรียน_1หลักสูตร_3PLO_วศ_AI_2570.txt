@@ -1,0 +1,109 @@
+แผนการเรียนหลักสูตร
+วิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ
+(หลักสูตรปรับปรุง พ.ศ. 2570) | มหาวิทยาลัยกาฬสินธุ์
+1 หลักสูตร | 3 PLO | บัณฑิตมีความสามารถครบทั้ง 3 ด้าน
+ผลลัพธ์การเรียนรู้ที่คาดหวัง (PLO)
+[TABLE]
+PLO | ด้าน | ความสามารถที่คาดหวัง
+PLO1 | เกษตรอัจฉริยะ | การนำปัญญาประดิษฐ์และระบบอัจฉริยะไปใช้ในการเกษตร ครอบคลุมการเกษตรแม่นยำ โดรน หุ่นยนต์ ชลประทาน ปศุสัตว์ และการจัดการข้าว อ้อย มันสำปะหลังในภาคสนาม
+PLO2 | อุตสาหกรรม | การนำปัญญาประดิษฐ์และระบบอัจฉริยะไปใช้ในอุตสาหกรรม เน้นอุตสาหกรรมอ้อยและน้ำตาล อุตสาหกรรมการผลิตแป้งมันสำปะหลัง อุตสาหกรรมการผลิตข้าว ระบบ PLC SCADA และ Digital Twin
+PLO3 | นวัตกรรม | การนำปัญญาประดิษฐ์และระบบอัจฉริยะสู่นวัตกรรม ครอบคลุม Deep Learning Generative AI MLOps การสร้าง AI Startup การวิจัยและพัฒนา
+[/TABLE]
+สรุปหน่วยกิตรายภาคเรียน
+[TABLE]
+ชั้นปี | ภาค 1 | ภาค 2 | รวม | PLO ที่เรียน
+ปีที่ 1 | 18 นก. | 21 นก. | 39 นก. | พื้นฐาน + PLO1 แกน
+ปีที่ 2 | 18 นก. | 18 นก. | 36 นก. | พื้นฐาน + PLO1 แกน
+ปีที่ 3 | 18 นก. | 21 นก. | 39 นก. | PLO1 + PLO2 + PLO3 แกน
+ปีที่ 4 | 22 นก. | 6 นก. (สหกิจ) | 28 นก. | PLO1+2+3 เพิ่ม + โครงงาน + สหกิจ
+รวมทั้งหมด |  |  | 142 นก. | 47 วิชา
+[/TABLE]
+หมายเหตุ: [PLO1] = วิชาแกนด้านเกษตรอัจฉริยะ | [PLO2] = วิชาแกนด้านอุตสาหกรรม | [PLO3] = วิชาแกนด้านนวัตกรรม | วิชาที่ไม่มีป้าย = วิชาพื้นฐานร่วม
+ชั้นปีที่ 1  —  รากฐานคณิตศาสตร์ โปรแกรมมิ่ง และวิศวกรรมเกษตรเบื้องต้น
+ภาคเรียนที่ 1   (18 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | แคลคูลัส 1 Calculus 1 | 3(3-0-6)
+2 | ความรู้เบื้องต้นทางปัญญาประดิษฐ์ Introduction to Artificial Intelligence | 3(3-0-6)
+3 | การเขียนโปรแกรมคอมพิวเตอร์ Computer Programming | 3(2-2-6)
+4 | หลักการวิศวกรรมเกษตรเบื้องต้น  [PLO1] Fundamentals of Agricultural Engineering | 3(2-2-5)
+5 | วิชาศึกษาทั่วไป 1 General Education 1 | 3(3-0-6)
+6 | วิชาศึกษาทั่วไป 2 General Education 2 | 3(3-0-6)
+[/TABLE]
+ภาคเรียนที่ 2   (21 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | คณิตศาสตร์สำหรับวิศวกรรม AI Mathematics for AI Engineering | 3(3-0-6)
+2 | สถิติสำหรับวิศวกรรม Statistics for Engineering | 3(3-0-6)
+3 | กลศาสตร์วิศวกรรม Engineering Mechanics | 3(3-0-6)
+4 | การเขียนแบบวิศวกรรม Engineering Drawing | 3(2-2-6)
+5 | วิชาศึกษาทั่วไป 3 General Education 3 | 3(3-0-6)
+6 | วิชาศึกษาทั่วไป 4 General Education 4 | 3(3-0-6)
+7 | วิชาศึกษาทั่วไป 5 General Education 5 | 3(3-0-6)
+[/TABLE]
+ชั้นปีที่ 2  —  ไฟฟ้า ML เซนเซอร์ + วิศวกรรมเกษตรและวิชาเลือกเสรี
+ภาคเรียนที่ 1   (18 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | วงจรไฟฟ้าและอิเล็กทรอนิกส์พื้นฐาน Basic Electrical and Electronic Circuits | 3(3-0-6)
+2 | ระบบดิจิทัลและตรรกะทางวิศวกรรม Digital Systems and Engineering Logic | 3(3-0-6)
+3 | การเรียนรู้ของเครื่องจักร Machine Learning | 3(3-0-6)
+4 | โครงสร้างข้อมูลและอัลกอริทึมสำหรับวิศวกร Data Structures and Algorithms for Engineers | 3(3-0-6)
+5 | เศรษฐศาสตร์วิศวกรรม Engineering Economics | 3(2-2-5)
+6 | สัมมนานวัตกรรม AI และอุตสาหกรรมอัจฉริยะ Seminar in AI Innovation and Smart Industry | 3(2-1-3)
+[/TABLE]
+ภาคเรียนที่ 2   (18 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | วิศวกรรมการตรวจวัดและเซนเซอร์อัจฉริยะ Measurement Engineering and Smart Sensors | 3(3-0-6)
+2 | ไมโครคอนโทรลเลอร์และระบบฝังตัว Microcontrollers and Embedded Systems | 3(3-0-6)
+3 | อุณหพลศาสตร์และกลศาสตร์ของไหล Thermodynamics and Fluid Mechanics | 3(3-0-6)
+4 | วิศวกรรมเครื่องจักรกลเกษตรตลอดห่วงโซ่การผลิต  [PLO1] Agricultural Machinery Engineering for Full-Cycle Crop Production | 3(2-2-5)
+5 | วิชาเลือกเสรี 1 Free Elective 1 | 3(3-0-6)
+6 | วิชาเลือกเสรี 2 Free Elective 2 | 3(3-0-6)
+[/TABLE]
+ชั้นปีที่ 3  —  AI Core + วิชาแกน PLO1 PLO2 PLO3 ทุกคนเรียนครบ
+ภาคเรียนที่ 1   (18 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | การประมวลผลภาพและคอมพิวเตอร์วิทัศน์ Image Processing and Computer Vision | 3(3-0-6)
+2 | อินเทอร์เน็ตสรรพสิ่งสำหรับเครื่องจักรอัจฉริยะ IoT for Intelligent Machines | 3(3-0-6)
+3 | เทคโนโลยีคลาวด์สำหรับการเรียนรู้ AI Cloud Technology for AI Learning | 3(3-0-6)
+4 | เซนเซอร์และทรานสดิวเซอร์สำหรับระบบอัจฉริยะ Sensors and Transducers for Intelligent Systems | 3(3-0-6)
+5 | ปัญญาประดิษฐ์สำหรับเกษตรแม่นยำและฟาร์มอัจฉริยะ  [PLO1] AI for Precision Agriculture and Smart Farming | 3(3-0-6)
+6 | PLC SCADA และระบบควบคุมอัตโนมัติสำหรับโรงงานเกษตรอุตสาหกรรม  [PLO2] PLC, SCADA and Automation Control for Agro-Industrial Plants | 3(2-2-5)
+[/TABLE]
+ภาคเรียนที่ 2   (21 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | ระบบนำทางอัตโนมัติและ AI สำหรับเครื่องจักรการเกษตร  [PLO1] Autonomous Navigation and AI for Agricultural Machinery | 3(2-2-5)
+2 | ระบบชลประทานอัจฉริยะและการจัดการน้ำด้วย AI  [PLO1] Smart Irrigation and AI-based Water Management | 3(2-2-5)
+3 | เทคโนโลยีการผลิตอ้อยและน้ำตาลสำหรับวิศวกร AI  [PLO2] Sugarcane and Sugar Production Technology for AI Engineers | 3(2-2-5)
+4 | เทคโนโลยีการผลิตมันสำปะหลังและแป้งสำหรับวิศวกร AI  [PLO2] Cassava and Starch Production Technology for AI Engineers | 3(2-2-5)
+5 | เทคโนโลยีโรงสีข้าวและการแปรรูปข้าวสำหรับวิศวกร AI  [PLO2] Rice Mill and Rice Processing Technology for AI Engineers | 3(2-2-5)
+6 | Deep Learning และโครงข่ายประสาทเทียมขั้นสูง  [PLO3] Deep Learning and Advanced Neural Networks | 3(3-0-6)
+7 | วิชาศึกษาทั่วไป 6 General Education 6 | 3(3-0-6)
+[/TABLE]
+ชั้นปีที่ 4  —  วิชาแกน PLO เพิ่มเติม + วิชาชีพเลือก + โครงงาน + สหกิจ
+ภาคเรียนที่ 1   (22 นก.)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | ปศุสัตว์อัจฉริยะและ AI สำหรับการจัดการฟาร์มสัตว์  [PLO1] Smart Livestock and AI for Animal Farm Management | 3(2-2-5)
+2 | อากาศยานไร้คนขับและการวิเคราะห์ภาพมัลติสเปกตรัมด้วย AI  [PLO1] UAV and AI Multispectral Image Analysis | 3(2-2-5)
+3 | AI สำหรับการตรวจสอบคุณภาพและควบคุมการผลิตในโรงงาน  [PLO2] AI for Quality Inspection and Production Control in Factories | 3(2-2-5)
+4 | Digital Twin และ Smart Factory สำหรับโรงงานเกษตรอุตสาหกรรม  [PLO2] Digital Twin and Smart Factory for Agro-Industrial Plants | 3(2-2-5)
+5 | การประมวลผลภาษาธรรมชาติและ Generative AI  [PLO3] Natural Language Processing and Generative AI | 3(3-0-6)
+6 | MLOps และการ Deploy ระบบ AI สู่การผลิต  [PLO3] MLOps and AI System Deployment to Production | 3(2-2-5)
+7 | โครงงานวิศวกรรม AI และระบบอัจฉริยะ AI and Intelligent Systems Engineering Project | 3(1-4-3)
+8 | การเตรียมความพร้อมสหกิจศึกษา Preparation for Co-operative Education | 1(0-2-1)
+[/TABLE]
+ภาคเรียนที่ 2   (6 นก. — สหกิจศึกษา)
+[TABLE]
+# | รายวิชา / Course | หน่วยกิต
+1 | สหกิจศึกษาทางวิศวกรรม AI และระบบอัจฉริยะ Co-operative Education in AI and Intelligent Systems Engineering | 6(0-40-0)
+[/TABLE]
+วิชาชีพเลือกเชิงลึก — เลือกเรียนเพิ่มตาม PLO ที่สนใจ (ในภาคเรียนที่ 4/1)
+[TABLE]
+PLO1 — เกษตรอัจฉริยะ | PLO2 — อุตสาหกรรม | PLO3 — นวัตกรรม
+• ปัญญาประดิษฐ์ในการจัดการการผลิตข้าวครบวงจร • AI สำหรับการปลูกและเก็บเกี่ยวอ้อยแม่นยำ • AI สำหรับการปลูกและเก็บเกี่ยวมันสำปะหลังแม่นยำ • หุ่นยนต์อัจฉริยะสำหรับเก็บเกี่ยวผลผลิต • วิศวกรรมการอบแห้งและเก็บรักษาผลผลิตเกษตร | • AI สำหรับกระบวนการหีบอ้อยและผลิตน้ำตาล • ระบบ Cogeneration และพลังงานชีวมวล • AI สกัดและควบคุมคุณภาพแป้งมันสำปะหลัง • AI กระบวนการสีข้าวและ QC โรงสีอัจฉริยะ • วางผังโรงงานอัจฉริยะและจัดการสายการผลิต | • การสร้างและบริหาร AI Startup • Edge AI และการประมวลผลบน Embedded • AI สำหรับ Smart City • จริยธรรม AI และกฎหมายเทคโนโลยีอัจฉริยะ • ระเบียบวิธีวิจัยทางวิศวกรรมปัญญาประดิษฐ์
+[/TABLE]

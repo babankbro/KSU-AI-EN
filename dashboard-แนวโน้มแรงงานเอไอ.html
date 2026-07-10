@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard: แนวโน้มการเติบโตแรงงาน AI ↔ หลักสูตรวิศวกรรมปัญญาประดิษฐ์ ม.กาฬสินธุ์</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Prompt:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0f172a;
+    --bg2:#111c34;
+    --panel:#ffffff;
+    --panel-soft:#f8fafc;
+    --ink:#0f172a;
+    --muted:#64748b;
+    --line:#e2e8f0;
+    --brand:#2563eb;
+    --brand2:#7c3aed;
+    --t1:#16a34a;      /* Track 1 - เกษตร */
+    --t1-soft:#dcfce7;
+    --t2:#0284c7;      /* Track 2 - อุตสาหกรรม */
+    --t2-soft:#e0f2fe;
+    --t3:#7c3aed;      /* Track 3 - นวัตกรรม */
+    --t3-soft:#ede9fe;
+    --warn:#dc2626;
+    --warn-soft:#fee2e2;
+    --ok:#16a34a;
+    --shadow:0 1px 2px rgba(15,23,42,.06),0 8px 24px rgba(15,23,42,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:'Sarabun',system-ui,-apple-system,sans-serif;
+    color:var(--ink);background:#eef2f7;line-height:1.55;
+  }
+  h1,h2,h3,.display{font-family:'Prompt','Sarabun',sans-serif}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 22px}
+
+  /* ---------- HEADER ---------- */
+  header{
+    background:radial-gradient(1200px 400px at 80% -10%,#3b2d8f 0%,transparent 60%),
+               linear-gradient(135deg,#0f172a 0%,#1e293b 55%,#312e81 100%);
+    color:#fff;padding:46px 0 40px;position:relative;overflow:hidden;
+  }
+  header::after{content:"";position:absolute;inset:0;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 39h40M39 0v40' stroke='%23ffffff' stroke-opacity='.04' /%3E%3C/svg%3E");}
+  header .wrap{position:relative;z-index:1}
+  .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:13px;letter-spacing:.5px;
+    text-transform:uppercase;color:#c7d2fe;background:rgba(99,102,241,.15);
+    border:1px solid rgba(165,180,252,.3);padding:5px 12px;border-radius:999px}
+  h1{font-size:30px;line-height:1.25;margin:16px 0 8px;font-weight:800}
+  h1 .hl{background:linear-gradient(90deg,#a5b4fc,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:#cbd5e1;max-width:880px;font-size:15.5px}
+  .src-line{margin-top:14px;font-size:13px;color:#94a3b8}
+  .src-line b{color:#e2e8f0}
+
+  /* ---------- SECTION ---------- */
+  section{padding:38px 0}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+  .sec-head h2{font-size:22px;margin:0}
+  .sec-num{font-family:'Prompt';font-weight:800;font-size:14px;color:#fff;background:var(--brand);
+    width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:0 0 auto}
+  .sec-desc{color:var(--muted);margin:4px 0 22px;max-width:900px;font-size:14.5px}
+
+  /* ---------- KPI ---------- */
+  .kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .kpi .bar{position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--brand)}
+  .kpi .num{font-family:'Prompt';font-weight:800;font-size:30px;line-height:1.05;letter-spacing:-.5px}
+  .kpi .unit{font-size:14px;font-weight:600;color:var(--muted);margin-left:3px}
+  .kpi .lbl{font-size:13.5px;color:var(--ink);font-weight:600;margin-top:6px}
+  .kpi .meta{font-size:12px;color:var(--muted);margin-top:4px}
+  .kpi.k-net .bar{background:var(--ok)} .kpi.k-net .num{color:var(--ok)}
+  .kpi.k-gap .bar{background:var(--warn)} .kpi.k-gap .num{color:var(--warn)}
+  .kpi.k-mil .bar{background:var(--brand2)} .kpi.k-mil .num{color:var(--brand2)}
+  .kpi.k-tal .bar{background:#d97706} .kpi.k-tal .num{color:#d97706}
+  .kpi.k-adopt .bar{background:var(--t2)} .kpi.k-adopt .num{color:var(--t2)}
+
+  /* ---------- CARDS / CHARTS ---------- */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 4px;font-size:17px}
+  .card .cap{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .chart-box{position:relative;height:300px}
+  .chart-box.tall{height:340px}
+  .note{font-size:12.5px;color:var(--muted);margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+
+  /* ---------- TRACK CARDS ---------- */
+  .track{border-radius:18px;padding:0;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .track .top{padding:18px 20px;color:#fff}
+  .track.t1 .top{background:linear-gradient(135deg,#15803d,#22c55e)}
+  .track.t2 .top{background:linear-gradient(135deg,#075985,#0ea5e9)}
+  .track.t3 .top{background:linear-gradient(135deg,#5b21b6,#8b5cf6)}
+  .track .tag{font-size:12px;font-weight:700;letter-spacing:.5px;opacity:.9;text-transform:uppercase}
+  .track .tt{font-family:'Prompt';font-weight:700;font-size:18px;margin:4px 0 2px}
+  .track .tt-th{font-size:13.5px;opacity:.92}
+  .track .body{padding:18px 20px;display:flex;flex-direction:column;gap:14px;flex:1}
+  .stat-row{display:flex;gap:10px;align-items:flex-start}
+  .stat-row .v{font-family:'Prompt';font-weight:800;font-size:22px;line-height:1}
+  .t1 .v{color:var(--t1)} .t2 .v{color:var(--t2)} .t3 .v{color:var(--t3)}
+  .stat-row .d{font-size:13px;color:var(--ink)}
+  .stat-row .d small{color:var(--muted);display:block;font-size:11.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:11.5px;padding:4px 9px;border-radius:999px;font-weight:600;border:1px solid}
+  .t1 .chip{background:var(--t1-soft);color:#14532d;border-color:#bbf7d0}
+  .t2 .chip{background:var(--t2-soft);color:#0c4a6e;border-color:#bae6fd}
+  .t3 .chip{background:var(--t3-soft);color:#4c1d95;border-color:#ddd6fe}
+  .careers{font-size:12.5px;color:var(--muted)}
+  .careers b{color:var(--ink);font-weight:600}
+  .demand-pill{margin-top:auto;display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;
+    padding:7px 12px;border-radius:10px;align-self:flex-start}
+  .t1 .demand-pill{background:var(--t1-soft);color:#14532d}
+  .t2 .demand-pill{background:var(--t2-soft);color:#0c4a6e}
+  .t3 .demand-pill{background:var(--t3-soft);color:#4c1d95}
+
+  /* ---------- TABLE ---------- */
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:'Prompt';font-weight:600;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.3px;background:var(--panel-soft)}
+  tbody tr:hover{background:#f9fafb}
+  .skill-tags span{display:inline-block;background:#f1f5f9;border:1px solid var(--line);border-radius:6px;padding:2px 7px;margin:2px 3px 2px 0;font-size:11.5px;color:#334155}
+  .pl{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;color:#fff}
+  .pl.p1{background:var(--t1)} .pl.p2{background:var(--t2)} .pl.p3{background:var(--t3)}
+
+  /* ---------- CURRENT vs FUTURE ---------- */
+  .cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+  .cf-col{padding:22px 24px}
+  .cf-col.now{background:#fff}
+  .cf-col.future{background:linear-gradient(180deg,#f5f3ff,#eef2ff)}
+  .cf-col h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:0 0 14px}
+  .cf-col h3 .dot{width:10px;height:10px;border-radius:50%}
+  .now h3 .dot{background:var(--muted)} .future h3 .dot{background:var(--brand2)}
+  .cf-item{margin-bottom:13px}
+  .cf-item .big{font-family:'Prompt';font-weight:800;font-size:19px}
+  .now .cf-item .big{color:#475569}.future .cf-item .big{color:var(--brand2)}
+  .cf-item .t{font-size:13px;color:var(--ink)}
+  .cf-item .t small{display:block;color:var(--muted);font-size:11.5px}
+
+  /* ---------- LOCAL ---------- */
+  .local-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+  .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mini{background:var(--panel-soft);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .mini .v{font-family:'Prompt';font-weight:800;font-size:24px;color:var(--t1)}
+  .mini .l{font-size:12.5px;color:var(--muted);margin-top:3px}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--bg);color:#cbd5e1;padding:34px 0 44px;margin-top:30px;font-size:13px}
+  footer h4{font-family:'Prompt';color:#fff;margin:0 0 12px;font-size:15px}
+  .src-cols{columns:2;column-gap:40px}
+  .src-cols a{color:#93c5fd;text-decoration:none}
+  .src-cols li{margin-bottom:7px;break-inside:avoid}
+  .legend-tracks{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:18px;font-size:13px}
+  .legend-tracks span{display:inline-flex;align-items:center;gap:7px;font-weight:600}
+  .legend-tracks i{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+  @media (max-width:1080px){
+    .kpi-grid{grid-template-columns:repeat(2,1fr)}
+    .grid3{grid-template-columns:1fr}
+    .grid2,.cf-grid,.local-grid{grid-template-columns:1fr}
+    .src-cols{columns:1}
+  }
+  @media print{
+    body{background:#fff}
+    .card,.kpi,.track,.cf-grid{box-shadow:none}
+    header{background:#1e293b !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap">
+    <span class="eyebrow">📊 Labor-Market Evidence Dashboard</span>
+    <h1>การเติบโตของแรงงาน AI <span class="hl">ปัจจุบัน &amp; อนาคต</span><br>สนับสนุนหลักสูตรวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ</h1>
+    <p class="sub">เปรียบเทียบข้อมูลแนวโน้มตลาดแรงงานระดับโลก → ประเทศไทย → จังหวัดกาฬสินธุ์ และเชื่อมโยงกับ 3 กลุ่มความเชี่ยวชาญ (Tracks/PLOs) ของหลักสูตร (ปรับปรุง พ.ศ. 2570) มหาวิทยาลัยกาฬสินธุ์</p>
+    <p class="src-line">แหล่งข้อมูลหลัก: <b>รายงานการวิจัยเชิงลึก — ยุทธศาสตร์การพัฒนากำลังคนฯ</b> · สังเคราะห์จาก WEF Future of Jobs 2025 · ManpowerGroup 2026 · สอวช. (NXPO) · depa · McKinsey · แผนปฏิบัติการ AI แห่งชาติ พ.ศ. 2565–2570</p>
+  </div>
+</header>
+
+<!-- ============ KPI ============ -->
+<section style="padding-top:30px">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">1</span><h2>ตัวเลขชี้วัดสำคัญ (Key Signals)</h2></div>
+    <p class="sec-desc">สัญญาณเชิงปริมาณที่ยืนยันว่าความต้องการกำลังคนด้าน AI กำลังเติบโตทั้งในระดับโลกและในประเทศไทย — เป็นเหตุผลเชิงประจักษ์ของการเปิด/ปรับปรุงหลักสูตร</p>
+    <div class="kpi-grid">
+      <div class="kpi k-net">
+        <div class="bar"></div>
+        <div class="num" data-count="78" data-suffix=" ล้าน">0</div>
+        <div class="lbl">ตำแหน่งงานเพิ่มสุทธิทั่วโลก</div>
+        <div class="meta">สร้างใหม่ 170 ล้าน − หายไป 92 ล้าน ภายในปี 2030 (WEF)</div>
+      </div>
+      <div class="kpi k-mil">
+        <div class="bar"></div>
+        <div class="num" data-count="1" data-suffix=" ล้าน+">0</div>
+        <div class="lbl">ความต้องการกำลังคนทักษะสูง (ไทย)</div>
+        <div class="meta">10 อุตสาหกรรมเป้าหมาย ภายใน 5 ปี (พ.ศ. 2568–2572, สอวช.)</div>
+      </div>
+      <div class="kpi k-gap">
+        <div class="bar"></div>
+        <div class="num" data-count="75000" data-suffix="/ปี">0</div>
+        <div class="lbl">ช่องว่างกำลังคนดิจิทัล (ไทย)</div>
+        <div class="meta">ต้องการ 100,000 − ผลิตได้ 25,000 ต่อปี (depa)</div>
+      </div>
+      <div class="kpi k-tal">
+        <div class="bar"></div>
+        <div class="num" data-count="72" data-suffix="%">0</div>
+        <div class="lbl">นายจ้างหาคนทักษะตรงไม่ได้</div>
+        <div class="meta">“ทักษะ AI” ขึ้นเป็นทักษะหายากอันดับ 1 ของโลก (ManpowerGroup 2026)</div>
+      </div>
+      <div class="kpi k-adopt">
+        <div class="bar"></div>
+        <div class="num" data-count="71.8" data-suffix="%">0</div>
+        <div class="lbl">องค์กรไทยใช้/วางแผนใช้ AI</div>
+        <div class="meta">86% ขององค์กรทั่วโลกคาดนำ AI/Big Data มาใช้ (WEF)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOBAL ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">2</span><h2>ภาพรวมระดับโลก — การสร้าง/ทำลายตำแหน่งงาน</h2></div>
+    <p class="sec-desc">รายงาน WEF Future of Jobs สะท้อน “การทำลายล้างเชิงสร้างสรรค์ (Creative Destruction)”: งานเดิมหายไป แต่งานใหม่ที่ขับเคลื่อนด้วยเทคโนโลยีเกิดขึ้นมากกว่า โดยอาชีพที่โต “เร็วที่สุดเชิง %” คือสาย AI ส่วนที่โต “มากที่สุดเชิงจำนวน” คือแรงงานเกษตรสมัยใหม่</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>พลวัตตำแหน่งงานโลกภายในปี 2030</h3>
+        <div class="cap">หน่วย: ล้านตำแหน่ง · ที่มา WEF Future of Jobs 2025</div>
+        <div class="chart-box"><canvas id="chartGlobal"></canvas></div>
+        <div class="note">คิดเป็นการหมุนเวียนของแรงงานราว 22% ของการจ้างงานทั้งหมด · งานสร้างใหม่ ≈ 14% ของการจ้างงานปัจจุบัน</div>
+      </div>
+      <div class="card">
+        <h3>อาชีพ/ทักษะที่ความต้องการเติบโตเร็ว</h3>
+        <div class="cap">เปรียบเทียบสัญญาณการเติบโต และ Track ของหลักสูตรที่รองรับ</div>
+        <div class="chart-box"><canvas id="chartGrowth"></canvas></div>
+        <div class="note">แรงงานเกษตรสมัยใหม่ +34 ล้านตำแหน่ง (โตเชิงจำนวนสูงสุด) · สาย AI/Big Data/FinTech โตเชิง % สูงสุด</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THAILAND DEMAND vs SUPPLY ============ -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">3</span><h2>ประเทศไทย — อุปสงค์ &gt; อุปทาน อย่างมีนัยสำคัญ</h2></div>
+    <p class="sec-desc">ช่องว่างกำลังคนดิจิทัลของไทยกว้างถึง 75,000 อัตรา/ปี ขณะที่ตำแหน่งสาย AI กลายเป็นงานค่าตอบแทนสูงสุด สะท้อนภาวะขาดแคลนเชิงโครงสร้างที่หลักสูตรเข้ามาอุดช่องว่าง</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>กำลังคนดิจิทัล: ความต้องการ vs การผลิตได้ (ต่อปี)</h3>
+        <div class="cap">ที่มา: สำนักงานส่งเสริมเศรษฐกิจดิจิทัล (depa)</div>
+        <div class="chart-box"><canvas id="chartDemand"></canvas></div>
+        <div class="note">ระบบการศึกษาผลิตบัณฑิตได้เพียง 25% ของความต้องการ → รัฐออกมาตรการ Global Digital Talent Visa &amp; Thailand Plus Package (หักภาษี 2.5 เท่า)</div>
+      </div>
+      <div class="card">
+        <h3>ตำแหน่งงาน AI ที่ตลาดไทยต้องการสูง</h3>
+        <div class="cap">ระดับความต้องการ (ประเมินจากรายงาน) · เชื่อมโยง Track</div>
+        <div class="chart-box"><canvas id="chartThaiJobs"></canvas></div>
+        <div class="note">วิศวกร AI ระดับกลางในไทยมีรายได้ราว 2,000–3,000 USD/เดือน — สูงมากเทียบค่าเฉลี่ยประเทศ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 TRACKS MAPPING ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">4</span><h2>เชื่อมโยง 3 Tracks / PLOs ↔ ความต้องการตลาดแรงงาน</h2></div>
+    <p class="sec-desc">หัวใจของหลักสูตรคือ <b>Constructive Alignment</b> — ออกแบบให้แต่ละ PLO ตรงกับเส้นทางอาชีพและหลักฐานความต้องการแรงงานจริง ตั้งแต่ระดับท้องถิ่นถึงระดับโลก</p>
+    <div class="grid3">
+
+      <!-- Track 1 -->
+      <div class="track t1">
+        <div class="top">
+          <div class="tag">Track 1 · PLO1</div>
+          <div class="tt">Smart Agriculture Engineering</div>
+          <div class="tt-th">วิศวกรรมเกษตรอัจฉริยะ</div>
+        </div>
+        <div class="body">
+          <div class="stat-row"><div class="v">+34M</div><div class="d">ความต้องการแรงงานเกษตรสมัยใหม่ทั่วโลก<small>โตเชิงจำนวนสูงสุด ภายในปี 2030 (WEF)</small></div></div>
+          <div class="stat-row"><div class="v">53.6%</div><div class="d">พื้นที่กาฬสินธุ์เป็นเกษตรกรรม · 150,809 ครัวเรือน<small>ฐานเศรษฐกิจที่ต้องยกระดับด้วยเทคโนโลยี</small></div></div>
+          <div class="careers"><b>เส้นทางอาชีพ:</b> Smart Farming Engineer · AgTech Data Analyst · ผู้เชี่ยวชาญระบบโดรน/หุ่นยนต์เกษตร · Agri-preneur</div>
+          <div class="chips">
+            <span class="chip">เกษตรแม่นยำ</span><span class="chip">โดรน/UAV</span><span class="chip">IoT &amp; เซนเซอร์</span><span class="chip">Digital Twin เกษตร</span><span class="chip">ปศุสัตว์อัจฉริยะ</span>
+          </div>
+          <div class="demand-pill">🌱 ขับเคลื่อนด้วยวิกฤตแรงงาน + ความมั่นคงอาหาร + Reverse Brain Drain</div>
+        </div>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="track t2">
+        <div class="top">
+          <div class="tag">Track 2 · PLO2</div>
+          <div class="tt">Industrial AI Engineering</div>
+          <div class="tt-th">วิศวกรรม AI เชิงอุตสาหกรรม</div>
+        </div>
+        <div class="body">
+          <div class="stat-row"><div class="v">$36–49B</div><div class="d">มูลค่าตลาด Digital Twin โลก ปี 2026 → McKinsey ~$73.5B ในปี 2027 (โต ~60%/ปี)<small>Grand View / market research · McKinsey</small></div></div>
+          <div class="stat-row"><div class="v">−25%</div><div class="d">ลดเวลากระบวนการผลิต · ลดปัญหาคุณภาพ 30–90%<small>Industrial AI + Virtual Twin (Dassault Systèmes)</small></div></div>
+          <div class="careers"><b>เส้นทางอาชีพ:</b> Automation &amp; AI Engineer · Smart Factory Engineer · Digital Twin Specialist · นักวิเคราะห์กระบวนการผลิต</div>
+          <div class="chips">
+            <span class="chip">PLC/SCADA</span><span class="chip">Digital Twin</span><span class="chip">Predictive Maintenance</span><span class="chip">Computer Vision QC</span><span class="chip">Industrial IoT</span>
+          </div>
+          <div class="demand-pill">🏭 รองรับ Industry 4.0 + โรงงานน้ำตาล/แป้งมัน/โรงสีข้าว ในภาคอีสาน &amp; EEC</div>
+        </div>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="track t3">
+        <div class="top">
+          <div class="tag">Track 3 · PLO3</div>
+          <div class="tt">Enterprise AI Innovation</div>
+          <div class="tt-th">วิศวกรรม AI นวัตกรรมองค์กร</div>
+        </div>
+        <div class="body">
+          <div class="stat-row"><div class="v">#1</div><div class="d">“ทักษะ AI” = ทักษะหายากอันดับ 1 ของโลก<small>แซงวิศวกรรม/IT ดั้งเดิม (ManpowerGroup 2026)</small></div></div>
+          <div class="stat-row"><div class="v">สูงสุด</div><div class="d">AI/ML &amp; MLOps Engineer = สายงานค่าตอบแทนสูงสุดในไทย<small>แข่งดึงตัวโดย SCB, KBank, บริษัทเทค</small></div></div>
+          <div class="careers"><b>เส้นทางอาชีพ:</b> AI/ML Engineer · MLOps Engineer · Enterprise AI Solution Developer · LLM/Prompt Specialist</div>
+          <div class="chips">
+            <span class="chip">Deep Learning</span><span class="chip">Generative AI / LLM</span><span class="chip">MLOps</span><span class="chip">FinTech</span><span class="chip">HealthTech</span><span class="chip">Cybersecurity for AI</span>
+          </div>
+          <div class="demand-pill">🚀 อาชีพโตเร็วที่สุดเชิง % + ธุรกิจดิจิทัล/การเงิน/สุขภาพขยายตัวรวดเร็ว</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRENT vs FUTURE ============ -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">5</span><h2>เปรียบเทียบ “ปัจจุบัน” vs “อนาคต”</h2></div>
+    <p class="sec-desc">เหตุผลที่หลักสูตรต้องเน้นทักษะข้ามสายงาน + การเรียนรู้ตลอดชีวิต (Lifelong Learning / Micro-credentials): ทักษะมีอายุสั้นลง และความต้องการเปลี่ยนเร็ว</p>
+    <div class="cf-grid">
+      <div class="cf-col now">
+        <h3><span class="dot"></span> สถานการณ์ปัจจุบัน</h3>
+        <div class="cf-item"><span class="big">~100,000/ปี</span><div class="t">ความต้องการกำลังคนดิจิทัลของไทย <small>ผลิตได้จริงเพียง ~25,000/ปี</small></div></div>
+        <div class="cf-item"><span class="big">72%</span><div class="t">นายจ้างทั่วโลกหาคนทักษะตรงไม่ได้ <small>ญี่ปุ่น 84% · อินเดีย 82%</small></div></div>
+        <div class="cf-item"><span class="big">37%</span><div class="t">แรงงานรุ่นใหม่อยู่ในงานเสี่ยงถูก AI เปลี่ยนภาระงาน <small>สูงถึง 75% ในเอเชียตะวันออก</small></div></div>
+        <div class="cf-item"><span class="big">71.8%</span><div class="t">องค์กรไทยใช้/วางแผนใช้ AI แล้ว <small>NAIC จัดสรร 592 โครงการ · 1,043 ล้านบาท (2567)</small></div></div>
+      </div>
+      <div class="cf-col future">
+        <h3><span class="dot"></span> แนวโน้มอนาคต (→ 2030)</h3>
+        <div class="cf-item"><span class="big">1,000,000+</span><div class="t">กำลังคนทักษะสูงที่ไทยต้องการใน 5 ปี <small>10 อุตสาหกรรมเป้าหมาย (2568–2572)</small></div></div>
+        <div class="cf-item"><span class="big">+78 ล้าน</span><div class="t">ตำแหน่งงานเพิ่มสุทธิทั่วโลก <small>สร้าง 170M − หาย 92M</small></div></div>
+        <div class="cf-item"><span class="big">39%</span><div class="t">ทักษะแกนหลักของพนักงานจะต้องถูกปรับเปลี่ยน <small>+ ทักษะสังคม-อารมณ์ โต 26% (McKinsey)</small></div></div>
+        <div class="cf-item"><span class="big">+270,000</span><div class="t">ความต้องการแรงงาน “Green Skills” โดยเฉพาะ Gen Z <small>รองรับการเปลี่ยนผ่านสภาพภูมิอากาศ</small></div></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px">
+      <h3>⏳ ทักษะมีอายุสั้นลง — ทำไมต้องออกแบบหลักสูตรแบบยืดหยุ่น</h3>
+      <div class="cap">มุมมองความเร็วของการเปลี่ยนแปลงทักษะ (ที่มา: WEF / TDRI)</div>
+      <div class="chart-box" style="height:120px"><canvas id="chartSkillLife"></canvas></div>
+      <div class="note"><b>28%</b> ของแรงงานระดับเริ่มต้นเชื่อว่า “ทักษะปัจจุบันเกินครึ่งจะล้าสมัยภายใน 3 ปี” → ข้อเสนอ: ทำ Track Selective เป็นโมดูล/Micro-credentials เพื่อ Upskill–Reskill ตลอดชีวิต</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS TABLE ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">6</span><h2>ตำแหน่งงาน AI ที่ต้องการสูง ↔ ทักษะ ↔ PLO ที่ผลิต</h2></div>
+    <p class="sec-desc">ตารางที่ 2 จากรายงาน: ตำแหน่งงานเทคโนโลยีที่ตลาดไทยต้องการสูง พร้อมแมปกับ PLO ที่หลักสูตรออกแบบไว้รองรับโดยตรง</p>
+    <div class="legend-tracks">
+      <span><i style="background:var(--t1)"></i> PLO1 เกษตรอัจฉริยะ</span>
+      <span><i style="background:var(--t2)"></i> PLO2 อุตสาหกรรม</span>
+      <span><i style="background:var(--t3)"></i> PLO3 นวัตกรรม</span>
+    </div>
+    <div class="card" style="padding:6px 6px 0">
+      <table>
+        <thead><tr><th style="width:24%">ตำแหน่งงาน</th><th>ทักษะแกนหลักที่ต้องการ</th><th style="width:14%">PLO รองรับ</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>AI / Machine Learning Engineer</b></td>
+            <td class="skill-tags"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>MLOps</span><span>RAG</span><span>RDB/NoSQL</span></td>
+            <td><span class="pl p3">PLO3</span></td>
+          </tr>
+          <tr>
+            <td><b>Prompt Engineer / LLM Specialist</b></td>
+            <td class="skill-tags"><span>Generative AI tuning</span><span>โครงสร้างภาษา</span><span>AI Interaction Design</span></td>
+            <td><span class="pl p3">PLO3</span></td>
+          </tr>
+          <tr>
+            <td><b>Digital Twin / Smart Factory Specialist</b></td>
+            <td class="skill-tags"><span>การจำลองการผลิต</span><span>Industrial IoT</span><span>PLC/SCADA</span><span>Predictive Maintenance</span></td>
+            <td><span class="pl p2">PLO2</span></td>
+          </tr>
+          <tr>
+            <td><b>Data Engineer / Data Scientist</b></td>
+            <td class="skill-tags"><span>Data Pipeline</span><span>Big Data</span><span>สถิติ</span><span>BI: Power BI / Tableau</span></td>
+            <td><span class="pl p2">PLO2</span> <span class="pl p3">PLO3</span></td>
+          </tr>
+          <tr>
+            <td><b>Cloud Computing &amp; DevOps Engineer</b></td>
+            <td class="skill-tags"><span>AWS/GCP/Azure</span><span>Kubernetes</span><span>Docker</span><span>CI/CD</span><span>Serverless</span></td>
+            <td><span class="pl p3">PLO3</span></td>
+          </tr>
+          <tr>
+            <td><b>Smart Farming Engineer / AgTech Analyst</b></td>
+            <td class="skill-tags"><span>เกษตรแม่นยำ</span><span>โดรน/Remote Sensing</span><span>Computer Vision</span><span>IoT เกษตร</span></td>
+            <td><span class="pl p1">PLO1</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCAL CONTEXT ============ -->
+<section style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">7</span><h2>บริบทเชิงพื้นที่ — จังหวัดกาฬสินธุ์</h2></div>
+    <p class="sec-desc">ความเปราะบางของเศรษฐกิจฐานเกษตร + การเข้าสู่สังคมสูงวัย คือเหตุผลเชิงพื้นที่ที่ทำให้หลักสูตรต้องมี Track 1 เป็นแกน และดึงแรงงานทักษะสูงกลับถิ่น (Reverse Brain Drain)</p>
+    <div class="local-grid">
+      <div class="card">
+        <h3>โครงสร้างเศรษฐกิจฐานเกษตรของกาฬสินธุ์</h3>
+        <div class="cap">ที่มา: ยุทธศาสตร์การพัฒนาจังหวัดกาฬสินธุ์ พ.ศ. 2566–2570</div>
+        <div class="mini-grid">
+          <div class="mini"><div class="v">4.34 ล้านไร่</div><div class="l">พื้นที่จังหวัดทั้งหมด</div></div>
+          <div class="mini"><div class="v">53.55%</div><div class="l">เป็นพื้นที่เกษตรกรรม (2.32 ล้านไร่)</div></div>
+          <div class="mini"><div class="v">150,809</div><div class="l">ครัวเรือนเกษตรกร</div></div>
+          <div class="mini"><div class="v">~16,000฿</div><div class="l">รายได้ครัวเรือนเกษตร/เดือน (บางพื้นที่)</div></div>
+        </div>
+        <div class="note">GPP ปี 2562 = 58,617 ล้านบาท <b style="color:var(--warn)">หดตัว −1,083 ล้านบาท</b> จากปีก่อน → ต้องยกระดับด้วยเกษตรอัจฉริยะ &amp; แปรรูปมูลค่าสูง</div>
+      </div>
+      <div class="card">
+        <h3>กลไกขับเคลื่อนระดับพื้นที่</h3>
+        <div class="cap">นโยบาย + โครงสร้างพื้นฐานที่รองรับบัณฑิตของหลักสูตร</div>
+        <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.9">
+          <li>โครงการ <b>“1 ตำบล 1 ดิจิทัล (ชุมชนโดรนใจ)”</b> โดย depa → สร้างอาชีพนักบินโดรน/ช่างซ่อม/นักวิเคราะห์ข้อมูลเกษตร</li>
+          <li><b>อุทยานวิทยาศาสตร์และนวัตกรรมเกษตรอัจฉริยะ</b> ม.กาฬสินธุ์ = Sandbox ให้นักศึกษาลงพื้นที่จริง</li>
+          <li>ยุทธศาสตร์ <b>“KSU NEXT”</b> มุ่งเพิ่มนักศึกษาเป็น 6,000–8,000 คน สู่มาตรฐานสากล</li>
+          <li>เชื่อมนโยบายชาติ: แผน AI แห่งชาติ 2565–2570 · Thailand Plus Package (หักภาษี 2.5 เท่า) · Higher Education Sandbox</li>
+        </ul>
+        <div class="note">ระดับชาติ: อว. ระดม 100 มหาวิทยาลัยพัฒนา 500 หลักสูตรแห่งอนาคต เตรียมรับตำแหน่งงานใหม่ 500,000 ตำแหน่ง</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADDITIONAL RESEARCH 2026 ============ -->
+<section style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num" style="background:#0f766e">8</span><h2>🆕 งานวิจัยเพิ่มเติม &amp; ตรวจสอบยืนยัน 2026 (Verified Research)</h2></div>
+    <p class="sec-desc">ข้อมูลที่ค้นคว้าและตรวจสอบเพิ่มเติม (มิ.ย. 2569) เพื่อเสริมความแข็งแรงของหลักฐาน ทั้งด้านความขาดแคลนแรงงาน นโยบายชาติ และผลกระทบต่อบัณฑิตจบใหม่</p>
+    <div class="grid3">
+
+      <!-- ManpowerGroup -->
+      <div class="card" style="border-top:4px solid #d97706">
+        <div style="font-size:12px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.4px">ManpowerGroup · 2026 Global Talent Shortage</div>
+        <div style="font-family:'Prompt';font-weight:800;font-size:40px;color:#d97706;line-height:1;margin:8px 0 2px">72%</div>
+        <div style="font-size:13.5px;font-weight:600">นายจ้างทั่วโลกหาคนทักษะตรงไม่ได้</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px">สำรวจ 39,000 ราย ใน 41 ประเทศ</div>
+        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.8">
+          <li>🥇 <b>"ทักษะ AI" = หายากอันดับ 1 ของโลก</b> เป็นครั้งแรก (แซง IT/วิศวกรรมดั้งเดิม)</li>
+          <li>AI model/app development <b>20%</b> · AI literacy <b>19%</b></li>
+          <li>กลยุทธ์รับมืออันดับ 1: <b>Upskilling/Reskilling 27%</b></li>
+        </ul>
+        <div class="note">หนุน <b style="color:var(--t3)">PLO3 Enterprise AI</b> + ข้อเสนอ Micro-credentials</div>
+      </div>
+
+      <!-- สอวช. -->
+      <div class="card" style="border-top:4px solid var(--t3)">
+        <div style="font-size:12px;font-weight:700;color:#6d28d9;text-transform:uppercase;letter-spacing:.4px">สอวช. (NXPO) · Talent Landscape 2568–2572</div>
+        <div style="font-family:'Prompt';font-weight:800;font-size:40px;color:var(--t3);line-height:1;margin:8px 0 2px">1,000,000<span style="font-size:22px">+</span></div>
+        <div style="font-size:13.5px;font-weight:600">กำลังคนทักษะสูงที่ไทยต้องการใน 5 ปี</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px">10 อุตสาหกรรมเป้าหมาย</div>
+        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.8">
+          <li>อุตสาหกรรมที่ตรงหลักสูตร: <b>เกษตร/เทคโนโลยีชีวภาพ, แปรรูปอาหาร, ดิจิทัล, การแพทย์</b></li>
+          <li>หนุน <b>ความสอดคล้องเชิงนโยบายชาติ</b> (national alignment)</li>
+          <li>เชื่อม Thailand Plus Package (หักภาษี 2.5 เท่า)</li>
+        </ul>
+        <div class="note">หนุนทั้ง <b style="color:var(--t1)">PLO1</b> · <b style="color:var(--t2)">PLO2</b> · <b style="color:var(--t3)">PLO3</b></div>
+      </div>
+
+      <!-- WEF Entry-Level -->
+      <div class="card" style="border-top:4px solid var(--t2)">
+        <div style="font-size:12px;font-weight:700;color:#075985;text-transform:uppercase;letter-spacing:.4px">WEF × PwC · Future of Entry-Level Work 2026</div>
+        <div style="font-family:'Prompt';font-weight:800;font-size:40px;color:var(--t2);line-height:1;margin:8px 0 2px">37%</div>
+        <div style="font-size:13.5px;font-weight:600">แรงงานรุ่นใหม่อยู่ในงานเสี่ยง AI ปานกลาง–สูง</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px">กลุ่มที่บัณฑิตจบใหม่เข้าสู่ตลาด</div>
+        <ul style="margin:0;padding-left:16px;font-size:13px;line-height:1.8">
+          <li>ทักษะของงานที่ถูก AI กระทบ <b>เปลี่ยนเร็วกว่างานทั่วไป 2 เท่า</b></li>
+          <li>บัณฑิตต้องมีทักษะ <b>"สร้าง/ทำงานร่วมกับ AI"</b> ไม่ใช่ทักษะที่ AI ทดแทนได้</li>
+          <li>→ หนุน <b>project/portfolio-based learning</b></li>
+        </ul>
+        <div class="note">หนุนการออกแบบหลักสูตรเชิงปฏิบัติ + เรียนรู้ตลอดชีวิต</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;border-left:4px solid var(--warn)">
+      <h3 style="font-size:15px;margin:0 0 8px">🔎 ตรวจสอบขนาดตลาด (Market Size) &amp; ข้อแก้ไขความถูกต้อง</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13px">
+        <div style="background:var(--warn-soft);border-radius:10px;padding:12px 14px">
+          <b>⚠️ แก้ไข Digital Twin:</b> ตัวเลขเดิม "$48B ภายในปี 2026" ปรับเป็นช่วงที่รัดกุม — ตลาดโลก <b>~$36–49B (2026)</b> และ McKinsey ประเมินโต ~60%/ปี แตะ <b>~$73.5B ในปี 2027</b> (เร่ง deploy AI 60% · ลดต้นทุน 15%)
+        </div>
+        <div style="background:var(--t1-soft);border-radius:10px;padding:12px 14px">
+          <b>🌱 ตลาดเกษตรแม่นยำ (ยืนยัน Track 1):</b> Precision Farming <b>$14.77B → $26.86B</b> (2025→2030, CAGR ~12.7%) · Smart Agriculture CAGR ~10–15% — ขับเคลื่อนด้วยการขาดแคลนแรงงาน + ความมั่นคงอาหาร
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / SOURCES ============ -->
+<footer>
+  <div class="wrap">
+    <h4>แหล่งอ้างอิงหลัก (Selected References)</h4>
+    <ul class="src-cols" style="list-style:none;padding:0;margin:0">
+      <li>• WEF — <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">The Future of Jobs Report 2025</a></li>
+      <li>• WEF — <a href="https://reports.weforum.org/docs/WEF_Artificial_Intelligence_and_the_Future_of_Entry_Level_Work_2026.pdf">AI &amp; the Future of Entry-Level Work 2026</a></li>
+      <li>• ManpowerGroup — <a href="https://www.prnewswire.com/news-releases/global-talent-shortage-reaches-turning-point-as-ai-skills-claim-top-spot-302698509.html">Global Talent Shortage 2026 (AI skills #1)</a></li>
+      <li>• McKinsey — <a href="https://enterpriseskills.co.uk/hsi/future-of-work-2030-what-mckinsey-wef-and-oecd-all-agree-on/">Future of Work 2030</a></li>
+      <li>• สอวช. (NXPO) — <a href="https://www.nxpo.or.th/th/35817/">ความต้องการกำลังคนทักษะสูง 10 อุตสาหกรรม 2568–2572</a></li>
+      <li>• depa — <a href="https://www.depa.or.th/en/article-view/20231218_01">Coding for Better Life / กำลังคนดิจิทัล</a></li>
+      <li>• AI Thailand — <a href="https://www.ai.in.th/wp-content/uploads/2022/12/20220726-AI.pdf">แผนปฏิบัติการ AI แห่งชาติ พ.ศ. 2565–2570</a></li>
+      <li>• TDRI — <a href="https://tdri.or.th/2025/06/national-ai-actionplan-3challenges-ahead-article/">3 ความท้าทายแผน AI แห่งชาติ</a></li>
+      <li>• MTEC/สวทช. — <a href="https://www.mtec.or.th/mtec-nstda-ksl-group/">Digital Twin โรงงานน้ำตาล KSL Group</a></li>
+      <li>• อว. — <a href="http://www.ttc.ops.go.th/?p=17669">100 ม. / 500 หลักสูตรอนาคต / 5 แสนตำแหน่ง</a></li>
+    </ul>
+    <p style="margin-top:20px;color:#64748b;font-size:12px">จัดทำเป็น Dashboard สังเคราะห์จาก “รายงานการวิจัยเชิงลึก: ยุทธศาสตร์การพัฒนากำลังคนและหลักสูตรอุดมศึกษาเพื่อรองรับพลวัตตลาดแรงงานยุคปัญญาประดิษฐ์ฯ” · กรณีศึกษาหลักสูตร วศ.บ. วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ (ปรับปรุง พ.ศ. 2570) มหาวิทยาลัยกาฬสินธุ์ · สร้างเมื่อ 27 มิ.ย. 2569 · ปรับปรุงข้อมูล (Verified Research + แก้ตัวเลข Digital Twin) 27 มิ.ย. 2569</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- Chart.js global ---------- */
+Chart.defaults.font.family = "'Sarabun', system-ui, sans-serif";
+Chart.defaults.font.size = 13;
+Chart.defaults.color = '#475569';
+const TH = {green:'#16a34a', blue:'#0284c7', purple:'#7c3aed', warn:'#dc2626', amber:'#d97706', slate:'#94a3b8'};
+const moneyfmt = v => v.toLocaleString('en-US');
+
+/* 2a. Global jobs flow */
+new Chart(document.getElementById('chartGlobal'), {
+  type:'bar',
+  data:{
+    labels:['สร้างใหม่','ทดแทน/หายไป','เพิ่มสุทธิ'],
+    datasets:[{
+      data:[170,-92,78],
+      backgroundColor:[TH.green,TH.warn,'#2563eb'],
+      borderRadius:8, maxBarThickness:90
+    }]
+  },
+  options:{
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ${c.raw} ล้านตำแหน่ง`}}},
+    scales:{y:{title:{display:true,text:'ล้านตำแหน่ง'},grid:{color:'#eef2f7'}},x:{grid:{display:false}}}
+  }
+});
+
+/* 2b. Growth signals */
+new Chart(document.getElementById('chartGrowth'), {
+  type:'bar',
+  data:{
+    labels:['แรงงานเกษตรสมัยใหม่','พลังงานสะอาด (Green)','ผู้เชี่ยวชาญ AI/ML','Big Data Specialist','FinTech Engineer'],
+    datasets:[{
+      label:'ดัชนีการเติบโต',
+      data:[34,34,30,28,26],
+      backgroundColor:[TH.green,TH.green,TH.purple,TH.purple,TH.purple],
+      borderRadius:7, maxBarThickness:34
+    }]
+  },
+  options:{
+    indexAxis:'y',
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>c.dataIndex<2?` +${c.raw} ล้านตำแหน่ง (เชิงจำนวน)`:` กลุ่มโตเร็วที่สุดเชิง %`}}},
+    scales:{x:{grid:{color:'#eef2f7'},title:{display:true,text:'สัญญาณการเติบโต (เขียว=เชิงจำนวน ล้าน / ม่วง=เชิง %)'}},y:{grid:{display:false}}}
+  }
+});
+
+/* 3a. Thailand demand vs supply */
+new Chart(document.getElementById('chartDemand'), {
+  type:'bar',
+  data:{
+    labels:['ความต้องการ','ผลิตได้จริง','ช่องว่าง'],
+    datasets:[{
+      data:[100000,25000,75000],
+      backgroundColor:[TH.blue,TH.slate,TH.warn],
+      borderRadius:8, maxBarThickness:90
+    }]
+  },
+  options:{
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ${moneyfmt(c.raw)} คน/ปี`}}},
+    scales:{y:{grid:{color:'#eef2f7'},title:{display:true,text:'คน/ปี'},ticks:{callback:v=>v/1000+'k'}},x:{grid:{display:false}}}
+  }
+});
+
+/* 3b. Thai AI jobs demand level */
+new Chart(document.getElementById('chartThaiJobs'), {
+  type:'bar',
+  data:{
+    labels:['AI/ML Engineer','MLOps Engineer','Data Engineer/Scientist','Digital Twin / Smart Factory','Cloud & DevOps','Smart Farming / AgTech'],
+    datasets:[{
+      data:[98,92,88,82,80,72],
+      backgroundColor:[TH.purple,TH.purple,TH.purple,TH.blue,TH.purple,TH.green],
+      borderRadius:7, maxBarThickness:30
+    }]
+  },
+  options:{
+    indexAxis:'y',
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:c=>` ระดับความต้องการ ${c.raw}/100`}}},
+    scales:{x:{max:100,grid:{color:'#eef2f7'},title:{display:true,text:'ระดับความต้องการ (สัมพัทธ์)'}},y:{grid:{display:false}}}
+  }
+});
+
+/* 5. Skill lifespan */
+new Chart(document.getElementById('chartSkillLife'), {
+  type:'bar',
+  data:{
+    labels:['ภายใน 3 ปี','ภายใน 2030'],
+    datasets:[
+      {label:'แรงงานที่มองว่าทักษะ >ครึ่งจะล้าสมัย',data:[28,null],backgroundColor:TH.warn,borderRadius:6,maxBarThickness:26},
+      {label:'องค์กรคาดว่าทักษะแกนหลักต้องเปลี่ยน',data:[null,39],backgroundColor:TH.amber,borderRadius:6,maxBarThickness:26}
+    ]
+  },
+  options:{
+    indexAxis:'y',
+    plugins:{legend:{position:'bottom',labels:{boxWidth:12,font:{size:11.5}}},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.raw}%`}}},
+    scales:{x:{max:60,grid:{color:'#eef2f7'},ticks:{callback:v=>v+'%'}},y:{grid:{display:false},stacked:true}}
+  }
+});
+
+/* ---------- Count-up KPI ---------- */
+const fmtCount = (el,target,suffix)=>{
+  const dec = (target % 1 !== 0) ? 1 : 0;
+  const dur = 1300, t0 = performance.now();
+  const step = now=>{
+    const p = Math.min((now-t0)/dur,1);
+    const e = 1-Math.pow(1-p,3);
+    let val = target*e;
+    let out = dec? val.toFixed(1) : Math.round(val).toLocaleString('en-US');
+    el.firstChild ? el.childNodes[0].nodeValue = out : el.textContent = out;
+    el.innerHTML = out + (suffix?`<span class="unit">${suffix}</span>`:'');
+    if(p<1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      const el = en.target;
+      fmtCount(el, parseFloat(el.dataset.count), el.dataset.suffix||'');
+      io.unobserve(el);
+    }
+  });
+},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
