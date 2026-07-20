@@ -34,6 +34,7 @@ Mapping: Needs ↔ GA ↔ PLO ครบทุกข้อ
 5. [[05_Mapping_Tables|⑤ ตารางเชื่อมโยง (Mapping): Needs ↔ GA ↔ PLO]]
 6. [[06_OBE_References|⑥ เอกสารอ้างอิง]]
 7. [[07_Curriculum_PLO_Mapping|⑦ Curriculum Mapping — รายวิชา ↔ PLO ↔ Skills]]
+8. [[08_Study_Plan_and_Dependencies|⑧ Dependencies · YLO · แผนการเรียน 4 ชั้นปี]]
 
 ## ข้อสรุปสำคัญ
 
