@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard หลักสูตรวิศวกรรม AI และระบบอัจฉริยะ (พ.ศ. 2570)</title>
+<style>
+  :root{
+    --navy:#16335c; --navy2:#1f4a86; --gold:#c9971b; --ink:#1a2230; --muted:#5b6675;
+    --line:#e2e7ee; --bg:#f4f6fa; --card:#ffffff;
+    --y1:#2f6fb0; --y1bg:#e8f1fb; --y2:#2f9e6b; --y2bg:#e6f5ee;
+    --y3:#dd8a1e; --y3bg:#fdf1df; --y4:#c1466b; --y4bg:#fce7ee;
+    --ge:#7a8595; --gebg:#eef0f4;
+    --t1:#2f9e6b; --t2:#dd8a1e; --t3:#7b57c9;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--ink:#e8edf5;--muted:#9aa6b6;--line:#2a3547;--bg:#0f1622;--card:#18212f;
+      --y1bg:#12283f;--y2bg:#12301f;--y3bg:#33260f;--y4bg:#331523;--gebg:#20272f;--navy:#9fc0ec;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Noto Sans Thai","Sarabun","Segoe UI",Tahoma,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px}
+  header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:22px 26px}
+  header h1{margin:0 0 4px;font-size:1.35rem;font-weight:700}
+  header .sub{opacity:.9;font-size:.9rem}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:4px 10px;border-radius:999px;font-size:.8rem;font-weight:600}
+  .chip b{color:var(--gold)}
+  nav.tabs{position:sticky;top:0;z-index:20;display:flex;gap:2px;background:var(--card);
+    border-bottom:1px solid var(--line);padding:0 12px;overflow-x:auto}
+  nav.tabs button{border:0;background:none;color:var(--muted);font:inherit;font-weight:700;
+    padding:14px 16px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+  nav.tabs button.active{color:var(--navy);border-bottom-color:var(--gold)}
+  main{max-width:1240px;margin:0 auto;padding:20px 16px 60px}
+  .panel{display:none;animation:fade .25s}
+  .panel.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+  h2.sec{font-size:1.05rem;margin:6px 0 14px;color:var(--navy);border-left:4px solid var(--gold);padding-left:10px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted);margin-bottom:16px;align-items:center}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:14px;height:14px;border-radius:4px;display:inline-block}
+  .dep{font-family:monospace;font-weight:700}
+  /* year grid */
+  .years{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:960px){.years{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.years{grid-template-columns:1fr}}
+  .yr{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+  .yr .cap{padding:12px 14px;color:#fff;font-weight:700}
+  .yr.y1 .cap{background:var(--y1)} .yr.y2 .cap{background:var(--y2)}
+  .yr.y3 .cap{background:var(--y3)} .yr.y4 .cap{background:var(--y4)}
+  .yr .cap small{display:block;font-weight:500;opacity:.92;font-size:.78rem;margin-top:2px}
+  .ylo{padding:10px 14px;font-size:.82rem;border-bottom:1px dashed var(--line);background:var(--card)}
+  .ylo .plo{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px}
+  .plobadge{font-size:.68rem;font-weight:700;padding:1px 6px;border-radius:5px;background:var(--gebg);color:var(--muted)}
+  .plobadge.I{background:#e8f1fb;color:#2f6fb0} .plobadge.R{background:#fdf1df;color:#b8760f}
+  .plobadge.M{background:#e6f5ee;color:#1f7d52}
+  @media (prefers-color-scheme:dark){.plobadge.I,.plobadge.R,.plobadge.M{background:#20303f}}
+  .courselist{padding:10px}
+  .cc{display:flex;gap:8px;align-items:baseline;padding:7px 9px;border-radius:9px;margin-bottom:5px;
+    cursor:pointer;border:1px solid transparent}
+  .cc:hover{background:var(--bg);border-color:var(--line)}
+  .cc .code{font-family:monospace;font-size:.72rem;color:var(--muted);min-width:74px}
+  .cc .nm{font-weight:600;font-size:.86rem;flex:1}
+  .cc .cr{font-size:.72rem;color:var(--muted)}
+  .cc .bar{width:4px;align-self:stretch;border-radius:3px;background:var(--ge)}
+  .cc.g-eng .bar{background:var(--y1)} .cc.g-ai .bar{background:var(--y2)}
+  .cc.g-track .bar{background:var(--y3)} .cc.g-elec .bar{background:var(--t3)}
+  .cc.g-proj .bar{background:var(--y4)} .cc.g-field .bar{background:#b8455f}
+  .cc.g-ge .bar{background:var(--ge)}
+  /* curriculum graph */
+  .graph-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 12px}
+  .graph-toolbar button{border:1px solid var(--line);background:var(--card);color:var(--muted);
+    border-radius:999px;padding:7px 13px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+  .graph-toolbar button.on{background:var(--navy2);border-color:var(--navy2);color:#fff}
+  .graph-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  .graph{min-width:1160px;padding:12px}
+  .graph-years,.graph-sems,.graph-row{display:grid;grid-template-columns:150px repeat(8,minmax(112px,1fr));gap:6px}
+  .graph-years{margin-bottom:6px}.graph-years .blank{grid-column:1}
+  .graph-y{border-radius:9px;padding:8px;text-align:center;color:#fff;font-weight:800}
+  .graph-y.y1{grid-column:2/4;background:var(--y1)}.graph-y.y2{grid-column:4/6;background:var(--y2)}
+  .graph-y.y3{grid-column:6/8;background:var(--y3)}.graph-y.y4{grid-column:8/10;background:var(--y4)}
+  .graph-y small{display:block;font-size:.69rem;font-weight:600;opacity:.9}
+  .graph-sems{margin-bottom:7px;color:var(--muted);font-size:.72rem;text-align:center;font-weight:700}
+  .graph-sems div:not(:first-child){padding:3px;border-bottom:2px solid var(--line)}
+  .graph-row{border-top:1px solid var(--line);padding:7px 0;min-height:70px;align-items:stretch}
+  .lane{font-weight:800;font-size:.78rem;padding:8px;color:var(--navy);display:flex;align-items:center}
+  .gcell{background:var(--bg);border-radius:9px;padding:5px;position:relative;transition:.2s}
+  .gcell:not(:last-child)::after{content:"›";position:absolute;right:-6px;top:24px;color:var(--muted);font-size:17px;z-index:2}
+  .gnode{display:block;border:1px solid var(--line);background:var(--card);border-radius:7px;padding:4px 5px;
+    margin-bottom:4px;font-size:.69rem;font-weight:700;cursor:pointer;white-space:normal}
+  .gnode:hover{border-color:var(--gold);box-shadow:0 2px 7px rgba(0,0,0,.09)}
+  .gnode em{display:block;color:var(--muted);font-style:normal;font-family:monospace;font-size:.62rem;font-weight:500}
+  .gnode.eng{border-left:4px solid var(--y1)}.gnode.ai{border-left:4px solid var(--y2)}
+  .gnode.track{border-left:4px solid var(--y3)}.gnode.proj,.gnode.field{border-left:4px solid var(--y4)}
+  .gnode.ge{border-left:4px solid var(--ge)}.gnode.elec{border-left:4px solid var(--t3)}
+  .gslot{opacity:.75;border-style:dashed}.graph .dim{opacity:.16;filter:grayscale(1)}
+  @media(max-width:620px){.graph-toolbar{position:sticky;left:0}.graph{min-width:1050px}}
+  /* plan */
+  .semgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:820px){.semgrid{grid-template-columns:1fr}}
+  .sem{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+  .sem h3{margin:0;padding:11px 14px;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+  .sem.y1 h3{background:var(--y1bg)} .sem.y2 h3{background:var(--y2bg)}
+  .sem.y3 h3{background:var(--y3bg)} .sem.y4 h3{background:var(--y4bg)}
+  .sem h3 .tot{font-size:.78rem;font-weight:700;color:var(--muted)}
+  .sem table{width:100%;border-collapse:collapse;font-size:.83rem}
+  .sem td{padding:6px 14px;border-top:1px solid var(--line)}
+  .sem td.c{font-family:monospace;font-size:.72rem;color:var(--muted);white-space:nowrap}
+  .sem td.k{text-align:right;color:var(--muted);white-space:nowrap}
+  .planbar{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 18px;font-size:.85rem}
+  .planbar .b{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 12px}
+  .planbar .b b{color:var(--navy);font-size:1.05rem}
+  /* desc */
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+  .toolbar input{flex:1;min-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+    background:var(--card);color:var(--ink);font:inherit}
+  .fbtn{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;
+    padding:7px 13px;font:inherit;font-size:.82rem;font-weight:600;cursor:pointer}
+  .fbtn.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .course{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px;overflow:hidden}
+  .course summary{padding:12px 14px;cursor:pointer;display:flex;gap:10px;align-items:baseline;list-style:none}
+  .course summary::-webkit-details-marker{display:none}
+  .course summary .code{font-family:monospace;font-size:.74rem;color:#fff;background:var(--muted);
+    padding:2px 7px;border-radius:6px;white-space:nowrap}
+  .course.g-eng summary .code{background:var(--y1)} .course.g-ai summary .code{background:var(--y2)}
+  .course.g-track summary .code{background:var(--y3)} .course.g-elec summary .code{background:var(--t3)}
+  .course.g-proj summary .code{background:var(--y4)} .course.g-field summary .code{background:#b8455f}
+  .course summary .nm{font-weight:700;flex:1}
+  .course summary .en{color:var(--muted);font-size:.82rem;font-weight:400}
+  .course summary .cr{font-size:.75rem;color:var(--muted);white-space:nowrap}
+  .course .body{padding:0 14px 14px;border-top:1px solid var(--line)}
+  .course .meta{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+  .tag{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+  .tag.plo{background:#e8f1fb;color:#2f6fb0;border:0}
+  @media (prefers-color-scheme:dark){.tag.plo{background:#20303f}}
+  .course .desc{font-size:.86rem;color:var(--ink);margin-top:4px}
+  .course .prq{font-size:.78rem;color:var(--muted);margin-top:8px}
+  .note{background:var(--gebg);border-radius:10px;padding:10px 14px;font-size:.82rem;color:var(--muted);margin-bottom:16px}
+  .warn{border-left:4px solid var(--gold)}
+  footer{text-align:center;color:var(--muted);font-size:.78rem;padding:24px}
+  .count{color:var(--muted);font-size:.8rem;margin-left:auto}
+</style>
+</head>
+<body>
+<header>
+  <h1>หลักสูตรวิศวกรรมศาสตรบัณฑิต — วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ</h1>
+  <div class="sub">มหาวิทยาลัยกาฬสินธุ์ · หลักสูตรปรับปรุง พ.ศ. 2570 · Dashboard นำเสนอโครงสร้างหลักสูตร</div>
+  <div class="chips">
+    <span class="chip">รวม <b>130</b> หน่วยกิต</span>
+    <span class="chip">แกนบังคับ <b>32</b> วิชา</span>
+    <span class="chip">เลือกชีพ (pool) <b>29</b> วิชา</span>
+    <span class="chip">PLO <b>7</b> ข้อ</span>
+    <span class="chip">4 ชั้นปี · 8 ภาคเรียน</span>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="active" data-t="overview">① ภาพรวมชั้นปี & YLO</button>
+  <button data-t="plan">② แผนการเรียน 8 ภาคเรียน</button>
+  <button data-t="graph">③ กราฟเส้นทางรายวิชา</button>
+  <button data-t="desc">④ คำอธิบายรายวิชา</button>
+</nav>
+
+<main>
+  <!-- TAB 1 -->
+  <section class="panel active" id="overview">
+    <h2 class="sec">ลำดับการเรียนรายชั้นปี สอดคล้องกับ YLO</h2>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--y1)"></span>พื้นฐานวิศวกรรม</span>
+      <span><span class="sw" style="background:var(--y2)"></span>แกน AI</span>
+      <span><span class="sw" style="background:var(--y3)"></span>บังคับแขนง</span>
+      <span><span class="sw" style="background:var(--t3)"></span>เลือกชีพ</span>
+      <span><span class="sw" style="background:var(--y4)"></span>โครงงาน/สหกิจ</span>
+      <span><span class="sw" style="background:var(--ge)"></span>ศึกษาทั่วไป</span>
+      &nbsp;|&nbsp; <span>PLO: <span class="plobadge I">I</span> Introduce <span class="plobadge R">R</span> Reinforce <span class="plobadge M">M</span> Master</span>
+    </div>
+    <div class="years" id="years"></div>
+    <div class="note warn" style="margin-top:16px">
+      <b>สายวิกฤต (Critical Path):</b> <span class="dep">Programming → ML/DL → Computer&nbsp;Vision/Cloud → วิชาแกนแขนง → Capstone → สหกิจ</span> —
+      คณิต AI เป็น <b>Co-requisite</b> ของ ML/DL, Digital&nbsp;Twin ↔ Automation, และเตรียมโครงงาน ↔ สัมมนา II ·
+      คลิกรายวิชาเพื่อดูคำอธิบาย
+    </div>
+  </section>
+
+  <!-- TAB 2 -->
+  <section class="panel" id="plan">
+    <h2 class="sec">แผนการเรียนตลอดหลักสูตร (130 หน่วยกิต)</h2>
+    <div class="planbar">
+      <div class="b">ปี 1 <b>35</b> นก.</div>
+      <div class="b">ปี 2 <b>37</b> นก.</div>
+      <div class="b">ปี 3 <b>36</b> นก.</div>
+      <div class="b">ปี 4 <b>22</b> นก.</div>
+      <div class="b" style="background:var(--y2bg)">รวม <b>130</b> นก.</div>
+    </div>
+    <div class="semgrid" id="semgrid"></div>
+    <div class="note" style="margin-top:16px">ภาคเรียนที่ 8 เป็น <b>สหกิจศึกษาอย่างเดียว</b> (≥16 สัปดาห์) — ต้องผ่านวิชาแกนแขนง ≥75% และโครงงาน (EN-134-104) ก่อน</div>
+  </section>
+
+  <!-- TAB 3 -->
+  <section class="panel" id="graph">
+    <h2 class="sec">กราฟเส้นทางรายวิชาตามแผน แยกชั้นปีและ YLO</h2>
+    <div class="graph-toolbar" id="graphFilter">
+      <button class="on" data-y="all">ทุกชั้นปี</button>
+      <button data-y="1">ชั้นปีที่ 1 · YLO1</button>
+      <button data-y="2">ชั้นปีที่ 2 · YLO2</button>
+      <button data-y="3">ชั้นปีที่ 3 · YLO3</button>
+      <button data-y="4">ชั้นปีที่ 4 · YLO4</button>
+    </div>
+    <div class="graph-wrap"><div class="graph" id="courseGraph"></div></div>
+    <div class="note warn" style="margin-top:14px"><b>วิธีอ่าน:</b> อ่านจากซ้ายไปขวา ภาคเรียน 1 → 8 และจากพื้นฐานลงสู่การบูรณาการ คลิกชื่อวิชาเพื่อเปิดคำอธิบาย รายการกรอบเส้นประคือช่องวิชาเลือกตามแผน</div>
+  </section>
+
+  <!-- TAB 4 -->
+  <section class="panel" id="desc">
+    <h2 class="sec">คำอธิบายรายวิชา (ตรวจสอบจากไฟล์คำอธิบายจริง)</h2>
+    <div class="toolbar" id="toolbar">
+      <input id="search" placeholder="🔍 ค้นหา รหัส / ชื่อวิชา / คำในคำอธิบาย…">
+      <button class="fbtn on" data-f="all">ทั้งหมด</button>
+      <button class="fbtn" data-f="ge">ศึกษาทั่วไป</button>
+      <button class="fbtn" data-f="eng">พื้นฐานวิศวฯ</button>
+      <button class="fbtn" data-f="ai">แกน AI</button>
+      <button class="fbtn" data-f="track">บังคับแขนง</button>
+      <button class="fbtn" data-f="elec">เลือกชีพ</button>
+      <button class="fbtn" data-f="proj">โครงงาน</button>
+      <button class="fbtn" data-f="field">สหกิจ</button>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="note warn">พบในต้นฉบับ: รหัส <b>EN-135-101 ซ้ำ 3 วิชา</b> (แสดงเป็น 101 / 101ᵃ / 101ᵇ) และ EN-135-126/127 ชื่อไทยซ้ำ — ควรไล่รหัสใหม่ก่อนใช้ใน มคอ.2</div>
+    <div id="courses"></div>
+  </section>
+</main>
+
+<footer>สร้างจากกรอบรายวิชาชั้นปีและไฟล์คำอธิบายรายวิชาใน Vault · อัปเดต 21 กรกฎาคม 2569 (2026-07-21) · เปิดไฟล์นี้ในเบราว์เซอร์ใดก็ได้</footer>
+
+<script>
+const PLO名 = {1:"แก้ปัญหาเชิงวิศวกรรม",2:"ออกแบบระบบ",3:"สื่อสารวิชาชีพ",4:"จริยธรรม/รับผิดชอบ",5:"ทีม/ภาวะผู้นำ",6:"ทดลอง/วิเคราะห์ข้อมูล",7:"เรียนรู้ตลอดชีวิต/ผู้ประกอบการ"};
+// group keys: ge, eng, ai, track, elec, proj, field
+const C = [
+ // ---- GE ----
+ {c:"GE-010-001",s:"อังกฤษ 1",t:"ภาษาอังกฤษง่ายนิดเดียว",e:"English Made Easy",cr:"3(2-2-5)",g:"ge",y:1,sem:1,p:[],d:"คำศัพท์ วลีและโครงสร้างประโยคภาษาอังกฤษเพื่อการสื่อสารในชีวิตประจำวัน ทักษะการฟังและสนทนาในสถานการณ์ต่าง ๆ การอ่านข้อความหรือเนื้อหาสั้น ๆ ที่น่าสนใจ"},
+ {c:"GE-010-004",s:"คุณค่า มกส.",t:"คุณค่ามหาวิทยาลัยกาฬสินธุ์",e:"Kalasin University Values",cr:"3(2-2-5)",g:"ge",y:1,sem:1,p:[],d:"ค่านิยมและวัฒนธรรมองค์กรระดับหน่วยงาน สังคม ประเทศ เอกลักษณ์ของมหาวิทยาลัย จิตตปัญญาศึกษาเพื่อการพัฒนาความเป็นมนุษย์ จิตสาธารณะ ผู้ประกอบการเพื่อการพัฒนาท้องถิ่น"},
+ {c:"GE-010-003",s:"ดิจิทัล",t:"ดิจิทัลกับชีวิตวิถีใหม่",e:"Digital Technology for a New Way of Life",cr:"3(2-2-5)",g:"ge",y:1,sem:2,p:[],d:"การใช้เทคโนโลยีดิจิทัลขั้นพื้นฐาน การประยุกต์ใช้นวัตกรรมดิจิทัล ความมั่นคงปลอดภัยไซเบอร์ การพัฒนาแพลตฟอร์มออนไลน์ การรู้ดิจิทัล ความเป็นพลเมืองดิจิทัล"},
+ {c:"GE-010-005",s:"ชีวิตออกแบบได้",t:"ชีวิตออกแบบได้",e:"Designing Your Life",cr:"3(2-2-5)",g:"ge",y:1,sem:2,p:[],d:"ปัจจัยและแรงบันดาลใจในการใช้ชีวิต เทคนิคและวิธีคิดของผู้ประสบความสำเร็จ การวิเคราะห์และวางแผนเป้าหมายชีวิต การสร้างความสัมพันธ์ระหว่างบุคคล มนุษยสัมพันธ์"},
+ {c:"GE-010-002",s:"อังกฤษ 2",t:"ภาษาอังกฤษฟุดฟิดฟอฟัน",e:"English in Action",cr:"3(2-2-5)",g:"ge",y:1,sem:2,p:[],d:"การสื่อสารและใช้ภาษาอังกฤษในบริบทต่าง ๆ ไวยากรณ์และสำนวนในสังคมพหุวัฒนธรรม การฟัง การเขียนและโต้ตอบในบริบทการท่องเที่ยว การเดินทาง และเพื่อนต่างวัฒนธรรม"},
+ {c:"GE-010-006",s:"ปรัชญา/เศรษฐฯ",t:"ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์",e:"Philosophy, Humanity, Society and Economics",cr:"3(2-2-5)",g:"ge",y:2,sem:3,p:[],d:"สภาพแวดล้อมทางสังคม เศรษฐกิจ การเมือง หลักกฎหมายเบื้องต้น จริยธรรมทางเศรษฐกิจ อุปสงค์อุปทาน การออมและการลงทุน ปรัชญาเศรษฐกิจพอเพียง"},
+ {c:"GE-020-008",s:"ธุรกิจดิจิทัล",t:"การพัฒนาธุรกิจในสังคมดิจิทัล",e:"Business Development in the Digital Society",cr:"3(3-0-6)",g:"ge",y:2,sem:3,p:[],d:"หลักการเป็นผู้ประกอบการ การบริหารทรัพยากร เวลา การเงิน การบัญชีและระบบขนส่งเบื้องต้น การตลาดดิจิทัล การสร้างเนื้อหาเพื่อการตลาด การวางแผนการเงิน"},
+ {c:"GE-020-009",s:"ผู้นำ 21",t:"ผู้นำแห่งศตวรรษที่ 21",e:"Leadership in the Twenty-First Century",cr:"3(3-0-6)",g:"ge",y:2,sem:4,p:[],d:"ผู้นำและผู้ตามที่ดี บุคลิกภาพ การทำงานเป็นทีม การแก้ปัญหา การคิดวิเคราะห์ การสื่อสาร คุณธรรมจริยธรรม หลักธรรมาภิบาลสำหรับผู้นำ การเป็นนวัตกรสังคม"},
+ // ---- Engineering Fundamentals ----
+ {c:"EN-001-0X2",s:"สถิติ",t:"สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกร",e:"Statistics and Data Analysis for Engineers",cr:"3(3-0-6)",g:"eng",y:1,sem:2,p:[1,6],d:"ความน่าจะเป็นและการแจกแจง สถิติเชิงพรรณนาและอ้างอิง การประมาณค่า การทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอยและสหสัมพันธ์ การออกแบบการทดลอง การประเมินประสิทธิภาพตัวแบบการเรียนรู้ของเครื่อง"},
+ {c:"EN-001-0X4",s:"เขียนแบบ",t:"การเขียนแบบวิศวกรรมและการวางผังระบบ",e:"Engineering Drawing and System Layout Design",cr:"3(2-2-6)",g:"eng",y:1,sem:1,p:[1,2],d:"มาตรฐานการเขียนแบบวิศวกรรม ภาพฉายออโธกราฟิกและสามมิติ การกำหนดขนาดและพิกัดความเผื่อ การเขียนแบบด้วย CAD การสร้างแบบจำลอง 2D/3D การจัดวางระบบ IoT และเซนเซอร์ในโรงงานและฟาร์มอัจฉริยะ"},
+ {c:"EN-001-0X6",s:"Programming",t:"การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์",e:"Foundational Programming for Artificial Intelligence",cr:"3(2-2-6)",g:"eng",y:1,sem:1,p:[1,2,6],d:"หลักการเขียนโปรแกรมและขั้นตอนวิธี ภาษาไพทอน โครงสร้างข้อมูลพื้นฐาน การเขียนโปรแกรมเชิงวัตถุ การใช้ชุดคำสั่งสำเร็จรูปสำหรับวิทยาศาสตร์ข้อมูลและ AI การประยุกต์วิเคราะห์ข้อมูลเกษตร ควบคุมอุปกรณ์ IoT และพัฒนาโปรแกรม AI เบื้องต้น"},
+ {c:"EN-001-0X8",s:"Workshop I",t:"ปฏิบัติการวิศวกรรมเชิงบูรณาการ I",e:"Integrated Engineering Workshop I",cr:"1(0-3-1)",g:"eng",y:1,sem:1,p:[1,2,5],d:"การใช้เครื่องมือช่าง การประกอบโครงอลูมิเนียมโปรไฟล์ การเดินท่อน้ำ/ประปาสำหรับโรงเรือน การเดินสายไฟ การประกอบโครงแชสซีหุ่นยนต์"},
+ {c:"EN-001-0X1",s:"เศรษฐศาสตร์วิศวฯ",t:"เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน",e:"Engineering Economics and Cost Analysis",cr:"3(3-0-6)",g:"eng",y:2,sem:4,p:[1,6,7],d:"มูลค่าของเงินตามเวลา อัตราดอกเบี้ยและการคิดลด NPV/IRR การวิเคราะห์ต้นทุน-ผลประโยชน์ ต้นทุนวงจรชีวิต ค่าเสื่อมราคา จุดคุ้มทุน การตัดสินใจภายใต้ความไม่แน่นอน กรณีศึกษาการลงทุนในระบบ AI"},
+ {c:"EN-001-0X3",s:"ความร้อน-ของไหล",t:"วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ",e:"Thermal-Fluid Engineering in Smart Systems",cr:"3(3-0-6)",g:"eng",y:2,sem:3,p:[1,2],d:"อุณหพลศาสตร์ พลังงานและการเปลี่ยนรูป พฤติกรรมของไหล สมการแบร์นูลลี การไหลในท่อ ปั๊มและกังหัน การประยุกต์ในระบบผลิตพลังงานร่วม ระบบอบแห้งผลผลิต และระบายความร้อนเซิร์ฟเวอร์ AI"},
+ {c:"EN-001-0X5",s:"กลศาสตร์วัสดุ",t:"กลศาสตร์วัสดุและการออกแบบโครงสร้าง",e:"Mechanics of Materials and Structural Design",cr:"3(3-0-6)",g:"eng",y:2,sem:3,p:[1,2],d:"แรงและระบบแรง ความเค้น-ความเครียด การบิดของเพลา ไดอะแกรมแรงเฉือนและโมเมนต์ดัด การโก่งตัวของคาน ค่าความปลอดภัยและเกณฑ์การออกแบบ โครงรับน้ำหนักสำหรับโดรนและหุ่นยนต์เกษตร"},
+ {c:"EN-001-0X7",s:"ไฟฟ้า-อิเล็ก",t:"พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ",e:"Electrical and Electronic Fundamentals for Intelligent Systems",cr:"3(3-0-6)",g:"eng",y:1,sem:2,p:[1,2],d:"วงจรไฟฟ้ากระแสตรง/สลับ กฎเคอร์ชอฟฟ์ อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ มอเตอร์และระบบขับเคลื่อน เซนเซอร์และทรานสดิวเซอร์ ADC วงจรควบคุม IoT และระบบขับเคลื่อนหุ่นยนต์/โดรนเกษตร"},
+ {c:"EN-001-0X9",s:"Workshop II",t:"ปฏิบัติการวิศวกรรมเชิงบูรณาการ II",e:"Integrated Engineering Workshop II",cr:"1(0-3-1)",g:"eng",y:1,sem:2,p:[2,5],h:["EN-001-0X8"],w:["EN-001-0X7"],d:"การบัดกรี การติดตั้งเซนเซอร์ การเชื่อมต่อบอร์ดไมโครคอนโทรลเลอร์ การลากสายวางระบบเครือข่ายฮาร์ดแวร์เข้าสู่ตัวโครงสร้าง"},
+ {c:"EN-001-0X10",s:"Workshop III",t:"ปฏิบัติการวิศวกรรมเชิงบูรณาการ III",e:"Integrated Engineering Workshop III",cr:"1(0-3-1)",g:"eng",y:2,sem:3,p:[1,2,5],h:["EN-001-0X9"],w:["EN-131-104"],d:"การต่อตู้ควบคุมระดับอุตสาหกรรมด้วย PLC/SCADA การเชื่อมต่อเซนเซอร์เข้ากับบอร์ด Edge AI การทดสอบระบบแบบบูรณาการเต็มรูปแบบ เช่น โรงเรือนอัตโนมัติหรือหุ่นยนต์เคลื่อนที่จริง"},
+ // ---- AI Core ----
+ {c:"EN-131-101",s:"Intro AI",t:"ความรู้เบื้องต้นสำหรับปัญญาประดิษฐ์",e:"Introduction to Artificial Intelligence",cr:"3(3-0-6)",g:"ai",y:1,sem:1,p:[1,4,7],d:"ประวัติและสาขาของ AI การเรียนรู้ของเครื่อง คอมพิวเตอร์วิทัศน์ NLP ระบบผู้เชี่ยวชาญ การค้นหาและการให้เหตุผล แนวโน้ม Generative AI และ AI Agent จริยธรรม AI และการประยุกต์ในเกษตร อุตสาหกรรม นวัตกรรม"},
+ {c:"EN-131-102",s:"คณิต AI",t:"คณิตศาสตร์วิศวกรรมปัญญาประดิษฐ์",e:"Mathematics for Artificial Intelligence",cr:"3(3-0-6)",g:"ai",y:1,sem:2,p:[1,6],d:"พีชคณิตเชิงเส้น เวกเตอร์ เมทริกซ์ การแยกค่าเอกพจน์ แคลคูลัสหลายตัวแปรและอนุพันธ์ย่อยเพื่อ optimization ความน่าจะเป็นและสถิติสำหรับ ML การลดระดับความชันและการแพร่กระจายย้อนกลับ คณิตศาสตร์สำหรับ Deep Learning"},
+ {c:"EN-131-106",s:"ML/DL",t:"การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก",e:"Machine Learning and Deep Learning",cr:"3(2-2-5)",g:"ai",y:2,sem:3,p:[1,5,6],h:["EN-001-0X6"],w:["EN-001-0X2"],co:["EN-131-102"],d:"ML แบบมีผู้สอน (Regression, Decision Tree, Random Forest, SVM) และไม่มีผู้สอน (K-Means, การลดมิติ) โครงข่ายประสาทเทียมและ Deep Learning (CNN, RNN, Transformer) Transfer Learning การป้องกัน Overfitting การประยุกต์พยากรณ์ผลผลิต ตรวจโรคพืช ควบคุมคุณภาพ"},
+ {c:"EN-131-107",s:"Data Eng",t:"วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่",e:"Data Engineering and Big Data",cr:"3(3-0-6)",g:"ai",y:2,sem:4,p:[2,3,6],h:["EN-001-0X6"],w:["EN-001-0X2"],d:"วงจรชีวิตข้อมูล Data Pipeline กระบวนการ ETL SQL/NoSQL Data Warehouse/Lake/Lakehouse การทำความสะอาดและธรรมาภิบาลข้อมูล การประมวลผลแบบกระจาย Big Data สถาปัตยกรรมข้อมูลสำหรับ AI ในเกษตร-อุตสาหกรรม"},
+ {c:"EN-131-103",s:"Computer Vision",t:"คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ",e:"Computer Vision and Image Analysis",cr:"3(2-2-5)",g:"ai",y:2,sem:4,p:[2,3,6],h:["EN-131-106"],w:["EN-001-0X6"],d:"การประมวลผลภาพดิจิทัล การปรับปรุงคุณภาพและกรองสัญญาณ การแบ่งส่วนภาพและตรวจจับขอบ การสกัดคุณลักษณะด้วย Deep Learning การตรวจจับ/จำแนกวัตถุด้วย CNN ภาพมัลติสเปกตรัมจากโดรน ตรวจสอบคุณภาพผลผลิต ตรวจโรคพืช คัดเกรดสินค้า"},
+ {c:"EN-131-104",s:"IoT/Edge",t:"ระบบอินเทอร์เน็ตของสรรพสิ่งอัจฉริยะและการประมวลผลที่ขอบเครือข่าย",e:"Smart Internet of Things and Edge Computing",cr:"3(2-2-5)",g:"ai",y:2,sem:3,p:[1,2,4],h:["EN-001-0X7"],w:["EN-001-0X6"],d:"สถาปัตยกรรม IoT โพรโทคอลไร้สาย เซนเซอร์อัจฉริยะ ไมโครคอนโทรลเลอร์และระบบฝังตัว Edge Computing การบูรณาการ IoT กับ Cloud AI ความมั่นคงปลอดภัย IoT การประยุกต์ในฟาร์มอัจฉริยะ โรงงานอัตโนมัติ ระบบชลประทาน"},
+ {c:"EN-131-105",s:"Cloud/MLOps",t:"ระบบประมวลผลคลาวด์และการดำเนินการเรียนรู้ของเครื่อง",e:"Cloud Computing and Machine Learning Operations",cr:"3(2-2-5)",g:"ai",y:2,sem:4,p:[2,4,7],h:["EN-131-106"],w:["EN-131-107"],d:"สถาปัตยกรรมคลาวด์สำหรับ AI บริการ Cloud AI การ Deploy โมเดล การปรับ Hyperparameter, AutoML การบริหาร ML Pipeline การบีบอัดโมเดล (Pruning, Quantization, Knowledge Distillation) หลักการ MLOps เบื้องต้น"},
+ {c:"EN-131-108",s:"HW/Network",t:"โครงสร้างพื้นฐานฮาร์ดแวร์และระบบเครือข่ายสำหรับการประมวลผลปัญญาประดิษฐ์",e:"Infrastructure and Network Systems for AI Computing",cr:"3(3-0-6)",g:"ai",y:2,sem:4,p:[1,2,4],h:["EN-001-0X7"],w:["EN-131-104","EN-131-105"],d:"สถาปัตยกรรมคอมพิวเตอร์สำหรับ AI, GPU/TPU การประมวลผลแบบขนาน ระบบเครือข่าย เครือข่าย 5G สำหรับ IoT/AI การจัดการคอนเทนเนอร์ ระบบ Scalable/High Availability ความมั่นคงปลอดภัยโครงสร้างพื้นฐาน AI"},
+ // ---- Track Core ----
+ {c:"EN-132-101",s:"AI Product/Biz",t:"การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์",e:"AI Business and Product Design",cr:"3(3-0-6)",g:"track",y:3,sem:5,p:[2,3,7],w:["EN-131-101","EN-001-0X1"],d:"กระบวนการออกแบบผลิตภัณฑ์ AI, Design Thinking การวิเคราะห์ความต้องการผู้ใช้และตลาด การออกแบบและทดสอบต้นแบบ Business Model Canvas กลยุทธ์การนำผลิตภัณฑ์ออกตลาด การประเมินมูลค่า ทรัพย์สินทางปัญญาสำหรับนวัตกรรม AI"},
+ {c:"EN-132-103",s:"Smart Farm",t:"ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ",e:"Smart Farming and Precision Agriculture",cr:"3(2-2-5)",g:"track",y:3,sem:5,p:[2,5,6],h:["EN-131-104","EN-131-106"],w:["EN-131-103"],d:"สถาปัตยกรรมฟาร์มอัจฉริยะและเกษตรแม่นยำ เครือข่ายเซนเซอร์ไร้สายในแปลง การตรวจวัดดิน-น้ำ-อากาศ-การเจริญเติบโตด้วย IoT/AI ชลประทานอัจฉริยะ การพยากรณ์และเตือนภัยโรคพืช Dashboard และระบบสนับสนุนการตัดสินใจสำหรับข้าว อ้อย มันสำปะหลัง"},
+ {c:"EN-132-106",s:"Automation",t:"ระบบควบคุมอัตโนมัติและหุ่นยนต์ในอุตสาหกรรม",e:"Industrial Automation and Control Systems",cr:"3(2-2-5)",g:"track",y:3,sem:6,p:[1,2,5],h:["EN-001-0X7","EN-131-104"],w:["EN-001-0X10"],d:"ตัวควบคุมแบบโปรแกรมได้ (PLC) การเขียนโปรแกรมภาษามาตรฐาน (Ladder, FBD, ST, SFC) การเชื่อมต่อ I/O ดิจิทัล/แอนะล็อก การออกแบบระบบ SCADA และ HMI การสื่อสารบนเครือข่ายอุตสาหกรรม การบูรณาการ Automation กับ AI/IoT เพื่อการผลิตอัจฉริยะและควบคุมชลประทานขนาดใหญ่"},
+ {c:"EN-132-107",s:"AI Software Eng",t:"การพัฒนาซอฟต์แวร์และวิศวกรรมปัญญาประดิษฐ์",e:"Software Development and AI Engineering",cr:"3(2-2-5)",g:"track",y:3,sem:6,p:[2,5,7],h:["EN-001-0X6","EN-131-105"],w:["EN-131-107"],d:"วงจรชีวิตการพัฒนาซอฟต์แวร์ AI (AI SDLC) สถาปัตยกรรมขับเคลื่อนด้วย AI ไมโครเซอร์วิส REST/GraphQL Clean Architecture การทดสอบและประกันคุณภาพโมเดล Git แนวคิด MLOps/DevOps, CI/CD Pipeline การ Deploy บนคลาวด์/คอนเทนเนอร์/Edge กรณีศึกษาแอปพลิเคชันเชิงพาณิชย์"},
+ {c:"EN-132-102",s:"Supply Chain AI",t:"ปัญญาประดิษฐ์สำหรับห่วงโซ่การผลิตและอุปทาน",e:"AI for Production and Supply Chain",cr:"3(3-0-6)",g:"track",y:3,sem:5,p:[3,6,7],h:["EN-131-107","EN-131-106"],w:["EN-131-101"],d:"ห่วงโซ่การผลิตและโซ่อุปทานยุคดิจิทัล การจัดหาวัตถุดิบอัจฉริยะ ระบบคลังสินค้าอัตโนมัติ การพยากรณ์อุปสงค์-อุปทาน โลจิสติกส์อัจฉริยะ การใช้ AI/IoT/Big Data เพิ่มประสิทธิภาพและลดต้นทุน ระบบตรวจสอบย้อนกลับ การบริหารความเสี่ยงในโซ่อุปทาน"},
+ {c:"EN-132-104",s:"UAV/Remote",t:"อากาศยานไร้คนขับและการตรวจวัดระยะไกลสำหรับเกษตรกรรม",e:"UAVs and Remote Sensing in Agriculture",cr:"3(2-2-5)",g:"track",y:3,sem:5,p:[2,4,6],h:["EN-131-103"],w:["EN-131-104"],d:"ประเภทของ UAV กฎหมายและใบอนุญาตนักบินโดรน (CAAT) การบินอัตโนมัติและวางแผนเส้นทาง การตรวจวัดระยะไกลและภูมิสารสนเทศ กล้อง RGB/มัลติสเปกตรัม/เทอร์มอล การวิเคราะห์ภาพถ่ายทางอากาศด้วย AI ดัชนีพืชพรรณ (NDVI, NDWI) การฉีดพ่นแม่นยำและประเมินผลผลิต"},
+ {c:"EN-132-105",s:"Digital Twin",t:"โรงงานอัจฉริยะและเทคโนโลยีดิจิทัลทวิน",e:"Smart Factory and Digital Twin Technologies",cr:"3(2-2-5)",g:"track",y:3,sem:6,p:[2,3,6],h:["EN-131-106"],w:["EN-132-106"],co:["EN-132-106"],d:"สถาปัตยกรรมโรงงานอัจฉริยะและอุตสาหกรรม 4.0 การบูรณาการ OT/IT การจำลองกระบวนการผลิตด้วย Digital Twin การควบคุมคุณภาพเรียลไทม์ด้วย AI/CV การบำรุงรักษาเชิงพยากรณ์ด้วย ML การจัดการพลังงานอัจฉริยะ ประยุกต์ในโรงงานน้ำตาล แป้งมัน โรงสีข้าว"},
+ {c:"EN-132-108",s:"Agentic AI",t:"ระบบเอเจนต์ปัญญาประดิษฐ์เชิงการวางแผน",e:"Agentic AI Systems",cr:"3(2-2-5)",g:"track",y:4,sem:7,p:[2,5,7],h:["EN-131-106"],w:["EN-131-105"],co:["EN-132-107"],d:"สถาปัตยกรรมตัวแทน AI (Reactive, Deliberative, Hybrid) ระบบตัวแทนหลายตัว การเชื่อม LLM กับเอเจนต์ การใช้เครื่องมือและ Function Calling การวางแผนเชิงตรรกะและตัดสินใจอัตโนมัติ เฟรมเวิร์ก LangChain/AutoGen/CrewAI เทคนิค RAG ความปลอดภัยและจริยธรรมของเอเจนต์"},
+ // ---- Project & Seminar ----
+ {c:"EN-134-101",s:"Seminar I",t:"สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I",e:"Seminar in AI Engineering and Intelligent Systems I",cr:"1(0-2-1)",g:"proj",y:3,sem:5,p:[3,4,7],d:"แนวโน้มเทคโนโลยี AI ล่าสุดระดับประเทศและนานาชาติ กรณีศึกษาการประยุกต์ในเกษตร อุตสาหกรรม นวัตกรรมธุรกิจ การวิเคราะห์และวิจารณ์บทความวิชาการ การพัฒนาทักษะการนำเสนอทั้งไทยและอังกฤษ การแลกเปลี่ยนกับผู้เชี่ยวชาญ"},
+ {c:"EN-134-102",s:"Seminar II",t:"สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II",e:"Seminar in AI Engineering and Intelligent Systems II",cr:"1(0-2-1)",g:"proj",y:3,sem:6,p:[3,4,7],h:["EN-134-101"],d:"การสืบค้น วิเคราะห์ และสังเคราะห์เทคโนโลยีอุบัติใหม่ การเปรียบเทียบแนวทางและประเมินข้อจำกัด การพิจารณาผลกระทบด้านเทคนิค จริยธรรม เศรษฐกิจ สังคม อุตสาหกรรม การจัดทำบทความวิชาการ การนำเสนอเชิงวิชาชีพไทย-อังกฤษ"},
+ {c:"EN-134-103",s:"Project Prep",t:"การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",e:"AI Engineering and Intelligent Systems Project Preparation",cr:"1(0-2-1)",g:"proj",y:3,sem:6,p:[1,3,4,7],h:["EN-134-101"],co:["EN-134-102"],d:"การกำหนดหัวข้อและขอบเขตโครงงาน การทบทวนวรรณกรรม การเขียนเค้าโครงและวัตถุประสงค์ วิธีดำเนินการวิจัยและแผนงาน การประเมินความเป็นไปได้ทางเทคนิค จริยธรรมการวิจัยและการใช้ AI อย่างรับผิดชอบ การนำเสนอเค้าโครงต่อคณะกรรมการ"},
+ {c:"EN-134-104",s:"Capstone",t:"โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",e:"AI Engineering and Intelligent Systems Project",cr:"3(0-9-3)",g:"proj",y:4,sem:7,p:[1,2,3,4,5,6,7],h:["EN-134-103"],d:"การดำเนินโครงงานบูรณาการหลายศาสตร์ตามที่ได้รับอนุมัติ การพัฒนาระบบ AI หรือนวัตกรรมเพื่อแก้ปัญหาจริงในเกษตร อุตสาหกรรม ธุรกิจ การทดสอบและประเมินประสิทธิภาพ การทำงานเป็นทีม การจัดทำรายงานฉบับสมบูรณ์ และการนำเสนอต่อคณะกรรมการและผู้เชี่ยวชาญ"},
+ // ---- Field Experience ----
+ {c:"EN-135-401",s:"Co-op Prep",t:"เตรียมความพร้อมสหกิจศึกษา",e:"Cooperative Education Preparation",cr:"1(0-2-1)",g:"field",y:4,sem:7,p:[3,4,5,7],d:"ปรัชญาและระเบียบสหกิจศึกษา การเลือกสถานประกอบการด้าน AI/เกษตร/อุตสาหกรรม การเขียน Resume และจดหมายสมัครงานไทย-อังกฤษ ทักษะสัมภาษณ์ จรรยาบรรณวิชาชีพ ความปลอดภัยและกฎหมายแรงงาน การสื่อสารและทำงานร่วมกับผู้อื่น การจัดทำแผนปฏิบัติงาน"},
+ {c:"EN-135-402",s:"Co-op",t:"สหกิจศึกษา",e:"Cooperative Education",cr:"6(0-40-0)",g:"field",y:4,sem:8,p:[2,3,4,5,7],h:["EN-135-401","EN-134-104"],d:"ฝึกประสบการณ์วิชาชีพวิศวกรรม AI ในสถานประกอบการที่อนุมัติ (โรงงานน้ำตาล/แป้งมัน/โรงสีข้าว บริษัทเทคโนโลยี AI Startup หน่วยวิจัย หรือหน่วยงานรัฐ) ≥16 สัปดาห์ ปฏิบัติงานจริงในตำแหน่งวิศวกร AI บูรณาการความรู้แก้ปัญหาจริง จรรยาบรรณวิชาชีพ การทำงานเป็นทีม จัดทำรายงานและนำเสนอ"},
+ // ---- Electives Track 1 (Smart Agriculture) ----
+ {c:"EN-135-101",s:"เกษตร-ชลประทาน",t:"เกษตรกรรมอัจฉริยะและการจัดชลประทาน",e:"Smart Agriculture and Irrigation Management",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,6],d:"เกษตรอัจฉริยะและเกษตรแม่นยำ การจัดการดินและน้ำด้วย AI ระบบชลประทานอัจฉริยะ (น้ำหยด สปริงเกลอร์) การตรวจวัดความชื้นดินด้วยเซนเซอร์/IoT การพยากรณ์ความต้องการน้ำด้วย ML การควบคุมการให้น้ำอัตโนมัติ ระบบเตือนภัยแล้ง/น้ำท่วมด้วย AI"},
+ {c:"EN-135-101ᵃ",s:"AI เกษตรแม่นยำ",t:"ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำ",e:"Artificial Intelligence for Precision Agriculture",cr:"3(2-2-5)",g:"elec",tr:1,dup:1,p:[2,6],d:"การประยุกต์ AI/ML วิเคราะห์ข้อมูลเกษตรแม่นยำ การวิเคราะห์ดินและแนะนำธาตุอาหารพืช การตรวจจับโรคพืช/แมลงด้วย CV/DL การพยากรณ์ผลผลิต ระบบแนะนำการจัดการฟาร์ม การใช้ข้อมูลดาวเทียมและโดรนร่วมกับ AI สำหรับข้าว อ้อย มันสำปะหลัง"},
+ {c:"EN-135-101ᵇ",s:"GIS วิเคราะห์พื้นที่",t:"ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่",e:"Geographic Information Systems and Spatial Analysis",cr:"3(2-2-5)",g:"elec",tr:1,dup:1,p:[6,2],d:"องค์ประกอบของ GIS ข้อมูลเชิงพื้นที่และระบบพิกัด การวิเคราะห์ข้อมูล Vector/Raster การประมวลผลภาพดาวเทียม การวิเคราะห์ Overlay/Buffer/Network การบูรณาการ GIS กับ AI/ML สำหรับการวางแผนใช้ที่ดินเกษตร การจัดการทรัพยากรน้ำ ประเมินความเหมาะสมพื้นที่ปลูก"},
+ {c:"EN-135-102",s:"หลังการเก็บเกี่ยว",t:"เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว",e:"Postharvest Management Technology and Innovation",cr:"3(3-0-6)",g:"elec",tr:1,p:[2,6],d:"การจัดการผลผลิตหลังการเก็บเกี่ยว สรีรวิทยาผลผลิต การลดความสูญเสีย การคัดแยก/คัดเกรดด้วย AI/CV ระบบอบแห้งและเก็บรักษาอัจฉริยะ การควบคุมอุณหภูมิ/ความชื้นด้วย IoT/AI บรรจุภัณฑ์อัจฉริยะ ระบบตรวจสอบย้อนกลับสำหรับข้าว อ้อย มันสำปะหลัง"},
+ {c:"EN-135-103",s:"พยากรณ์ฟาร์ม",t:"การพยากรณ์และวิเคราะห์ข้อมูลฟาร์มด้วยปัญญาประดิษฐ์",e:"AI-Based Farm Data Forecasting and Analytics",cr:"3(2-2-5)",g:"elec",tr:1,p:[6,2,3],d:"การพยากรณ์ข้อมูลเกษตรด้วย AI การจัดการ Big Data จากเซนเซอร์ฟาร์ม การวิเคราะห์อนุกรมเวลา การสร้างตัวแบบพยากรณ์ผลผลิตด้วย ML/DL การพยากรณ์ราคาสินค้าเกษตร การวิเคราะห์ความเสี่ยง การออกแบบ Dashboard สำหรับเกษตรกรและผู้บริหาร"},
+ {c:"EN-135-104",s:"Plant Factory",t:"โรงงานผลิตพืชอัจฉริยะและเกษตรกรรมแนวดิ่ง",e:"Smart Plant Factories and Vertical Farming",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,6],d:"โรงงานผลิตพืชปิดและเกษตรแนวดิ่ง ระบบแสง LED และควบคุมสเปกตรัมด้วย AI การปลูกไร้ดิน (Hydroponics, Aeroponics, Aquaponics) การควบคุมสภาพแวดล้อมอัตโนมัติ การจัดการโรคพืชด้วย CV/AI การประหยัดพลังงาน การวิเคราะห์ต้นทุน-ผลตอบแทน"},
+ {c:"EN-135-105",s:"ปศุสัตว์อัจฉริยะ",t:"เทคโนโลยีปัญญาประดิษฐ์เพื่อการปศุสัตว์อัจฉริยะ",e:"AI Technology for Smart Livestock",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,6],d:"การปศุสัตว์อัจฉริยะ การติดตามสุขภาพสัตว์ด้วย IoT/เซนเซอร์สวมใส่ การวิเคราะห์พฤติกรรมสัตว์ด้วย CV/AI การพยากรณ์และตรวจจับโรคด้วย ML ระบบให้อาหารอัตโนมัติ การจัดการฝูงด้วย GPS/AI ระบบตรวจสอบย้อนกลับสำหรับโคเนื้อ โคนม สุกร สัตว์ปีก"},
+ {c:"EN-135-106",s:"CV คัดเกรดเกษตร",t:"คอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดทางการเกษตร",e:"Computer Vision for Agricultural Classification and Grading",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,6],d:"CV สำหรับจำแนกและคัดเกรดผลผลิต การออกแบบระบบกล้องและแสง การสร้างชุดข้อมูลภาพ การฝึกตัวแบบ DL จำแนกและตรวจตำหนิ การวัดขนาด/น้ำหนักด้วยการประมวลผลภาพ การบูรณาการกับสายพานคัดแยกอัตโนมัติสำหรับข้าว อ้อย มันสำปะหลัง"},
+ {c:"EN-135-107",s:"ML เซนเซอร์ฟาร์ม",t:"การเรียนรู้ของเครื่องและการวิเคราะห์ข้อมูลเซนเซอร์ในฟาร์ม",e:"Machine Learning and Farm Sensor Data Analytics",cr:"3(2-2-5)",g:"elec",tr:1,p:[6,2],d:"เครือข่ายเซนเซอร์ในฟาร์ม การเก็บและส่งข้อมูลเซนเซอร์ดิน-น้ำ-อากาศ-พืช การประมวลผลและกรองสัญญาณรบกวน การวิเคราะห์อนุกรมเวลา การสร้างตัวแบบ ML พยากรณ์และตัดสินใจ การตรวจจับความผิดปกติและแจ้งเตือน การแสดงผลผ่าน Dashboard"},
+ {c:"EN-135-108",s:"จัดการผลิตพืช AI",t:"การจัดการการผลิตพืชอัจฉริยะด้วยปัญญาประดิษฐ์",e:"AI for Smart Crop Production Management",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,6,7],d:"การผลิตพืชอัจฉริยะ การวิเคราะห์ดินและความอุดมสมบูรณ์ การวางแผนใช้ปุ๋ยเฉพาะพื้นที่ การให้น้ำแม่นยำ การใช้ข้อมูลเซนเซอร์/IoT/โดรน การวิเคราะห์โรคพืชจากภาพด้วย ML/DL การพยากรณ์ผลผลิตและวิเคราะห์ต้นทุน ระบบสนับสนุนการตัดสินใจด้วย AI และ Generative AI"},
+ {c:"EN-135-109",s:"หุ่นยนต์เกษตร",t:"หุ่นยนต์และระบบอัตโนมัติทางการเกษตร",e:"Agricultural Robotics and Automation",cr:"3(2-2-5)",g:"elec",tr:1,p:[2,1],d:"หุ่นยนต์และระบบอัตโนมัติทางการเกษตร องค์ประกอบหุ่นยนต์ เซนเซอร์ ตัวกระตุ้น ระบบควบคุม การใช้ IoT/AI/CV/ML ในหุ่นยนต์เกษตร การนำทางอัตโนมัติ การพ่นสาร ใส่ปุ๋ย กำจัดวัชพืช เก็บเกี่ยว การใช้แขนกลและหุ่นยนต์เคลื่อนที่ การบูรณาการกับโดรนและฟาร์มอัจฉริยะ"},
+ // ---- Electives Track 2 (Industrial AI) ----
+ {c:"EN-135-110",s:"เครื่องมือวัด/ควบคุม",t:"เครื่องมือวัดและการควบคุมกระบวนการ",e:"Instrumentation and Process Control",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,1],d:"เครื่องมือวัดทางอุตสาหกรรม เซนเซอร์วัดอุณหภูมิ/ความดัน/การไหล/ระดับ/ความชื้น การสอบเทียบ การควบคุมแบบ PID ระบบควบคุมต่อเนื่อง/ไม่ต่อเนื่อง การบูรณาการกับ SCADA/DCS การใช้ AI/ML ปรับปรุงการควบคุมกระบวนการในโรงงานน้ำตาล แป้งมัน โรงสีข้าว"},
+ {c:"EN-135-111",s:"Predictive Maintenance",t:"การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์",e:"AI-Based Predictive and Preventive Maintenance",cr:"3(2-2-5)",g:"elec",tr:2,p:[6,2],d:"กลยุทธ์การบำรุงรักษาเชิงแก้ไข/ป้องกัน/พยากรณ์ การเก็บสัญญาณสั่นสะเทือน เสียง อุณหภูมิ กระแสไฟฟ้า การประมวลผลสัญญาณ การสร้างตัวแบบ ML/DL ตรวจจับความผิดปกติและพยากรณ์ความเสียหาย Digital Twin การวิเคราะห์ Root Cause การประเมิน ROI"},
+ {c:"EN-135-112",s:"คลังสินค้าอัตโนมัติ",t:"ระบบลำเลียงและคลังสินค้าอัตโนมัติ",e:"Automated Material Handling and Warehouse Systems",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,6],d:"ระบบลำเลียงวัสดุอัตโนมัติ (สายพาน AGV หุ่นยนต์ลำเลียง) การออกแบบผังระบบลำเลียง ระบบ AS/RS การบูรณาการ AI/CV ตรวจสอบและคัดแยก การจัดการคลังด้วย WMS การติดตามด้วย RFID/Barcode การเพิ่มประสิทธิภาพด้วย Simulation"},
+ {c:"EN-135-113",s:"DSS อัจฉริยะ",t:"ระบบสนับสนุนการตัดสินใจอัจฉริยะ",e:"Intelligent Decision Support Systems",cr:"3(3-0-6)",g:"elec",tr:2,p:[6,3],d:"สถาปัตยกรรม DSS ฐานข้อมูล ฐานตัวแบบ การบูรณาการ AI/BI การวิเคราะห์ด้วย OLAP/Data Mining การออกแบบ Dashboard สำหรับผู้บริหาร การสร้างตัวแบบตัดสินใจด้วย ML/Optimization การตัดสินใจภายใต้ความไม่แน่นอน (Fuzzy, Bayesian) ระบบผู้เชี่ยวชาญ"},
+ {c:"EN-135-114",s:"อุตฯเกษตรแปรรูป",t:"เทคโนโลยีอุตสาหกรรมเกษตรและการแปรรูป",e:"Agro-Industrial and Processing Technology",cr:"3(3-0-6)",g:"elec",tr:2,p:[1,2],d:"กระบวนการแปรรูปผลผลิตเกษตร มาตรฐานคุณภาพและความปลอดภัยอาหาร (GMP, HACCP, ISO 22000) เทคโนโลยีการผลิตน้ำตาล การสกัดแป้งมัน การสีและแปรรูปข้าว การจัดการของเสีย/น้ำเสีย การใช้พลังงานและ Cogeneration การใช้ AI เพิ่มประสิทธิภาพและลดต้นทุน"},
+ {c:"EN-135-115",s:"โรงสีข้าวอัจฉริยะ",t:"ปัญญาประดิษฐ์และการจัดการโรงสีข้าวอัจฉริยะ",e:"AI and Smart Rice Mill Management",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,6],d:"กระบวนการสีข้าวครบวงจร ระบบ AI ตรวจสอบและจำแนกคุณภาพข้าวด้วย CV (ความขาว ความชื้น เมล็ดหัก สิ่งเจือปน) ระบบอบแห้งอัจฉริยะ การจัดการไซโลด้วย IoT/AI การบำรุงรักษาเชิงพยากรณ์ Digital Twin การเพิ่มประสิทธิภาพและระบบตรวจสอบย้อนกลับ"},
+ {c:"EN-135-116",s:"อ้อย-น้ำตาลอัจฉริยะ",t:"เทคโนโลยีอัจฉริยะในกระบวนการผลิตอ้อยและน้ำตาล",e:"Smart Technology in Sugarcane and Sugar Production",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,6],d:"กระบวนการผลิตน้ำตาลครบวงจร ระบบ AI วิเคราะห์คุณภาพอ้อยและพยากรณ์ค่าความหวาน CCS การควบคุมกระบวนการหีบด้วย AI/PLC การควบคุมคุณภาพน้ำตาล ระบบ Cogeneration และพลังงานชีวมวลด้วย AI การจัดการของเสีย Digital Twin ระบบตรวจสอบย้อนกลับ"},
+ {c:"EN-135-117",s:"มันสำปะหลัง-แป้ง",t:"เทคโนโลยีอัจฉริยะในกระบวนการผลิตมันสำปะหลังและแป้ง",e:"Smart Technology in Cassava and Starch Production",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,6],d:"กระบวนการผลิตแป้งมันครบวงจร ระบบ AI วิเคราะห์คุณภาพมันและพยากรณ์ปริมาณแป้ง การควบคุมการสกัดด้วย AI/PLC ระบบตรวจสอบความบริสุทธิ์ ระบบอบแห้งอัจฉริยะ การจัดการน้ำเสีย การผลิตผลิตภัณฑ์มูลค่าสูง (แป้งดัดแปร แอลกอฮอล์ ไบโอพลาสติก) Digital Twin"},
+ {c:"EN-135-118",s:"IoT เก็บรักษาผลผลิต",t:"เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร",e:"IoT Technology for Agricultural Produce Storage",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,6],d:"IoT สำหรับเก็บรักษาผลผลิต เครือข่ายเซนเซอร์ในโรงเก็บ/ไซโล/ห้องเย็น เซนเซอร์วัดอุณหภูมิ ความชื้น CO₂ O₂ เอทิลีน ระบบควบคุมสภาพแวดล้อมอัตโนมัติด้วย IoT/AI การพยากรณ์อายุการเก็บรักษาด้วย ML การประหยัดพลังงาน การติดตามแบบเรียลไทม์ผ่านคลาวด์"},
+ {c:"EN-135-119",s:"อบแห้งอัจฉริยะ",t:"ระบบอบแห้งอัจฉริยะในอุตสาหกรรมเกษตร",e:"Smart Drying Systems in Agro-Industry",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,1,6],d:"การถ่ายเทความร้อนและมวลในการอบแห้ง เทคโนโลยีอบแห้ง (ลมร้อน ไมโครเวฟ อินฟราเรด Heat Pump Freeze Drying) การออกแบบระบบอบแห้ง การควบคุมด้วย PLC/AI การวัดความชื้นเรียลไทม์ การสร้างตัวแบบ ML เพิ่มประสิทธิภาพ การประหยัดพลังงานสำหรับข้าวเปลือก มันเส้น แป้งมัน"},
+ {c:"EN-135-120",s:"ขนถ่ายวัสดุอัตโนมัติ",t:"วิศวกรรมระบบขนถ่ายวัสดุอัตโนมัติ",e:"Automated Material Handling Systems Engineering",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,1],d:"ระบบขนถ่ายวัสดุในอุตสาหกรรม การออกแบบระบบขนถ่ายสำหรับโรงงานเกษตรอุตสาหกรรม อุปกรณ์ขนถ่าย (สายพาน สกรู ลิฟต์ถัง AGV) การคำนวณและออกแบบสายพาน การบูรณาการ IoT การควบคุมด้วย PLC/SCADA การใช้ AI/CV จัดการการไหลของวัสดุ การบำรุงรักษาเชิงพยากรณ์"},
+ {c:"EN-135-121",s:"หุ่นยนต์อุตสาหกรรม",t:"หุ่นยนต์อุตสาหกรรมและระบบขับเคลื่อน",e:"Industrial Robotics and Drive Systems",cr:"3(2-2-5)",g:"elec",tr:2,p:[2,1],d:"โครงสร้างและประเภทหุ่นยนต์อุตสาหกรรม จลนศาสตร์และพลศาสตร์แขนกล ระบบขับเคลื่อน (มอเตอร์ ไฮดรอลิกส์ นิวแมติกส์) การควบคุมการเคลื่อนที่ การโปรแกรมและจำลอง การเชื่อมต่อกับระบบควบคุมอัตโนมัติ การใช้ AI คัดแยก หยิบจับวาง แพ็คสินค้า มาตรฐานความปลอดภัย"},
+ // ---- Electives Track 3 (AI Innovation & Software) ----
+ {c:"EN-135-122",s:"Advanced Data Eng",t:"วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล",e:"Advanced Data Engineering and Data Pipelines",cr:"3(2-2-5)",g:"elec",tr:3,p:[2,6],d:"ท่อข้อมูลขั้นสูงสำหรับ AI การประมวลผลแบบสตรีมด้วย Kafka/Flink การประมวลผลแบบกระจายด้วย Spark สถาปัตยกรรม Data Lakehouse/Lambda การจัดการคุณภาพและธรรมาภิบาลข้อมูล การจัดเรียงด้วย Airflow ท่อข้อมูลเรียลไทม์ การบูรณาการจากเซนเซอร์ฟาร์ม ERP SCADA"},
+ {c:"EN-135-123",s:"Generative AI",t:"ปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับการประยุกต์ใช้งาน",e:"Generative AI for Applications",cr:"3(2-2-5)",g:"elec",tr:3,p:[2,7,4],d:"สถาปัตยกรรม Generative AI และ LLM การสร้างข้อความ/ภาพ และ Multimodal การใช้ API ของ LLM การออกแบบ Prompt Engineering การ Fine-tuning การสร้างระบบ RAG การพัฒนา Chatbot/Virtual Assistant การบูรณาการกับระบบธุรกิจ จริยธรรมและความรับผิดชอบในการใช้ Generative AI"},
+ {c:"EN-135-124",s:"AI SW Testing/QA",t:"การทดสอบและการประกันคุณภาพซอฟต์แวร์ปัญญาประดิษฐ์",e:"Testing and Quality Assurance for AI Software",cr:"3(2-2-5)",g:"elec",tr:3,p:[6,2,4],d:"การทดสอบซอฟต์แวร์ AI (Unit, Integration, System, Acceptance) การทดสอบตัวแบบ ML/DL การประเมิน Bias/Fairness การทดสอบประสิทธิภาพและความทนทาน การทดสอบความปลอดภัยและแบบปรปักษ์ การประกันคุณภาพด้วย ISO การใช้เครื่องมือทดสอบอัตโนมัติและ CI/CD"},
+ {c:"EN-135-125",s:"Cloud Microservices",t:"สถาปัตยกรรมไมโครเซอร์วิสบนระบบคลาวด์",e:"Cloud-Based Microservices Architecture",cr:"3(2-2-5)",g:"elec",tr:3,p:[2,7],d:"Cloud-Native และ Microservices สำหรับ AI การเปรียบเทียบ Monolithic vs Microservices การจัดการคอนเทนเนอร์ด้วย Docker และ Kubernetes การออกแบบ API Gateway/Service Mesh การจัดการ Config/Secret, Serverless/FaaS ระบบ Scalable/HA, Observability (Logging, Monitoring, Tracing) ความปลอดภัย"},
+ {c:"EN-135-126",s:"UX/UI ระบบอัจฉริยะ",t:"การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ (UX/UI)",e:"UX/UI Design for Intelligent Systems",cr:"3(3-0-6)",g:"elec",tr:3,p:[3,2],d:"การออกแบบ UX/UI สำหรับระบบ AI การวิจัยความต้องการผู้ใช้ (Interview, Persona, Journey Map) Design Thinking การออกแบบ Wireframe/Prototype การออกแบบ Dashboard หลักการ Explainable AI การทดสอบ Usability การออกแบบสำหรับผู้ใช้หลากหลาย (เกษตรกร ผู้บริหาร นักพัฒนา) มาตรฐาน Accessibility"},
+ {c:"EN-135-127",s:"UX ระบบอัจฉริยะ",t:"การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ",e:"User Experience Design for Intelligent Systems",cr:"3(3-0-6)",g:"elec",tr:3,dup:1,p:[3,2],d:"(เนื้อหาใกล้เคียง EN-135-126) การออกแบบ UX/UI สำหรับระบบ AI การวิจัยผู้ใช้ Design Thinking Wireframe/Prototype การออกแบบ Dashboard, Explainable AI, Usability Testing การออกแบบสำหรับผู้ใช้หลากหลายและมาตรฐาน Accessibility"},
+];
+
+// ---------- YLO ----------
+const YLO = {
+ 1:{title:"ปี 1 · พื้นฐานวิศวกรรมและ AI",sub:"35 หน่วยกิต · Foundations",plo:{1:"I",2:"I",3:"I",4:"I",5:"I",6:"I",7:"I"},
+    text:"อธิบายและประยุกต์ใช้คณิตศาสตร์ สถิติ วิศวกรรม การเขียนโปรแกรม และ AI เพื่อแก้โจทย์ที่กำหนด สร้างชิ้นงานอย่างปลอดภัย และทำงานร่วมกับผู้อื่น"},
+ 2:{title:"ปี 2 · องค์ประกอบระบบอัจฉริยะ",sub:"37 หน่วยกิต · AI Systems",plo:{1:"R",2:"R",3:"R",4:"R",5:"R",6:"R",7:"R"},
+    text:"พัฒนา เชื่อมต่อ และทดสอบโมเดล ML/DL, Computer Vision, Data Pipeline, IoT/Edge, Cloud/MLOps และโครงสร้างพื้นฐาน พร้อมประเมินสมรรถนะและความปลอดภัย"},
+ 3:{title:"ปี 3 · บูรณาการตามโดเมนและ Track",sub:"36 หน่วยกิต · Integration",plo:{1:"R",2:"M",3:"R",4:"R",5:"M",6:"M",7:"R"},
+    text:"ออกแบบและบูรณาการระบบสำหรับเกษตร อุตสาหกรรม หรือนวัตกรรมซอฟต์แวร์ วิเคราะห์ข้อจำกัด ทำงานข้ามศาสตร์ และสื่อสารกับผู้มีส่วนได้ส่วนเสีย"},
+ 4:{title:"ปี 4 · ส่งมอบระบบและวิชาชีพ",sub:"22 หน่วยกิต · Professional",plo:{1:"M",2:"M",3:"M",4:"M",5:"M",6:"M",7:"M"},
+    text:"นำระบบไปใช้ ประเมิน และสื่อสารผลในบริบทจริง ผ่าน Capstone และสหกิจศึกษา โดยรับผิดชอบต่อวิชาชีพและวางแผนการเรียนรู้ต่อเนื่อง"}
+};
+const GROUPNAME={ge:"ศึกษาทั่วไป",eng:"พื้นฐานวิศวฯ",ai:"แกน AI",track:"บังคับแขนง",elec:"เลือกชีพ",proj:"โครงงาน/สัมมนา",field:"สหกิจ"};
+const byCode=Object.fromEntries(C.map(x=>[x.c,x]));
+const short=code=>byCode[code]?byCode[code].s:code;
+
+// ---------- render curriculum graph ----------
+const GRAPH_ROWS = [
+ {name:"ศึกษาทั่วไป",g:"ge",cells:{
+   1:["GE-010-001","GE-010-004"],2:["GE-010-002","GE-010-003","GE-010-005"],
+   3:["GE-010-006","GE-020-008"],4:["GE-020-009"]}},
+ {name:"พื้นฐานวิศวกรรม",g:"eng",cells:{
+   1:["EN-001-0X4","EN-001-0X6","EN-001-0X8"],2:["EN-001-0X2","EN-001-0X7","EN-001-0X9"],
+   3:["EN-001-0X3","EN-001-0X5","EN-001-0X10"],4:["EN-001-0X1"]}},
+ {name:"แกน AI",g:"ai",cells:{
+   1:["EN-131-101"],2:["EN-131-102"],3:["EN-131-104","EN-131-106"],
+   4:["EN-131-103","EN-131-105","EN-131-107","EN-131-108"]}},
+ {name:"บังคับตามแขนง",g:"track",cells:{
+   5:["EN-132-101","EN-132-102","EN-132-103","EN-132-104"],
+   6:["EN-132-105","EN-132-106","EN-132-107"],7:["EN-132-108"]}},
+ {name:"เลือกชีพ/เสรี",g:"elec",cells:{
+   5:["วิชาเลือกชีพ 1","วิชาเลือกชีพ 2"],6:["วิชาเลือกชีพ 3","วิชาเลือกชีพ 4"],
+   7:["วิชาเลือกชีพ 5","วิชาเลือกเสรี 1","วิชาเลือกเสรี 2"]}},
+ {name:"โครงงาน/วิชาชีพ",g:"proj",cells:{
+   5:["EN-134-101"],6:["EN-134-102","EN-134-103"],
+   7:["EN-134-104","EN-135-401"],8:["EN-135-402"]}}
+];
+const yearOfSem=s=>s<=2?1:s<=4?2:s<=6?3:4;
+const nodeHTML=(value,group)=>{
+  const c=byCode[value];
+  if(!c)return '<span class="gnode gslot '+group+'">'+value+'</span>';
+  return '<span class="gnode '+c.g+'" data-code="'+c.c+'">'+c.s+'<em>'+c.c+'</em></span>';
+};
+const graphEl=document.getElementById('courseGraph');
+let graphHTML='<div class="graph-years"><div class="blank"></div>'+
+  '<div class="graph-y y1" data-year="1">ชั้นปีที่ 1<small>YLO1 · พื้นฐาน</small></div>'+
+  '<div class="graph-y y2" data-year="2">ชั้นปีที่ 2<small>YLO2 · ระบบย่อย</small></div>'+
+  '<div class="graph-y y3" data-year="3">ชั้นปีที่ 3<small>YLO3 · บูรณาการ</small></div>'+
+  '<div class="graph-y y4" data-year="4">ชั้นปีที่ 4<small>YLO4 · วิชาชีพ</small></div></div>';
+graphHTML+='<div class="graph-sems"><div></div>'+[1,2,3,4,5,6,7,8].map(s=>
+  '<div data-year="'+yearOfSem(s)+'">ภาค '+s+'</div>').join('')+'</div>';
+graphHTML+=GRAPH_ROWS.map(row=>'<div class="graph-row"><div class="lane">'+row.name+'</div>'+
+  [1,2,3,4,5,6,7,8].map(s=>'<div class="gcell" data-year="'+yearOfSem(s)+'">'+
+    (row.cells[s]||[]).map(v=>nodeHTML(v,row.g)).join('')+'</div>').join('')+'</div>').join('');
+graphEl.innerHTML=graphHTML;
+
+document.getElementById('graphFilter').addEventListener('click',e=>{
+ const b=e.target.closest('button[data-y]');if(!b)return;
+ document.querySelectorAll('#graphFilter button').forEach(x=>x.classList.toggle('on',x===b));
+ const y=b.dataset.y;
+ document.querySelectorAll('#courseGraph [data-year]').forEach(x=>x.classList.toggle('dim',y!=='all'&&x.dataset.year!==y));
+});
+graphEl.addEventListener('click',e=>{
+ const n=e.target.closest('.gnode[data-code]');if(!n)return;
+ document.querySelector('#tabs button[data-t="desc"]').click();
+ document.getElementById('search').value=n.dataset.code;curSearch=n.dataset.code;curFilter='all';
+ document.querySelectorAll('.fbtn').forEach(x=>x.classList.toggle('on',x.dataset.f==='all'));
+ apply();const d=coursesEl.querySelector('details');if(d)d.open=true;
+});
+
+// ---------- render TAB1 ----------
+const years=document.getElementById('years');
+[1,2,3,4].forEach(y=>{
+  const yl=YLO[y];
+  const plobadges=Object.entries(yl.plo).map(([p,l])=>`<span class="plobadge ${l}" title="PLO${p} ${PLO名[p]}">P${p}·${l}</span>`).join('');
+  // courses in this year, ordered by sem then group
+  const cs=C.filter(c=>c.y===y).sort((a,b)=>(a.sem-b.sem));
+  // add elective slots for year 3/4
+  const slots=[];
+  if(y===3){slots.push({s:"เลือกชีพ 1",g:"elec"},{s:"เลือกชีพ 2",g:"elec"},{s:"เลือกชีพ 3",g:"elec"},{s:"เลือกชีพ 4",g:"elec"});}
+  if(y===4){slots.push({s:"เลือกชีพ 5",g:"elec"},{s:"เลือกเสรี 1",g:"ge"},{s:"เลือกเสรี 2",g:"ge"});}
+  const rows=cs.map(c=>`<div class="cc g-${c.g}" data-code="${c.c}"><span class="bar"></span>
+      <span class="code">${c.c.replace('EN-','').replace('GE-','GE ')}</span>
+      <span class="nm">${c.s}</span><span class="cr">${c.cr.split('(')[0]}</span></div>`).join('');
+  const slotrows=slots.map(s=>`<div class="cc g-${s.g}" style="opacity:.7"><span class="bar"></span>
+      <span class="code">— —</span><span class="nm">${s.s}</span><span class="cr">3</span></div>`).join('');
+  years.insertAdjacentHTML('beforeend',`
+   <div class="yr y${y}">
+     <div class="cap">${yl.title}<small>${yl.sub} · YLO${y}</small></div>
+     <div class="ylo">${yl.text}<div class="plo">${plobadges}</div></div>
+     <div class="courselist">${rows}${slotrows}</div>
+   </div>`);
+});
+
+// ---------- render TAB2 (plan) ----------
+const SEM=[
+ {y:1,n:1,tot:16},{y:1,n:2,tot:19},{y:2,n:3,tot:19},{y:2,n:4,tot:18},
+ {y:3,n:5,tot:19},{y:3,n:6,tot:17},{y:4,n:7,tot:16},{y:4,n:8,tot:6}
+];
+const semExtra={
+ 5:[{s:"วิชาเลือกชีพ 1",k:"3"},{s:"วิชาเลือกชีพ 2",k:"3"}],
+ 6:[{s:"วิชาเลือกชีพ 3",k:"3"},{s:"วิชาเลือกชีพ 4",k:"3"}],
+ 7:[{s:"วิชาเลือกชีพ 5",k:"3"},{s:"วิชาเลือกเสรี 1",k:"3"},{s:"วิชาเลือกเสรี 2",k:"3"}]
+};
+const semgrid=document.getElementById('semgrid');
+SEM.forEach(sm=>{
+  const cs=C.filter(c=>c.sem===sm.n);
+  let rows=cs.map(c=>`<tr><td class="c">${c.c}</td><td>${c.t}</td><td class="k">${c.cr.split('(')[0]}</td></tr>`).join('');
+  (semExtra[sm.n]||[]).forEach(e=>{rows+=`<tr><td class="c">EN-133-XX</td><td style="opacity:.75">${e.s}</td><td class="k">${e.k}</td></tr>`;});
+  semgrid.insertAdjacentHTML('beforeend',`
+   <div class="sem y${sm.y}">
+     <h3>ปี ${sm.y} · ภาคเรียน ${sm.n} <span class="tot">${sm.tot} นก.</span></h3>
+     <table>${rows}</table>
+   </div>`);
+});
+
+// ---------- render TAB3 (desc) ----------
+const coursesEl=document.getElementById('courses');
+const countEl=document.getElementById('count');
+function depLine(c){
+  const parts=[];
+  if(c.h&&c.h.length)parts.push('🔒 บังคับก่อน: '+c.h.map(short).join(', '));
+  if(c.w&&c.w.length)parts.push('💡 แนะนำก่อน: '+c.w.map(short).join(', '));
+  if(c.co&&c.co.length)parts.push('🔁 เรียนคู่: '+c.co.map(short).join(', '));
+  return parts.length?`<div class="prq">${parts.join(' &nbsp;·&nbsp; ')}</div>`:'';
+}
+function render(list){
+  coursesEl.innerHTML=list.map(c=>{
+    const plos=c.p.map(p=>`<span class="tag plo" title="${PLO名[p]}">PLO${p}</span>`).join('');
+    const tr=c.tr?`<span class="tag">Track ${c.tr}</span>`:'';
+    const dup=c.dup?`<span class="tag" style="background:#fdecec;color:#c0392b;border:0">รหัสซ้ำ</span>`:'';
+    return `<details class="course g-${c.g}">
+      <summary><span class="code">${c.c}</span>
+        <span class="nm">${c.t} <span class="en">— ${c.e}</span></span>
+        <span class="cr">${c.cr}</span></summary>
+      <div class="body">
+        <div class="meta"><span class="tag">${GROUPNAME[c.g]}</span>${tr}${dup}${plos}</div>
+        <div class="desc">${c.d}</div>
+        ${depLine(c)}
+      </div></details>`;
+  }).join('');
+  countEl.textContent=`${list.length} วิชา`;
+}
+let curFilter='all',curSearch='';
+function apply(){
+  let l=C.slice();
+  if(curFilter!=='all')l=l.filter(c=>c.g===curFilter);
+  if(curSearch){const q=curSearch.toLowerCase();
+    l=l.filter(c=>(c.c+c.t+c.e+c.s+c.d).toLowerCase().includes(q));}
+  render(l);
+}
+document.getElementById('search').addEventListener('input',e=>{curSearch=e.target.value;apply();});
+document.querySelectorAll('.fbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');curFilter=b.dataset.f;apply();
+}));
+apply();
+
+// ---------- tabs ----------
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');document.getElementById(b.dataset.t).classList.add('active');
+  window.scrollTo(0,0);
+}));
+// click a course chip in overview -> jump to description
+document.getElementById('years').addEventListener('click',e=>{
+  const cc=e.target.closest('.cc[data-code]');if(!cc)return;
+  const code=cc.dataset.code;
+  document.querySelector('#tabs button[data-t="desc"]').click();
+  document.getElementById('search').value=code;curSearch=code;curFilter='all';
+  document.querySelectorAll('.fbtn').forEach(x=>x.classList.toggle('on',x.dataset.f==='all'));
+  apply();
+  const d=coursesEl.querySelector('details');if(d)d.open=true;
+});
+</script>
+</body>
+</html>

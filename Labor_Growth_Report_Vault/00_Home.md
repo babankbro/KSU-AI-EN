@@ -68,6 +68,7 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[04_Course_Descriptions_2570/08_Project_and_Seminar|โครงงานและสัมมนา]]
 - [[04_Course_Descriptions_2570/09_Field_Experience|ประสบการณ์วิชาชีพ]]
 - [[04_Course_Descriptions_2570/10_Data_Quality_and_Decisions|ข้อสังเกตและประเด็นเพื่อพิจารณา]]
+- [[04_Course_Descriptions_2570/11_Year_Level_Course_Sequence_and_YLO|กรอบรายวิชาชั้นปี 1–4 และ YLO]]
 
 ## แหล่งข้อมูลหลักสูตรปัจจุบัน
 

@@ -1,7 +1,7 @@
 # วิชาเลือกแขนงที่ 1: เกษตรอัจฉริยะ
 
 > สถานะ: ร่างคำอธิบายรายวิชาภาษาไทย–อังกฤษเพื่อการทวนสอบของคณะกรรมการหลักสูตร
-> จำนวนรายการ: **11 รายวิชา**
+> จำนวนรายการ: **15 รายวิชา**
 
 ถ้อยคำยึดสาระภาษาไทยจากไฟล์ต้นทาง และปรับรูปแบบให้สอดคล้องกับ [[../03_OBE_PLO_Design_2570/04_PLOs_7_OBE|PLO 7 ข้อ]] และ [[../03_OBE_PLO_Design_2570/03_Target_Skills|ทักษะเป้าหมาย]] โดยยังไม่ถือเป็นฉบับอนุมัติสำหรับ มคอ.2
 
@@ -12,53 +12,73 @@ Smart Agriculture and Irrigation Management
 หลักการเกษตรกรรมอัจฉริยะและการเกษตรแม่นยำ การวิเคราะห์และจัดการทรัพยากรดินและน้ำด้วยปัญญาประดิษฐ์ การออกแบบระบบชลประทานอัจฉริยะ ระบบน้ำหยด ระบบสปริงเกลอร์ ระบบน้ำท่วมขัง การตรวจวัดความชื้นดินและปริมาณน้ำในแปลงด้วยเซนเซอร์และอินเทอร์เน็ตของสรรพสิ่ง การพยากรณ์ความต้องการน้ำของพืชด้วยการเรียนรู้ของเครื่อง การควบคุมการให้น้ำอัตโนมัติและการประหยัดน้ำ ระบบเตือนภัยภัยแล้งและน้ำท่วมด้วยปัญญาประดิษฐ์ การจัดการน้ำในระดับแปลงและระดับลุ่มน้ำ การประยุกต์ใช้ระบบชลประทานอัจฉริยะสำหรับการผลิตพืช
 Principles, methods, and current technologies in Smart Agriculture and Irrigation Management; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-101 ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำ 3(2-2-5)
+EN-135-102 ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำ 3(2-2-5)
 Artificial Intelligence for Precision Agriculture
 หลักการและแนวคิดของเกษตรกรรมแม่นยำ การประยุกต์ใช้ปัญญาประดิษฐ์และการเรียนรู้ของเครื่องในการวิเคราะห์ข้อมูลเกษตรแม่นยำ การวิเคราะห์ข้อมูลดินและการแนะนำการจัดการธาตุอาหารพืชด้วยปัญญาประดิษฐ์ การตรวจจับและจำแนกโรคพืชและแมลงศัตรูพืชด้วยคอมพิวเตอร์วิทัศน์และการเรียนรู้เชิงลึก การพยากรณ์ผลผลิตและการวางแผนการผลิตด้วยการเรียนรู้ของเครื่อง ระบบแนะนำการจัดการฟาร์มอัจฉริยะ การใช้ข้อมูลดาวเทียมและภาพถ่ายโดรนร่วมกับปัญญาประดิษฐ์เพื่อประเมินสภาพพืช การบูรณาการข้อมูลจากหลายแหล่งเพื่อการตัดสินใจเชิงเกษตรแม่นยำ การประยุกต์ใช้ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำในการผลิตข้าว อ้อย และมันสำปะหลัง
 Principles, methods, and current technologies in Artificial Intelligence for Precision Agriculture; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-101 ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ 3(2-2-5)
-Geographic Information Systems and Spatial Analysis
+EN-135-103 ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ทางการเกษตร 3(2-2-5)
+Geographic Information Systems and Spatial Analysis for Agriculture
 หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลเชิงพื้นที่แบบเวกเตอร์และแรสเตอร์ การสร้างและวิเคราะห์แผนที่ดิจิทัลด้วยโปรแกรมสำเร็จรูป การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีการซ้อนทับ บัฟเฟอร์ และการวิเคราะห์เครือข่าย การบูรณาการระบบสารสนเทศภูมิศาสตร์กับปัญญาประดิษฐ์และการเรียนรู้ของเครื่องเพื่อการวิเคราะห์เชิงพื้นที่ขั้นสูง การประยุกต์ใช้ระบบสารสนเทศภูมิศาสตร์สำหรับการวางแผนการใช้ที่ดินเกษตร การจัดการทรัพยากรน้ำ การประเมินความเหมาะสมของพื้นที่ปลูกพืช การติดตามการเปลี่ยนแปลงการใช้ที่ดิน
-Principles, methods, and current technologies in Geographic Information Systems and Spatial Analysis; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
+Principles, methods, and current technologies in Geographic Information Systems and Spatial Analysis for Agriculture; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-102 เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว 3(3-0-6)
+EN-135-104 เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว 3(3-0-6)
 Postharvest Management Technology and Innovation
 หลักการและกระบวนการจัดการผลผลิตเกษตรหลังการเก็บเกี่ยว สรีรวิทยาและชีวเคมีของผลผลิตหลังการเก็บเกี่ยว การสูญเสียผลผลิตและแนวทางการลดความสูญเสีย เทคโนโลยีการคัดแยกและคัดเกรดผลผลิตด้วยปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์ ระบบการอบแห้งและการเก็บรักษาผลผลิตอัจฉริยะ การควบคุมอุณหภูมิและความชื้นในโรงเก็บด้วยอินเทอร์เน็ตของสรรพสิ่งและปัญญาประดิษฐ์ การบรรจุภัณฑ์อัจฉริยะและการยืดอายุการเก็บรักษา ระบบตรวจสอบย้อนกลับและการรับรองคุณภาพผลผลิต นวัตกรรมและเทคโนโลยีใหม่ในการจัดการหลังการเก็บเกี่ยว การประยุกต์ใช้สำหรับการจัดการผลผลิตข้าว อ้อย และมันสำปะหลังในบริบทอุตสาหกรรมเกษตร
 Principles, methods, and current technologies in Postharvest Management Technology and Innovation; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-103 การพยากรณ์และวิเคราะห์ข้อมูลฟาร์มด้วยปัญญาประดิษฐ์ 3(2-2-5)
+EN-135-105 การพยากรณ์และวิเคราะห์ข้อมูลฟาร์มด้วยปัญญาประดิษฐ์ 3(2-2-5)
 AI-Based Farm Data Forecasting and Analytics
 หลักการและวิธีการพยากรณ์ข้อมูลทางการเกษตรด้วยปัญญาประดิษฐ์ การเก็บรวบรวมและจัดการข้อมูลขนาดใหญ่จากเครือข่ายเซนเซอร์ในฟาร์ม การวิเคราะห์อนุกรมเวลาสำหรับข้อมูลผลผลิตเกษตรและสภาพอากาศ การสร้างตัวแบบพยากรณ์ผลผลิตด้วยการเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก การพยากรณ์ราคาสินค้าเกษตรและการวางแผนการผลิต การวิเคราะห์ความเสี่ยงและความไม่แน่นอนในการเกษตรด้วยปัญญาประดิษฐ์ การออกแบบแผงควบคุมข้อมูลและระบบแสดงผลข้อมูลฟาร์มสำหรับเกษตรกรและผู้บริหาร การประเมินและตรวจสอบความถูกต้องของตัวแบบพยากรณ์ การประยุกต์ใช้การวิเคราะห์ด้วยปัญญาประดิษฐ์สำหรับการพยากรณ์และวิเคราะห์ข้อมูลการผลิตข้าว อ้อย และมันสำปะหลัง
 Principles, methods, and current technologies in AI-Based Farm Data Forecasting and Analytics; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-104 โรงงานผลิตพืชอัจฉริยะและเกษตรกรรมแนวดิ่ง 3(2-2-5)
+EN-135-106 โรงงานผลิตพืชอัจฉริยะและเกษตรกรรมแนวดิ่ง 3(2-2-5)
 Smart Plant Factories and Vertical Farming
 หลักการและแนวคิดของโรงงานผลิตพืชปิดและเกษตรกรรมแนวดิ่ง สถาปัตยกรรมและองค์ประกอบของโรงงานผลิตพืช ระบบแสงเทียมแอลอีดีและการควบคุมสเปกตรัมแสงด้วยปัญญาประดิษฐ์ ระบบปลูกพืชโดยไม่ใช้ดิน ไฮโดรโปนิกส์ แอโรโปนิกส์ อควาโปนิกส์ การควบคุมสภาพแวดล้อมในโรงเรือนอัตโนมัติ อุณหภูมิ ความชื้น คาร์บอนไดออกไซด์ ธาตุอาหาร การตรวจสอบสุขภาพพืชและการจัดการโรคพืชด้วยคอมพิวเตอร์วิทัศน์และปัญญาประดิษฐ์ การประหยัดพลังงานและการจัดการทรัพยากรในโรงงานผลิตพืช การวิเคราะห์ต้นทุนและผลตอบแทนของการลงทุนในโรงงานผลิตพืช การประยุกต์ใช้เทคโนโลยีโรงงานผลิตพืชอัจฉริยะสำหรับการผลิตพืชมูลค่าสูงและพืชสมุนไพร
 Principles, methods, and current technologies in Smart Plant Factories and Vertical Farming; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-105 เทคโนโลยีปัญญาประดิษฐ์เพื่อการปศุสัตว์อัจฉริยะ 3(2-2-5)
+EN-135-107 เทคโนโลยีปัญญาประดิษฐ์เพื่อการปศุสัตว์อัจฉริยะ 3(2-2-5)
 Artificial Intelligence Technology for Smart Livestock
 หลักการและแนวคิดของการปศุสัตว์อัจฉริยะ การติดตามและตรวจสอบสุขภาพสัตว์ด้วยอินเทอร์เน็ตของสรรพสิ่งและเซนเซอร์สวมใส่ การวิเคราะห์พฤติกรรมสัตว์ด้วยคอมพิวเตอร์วิทัศน์และปัญญาประดิษฐ์ การพยากรณ์และตรวจจับโรคสัตว์ด้วยการเรียนรู้ของเครื่อง ระบบให้อาหารสัตว์อัตโนมัติและการจัดการโภชนาการด้วยปัญญาประดิษฐ์ การจัดการสภาพแวดล้อมในโรงเรือนปศุสัตว์ด้วยอินเทอร์เน็ตของสรรพสิ่ง การติดตามและจัดการฝูงสัตว์ด้วยระบบจีพีเอสและปัญญาประดิษฐ์ การวิเคราะห์ข้อมูลการผลิตและประสิทธิภาพของฟาร์มปศุสัตว์ ระบบตรวจสอบย้อนกลับผลิตภัณฑ์ปศุสัตว์ การประยุกต์ใช้เทคโนโลยีปัญญาประดิษฐ์สำหรับการเลี้ยงโคเนื้อ โคนม สุกร และสัตว์ปีก
 Principles, methods, and current technologies in Artificial Intelligence Technology for Smart Livestock; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-106 คอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดทางการเกษตร 3(2-2-5)
+EN-135-108 วิสัยทัศน์คอมพิวเตอร์สำหรับการจำแนกและคัดเกรดทางการเกษตร 3(2-2-5)
 Computer Vision for Agricultural Classification and Grading
 หลักการของคอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดผลผลิตเกษตร การออกแบบและติดตั้งระบบกล้องและแสงสำหรับการตรวจสอบผลผลิต การสร้างและจัดการชุดข้อมูลภาพผลผลิตเกษตรสำหรับการฝึกตัวแบบปัญญาประดิษฐ์ การฝึกและปรับแต่งตัวแบบการเรียนรู้เชิงลึกสำหรับการจำแนกประเภทและตรวจจับตำหนิ การวัดขนาดและน้ำหนักผลผลิตด้วยการประมวลผลภาพ การบูรณาการระบบคอมพิวเตอร์วิทัศน์กับสายพานลำเลียงและระบบคัดแยกอัตโนมัติ การประเมินความแม่นยำและประสิทธิภาพของระบบ การประยุกต์ใช้คอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดข้าว อ้อย มันสำปะหลัง และผลผลิตเกษตรอื่น ๆ ในสายการผลิตของโรงงานเกษตรอุตสาหกรรม
 Principles, methods, and current technologies in Computer Vision for Agricultural Classification and Grading; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-107 การเรียนรู้ของเครื่องและการวิเคราะห์ข้อมูลเซนเซอร์ในฟาร์ม 3(2-2-5)
+EN-135-109 การเรียนรู้ของเครื่องและการวิเคราะห์ข้อมูลเซนเซอร์ในฟาร์ม 3(2-2-5)
 Machine Learning and Farm Sensor Data Analytics
 หลักการและสถาปัตยกรรมของเครือข่ายเซนเซอร์ในฟาร์ม การเก็บรวบรวมและส่งข้อมูลจากเซนเซอร์ประเภทต่าง ๆ เซนเซอร์ดิน น้ำ อากาศ พืช การประมวลผลสัญญาณและการกรองสัญญาณรบกวนจากข้อมูลเซนเซอร์ การทำความสะอาดและเตรียมข้อมูลเซนเซอร์สำหรับการวิเคราะห์ด้วยปัญญาประดิษฐ์ การวิเคราะห์อนุกรมเวลาและการหารูปแบบในข้อมูลเซนเซอร์ การสร้างตัวแบบการเรียนรู้ของเครื่องสำหรับการพยากรณ์และการตัดสินใจจากข้อมูลเซนเซอร์ การตรวจจับความผิดปกติและการแจ้งเตือนอัจฉริยะในระบบเซนเซอร์ฟาร์ม การแสดงผลและรายงานข้อมูลเซนเซอร์ผ่านแผงควบคุมข้อมูล การประยุกต์ใช้การเรียนรู้ของเครื่องวิเคราะห์ข้อมูลเซนเซอร์สำหรับการจัดการฟาร์มข้าว อ้อย และมันสำปะหลังอย่างแม่นยำ
 Principles, methods, and current technologies in Machine Learning and Farm Sensor Data Analytics; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-108 การจัดการการผลิตพืชอัจฉริยะด้วยปัญญาประดิษฐ์ 3(2-2-5)
+EN-135-110 การจัดการการผลิตพืชอัจฉริยะด้วยปัญญาประดิษฐ์ 3(2-2-5)
 Artificial Intelligence for Smart Crop Production Management
 หลักการและแนวคิดของการผลิตพืชอัจฉริยะ การวิเคราะห์สมบัติของดินและการประเมินความอุดมสมบูรณ์ของดิน การวิเคราะห์ธาตุอาหารพืชและการวางแผนการใช้ปุ๋ยเฉพาะพื้นที่ การจัดการน้ำและการให้น้ำอย่างแม่นยำ การใช้ข้อมูลจากเซนเซอร์ อินเทอร์เน็ตของสรรพสิ่ง และภาพถ่ายจากอากาศยานไร้คนขับในการติดตามการเจริญเติบโตของพืช การประยุกต์ใช้การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึกในการวิเคราะห์โรคพืชและแมลงศัตรูพืชจากภาพดิจิทัล การพยากรณ์ผลผลิต การวิเคราะห์ต้นทุนการผลิต การประเมินผลกำไรและจุดคุ้มทุน การพัฒนาระบบสนับสนุนการตัดสินใจด้วยปัญญาประดิษฐ์และปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับการจัดการการผลิตพืชอย่างยั่งยืน การปฏิบัติการพัฒนาแบบจำลองและโครงงานประยุกต์
 Principles, methods, and current technologies in Artificial Intelligence for Smart Crop Production Management; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
-EN-135-109 หุ่นยนต์และระบบอัตโนมัติทางการเกษตร 3(2-2-5)
+EN-135-111 หุ่นยนต์และระบบอัตโนมัติทางการเกษตร 3(2-2-5)
 Agricultural Robotics and Automation
 หลักการของหุ่นยนต์และระบบอัตโนมัติทางการเกษตร องค์ประกอบของระบบหุ่นยนต์ เซนเซอร์ ตัวกระตุ้น ระบบควบคุม การประยุกต์ใช้อินเทอร์เน็ตของสรรพสิ่ง ปัญญาประดิษฐ์ คอมพิวเตอร์วิทัศน์ และการเรียนรู้ของเครื่องในหุ่นยนต์เกษตร การนำทางอัตโนมัติ การระบุตำแหน่งและการวางแผนเส้นทาง การเก็บข้อมูลภาคสนาม การพ่นสาร การใส่ปุ๋ย การกำจัดวัชพืช การเก็บเกี่ยว การตรวจสอบคุณภาพผลผลิต การใช้แขนกลและหุ่นยนต์เคลื่อนที่ในงานเกษตร การบูรณาการหุ่นยนต์กับอากาศยานไร้คนขับและระบบฟาร์มอัจฉริยะ การออกแบบและพัฒนาระบบหุ่นยนต์เพื่อแก้ปัญหาทางการเกษตร การปฏิบัติการและโครงงาน
 Principles, methods, and current technologies in Agricultural Robotics and Automation; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
+
+EN-135-112 เทคโนโลยีอากาศยานไร้คนขับและการสำรวจระยะไกลเพื่อการเกษตร 3(2-2-5)
+UAV Technology and Remote Sensing for Agriculture
+หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนเส้นทางการบินเพื่อการสำรวจทางการเกษตร การประยุกต์ใช้เซนเซอร์ภาพถ่ายหลายช่วงคลื่นและภาพความร้อนเพื่อติดตามความสมบูรณ์ของพืช การประมวลผลและวิเคราะห์ภาพถ่ายทางอากาศด้วยโปรแกรมเฉพาะทางและการเรียนรู้ของเครื่อง การประเมินความเสียหายของแปลงเกษตรจากภัยพิบัติ การสร้างแผนที่ดัชนีพืชพรรณเพื่อการประเมินการเจริญเติบโต การประยุกต์ใช้อากาศยานไร้คนขับในการพ่นของเหลวเพื่อการเกษตรแม่นยำ กฎหมายและความปลอดภัยในการใช้งานอากาศยานไร้คนขับ
+Principles, methods, and current technologies in UAV Technology and Remote Sensing for Agriculture; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
+
+EN-135-113 การจัดการห่วงโซ่อุปทานสินค้าเกษตรด้วยเทคโนโลยีอัจฉริยะ 3(3-0-6)
+Smart Agricultural Supply Chain Management
+หลักการจัดการห่วงโซ่อุปทานและโลจิสติกส์สำหรับสินค้าเกษตร การใช้ปัญญาประดิษฐ์ในการวางแผนการจัดหาและการกระจายผลผลิตเกษตร การจัดการคลังสินค้าเกษตรอัจฉริยะด้วยอินเทอร์เน็ตของสรรพสิ่ง การติดตามและตรวจสอบย้อนกลับผลผลิตด้วยเทคโนโลยีบล็อกเชนตลอดห่วงโซ่อุปทาน การพยากรณ์ความต้องการของตลาดด้วยการเรียนรู้ของเครื่องเพื่อลดความสูญเสียอาหาร การวิเคราะห์และการจัดเส้นทางการขนส่งผลผลิตทางการเกษตรอย่างมีประสิทธิภาพ การบูรณาการเทคโนโลยีเพื่อเพิ่มความโปร่งใสและความยั่งยืนในห่วงโซ่อุปทาน
+Principles, methods, and current technologies in Smart Agricultural Supply Chain Management; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
+
+EN-135-114 การประยุกต์ใช้ปัญญาประดิษฐ์ในเทคโนโลยีชีวภาพการเกษตร 3(2-2-5)
+AI Applications in Agricultural Biotechnology
+ความสัมพันธ์ระหว่างปัญญาประดิษฐ์และเทคโนโลยีชีวภาพการเกษตร การใช้การเรียนรู้ของเครื่องในการวิเคราะห์ข้อมูลพันธุกรรมพืชและสัตว์ การวิเคราะห์ลำดับดีเอ็นเอเพื่อการคัดเลือกสายพันธุ์ที่ทนทานต่อโรคและสภาพอากาศ การใช้ปัญญาประดิษฐ์ในการค้นหาสารออกฤทธิ์ทางชีวภาพเพื่อใช้เป็นชีวภัณฑ์ทางการเกษตร การจำลองและพยากรณ์ปฏิสัมพันธ์ระหว่างสิ่งมีชีวิตและสภาพแวดล้อม จริยธรรมและความปลอดภัยทางชีวภาพในการประยุกต์ใช้ปัญญาประดิษฐ์กับเทคโนโลยีชีวภาพ
+Principles, methods, and current technologies in AI Applications in Agricultural Biotechnology; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
+
+EN-135-115 การจัดการความเสี่ยงทางการเกษตรและการเปลี่ยนแปลงสภาพภูมิอากาศด้วยปัญญาประดิษฐ์ 3(3-0-6)
+Agricultural Risk and Climate Change Management with AI
+ผลกระทบของการเปลี่ยนแปลงสภาพภูมิอากาศต่อการเกษตร การประยุกต์ใช้ปัญญาประดิษฐ์ในการวิเคราะห์ข้อมูลภูมิอากาศขนาดใหญ่ การพยากรณ์การเกิดสภาพอากาศสุดขั้วภัยแล้งและอุทกภัย การวิเคราะห์และประเมินความเสี่ยงต่อผลผลิตทางการเกษตรด้วยตัวแบบคอมพิวเตอร์ การออกแบบระบบเตือนภัยล่วงหน้าอัจฉริยะ กลยุทธ์การปรับตัวของภาคการเกษตรต่อการเปลี่ยนแปลงสภาพภูมิอากาศ การประกันภัยพืชผลโดยอาศัยข้อมูลดาวเทียมและปัญญาประดิษฐ์ นโยบายและความยั่งยืนทางการเกษตร
+Principles, methods, and current technologies in Agricultural Risk and Climate Change Management with AI; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in smart-agriculture and precision-farming contexts
 
