@@ -23,11 +23,11 @@
 | **McKinsey** | เติบโต ~**60% ต่อปี** แตะ ~**73.5 พันล้าน USD ภายในปี 2027** |
 | McKinsey (ผลเชิงปฏิบัติ) | Digital Twin เร่งการพัฒนา/ deploy AI ได้ถึง **60%** และลดต้นทุนดำเนินงานได้ถึง **15%** |
 
-→ ไม่ว่าจะใช้ตัวเลขใด ทิศทางชัดเจนว่าตลาดโตเร็วระดับ CAGR 30–60% ซึ่งรองรับ [[03_Industrial_AI_Engineering|Track 2]] โดยตรง
+→ ไม่ว่าจะใช้ตัวเลขใด ทิศทางชัดเจนว่าตลาดโตเร็วระดับ CAGR 30–60% ซึ่งรองรับ [[03_Industrial_AI_Engineering|แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม]] โดยตรง
 
 ## 3. ขนาดตลาดเกษตรอัจฉริยะ / เกษตรแม่นยำ
 
-ยืนยันว่า Track 1 มีฐานตลาดเติบโตสองหลัก (double-digit CAGR):
+ยืนยันว่าแขนงวิชาเกษตรอัจฉริยะมีฐานตลาดเติบโตสองหลัก (double-digit CAGR):
 
 | ตลาด | มูลค่า | CAGR |
 |---|---|---|
@@ -40,8 +40,8 @@
 
 ## 4. WEF Future of Jobs 2025 — รายละเอียดอาชีพโตเร็ว (เสริมของเดิม)
 
-- **โตเร็วที่สุดเชิง % :** Big Data Specialists, FinTech Engineers, AI & Machine Learning Specialists, Software & Application Developers, Security Management Specialists, Autonomous & EV Specialists → กระจุกใน [[04_Enterprise_AI_Innovation|Track 3]]
-- **โตมากที่สุดเชิงจำนวน (absolute) :** Farmworkers, Delivery Drivers, Construction Workers, Salespersons, Food Processing Workers → ฐานของ [[02_Smart_Agriculture_Engineering|Track 1]]
+- **โตเร็วที่สุดเชิง % :** Big Data Specialists, FinTech Engineers, AI & Machine Learning Specialists, Software & Application Developers, Security Management Specialists, Autonomous & EV Specialists → กระจุกใน [[04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
+- **โตมากที่สุดเชิงจำนวน (absolute) :** Farmworkers, Delivery Drivers, Construction Workers, Salespersons, Food Processing Workers → ฐานของ [[02_Smart_Agriculture_Engineering|แขนงวิชาเกษตรอัจฉริยะ]]
 - การหมุนเวียนตำแหน่งงาน = **22% ของงานทั้งหมดภายในปี 2030**
 
 ## 5. ค่าตอบแทนและทักษะที่ตลาดต้องการสูงสุด (2026)
@@ -57,8 +57,8 @@
 | ตำแหน่ง/กลุ่มงาน | สัญญาณอุปสงค์ | Track ที่รองรับ |
 |---|---|---|
 | Data Scientist/Analyst + Data Engineer | รวม **> 13,000 ตำแหน่ง/ปี** | ทุก Track (data) |
-| Robotics & Automation | ความต้องการต่อเนื่อง | [[03_Industrial_AI_Engineering\|Track 2]] |
-| AI/ML Engineer | ความต้องการต่อเนื่อง | [[04_Enterprise_AI_Innovation\|Track 3]] |
+| Robotics & Automation | ความต้องการต่อเนื่อง | [[03_Industrial_AI_Engineering\|แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม]] |
+| AI/ML Engineer | ความต้องการต่อเนื่อง | [[04_Enterprise_AI_Innovation\|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]] |
 
 → TDRI ยืนยันว่า **"ทักษะ AI กลายเป็นมาตรฐานทักษะใหม่ของนายจ้าง"** เสริมภาพประมาณการเชิงนโยบาย (depa/สอวช.) ด้วยหลักฐานอุปสงค์ที่เกิดขึ้นจริง — ดู [[07_Thailand_Labor_Market]]
 

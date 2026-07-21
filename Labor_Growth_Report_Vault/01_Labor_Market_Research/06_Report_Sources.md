@@ -19,8 +19,8 @@
 
 - เหตุผลความจำเป็นของหลักสูตร
 - Core AI
-- Industrial AI Engineering
-- Enterprise AI Innovation
+- ปัญญาประดิษฐ์ภาคอุตสาหกรรม
+- นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์
 - การปรับหลักสูตรตามตลาดแรงงานอนาคต
 
 ## Stanford AI Index 2025
@@ -35,7 +35,7 @@
 
 ใช้สนับสนุน:
 
-- Enterprise AI Innovation
+- นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์
 - Generative AI and LLMs
 - MLOps and AI Model Lifecycle
 - AI Product Development
@@ -71,8 +71,8 @@
 
 ใช้สนับสนุน:
 
-- Track 2: Industrial AI Engineering
-- Track 3: Enterprise AI Innovation
+- แขนงที่ 2: ปัญญาประดิษฐ์ภาคอุตสาหกรรม
+- แขนงที่ 3: นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์
 - Data Science, Software Development, Cybersecurity, MLOps
 - การเขียน Career Paths ของบัณฑิต
 
@@ -94,8 +94,8 @@
 ใช้สนับสนุน:
 
 - ความสอดคล้องกับนโยบายไทย
-- Smart Agriculture Engineering
-- Industrial AI Engineering
+- เกษตรอัจฉริยะ
+- ปัญญาประดิษฐ์ภาคอุตสาหกรรม
 - การสร้างกำลังคนดิจิทัลระดับภูมิภาค
 
 ## ManpowerGroup - 2026 Global Talent Shortage Survey

@@ -29,9 +29,9 @@
 
 | Track | ความต้องการแรงงานที่รองรับ | หลักฐานสนับสนุน |
 |---|---|---|
-| Smart Agriculture Engineering | Smart Farming Engineer, AgTech Data Analyst, UAV/Robotics Specialist | WEF 2025, depa Digital Economy Master Plan, depa Digital Indicators |
-| Industrial AI Engineering | Automation & AI Engineer, Smart Factory Engineer, Industrial Data/Optimization Analyst | WEF 2025, BLS Industrial Engineer, depa Digital Industry Indicators |
-| Enterprise AI Innovation | AI/ML Engineer, MLOps Engineer, Enterprise AI Solution Developer, Cybersecurity for AI | Stanford AI Index 2025, Microsoft/LinkedIn 2024, BLS Data Scientist/Software/Cybersecurity |
+| เกษตรอัจฉริยะ | Smart Farming Engineer, AgTech Data Analyst, UAV/Robotics Specialist | WEF 2025, depa Digital Economy Master Plan, depa Digital Indicators |
+| ปัญญาประดิษฐ์ภาคอุตสาหกรรม | Automation & AI Engineer, Smart Factory Engineer, Industrial Data/Optimization Analyst | WEF 2025, BLS Industrial Engineer, depa Digital Industry Indicators |
+| นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์ | AI/ML Engineer, MLOps Engineer, Enterprise AI Solution Developer, Cybersecurity for AI | Stanford AI Index 2025, Microsoft/LinkedIn 2024, BLS Data Scientist/Software/Cybersecurity |
 
 ## ตัวเลขสนับสนุนที่ควรใช้ในเอกสารหลักสูตร
 
@@ -46,4 +46,3 @@
 หลักสูตรมีเหตุผลรองรับเชิงแรงงานชัดเจน เพราะตลาดต้องการบัณฑิตที่ทำได้มากกว่าใช้ AI สำเร็จรูป กล่าวคือ ต้องสามารถออกแบบระบบ AI, เชื่อมต่อกับ sensor/IoT/automation, deploy ระบบจริง, วิเคราะห์ข้อมูล, และทำงานร่วมกับโจทย์อุตสาหกรรมหรือเกษตรจริงได้
 
 [[00_Home|กลับหน้าหลัก]]
-

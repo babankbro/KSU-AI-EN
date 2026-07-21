@@ -11,7 +11,7 @@ import {
  * วิชาแขนง/เลือกชีพ แล้วจบที่ "อาชีพเป้าหมาย" (ปลายทาง)
  * ใช้ dagre จัดเลเยอร์ → กล่องไม่ทับกัน + เส้นเดินตามจุดหักที่คำนวณให้
  */
-const NODE_W = 208, NODE_H = 74, JOB_W = 250, JOB_H = 96;
+const NODE_W = 208, NODE_H = 74, JOB_W = 290, JOB_H = 124;
 const byCode = Object.fromEntries(COURSES.map(c => [c.c, c]));
 
 const EDGE_STYLE = {
@@ -51,11 +51,13 @@ function runDagre(nodeDefs, edgeDefs, opt = {}) {
 }
 
 const TRACK_TABS = [
-  { id: 1, label: "Track 1 · เกษตรอัจฉริยะ" },
-  { id: 2, label: "Track 2 · AI อุตสาหกรรม" },
-  { id: 3, label: "Track 3 · นวัตกรรม/ซอฟต์แวร์ AI" },
-  { id: 0, label: "ภาพรวมทุก Track" },
+  { id: 1, label: "แขนง 1 · เกษตรอัจฉริยะ" },
+  { id: 2, label: "แขนง 2 · ปัญญาประดิษฐ์ภาคอุตสาหกรรม" },
+  { id: 3, label: "แขนง 3 · นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์" },
+  { id: 0, label: "อาชีพข้ามทุกแขนง" },
 ];
+
+const COMMON_CAREER_COUNT = CAREERS.filter(c => c.track === 0).length;
 
 export default function CareerGraph() {
   const [track, setTrack] = useState(1);
@@ -133,7 +135,7 @@ export default function CareerGraph() {
         {track !== 0 && (
           <label className="gtoggle">
             <input type="checkbox" checked={withCommon} onChange={e => { setWithCommon(e.target.checked); setSelJob(null); }} />
-            รวมอาชีพภาพรวม 3 ตำแหน่ง
+            รวมอาชีพข้ามแขนง {COMMON_CAREER_COUNT} ตำแหน่ง
           </label>
         )}
         <span className="gsep" />

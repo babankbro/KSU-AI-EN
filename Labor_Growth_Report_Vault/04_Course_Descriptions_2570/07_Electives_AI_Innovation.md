@@ -1,4 +1,4 @@
-# วิชาเลือกแขนงที่ 3: นวัตกรรมและซอฟต์แวร์ปัญญาประดิษฐ์
+# วิชาเลือกแขนงที่ 3: นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์
 
 > สถานะ: ร่างคำอธิบายรายวิชาภาษาไทย–อังกฤษเพื่อการทวนสอบของคณะกรรมการหลักสูตร
 > จำนวนรายการ: **15 รายวิชา**
@@ -83,4 +83,3 @@ Ethics and Law for Artificial Intelligence Technology
 Principles, methods, and current technologies in Ethics and Law for Artificial Intelligence Technology; problem and requirements analysis; selection and application of appropriate engineering, data, and AI tools; system design and implementation; experimentation, performance evaluation, and interpretation of results; safety, security, ethics, and sustainability considerations; practical case studies in production-grade AI software and digital-service contexts
 
 [[00_Course_Descriptions_Home|← หน้าหลักคำอธิบายรายวิชา]]
-

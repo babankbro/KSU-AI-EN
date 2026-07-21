@@ -4,6 +4,7 @@
 > ปรับโครงสร้าง Vault และอัปเดตข้อมูลหลักสูตรปัจจุบันเมื่อ 19 กรกฎาคม 2569 (2026-07-19)
 > เพิ่มชุด OBE (การออกแบบ PLO ตามแนวทาง Outcome-Based Education) และอัปเดตข้อมูลตลาดแรงงาน (TDRI, Domain Expertise Premium) เมื่อ 19 กรกฎาคม 2569
 > เพิ่มร่างคำอธิบายรายวิชาภาษาไทย–อังกฤษ แยกตามหมวดและ 3 แขนง เมื่อ 20 กรกฎาคม 2569 (2026-07-20)
+> กำหนด PLO 7 ข้อตาม ABET EAC เป็นถ้อยคำมาตรฐานกลางของ Vault เมื่อ 21 กรกฎาคม 2569 (2026-07-21)
 
 ## เริ่มต้นใช้งาน
 
@@ -14,20 +15,20 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 เก็บในโฟลเดอร์ `01_Labor_Market_Research/`
 
 - [[01_Labor_Market_Research/01_Executive_Summary|สรุปผู้บริหารด้านตลาดแรงงาน]]
-- [[01_Labor_Market_Research/02_Smart_Agriculture_Engineering|Smart Agriculture Engineering]]
-- [[01_Labor_Market_Research/03_Industrial_AI_Engineering|Industrial AI Engineering]]
-- [[01_Labor_Market_Research/04_Enterprise_AI_Innovation|Enterprise AI Innovation]]
+- [[01_Labor_Market_Research/02_Smart_Agriculture_Engineering|แขนงวิชาเกษตรอัจฉริยะ]]
+- [[01_Labor_Market_Research/03_Industrial_AI_Engineering|แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม]]
+- [[01_Labor_Market_Research/04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
 - [[01_Labor_Market_Research/05_Conclusion|บทสรุปความสอดคล้องกับตลาดแรงงาน]]
 - [[01_Labor_Market_Research/06_Report_Sources|แหล่งอ้างอิง]]
 - [[01_Labor_Market_Research/07_Thailand_Labor_Market|ตลาดแรงงานประเทศไทย]]
 - [[01_Labor_Market_Research/08_Kalasin_Regional_Context|บริบทจังหวัดกาฬสินธุ์]]
 - [[01_Labor_Market_Research/09_Additional_Research_2026|งานวิจัยเพิ่มเติม 2025–2026 (+ TDRI, Domain Premium)]] 🆕
-- [[01_Labor_Market_Research/10_PLOs_ABET_Design|ข้อเสนอ PLO 7 ข้อตาม ABET]]
+- [[01_Labor_Market_Research/10_PLOs_ABET_Design|PLO 7 ข้อและรายละเอียดการเทียบเคียง ABET — เอกสารมาตรฐานกลาง]]
 - [[01_Labor_Market_Research/11_Career_Paths_by_Track|เส้นทางอาชีพจำแนกตาม 3 Tracks]] 🆕
 - [[01_Labor_Market_Research/12_Priority_Careers_12|12 อาชีพเป้าหมายสำคัญของหลักสูตร]] 🆕
 
-> [!warning] สถานะข้อมูลเดิม
-> เอกสาร PLO 7 ข้อตาม ABET เป็น **ข้อเสนอเพื่อการออกแบบ** ไม่ใช่ PLO ปัจจุบันในเล่มหลักสูตร ซึ่งกำหนดไว้ 5 ข้อ
+> [!important] มาตรฐานถ้อยคำ PLO ของ Vault
+> ให้ใช้ PLO1–PLO7 และถ้อยคำตาม [[01_Labor_Market_Research/10_PLOs_ABET_Design|PLO 7 ข้อและรายละเอียด ABET]] ในเอกสารทุกชุด ส่วน [[02_Current_Curriculum_2570/02_PLOs_5|PLO 5 ข้อจากต้นฉบับเดิม]] เก็บไว้เพื่อสอบย้อนกลับเชิงประวัติเท่านั้น
 
 ### 2. ข้อมูลหลักสูตรปัจจุบัน พ.ศ. 2570
 
@@ -35,7 +36,8 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 
 - [[02_Current_Curriculum_2570/00_Current_Curriculum_Home|หน้าหลักข้อมูลหลักสูตรปัจจุบัน]]
 - [[02_Current_Curriculum_2570/01_Program_Overview|ภาพรวมและอัตลักษณ์หลักสูตร]]
-- [[02_Current_Curriculum_2570/02_PLOs_5|ผลลัพธ์การเรียนรู้ระดับหลักสูตร 5 ข้อ]]
+- [[01_Labor_Market_Research/10_PLOs_ABET_Design|ผลลัพธ์การเรียนรู้ระดับหลักสูตร 7 ข้อ — ฉบับมาตรฐานกลาง]]
+- [[02_Current_Curriculum_2570/02_PLOs_5|PLO 5 ข้อจากต้นฉบับเดิม — เอกสารประวัติ]]
 - [[02_Current_Curriculum_2570/03_Curriculum_Structure|โครงสร้างหลักสูตรและหน่วยกิต]]
 - [[02_Current_Curriculum_2570/04_Tracks_and_Learning_Design|แขนงวิชาและแนวทางจัดการเรียนรู้]]
 - [[02_Current_Curriculum_2570/05_Data_Quality_Notes|ประเด็นที่ต้องตรวจสอบในต้นฉบับ]]
@@ -53,7 +55,7 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[03_OBE_PLO_Design_2570/06_OBE_References|⑥ เอกสารอ้างอิง]]
 
 > [!info] จุดต่างของชุด OBE
-> Needs → GA → Skills → PLO **สอบย้อนกลับได้ครบทุกข้อ** ตาม AUN-QA Criterion 1 ต่างจากไฟล์ [[01_Labor_Market_Research/10_PLOs_ABET_Design|ข้อเสนอ ABET เดิม]] ที่ให้เฉพาะ PLO กับ mapping ย่อ
+> Needs → GA → Skills → PLO **สอบย้อนกลับได้ครบทุกข้อ** ตาม AUN-QA Criterion 1 โดยใช้ถ้อยคำ PLO เดียวกับ [[01_Labor_Market_Research/10_PLOs_ABET_Design|เอกสารมาตรฐานกลาง]]
 
 ### 4. ร่างคำอธิบายรายวิชา พ.ศ. 2570 🆕
 
@@ -66,7 +68,7 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[04_Course_Descriptions_2570/04_Track_Core|วิชาบังคับตามแขนง]]
 - [[04_Course_Descriptions_2570/05_Electives_Smart_Agriculture|วิชาเลือกแขนงเกษตรอัจฉริยะ]]
 - [[04_Course_Descriptions_2570/06_Electives_Industrial_AI|วิชาเลือกแขนงปัญญาประดิษฐ์ภาคอุตสาหกรรม]]
-- [[04_Course_Descriptions_2570/07_Electives_AI_Innovation|วิชาเลือกแขนงนวัตกรรมและซอฟต์แวร์ AI]]
+- [[04_Course_Descriptions_2570/07_Electives_AI_Innovation|วิชาเลือกแขนงนวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
 - [[04_Course_Descriptions_2570/08_Project_and_Seminar|โครงงานและสัมมนา]]
 - [[04_Course_Descriptions_2570/09_Field_Experience|ประสบการณ์วิชาชีพ]]
 - [[04_Course_Descriptions_2570/10_Data_Quality_and_Decisions|ข้อสังเกตและประเด็นเพื่อพิจารณา]]
@@ -82,8 +84,9 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 
 ## แนวทางเลือกใช้ข้อมูล
 
-- ต้องการข้อความตามเล่มหลักสูตร → ใช้โฟลเดอร์ [[02_Current_Curriculum_2570/00_Current_Curriculum_Home|หลักสูตรปัจจุบัน]]
+- ต้องการถ้อยคำ PLO มาตรฐาน → ใช้ [[01_Labor_Market_Research/10_PLOs_ABET_Design|PLO 7 ข้อและรายละเอียด ABET]]
+- ต้องการตรวจข้อความที่ถอดจากต้นฉบับเดิม → ใช้โฟลเดอร์ [[02_Current_Curriculum_2570/00_Current_Curriculum_Home|ข้อมูลหลักสูตรและเอกสารประวัติ]]
 - ต้องการเหตุผลความจำเป็นหรือตัวเลขตลาดแรงงาน → ใช้โฟลเดอร์ [[01_Labor_Market_Research/01_Executive_Summary|รายงานตลาดแรงงาน]]
-- ต้องการเสนอปรับ PLO เป็น 7 ข้อ พร้อมกระบวนการ OBE ครบ (Needs→GA→Skills→PLO) → ใช้ [[03_OBE_PLO_Design_2570/00_OBE_Home|ชุด OBE]] และระบุให้ชัดว่าเป็นฉบับเสนอปรับปรุง
+- ต้องการกระบวนการ OBE ครบ (Needs→GA→Skills→PLO) → ใช้ [[03_OBE_PLO_Design_2570/00_OBE_Home|ชุด OBE]]
 - ต้องการร่างชื่อและคำอธิบายรายวิชาภาษาไทย–อังกฤษ แยกตามหมวด/แขนง → ใช้ [[04_Course_Descriptions_2570/00_Course_Descriptions_Home|ชุดคำอธิบายรายวิชา]]
 - ก่อนนำตัวเลขหน่วยกิตไปใช้ → ตรวจ [[02_Current_Curriculum_2570/05_Data_Quality_Notes|ประเด็นที่ต้องตรวจสอบ]]

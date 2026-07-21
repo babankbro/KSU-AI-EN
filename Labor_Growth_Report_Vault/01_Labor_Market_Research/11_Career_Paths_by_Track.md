@@ -6,7 +6,7 @@
 เอกสารนี้สังเคราะห์อาชีพจากโครงสร้างรายวิชา PLO ทักษะเป้าหมาย และหลักฐานตลาดแรงงาน เพื่อใช้สื่อสารว่า **บัณฑิตสามารถสมัครงานกลุ่มใดได้** และต้องสร้าง Portfolio แบบใดในแต่ละ Track โดยชื่ออาชีพจริงอาจแตกต่างกันตามองค์กร
 
 > [!success] รายการคัดเลือกสำหรับใช้สื่อสารหลักสูตร
-> ดู [[12_Priority_Careers_12|12 อาชีพเป้าหมายสำคัญ]] — Track ละ 3 อาชีพ + ภาพรวมทุก Track 3 อาชีพ
+> ดู [[12_Priority_Careers_12|12 อาชีพเป้าหมายและเส้นทางรายวิชา]] — รายการปลายทางมาตรฐานที่ใช้ในเว็บ `curriculum-graph`
 
 ## 1. วิธีจำแนกระดับความพร้อมสู่อาชีพ
 
@@ -31,9 +31,9 @@
 
 | Track | กลุ่มอาชีพแกน | อุตสาหกรรม/องค์กรเป้าหมาย |
 |---|---|---|
-| **T1 เกษตรอัจฉริยะ** | Smart Agriculture Engineer, AgTech AI Engineer, Farm Data Analyst, UAV/GeoAI Specialist, Agricultural Robotics Engineer | ฟาร์มขนาดใหญ่ ผู้ให้บริการ AgTech บริษัทโดรน บริษัทเมล็ดพันธุ์/ปุ๋ย โรงเรือนอัจฉริยะ สหกรณ์ หน่วยงานเกษตรและวิจัย |
-| **T2 AI ภาคอุตสาหกรรม** | Automation Engineer, Industrial AI Engineer, Predictive Maintenance Engineer, Machine Vision Engineer, Digital Twin Engineer | โรงงานน้ำตาล โรงสีข้าว โรงงานแป้งมัน อาหารและเครื่องดื่ม ผู้รับเหมาระบบ Automation/System Integrator คลังสินค้าและโลจิสติกส์ |
-| **T3 นวัตกรรมและซอฟต์แวร์ AI** | AI/ML Engineer, AI Software Engineer, Data Engineer, MLOps Engineer, GenAI/LLM Engineer, AI QA Engineer | บริษัทซอฟต์แวร์/คลาวด์ Startup ธนาคาร โทรคมนาคม E-commerce ที่ปรึกษาดิจิทัล หน่วยงานรัฐและองค์กรที่พัฒนาระบบ AI |
+| **T1 เกษตรอัจฉริยะ** | Smart Agriculture Engineer, AgTech AI Engineer, Farm Data Analyst, UAV/GeoAI Specialist, Agricultural Robotics Engineer | ข้าว อ้อย มันสำปะหลัง ฟาร์มขนาดใหญ่ อุตสาหกรรมแปรรูป ผู้ให้บริการ AgTech บริษัทโดรน โรงเรือนอัจฉริยะ สหกรณ์ หน่วยงานเกษตรและวิจัย |
+| **T2 ปัญญาประดิษฐ์ภาคอุตสาหกรรม** | Automation Engineer, Industrial AI Engineer, Predictive Maintenance Engineer, Machine Vision Engineer, Digital Twin Engineer | ระบบอัตโนมัติในโรงงาน โรงงานน้ำตาล โรงสีข้าว โรงงานแป้งมัน อาหารและเครื่องดื่ม ผู้รับเหมาระบบ Automation/System Integrator คลังสินค้าและโลจิสติกส์ |
+| **T3 นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์** | AI/ML Engineer, AI Software Engineer, Data Engineer, MLOps Engineer, GenAI/LLM Engineer, AI QA Engineer | บริษัทซอฟต์แวร์/คลาวด์ Startup ธนาคาร โทรคมนาคม E-commerce ที่ปรึกษาดิจิทัล หน่วยงานรัฐ และธุรกิจเทคโนโลยีระดับองค์กร |
 
 ## 4. Track 1 — เกษตรอัจฉริยะ (Smart Agriculture)
 
@@ -97,7 +97,7 @@ Automation / Data / Process Engineer
 
 `Automation Engineer` · `PLC SCADA` · `Control Engineer` · `Industrial AI` · `Machine Vision` · `Predictive Maintenance` · `IIoT` · `Digital Twin` · `Robotics Engineer` · `Smart Factory` · `System Integrator`
 
-## 6. Track 3 — นวัตกรรมและซอฟต์แวร์ปัญญาประดิษฐ์ (AI Innovation and Software)
+## 6. Track 3 — นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์ (Artificial Intelligence Software Innovation)
 
 ### อาชีพที่สมัครได้
 

@@ -1,8 +1,8 @@
-# Track 3: Enterprise AI Innovation
+# แขนงวิชาที่ 3: นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์
 
 ## เหตุผลสนับสนุน
 
-Enterprise AI Innovation เป็น Track ที่รองรับการนำ AI ไปใช้ในองค์กร ธุรกิจ การเงิน สุขภาพ การบริการ และผลิตภัณฑ์ดิจิทัล โดยเน้น **Generative AI, Large Language Models, MLOps, AI Product Development, Cybersecurity for AI และ AI Startup**
+แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์รองรับการพัฒนาซอฟต์แวร์และการนำ AI ไปใช้ในองค์กร ธุรกิจ การเงิน สุขภาพ การบริการ และผลิตภัณฑ์ดิจิทัล โดยเน้น **Generative AI, Large Language Models, MLOps, AI Product Development, Cybersecurity for AI, AI Startup และธุรกิจเทคโนโลยีระดับองค์กร**
 
 [[06_Report_Sources#Stanford AI Index 2025|Stanford AI Index 2025]] รายงานว่าองค์กรที่ใช้ AI เพิ่มจาก **55% ในปี 2023** เป็น **78% ในปี 2024** แสดงว่า AI adoption เข้าสู่ภาคองค์กรอย่างรวดเร็ว ขณะเดียวกัน [[06_Report_Sources#Microsoft and LinkedIn Work Trend Index 2024|Microsoft and LinkedIn Work Trend Index 2024]] พบว่า **75% ของ knowledge workers ใช้ AI ในงานแล้ว** และ **66% ของผู้นำระบุว่าจะไม่จ้างคนที่ไม่มี AI skills**
 
@@ -48,11 +48,10 @@ Enterprise AI Innovation เป็น Track ที่รองรับการ
 | ค่าตอบแทนในไทย | AI/ML Engineer = สายงานค่าตอบแทนสูงสุดกลุ่มหนึ่ง (~2,000–3,000 USD/เดือน ระดับกลาง) | [[07_Thailand_Labor_Market]] |
 | ทักษะต้องการสูงสุด 2026 | LLM fine-tuning, MLOps, model deployment/scaling | [[09_Additional_Research_2026]] |
 
-> หลักฐานนี้ยืนยันว่า PLO3 ตอบโจทย์ "ทักษะที่ตลาดโลกขาดแคลนที่สุด" โดยตรง และสนับสนุนข้อเสนอ Micro-credentials/Upskilling ใน [[05_Conclusion]]
+> หลักฐานนี้สนับสนุน **แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์** และเชื่อมกับ PLO1 การแก้ปัญหาเชิงวิศวกรรม, PLO2 การออกแบบระบบภายใต้ข้อจำกัด, PLO4 จริยธรรมและความรับผิดชอบวิชาชีพ และ PLO7 การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ ตาม [[10_PLOs_ABET_Design|ถ้อยคำมาตรฐานกลาง]]
 
 ## ข้อความสั้นสำหรับใช้ในเล่มหลักสูตร
 
-Track Enterprise AI Innovation มีความจำเป็นต่อการผลิตบัณฑิตที่สามารถพัฒนาและนำ AI ไปใช้ในองค์กรจริง ตั้งแต่การสร้างโมเดล การ deploy ระบบ การจัดการ lifecycle ของโมเดล ไปจนถึงการสร้างผลิตภัณฑ์และธุรกิจ AI โดยสอดคล้องกับหลักฐานจาก Stanford AI Index 2025, Microsoft/LinkedIn Work Trend Index 2024 และ BLS ที่ชี้ว่ากลุ่มอาชีพ Data Scientist, Software Developer และ Cybersecurity มีแนวโน้มเติบโตสูงในทศวรรษหน้า
+แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์มีความจำเป็นต่อการผลิตบัณฑิตที่สามารถพัฒนาและนำ AI ไปใช้ในองค์กรจริง ตั้งแต่การสร้างโมเดล การ deploy ระบบ การจัดการ lifecycle ของโมเดล ไปจนถึงการสร้างผลิตภัณฑ์ AI และ **ธุรกิจเทคโนโลยีระดับองค์กร** โดยสอดคล้องกับหลักฐานจาก Stanford AI Index 2025, Microsoft/LinkedIn Work Trend Index 2024 และ BLS ที่ชี้ว่ากลุ่มอาชีพ Data Scientist, Software Developer และ Cybersecurity มีแนวโน้มเติบโตสูงในทศวรรษหน้า
 
 [[00_Home|กลับหน้าหลัก]] | [[06_Report_Sources|แหล่งอ้างอิง]]
-

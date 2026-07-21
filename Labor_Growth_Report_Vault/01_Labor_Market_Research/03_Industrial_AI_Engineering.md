@@ -1,8 +1,8 @@
-# Track 2: Industrial AI Engineering
+# แขนงวิชาที่ 2: ปัญญาประดิษฐ์ภาคอุตสาหกรรม
 
 ## เหตุผลสนับสนุน
 
-Industrial AI Engineering ตอบโจทย์การเปลี่ยนผ่านของโรงงานและภาคการผลิตจากระบบอัตโนมัติพื้นฐานไปสู่ **AI-enabled Smart Factory** โดยใช้ AI, PLC/SCADA, Industrial IoT, machine vision, predictive maintenance และ digital twin เพื่อเพิ่มผลิตภาพ ลด downtime และควบคุมคุณภาพ
+แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรมตอบโจทย์การเปลี่ยนผ่านของโรงงานและภาคการผลิตจากระบบอัตโนมัติพื้นฐานไปสู่ **AI-enabled Smart Factory** โดยเน้น **ระบบอัตโนมัติในโรงงาน** และใช้ AI, PLC/SCADA, Industrial IoT, machine vision, predictive maintenance และ digital twin เพื่อเพิ่มผลิตภาพ ลด downtime และควบคุมคุณภาพ โดยเชื่อมกับโรงสีข้าว โรงงานน้ำตาล โรงงานแป้งมันสำปะหลัง และอุตสาหกรรมแปรรูปที่เกี่ยวข้อง
 
 [[06_Report_Sources#World Economic Forum - Future of Jobs Report 2025|WEF Future of Jobs Report 2025]] ระบุว่าทักษะด้าน AI, Big Data, networks/cybersecurity และ technology literacy เป็นกลุ่มทักษะที่เติบโตเร็ว ขณะที่หลายงานในภาคอุตสาหกรรมจะถูกปรับรูปแบบจากงานทำซ้ำไปสู่งานที่ควบคุม วิเคราะห์ และปรับปรุงระบบอัตโนมัติ
 
@@ -49,7 +49,6 @@ Industrial AI Engineering ตอบโจทย์การเปลี่ยน
 
 ## ข้อความสั้นสำหรับใช้ในเล่มหลักสูตร
 
-Track Industrial AI Engineering มีความจำเป็นต่อการผลิตวิศวกรที่สามารถยกระดับโรงงานไทยสู่ Smart Factory โดยเชื่อมระบบควบคุมอัตโนมัติเดิมกับ AI, Industrial IoT, machine vision และ digital twin ซึ่งสอดคล้องกับแนวโน้มตลาดแรงงานโลกที่ต้องการทักษะ AI, automation, cybersecurity และ data-driven process optimization เพิ่มขึ้นอย่างต่อเนื่อง
+แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรมมีความจำเป็นต่อการผลิตวิศวกรที่สามารถยกระดับโรงงานไทยสู่ Smart Factory โดยเชื่อม **ระบบอัตโนมัติในโรงงาน** และระบบควบคุมเดิมเข้ากับ AI, Industrial IoT, machine vision และ digital twin ซึ่งสอดคล้องกับแนวโน้มตลาดแรงงานโลกที่ต้องการทักษะ AI, automation, cybersecurity และ data-driven process optimization เพิ่มขึ้นอย่างต่อเนื่อง
 
 [[00_Home|กลับหน้าหลัก]] | [[06_Report_Sources|แหล่งอ้างอิง]]
-
