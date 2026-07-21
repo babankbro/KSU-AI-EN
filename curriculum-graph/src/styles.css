@@ -11,8 +11,13 @@
 }
 *{box-sizing:border-box}
 html,body,#root{height:100%}
-body{margin:0;font-family:"Noto Sans Thai","Sarabun","Segoe UI",Tahoma,sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.55;font-size:15px}
+:root{
+  --font-sans:"IBM Plex Sans Thai","IBM Plex Sans","Noto Sans Thai","Segoe UI",Tahoma,sans-serif;
+  --font-mono:"IBM Plex Mono","IBM Plex Sans Thai",ui-monospace,Consolas,monospace;
+}
+body{margin:0;font-family:var(--font-sans);
+  background:var(--bg);color:var(--ink);line-height:1.62;font-size:15px;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:20px 24px}
 header h1{margin:0 0 4px;font-size:1.3rem;font-weight:700}
 header .sub{opacity:.9;font-size:.88rem}
@@ -39,7 +44,7 @@ h2.sec{font-size:1.05rem;margin:6px 0 14px;color:var(--navy);border-left:4px sol
 @media (prefers-color-scheme:dark){.plobadge.I,.plobadge.R,.plobadge.M{background:#20303f}}
 .courselist{padding:10px}
 .cc{display:flex;gap:8px;align-items:baseline;padding:7px 9px;border-radius:9px;margin-bottom:5px;border:1px solid transparent}
-.cc .code{font-family:monospace;font-size:.72rem;color:var(--muted);min-width:74px}
+.cc .code{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);min-width:74px}
 .cc .nm{font-weight:600;font-size:.86rem;flex:1}
 .cc .cr{font-size:.72rem;color:var(--muted)}
 .cc .bar{width:4px;align-self:stretch;border-radius:3px;background:var(--ge)}
@@ -54,7 +59,7 @@ h2.sec{font-size:1.05rem;margin:6px 0 14px;color:var(--navy);border-left:4px sol
 .sem h3 .tot{font-size:.78rem;font-weight:700;color:var(--muted)}
 .sem table{width:100%;border-collapse:collapse;font-size:.83rem}
 .sem td{padding:6px 14px;border-top:1px solid var(--line)}
-.sem td.c{font-family:monospace;font-size:.72rem;color:var(--muted);white-space:nowrap}
+.sem td.c{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);white-space:nowrap}
 .sem td.k{text-align:right;color:var(--muted);white-space:nowrap}
 .planbar{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 18px;font-size:.85rem}
 .planbar .b{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 12px}
@@ -68,7 +73,7 @@ h2.sec{font-size:1.05rem;margin:6px 0 14px;color:var(--navy);border-left:4px sol
 .course{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px;overflow:hidden}
 .course summary{padding:12px 14px;cursor:pointer;display:flex;gap:10px;align-items:baseline;list-style:none}
 .course summary::-webkit-details-marker{display:none}
-.course summary .code{font-family:monospace;font-size:.74rem;color:#fff;background:var(--muted);padding:2px 7px;border-radius:6px;white-space:nowrap}
+.course summary .code{font-family:var(--font-mono);font-size:.74rem;color:#fff;background:var(--muted);padding:2px 7px;border-radius:6px;white-space:nowrap}
 .course.g-eng summary .code{background:var(--y1)}.course.g-ai summary .code{background:var(--y2)}.course.g-track summary .code{background:var(--y3)}
 .course.g-elec summary .code{background:var(--t3)}.course.g-proj summary .code{background:var(--y4)}.course.g-field summary .code{background:#b8455f}
 .course summary .nm{font-weight:700;flex:1}
@@ -80,13 +85,66 @@ h2.sec{font-size:1.05rem;margin:6px 0 14px;color:var(--navy);border-left:4px sol
 .tag.plo{background:#e8f1fb;color:#2f6fb0;border:0}
 .tag.dup{background:#fdecec;color:#c0392b;border:0}
 @media (prefers-color-scheme:dark){.tag.plo{background:#20303f}}
-.course .desc{font-size:.86rem;margin-top:4px}
+.course .desc{font-size:.86rem;margin-top:4px;line-height:1.72}
+.course .desc-en{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line);color:var(--muted);font-size:.83rem}
+.dlab{display:inline-block;font-family:var(--font-mono);font-size:.66rem;font-weight:700;letter-spacing:.04em;background:var(--navy);color:#fff;border-radius:5px;padding:1px 6px;margin-right:8px;vertical-align:2px}
+.dlab.en{background:var(--t3)}
 .course .prq{font-size:.78rem;color:var(--muted);margin-top:8px}
 .note{background:var(--gebg);border-radius:10px;padding:10px 14px;font-size:.82rem;color:var(--muted);margin-top:16px}
 .warn{border-left:4px solid var(--gold)}
 /* graph legend panel */
-.graph-legend{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.8rem;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.graph-legend{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.8rem;box-shadow:0 4px 14px rgba(0,0,0,.08);max-width:230px}
 .graph-legend .row{display:flex;align-items:center;gap:7px;margin:3px 0}
-.graph-legend .sw{width:13px;height:13px;border-radius:4px;display:inline-block}
-.graph-legend .hint{margin-top:8px;color:var(--muted);font-size:.72rem;max-width:190px}
+.graph-legend .sw{width:13px;height:13px;border-radius:4px;display:inline-block;flex:none}
+.graph-legend .hint{margin-top:8px;color:var(--muted);font-size:.72rem}
 .react-flow__attribution{display:none}
+
+/* graph shell */
+.graphwrap{display:flex;flex-direction:column;height:calc(100vh - 118px);min-height:640px}
+.graphbar{display:flex;gap:7px;align-items:center;flex-wrap:wrap;padding:9px 14px;background:var(--card);border-bottom:1px solid var(--line)}
+.gmode{border:1px solid var(--line);background:var(--bg);color:var(--muted);border-radius:9px;padding:7px 12px;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
+.gmode.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.gsep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.glabel{font-size:.78rem;color:var(--muted);font-weight:700}
+.gchip{border:1.5px solid;border-radius:999px;padding:5px 11px;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer}
+.gclear{border:0;background:none;color:var(--muted);font:inherit;font-size:.78rem;cursor:pointer;text-decoration:underline}
+.graphcanvas{flex:1 1 auto;min-height:520px;position:relative;background:var(--bg);overflow:hidden}
+.graphscroll{width:100%;height:100%;overflow:auto;padding:8px}
+.gsvg{display:block}
+.ghdr{height:42px;border-radius:10px;color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.graph-legend.floating{position:absolute;top:12px;right:12px;z-index:5}
+
+/* career / job nodes */
+.gjob{height:100%;padding:8px 10px;border-radius:12px;border:2.5px solid;background:var(--card);
+  display:flex;flex-direction:column;gap:2px;box-sizing:border-box}
+.gjob-top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.gjob-id{font-family:var(--font-mono);font-size:10px;font-weight:800;color:#fff;padding:1px 6px;border-radius:5px}
+.gjob-st{font-size:9.5px;font-weight:800;border:1.5px solid;border-radius:5px;padding:0 5px}
+.gjob-th{font-size:12.5px;font-weight:800;line-height:1.25;color:var(--ink)}
+.gjob-en{font-size:10px;color:var(--muted);line-height:1.2}
+.gtoggle{display:flex;align-items:center;gap:5px;font-size:.78rem;color:var(--muted);font-weight:600;cursor:pointer}
+
+/* job detail list under graph */
+.joblist{max-height:210px;overflow:auto;border-top:1px solid var(--line);background:var(--card);padding:8px 12px}
+.jobcard{border:1px solid var(--line);border-radius:9px;margin-bottom:6px;background:var(--bg)}
+.jobcard summary{padding:8px 11px;cursor:pointer;display:flex;gap:9px;align-items:baseline;list-style:none;flex-wrap:wrap}
+.jobcard summary::-webkit-details-marker{display:none}
+.jc-th{font-weight:700;font-size:.86rem}
+.jc-en{font-size:.78rem;color:var(--muted);flex:1}
+.jc-body{padding:0 11px 10px;font-size:.8rem}
+.jc-body p{margin:4px 0}
+.jc-courses{color:var(--navy)}
+.jc-kw{color:var(--muted);font-size:.76rem}
+
+/* graph nodes */
+.gnode{padding:7px 10px;border-radius:11px;border:2px solid;transition:opacity .15s}
+.gnode-top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.gnode-code{font-family:var(--font-mono);font-size:10px;font-weight:700}
+.gnode-yr{font-size:9px;font-weight:700;color:#fff;padding:0 5px;border-radius:4px}
+.gnode-name{font-size:12.5px;font-weight:700;line-height:1.25;color:#1a2230;margin-top:1px}
+.gnode-plos{display:flex;gap:3px;margin-top:3px}
+.gnode-plo{font-size:9px;font-weight:700;color:#fff;width:14px;height:14px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.gplo{padding:8px 10px;border-radius:11px;color:#fff;text-align:center;border:2px solid rgba(255,255,255,.5)}
+.gplo-t{font-size:14px;font-weight:800;line-height:1.1}
+.gplo-s{font-size:9.5px;opacity:.95;line-height:1.2}
+.gplo-c{font-size:9px;opacity:.9;margin-top:2px}

@@ -23,6 +23,8 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[01_Labor_Market_Research/08_Kalasin_Regional_Context|บริบทจังหวัดกาฬสินธุ์]]
 - [[01_Labor_Market_Research/09_Additional_Research_2026|งานวิจัยเพิ่มเติม 2025–2026 (+ TDRI, Domain Premium)]] 🆕
 - [[01_Labor_Market_Research/10_PLOs_ABET_Design|ข้อเสนอ PLO 7 ข้อตาม ABET]]
+- [[01_Labor_Market_Research/11_Career_Paths_by_Track|เส้นทางอาชีพจำแนกตาม 3 Tracks]] 🆕
+- [[01_Labor_Market_Research/12_Priority_Careers_12|12 อาชีพเป้าหมายสำคัญของหลักสูตร]] 🆕
 
 > [!warning] สถานะข้อมูลเดิม
 > เอกสาร PLO 7 ข้อตาม ABET เป็น **ข้อเสนอเพื่อการออกแบบ** ไม่ใช่ PLO ปัจจุบันในเล่มหลักสูตร ซึ่งกำหนดไว้ 5 ข้อ

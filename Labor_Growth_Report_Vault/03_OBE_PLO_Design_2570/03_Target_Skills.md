@@ -109,17 +109,17 @@
 
 สัญลักษณ์: **● ทักษะหลักของ Track** · **○ ทักษะสนับสนุน**
 
-| อันดับ | รหัส | Hard Skill | T1 Smart Agriculture | T2 Industrial AI | T3 AI Innovation |
-|---:|---|---|:---:|:---:|:---:|
-| 1 | H1 | AI/ML Engineering & Applied Mathematics | ● | ● | ● |
-| 2 | H2 | Programming & AI Software Engineering | ● | ● | ● |
-| 3 | H3 | Data Engineering, Analytics & Visualization | ● | ● | ● |
-| 4 | H4 | MLOps, Cloud & AI Infrastructure | ○ | ○ | ● |
-| 5 | H5 | Industrial Automation, Robotics & Digital Twin | ○ | ● | ○ |
-| 6 | H6 | Generative AI, LLM & Agentic Systems | ○ | ○ | ● |
-| 7 | H7 | AI Security, Privacy, Safety & Responsible AI | ● | ● | ● |
-| 8 | H8 | Computer Vision, Remote Sensing & Multimodal AI | ● | ● | ○ |
-| 9 | H9 | IoT, Embedded, Edge AI & Sensor Networks | ● | ○ | ○ |
+| อันดับ | รหัส | Hard Skill                                      | T1 Smart Agriculture | T2 Industrial AI | T3 AI Innovation |
+| -----: | ---- | ----------------------------------------------- | :------------------: | :--------------: | :--------------: |
+|      1 | H1   | AI/ML Engineering & Applied Mathematics         |          ●           |        ●         |        ●         |
+|      2 | H2   | Programming & AI Software Engineering           |          ●           |        ●         |        ●         |
+|      3 | H3   | Data Engineering, Analytics & Visualization     |          ●           |        ●         |        ●         |
+|      4 | H4   | MLOps, Cloud & AI Infrastructure                |          ○           |        ○         |        ●         |
+|      5 | H5   | Industrial Automation, Robotics & Digital Twin  |          ○           |        ●         |        ○         |
+|      6 | H6   | Generative AI, LLM & Agentic Systems            |          ○           |        ○         |        ●         |
+|      7 | H7   | AI Security, Privacy, Safety & Responsible AI   |          ●           |        ●         |        ●         |
+|      8 | H8   | Computer Vision, Remote Sensing & Multimodal AI |          ●           |        ●         |        ○         |
+|      9 | H9   | IoT, Embedded, Edge AI & Sensor Networks        |          ●           |        ○         |        ○         |
 
 ## 3.5b Hard Skills — ส่วนขยาย 6 รายการ (H10–H15)
 
@@ -204,14 +204,14 @@
 
 Soft Skills ทั้ง 6 รายการเป็นทักษะหลักของทุก Track แต่ใช้ในบริบทต่างกัน
 
-| อันดับ | รหัส | Soft Skill | T1 Smart Agriculture | T2 Industrial AI | T3 AI Innovation |
-|---:|---|---|:---:|:---:|:---:|
-| 1 | S1 | Analytical, Critical & Systems Thinking | ● | ● | ● |
-| 2 | S2 | Creative Problem-Solving & Engineering Judgment | ● | ● | ● |
-| 3 | S3 | Adaptability, Resilience & Lifelong Learning | ● | ● | ● |
-| 4 | S4 | Professional Communication, English & Data Storytelling | ● | ● | ● |
-| 5 | S5 | Teamwork, Cross-functional Collaboration & Leadership | ● | ● | ● |
-| 6 | S6 | Product, Entrepreneurial & Project Management Mindset | ● | ● | ● |
+| อันดับ | รหัส | Soft Skill                                              | T1 Smart Agriculture | T2 Industrial AI | T3 AI Innovation |
+| -----: | ---- | ------------------------------------------------------- | :------------------: | :--------------: | :--------------: |
+|      1 | S1   | Analytical, Critical & Systems Thinking                 |          ●           |        ●         |        ●         |
+|      2 | S2   | Creative Problem-Solving & Engineering Judgment         |          ●           |        ●         |        ●         |
+|      3 | S3   | Adaptability, Resilience & Lifelong Learning            |          ●           |        ●         |        ●         |
+|      4 | S4   | Professional Communication, English & Data Storytelling |          ●           |        ●         |        ●         |
+|      5 | S5   | Teamwork, Cross-functional Collaboration & Leadership   |          ●           |        ●         |        ●         |
+|      6 | S6   | Product, Entrepreneurial & Project Management Mindset   |          ●           |        ●         |        ●         |
 
 ## 3.7b Soft Skills — ส่วนขยาย 2 รายการ (S7–S8)
 

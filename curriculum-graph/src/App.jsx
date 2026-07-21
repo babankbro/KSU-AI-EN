@@ -1,12 +1,14 @@
 import { useState, useMemo } from "react";
 import { COURSES, CORE, YLO, YEAR_COLOR, GROUP_NAME, PLO_NAME, SEM_TOTALS, SEM_EXTRA, shortOf } from "./data.js";
 import DependencyGraph from "./DependencyGraph.jsx";
+import CareerGraph from "./CareerGraph.jsx";
 
 const TABS = [
   { id: "graph", label: "① กราฟ Dependencies" },
-  { id: "overview", label: "② ภาพรวมชั้นปี & YLO" },
-  { id: "plan", label: "③ แผนการเรียน" },
-  { id: "desc", label: "④ คำอธิบายรายวิชา" },
+  { id: "career", label: "② Track → อาชีพ" },
+  { id: "overview", label: "③ ภาพรวมชั้นปี & YLO" },
+  { id: "plan", label: "④ แผนการเรียน" },
+  { id: "desc", label: "⑤ คำอธิบายรายวิชา" },
 ];
 
 export default function App() {
@@ -19,7 +21,7 @@ export default function App() {
         <div className="chips">
           <span className="chip">รวม <b>130</b> นก.</span>
           <span className="chip">แกนบังคับ <b>32</b> วิชา</span>
-          <span className="chip">เลือกชีพ <b>29</b> วิชา</span>
+          <span className="chip">เลือกชีพ <b>45</b> วิชา</span>
           <span className="chip">PLO <b>7</b> ข้อ</span>
           <span className="chip">4 ชั้นปี · 8 ภาคเรียน</span>
         </div>
@@ -30,6 +32,7 @@ export default function App() {
         ))}
       </nav>
       {tab === "graph" && <DependencyGraph />}
+      {tab === "career" && <CareerGraph />}
       <main>
         {tab === "overview" && <Overview />}
         {tab === "plan" && <Plan />}
@@ -122,24 +125,32 @@ function Plan() {
 function Descriptions() {
   const [q, setQ] = useState("");
   const [f, setF] = useState("all");
+  const [lang, setLang] = useState("both");   // both | th | en
   const list = useMemo(() => {
     let l = COURSES;
     if (f !== "all") l = l.filter(c => c.g === f);
-    if (q) { const s = q.toLowerCase(); l = l.filter(c => (c.c + c.t + c.e + c.s + c.d).toLowerCase().includes(s)); }
+    if (q) { const s = q.toLowerCase(); l = l.filter(c => (c.c + c.t + c.e + c.s + c.d + c.dEn).toLowerCase().includes(s)); }
     return l;
   }, [q, f]);
   const filters = [["all", "ทั้งหมด"], ["ge", "ศึกษาทั่วไป"], ["eng", "พื้นฐานวิศวฯ"], ["ai", "แกน AI"], ["track", "บังคับแขนง"], ["elec", "เลือกชีพ"], ["proj", "โครงงาน"], ["field", "สหกิจ"]];
+  const langs = [["both", "ไทย + อังกฤษ"], ["th", "ไทย"], ["en", "English"]];
   return (
     <>
-      <h2 className="sec">คำอธิบายรายวิชา (ตรวจจากไฟล์คำอธิบายจริง)</h2>
+      <h2 className="sec">คำอธิบายรายวิชา (ตรงตามเอกสาร 04_Course_Descriptions_2570 · ไทย–อังกฤษ)</h2>
       <div className="toolbar">
-        <input placeholder="🔍 ค้นหา รหัส / ชื่อวิชา / คำในคำอธิบาย…" value={q} onChange={e => setQ(e.target.value)} />
+        <input placeholder="🔍 ค้นหา รหัส / ชื่อวิชา / คำในคำอธิบายไทย–อังกฤษ…" value={q} onChange={e => setQ(e.target.value)} />
         {filters.map(([id, l]) => (
           <button key={id} className={`fbtn ${f === id ? "on" : ""}`} onClick={() => setF(id)}>{l}</button>
         ))}
         <span className="count">{list.length} วิชา</span>
       </div>
-      <div className="note warn">พบในต้นฉบับ: รหัส <b>EN-135-101 ซ้ำ 3 วิชา</b> (แสดง 101 / 101ᵃ / 101ᵇ) และ EN-135-126/127 ชื่อไทยซ้ำ — ควรไล่รหัสใหม่ก่อนใช้ใน มคอ.2</div>
+      <div className="toolbar">
+        <span className="count" style={{ marginLeft: 0 }}>ภาษาที่แสดง</span>
+        {langs.map(([id, l]) => (
+          <button key={id} className={`fbtn ${lang === id ? "on" : ""}`} onClick={() => setLang(id)}>{l}</button>
+        ))}
+      </div>
+      <div className="note">ซิงก์ข้อมูลกับเอกสารคำอธิบายรายวิชาฉบับล่าสุดแล้ว — วิชาเลือกชีพไล่รหัสใหม่ครบ <b>45 วิชา</b> (แขนง 1: EN-135-101–115 · แขนง 2: 116–130 · แขนง 3: 131–145) ไม่มีรหัสซ้ำ</div>
       {list.map(c => (
         <details className={`course g-${c.g}`} key={c.c}>
           <summary>
@@ -151,10 +162,18 @@ function Descriptions() {
             <div className="meta">
               <span className="tag">{GROUP_NAME[c.g]}</span>
               {c.tr && <span className="tag">Track {c.tr}</span>}
-              {c.dup && <span className="tag dup">รหัสซ้ำ</span>}
               {c.p.map(p => <span className="tag plo" key={p} title={PLO_NAME[p]}>PLO{p}</span>)}
             </div>
-            <div className="desc">{c.d}</div>
+            {lang !== "en" && (
+              <div className="desc">
+                {lang === "both" && <span className="dlab">TH</span>}{c.d}
+              </div>
+            )}
+            {lang !== "th" && (
+              <div className="desc desc-en">
+                {lang === "both" && <span className="dlab en">EN</span>}{c.dEn}
+              </div>
+            )}
             {(c.h || c.w || c.co) && (
               <div className="prq">
                 {c.h && <>🔒 บังคับก่อน: {c.h.map(shortOf).join(", ")}&nbsp;&nbsp;</>}
