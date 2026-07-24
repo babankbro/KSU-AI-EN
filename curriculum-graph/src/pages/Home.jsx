@@ -21,9 +21,9 @@ export default function Home() {
           <div className="eyebrow">Bachelor of Engineering · Artificial Intelligence and Intelligent Systems</div>
           <h1>หลักสูตรวิศวกรรมศาสตรบัณฑิต<br />วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ</h1>
           <p className="lead">
-            หลักสูตรปรับปรุง พ.ศ. 2570 ออกแบบด้วยกระบวนการ Outcome-Based Education เชื่อมความต้องการของ
+            หลักสูตรใหม่ พ.ศ. 2570 ออกแบบด้วยกระบวนการ Outcome-Based Education เชื่อมความต้องการของ
             ผู้มีส่วนได้ส่วนเสียและข้อมูลตลาดแรงงานจริง เข้าสู่ผลลัพธ์การเรียนรู้ระดับหลักสูตร รายชั้นปี และรายวิชา
-            ในบริบทเกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมซอฟต์แวร์ของภาคอีสาน
+            ในบริบทเกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมปัญญาประดิษฐ์ระดับองค์กรของภาคอีสาน
           </p>
           <div className="hero-stats">
             <div><b>{TOTAL_CREDITS}</b><span>หน่วยกิตรวม</span></div>

@@ -31,7 +31,7 @@
 |---|---|---|
 | เกษตรอัจฉริยะ | Smart Farming Engineer, AgTech Data Analyst, UAV/Robotics Specialist | WEF 2025, depa Digital Economy Master Plan, depa Digital Indicators |
 | ปัญญาประดิษฐ์ภาคอุตสาหกรรม | Automation & AI Engineer, Smart Factory Engineer, Industrial Data/Optimization Analyst | WEF 2025, BLS Industrial Engineer, depa Digital Industry Indicators |
-| นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์ | AI/ML Engineer, MLOps Engineer, Enterprise AI Solution Developer, Cybersecurity for AI | Stanford AI Index 2025, Microsoft/LinkedIn 2024, BLS Data Scientist/Software/Cybersecurity |
+| นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร | AI/ML Engineer, MLOps Engineer, Enterprise AI Solution Developer, Cybersecurity for AI | Stanford AI Index 2025, Microsoft/LinkedIn 2024, BLS Data Scientist/Software/Cybersecurity |
 
 ## ตัวเลขสนับสนุนที่ควรใช้ในเอกสารหลักสูตร
 

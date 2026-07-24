@@ -17,7 +17,7 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[01_Labor_Market_Research/01_Executive_Summary|สรุปผู้บริหารด้านตลาดแรงงาน]]
 - [[01_Labor_Market_Research/02_Smart_Agriculture_Engineering|แขนงวิชาเกษตรอัจฉริยะ]]
 - [[01_Labor_Market_Research/03_Industrial_AI_Engineering|แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม]]
-- [[01_Labor_Market_Research/04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
+- [[01_Labor_Market_Research/04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร]]
 - [[01_Labor_Market_Research/05_Conclusion|บทสรุปความสอดคล้องกับตลาดแรงงาน]]
 - [[01_Labor_Market_Research/06_Report_Sources|แหล่งอ้างอิง]]
 - [[01_Labor_Market_Research/07_Thailand_Labor_Market|ตลาดแรงงานประเทศไทย]]
@@ -68,11 +68,29 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - [[04_Course_Descriptions_2570/04_Track_Core|วิชาบังคับตามแขนง]]
 - [[04_Course_Descriptions_2570/05_Electives_Smart_Agriculture|วิชาเลือกแขนงเกษตรอัจฉริยะ]]
 - [[04_Course_Descriptions_2570/06_Electives_Industrial_AI|วิชาเลือกแขนงปัญญาประดิษฐ์ภาคอุตสาหกรรม]]
-- [[04_Course_Descriptions_2570/07_Electives_AI_Innovation|วิชาเลือกแขนงนวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
+- [[04_Course_Descriptions_2570/07_Electives_AI_Innovation|วิชาเลือกแขนงนวัตกรรมปัญญาประดิษฐ์ระดับองค์กร]]
 - [[04_Course_Descriptions_2570/08_Project_and_Seminar|โครงงานและสัมมนา]]
 - [[04_Course_Descriptions_2570/09_Field_Experience|ประสบการณ์วิชาชีพ]]
 - [[04_Course_Descriptions_2570/10_Data_Quality_and_Decisions|ข้อสังเกตและประเด็นเพื่อพิจารณา]]
 - [[04_Course_Descriptions_2570/11_Year_Level_Course_Sequence_and_YLO|กรอบรายวิชาชั้นปี 1–4 และ YLO]]
+
+### 5. เทียบเคียงหลักสูตรวิศวกรรม AI ในประเทศไทย 🆕
+
+เก็บในโฟลเดอร์ `05_Benchmark_AI_Programs_TH/` — วิเคราะห์หลักสูตรคู่เทียบ 5 แห่ง พร้อมลิงก์อ้างอิง สืบค้น 22 กรกฎาคม 2569
+
+- [[05_Benchmark_AI_Programs_TH/00_Benchmark_Home|หน้าหลักการเทียบเคียง + วิธีการศึกษา]]
+- [[05_Benchmark_AI_Programs_TH/01_PSU_AISE_Phuket|① ม.สงขลานครินทร์ ภูเก็ต — AISE (ชื่อหลักสูตรใกล้เคียงที่สุด)]]
+- [[05_Benchmark_AI_Programs_TH/02_KMUTT_AISE_Ratchaburi|② มจธ. ราชบุรี — วิศวกรรมระบบปัญญาประดิษฐ์ (4 แขนง)]]
+- [[05_Benchmark_AI_Programs_TH/03_UBU_AI_Control|③ ม.อุบลราชธานี — AI และการสั่งการ (คู่แข่งในภาคอีสาน)]]
+- [[05_Benchmark_AI_Programs_TH/04_KMITL_BU_AIEE|④ สจล. × ม.กรุงเทพ — AI Engineering and Entrepreneurship]]
+- [[05_Benchmark_AI_Programs_TH/05_CMKL_AiCE|⑤ CMKL University — AiCE (ร่วมกับ Carnegie Mellon)]]
+- [[05_Benchmark_AI_Programs_TH/06_Comparison_Analysis|⑥ วิเคราะห์เปรียบเทียบ ความเหมือน–ความแตกต่าง]]
+- [[05_Benchmark_AI_Programs_TH/07_Implications_for_KSU_2570|⑦ ข้อเสนอต่อหลักสูตร มกส. พ.ศ. 2570]]
+- [[05_Benchmark_AI_Programs_TH/08_Sources|⑧ แหล่งอ้างอิงและลิงก์]]
+
+> [!info] ข้อค้นพบสำคัญ
+> หลักสูตรคู่เทียบทั้ง 5 แห่งมี **แกนวิชาการทางเทคนิคเหมือนกันเกือบทั้งหมด** จุดต่างจึงอยู่ที่ **โดเมนที่เลือก ต้นทุนการศึกษา และความเป็นสากล**
+> จุดแข็งของ มกส. คือโดเมนเกษตรอุตสาหกรรมที่ระบุพืชและโรงงานจริง สหกิจศึกษาเต็มภาคเรียน และการเปิดเผยโครงสร้าง OBE ครบถ้วนซึ่ง **ไม่มีคู่เทียบรายใดทำ**
 
 ## แหล่งข้อมูลหลักสูตรปัจจุบัน
 
@@ -90,3 +108,4 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - ต้องการกระบวนการ OBE ครบ (Needs→GA→Skills→PLO) → ใช้ [[03_OBE_PLO_Design_2570/00_OBE_Home|ชุด OBE]]
 - ต้องการร่างชื่อและคำอธิบายรายวิชาภาษาไทย–อังกฤษ แยกตามหมวด/แขนง → ใช้ [[04_Course_Descriptions_2570/00_Course_Descriptions_Home|ชุดคำอธิบายรายวิชา]]
 - ก่อนนำตัวเลขหน่วยกิตไปใช้ → ตรวจ [[02_Current_Curriculum_2570/05_Data_Quality_Notes|ประเด็นที่ต้องตรวจสอบ]]
+- ต้องการข้อมูลหลักสูตรคู่เทียบในประเทศไทย หรือเหตุผลเชิงตำแหน่งทางการตลาด → ใช้ [[05_Benchmark_AI_Programs_TH/00_Benchmark_Home|ชุดเทียบเคียงหลักสูตร]]

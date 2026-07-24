@@ -42,7 +42,7 @@ export default function App() {
             <span className="brand-mark">AI</span>
             <span className="brand-txt">
               <b>วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ</b>
-              <small>มหาวิทยาลัยกาฬสินธุ์ · หลักสูตรปรับปรุง พ.ศ. 2570</small>
+              <small>มหาวิทยาลัยกาฬสินธุ์ · หลักสูตรใหม่ พ.ศ. 2570</small>
             </span>
           </Link>
           <div className="head-chips">

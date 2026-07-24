@@ -33,7 +33,7 @@
 |---|---|---|
 | **T1 เกษตรอัจฉริยะ** | Smart Agriculture Engineer, AgTech AI Engineer, Farm Data Analyst, UAV/GeoAI Specialist, Agricultural Robotics Engineer | ข้าว อ้อย มันสำปะหลัง ฟาร์มขนาดใหญ่ อุตสาหกรรมแปรรูป ผู้ให้บริการ AgTech บริษัทโดรน โรงเรือนอัจฉริยะ สหกรณ์ หน่วยงานเกษตรและวิจัย |
 | **T2 ปัญญาประดิษฐ์ภาคอุตสาหกรรม** | Automation Engineer, Industrial AI Engineer, Predictive Maintenance Engineer, Machine Vision Engineer, Digital Twin Engineer | ระบบอัตโนมัติในโรงงาน โรงงานน้ำตาล โรงสีข้าว โรงงานแป้งมัน อาหารและเครื่องดื่ม ผู้รับเหมาระบบ Automation/System Integrator คลังสินค้าและโลจิสติกส์ |
-| **T3 นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์** | AI/ML Engineer, AI Software Engineer, Data Engineer, MLOps Engineer, GenAI/LLM Engineer, AI QA Engineer | บริษัทซอฟต์แวร์/คลาวด์ Startup ธนาคาร โทรคมนาคม E-commerce ที่ปรึกษาดิจิทัล หน่วยงานรัฐ และธุรกิจเทคโนโลยีระดับองค์กร |
+| **T3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร** | AI/ML Engineer, AI Software Engineer, Data Engineer, MLOps Engineer, GenAI/LLM Engineer, AI QA Engineer | บริษัทซอฟต์แวร์/คลาวด์ Startup ธนาคาร โทรคมนาคม E-commerce ที่ปรึกษาดิจิทัล หน่วยงานรัฐ และธุรกิจเทคโนโลยีระดับองค์กร |
 
 ## 4. Track 1 — เกษตรอัจฉริยะ (Smart Agriculture)
 
@@ -97,7 +97,7 @@ Automation / Data / Process Engineer
 
 `Automation Engineer` · `PLC SCADA` · `Control Engineer` · `Industrial AI` · `Machine Vision` · `Predictive Maintenance` · `IIoT` · `Digital Twin` · `Robotics Engineer` · `Smart Factory` · `System Integrator`
 
-## 6. Track 3 — นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์ (Artificial Intelligence Software Innovation)
+## 6. Track 3 — นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร (Enterprise AI Innovation)
 
 ### อาชีพที่สมัครได้
 

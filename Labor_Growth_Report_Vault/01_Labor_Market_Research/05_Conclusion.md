@@ -14,7 +14,7 @@
 |---|---|---|
 | เกษตรอัจฉริยะ | รองรับข้าว อ้อย มันสำปะหลัง เกษตรและอุตสาหกรรมแปรรูปด้วย AI, IoT, UAV, robotics และ data analytics | WEF 2025 (farmworkers +34M), Precision Farming market (CAGR ~12.7%), depa, [[08_Kalasin_Regional_Context\|กาฬสินธุ์]] |
 | ปัญญาประดิษฐ์ภาคอุตสาหกรรม | รองรับระบบอัตโนมัติในโรงงาน, Smart Factory, predictive maintenance, machine vision และ digital twin | WEF 2025, BLS Industrial Engineers, Digital Twin market (~73.5B USD by 2027, McKinsey), สอวช. |
-| นวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์ | รองรับ AI/ML, GenAI, MLOps, AI product, FinTech, HealthTech, cybersecurity และธุรกิจเทคโนโลยีระดับองค์กร | Stanford AI Index 2025, ManpowerGroup 2026 (AI #1), WEF 2026 Entry-Level, BLS OOH |
+| นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร | รองรับ AI/ML, GenAI, MLOps, AI product, FinTech, HealthTech, cybersecurity และธุรกิจเทคโนโลยีระดับองค์กร | Stanford AI Index 2025, ManpowerGroup 2026 (AI #1), WEF 2026 Entry-Level, BLS OOH |
 
 ## SWOT แบบย่อสำหรับใช้ประกอบหลักสูตร
 

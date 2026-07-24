@@ -40,7 +40,7 @@
 
 ## 4. WEF Future of Jobs 2025 — รายละเอียดอาชีพโตเร็ว (เสริมของเดิม)
 
-- **โตเร็วที่สุดเชิง % :** Big Data Specialists, FinTech Engineers, AI & Machine Learning Specialists, Software & Application Developers, Security Management Specialists, Autonomous & EV Specialists → กระจุกใน [[04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]]
+- **โตเร็วที่สุดเชิง % :** Big Data Specialists, FinTech Engineers, AI & Machine Learning Specialists, Software & Application Developers, Security Management Specialists, Autonomous & EV Specialists → กระจุกใน [[04_Enterprise_AI_Innovation|แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร]]
 - **โตมากที่สุดเชิงจำนวน (absolute) :** Farmworkers, Delivery Drivers, Construction Workers, Salespersons, Food Processing Workers → ฐานของ [[02_Smart_Agriculture_Engineering|แขนงวิชาเกษตรอัจฉริยะ]]
 - การหมุนเวียนตำแหน่งงาน = **22% ของงานทั้งหมดภายในปี 2030**
 
@@ -58,7 +58,7 @@
 |---|---|---|
 | Data Scientist/Analyst + Data Engineer | รวม **> 13,000 ตำแหน่ง/ปี** | ทุก Track (data) |
 | Robotics & Automation | ความต้องการต่อเนื่อง | [[03_Industrial_AI_Engineering\|แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม]] |
-| AI/ML Engineer | ความต้องการต่อเนื่อง | [[04_Enterprise_AI_Innovation\|แขนงวิชานวัตกรรมซอฟต์แวร์ปัญญาประดิษฐ์]] |
+| AI/ML Engineer | ความต้องการต่อเนื่อง | [[04_Enterprise_AI_Innovation\|แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร]] |
 
 → TDRI ยืนยันว่า **"ทักษะ AI กลายเป็นมาตรฐานทักษะใหม่ของนายจ้าง"** เสริมภาพประมาณการเชิงนโยบาย (depa/สอวช.) ด้วยหลักฐานอุปสงค์ที่เกิดขึ้นจริง — ดู [[07_Thailand_Labor_Market]]
 
