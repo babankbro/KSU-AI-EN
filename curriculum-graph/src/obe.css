@@ -25,8 +25,6 @@
 
 /* ── การ์ดทั่วไป ── */
 .obe-grid{display:grid;gap:12px}
-.sh-grid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.need-grid{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .plo-grid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
 .ylo-grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
 .obe-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:13px 14px;
@@ -42,13 +40,7 @@
 .nchip:hover{border-color:var(--navy2);color:var(--navy2)}
 .nchip.on{background:var(--navy2);color:#fff;border-color:var(--navy2)}
 
-.need-card{cursor:pointer;transition:.15s}
-.need-card:hover{box-shadow:0 5px 16px rgba(20,40,80,.09)}
-.need-card.on{box-shadow:0 0 0 2px var(--ac) inset,0 6px 18px rgba(20,40,80,.12)}
 .need-src{font-size:.7rem;color:var(--muted)}
-.need-txt{font-size:.86rem;line-height:1.6;margin:0 0 7px}
-.need-ev{font-size:.76rem;color:var(--muted);background:var(--soft);border-radius:7px;padding:6px 8px;line-height:1.55}
-.need-sets{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
 .setchip{font-size:.71rem;font-weight:700;background:var(--navy);color:#fff;border-radius:6px;padding:2px 6px}
 .setchip.sm{font-size:.67rem;padding:1px 5px;background:var(--navy2)}
 .plo-mini{font-size:.71rem;font-weight:800;color:#fff;background:var(--pc,var(--navy));
@@ -160,3 +152,41 @@
 .reflist li{margin-bottom:5px}
 .reflist code{display:block;font-size:.76rem;color:var(--muted);background:var(--soft);
   border-radius:6px;padding:3px 7px;margin-top:2px;width:fit-content;max-width:100%;overflow-x:auto}
+
+/* ═══════ Power–Interest Matrix (ขั้นที่ ①) ═══════ */
+.pim{display:flex;flex-direction:column;gap:8px}
+.pim-axis{display:flex;font-size:.75rem;font-weight:800;color:var(--muted)}
+.pim-x{margin-left:34px}
+.pim-x span{flex:1;text-align:center;background:var(--soft);border-radius:7px;padding:4px 6px}
+.pim-x span+span{margin-left:8px}
+.pim-row{display:flex;gap:8px;align-items:stretch}
+.pim-y{width:26px;flex:0 0 26px;align-items:center;justify-content:center;
+  background:var(--soft);border-radius:7px}
+.pim-y span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+.pim-q{flex:1;min-width:0;background:var(--card);border:1px solid var(--line);
+  border-top:3px solid var(--ac);border-radius:12px;padding:10px 11px}
+.pim-qh{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-bottom:9px;
+  padding-bottom:7px;border-bottom:1px dashed var(--line)}
+.pim-qh b{font-size:.86rem;color:var(--ac)}
+.pim-strat{font-size:.75rem;font-weight:800;color:#fff;background:var(--ac);border-radius:6px;padding:2px 7px}
+.pim-qh small{font-size:.72rem;color:var(--muted)}
+.pim-sh{padding:8px 0;border-bottom:1px dashed var(--line)}
+.pim-sh:last-child{border-bottom:0;padding-bottom:0}
+.pim-shtop{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.pim-shtop b{font-size:.86rem;line-height:1.35}
+.pim-sh p{margin:5px 0 7px;font-size:.79rem;color:var(--muted);line-height:1.65}
+@media(max-width:820px){
+  .pim-row{flex-direction:column}
+  .pim-y{width:auto;flex:none;padding:3px 0}
+  .pim-y span{writing-mode:horizontal-tb;transform:none}
+  .pim-x{display:none}
+}
+
+/* ═══════ ตารางความต้องการ (ขั้นที่ ②) ═══════ */
+.needtbl td{cursor:pointer}
+.needtbl tbody tr:hover{background:var(--soft)}
+.needrow.on{background:var(--soft);box-shadow:inset 3px 0 0 var(--ac)}
+.needtxt{min-width:230px;line-height:1.6}
+.obe-table td.nowrap{white-space:nowrap}
+.cellchips{display:flex;flex-wrap:wrap;gap:4px}
+.lvdot{display:inline-block;width:12px;height:12px;border-radius:50%}

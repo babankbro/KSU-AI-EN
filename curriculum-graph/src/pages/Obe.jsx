@@ -86,28 +86,51 @@ export default function Obe() {
         </Section>
 
         {/* ─── 1 · Stakeholders ─── */}
-        <Section id="sh" title="① ผู้มีส่วนได้ส่วนเสีย (SH1–SH8)" sub="จัดลำดับด้วย Power–Interest Matrix">
-          <div className="obe-grid sh-grid">
-            {STAKEHOLDERS.map(s => {
-              const p = PRIO_INFO[s.prio];
-              return (
-                <div className="obe-card sh-card" key={s.id} style={{ "--ac": p.color }}>
-                  <div className="sh-top">
-                    <span className="obe-code">{s.id}</span>
-                    <span className="sh-prio">{s.prio} · {p.label}</span>
-                  </div>
-                  <b className="sh-name">{s.name}</b>
-                  <p className="sh-exp">{s.expect}</p>
-                  <div className="sh-needs">
-                    {s.needs.map(n => (
-                      <button key={n} className={`nchip${need === n ? " on" : ""}`}
-                        onClick={() => setNeed(need === n ? null : n)}>{n}</button>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+        <Section id="sh" title="① ผู้มีส่วนได้ส่วนเสีย (SH1–SH8)"
+          sub="จัดลำดับด้วย Power–Interest Matrix · แกนตั้ง = อำนาจต่อการตัดสินใจหลักสูตร · แกนนอน = ระดับความสนใจ/ผลกระทบที่ได้รับ">
+          <div className="pim">
+            <div className="pim-axis pim-x">
+              <span>Interest สูง</span><span>Interest ต่ำ / เป็นครั้งคราว</span>
+            </div>
+
+            {[["HPHI", "HPLI"], ["LPHI", "LPLI"]].map((row, ri) => (
+              <div className="pim-row" key={ri}>
+                <div className="pim-axis pim-y"><span>{ri === 0 ? "Power สูง" : "Power ต่ำ"}</span></div>
+                {row.map(code => {
+                  const p = PRIO_INFO[code];
+                  const list = STAKEHOLDERS.filter(s => s.prio === code);
+                  return (
+                    <div className="pim-q" key={code} style={{ "--ac": p.color }}>
+                      <div className="pim-qh">
+                        <b>{code}</b>
+                        <span className="pim-strat">{p.label}</span>
+                        <small>{p.desc}</small>
+                      </div>
+                      {list.map(s => (
+                        <div className="pim-sh" key={s.id}>
+                          <div className="pim-shtop">
+                            <span className="obe-code">{s.id}</span>
+                            <b>{s.name}</b>
+                          </div>
+                          <p>{s.expect}</p>
+                          <div className="sh-needs">
+                            {s.needs.map(n => (
+                              <button key={n} className={`nchip${need === n ? " on" : ""}`}
+                                onClick={() => setNeed(need === n ? null : n)}>{n}</button>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
           </div>
+          <p className="obe-note">
+            <b>SH1 (นายจ้าง/ผู้ใช้บัณฑิต) อยู่กลุ่ม HPHI</b> จึงต้องมีส่วนร่วมตั้งแต่กำหนด Needs ทวนสอบ PLO
+            ให้โจทย์โครงงาน/สหกิจ จนถึงประเมินผลบัณฑิต · คลิกรหัส <b>N</b> เพื่อดูว่าความต้องการนั้นตอบด้วยชุดทักษะใด
+          </p>
         </Section>
 
         {/* ─── 2 · Needs ─── */}
@@ -118,29 +141,46 @@ export default function Obe() {
             ))}
             {need && <button className="obe-clear" onClick={() => setNeed(null)}>✕ ล้างการเลือก {need}</button>}
           </div>
-          <div className="obe-grid need-grid">
-            {NEEDS.map(n => {
-              const lv = NEED_LEVEL[n.level];
-              const on = need === n.id;
-              return (
-                <div className={`obe-card need-card${on ? " on" : ""}`} key={n.id}
-                  style={{ "--ac": lv.color }} onClick={() => setNeed(on ? null : n.id)}>
-                  <div className="need-top">
-                    <span className="obe-code">{n.id}</span>
-                    <span className="need-src">{n.src === "survey" ? "จากผลสำรวจ" : "เชิงแนวโน้ม"}</span>
-                  </div>
-                  <p className="need-txt">{n.text}</p>
-                  <div className="need-ev">📊 {n.evidence}</div>
-                  <div className="need-sets">
-                    {n.sets.map(s => <span className="setchip" key={s}>{s}</span>)}
-                    {n.plo.map(p => (
-                      <Link to={`/plo/${p}`} className="plo-mini" key={p} style={{ "--pc": `var(--plo${p})` }}>PLO{p}</Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
+          <div className="obe-tablewrap">
+            <table className="obe-table needtbl">
+              <thead>
+                <tr>
+                  <th>Need</th><th>ที่มา</th><th>ความต้องการ</th><th>หลักฐานสนับสนุน</th>
+                  <th>ชุดทักษะที่ตอบ</th><th>PLO</th><th>ระดับ</th>
+                </tr>
+              </thead>
+              <tbody>
+                {NEEDS.map(n => {
+                  const lv = NEED_LEVEL[n.level];
+                  const on = need === n.id;
+                  return (
+                    <tr key={n.id} className={`needrow${on ? " on" : ""}`} style={{ "--ac": lv.color }}
+                      onClick={() => setNeed(on ? null : n.id)}>
+                      <td><span className="obe-code">{n.id}</span></td>
+                      <td className="small nowrap">{n.src === "survey" ? "ผลสำรวจ" : "เชิงแนวโน้ม"}</td>
+                      <td className="needtxt">{n.text}</td>
+                      <td className="small">{n.evidence}</td>
+                      <td>
+                        <div className="cellchips">
+                          {n.sets.map(s => <span className="setchip" key={s}>{s}</span>)}
+                        </div>
+                      </td>
+                      <td>
+                        <div className="cellchips">
+                          {n.plo.map(p => (
+                            <Link to={`/plo/${p}`} className="plo-mini" key={p}
+                              style={{ "--pc": `var(--plo${p})` }} onClick={e => e.stopPropagation()}>PLO{p}</Link>
+                          ))}
+                        </div>
+                      </td>
+                      <td className="nowrap"><span className="lvdot" style={{ background: lv.color }} /></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
+          <p className="obe-note">คลิกแถวเพื่อไฮไลต์ชุดทักษะที่ตอบความต้องการนั้นในหัวข้อ ⑤ ด้านล่าง</p>
         </Section>
 
         {/* ─── 3 · GA ─── */}
