@@ -10,3 +10,9 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Word/Office lock files
+~$*
+
+# temp working folders
+.tmp_course_form/

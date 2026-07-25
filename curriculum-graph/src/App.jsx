@@ -1,6 +1,7 @@
 import { Routes, Route, NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home.jsx";
+import Obe from "./pages/Obe.jsx";
 import Structure from "./pages/Structure.jsx";
 import StructureGroup from "./pages/StructureGroup.jsx";
 import Plos from "./pages/Plos.jsx";
@@ -16,6 +17,7 @@ import CareerGraph from "./CareerGraph.jsx";
 
 const NAV = [
   { to: "/", label: "หน้าแรก", end: true },
+  { to: "/obe", label: "ขั้นตอน OBE" },
   { to: "/structure", label: "โครงสร้างหลักสูตร" },
   { to: "/plo", label: "PLO" },
   { to: "/ylo", label: "YLO" },
@@ -64,6 +66,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/obe" element={<Obe />} />
         <Route path="/structure" element={<Structure />} />
         <Route path="/structure/:id" element={<StructureGroup />} />
         <Route path="/plo" element={<Plos />} />

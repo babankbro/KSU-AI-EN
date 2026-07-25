@@ -55,6 +55,7 @@
 > พัฒนา ประเมิน และปรับปรุงโมเดล Machine Learning/Deep Learning โดยใช้คณิตศาสตร์ สถิติ ความน่าจะเป็น พีชคณิตเชิงเส้น และ Optimization อย่างถูกต้อง ครอบคลุม Supervised/Unsupervised Learning, Neural Networks, Model Evaluation, Explainability และการจัดการ Bias/Overfitting
 >
 > **📈 ตลาด** · AI/ML Specialists เป็นกลุ่มงานเติบโตเร็ว; Machine Learning ปรากฏสูงในประกาศงาน AI (Stanford/Lightcast)
+> **🌏 เทียบเคียง** · ACM/IEEE-CS/AAAI **CS2023** (ครบทั้ง Symbolic/Search/Planning/KR และ Subsymbolic ML/DL) · เสาหลัก NUS "Reasoning & Decision Making" — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.4]]
 > **🎯 ระดับ** · ทุก Track L3 · โครงงานพัฒนาโมเดลหลัก L4
 
 > [!abstract]- **H2 · Programming & AI Software Engineering** — T1 ● T2 ● T3 ●
@@ -82,15 +83,17 @@
 > **🎯 ระดับ** · ทุก Track L2 · T2 L4 · T1 (ระบบอัตโนมัติ) L3
 
 > [!abstract]- **H6 · Generative AI, LLM & Agentic Systems** — T1 ○ T2 ○ T3 ●
-> พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows และ LLM Evaluation/Guardrails
+> พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows, **Model Selection & Evaluation, LLM Red-teaming** และ Guardrails
 >
 > **📈 ตลาด** · LinkedIn ระบุ AI Agents เป็นทักษะ AI ที่เติบโตเร็วที่สุดในปี 2025; Stanford/Lightcast พบการเติบโตสูงของ Generative AI, LLM, RAG และ Context Engineering
+> **🌏 เทียบเคียง** · IMDA GenAI TSC#3–#7, #9 (Model Selection/Evaluation/App Dev/Fine-tuning/Security) · Project Moonshot (LLM Red-teaming) — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C]]
 > **🎯 ระดับ** · ทุก Track L2 · T3 L4
 
 > [!abstract]- **H7 · AI Security, Privacy, Safety & Responsible AI** — T1 ● T2 ● T3 ●
 > ออกแบบและตรวจสอบระบบ AI ให้ปลอดภัยและรับผิดชอบ ครอบคลุม Cybersecurity, Data Privacy/PDPA, Threat Modeling, Secure MLOps, Prompt Injection and Data Poisoning Defense, Model/Agent Guardrails, Robustness, Fairness, Explainability, AI Governance และ Regulatory Compliance
 >
 > **📈 ตลาด** · Networks and Cybersecurity เป็นทักษะเติบโตเร็วอันดับต้นตาม WEF; BLS คาดงาน Information Security Analysts โต 29%; ระบบอัตโนมัติและ AI Agents ทำให้ Machine Oversight และ Governance สำคัญขึ้น
+> **🌏 เทียบเคียง** · AI Verify 11 หลักการ (Outcome/Process/Evidence) + **ISO/IEC 42001 · NIST AI RMF · EU AI Act** + IMDA GenAI TSC#8/#9 + ACM/IEEE/IFIP/ABET Cybersecurity (Data Poisoning/Model Inversion/Penetration Testing) · เปลี่ยนจริยธรรม (Attitude) เป็น Hard Skill ที่วัดได้ — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.2/C.4]]
 > **🎯 ระดับ** · ทุก Track L3 · ผู้รับผิดชอบระบบ production L4
 
 > [!abstract]- **H8 · Computer Vision, Remote Sensing & Multimodal AI** — T1 ● T2 ● T3 ○

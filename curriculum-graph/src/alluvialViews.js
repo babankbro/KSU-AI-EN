@@ -1,0 +1,196 @@
+// สร้างชุดข้อมูล alluvial 5 มุมมองจาก obeData + data
+import {
+  STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
+  GROUPS, SKILL_SETS, KSA
+} from "./obeData.js";
+import { COURSES, GROUP_NAME, GROUP_COLOR, PLO_COLOR, PLO_NAME } from "./data.js";
+
+const setColor = id => GROUPS[SKILL_SETS.find(s => s.id === id)?.g]?.color || "#42618c";
+const allSkills = [...HARD_SKILLS, ...SOFT_SKILLS];
+
+/* ① ผู้มีส่วนได้ส่วนเสีย + แหล่งหลักฐาน → ความต้องการ → ชุดทักษะ */
+function viewShNeed() {
+  const nodes = [], links = [];
+  STAKEHOLDERS.forEach(s => nodes.push({
+    id: `sh:${s.id}`, col: "sh", label: `${s.id} ${s.name}`, color: PRIO_INFO[s.prio].color
+  }));
+  ["survey", "trend"].forEach(k => nodes.push({
+    id: `src:${k}`, col: "src",
+    label: k === "survey" ? "ผลสำรวจผู้มีส่วนได้ส่วนเสีย (55 ราย)" : "รายงานแนวโน้มสากล / นโยบายชาติ",
+    color: k === "survey" ? "#2f6fb0" : "#7b57c9"
+  }));
+  NEEDS.forEach(n => nodes.push({
+    id: `n:${n.id}`, col: "need", label: `${n.id}`, sub: n.text.slice(0, 46) + "…",
+    color: NEED_LEVEL[n.level].color
+  }));
+  SKILL_SETS.forEach(s => nodes.push({
+    id: `set:${s.id}`, col: "set", label: s.id, sub: s.name.slice(0, 34), color: setColor(s.id)
+  }));
+
+  STAKEHOLDERS.forEach(s => s.needs.forEach(nid => {
+    const n = NEEDS.find(x => x.id === nid);
+    if (n) links.push({ s: `sh:${s.id}`, t: `src:${n.src}` , v: 1});
+  }));
+  // แหล่งหลักฐาน → Need
+  NEEDS.forEach(n => {
+    const cnt = STAKEHOLDERS.filter(s => s.needs.includes(n.id)).length || 1;
+    links.push({ s: `src:${n.src}`, t: `n:${n.id}`, v: cnt });
+  });
+  NEEDS.forEach(n => n.sets.forEach(sid => links.push({ s: `n:${n.id}`, t: `set:${sid}`, v: 1 })));
+
+  return {
+    columns: [
+      { key: "sh", label: "① ผู้มีส่วนได้ส่วนเสีย" },
+      { key: "src", label: "② แหล่งหลักฐาน" },
+      { key: "need", label: "③ ความต้องการ (Need)" },
+      { key: "set", label: "④ ชุดทักษะ" }
+    ], nodes, links, height: 900
+  };
+}
+
+/* ② ความต้องการ → ทักษะแกน → ชุดทักษะ → กลุ่มรายวิชา */
+function viewNeedSkillCourse() {
+  const nodes = [], links = [];
+  NEEDS.forEach(n => nodes.push({
+    id: `n:${n.id}`, col: "need", label: n.id, sub: n.text.slice(0, 40) + "…", color: NEED_LEVEL[n.level].color
+  }));
+  SKILL_SETS.forEach(s => nodes.push({
+    id: `set:${s.id}`, col: "set", label: s.id, sub: s.name.slice(0, 30), color: setColor(s.id)
+  }));
+  const grps = [...new Set(SKILL_SETS.flatMap(s => s.courses)
+    .map(c => COURSES.find(x => x.c === c)?.g).filter(Boolean))];
+  grps.forEach(g => nodes.push({
+    id: `g:${g}`, col: "cg", label: GROUP_NAME[g] || g, color: GROUP_COLOR[g]?.fg || "#42618c"
+  }));
+
+  NEEDS.forEach(n => n.sets.forEach(sid => links.push({ s: `n:${n.id}`, t: `set:${sid}`, v: 1 })));
+  SKILL_SETS.forEach(s => {
+    const cnt = {};
+    s.courses.forEach(c => {
+      const g = COURSES.find(x => x.c === c)?.g;
+      if (g) cnt[g] = (cnt[g] || 0) + 1;
+    });
+    Object.entries(cnt).forEach(([g, v]) => links.push({ s: `set:${s.id}`, t: `g:${g}`, v }));
+  });
+
+  return {
+    columns: [
+      { key: "need", label: "① ความต้องการ (N1–N18)" },
+      { key: "set", label: "② ชุดทักษะ (AISK)" },
+      { key: "cg", label: "③ กลุ่มรายวิชา" }
+    ], nodes, links, height: 820
+  };
+}
+
+/* ③ กลุ่มทักษะ → ชุดทักษะ → ทักษะย่อย */
+function viewGroupSub() {
+  const nodes = [], links = [];
+  Object.entries(GROUPS).forEach(([k, g]) => nodes.push({
+    id: `g:${k}`, col: "grp", label: k, sub: g.name.slice(0, 40), color: g.color
+  }));
+  SKILL_SETS.forEach(s => {
+    nodes.push({ id: `set:${s.id}`, col: "set", label: s.id, sub: s.name.slice(0, 28), color: setColor(s.id) });
+    links.push({ s: `g:${s.g}`, t: `set:${s.id}`, v: s.sub.length });
+    s.sub.forEach((x, i) => {
+      const id = `sub:${s.id}:${i}`;
+      nodes.push({ id, col: "sub", label: `${x.lv}`, sub: x.n.slice(0, 52), color: setColor(s.id) });
+      links.push({ s: `set:${s.id}`, t: id, v: 1 });
+    });
+  });
+  return {
+    columns: [
+      { key: "grp", label: "① กลุ่มทักษะ (G1–G6)" },
+      { key: "set", label: "② ชุดทักษะ (AISK01–08)" },
+      { key: "sub", label: "③ ทักษะย่อย + ระดับเป้าหมาย" }
+    ], nodes, links, height: 1180
+  };
+}
+
+/* ④ PLO → กลุ่มรายวิชา (CLO) → มิติ KSA */
+function viewPloCloKsa() {
+  const nodes = [], links = [];
+  const KDIM = [
+    { k: "K", label: "🧠 Knowledge — ความรู้", color: "#2f6fb0" },
+    { k: "S", label: "🛠️ Skill — ทักษะ", color: "#2f9e6b" },
+    { k: "A", label: "❤️ Attitude — ทัศนคติ", color: "#c1466b" }
+  ];
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => nodes.push({
+    id: `p:${p}`, col: "plo", label: `PLO${p}`, sub: PLO_NAME[p], color: PLO_COLOR[p]
+  }));
+  const grps = [...new Set(COURSES.filter(c => c.p?.length).map(c => c.g))];
+  grps.forEach(g => nodes.push({
+    id: `g:${g}`, col: "cg", label: GROUP_NAME[g] || g, color: GROUP_COLOR[g]?.fg || "#42618c"
+  }));
+  KDIM.forEach(d => nodes.push({ id: `k:${d.k}`, col: "ksa", label: d.label, color: d.color }));
+
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => {
+    const cnt = {};
+    COURSES.filter(c => c.p?.includes(p)).forEach(c => { cnt[c.g] = (cnt[c.g] || 0) + 1; });
+    Object.entries(cnt).forEach(([g, v]) => links.push({ s: `p:${p}`, t: `g:${g}`, v }));
+  });
+  // แต่ละกลุ่มรายวิชากระจายสู่ K/S/A ตามน้ำหนักที่ระบุใน KSA ของ PLO ที่เกี่ยวข้อง
+  grps.forEach(g => {
+    const n = COURSES.filter(c => c.g === g && c.p?.length).length || 1;
+    links.push({ s: `g:${g}`, t: "k:K", v: n });
+    links.push({ s: `g:${g}`, t: "k:S", v: n });
+    links.push({ s: `g:${g}`, t: "k:A", v: Math.max(1, Math.round(n * 0.5)) });
+  });
+
+  return {
+    columns: [
+      { key: "plo", label: "① PLO1–7" },
+      { key: "cg", label: "② กลุ่มรายวิชา (CLO)" },
+      { key: "ksa", label: "③ มิติ K–S–A" }
+    ], nodes, links, height: 640
+  };
+}
+
+/* ⑤ ทักษะแกน → ชุดทักษะ → PLO → มิติ KSA */
+function viewSkillKsa() {
+  const nodes = [], links = [];
+  allSkills.forEach(s => nodes.push({
+    id: `sk:${s.id}`, col: "sk", label: s.id, sub: s.name.slice(0, 40),
+    color: s.id.startsWith("H") ? "#2f6fb0" : "#0e9aa7"
+  }));
+  SKILL_SETS.forEach(s => nodes.push({
+    id: `set:${s.id}`, col: "set", label: s.id, sub: s.name.slice(0, 28), color: setColor(s.id)
+  }));
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => nodes.push({
+    id: `p:${p}`, col: "plo", label: `PLO${p}`, sub: PLO_NAME[p], color: PLO_COLOR[p]
+  }));
+
+  allSkills.forEach(s => links.push({ s: `sk:${s.id}`, t: `set:${s.set}`, v: 1 }));
+  SKILL_SETS.forEach(s => s.plo.forEach(p => links.push({ s: `set:${s.id}`, t: `p:${p}`, v: 1 })));
+
+  // PLO → ทักษะที่ KSA ระบุ (ปลายทางแสดงจำนวนทักษะที่ PLO นั้นกำหนด)
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => {
+    const id = `ks:${p}`;
+    nodes.push({
+      id, col: "ksa", label: `KSA ของ PLO${p}`,
+      sub: `${KSA[p].s.length} ทักษะ`, color: PLO_COLOR[p]
+    });
+    links.push({ s: `p:${p}`, t: id, v: KSA[p].s.length });
+  });
+
+  return {
+    columns: [
+      { key: "sk", label: "① ทักษะเป้าหมาย (H/S)" },
+      { key: "set", label: "② ชุดทักษะ" },
+      { key: "plo", label: "③ PLO" },
+      { key: "ksa", label: "④ KSA รายละเอียด" }
+    ], nodes, links, height: 900
+  };
+}
+
+export const VIEWS = [
+  { id: "v1", name: "ผู้มีส่วนได้ส่วนเสีย → หลักฐาน → Need → ชุดทักษะ",
+    desc: "เสียงของใคร ผ่านหลักฐานอะไร กลายเป็นความต้องการข้อไหน และตอบด้วยชุดทักษะใด", build: viewShNeed },
+  { id: "v2", name: "Need → ชุดทักษะ → กลุ่มรายวิชา",
+    desc: "ความต้องการแต่ละข้อถูกแปลงเป็นชุดทักษะ และลงเรียนที่กลุ่มรายวิชาใด", build: viewNeedSkillCourse },
+  { id: "v3", name: "กลุ่มทักษะ → ชุดทักษะ → ทักษะย่อย",
+    desc: "โครงสร้าง G1–G6 แตกเป็น AISK01–08 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewGroupSub },
+  { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–A",
+    desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–ทัศนคติ", build: viewPloCloKsa },
+  { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSA",
+    desc: "ทักษะเป้าหมายแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa }
+];

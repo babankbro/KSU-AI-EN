@@ -35,6 +35,7 @@ export default function Home() {
           </div>
           <div className="hero-cta">
             <Link className="btn primary" to="/structure">ดูโครงสร้างหลักสูตร</Link>
+            <Link className="btn" to="/obe">ขั้นตอนการวิเคราะห์ OBE</Link>
             <Link className="btn" to="/plo">ผลลัพธ์การเรียนรู้ PLO</Link>
           </div>
         </div>

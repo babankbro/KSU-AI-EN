@@ -1,0 +1,38 @@
+/* ═══════ Alluvial / Sankey ═══════ */
+.alv{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:12px 12px 8px;margin-top:6px}
+.alv-cols{display:grid;gap:8px;margin-bottom:8px}
+.alv-colh{font-size:.76rem;font-weight:800;color:var(--muted);background:var(--soft);
+  border-radius:7px;padding:5px 9px;text-align:center;line-height:1.35}
+.alv-scroll{overflow-x:auto;overflow-y:hidden}
+.alv-svg{width:100%;min-width:760px;display:block;font-family:var(--font-sans)}
+
+.alv-rb{opacity:.34;transition:opacity .16s}
+.alv-rb.on{opacity:.5}
+.alv-rb.off{opacity:.05}
+
+.alv-n{cursor:pointer}
+.alv-n rect{transition:opacity .16s}
+.alv-n.off rect{opacity:.18}
+.alv-n rect.pinned{stroke:var(--ink);stroke-width:1.6}
+.alv-n:hover rect{filter:brightness(1.12)}
+.alv-lb{font-size:11.5px;font-weight:700;fill:var(--ink);pointer-events:none;transition:opacity .16s}
+.alv-n.off .alv-lb{opacity:.25}
+.alv-sub{font-size:10px;font-weight:500;fill:var(--muted)}
+
+.alv-help{font-size:.76rem;color:var(--muted);text-align:center;padding:7px 0 2px;border-top:1px solid var(--line);margin-top:6px}
+.alv-help b{color:var(--ink)}
+
+.alv-pick{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+.alv-tab{font-size:.79rem;font-weight:700;border:1px solid var(--line);background:var(--card);
+  color:var(--muted);border-radius:9px;padding:7px 12px;cursor:pointer;transition:.12s;
+  font-family:inherit;text-align:left;line-height:1.35}
+.alv-tab:hover{color:var(--navy2);border-color:var(--navy2)}
+.alv-tab.on{background:var(--navy2);color:#fff;border-color:var(--navy2)}
+.alv-desc{font-size:.83rem;color:var(--muted);margin:0 0 10px;line-height:1.7}
+.obe-inline{color:var(--navy2);font-weight:700;text-decoration:none}
+.obe-inline:hover{text-decoration:underline}
+
+@media(max-width:640px){
+  .alv-colh{font-size:.7rem;padding:4px 6px}
+  .alv-lb{font-size:10.5px}
+}
