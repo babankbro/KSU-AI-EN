@@ -111,7 +111,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 2 · Needs ─── */}
-        <Section id="needs" title="② ความต้องการ (N1–N18)" sub="N1–N11 จากผลสำรวจ 55 ราย · N12–N18 เชิงแนวโน้มสากล/นโยบายชาติ">
+        <Section id="needs" title="② ความต้องการ (N1–N18)" sub="N1–N11 จากผลสำรวจผู้มีส่วนได้ส่วนเสีย · N12–N18 เชิงแนวโน้มสากล/นโยบายชาติ">
           <div className="obe-legend">
             {Object.entries(NEED_LEVEL).map(([k, v]) => (
               <span key={k}><i style={{ background: v.color }} />{v.label}</span>

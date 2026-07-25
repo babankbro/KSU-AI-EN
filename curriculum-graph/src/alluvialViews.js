@@ -16,7 +16,7 @@ function viewShNeed() {
   }));
   ["survey", "trend"].forEach(k => nodes.push({
     id: `src:${k}`, col: "src",
-    label: k === "survey" ? "ผลสำรวจผู้มีส่วนได้ส่วนเสีย (55 ราย)" : "รายงานแนวโน้มสากล / นโยบายชาติ",
+    label: k === "survey" ? "ผลสำรวจผู้มีส่วนได้ส่วนเสีย" : "รายงานแนวโน้มสากล / นโยบายชาติ",
     color: k === "survey" ? "#2f6fb0" : "#7b57c9"
   }));
   NEEDS.forEach(n => nodes.push({

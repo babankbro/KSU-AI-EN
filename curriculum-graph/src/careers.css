@@ -1,0 +1,27 @@
+/* ═══════ แถบเลือกอาชีพ (หน้า /careers) ═══════ */
+.jobpick{background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:10px 11px;margin:0 0 10px}
+.jp-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:8px}
+.jp-head>b{font-size:.83rem}
+.jp-mode{display:inline-flex;gap:4px;background:var(--soft);border-radius:8px;padding:3px}
+.jp-m{font-size:.76rem;font-weight:700;border:0;background:none;color:var(--muted);
+  border-radius:6px;padding:4px 10px;cursor:pointer;font-family:inherit;transition:.12s}
+.jp-m:hover:not(:disabled){color:var(--ink)}
+.jp-m:disabled{opacity:.4;cursor:not-allowed}
+.jp-m.on{background:var(--card);color:var(--navy);box-shadow:0 1px 3px rgba(20,40,80,.14)}
+
+.jp-chips{display:flex;flex-wrap:wrap;gap:5px}
+.jp-c{display:inline-flex;align-items:center;gap:6px;max-width:100%;
+  font-size:.76rem;border:1px solid var(--line);background:var(--card);color:var(--ink);
+  border-radius:8px;padding:4px 8px;cursor:pointer;font-family:inherit;text-align:left;transition:.12s}
+.jp-c:hover{border-color:var(--sc)}
+.jp-c.on{border-color:var(--sc);box-shadow:0 0 0 2px color-mix(in srgb,var(--sc) 26%,transparent)}
+.jp-id{font-size:.68rem;font-weight:800;color:#fff;background:var(--sc);border-radius:5px;padding:1px 5px}
+.jp-th{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:230px}
+.jp-st{font-size:.66rem;font-weight:800;color:var(--sc);border:1px solid var(--sc);border-radius:4px;padding:0 4px}
+
+.jp-now{margin-top:9px;padding-top:8px;border-top:1px solid var(--line);
+  font-size:.79rem;color:var(--muted);line-height:1.7}
+.jp-now b{color:var(--ink)}
+.jp-why{font-style:italic}
+@media(max-width:560px){.jp-th{max-width:150px}}

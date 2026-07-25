@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import dagre from "dagre";
+import "./careers.css";
 import {
   COURSES, CAREERS, CAREER_STATUS, TRACK_NAME,
   GROUP_COLOR, GROUP_NAME, PLO_COLOR, PLO_NAME, YEAR_COLOR,
@@ -64,12 +65,24 @@ export default function CareerGraph() {
   const [withCommon, setWithCommon] = useState(true);
   const [zoom, setZoom] = useState(0.75);
   const [selJob, setSelJob] = useState(null);
+  const [focus, setFocus] = useState(false);   // true = วาดกราฟเฉพาะอาชีพที่เลือก
 
   const careers = useMemo(() => {
     if (track === 0) return CAREERS.filter(c => c.track === 0);
     const own = CAREERS.filter(c => c.track === track);
     return withCommon ? [...own, ...CAREERS.filter(c => c.track === 0)] : own;
   }, [track, withCommon]);
+
+  /* อาชีพที่นำไปวาดกราฟจริง — โหมดรายอาชีพจะเหลือใบเดียว ทำให้ผังเล็กและอ่านง่าย */
+  const graphCareers = useMemo(
+    () => (focus && selJob ? careers.filter(c => c.id === selJob) : careers),
+    [focus, selJob, careers]
+  );
+
+  const pickJob = id => {
+    if (selJob === id) { setSelJob(null); setFocus(false); }
+    else { setSelJob(id); setFocus(true); }
+  };
 
   const layout = useMemo(() => {
     // 1) วิชาปลายทางที่แต่ละอาชีพระบุ + ไล่ย้อน prerequisite chain ทั้งหมด
@@ -80,11 +93,11 @@ export default function CareerGraph() {
       const c = byCode[code];
       [...(c.h || []), ...(c.w || []), ...(c.co || [])].forEach(walk);
     };
-    careers.forEach(j => j.courses.forEach(walk));
+    graphCareers.forEach(j => j.courses.forEach(walk));
 
     // 2) nodes: วิชา + อาชีพ
     const nodeDefs = [...need].map(code => ({ id: code, w: NODE_W, h: NODE_H, kind: "course", c: byCode[code] }));
-    careers.forEach(j => nodeDefs.push({ id: j.id, w: JOB_W, h: JOB_H, kind: "job", j }));
+    graphCareers.forEach(j => nodeDefs.push({ id: j.id, w: JOB_W, h: JOB_H, kind: "job", j }));
 
     // 3) edges: prereq ระหว่างวิชา + วิชา → อาชีพ
     const edgeDefs = [];
@@ -94,17 +107,18 @@ export default function CareerGraph() {
       (c.w || []).forEach(s => need.has(s) && edgeDefs.push({ id: `${s}|${code}|weak`, source: s, target: code, kind: "weak" }));
       (c.co || []).forEach(s => need.has(s) && edgeDefs.push({ id: `${s}|${code}|co`, source: s, target: code, kind: "co" }));
     });
-    careers.forEach(j => j.courses.forEach(code => {
+    graphCareers.forEach(j => j.courses.forEach(code => {
       if (byCode[code]) edgeDefs.push({ id: `${code}|${j.id}|job`, source: code, target: j.id, kind: "job" });
     }));
 
     return runDagre(nodeDefs, edgeDefs, { ranksep: 165, nodesep: 26 });
-  }, [careers]);
+  }, [graphCareers]);
 
-  // ไฮไลต์: คลิกอาชีพ → โชว์เฉพาะสายวิชาที่นำไปสู่อาชีพนั้น
+  // ไฮไลต์ (ใช้เฉพาะโหมดภาพรวม — โหมดรายอาชีพวาดเฉพาะสายนั้นอยู่แล้ว)
   const { dimSet, litEdges } = useMemo(() => {
-    if (!selJob) return { dimSet: new Set(), litEdges: new Set() };
+    if (!selJob || focus) return { dimSet: new Set(), litEdges: new Set() };
     const job = careers.find(j => j.id === selJob);
+    if (!job) return { dimSet: new Set(), litEdges: new Set() };
     const keep = new Set([selJob]);
     const walk = code => {
       if (!code || keep.has(code) || !byCode[code]) return;
@@ -116,14 +130,16 @@ export default function CareerGraph() {
     const dim = new Set(layout.nodes.filter(n => !keep.has(n.id)).map(n => n.id));
     const lit = new Set(layout.edges.filter(e => keep.has(e.source) && keep.has(e.target)).map(e => e.id));
     return { dimSet: dim, litEdges: lit };
-  }, [selJob, careers, layout]);
+  }, [selJob, focus, careers, layout]);
 
   const stats = useMemo(() => {
     const courseCount = layout.nodes.filter(n => n.kind === "course").length;
     const byGroup = {};
     layout.nodes.filter(n => n.kind === "course").forEach(n => { byGroup[n.c.g] = (byGroup[n.c.g] || 0) + 1; });
-    return { courseCount, byGroup, jobCount: careers.length };
-  }, [layout, careers]);
+    return { courseCount, byGroup, jobCount: graphCareers.length };
+  }, [layout, graphCareers]);
+
+  const selCareer = selJob ? careers.find(j => j.id === selJob) : null;
 
   return (
     <div className="graphwrap">
@@ -142,7 +158,40 @@ export default function CareerGraph() {
         <span className="glabel">ซูม</span>
         <input type="range" min="0.35" max="1.4" step="0.05" value={zoom} onChange={e => setZoom(+e.target.value)} style={{ width: 100 }} />
         <span className="glabel">{Math.round(zoom * 100)}%</span>
-        {selJob && <button className="gclear" onClick={() => setSelJob(null)}>✕ แสดงทุกสาย</button>}
+        {selJob && <button className="gclear" onClick={() => { setSelJob(null); setFocus(false); }}>✕ กลับสู่ภาพรวม</button>}
+      </div>
+
+      {/* แถบเลือกอาชีพ — คลิกเพื่อแยกกราฟเฉพาะอาชีพนั้น */}
+      <div className="jobpick">
+        <div className="jp-head">
+          <b>เลือกอาชีพเพื่อแยกดูทีละสาย</b>
+          <span className="jp-mode">
+            <button className={`jp-m${!focus ? " on" : ""}`}
+              onClick={() => setFocus(false)}>ภาพรวมทั้งแขนง</button>
+            <button className={`jp-m${focus ? " on" : ""}`} disabled={!selJob}
+              onClick={() => selJob && setFocus(true)}>เฉพาะอาชีพที่เลือก</button>
+          </span>
+        </div>
+        <div className="jp-chips">
+          {careers.map(j => {
+            const sc = CAREER_STATUS[j.st[0]].color;
+            const on = selJob === j.id;
+            return (
+              <button key={j.id} className={`jp-c${on ? " on" : ""}`} style={{ "--sc": sc }}
+                onClick={() => pickJob(j.id)} title={`${j.en} · ${j.courses.length} รายวิชาหลัก`}>
+                <span className="jp-id">{j.id}</span>
+                <span className="jp-th">{j.th}</span>
+                <span className="jp-st">{j.st}</span>
+              </button>
+            );
+          })}
+        </div>
+        {focus && selCareer && (
+          <div className="jp-now">
+            กำลังแสดงเฉพาะ <b>{selCareer.id} {selCareer.th}</b> ({selCareer.en}) —
+            {" "}{stats.courseCount} รายวิชาในสาย · <span className="jp-why">{selCareer.why}</span>
+          </div>
+        )}
       </div>
 
       <div className="graphcanvas">
@@ -182,7 +231,7 @@ export default function CareerGraph() {
                   return (
                     <foreignObject key={n.id} x={n.x} y={n.y} width={n.w} height={n.h}
                       style={{ opacity: dim ? 0.18 : 1, cursor: "pointer" }}
-                      onClick={() => setSelJob(s => (s === j.id ? null : j.id))}>
+                      onClick={() => pickJob(j.id)}>
                       <div className="gjob" style={{ borderColor: sc, boxShadow: on ? `0 0 0 3px ${sc}55` : "none" }}>
                         <div className="gjob-top">
                           <span className="gjob-id" style={{ background: sc }}>{j.id}</span>
@@ -241,7 +290,11 @@ export default function CareerGraph() {
           {Object.entries(CAREER_STATUS).map(([k, v]) => (
             <div className="row" key={k}><span className="sw" style={{ background: v.color }} />{k} — {v.label.split(" — ")[0]}</div>
           ))}
-          <div className="hint">คลิก <b>กล่องอาชีพ</b> เพื่อดูเฉพาะสายวิชาที่นำไปสู่อาชีพนั้น</div>
+          <div className="hint">
+            {focus
+              ? <>กำลังแยกดูรายอาชีพ — กด <b>ภาพรวมทั้งแขนง</b> เพื่อกลับไปดูทั้งหมด</>
+              : <>คลิก <b>กล่องอาชีพ</b> หรือเลือกจากแถบด้านบน เพื่อแยกกราฟเฉพาะสายนั้น</>}
+          </div>
         </div>
       </div>
 
