@@ -25,10 +25,10 @@ function CoursePopover({ c, anchor, onEnter, onLeave }) {
     const h = el.offsetHeight;
     const vw = window.innerWidth, vh = window.innerHeight;
     const sx = window.scrollX, sy = window.scrollY;
-    // เลือกฝั่ง: ขวาก่อน ถ้าไม่พอให้ไปซ้าย ถ้ายังไม่พอให้จัดกลางจอ
+    // เลือกฝั่ง: ขวาก่อน ถ้าไม่พอให้ไปซ้าย ถ้ายังไม่พอ (การ์ดเต็มความกว้าง) ให้ชิดขอบขวาของจอ
     let left = anchor.right + GAP;
     if (left + PANEL_W > vw - 12) left = anchor.left - PANEL_W - GAP;
-    if (left < 12) left = Math.max(12, (vw - PANEL_W) / 2);
+    if (left < 12) left = Math.max(12, vw - PANEL_W - 12);
     // แนวตั้ง: เริ่มที่ขอบบนการ์ด แล้วดันให้อยู่ในจอ ณ ขณะเปิด
     let top = Math.min(anchor.top, vh - h - 12);
     if (top < 12) top = 12;
@@ -147,7 +147,7 @@ export default function Courses() {
                 </div>
                 <b className="cc-t">{c.t}</b>
                 <div className="cc-e">{c.e}</div>
-                <p className="cc-d">{c.d.slice(0, 128)}…</p>
+                <p className="cc-d">{c.d.slice(0, 260)}…</p>
                 <div className="cc-foot">
                   <span className={`gtag g-${c.g}`}>{GROUP_NAME[c.g]}</span>
                   {c.tr && <span className="gtag">Track {c.tr}</span>}
