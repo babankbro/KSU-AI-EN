@@ -76,35 +76,169 @@ export const NEED_LEVEL = {
   fixed: { label: "ปรับแล้ว (เดิมตอบทางอ้อม)", color: "#dd8a1e" }
 };
 
-/* ─── ขั้นที่ 3 · ทักษะเป้าหมาย H/S ─── */
+/* ─── ขั้นที่ 3 · ทักษะเป้าหมาย H/S ───
+   รายละเอียดซิงก์จาก 03_OBE_PLO_Design_2570/03_Target_Skills.md (§3.4 · §3.5b · §3.6 · §3.7b · §3.9)
+   PLO ที่รองรับและรายวิชาหลักซิงก์จาก 05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md §D.1
+   track: ● ทักษะหลักของแขนง · ○ ทักษะสนับสนุน · scope=ขอบเขต · market=หลักฐานตลาด
+   bench=เทียบเคียงมาตรฐานสากล · level=ระดับเป้าหมาย · act=พฤติกรรมที่คาดหวัง · link=ทักษะแกนที่ผูก */
 export const HARD_SKILLS = [
-  { id: "H1", name: "AI/ML Engineering & Applied Mathematics", core: true, set: "AISK01" },
-  { id: "H2", name: "Programming & AI Software Engineering", core: true, set: "AISK01" },
-  { id: "H3", name: "Data Engineering, Analytics & Visualization", core: true, set: "AISK01" },
-  { id: "H4", name: "MLOps, Cloud & AI Infrastructure", core: true, set: "AISK01" },
-  { id: "H5", name: "Industrial Automation, Robotics & Digital Twin", core: true, set: "AISK03" },
-  { id: "H6", name: "Generative AI, LLM & Agentic Systems", core: true, set: "AISK06" },
-  { id: "H7", name: "AI Security, Privacy, Safety & Responsible AI", core: true, set: "AISK07" },
-  { id: "H8", name: "Computer Vision, Remote Sensing & Multimodal AI", core: true, set: "AISK05" },
-  { id: "H9", name: "IoT, Embedded, Edge AI & Sensor Networks", core: true, set: "AISK04" },
-  { id: "H10", name: "NLP & Thai NLP / Sovereign AI", core: false, set: "AISK06" },
-  { id: "H11", name: "Time-Series Forecasting & Predictive Analytics", core: false, set: "AISK05" },
-  { id: "H12", name: "Big Data & Distributed / Streaming Systems", core: false, set: "AISK01" },
-  { id: "H13", name: "Reinforcement Learning, Optimization & OR", core: false, set: "AISK03" },
-  { id: "H14", name: "Data-Centric AI & Annotation Operations", core: false, set: "AISK01" },
-  { id: "H15", name: "Green / Sustainable AI & Model Efficiency", core: false, set: "AISK02" }
+  { id: "H1", name: "AI/ML Engineering & Applied Mathematics", core: true, set: "AISK01", rank: 1,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [1, 6], courses: ["EN-131-102", "EN-131-106", "EN-131-101"],
+    scope: "พัฒนา ประเมิน และปรับปรุงโมเดล Machine Learning/Deep Learning โดยใช้คณิตศาสตร์ สถิติ ความน่าจะเป็น พีชคณิตเชิงเส้น และ Optimization อย่างถูกต้อง ครอบคลุม Supervised/Unsupervised Learning, Neural Networks, Model Evaluation, Explainability และการจัดการ Bias/Overfitting",
+    market: "AI/ML Specialists เป็นกลุ่มงานเติบโตเร็ว · Machine Learning ปรากฏสูงในประกาศงาน AI (Stanford/Lightcast)",
+    bench: "ACM/IEEE-CS/AAAI CS2023 (ครบทั้ง Symbolic และ Subsymbolic) · เสาหลัก NUS “Reasoning & Decision Making”",
+    level: "ทุก Track L3 · โครงงานพัฒนาโมเดลหลัก L4" },
+
+  { id: "H2", name: "Programming & AI Software Engineering", core: true, set: "AISK01", rank: 2,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [2, 1], courses: ["EN-001-026", "EN-132-107"],
+    scope: "พัฒนาซอฟต์แวร์ AI ที่ดูแลรักษาและทดสอบได้ด้วย Python, SQL, API, Git, Data Structures and Algorithms, Software Architecture, Automated Testing, CI/CD, Clean Code และการใช้ AI Coding Tools อย่างมีวิจารณญาณ",
+    market: "Python พบบ่อยมากในประกาศงาน AI · Software Developers อยู่ในกลุ่มงานเทคโนโลยีที่เติบโตและมีจำนวนงานใหม่สูง · TDRI ระบุเป็นส่วนหนึ่งของ Minimum Viable Stack",
+    level: "ทุก Track L3 · T3 และโครงงานซอฟต์แวร์ L4" },
+
+  { id: "H3", name: "Data Engineering, Analytics & Visualization", core: true, set: "AISK01", rank: 3,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [6, 2, 3], courses: ["EN-131-107", "EN-132-102"],
+    scope: "ออกแบบ Data Pipeline และจัดการข้อมูลตั้งแต่ ingestion, ETL/ELT, SQL/NoSQL, Data Cleaning, Feature Engineering, Data Quality, Data Governance, Streaming/Big Data ไปจนถึงการวิเคราะห์ การพยากรณ์ และการสื่อสารผลผ่าน Visualization และ Dashboard",
+    market: "Big Data Specialists และ Data Engineers เป็นกลุ่มงานเติบโตสูง · SQL, Data Analysis และ Workflow Management อยู่ในทักษะสำคัญของประกาศงาน AI · ไทยเปิดรับ Data Engineer/Data Scientist สูงสุดในภาค ICT (TDRI)",
+    level: "ทุก Track L3 · T3 ด้าน Data Platform L4" },
+
+  { id: "H4", name: "MLOps, Cloud & AI Infrastructure", core: true, set: "AISK01", rank: 4,
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 4], courses: ["EN-131-105", "EN-131-108"],
+    scope: "นำระบบ AI ไปใช้งานจริงด้วย Cloud, Container, Docker, Kubernetes, Model Registry, ML/LLM Pipeline, Monitoring, Drift Detection, Observability, Scalability, Cost/Latency Optimization, GPU/Accelerator และ Edge–Cloud Integration",
+    market: "AWS, Automation, Workflow Management และ Scalability พบบ่อยในประกาศงาน AI สะท้อนว่าตลาดต้องการผู้ operationalize ระบบ ไม่ใช่เพียงสร้างโมเดล",
+    level: "ทุก Track L2–L3 · T3 L4" },
+
+  { id: "H5", name: "Industrial Automation, Robotics & Digital Twin", core: true, set: "AISK03", rank: 5,
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [2, 1], courses: ["EN-132-106", "EN-132-105"],
+    scope: "ออกแบบและบูรณาการ PLC/SCADA, Industrial Networks, Robotics, Machine Control, Predictive Maintenance, Simulation, Digital Twin, Machine Vision Interface และ OT/IT Integration สำหรับสายการผลิตและระบบโลจิสติกส์อัตโนมัติ",
+    market: "ไทยต้องการ Smart Electronics & Industrial Robotics 226,423 ตำแหน่ง (2568–2572) · การผลิตขั้นสูงคาดใช้ AI 81% และหุ่นยนต์ 69%",
+    level: "ทุก Track L2 · T2 L4 · T1 (ระบบอัตโนมัติ) L3" },
+
+  { id: "H6", name: "Generative AI, LLM & Agentic Systems", core: true, set: "AISK06", rank: 6,
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-131-101", "EN-132-108"],
+    scope: "พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows, Model Selection & Evaluation, LLM Red-teaming และ Guardrails",
+    market: "LinkedIn ระบุ AI Agents เป็นทักษะ AI ที่เติบโตเร็วที่สุดในปี 2025 · Stanford/Lightcast พบการเติบโตสูงของ Generative AI, LLM, RAG และ Context Engineering",
+    bench: "IMDA GenAI TSC#3–#7, #9 (Model Selection/Evaluation/App Dev/Fine-tuning/Security) · Project Moonshot (LLM Red-teaming)",
+    level: "ทุก Track L2 · T3 L4" },
+
+  { id: "H7", name: "AI Security, Privacy, Safety & Responsible AI", core: true, set: "AISK07", rank: 7,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [4], courses: ["EN-131-104", "EN-131-108", "EN-134-101", "EN-134-102"],
+    scope: "ออกแบบและตรวจสอบระบบ AI ให้ปลอดภัยและรับผิดชอบ ครอบคลุม Cybersecurity, Data Privacy/PDPA, Threat Modeling, Secure MLOps, Prompt Injection and Data Poisoning Defense, Model/Agent Guardrails, Robustness, Fairness, Explainability, AI Governance และ Regulatory Compliance",
+    market: "Networks and Cybersecurity เป็นทักษะเติบโตเร็วอันดับต้นตาม WEF · BLS คาดงาน Information Security Analysts โต 29% · Responsible AI ปรากฏใน 15% ของประกาศงาน AI ไทย (TDRI)",
+    bench: "AI Verify 11 หลักการ (Outcome/Process/Evidence) · ISO/IEC 42001 · NIST AI RMF · EU AI Act · IMDA GenAI TSC#8/#9 · ACM/IEEE/IFIP/ABET Cybersecurity",
+    level: "ทุก Track L3 · ผู้รับผิดชอบระบบ production L4" },
+
+  { id: "H8", name: "Computer Vision, Remote Sensing & Multimodal AI", core: true, set: "AISK05", rank: 8,
+    track: { T1: "●", T2: "●", T3: "○" }, plo: [2, 6], courses: ["EN-131-103", "EN-132-104"],
+    scope: "พัฒนาระบบ Image Processing, Object Detection, Segmentation, Tracking, Quality Inspection, Multispectral/Hyperspectral Analysis, UAV/Remote Sensing, GeoAI และ Multimodal Data Fusion สำหรับภาคสนามและสายการผลิต",
+    market: "Visual Image Recognition และ Multimodal Models ปรากฏในข้อมูลประกาศงาน AI · เชื่อมตรงกับการตรวจโรค/ผลผลิตใน T1 และ Quality Inspection ใน T2",
+    level: "ทุก Track L2 · T1–T2 L4" },
+
+  { id: "H9", name: "IoT, Embedded, Edge AI & Sensor Networks", core: true, set: "AISK04", rank: 9,
+    track: { T1: "●", T2: "○", T3: "○" }, plo: [2, 1], courses: ["EN-131-104", "EN-001-027"],
+    scope: "ออกแบบและบูรณาการ Sensor, Microcontroller, Embedded Linux, MQTT/Industrial Protocols, Wireless/LPWAN, Edge Computing, TinyML/Edge AI, Real-time Acquisition, Device Management และ Edge–Cloud Security สำหรับระบบอัจฉริยะในพื้นที่จริง",
+    market: "Sensor Networks เป็นหนึ่งในเทคโนโลยีที่ WEF ระบุว่าจะเปลี่ยนงานเกษตรและการผลิต และเป็นโครงสร้างพื้นฐานสำคัญของ Smart Agriculture",
+    level: "ทุก Track L2 · T1 L4 · T2 L3" },
+
+  { id: "H10", name: "NLP & Thai NLP / Sovereign AI", core: false, set: "AISK06", rank: 10,
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-132-108"], link: "H6",
+    scope: "พัฒนาระบบประมวลผลภาษาธรรมชาติ ครอบคลุม Tokenization, Text Classification, NER, Information Extraction, Semantic Search และการต่อยอดภาษาไทย (Thai NLP) บนโครงสร้างพื้นฐาน AI ของประเทศ (AI for Thai, ThaiLLM)",
+    market: "NLP เป็นทักษะเทคนิคที่ประกาศงานโตเร็วที่สุด +155% YoY และเป็นกลุ่มค่าตอบแทนสูง (Second Talent 2026) · ตอบ Need N15 โดยตรง",
+    level: "ทุก Track L2 · T3 L4" },
+
+  { id: "H11", name: "Time-Series Forecasting & Predictive Analytics", core: false, set: "AISK05", rank: 11,
+    track: { T1: "●", T2: "●", T3: "○" }, plo: [6, 2], courses: ["EN-132-102", "EN-132-103", "EN-132-105"], link: "H1, H3",
+    scope: "วิเคราะห์และพยากรณ์ข้อมูลเชิงเวลา (Seasonality, Trend, Anomaly Detection) เพื่อพยากรณ์ผลผลิต ราคา ความต้องการ และการบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance)",
+    market: "เป็นแกนของ Precision Farming (พยากรณ์ผลผลิต T1) และ Predictive Maintenance ในสายการผลิต (T2) ที่ผู้ใช้บัณฑิตระบุเป็นเทคโนโลยีนำรายแขนง",
+    level: "T1–T2 L3–L4 · T3 L2" },
+
+  { id: "H12", name: "Big Data & Distributed / Streaming Systems", core: false, set: "AISK01", rank: 12,
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [6], courses: ["EN-131-107"], link: "H3, H4",
+    scope: "ประมวลผลข้อมูลขนาดใหญ่และแบบสตรีมด้วย Spark, Kafka, Data Lake/Lakehouse, Distributed Storage และ Real-time Pipeline",
+    market: "Big Data Specialists เป็นกลุ่มงานโตสูง (WEF) · ไทยเปิดรับ Data Engineer/Data Scientist สูงสุดในภาค ICT (TDRI)",
+    level: "T3 L3–L4 · T1–T2 L2" },
+
+  { id: "H13", name: "Reinforcement Learning, Optimization & OR", core: false, set: "AISK03", rank: 13,
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [1, 2], courses: ["EN-132-102", "EN-132-106"], link: "H1, H5",
+    scope: "ประยุกต์ Reinforcement Learning, Mathematical Optimization และ Operations Research กับปัญหาการควบคุม การจัดตาราง การวางแผนทรัพยากร และการควบคุมหุ่นยนต์/กระบวนการ",
+    market: "RL ปรากฏใน ~9% ของงาน AI (recommendation, robotics, control) · เป็นแกนของ Industrial Optimization และ Autonomous Control (T2)",
+    level: "T2 L3 · T1/T3 L2" },
+
+  { id: "H14", name: "Data-Centric AI & Annotation Operations", core: false, set: "AISK01", rank: 14,
+    track: { T1: "●", T2: "○", T3: "●" }, plo: [6], courses: ["EN-131-107"], link: "H3",
+    scope: "จัดการคุณภาพข้อมูลแบบ Data-Centric: Labeling Strategy, Annotation Tools, Inter-annotator Agreement, Active Learning, Synthetic Data และ Human-in-the-Loop",
+    market: "Data Annotator เป็นตำแหน่ง AI ที่โตเร็วที่สุดในไทย +586% (115→789 ตำแหน่ง/ไตรมาส) ตาม TDRI · คุณภาพข้อมูลคือ Pain point อันดับต้นของผู้ใช้บัณฑิต (9/27)",
+    level: "ทุก Track L2 · ผู้ทำ Data Platform L3" },
+
+  { id: "H15", name: "Green / Sustainable AI & Model Efficiency", core: false, set: "AISK02", rank: 15,
+    track: { T1: "●", T2: "○", T3: "○" }, plo: [4, 2], courses: ["EN-001-023", "EN-132-103"], link: "H4, H9",
+    scope: "ออกแบบ AI ที่ประหยัดพลังงานและทรัพยากร: Model Compression, Quantization, Distillation, Efficient Inference, TinyML Optimization และการวัด Carbon/Energy Footprint",
+    market: "Environmental Stewardship ติด 10 ทักษะเติบโตเร็วของ WEF เป็นครั้งแรก · ตอบ Need N12 (Green AI/BCG) และเสริมการ deploy บน Edge ที่ทรัพยากรจำกัด (T1)",
+    level: "ทุก Track L1–L2 · Edge/MLOps L3" }
 ];
 
 export const SOFT_SKILLS = [
-  { id: "S1", name: "Analytical, Critical & Systems Thinking", core: true, set: "AISK08" },
-  { id: "S2", name: "Creative Problem-Solving & Engineering Judgment", core: true, set: "AISK08" },
-  { id: "S3", name: "Adaptability, Resilience & Lifelong Learning", core: true, set: "AISK08" },
-  { id: "S4", name: "Professional Communication, English & Data Storytelling", core: true, set: "AISK08" },
-  { id: "S5", name: "Teamwork, Collaboration & Leadership", core: true, set: "AISK08" },
-  { id: "S6", name: "Product, Entrepreneurial & Project Management Mindset", core: true, set: "AISK08" },
-  { id: "S7", name: "Curiosity, AI Literacy & Human–AI Teaming", core: false, set: "AISK07" },
-  { id: "S8", name: "Empathy, Service Orientation & Stakeholder-Centric", core: false, set: "AISK08" }
+  { id: "S1", name: "Analytical, Critical & Systems Thinking", core: true, set: "AISK08", rank: 1,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [1, 6], courses: ["EN-134-103"],
+    scope: "วิเคราะห์เหตุและผล มองความสัมพันธ์ขององค์ประกอบทั้งระบบ ตรวจสอบสมมติฐาน ประเมินความน่าเชื่อถือของข้อมูลและผลลัพธ์ AI และตัดสินใจโดยใช้หลักฐาน",
+    market: "WEF ระบุ Analytical Thinking เป็นทักษะแกนที่นายจ้างต้องการมากที่สุด และ Systems Thinking สำคัญเพิ่มขึ้นจาก AI, Robotics และ Automation",
+    act: "สร้าง problem model, causal/system map, เปรียบเทียบทางเลือก และอธิบายเหตุผลได้",
+    level: "ทุก Track L3 · แทรกในทุกโครงงาน" },
+
+  { id: "S2", name: "Creative Problem-Solving & Engineering Judgment", core: true, set: "AISK08", rank: 2,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [1, 2], courses: ["EN-134-104"],
+    scope: "กำหนดปัญหาจริง สร้างทางเลือกที่เป็นไปได้ ทดลองอย่างรวดเร็ว และเลือกแนวทางภายใต้ข้อจำกัดด้านข้อมูล เวลา งบประมาณ ความปลอดภัย และผลกระทบ",
+    market: "Creative Thinking เป็นทั้งทักษะแกนและทักษะเติบโตสูง · งาน Intelligent Systems ต้องใช้วิจารณญาณและการกำกับเครื่องจักรอัตโนมัติ",
+    act: "Problem framing, trade-off analysis, prototype iteration และการตัดสินใจภายใต้ความไม่แน่นอน",
+    level: "ทุก Track L2–L3 · Capstone L4" },
+
+  { id: "S3", name: "Adaptability, Resilience & Lifelong Learning", core: true, set: "AISK08", rank: 3,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [7], courses: ["EN-131-105", "EN-134-103"],
+    scope: "ประเมินช่องว่างความรู้ วางแผนเรียนรู้ด้วยตนเอง ทดลองใช้เทคโนโลยีใหม่ รับและใช้ข้อเสนอแนะ และปรับตัวต่อความล้มเหลวหรือการเปลี่ยนแปลงของเครื่องมือและข้อกำหนด",
+    market: "WEF จัด Resilience/Flexibility/Agility ไว้ในกลุ่มทักษะแกนสูงสุด และ Curiosity/Lifelong Learning อยู่ในกลุ่มทักษะที่เพิ่มความสำคัญ ขณะที่ 39% ของชุดทักษะแรงงานมีแนวโน้มเปลี่ยนภายในปี 2030",
+    act: "Learning plan, technology review, reflective portfolio และหลักฐานการประยุกต์ใช้ความรู้ใหม่",
+    level: "ทุก Track L3" },
+
+  { id: "S4", name: "Professional Communication, English & Data Storytelling", core: true, set: "AISK08", rank: 4,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [3], courses: ["EN-134-101", "EN-134-102", "EN-135-401"],
+    scope: "สื่อสารข้อมูลเทคนิคที่ซับซ้อนด้วยภาษาไทยและอังกฤษผ่านรายงาน การนำเสนอ Visualization, Dashboard และสื่อดิจิทัล โดยปรับสารให้เหมาะกับวิศวกร ผู้บริหาร เกษตรกร และชุมชน",
+    market: "TDRI พบการสื่อสาร + ภาษาอังกฤษ ระบุใน >75% ของประกาศงาน AI (เป็น necessity) · งานอุตสาหกรรมอัจฉริยะต้องใช้ Executive Communication และ Storytelling",
+    act: "รายงานเทคนิค การนำเสนอ การตอบคำถาม และการอธิบายผล AI ต่อผู้ฟังต่างกลุ่ม",
+    level: "ทุก Track L3–L4" },
+
+  { id: "S5", name: "Teamwork, Collaboration & Leadership", core: true, set: "AISK08", rank: 5,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [5], courses: ["EN-001-028", "EN-001-029", "EN-001-030", "EN-134-104"],
+    scope: "ทำงานในบทบาทผู้นำและสมาชิกทีม กำหนดเป้าหมาย แบ่งงาน สร้างความปลอดภัยในการแสดงความคิดเห็น จัดการความขัดแย้ง และรับผิดชอบต่อผลลัพธ์ร่วมกัน",
+    market: "Leadership and Social Influence อยู่ในกลุ่มทักษะแกนและทักษะที่เติบโตสูง · สอวช. เน้น Job-specific Skills ควบคู่ People Management และ Creative Thinking",
+    act: "Team charter, project plan, meeting evidence, peer assessment และผลงานตามบทบาท",
+    level: "ทุก Track L3–L4 (สหกิจ/Capstone L4)" },
+
+  { id: "S6", name: "Product, Entrepreneurial & Project Management Mindset", core: true, set: "AISK08", rank: 6,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [7], courses: ["EN-132-101", "EN-135-402"],
+    scope: "เปลี่ยนปัญหาและความต้องการของผู้ใช้เป็นคุณค่า ผลิตภัณฑ์ หรือนวัตกรรม ประเมินความเป็นไปได้ด้านเทคนิค ธุรกิจ ต้นทุน ความเสี่ยง และผลกระทบ พร้อมวางแผนและส่งมอบโครงการอย่างเป็นระบบ",
+    market: "Project Management เป็นหนึ่งในทักษะที่พบมากในประกาศงาน AI ของ Stanford/Lightcast · ตลาดต้องการผู้ที่เชื่อม AI กับการดำเนินงานและผลลัพธ์ทางธุรกิจ",
+    act: "User discovery, value proposition, feasibility/ROI, roadmap, risk register และการส่งมอบ MVP",
+    level: "ทุก Track L2–L3" },
+
+  { id: "S7", name: "Curiosity, AI Literacy & Human–AI Teaming", core: false, set: "AISK07", rank: 7,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [4, 7], courses: ["EN-131-101"], link: "S3",
+    scope: "ใช้เครื่องมือ AI เป็น “เพื่อนร่วมงาน” อย่างมีวิจารณญาณ — เข้าใจว่า AI ทำอะไรได้/ไม่ได้ ตั้งคำถามและ Prompt อย่างมีประสิทธิภาพ ตรวจสอบผลลัพธ์ และเรียนรู้เครื่องมือใหม่ด้วยความอยากรู้",
+    market: "AI Literacy เป็นทักษะหายากอันดับ 2 ของโลก (ManpowerGroup 2026) และ Curiosity & Lifelong Learning ติด 10 ทักษะเติบโตเร็วของ WEF",
+    bench: "IMDA GenAI TSC#2 Prompt Design (กลุ่ม AI Users)",
+    act: "การใช้ AI tools ในงานอย่างโปร่งใส ตรวจสอบผล และอธิบายข้อจำกัด",
+    level: "ทุก Track L2" },
+
+  { id: "S8", name: "Empathy, Service Orientation & Stakeholder-Centric", core: false, set: "AISK08", rank: 8,
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [3, 5], courses: ["EN-135-401", "EN-132-101"], link: "S4, S5",
+    scope: "เข้าใจบริบทและความต้องการของผู้ใช้จริง โดยเฉพาะเกษตรกรและชุมชนท้องถิ่นภาคอีสาน ออกแบบโซลูชันที่ผู้ใช้ดูแลเองได้ และคำนึงถึงผลกระทบทางสังคม",
+    market: "Empathy & Active Listening / Service Orientation อยู่ในกลุ่มทักษะแกนของ WEF · ตอบ Need N11 (ตอบโจทย์ชุมชนท้องถิ่น) และ N17 (Inclusive AI)",
+    act: "User/Field discovery, การรับฟังผู้ใช้ และการออกแบบที่ยึดผู้ใช้เป็นศูนย์กลาง",
+    level: "ทุก Track L2" }
 ];
+
+/* เกณฑ์คัดเลือกแกน/ส่วนขยาย (§3.9) */
+export const SKILL_CORE_RULE =
+  "เกณฑ์เข้าแกนบังคับ: ทักษะต้องผ่าน 3 ใน 4 เงื่อนไข — (ก) ใช้กว้างข้ามหลาย Track/อาชีพ (ข) จำเป็นต่อการสร้างระบบใช้งานจริงตั้งแต่ข้อมูลถึง deployment " +
+  "(ค) มีอุปสงค์ตลาดสูงต่อเนื่อง (ง) รองรับ PLO/ABET SO โดยตรง · ทักษะที่หลักฐานแรงแต่ขอบเขตแคบ แตกหน่อจากทักษะแกน หรือเพิ่งอุบัติ จัดเป็นส่วนขยาย";
 
 export const LEVELS = [
   { id: "L1", label: "Understand", th: "เข้าใจ" },

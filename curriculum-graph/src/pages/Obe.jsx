@@ -5,7 +5,7 @@ import { PageHead, Section } from "./ui.jsx";
 import { PLO_DETAIL, YLO_DETAIL, COURSES, PLO_NAME } from "../data.js";
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  LEVELS, GROUPS, SKILL_SETS, KSA, GA, REFS, BENCHMARKS
+  LEVELS, GROUPS, SKILL_SETS, KSA, GA, REFS, BENCHMARKS, SKILL_CORE_RULE
 } from "../obeData.js";
 import Alluvial from "../Alluvial.jsx";
 import { VIEWS } from "../alluvialViews.js";
@@ -30,9 +30,72 @@ const jump = id => e => {
 const setById = id => SKILL_SETS.find(s => s.id === id);
 const skillById = id => [...HARD_SKILLS, ...SOFT_SKILLS].find(s => s.id === id);
 
+const TRACK_SHORT = { T1: "T1 เกษตร", T2: "T2 อุตสาหกรรม", T3: "T3 องค์กร" };
+
+/* แถวทักษะเป้าหมาย — คลิกเพื่อขยายดูรายละเอียดจาก 03_Target_Skills.md */
+function SkillRow({ s, open, onToggle }) {
+  const st = setById(s.set);
+  const g = st ? GROUPS[st.g] : null;
+  return (
+    <div className={`skill-row${s.core ? "" : " ext"}${open ? " open" : ""}`}>
+      <button className="skill-head" onClick={onToggle} aria-expanded={open}>
+        <span className="obe-code sm">{s.id}</span>
+        <span className="skill-nm">{s.name}</span>
+        {!s.core && <span className="ext-tag">ส่วนขยาย</span>}
+        <span className="setchip sm">{s.set}</span>
+        <span className="skill-caret">{open ? "▾" : "▸"}</span>
+      </button>
+
+      {open && (
+        <div className="skill-body">
+          <div className="skill-tracks">
+            {Object.entries(s.track).map(([t, mark]) => (
+              <span key={t} className={`sk-tr${mark === "●" ? " main" : ""}`}>
+                <i>{mark}</i> {TRACK_SHORT[t]}
+              </span>
+            ))}
+          </div>
+
+          <p className="skill-scope">{s.scope}</p>
+
+          <dl className="skill-meta">
+            <div><dt>📈 หลักฐานตลาด</dt><dd>{s.market}</dd></div>
+            {s.bench && <div><dt>🌏 เทียบเคียงมาตรฐาน</dt><dd>{s.bench}</dd></div>}
+            {s.act && <div><dt>🧭 พฤติกรรมที่คาดหวัง</dt><dd>{s.act}</dd></div>}
+            <div><dt>🎯 ระดับเป้าหมาย</dt><dd>{s.level}</dd></div>
+            {s.link && <div><dt>🔗 ผูกกับทักษะแกน</dt><dd>{s.link}</dd></div>}
+            <div>
+              <dt>🧩 ชุดทักษะ</dt>
+              <dd>
+                <span className="setchip sm">{s.set}</span>{" "}
+                {st ? `${st.name} · กลุ่ม ${st.g}${g ? ` (${g.name})` : ""}` : ""}
+              </dd>
+            </div>
+          </dl>
+
+          <div className="skill-foot">
+            <span className="lab">PLO ที่รองรับ</span>
+            {s.plo.map(p => (
+              <Link key={p} to={`/plo/${p}`} className="plo-mini" style={{ "--pc": `var(--plo${p})` }}>PLO{p}</Link>
+            ))}
+            <span className="lab">รายวิชาหลัก</span>
+            {s.courses.map(c => {
+              const co = COURSES.find(x => x.c === c);
+              return co
+                ? <Link key={c} to={`/courses/${c}`} className="cchip" title={co.t}>{c}</Link>
+                : <span key={c} className="cchip off">{c}</span>;
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function Obe() {
   const [need, setNeed] = useState(null);   // N id ที่เลือก
   const [openSet, setOpenSet] = useState(null);
+  const [openSkill, setOpenSkill] = useState(null);
   const [ksaPlo, setKsaPlo] = useState(1);
   const [view, setView] = useState(VIEWS[0].id);
 
@@ -211,30 +274,24 @@ export default function Obe() {
           <div className="lvbar">
             {LEVELS.map(l => <span key={l.id}><b>{l.id}</b> {l.th} <i>({l.label})</i></span>)}
           </div>
+          <p className="obe-note">คลิกที่ทักษะเพื่อดูขอบเขต หลักฐานตลาดแรงงาน ระดับเป้าหมายรายแขนง และรายวิชาที่พัฒนาทักษะนั้น</p>
           <div className="skill-cols">
             <div>
-              <h3 className="skill-h">Hard Skills</h3>
+              <h3 className="skill-h">Hard Skills <small>แกน 9 + ส่วนขยาย 6</small></h3>
               {HARD_SKILLS.map(s => (
-                <div className={`skill-row${s.core ? "" : " ext"}`} key={s.id}>
-                  <span className="obe-code sm">{s.id}</span>
-                  <span className="skill-nm">{s.name}</span>
-                  {!s.core && <span className="ext-tag">ส่วนขยาย</span>}
-                  <span className="setchip sm">{s.set}</span>
-                </div>
+                <SkillRow key={s.id} s={s} open={openSkill === s.id}
+                  onToggle={() => setOpenSkill(openSkill === s.id ? null : s.id)} />
               ))}
             </div>
             <div>
-              <h3 className="skill-h">Soft Skills</h3>
+              <h3 className="skill-h">Soft Skills <small>แกน 6 + ส่วนขยาย 2</small></h3>
               {SOFT_SKILLS.map(s => (
-                <div className={`skill-row${s.core ? "" : " ext"}`} key={s.id}>
-                  <span className="obe-code sm">{s.id}</span>
-                  <span className="skill-nm">{s.name}</span>
-                  {!s.core && <span className="ext-tag">ส่วนขยาย</span>}
-                  <span className="setchip sm">{s.set}</span>
-                </div>
+                <SkillRow key={s.id} s={s} open={openSkill === s.id}
+                  onToggle={() => setOpenSkill(openSkill === s.id ? null : s.id)} />
               ))}
             </div>
           </div>
+          <p className="obe-note"><b>เกณฑ์แกน/ส่วนขยาย</b> — {SKILL_CORE_RULE}</p>
         </Section>
 
         {/* ─── 5 · Skill Sets ─── */}

@@ -248,14 +248,14 @@ export default function CareerGraph() {
                   <foreignObject key={n.id} x={n.x} y={n.y} width={n.w} height={n.h} style={{ opacity: dim ? 0.15 : 1 }}>
                     <div className="gnode" style={{ background: col.bg, borderColor: col.fg }}>
                       <div className="gnode-top">
-                        <span className="gnode-code" style={{ color: col.fg }}>{c.c.replace("EN-", "")}</span>
+                        <span className="gnode-code" data-tip={c.c} style={{ color: col.fg }}>{c.c.replace("EN-", "")}</span>
                         {c.y && <span className="gnode-yr" style={{ background: YEAR_COLOR[c.y]?.fg }}>ปี {c.y}</span>}
                         {!c.y && <span className="gnode-yr" style={{ background: GROUP_COLOR.elec.fg }}>เลือก</span>}
                       </div>
                       <div className="gnode-name">{c.s}</div>
                       <div className="gnode-plos">
                         {c.p.map(p => (
-                          <span key={p} className="gnode-plo" title={`PLO${p} ${PLO_NAME[p]}`} style={{ background: PLO_COLOR[p] }}>{p}</span>
+                          <span key={p} className="gnode-plo" data-tip={`PLO${p}`} title={`PLO${p} ${PLO_NAME[p]}`} style={{ background: PLO_COLOR[p] }}>{p}</span>
                         ))}
                       </div>
                     </div>

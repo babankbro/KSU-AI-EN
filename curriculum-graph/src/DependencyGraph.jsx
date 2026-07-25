@@ -211,13 +211,13 @@ export default function DependencyGraph() {
                       boxShadow: hl ? "0 0 0 3px rgba(201,151,27,.35)" : "none",
                     }}>
                       <div className="gnode-top">
-                        <span className="gnode-code" style={{ color: col.fg }}>{c.c.replace("EN-", "")}</span>
+                        <span className="gnode-code" data-tip={c.c} style={{ color: col.fg }}>{c.c.replace("EN-", "")}</span>
                         <span className="gnode-yr" style={{ background: YEAR_COLOR[c.y]?.fg }}>ปี {c.y}</span>
                       </div>
                       <div className="gnode-name">{c.s}</div>
                       <div className="gnode-plos">
                         {c.p.map(p => (
-                          <span key={p} className="gnode-plo" title={`PLO${p} ${PLO_NAME[p]}`}
+                          <span key={p} className="gnode-plo" data-tip={`PLO${p}`} title={`PLO${p} ${PLO_NAME[p]}`}
                             style={{ background: PLO_COLOR[p] }}>{p}</span>
                         ))}
                       </div>

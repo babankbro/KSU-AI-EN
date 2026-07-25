@@ -1,0 +1,112 @@
+/* หน้า CLO รายวิชา · Curriculum Mapping (4.6 / 4.7) */
+
+.clo-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+@media(max-width:760px){.clo-stats{grid-template-columns:repeat(2,1fr)}}
+.clo-stats>div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.clo-stats b{display:block;font-size:1.5rem;color:var(--navy);line-height:1.2}
+.clo-stats span{font-size:.76rem;color:var(--muted)}
+
+/* ── ตำนานระดับ I/R/M ── */
+.clo-legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;font-size:.8rem;color:var(--muted)}
+.clo-legend span{display:inline-flex;align-items:center;gap:7px}
+
+/* ── ตาราง Curriculum Mapping ── */
+.clo-map td:nth-child(2){min-width:230px}
+.clo-map th .clo-ploth{color:var(--pc);font-weight:800}
+.clo-map .clo-dash{color:var(--line);font-style:normal}
+.clo-semrow td{background:var(--soft);font-weight:800;color:var(--navy);font-size:.8rem;
+  letter-spacing:.01em;padding:7px 12px}
+.clo-getag{display:inline-block;margin-left:7px;font-size:.66rem;font-weight:700;color:var(--ge);
+  background:var(--gebg);border-radius:5px;padding:0 6px;vertical-align:middle}
+.clo-elrow td small{display:block;color:var(--muted);font-size:.75rem;line-height:1.55;margin-top:2px}
+
+/* ── ป้ายรายวิชา / ชุดทักษะ / YLO ── */
+.clo-chips{display:flex;flex-wrap:wrap;gap:5px}
+.clo-cchip{font-family:var(--font-mono);font-size:.71rem;font-weight:600;padding:1px 7px;border-radius:6px;
+  background:var(--soft);color:var(--muted);border:1px solid transparent;white-space:nowrap}
+.clo-cchip:hover{border-color:var(--navy);color:var(--navy)}
+.clo-cchip i{font-style:normal;opacity:.7;margin-left:4px;font-size:.92em}
+.clo-cchip.lv-I{background:#e8f1fb;color:#2f6fb0}
+.clo-cchip.lv-R{background:#fdf1df;color:#a9700f}
+.clo-cchip.lv-M{background:#e6f5ee;color:#1f7a51}
+
+.clo-setchip{display:inline-flex;align-items:center;gap:4px;font-size:.7rem;font-weight:700;
+  padding:1px 8px;border-radius:999px;background:var(--ac);color:#fff;white-space:nowrap}
+.clo-setchip i{font-style:normal;font-weight:600;opacity:.85;font-size:.94em}
+.clo-setchip:hover{filter:brightness(1.12)}
+.clo-setid{font-family:var(--font-mono);font-weight:800;color:var(--ac)}
+
+.clo-ylochip{display:inline-block;font-family:var(--font-mono);font-size:.71rem;font-weight:700;
+  padding:1px 7px;border-radius:6px;background:var(--soft);color:var(--muted);margin:1px}
+.clo-ylochip:hover{color:var(--navy)}
+
+/* ── CLO ต่อ Sub-YLO ── */
+.clo-ylogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}
+@media(max-width:760px){.clo-ylogrid{grid-template-columns:1fr}}
+.clo-ylobox{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--yc);
+  border-radius:13px;padding:13px 15px}
+.clo-ylohead{font-size:.9rem;margin-bottom:8px}
+.clo-ylohead b{color:var(--yc);margin-right:6px}
+.clo-ylohead a:hover{text-decoration:underline}
+.clo-subylo{border-top:1px solid var(--line);padding:8px 0 6px}
+.clo-subhead{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}
+.clo-subid{font-family:var(--font-mono);font-size:.74rem;font-weight:800;color:var(--yc);flex:none}
+.clo-subtext{font-size:.79rem;color:var(--muted);line-height:1.5;flex:1}
+.clo-subn{font-size:.72rem;font-weight:700;color:var(--yc);flex:none}
+
+/* ── ตัวกรอง ── */
+.clo-filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:12px}
+.clo-fgroup{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.clo-flab{font-size:.76rem;font-weight:700;color:var(--muted);margin-right:2px}
+.clo-fbtn{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;padding:4px 11px;border-radius:999px;
+  border:1px solid var(--line);background:var(--card);color:var(--muted)}
+.clo-fbtn:hover{border-color:var(--navy);color:var(--navy)}
+.clo-fbtn.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.clo-fbtn.plo.on{background:var(--pc);border-color:var(--pc)}
+.clo-search{font:inherit;font-size:.85rem;flex:1;min-width:220px;padding:7px 12px;border-radius:9px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.clo-search:focus{outline:none;border-color:var(--navy)}
+.clo-count{font-size:.82rem;color:var(--muted);margin-bottom:12px}
+.clo-count b{color:var(--ink)}
+.clo-clear{font:inherit;font-size:.76rem;font-weight:700;cursor:pointer;margin-left:10px;
+  border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:2px 10px}
+.clo-clear:hover{border-color:var(--navy);color:var(--navy)}
+
+/* ── การ์ดรายวิชา ── */
+.clo-cards{display:grid;gap:14px}
+.clo-card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ge);
+  border-radius:13px;padding:14px 16px}
+.clo-card.g-eng{border-left-color:var(--y1)}
+.clo-card.g-ai{border-left-color:var(--y2)}
+.clo-card.g-track{border-left-color:var(--y3)}
+.clo-card.g-proj{border-left-color:var(--y4)}
+.clo-card.g-field{border-left-color:#b8455f}
+
+.clo-chead{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.clo-code{font-family:var(--font-mono);font-size:.8rem;font-weight:700;background:var(--soft);
+  color:var(--navy);border-radius:7px;padding:3px 9px;flex:none}
+.clo-code:hover{background:var(--navy);color:#fff}
+.clo-ctitle{flex:1;min-width:200px}
+.clo-ctitle b{display:block;font-size:.98rem;line-height:1.45}
+.clo-ctitle small{color:var(--muted);font-size:.78rem}
+.clo-cmeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.clo-cr{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}
+
+.clo-ksa{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+@media(max-width:860px){.clo-ksa{grid-template-columns:1fr}}
+.clo-kbox{border:1px solid var(--line);border-radius:11px;padding:9px 12px;background:var(--soft)}
+.clo-kbox h4{margin:0 0 4px;font-size:.76rem;font-weight:700;color:var(--muted)}
+.clo-kbox p{margin:0;font-size:.82rem;line-height:1.65}
+.clo-kbox.k{background:var(--y1bg)}
+.clo-kbox.s{background:var(--y2bg)}
+.clo-kbox.a{background:var(--y4bg)}
+.clo-sets{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+
+.clo-clotbl{font-size:.84rem}
+.clo-clotbl td:first-child{line-height:1.7}
+.clo-clotbl td:nth-child(2),.clo-clotbl td:nth-child(3){white-space:nowrap;width:1%}
+.clo-n{color:var(--navy);margin-right:5px}
+.clo-plocell{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+
+.clo-notelist{margin:6px 0 0;padding-left:20px;font-size:.85rem;line-height:1.75}
+.clo-notelist li{margin-bottom:4px}

@@ -8,10 +8,12 @@ import Plos from "./pages/Plos.jsx";
 import PloDetail from "./pages/PloDetail.jsx";
 import Ylos from "./pages/Ylos.jsx";
 import YloDetail from "./pages/YloDetail.jsx";
+import Clo from "./pages/Clo.jsx";
 import Plan from "./pages/Plan.jsx";
 import Courses from "./pages/Courses.jsx";
 import CourseDetail from "./pages/CourseDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import CodeTip from "./CodeTip.jsx";
 import DependencyGraph from "./DependencyGraph.jsx";
 import CareerGraph from "./CareerGraph.jsx";
 
@@ -21,6 +23,7 @@ const NAV = [
   { to: "/structure", label: "โครงสร้างหลักสูตร" },
   { to: "/plo", label: "PLO" },
   { to: "/ylo", label: "YLO" },
+  { to: "/clo", label: "CLO รายวิชา" },
   { to: "/plan", label: "แผนการเรียน" },
   { to: "/graph", label: "กราฟรายวิชา" },
   { to: "/careers", label: "เส้นทางอาชีพ" },
@@ -38,6 +41,7 @@ export default function App() {
   return (
     <div className="site">
       <ScrollTop />
+      <CodeTip />
       <header className="site-head">
         <div className="wrap head-in">
           <Link to="/" className="brand">
@@ -73,6 +77,7 @@ export default function App() {
         <Route path="/plo/:id" element={<PloDetail />} />
         <Route path="/ylo" element={<Ylos />} />
         <Route path="/ylo/:id" element={<YloDetail />} />
+        <Route path="/clo" element={<Clo />} />
         <Route path="/plan" element={<Plan />} />
         <Route path="/graph" element={<DependencyGraph />} />
         <Route path="/careers" element={<CareerGraph />} />

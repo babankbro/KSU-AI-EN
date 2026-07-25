@@ -1,0 +1,37 @@
+/* ป๊อปอัปคำอธิบายรหัสย่อ — แสดงเมื่อชี้ที่ป้ายรหัสใด ๆ ในเว็บ */
+
+.ctip{
+  position:fixed;z-index:80;background:var(--card);border:1px solid var(--line);
+  border-top:4px solid var(--ac);border-radius:13px;padding:12px 14px 13px;
+  box-shadow:0 14px 40px rgba(16,32,60,.18);animation:ctip-in .12s ease-out;
+  max-height:calc(100vh - 24px);overflow:auto;
+}
+@keyframes ctip-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+.ctip-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.ctip-id{font-family:var(--font-mono);font-size:.76rem;font-weight:800;color:#fff;
+  background:var(--ac);border-radius:6px;padding:1px 8px;white-space:nowrap}
+.ctip-kind{font-size:.72rem;font-weight:700;color:var(--muted);letter-spacing:.01em}
+
+.ctip-title{display:block;font-size:.95rem;line-height:1.5}
+.ctip-en{font-size:.77rem;color:var(--muted);margin-top:1px}
+.ctip-body{margin:8px 0 0;font-size:.83rem;line-height:1.72;color:var(--ink)}
+
+.ctip-rows{margin:9px 0 0;display:grid;gap:5px}
+.ctip-rows>div{display:grid;grid-template-columns:112px 1fr;gap:8px;align-items:baseline}
+.ctip-rows dt{font-size:.74rem;font-weight:700;color:var(--muted);margin:0}
+.ctip-rows dd{margin:0;font-size:.8rem;line-height:1.6}
+
+.ctip-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.ctip-set{font-size:.7rem;font-weight:700;padding:1px 8px;border-radius:999px;
+  background:var(--soft);color:var(--muted)}
+.ctip-plo{font-size:.7rem;font-weight:700;padding:1px 8px;border-radius:999px;
+  background:var(--pc);color:#fff}
+
+.ctip-go{display:inline-block;margin-top:10px;font-size:.78rem;font-weight:700;color:var(--ac)}
+.ctip-go:hover{text-decoration:underline}
+
+/* ชี้ได้ = มีคำอธิบาย */
+.plochip,.plo-mini,.setchip,.clo-setchip,.obe-code,.skchip,.cchip,.clo-cchip,
+.clo-ylochip,.irm,.clo-code,.clo-subid{cursor:help}
+.plochip,.plo-mini,.cchip,.clo-cchip,.clo-ylochip,.clo-code,.clo-setchip{cursor:pointer}
