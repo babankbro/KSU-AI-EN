@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { COURSES, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR, YLO_DETAIL, TOTAL_CREDITS } from "../data.js";
 import { PageHead, Section, PloChip } from "./ui.jsx";
+import PlanBoard from "../PlanBoard.jsx";
 
 export default function Plan() {
   return (
@@ -23,6 +24,11 @@ export default function Plan() {
             ))}
             <div className="yb total"><b>{TOTAL_CREDITS}</b><span>รวมตลอดหลักสูตร</span><small>ตามโครงสร้าง 3 หมวดวิชา</small></div>
           </div>
+        </Section>
+
+        <Section title="ภาพรวมแผนการเรียนทั้งหลักสูตรในภาพเดียว"
+          sub="เรียงชั้นปีที่ 1 → 4 · แต่ละปีแยกเป็น 2 ภาคการศึกษาตามลำดับ">
+          <PlanBoard />
         </Section>
 
         {[1, 2, 3, 4].map(y => (
