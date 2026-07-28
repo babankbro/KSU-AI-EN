@@ -1,5 +1,5 @@
 import { Routes, Route, NavLink, Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Home from "./pages/Home.jsx";
 import Obe from "./pages/Obe.jsx";
 import Structure from "./pages/Structure.jsx";
@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound.jsx";
 import CodeTip from "./CodeTip.jsx";
 import DependencyGraph from "./DependencyGraph.jsx";
 import CareerGraph from "./CareerGraph.jsx";
+const AiEngineerJobs = lazy(() => import("./pages/AiEngineerJobs.jsx"));
 
 const NAV = [
   { to: "/", label: "หน้าแรก", end: true },
@@ -27,6 +28,7 @@ const NAV = [
   { to: "/plan", label: "แผนการเรียน" },
   { to: "/graph", label: "กราฟรายวิชา" },
   { to: "/careers", label: "เส้นทางอาชีพ" },
+  { to: "/jobs", label: "Jobs & Skills" },
   { to: "/courses", label: "รายวิชา" }
 ];
 
@@ -81,6 +83,16 @@ export default function App() {
         <Route path="/plan" element={<Plan />} />
         <Route path="/graph" element={<DependencyGraph />} />
         <Route path="/careers" element={<CareerGraph />} />
+        <Route path="/jobs" element={
+          <Suspense fallback={<main><div className="wrap"><div className="note">กำลังโหลดข้อมูลตลาดงาน…</div></div></main>}>
+            <AiEngineerJobs />
+          </Suspense>
+        } />
+        <Route path="/jobs/ai-engineer" element={
+          <Suspense fallback={<main><div className="wrap"><div className="note">กำลังโหลดข้อมูลตลาดงาน…</div></div></main>}>
+            <AiEngineerJobs />
+          </Suspense>
+        } />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:code" element={<CourseDetail />} />
         <Route path="*" element={<NotFound />} />

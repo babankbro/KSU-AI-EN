@@ -1,0 +1,55 @@
+.job-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.job-stat{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:13px;padding:14px 16px}
+.job-stat b{display:block;color:var(--navy);font-size:1.75rem;line-height:1.1}
+.job-stat span{display:block;font-weight:700;font-size:.86rem;margin-top:5px}
+.job-stat small{display:block;color:var(--muted);font-size:.73rem;margin-top:2px}
+.jobs-note{margin-top:14px;background:var(--gebg);border:1px solid var(--line);border-radius:11px;padding:11px 14px;color:var(--muted);font-size:.8rem}
+.jobs-note a{color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.skills-panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:8px}
+.skills-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.skill-group-title{font-size:.9rem;color:var(--navy);margin:0 0 8px}
+.skill-row{display:grid;grid-template-columns:minmax(145px,220px) 1fr 74px;gap:12px;align-items:center}
+.skill-name{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.skill-name b{font-size:.84rem}.skill-name span{font-size:.68rem;color:var(--muted)}
+.skill-track{height:10px;background:var(--soft);border-radius:999px;overflow:hidden}
+.skill-track i{display:block;height:100%;background:linear-gradient(90deg,var(--navy2),var(--gold));border-radius:inherit}
+.skill-num{display:flex;justify-content:flex-end;gap:6px;align-items:baseline;font-size:.78rem}
+.skill-num span{color:var(--muted);font-size:.7rem}
+.evidence-callout{margin-top:13px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:11px;padding:12px 15px;font-size:.84rem;line-height:1.7}
+.jobs-toolbar{display:grid;grid-template-columns:minmax(260px,1fr) 190px 220px;gap:9px;margin-bottom:13px}
+.jobs-toolbar input,.jobs-toolbar select{min-width:0;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:.84rem}
+.market-job-list{display:grid;gap:10px}
+.market-job{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px}
+.market-job:hover{border-color:var(--navy)}
+.market-job-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.source-id{font-family:var(--font-mono);font-size:.67rem;color:var(--muted)}
+.market-job h3{margin:2px 0 1px;font-size:1.02rem;line-height:1.4}
+.market-job-head p{margin:0;color:var(--muted);font-size:.8rem}
+.source-link{flex:none;color:var(--navy);font-size:.76rem;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.job-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+.job-meta span{background:var(--soft);color:var(--muted);border-radius:999px;padding:2px 9px;font-size:.7rem;font-weight:600}
+.job-meta .salary{background:var(--y2bg);color:var(--y2)}
+.job-summary{margin:10px 0 8px;font-size:.82rem;line-height:1.65}
+.skill-chips{display:flex;gap:5px;flex-wrap:wrap}
+.skill-chip{font-size:.68rem;font-weight:700;border-radius:7px;padding:2px 8px;background:var(--soft);color:var(--muted)}
+.skill-chip.technical{background:#e8f1fb;color:#2f6fb0}
+.skill-chip.soft{background:#fce7ee;color:#a6385a}
+.job-more{border-top:1px dashed var(--line);margin-top:11px;padding-top:9px;color:var(--muted);font-size:.78rem;line-height:1.65}
+.job-more p{margin:4px 0}.job-more b{color:var(--ink)}.job-method{font-family:var(--font-mono);font-size:.68rem}
+.job-toggle{margin-top:10px;border:0;background:none;color:var(--navy);font:inherit;font-size:.75rem;font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:0}
+.job-pagination{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0 8px;color:var(--muted);font-size:.8rem}
+.job-pagination button{border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--navy);font:inherit;font-size:.78rem;font-weight:700;padding:7px 12px;cursor:pointer}
+.job-pagination button:disabled{opacity:.4;cursor:not-allowed}
+@media(max-width:800px){
+  .job-stats{grid-template-columns:repeat(2,1fr)}
+  .skills-split{grid-template-columns:1fr}
+  .jobs-toolbar{grid-template-columns:1fr 1fr}.jobs-toolbar input{grid-column:1/-1}
+  .skill-row{grid-template-columns:130px 1fr 60px}
+}
+@media(max-width:520px){
+  .job-stats{grid-template-columns:1fr 1fr}
+  .jobs-toolbar{grid-template-columns:1fr}.jobs-toolbar input{grid-column:auto}
+  .skill-row{grid-template-columns:1fr 58px}.skill-track{grid-column:1/-1;grid-row:2}.skill-name span{display:none}
+  .market-job-head{display:block}.source-link{display:inline-block;margin-top:7px}
+  .job-pagination{align-items:stretch;flex-direction:column;text-align:center}
+}

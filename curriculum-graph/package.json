@@ -7,7 +7,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "jobs:scrape-all": "node scripts/scrape-jobsdb-careers.mjs",
+    "jobs:gemini-all": "node scripts/extract-career-job-skills-gemini.mjs",
+    "jobs:gemini": "node scripts/extract-job-skills-gemini.mjs",
+    "jobs:normalize": "node scripts/normalize-job-skills.mjs"
   },
   "dependencies": {
     "dagre": "^0.8.5",
