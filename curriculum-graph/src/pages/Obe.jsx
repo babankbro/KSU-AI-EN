@@ -14,8 +14,8 @@ const STEPS = [
   { n: 1, id: "sh",    label: "ผู้มีส่วนได้ส่วนเสีย", en: "Stakeholders", tag: "SH1–SH8" },
   { n: 2, id: "needs", label: "ความต้องการ",         en: "Needs",        tag: "N1–N18" },
   { n: 3, id: "ga",    label: "ลักษณะบัณฑิต",        en: "Graduate Attributes", tag: "GA1–GA5" },
-  { n: 4, id: "skill", label: "ทักษะเป้าหมาย",        en: "Target Skills", tag: "H1–H15 · S1–S8" },
-  { n: 5, id: "set",   label: "ชุดทักษะ",             en: "Skill Sets",   tag: "AISK01–08" },
+  { n: 4, id: "skill", label: "ทักษะเป้าหมาย",        en: "Target Skills", tag: "H1–H20 · S1–S10" },
+  { n: 5, id: "set",   label: "ชุดทักษะ",             en: "Skill Sets",   tag: "AISK01–09" },
   { n: 6, id: "plo",   label: "ผลลัพธ์หลักสูตร",       en: "PLO",          tag: "PLO1–7" },
   { n: 7, id: "ylo",   label: "ผลลัพธ์รายชั้นปี",      en: "YLO",          tag: "YLO1–4" },
   { n: 8, id: "clo",   label: "ผลลัพธ์รายวิชา + KSA", en: "CLO · KSA",    tag: "K–S–A" }
@@ -270,21 +270,21 @@ export default function Obe() {
         </Section>
 
         {/* ─── 4 · Target Skills ─── */}
-        <Section id="skill" title="④ ทักษะเป้าหมาย (H1–H15 · S1–S8)" sub="แกนบังคับ Hard 9 + Soft 6 · ส่วนขยาย Hard 6 + Soft 2">
+        <Section id="skill" title="④ ทักษะเป้าหมาย (H1–H20 · S1–S10)" sub="แกนบังคับ Hard 9 + Soft 6 · ส่วนขยาย Hard 11 + Soft 4">
           <div className="lvbar">
             {LEVELS.map(l => <span key={l.id}><b>{l.id}</b> {l.th} <i>({l.label})</i></span>)}
           </div>
           <p className="obe-note">คลิกที่ทักษะเพื่อดูขอบเขต หลักฐานตลาดแรงงาน ระดับเป้าหมายรายแขนง และรายวิชาที่พัฒนาทักษะนั้น</p>
           <div className="skill-cols">
             <div>
-              <h3 className="skill-h">Hard Skills <small>แกน 9 + ส่วนขยาย 6</small></h3>
+              <h3 className="skill-h">Hard Skills <small>แกน 9 + ส่วนขยาย 11</small></h3>
               {HARD_SKILLS.map(s => (
                 <SkillRow key={s.id} s={s} open={openSkill === s.id}
                   onToggle={() => setOpenSkill(openSkill === s.id ? null : s.id)} />
               ))}
             </div>
             <div>
-              <h3 className="skill-h">Soft Skills <small>แกน 6 + ส่วนขยาย 2</small></h3>
+              <h3 className="skill-h">Soft Skills <small>แกน 6 + ส่วนขยาย 4</small></h3>
               {SOFT_SKILLS.map(s => (
                 <SkillRow key={s.id} s={s} open={openSkill === s.id}
                   onToggle={() => setOpenSkill(openSkill === s.id ? null : s.id)} />
@@ -295,7 +295,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 5 · Skill Sets ─── */}
-        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–08" sub="จัดเป็น 6 กลุ่ม (G1–G6) · ใช้ออก Skill Transcript">
+        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–09" sub="จัดเป็น 7 กลุ่ม (G1–G7) · ใช้ออก Skill Transcript">
           <div className="gbar">
             {Object.entries(GROUPS).map(([k, g]) => (
               <div className="gbox" key={k} style={{ "--ac": g.color }}>

@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { COURSES, GROUP_NAME, PLO_DETAIL, SEM_TITLE, TRACK_NAME, YLO_DETAIL } from "../data.js";
 import { PageHead, Section, PloChip, CourseRow } from "./ui.jsx";
+import { cloOf } from "../cloData.js";
 
 const REL = [
   ["h", "🔒 รายวิชาบังคับก่อน", "ต้องผ่านก่อนลงทะเบียนเรียนวิชานี้"],
@@ -12,6 +13,7 @@ export default function CourseDetail() {
   const code = useParams().code;
   const c = COURSES.find(x => x.c === code);
   if (!c) return <Navigate to="/courses" replace />;
+  const clo = cloOf(c.c);
 
   const opens = COURSES.filter(x =>
     (x.h || []).includes(c.c) || (x.w || []).includes(c.c) || (x.co || []).includes(c.c));
@@ -31,7 +33,10 @@ export default function CourseDetail() {
           <div><span>กลุ่มวิชา</span><b>{GROUP_NAME[c.g]}</b></div>
           <div>
             <span>ภาคการศึกษาที่แนะนำ</span>
-            <b>{c.sem ? <Link className="lnk" to={`/ylo/${c.y}`}>ชั้นปีที่ {c.y} ภาค {c.sem} — {SEM_TITLE[c.sem]}</Link> : "วิชาเลือกชีพ (เลือกได้ตามแผนของนักศึกษา)"}</b>
+            <b>{c.sem
+              ? <Link className="lnk" to={`/ylo/${c.y}`}>ชั้นปีที่ {c.y} ภาค {c.sem} — {SEM_TITLE[c.sem]}</Link>
+              : c.pendingSemester ? "Core Track ใหม่ — รอยืนยันภาคการศึกษา"
+              : "วิชาเลือกชีพ (เลือกได้ตามแผนของนักศึกษา)"}</b>
           </div>
         </div>
 
@@ -42,6 +47,29 @@ export default function CourseDetail() {
         <Section title="Course Description (English)">
           <p className="bigtext en">{c.dEn}</p>
         </Section>
+
+        {clo && (
+          <Section title="ผลลัพธ์การเรียนรู้รายวิชา (CLO)" sub={`${clo.clos.length} ผลลัพธ์ · เชื่อม YLO–PLO และหลักฐานประเมิน`}>
+            <div className="scroll-x">
+              <table className="tbl">
+                <thead>
+                  <tr><th>CLO</th><th>ผลลัพธ์ที่วัดได้</th><th>YLO</th><th>PLO/ระดับ</th><th>หลักฐานประเมิน</th></tr>
+                </thead>
+                <tbody>
+                  {clo.clos.map(item => (
+                    <tr key={item.n}>
+                      <td><b>CLO{item.n}</b></td>
+                      <td>{item.t}</td>
+                      <td>{item.ylo.join(", ")}</td>
+                      <td>{item.plo.map(([p, level]) => `PLO${p} (${level})`).join(", ")}</td>
+                      <td>{item.evidence || "กำหนดใน มคอ.3/แผนประเมินรายวิชา"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Section>
+        )}
 
         {c.p && c.p.length > 0 && (
           <Section title="ผลลัพธ์การเรียนรู้ที่รายวิชานี้รับผิดชอบ" sub={`PLO ${c.p.join(", ")}`}>

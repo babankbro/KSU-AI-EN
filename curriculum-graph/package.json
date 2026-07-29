@@ -5,6 +5,9 @@
   "type": "module",
   "description": "Interactive Curriculum Explorer — B.Eng. AI & Intelligent Systems (KSU 2570): dependency graph, YLO, study plan, course descriptions",
   "scripts": {
+    "sync:curriculum": "node scripts/sync-curriculum-revision.mjs",
+    "jobs:build-runtime": "node scripts/build-jobs-runtime-data.mjs",
+    "prebuild": "npm run jobs:build-runtime",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

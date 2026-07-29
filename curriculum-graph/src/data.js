@@ -1,3 +1,6 @@
+import { COURSE_REVISION } from "./courseRevisionData.js";
+import { CLO_REVISION } from "./cloRevisionData.js";
+
 // ข้อมูลรายวิชา หลักสูตรวิศวกรรม AI และระบบอัจฉริยะ (พ.ศ. 2570) มหาวิทยาลัยกาฬสินธุ์
 // ซิงก์จากไฟล์คำอธิบายรายวิชาจริงใน Vault: 04_Course_Descriptions_2570/ (ไทย + อังกฤษ)
 // รหัสวิชาเลือกชีพชุดใหม่ (แก้รหัสซ้ำแล้ว): T1 EN-135-101..115 · T2 116..130 · T3 131..145 = 45 วิชา
@@ -5,14 +8,14 @@
 // p=PLOs, h=hard pre, w=weak pre, co=co-requisite, sem=ภาคเรียน, y=ชั้นปี, d=คำอธิบายไทย, dEn=คำอธิบายอังกฤษ
 
 export const PLO_NAME = {
-  1: "แก้ปัญหาเชิงวิศวกรรม", 2: "ออกแบบระบบ", 3: "สื่อสารวิชาชีพ",
-  4: "จริยธรรม/รับผิดชอบ", 5: "ทีม/ภาวะผู้นำ", 6: "ทดลอง/วิเคราะห์ข้อมูล",
-  7: "เรียนรู้ตลอดชีวิต/ผู้ประกอบการ"
+  1: "การแก้ปัญหาเชิงวิศวกรรม", 2: "การออกแบบและบูรณาการระบบ", 3: "สื่อสารเชิงวิชาชีพ",
+  4: "จริยธรรมและความรับผิดชอบวิชาชีพ", 5: "ทำงานเป็นทีมและภาวะผู้นำ", 6: "ทดลองและวิเคราะห์ข้อมูล",
+  7: "การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ"
 };
 
 export const GROUP_NAME = {
   ge: "ศึกษาทั่วไป", eng: "พื้นฐานวิศวฯ", ai: "แกน AI",
-  track: "บังคับแขนง", elec: "เลือกชีพ", proj: "โครงงาน/สัมมนา", field: "สหกิจ"
+  track: "Core Track", elec: "เลือกชีพ", proj: "โครงงาน/สัมมนา", field: "สหกิจ"
 };
 
 export const GROUP_COLOR = {
@@ -111,35 +114,35 @@ const DEN = {
   "EN-135-115": "Impacts of climate change on agriculture; application of AI to the analysis of large-scale climate data; forecasting of extreme weather, drought, and flooding; analysis and assessment of risk to agricultural yield with computer models; design of smart early-warning systems; adaptation strategies of the agricultural sector; crop insurance based on satellite data and AI; agricultural policy and sustainability",
 
   // ---- 2.4 เลือกชีพ — แขนงที่ 2 AI ภาคอุตสาหกรรม ----
-  "EN-135-116": "Principles and types of industrial measurement instruments; sensors and transducers for measuring temperature, pressure, flow, level, and humidity; calibration and validation of instruments; signal transmission and conversion in process control; PID control principles and parameter tuning; continuous and batch process-control systems; integration of instruments with SCADA and DCS; application of AI and machine learning to improve process-control performance",
+  "EN-135-116": "Dynamic modeling and system identification of industrial processes; control-loop stability and performance; advanced PID tuning; cascade, feedforward, ratio, split-range, and multivariable control; model-predictive and AI-assisted process control; distributed-control-system architecture and configuration; continuous and batch control; alarm management; process historians; integration with SCADA, MES, and industrial data platforms; process simulation; loop testing; factory and site acceptance testing; commissioning; and performance evaluation",
   "EN-135-117": "Principles and strategies of industrial machine maintenance — corrective, preventive, and predictive; collection of vibration, acoustic, temperature, and current signal data; signal processing and feature extraction for machine diagnosis; machine learning and deep learning models for anomaly detection and failure prediction; digital-twin technology for simulating machine condition; automatic alerting and maintenance planning; root-cause analysis; return-on-investment assessment",
   "EN-135-118": "Principles and types of automated warehouse systems; warehouse design and layout for agro-industrial plants; automated storage and retrieval systems — conveyors, freight elevators, and automated guided vehicles; integration of AI and computer vision for goods inspection and sorting; warehouse operation with warehouse-management systems; goods tracking with RFID and barcodes; AI-based inventory management; analysis and optimization of goods flow through simulation",
-  "EN-135-119": "Principles and architecture of decision-support systems; components — databases, model bases, and user interfaces; integration of AI and business intelligence; in-depth data analysis with OLAP and data mining; design of dashboards and visualization systems for executives; building decision models with machine learning and optimization; decision-making under uncertainty with fuzzy logic and Bayesian networks; expert systems and reasoning",
+  "EN-135-119": "Industrial decision modeling; linear, mixed-integer, nonlinear, and multi-objective programming; network and transportation models; resource allocation; production and workforce scheduling; routing and logistics; inventory and capacity planning; queueing theory and discrete-event simulation; simulation optimization; stochastic and robust optimization; heuristic and metaheuristic methods; Python and optimization solvers; sensitivity and scenario analysis; and communication of industrial recommendations",
   "EN-135-123": "Complete cassava-starch production from receiving, weighing, and quality analysis through washing, peeling, grinding and starch extraction, pulp separation and purification, drying, and packaging; AI-based cassava-quality and starch-yield forecasting at receiving points; AI- and PLC-based extraction-process control; smart starch drying and energy conservation; wastewater and waste management; production of high-value products — modified starch, alcohol, and bioplastics",
   "EN-135-124": "Principles and IoT technologies for agricultural-produce storage; design and installation of sensor networks in warehouses, silos, and cold rooms; sensors for temperature, humidity, carbon dioxide, oxygen, and ethylene; automatic environmental control in storage with IoT and AI; inspection and analysis of produce quality during storage; alerting and emergency management; shelf-life forecasting and inventory management with machine learning; integration with cloud platforms for real-time monitoring",
   "EN-135-125": "Principles of heat and mass transfer in the drying process; thermodynamic properties and moisture transfer of agricultural produce; drying technologies — hot-air, microwave, infrared, heat-pump, and freeze drying; design and calculation of drying systems; automatic drying-process control with PLC and AI; real-time moisture measurement and control; machine learning models to forecast and optimize drying; energy conservation and integration with cogeneration systems",
   "EN-135-126": "Principles and theory of industrial material-handling systems; analysis and design of material-handling and packaging systems for agro-industrial plants; types and selection of equipment — conveyors, screw conveyors, bucket elevators, and pneumatic conveying; design of automatic packaging machinery; integration of sensors and IoT systems; control and management with PLC and SCADA; application of AI and computer vision to inspect and manage material flow; predictive maintenance",
-  "EN-135-127": "Structure, coordinates, and types of industrial robots; kinematics and dynamics of robot arms; drive systems and sensing devices — electric-motor, hydraulic, and pneumatic drives; trajectory motion control and work-pose positioning; programming and simulation of industrial-robot operation; integration of robots with automatic control systems; application of AI for sorting, pick-and-place, and product packing in production and smart warehouses; safety standards for working alongside robots",
-  "EN-135-128": "Concepts of production management and productivity improvement in industrial plants; identification of problems and bottlenecks; collection of production-line data for analysis; application of AI and machine learning to find optimal production conditions; production planning and scheduling with AI; use of models and simulation to compare outcomes; waste reduction and continuous quality improvement; integration with ERP systems for smart manufacturing",
+  "EN-135-127": "Selection and sizing of motors, servo motors, stepper motors, drives, and transmission systems; position, velocity, torque, and multi-axis motion control; path generation and motion profiles; servo tuning; integration with programmable logic controllers, industrial networks, and vision systems; collaborative robots; end effectors and part feeding; robot-cell layout and sequence design; programming, simulation, virtual testing, AI-enabled perception and grasping; risk assessment; force and power limits; protective separation; interlocks; emergency stops; integration and acceptance testing",
+  "EN-135-128": "Lean and Six Sigma principles; customer value and value-stream mapping; waste reduction; flow, pull, and standardized work; DMAIC; data-quality verification; overall equipment effectiveness, cycle time, bottlenecks, yield, scrap, and downtime; measurement-system analysis; statistical process control; process capability; design of experiments; root-cause analysis; failure-mode and effects analysis; use of data analytics, machine learning, and artificial intelligence to predict quality and prioritize improvements; countermeasure experiments; and before-and-after evaluation",
   "EN-135-129": "Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects of workpieces on conveyors; integration of computer vision with deep learning for defect classification; workpiece dimension measurement and assembly-correctness verification; integration with robots and automatic sorting systems; analysis of image data for real-time process improvement",
   "EN-135-130": "Principles of energy management and conservation in industry; auditing and assessing energy use of machinery and support systems — air-conditioning, compressed-air, and boiler systems; integration of sensor networks and smart meters for real-time energy data; building energy-use models with AI; energy-demand forecasting and anomaly detection with machine learning; integration of renewable energy — solar and biomass; design of smart energy-management systems to reduce cost and greenhouse-gas emissions",
 
   // ---- 2.4 เลือกชีพ — แขนงที่ 3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร ----
   "EN-135-131": "Architecture and design of advanced data pipelines for AI systems; stream processing; distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; building real-time data pipelines for AI systems; integration of data from diverse sources; monitoring and management of data pipelines in production; application to building industrial data systems",
-  "EN-135-132": "Principles and architecture of generative AI and large language models; types of generative AI — text generation, image generation, and multimodal AI; use of large-language-model APIs; prompt engineering and prompt optimization; fine-tuning of generative AI models for specialized tasks; building retrieval-augmented generation (RAG) and question-answering systems from knowledge bases; development of virtual assistants; integration with business systems; application to innovation",
-  "EN-135-133": "Principles and processes of testing AI software; types of testing — unit, integration, system, and acceptance; testing of machine learning and deep learning models; assessment of model bias and fairness; performance and robustness testing under various conditions; safety and security testing; software quality assurance with international standards; creation of test datasets and benchmarks; use of automated testing tools; documentation and reporting",
-  "EN-135-134": "Principles and concepts of microservices architecture for AI systems; comparison of monolithic and distributed architectures; design and development of microservices; container management and orchestration; design of inter-service communication; configuration and secret management in the cloud; serverless computing; design of scalable and highly available systems; system monitoring and management; security in microservices; application to AI system development",
+  "EN-135-132": "Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning; parameter-efficient fine-tuning and LoRA; model compression and quantization; multimodal model adaptation; evaluation of accuracy, reasoning, factuality, fairness, and robustness; benchmark and comparative-experiment design; inference optimization for latency, memory, cost, and energy; model serving in production; performance-degradation monitoring; and model documentation",
+  "EN-135-133": "Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to noise and adversarial attacks; bias and fairness evaluation; hallucination testing for generative models; red teaming and guardrails; hazard analysis and safety cases; data- and model-drift monitoring; incident management; model rollback; and preparation of model cards and assurance evidence",
+  "EN-135-134": "Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, data platforms, and legacy workflows; identity, access, secret management, and zero-trust architecture; multi-tenancy, scalability, high availability, disaster recovery, and business continuity; observability; cloud-cost management; trade-off analysis; and preparation of architecture diagrams and decision records",
   "EN-135-135": "Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for transparent and understandable interfaces; usability testing and user-experience evaluation; inclusive design; application to commercial AI applications",
   "EN-135-136": "Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment and healthcare recommendation systems; integration of AI with wearable devices to monitor vital signs; management of health big data; natural-language processing to extract information from medical documents; ethics and privacy of patient data under international standards",
   "EN-135-137": "Principles of medical image processing and analysis; working with X-ray, computed-tomography (CT), and magnetic-resonance (MRI) image data; use of deep learning for organ detection and segmentation; analysis of abnormalities and lesions; building AI models to assist physicians in diagnosis; noise reduction and contrast enhancement of medical images; integration of image-analysis systems with picture archiving and communication systems (PACS); performance evaluation of medical-image-analysis models",
   "EN-135-138": "Principles of financial technology and financial-service innovation; application of AI in finance and banking; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection with AI; automated investment systems and robo-advisory; consumer and individual-customer behavior analysis; AI models for asset valuation; regulations and policies on financial technology",
   "EN-135-139": "Predictive-analytics techniques for financial markets; analysis of financial time-series data; stock- and financial-asset price-forecasting models with machine learning and deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; interpretation and visualization of financial data for business decisions",
-  "EN-135-140": "Principles and processes of creating AI innovation; opportunity discovery and business-feasibility assessment for AI technology; building innovative business models and the business model canvas; management of AI startups; building a minimum viable product to test the market; fundraising and pitching to investors; intellectual-property management for software innovation; case studies of AI-business success and failure at home and abroad",
+  "EN-135-140": "Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy; business-to-business sales, procurement, and pilot management; intellectual property, licensing, data, and service-level agreements; operations, risk, and scaling plans; financial projections, fundraising, and investor or partner pitching; development and validation of a commercialization plan for an AI product with real users or an enterprise partner",
   "EN-135-141": "Principles and methodologies of intelligent software project management; agile and Scrum; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system life cycle; stakeholder-expectation management; use of AI to manage and track project progress; quality control and continuous delivery; measuring the success of AI projects",
   "EN-135-142": "Concepts of AI-based digital business development; building data-driven digital-marketing strategies; analysis and segmentation of target customers with machine learning; automated advertising-content creation and marketing communication with generative AI; personalized product and service recommendation systems; analysis of campaign effectiveness; application of chatbots for customer service and proactive selling; conversion-rate optimization with smart technology",
-  "EN-135-143": "Principles of designing and developing AI products that meet user needs; integration of ergonomics and behavioral science into smart-technology development; design-thinking process for new functionality; building human–AI interaction; design of smart hardware devices connected to the cloud; product life-cycle management; product-satisfaction testing in real market conditions; continuous improvement and extension of AI product features",
+  "EN-135-143": "AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps, backlogs, and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human–AI interaction design; A/B testing; analysis of usage, adoption, and impact; management of feedback, model drift, cost, and product change; coordination among users, business, data, engineering, and governance teams; and evidence-based decisions to scale, pivot, or retire AI products",
   "EN-135-144": "Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of virtual-world applications for medical simulation, industrial training, and digital marketing; wearable devices for perception and response; analysis of user behavior in digital environments",
-  "EN-135-145": "Concepts and ethical principles related to the development and use of AI; privacy and personal-data protection under the law; liability for damage caused by automated systems; copyright and intellectual-property law for AI-generated works; awareness of algorithmic bias and transparency; traceability of decisions; governance of AI systems in medical, financial, and public-service industries; international standards for the sustainable use of AI",
+  "EN-135-145": "AI governance and risk-management frameworks; system inventories and risk classification; impact assessment for rights, privacy, fairness, safety, and the environment; roles, accountability, and human oversight; compliance with data-protection, intellectual-property, sector-specific laws, and relevant standards; third-party and external-model risk; risk registers, data documentation, model cards, decision logs, and audit evidence; post-deployment monitoring, incident reporting, corrective action, and enterprise governance reviews through case studies",
 };
 
 const RAW = [
@@ -153,24 +156,24 @@ const RAW = [
   { c: "GE-010-003", s: "ดิจิทัล", t: "ดิจิทัลกับชีวิตวิถีใหม่", e: "Digital Technology of New Normal", cr: "3(2-2-5)", g: "ge", y: 1, sem: 2, p: [],
     d: "ความเข้าใจในการใช้เทคโนโลยีดิจิทัลขั้นพื้นฐาน การประยุกต์ใช้เทคโนโลยีและนวัตกรรมดิจิทัล ความมั่นคงและปลอดภัยทางไซเบอร์ การพัฒนาแพลตฟอร์มออนไลน์ การรู้ดิจิทัล การพัฒนาทักษะดิจิทัล ความเป็นพลเมืองดิจิทัล การเป็นผู้ใช้ดิจิทัลอย่างชาญฉลาด",
     dEn: "Fundamental digital technology literacy; applications of digital technology and innovation; cybersecurity and online safety; online platform development; digital skills for learning, work, and responsible participation in contemporary society" },
-  { c: "GE-010-005", s: "ชีวิตออกแบบได้", t: "ชีวิตออกแบบได้", e: "Ideal Life", cr: "3(2-2-5)", g: "ge", y: 1, sem: 2, p: [],
+  { c: "GE-010-005", s: "ชีวิตออกแบบได้", t: "ชีวิตออกแบบได้", e: "Ideal Life", cr: "3(2-2-5)", g: "ge", y: 2, sem: 3, p: [],
     d: "ปัจจัยและความสำคัญของแรงบันดาลใจในการใช้ชีวิต เทคนิคและวิธีคิดของผู้ประสบความสำเร็จ การเรียนรู้สถานการณ์ต่าง ๆ ด้วยตนเอง การวิเคราะห์และวางแผนเป้าหมายชีวิต การสร้างความสัมพันธ์ระหว่างบุคคล การวางตัว การมีมนุษยสัมพันธ์",
     dEn: "Sources and roles of inspiration in life; mindsets and techniques of successful people; self-directed learning from life situations; life-goal analysis and planning; interpersonal relationships; personal conduct and human relations" },
   { c: "GE-010-002", s: "อังกฤษ 2", t: "ภาษาอังกฤษฟุดฟิดฟอฟัน", e: "English is Fun", cr: "3(2-2-5)", g: "ge", y: 1, sem: 2, p: [],
     d: "การสื่อสารและใช้ภาษาอังกฤษในบริบทต่าง ๆ คำศัพท์ ประโยค ไวยากรณ์และสำนวนภาษาอังกฤษในสังคมพหุวัฒนธรรม การฟัง การเขียนและโต้ตอบในบริบทการท่องเที่ยว การเดินทาง และเพื่อนต่างวัฒนธรรม",
     dEn: "English communication in a range of contexts; vocabulary, sentence patterns, grammar, and idiomatic expressions in multicultural society; listening, writing, and interaction in the contexts of tourism, travel, and cross-cultural friendship" },
-  { c: "GE-010-006", s: "ปรัชญา/เศรษฐฯ", t: "ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์", e: "Human Philosophy; Society; and Economics", cr: "3(2-2-5)", g: "ge", y: 2, sem: 3, p: [],
+  { c: "GE-010-006", s: "ปรัชญา/เศรษฐฯ", t: "ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์", e: "Human Philosophy; Society; and Economics", cr: "3(2-2-5)", g: "ge", y: 2, sem: 4, p: [],
     d: "สภาพแวดล้อมทางสังคม เศรษฐกิจ และการเมือง การปกครองทั้งภายในและภายนอกประเทศ หลักการบริหาร หลักกฎหมายเบื้องต้น การวิเคราะห์ปัญหาด้านจริยธรรมทางเศรษฐกิจระดับบุคคล องค์กร ประเทศและระดับโลก อุปสงค์ อุปทาน ทฤษฎีพฤติกรรมผู้บริโภค การออมและการลงทุน ปัญหาเงินเฟ้อ เงินฝืด การว่างงาน ปรัชญาเศรษฐกิจพอเพียง",
     dEn: "Philosophical inquiry concerning humanity, society, and economics; social, economic, and political environments; principles of administration and introductory law; analysis of economic-ethical problems at individual, organizational, national, and global levels; supply and demand; consumer behavior; saving and investment; inflation, deflation, unemployment; the philosophy of sufficiency economy" },
-  { c: "GE-020-008", s: "ธุรกิจดิจิทัล", t: "การพัฒนาธุรกิจในสังคมดิจิทัล", e: "Business Development in the Digital Era", cr: "3(3-0-6)", g: "ge", y: 2, sem: 3, p: [],
+  { c: "GE-020-008", s: "ธุรกิจดิจิทัล", t: "การพัฒนาธุรกิจในสังคมดิจิทัล", e: "Business Development in the Digital Era", cr: "3(3-0-6)", g: "ge", y: 3, sem: 5, p: [],
     d: "หลักการเป็นผู้ประกอบการ การบริหารทรัพยากร เวลา การเงิน การบัญชีและระบบการขนส่งเบื้องต้น การตลาดดิจิทัล การสร้างเนื้อหาที่น่าสนใจเพื่อการตลาด การวางแผนการเงิน",
     dEn: "Principles of entrepreneurship; management of resources, time, and finance; introductory accounting and logistics systems; digital marketing; creation of engaging marketing content; financial planning for business development in a digital society" },
-  { c: "GE-020-009", s: "ผู้นำ 21", t: "ผู้นำแห่งศตวรรษที่ 21", e: "Leadership of the 21st Century", cr: "3(3-0-6)", g: "ge", y: 2, sem: 4, p: [],
+  { c: "GE-020-009", s: "ผู้นำ 21", t: "ผู้นำแห่งศตวรรษที่ 21", e: "Leadership of the 21st Century", cr: "3(3-0-6)", g: "ge", y: 4, sem: 7, p: [],
     d: "ผู้นำและผู้ตามที่ดี บุคลิกภาพ การทำงานเป็นทีม บริบทความเปลี่ยนแปลงของสังคมโลก การแก้ปัญหา การคิดวิเคราะห์ การสื่อสาร คุณธรรม จริยธรรม หลักธรรมาภิบาลสำหรับผู้นำ การวางแผนการเงินอย่างเป็นระบบ การเป็นนวัตกรสังคม",
     dEn: "Effective leadership and followership; personality and teamwork; the changing global context; problem solving, analytical thinking, and communication; morality, ethics, and good governance for leaders; systematic financial planning; becoming a social innovator" },
 
   /* ================= 2.1 กลุ่มวิชาพื้นฐานทางวิศวกรรม ================= */
-  { c: "EN-001-022", s: "สถิติ", t: "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม", e: "Statistics and Data Analysis for Engineering", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 6], ctx: "eng",
+  { c: "EN-001-022", s: "สถิติ", t: "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม", e: "Statistics and Data Analysis for Engineering", cr: "3(3-0-6)", g: "eng", y: 1, sem: 1, p: [1, 6], ctx: "eng",
     d: "ความน่าจะเป็นและการแจกแจงความน่าจะเป็น ตัวแปรสุ่มและฟังก์ชันการแจกแจง สถิติเชิงพรรณนาและการสรุปอ้างอิง การประมาณค่าและช่วงความเชื่อมั่น การทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การวิเคราะห์การถดถอยและสหสัมพันธ์ การออกแบบการทดลอง การประยุกต์ใช้วิธีการทางสถิติในการวิเคราะห์ข้อมูลสำหรับระบบปัญญาประดิษฐ์ การประเมินประสิทธิภาพตัวแบบการเรียนรู้ของเครื่อง การแก้ปัญหาทางวิศวกรรมเกษตรและอุตสาหกรรม" },
   { c: "EN-001-024", s: "เขียนแบบ", t: "การเขียนแบบวิศวกรรมและการวางผังระบบ", e: "Engineering Drawing and System Layout Design", cr: "3(2-2-6)", g: "eng", y: 1, sem: 1, p: [1, 2], ctx: "eng",
     d: "พื้นฐานและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพออโธกราฟิกและภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ ภาพตัดและภาพช่วย การเขียนแบบชิ้นส่วนและแบบประกอบ การเขียนแบบด้วยโปรแกรมคอมพิวเตอร์ช่วยออกแบบ การสร้างแบบจำลองสองมิติและสามมิติ การประยุกต์ใช้การเขียนแบบวิศวกรรมในการออกแบบโครงสร้างระบบอัตโนมัติ เครื่องจักรกลเกษตร การจัดวางระบบอินเทอร์เน็ตของสรรพสิ่งและเซนเซอร์ในโรงงานและฟาร์มอัจฉริยะ" },
@@ -179,11 +182,11 @@ const RAW = [
   { c: "EN-001-028", s: "Workshop I", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ I", e: "Integrated Engineering Workshop I", cr: "1(0-3-1)", g: "eng", y: 1, sem: 1, p: [1, 2, 5],
     d: "การใช้เครื่องมือช่าง การประกอบโครงอลูมิเนียมโปรไฟล์ การเดินท่อน้ำและระบบประปาสำหรับโรงเรือน การเดินสายไฟ การประกอบโครงแชสซีหุ่นยนต์",
     dEn: "Safe use of engineering hand tools; assembly of aluminium-profile structures; installation of water piping and plumbing systems for greenhouses; electrical wiring; assembly of a robot chassis" },
-  { c: "EN-001-021", s: "เศรษฐศาสตร์วิศวฯ", t: "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน", e: "Engineering Economics and Cost Analysis", cr: "3(3-0-6)", g: "eng", y: 2, sem: 4, p: [1, 6, 7], ctx: "eng",
+  { c: "EN-001-021", s: "เศรษฐศาสตร์วิศวฯ", t: "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน", e: "Engineering Economics and Cost Analysis", cr: "3(3-0-6)", g: "eng", y: 2, sem: 3, p: [1, 6, 7], ctx: "eng",
     d: "แนวคิดพื้นฐานทางเศรษฐศาสตร์วิศวกรรม มูลค่าของเงินตามเวลา อัตราดอกเบี้ยและการคิดลด การวิเคราะห์มูลค่าปัจจุบันสุทธิและอัตราผลตอบแทนภายใน การวิเคราะห์ต้นทุนและผลประโยชน์ของโครงการวิศวกรรม การประเมินความเป็นไปได้ทางเศรษฐศาสตร์ของโครงการลงทุนด้านปัญญาประดิษฐ์และระบบอัจฉริยะ ต้นทุนวงจรชีวิตของระบบ การคิดค่าเสื่อมราคา การวิเคราะห์จุดคุ้มทุน การตัดสินใจทางเศรษฐศาสตร์ภายใต้ความไม่แน่นอน กรณีศึกษาการลงทุนในระบบปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม" },
-  { c: "EN-001-023", s: "ความร้อน-ของไหล", t: "วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ", e: "Thermal-Fluid Engineering in Smart Systems", cr: "3(3-0-6)", g: "eng", y: 2, sem: 3, p: [1, 2], ctx: "eng",
+  { c: "EN-001-023", s: "ความร้อน-ของไหล", t: "วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ", e: "Thermal-Fluid Engineering in Smart Systems", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 2], ctx: "eng",
     d: "คุณสมบัติของสารและสถานะของสาร กฎข้อที่หนึ่งและกฎข้อที่สองของอุณหพลศาสตร์ พลังงานและการเปลี่ยนรูปพลังงาน วัฏจักรอุณหพลศาสตร์และประสิทธิภาพเครื่องจักรความร้อน คุณสมบัติและพฤติกรรมของของไหล สมการความต่อเนื่อง สมการแบร์นูลลีและการประยุกต์ใช้ การไหลในท่อและการสูญเสียความดัน ปั๊มและกังหัน การประยุกต์ใช้ความรู้อุณหพลศาสตร์และของไหลในระบบผลิตพลังงานร่วม ระบบอบแห้งผลผลิตเกษตร ระบบระบายความร้อนสำหรับอุปกรณ์คอมพิวเตอร์และเครื่องแม่ข่ายปัญญาประดิษฐ์" },
-  { c: "EN-001-025", s: "กลศาสตร์วัสดุ", t: "กลศาสตร์วัสดุและการออกแบบโครงสร้าง", e: "Mechanics of Materials and Structural Design", cr: "3(3-0-6)", g: "eng", y: 2, sem: 3, p: [1, 2], ctx: "eng",
+  { c: "EN-001-025", s: "กลศาสตร์วัสดุ", t: "กลศาสตร์วัสดุและการออกแบบโครงสร้าง", e: "Mechanics of Materials and Structural Design", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 2], ctx: "eng",
     d: "แนวคิดพื้นฐานของแรงและระบบแรง สภาวะสมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน ความเค้นเฉือนและความเค้นดัด การบิดของเพลา ไดอะแกรมแรงเฉือนและโมเมนต์ดัด การโก่งตัวของคาน ความเค้นรวมและความเสียหาย ค่าความปลอดภัยและเกณฑ์การออกแบบ การประยุกต์ใช้หลักกลศาสตร์วัสดุในการออกแบบโครงสร้างเครื่องจักรกลเกษตร ระบบโครงรับน้ำหนักสำหรับโดรนและหุ่นยนต์เกษตร โครงสร้างระบบอัตโนมัติในโรงงานอุตสาหกรรม" },
   { c: "EN-001-027", s: "ไฟฟ้า-อิเล็ก", t: "พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ", e: "Electrical and Electronic Fundamentals for Intelligent Systems", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 2], ctx: "eng",
     d: "หลักการพื้นฐานของวงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์พื้นฐาน ไดโอด ทรานซิสเตอร์ วงจรรวม ระบบดิจิทัลและตรรกะ มอเตอร์ไฟฟ้าและระบบขับเคลื่อน เซนเซอร์และทรานสดิวเซอร์ การแปลงสัญญาณแอนะล็อกและดิจิทัล การประยุกต์ใช้ความรู้ไฟฟ้าและอิเล็กทรอนิกส์ในการออกแบบวงจรควบคุมระบบอินเทอร์เน็ตของสรรพสิ่ง เซนเซอร์อัจฉริยะ ระบบขับเคลื่อนสำหรับหุ่นยนต์และโดรนเกษตร" },
@@ -201,7 +204,7 @@ const RAW = [
     d: "พีชคณิตเชิงเส้นสำหรับปัญญาประดิษฐ์ เวกเตอร์ เมทริกซ์ การแปลงเชิงเส้น การแยกค่าเอกพจน์ แคลคูลัสหลายตัวแปรและการหาอนุพันธ์ย่อยสำหรับการเพิ่มประสิทธิภาพตัวแบบปัญญาประดิษฐ์ ทฤษฎีความน่าจะเป็นและสถิติสำหรับการเรียนรู้ของเครื่อง การแจกแจงความน่าจะเป็นที่ใช้ในปัญญาประดิษฐ์ การหาค่าเหมาะที่สุดด้วยวิธีการลดระดับความชันและการแพร่กระจายย้อนกลับ คณิตศาสตร์สำหรับโครงข่ายประสาทเทียมและการเรียนรู้เชิงลึก การประยุกต์ใช้คณิตศาสตร์ในการพัฒนาและวิเคราะห์ตัวแบบปัญญาประดิษฐ์สำหรับภาคเกษตรกรรมและอุตสาหกรรม" },
   { c: "EN-131-106", s: "ML/DL", t: "การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก", e: "Machine Learning and Deep Learning", cr: "3(2-2-5)", g: "ai", y: 2, sem: 3, p: [1, 5, 6], ctx: "ai", h: ["EN-001-026", "EN-131-102"], w: ["EN-001-022"],
     d: "หลักการและแนวคิดพื้นฐานของการเรียนรู้ของเครื่อง ขั้นตอนวิธีการเรียนรู้ของเครื่องแบบมีผู้สอน การถดถอยเชิงเส้น การถดถอยโลจิสติก ต้นไม้ตัดสินใจ ป่าสุ่ม เครื่องจักรเวกเตอร์สนับสนุน ขั้นตอนวิธีแบบไม่มีผู้สอน การจัดกลุ่มแบบเคมีน การลดมิติข้อมูล การประเมินและการปรับแต่งตัวแบบ โครงข่ายประสาทเทียมและการเรียนรู้เชิงลึก สถาปัตยกรรมโครงข่ายประสาทเทียมแบบคอนโวลูชัน โครงข่ายประสาทเทียมแบบวนซ้ำ โครงข่ายทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอนและการปรับแต่งละเอียด การฝึกตัวแบบด้วยหน่วยประมวลผลกราฟิก การป้องกันการเรียนรู้เกิน การประยุกต์ใช้ในการพยากรณ์ผลผลิตเกษตร การตรวจจับโรคพืช การควบคุมคุณภาพในโรงงาน การวิเคราะห์ข้อมูลอุตสาหกรรม" },
-  { c: "EN-131-107", s: "Data Eng", t: "วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่", e: "Data Engineering and Big Data", cr: "3(3-0-6)", g: "ai", y: 2, sem: 4, p: [2, 3, 6], ctx: "ai", h: ["EN-001-026"], w: ["EN-001-022"],
+  { c: "EN-131-107", s: "Data Eng", t: "วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่", e: "Data Engineering and Big Data", cr: "3(3-0-6)", g: "ai", y: 2, sem: 3, p: [2, 3, 6], ctx: "ai", h: ["EN-001-026"], w: ["EN-001-022"],
     d: "หลักการและวงจรชีวิตของข้อมูล การออกแบบและพัฒนาไปป์ไลน์ข้อมูล กระบวนการสกัด การแปลง และการโหลดข้อมูล การจัดการฐานข้อมูลเชิงสัมพันธ์ด้วยเอสคิวแอลและฐานข้อมูลที่ไม่ได้ใช้เอสคิวแอลอย่างเดียวสำหรับข้อมูลปัญญาประดิษฐ์ การออกแบบคลังข้อมูลและทะเลข้อมูล สถาปัตยกรรมทะเลคลังข้อมูล การทำความสะอาดและการแปลงข้อมูล การจัดการคุณภาพและธรรมาภิบาลข้อมูล การประมวลผลข้อมูลแบบกระจาย การจัดการข้อมูลขนาดใหญ่ การออกแบบสถาปัตยกรรมข้อมูลสำหรับระบบปัญญาประดิษฐ์ในภาคเกษตรกรรมและอุตสาหกรรม ข้อมูลเซนเซอร์ฟาร์ม ข้อมูลกระบวนการผลิต ข้อมูลห่วงโซ่อุปทาน" },
   { c: "EN-131-103", s: "Computer Vision", t: "คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ", e: "Computer Vision and Image Analysis", cr: "3(2-2-5)", g: "ai", y: 2, sem: 4, p: [2, 3, 6], ctx: "ai", h: ["EN-131-106"], w: ["EN-001-026"],
     d: "หลักการพื้นฐานของการประมวลผลภาพดิจิทัล การแทนสัญญาณภาพและการแปลงภาพ การปรับปรุงคุณภาพภาพและการกรองสัญญาณ การแบ่งส่วนภาพและการตรวจจับขอบ การสกัดคุณลักษณะภาพด้วยวิธีทางสถิติและการเรียนรู้เชิงลึก การตรวจจับและจำแนกวัตถุด้วยโครงข่ายประสาทเทียมแบบคอนโวลูชัน การวิเคราะห์ภาพมัลติสเปกตรัมจากโดรน การประยุกต์ใช้คอมพิวเตอร์วิทัศน์สำหรับการตรวจสอบคุณภาพผลผลิตเกษตร การตรวจจับโรคพืช การคัดเกรดสินค้าในสายการผลิต การตรวจสอบกระบวนการในโรงงานเกษตรอุตสาหกรรม" },
@@ -212,23 +215,25 @@ const RAW = [
   { c: "EN-131-108", s: "HW/Network", t: "โครงสร้างพื้นฐานฮาร์ดแวร์และระบบเครือข่ายสำหรับการประมวลผลปัญญาประดิษฐ์", e: "Infrastructure and Network Systems for AI Computing", cr: "3(3-0-6)", g: "ai", y: 2, sem: 4, p: [1, 2, 4], ctx: "ai", h: ["EN-001-027"], w: ["EN-131-104"], co: ["EN-131-105"],
     d: "สถาปัตยกรรมคอมพิวเตอร์สำหรับปัญญาประดิษฐ์ หน่วยประมวลผลกราฟิก หน่วยประมวลผลเทนเซอร์ การประมวลผลแบบขนานและการเร่งความเร็วด้วยฮาร์ดแวร์ หลักการและสถาปัตยกรรมของระบบเครือข่ายคอมพิวเตอร์ โพรโทคอลการสื่อสารสำหรับระบบปัญญาประดิษฐ์ เครือข่ายไร้สายและเครือข่ายยุคที่ห้า การจัดการคอนเทนเนอร์ การออกแบบระบบปัญญาประดิษฐ์แบบขยายขนาดได้และมีความพร้อมใช้งานสูง ความมั่นคงปลอดภัยของโครงสร้างพื้นฐานปัญญาประดิษฐ์ การตรวจสอบและบริหารจัดการระบบ การประยุกต์ใช้ในการสนับสนุนระบบฟาร์มอัจฉริยะ โรงงานอัจฉริยะ ศูนย์ข้อมูลสำหรับเกษตรอุตสาหกรรม" },
 
-  /* ================= 2.3 กลุ่มวิชาบังคับตามแขนงวิชา ================= */
-  { c: "EN-132-101", s: "AI Product/Biz", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 3, sem: 5, p: [2, 3, 7], ctx: "track", w: ["EN-131-101", "EN-001-021"],
+  /* ================= 2.3 กลุ่มวิชาแกนร่วมของสาม Track ================= */
+  { c: "EN-132-101", s: "AI BI/Product", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 2, sem: 4, p: [1, 2, 3, 4, 5, 6, 7], ctx: "track", w: ["EN-131-101", "EN-001-021"],
     d: "หลักการและกระบวนการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์ การคิดเชิงออกแบบสำหรับการพัฒนานวัตกรรมปัญญาประดิษฐ์ การวิเคราะห์ความต้องการของผู้ใช้และตลาด การออกแบบและทดสอบต้นแบบ การประเมินความเป็นไปได้ทางเทคโนโลยีและธุรกิจ ผืนผ้าใบแบบจำลองธุรกิจสำหรับธุรกิจปัญญาประดิษฐ์ การวิเคราะห์คู่แข่งและการหาตำแหน่งทางการตลาด กลยุทธ์การนำผลิตภัณฑ์ออกสู่ตลาด การประเมินมูลค่าและผลตอบแทน ทรัพย์สินทางปัญญาสำหรับนวัตกรรมปัญญาประดิษฐ์ การประยุกต์ใช้สำหรับภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรม" },
-  { c: "EN-132-103", s: "Smart Farm", t: "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ", e: "Smart Farming and Precision Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 5, 6], ctx: "track", h: ["EN-131-104", "EN-131-106"], w: ["EN-131-103"],
+  { c: "EN-132-103", s: "Smart Agriculture", t: "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ", e: "Smart Farming and Precision Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 5, 6], ctx: "track", h: ["EN-131-104", "EN-131-106"], w: ["EN-131-103"],
     d: "แนวคิดและสถาปัตยกรรมของระบบฟาร์มอัจฉริยะและเกษตรกรรมแม่นยำสูง การออกแบบและติดตั้งเครือข่ายเซนเซอร์ไร้สายในแปลงเพาะปลูก การตรวจวัดและวิเคราะห์สภาพดิน น้ำ สภาพอากาศ และการเจริญเติบโตของพืชด้วยเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งและปัญญาประดิษฐ์ ระบบชลประทานอัจฉริยะและการควบคุมการจ่ายน้ำอัตโนมัติ การวิเคราะห์แบบจำลองเพื่อพยากรณ์และเตือนภัยโรคพืชและแมลงศัตรูพืช การบริหารจัดการฟาร์มด้วยแผงควบคุมข้อมูลและระบบสนับสนุนการตัดสินใจ การเชื่อมต่อแพลตฟอร์มคลาวด์เพื่อการบูรณาการข้อมูลเชิงพื้นที่สำหรับการผลิตข้าว อ้อย และมันสำปะหลัง" },
-  { c: "EN-132-106", s: "Automation", t: "ระบบควบคุมอัตโนมัติและหุ่นยนต์ในอุตสาหกรรม", e: "Industrial Automation and Control Systems", cr: "3(2-2-5)", g: "track", y: 3, sem: 6, p: [1, 2, 5], ctx: "track", h: ["EN-001-027", "EN-131-104"], w: ["EN-001-030"],
+  { c: "EN-132-106", s: "Industrial Robotics", t: "ระบบควบคุมอัตโนมัติและหุ่นยนต์ในอุตสาหกรรม", e: "Industrial Automation and Control Systems", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 5, 6], ctx: "track", h: ["EN-001-027", "EN-131-104"], w: ["EN-001-030"],
     d: "โครงสร้างและสถาปัตยกรรมของตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมด้วยภาษามาตรฐาน ผังแลดเดอร์ ผังบล็อกฟังก์ชัน ข้อความโครงสร้าง และผังฟังก์ชันแบบลำดับ การเชื่อมต่อสัญญาณอินพุตและเอาต์พุตทั้งระบบดิจิทัลและแอนะล็อก การโปรแกรมควบคุมเซนเซอร์ ตัวกระตุ้น และอุปกรณ์ภาคสนาม การออกแบบระบบสกาดาและส่วนต่อประสานระหว่างมนุษย์และเครื่องจักร การสื่อสารบนเครือข่ายอุตสาหกรรม การบูรณาการเทคโนโลยีอัตโนมัติร่วมกับปัญญาประดิษฐ์และอินเทอร์เน็ตของสรรพสิ่งเพื่อระบบการผลิตอัจฉริยะและการควบคุมระบบชลประทานขนาดใหญ่" },
-  { c: "EN-132-107", s: "AI Software Eng", t: "การพัฒนาซอฟต์แวรเเละวิศวกรรมปัญญาประดิษฐ์", e: "Software Development and AI Engineering", cr: "3(2-2-5)", g: "track", y: 3, sem: 6, p: [2, 5, 7], ctx: "track", h: ["EN-001-026", "EN-131-105"], w: ["EN-131-107"],
+  { c: "EN-132-107", s: "Software & AI Eng", t: "การพัฒนาซอฟต์แวรเเละวิศวกรรมปัญญาประดิษฐ์", e: "Software Development and AI Engineering", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 3, 5, 6, 7], ctx: "track", h: ["EN-001-026", "EN-131-105"], w: ["EN-131-107"],
     d: "วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบที่ขับเคลื่อนด้วยปัญญาประดิษฐ์ การพัฒนาซอฟต์แวร์แบบบริการย่อยและการออกแบบเรสฟูลเอพีไอและกราฟคิวแอล รูปแบบสถาปัตยกรรมระบบและทฤษฎีการออกแบบซอฟต์แวร์ที่สะอาดและบำรุงรักษาง่าย วิธีการทดสอบซอฟต์แวร์และการประกันคุณภาพตัวแบบปัญญาประดิษฐ์ การจัดการเวอร์ชันของรหัสคำสั่งและการทำงานร่วมกันเป็นทีมด้วยกิต แนวคิดปฏิบัติการการเรียนรู้ของเครื่องและปฏิบัติการการพัฒนา การสร้างไปป์ไลน์การรวมและส่งมอบอย่างต่อเนื่อง การติดตั้งใช้งานระบบบนโครงสร้างพื้นฐานคลาวด์ แพลตฟอร์มคอนเทนเนอร์ และอุปกรณ์ปลายทาง กรณีศึกษาการพัฒนาแอปพลิเคชันเชิงพาณิชย์" },
-  { c: "EN-132-102", s: "Supply Chain AI", t: "ปัญญาประดิษฐ์สำหรับห่วงโซ่การผลิตและอุปทาน", e: "AI for Production and Supply Chain", cr: "3(3-0-6)", g: "track", y: 3, sem: 5, p: [3, 6, 7], ctx: "track", h: ["EN-131-107", "EN-131-106"], w: ["EN-131-101"],
+  { c: "EN-132-102", s: "Decision/Supply Chain", t: "ปัญญาประดิษฐ์สำหรับห่วงโซ่การผลิตและอุปทาน", e: "AI for Production and Supply Chain", cr: "3(3-0-6)", g: "track", y: 2, sem: 4, p: [1, 2, 3, 6], ctx: "track", h: ["EN-131-107", "EN-131-106"], w: ["EN-131-101"],
     d: "แนวคิดและโครงสร้างห่วงโซ่การผลิตและโซ่อุปทานยุคดิจิทัลตั้งแต่ต้นน้ำถึงปลายน้ำ การวางแผนและบริหารจัดการปัจจัยการผลิต การจัดหาวัตถุดิบอัจฉริยะและการวิเคราะห์แหล่งที่มา กระบวนการจัดการในสายการผลิตและระบบคลังสินค้าอัตโนมัติ การพยากรณ์อุปสงค์และอุปทาน การจัดการโลจิสติกส์และการขนส่งอัจฉริยะ การประยุกต์ใช้ปัญญาประดิษฐ์ เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง และการวิเคราะห์ข้อมูลขนาดใหญ่เพื่อเพิ่มประสิทธิภาพและลดต้นทุนตลอดห่วงโซ่คุณค่า การสร้างระบบตรวจสอบย้อนกลับและความยั่งยืนของผลิตภัณฑ์ การบริหารความเสี่ยงในโซ่อุปทาน" },
-  { c: "EN-132-104", s: "UAV/Remote", t: "อากาศยานไร้คนขับและการตรวจวัดระยะไกลสำหรับเกษตรกรรม", e: "UAVs and Remote Sensing in Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 6], ctx: "track", h: ["EN-131-103"], w: ["EN-131-104"],
+  { c: "EN-132-104", s: "Autonomous Agriculture", t: "อากาศยานไร้คนขับและการตรวจวัดระยะไกลสำหรับเกษตรกรรม", e: "UAVs and Remote Sensing in Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 5, 6], ctx: "track", h: ["EN-131-103"], w: ["EN-131-104"],
     d: "หลักการทำงานและประเภทของอากาศยานไร้คนขับ กฎหมาย ระเบียบข้อบังคับ และการขอใบอนุญาตนักบินโดรนตามมาตรฐานสำนักงานการบินพลเรือนแห่งประเทศไทย ระบบการบินอัตโนมัติและการวางแผนเส้นทางบินเชิงพื้นที่ หลักการตรวจวัดระยะไกลและการประมวลผลข้อมูลภูมิสารสนเทศ การใช้งานเซนเซอร์และกล้องถ่ายภาพระบบอาร์จีบี มัลติสเปกตรัม และเทอร์มอล การประยุกต์ใช้ปัญญาประดิษฐ์ในการประมวลผลและวิเคราะห์ภาพถ่ายทางอากาศ การสร้างแผนที่สองมิติและแบบจำลองสามมิติ การประเมินสุขภาพพืชด้วยดัชนีพืชพรรณ การประยุกต์ใช้โดรนเพื่อการฉีดพ่นสารเคมีแม่นยำ การประเมินผลผลิต ข้าว อ้อย และมันสำปะหลัง" },
-  { c: "EN-132-105", s: "Digital Twin", t: "โรงงานอัจฉริยะและเทคโนโลยีดิจิทัลทวิน", e: "Smart Factory and Digital Twin Technologies", cr: "3(2-2-5)", g: "track", y: 3, sem: 6, p: [2, 3, 6], ctx: "track", h: ["EN-131-106"], co: ["EN-132-106"],
+  { c: "EN-132-105", s: "Smart Manufacturing", t: "โรงงานอัจฉริยะและเทคโนโลยีดิจิทัลทวิน", e: "Smart Factory and Digital Twin Technologies", cr: "3(2-2-5)", g: "track", y: 3, sem: 6, p: [1, 2, 4, 6], ctx: "track", h: ["EN-131-106"], co: ["EN-132-106"],
     d: "สถาปัตยกรรมโรงงานอัจฉริยะและแนวคิดอุตสาหกรรมยุคที่สี่ การบูรณาการระบบเทคโนโลยีปฏิบัติการร่วมกับเทคโนโลยีสารสนเทศ การออกแบบและจำลองกระบวนการผลิตด้วยเทคโนโลยีดิจิทัลทวิน การตรวจสอบและควบคุมคุณภาพชิ้นงานแบบเวลาจริงด้วยปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์ ระบบบำรุงรักษาเชิงพยากรณ์สำหรับเครื่องจักรกลอุตสาหกรรมด้วยการเรียนรู้ของเครื่อง การจัดการพลังงานอัจฉริยะและระบบผลิตพลังงานร่วม การวางผังและบริหารสายการผลิตอัตโนมัติเพื่อประยุกต์ใช้ในโรงงานน้ำตาล โรงงานแป้งมันสำปะหลัง และโรงสีข้าวยุคใหม่" },
-  { c: "EN-132-108", s: "Agentic AI", t: "ระบบเอเจนต์ปัญญาประดิษฐ์เชิงรับการวางแผน", e: "Agentic AI Systems", cr: "3(2-2-5)", g: "track", y: 4, sem: 7, p: [2, 5, 7], ctx: "track", h: ["EN-131-106"], w: ["EN-131-105", "EN-132-107"],
+  { c: "EN-132-108", s: "Agentic AI", t: "ระบบเอเจนต์ปัญญาประดิษฐ์เชิงรับการวางแผน", e: "Agentic AI Systems", cr: "3(2-2-5)", g: "track", y: 3, sem: 6, p: [2, 4, 5, 6, 7], ctx: "track", h: ["EN-131-106"], w: ["EN-131-105", "EN-132-107"],
     d: "แนวคิดและสถาปัตยกรรมของตัวแทนปัญญาประดิษฐ์ ตั้งแต่ระบบตอบสนอง ระบบคิดคำนวณวางแผน และระบบผสมผสาน สถาปัตยกรรมระบบตัวแทนหลายตัวและกลไกการประสานงาน การเชื่อมต่อและการเพิ่มขีดความสามารถของตัวแบบภาษาขนาดใหญ่ร่วมกับตัวแทน การใช้เครื่องมือและการเรียกใช้ฟังก์ชันภายนอก การออกแบบระบบปัญญาประดิษฐ์แบบตัวแทนเพื่อการวางแผนเชิงตรรกะและการตัดสินใจแบบอัตโนมัติ การพัฒนาผ่านชุดคำสั่งสำเร็จรูปแลงเชน ออโตเจน และครูว์เอไอ การประยุกต์ใช้เทคนิคการสร้างข้อความจากการค้นคืน ความปลอดภัยเชิงโครงสร้างและจริยธรรมของตัวแทนในการแก้โจทย์เกษตรอุตสาหกรรม" },
+  { c: "EN-132-109", s: "Sensing & Actuation", t: "ระบบตรวจวัดและขับเคลื่อนอัจฉริยะ", e: "Intelligent Sensing and Actuation Systems", cr: "3(2-2-5)", g: "track", y: 2, sem: 3, p: [2, 4, 5, 6], ctx: "track", h: ["EN-001-027", "EN-001-029"], w: ["EN-131-104"],
+    d: "รอซิงก์จาก Vault" },
 
   /* ================= 2.6 กลุ่มวิชาโครงงานและสัมมนา ================= */
   { c: "EN-134-101", s: "Seminar I", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ I", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems I", cr: "1(0-2-1)", g: "proj", y: 3, sem: 5, p: [3, 4, 7],
@@ -245,7 +250,7 @@ const RAW = [
     dEn: "Execution of an approved artificial intelligence engineering or intelligent systems project; iterative design and development; experimentation and validation; project and risk management; responsible teamwork; documentation; demonstration and oral defense of results" },
 
   /* ================= 2.7 กลุ่มวิชาฝึกประสบการณ์ภาคสนาม ================= */
-  { c: "EN-135-401", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 4, sem: 7, p: [3, 4, 5, 7],
+  { c: "EN-135-401", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 3, sem: 6, p: [3, 4, 5, 7],
     d: "ปรัชญาและเป้าประสงค์ของสหกิจศึกษา ระเบียบและขั้นตอนการดำเนินสหกิจศึกษาของมหาวิทยาลัยกาฬสินธุ์ การค้นหาและการเลือกสถานประกอบการที่เหมาะสมด้านวิศวกรรมปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม การเขียนประวัติย่อและจดหมายสมัครงานในภาษาไทยและภาษาอังกฤษ ทักษะการสัมภาษณ์งานและการนำเสนอตนเอง จรรยาบรรณวิชาชีพวิศวกรรมและการปฏิบัติตนในสถานประกอบการ ความปลอดภัยในการทำงานและกฎหมายแรงงานที่เกี่ยวข้อง ทักษะการสื่อสารและการทำงานร่วมกับผู้อื่นในสภาพแวดล้อมวิชาชีพ การวางแผนการเรียนรู้และการกำหนดเป้าหมาย การจัดทำแผนการปฏิบัติงานและรูปแบบรายงานสหกิจศึกษา",
     dEn: "Preparation for cooperative education; workplace readiness; professional ethics and safety; communication and teamwork; job application and interview skills; work planning; intellectual property and confidentiality; preparation of a cooperative-education learning plan" },
   { c: "EN-135-402", s: "Co-op", t: "สหกิจศึกษา", e: "Cooperative Education", cr: "6(0-40-0)", g: "field", y: 4, sem: 8, p: [2, 3, 4, 5, 7], h: ["EN-135-401", "EN-134-104"],
@@ -285,14 +290,14 @@ const RAW = [
     d: "ผลกระทบของการเปลี่ยนแปลงสภาพภูมิอากาศต่อการเกษตร การประยุกต์ใช้ปัญญาประดิษฐ์ในการวิเคราะห์ข้อมูลภูมิอากาศขนาดใหญ่ การพยากรณ์การเกิดสภาพอากาศสุดขั้วภัยแล้งและอุทกภัย การวิเคราะห์และประเมินความเสี่ยงต่อผลผลิตทางการเกษตรด้วยตัวแบบคอมพิวเตอร์ การออกแบบระบบเตือนภัยล่วงหน้าอัจฉริยะ กลยุทธ์การปรับตัวของภาคการเกษตร การประกันภัยพืชผลโดยอาศัยข้อมูลดาวเทียมและปัญญาประดิษฐ์ นโยบายและความยั่งยืนทางการเกษตร" },
 
   /* ========= 2.4 เลือกชีพ — แขนงที่ 2 AI ภาคอุตสาหกรรม (EN-135-116..130) ========= */
-  { c: "EN-135-116", s: "เครื่องมือวัด/ควบคุม", t: "เครื่องมือวัดและการควบคุมกระบวนการ", e: "Instrumentation and Process Control", cr: "3(2-2-5)", g: "elec", tr: 2, p: [2, 1],
-    d: "หลักการและประเภทของเครื่องมือวัดทางอุตสาหกรรม เซนเซอร์และทรานสดิวเซอร์สำหรับวัดอุณหภูมิ ความดัน การไหล ระดับ และความชื้น การสอบเทียบและการตรวจสอบความถูกต้องของเครื่องมือวัด การส่งสัญญาณและการแปลงสัญญาณในระบบควบคุมกระบวนการ หลักการควบคุมแบบพีไอดีและการปรับตั้งค่าพารามิเตอร์ ระบบควบคุมกระบวนการแบบต่อเนื่องและแบบไม่ต่อเนื่อง การบูรณาการเครื่องมือวัดกับระบบสกาดาและดีซีเอส การประยุกต์ใช้ปัญญาประดิษฐ์และการเรียนรู้ของเครื่องในการปรับปรุงประสิทธิภาพการควบคุมกระบวนการ" },
+  { c: "EN-135-116", s: "Advanced Control/DCS", t: "การควบคุมกระบวนการขั้นสูงและระบบควบคุมแบบกระจาย", e: "Advanced Process Control and Distributed Control Systems", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 2, 6], h: ["EN-132-106", "EN-132-109"],
+    d: "การสร้างแบบจำลองพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพและสมรรถนะของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบลำดับชั้น แบบป้อนไปข้างหน้า แบบอัตราส่วน แบบเลือกช่วง และแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยแบบจำลองและการประยุกต์ปัญญาประดิษฐ์ในการควบคุมกระบวนการ สถาปัตยกรรมและการกำหนดค่าระบบควบคุมแบบกระจาย การควบคุมกระบวนการต่อเนื่องและแบบแบตช์ การจัดการสัญญาณเตือน ส่วนต่อประสานมนุษย์กับเครื่องจักร ระบบประวัติข้อมูล และการเชื่อมต่อกับสกาดา ระบบบริหารการผลิต และแพลตฟอร์มข้อมูลอุตสาหกรรม การจำลอง การทดสอบวงควบคุม การทดสอบการยอมรับ การนำระบบขึ้นใช้งาน และการประเมินผลด้วยตัวชี้วัดด้านเสถียรภาพ คุณภาพ พลังงาน และความปลอดภัย" },
   { c: "EN-135-117", s: "Predictive Maintenance", t: "การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์", e: "AI-Based Predictive and Preventive Maintenance", cr: "3(2-2-5)", g: "elec", tr: 2, p: [6, 2],
     d: "หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรอุตสาหกรรม การบำรุงรักษาเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บรวบรวมข้อมูลสัญญาณการสั่นสะเทือน เสียง อุณหภูมิ และกระแสไฟฟ้าจากเครื่องจักร การประมวลผลสัญญาณและการสกัดคุณลักษณะสำหรับการวินิจฉัยเครื่องจักร การสร้างตัวแบบการเรียนรู้ของเครื่องและการเรียนรู้เชิงลึกสำหรับการตรวจจับความผิดปกติและพยากรณ์ความเสียหาย เทคโนโลยีดิจิทัลทวินสำหรับการจำลองและพยากรณ์สภาพเครื่องจักร ระบบแจ้งเตือนและการวางแผนการบำรุงรักษาอัตโนมัติ การวิเคราะห์สาเหตุที่แท้จริง การประเมินผลตอบแทนการลงทุน" },
   { c: "EN-135-118", s: "คลังสินค้าอัจฉริยะ", t: "การออกแบบและการจัดการคลังสินค้าอัจฉริยะ", e: "Smart Warehouse Design and Management", cr: "3(2-2-5)", g: "elec", tr: 2, p: [2, 6],
     d: "หลักการและประเภทของระบบคลังสินค้าอัตโนมัติ การออกแบบและวางผังคลังสินค้าสำหรับโรงงานเกษตรอุตสาหกรรม ระบบจัดเก็บและเรียกคืนสินค้าอัตโนมัติ สายพานลำเลียง ลิฟต์สินค้า รถลำเลียงอัตโนมัติ การบูรณาการปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์ในระบบคลังเพื่อการตรวจสอบและคัดแยกสินค้า การจัดการคลังสินค้าด้วยระบบการจัดการคลังสินค้า การติดตามสินค้าด้วยอาร์เอฟไอดีและบาร์โค้ด ระบบการจัดการสินค้าคงคลังด้วยปัญญาประดิษฐ์ การวิเคราะห์และเพิ่มประสิทธิภาพการไหลของสินค้าด้วยการจำลอง" },
-  { c: "EN-135-119", s: "DSS อัจฉริยะ", t: "ระบบสนับสนุนการตัดสินใจอัจฉริยะ", e: "Intelligent Decision Support Systems", cr: "3(3-0-6)", g: "elec", tr: 2, p: [6, 3],
-    d: "หลักการและสถาปัตยกรรมของระบบสนับสนุนการตัดสินใจ องค์ประกอบของระบบ ฐานข้อมูล ฐานตัวแบบ ส่วนต่อประสานกับผู้ใช้ การบูรณาการปัญญาประดิษฐ์และระบบธุรกิจอัจฉริยะ การวิเคราะห์ข้อมูลเชิงลึกด้วยโอแลปและการทำเหมืองข้อมูล การออกแบบแผงควบคุมข้อมูลและระบบแสดงผลสำหรับผู้บริหาร การสร้างตัวแบบการตัดสินใจด้วยการเรียนรู้ของเครื่องและการหาค่าเหมาะที่สุด การตัดสินใจภายใต้ความไม่แน่นอนด้วยตรรกศาสตร์คลุมเครือและเครือข่ายแบบเบย์ ระบบผู้เชี่ยวชาญและการให้เหตุผล" },
+  { c: "EN-135-119", s: "Advanced OR/Optimization", t: "การวิจัยดำเนินงานขั้นสูงและการหาค่าเหมาะที่สุดทางอุตสาหกรรม", e: "Advanced Operations Research and Industrial Optimization", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 3, 6], h: ["EN-132-102"],
+    d: "การสร้างตัวแบบเพื่อการตัดสินใจทางอุตสาหกรรม การโปรแกรมเชิงเส้น จำนวนเต็มผสม ไม่เชิงเส้น และหลายวัตถุประสงค์ ตัวแบบโครงข่าย การไหล และการขนส่ง การจัดสรรทรัพยากร การจัดตารางการผลิตและกำลังคน การจัดเส้นทางและโลจิสติกส์ การวางแผนสินค้าคงคลังและกำลังการผลิต ทฤษฎีแถวคอยและการจำลองเหตุการณ์ไม่ต่อเนื่อง การหาค่าเหมาะที่สุดโดยอาศัยการจำลอง การหาค่าเหมาะที่สุดแบบสุ่มและแบบทนทาน วิธีฮิวริสติกและเมตาฮิวริสติก การใช้ภาษาไพทอนและซอฟต์แวร์ตัวแก้ปัญหา การวิเคราะห์ความไวและสถานการณ์ และการเปรียบเทียบทางเลือกด้วยตัวชี้วัดด้านต้นทุน เวลา คุณภาพ พลังงาน คาร์บอน และความเสี่ยง" },
   { c: "EN-135-120", s: "อุตฯเกษตรแปรรูป", t: "เทคโนโลยีอุตสาหกรรมเกษตรและการแปรรูป", e: "Agro-Industrial and Processing Technology", cr: "3(3-0-6)", g: "elec", tr: 2, p: [1, 2],
     d: "หลักการและกระบวนการแปรรูปผลผลิตเกษตรในภาคอุตสาหกรรม มาตรฐานคุณภาพและความปลอดภัยอาหาร จีเอ็มพี เอชเอซีซีพี ไอเอสโอ 22000 เทคโนโลยีการแปรรูปอ้อยและการผลิตน้ำตาลครบวงจร เทคโนโลยีการสกัดและการผลิตแป้งมันสำปะหลัง เทคโนโลยีการสีและการแปรรูปข้าว การจัดการของเสียและน้ำเสียในอุตสาหกรรมเกษตรแปรรูป การใช้พลังงานอย่างมีประสิทธิภาพและระบบผลิตพลังงานร่วม การประยุกต์ใช้ปัญญาประดิษฐ์และเทคโนโลยีดิจิทัลในกระบวนการแปรรูป",
     dEn: "Principles and processes of agro-industrial product processing; food quality and safety standards including GMP, HACCP, and ISO 22000; integrated sugarcane and sugar production technology; cassava starch extraction and production; rice milling and processing; waste and wastewater management; energy efficiency and cogeneration; applications of AI and digital technologies in processing operations" },
@@ -310,10 +315,10 @@ const RAW = [
     d: "หลักการถ่ายเทความร้อนและมวลสารในกระบวนการอบแห้ง สมบัติทางอุณหพลศาสตร์และการถ่ายเทความชื้นของผลผลิตเกษตร เทคโนโลยีการอบแห้งประเภทต่าง ๆ การอบแห้งด้วยลมร้อน ไมโครเวฟ อินฟราเรด ปั๊มความร้อน การอบแห้งแบบแช่เยือกแข็ง การออกแบบและคำนวณระบบอบแห้ง การควบคุมกระบวนการอบแห้งอัตโนมัติด้วยตัวควบคุมแบบโปรแกรมได้และปัญญาประดิษฐ์ การตรวจวัดและควบคุมความชื้นแบบเวลาจริง การสร้างตัวแบบการเรียนรู้ของเครื่องสำหรับพยากรณ์และเพิ่มประสิทธิภาพ การประหยัดพลังงานและการบูรณาการกับระบบผลิตพลังงานร่วม" },
   { c: "EN-135-126", s: "ขนถ่ายวัสดุ/บรรจุภัณฑ์", t: "วิศวกรรมระบบขนถ่ายวัสดุและบรรจุภัณฑ์อัตโนมัติ", e: "Automated Material Handling and Packaging Systems Engineering", cr: "3(2-2-5)", g: "elec", tr: 2, p: [2, 1],
     d: "หลักการและทฤษฎีของระบบขนถ่ายวัสดุในอุตสาหกรรม การวิเคราะห์และออกแบบระบบขนถ่ายวัสดุและบรรจุภัณฑ์สำหรับโรงงานเกษตรอุตสาหกรรม ประเภทและการเลือกใช้อุปกรณ์ขนถ่ายวัสดุ สายพานลำเลียง สกรูลำเลียง ลิฟต์ถัง ท่อลำเลียง การออกแบบเครื่องจักรบรรจุภัณฑ์อัตโนมัติ การบูรณาการเซนเซอร์และระบบอินเทอร์เน็ตของสรรพสิ่ง การควบคุมและบริหารระบบขนถ่ายด้วยตัวควบคุมแบบโปรแกรมได้และสกาดา การประยุกต์ใช้ปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์สำหรับตรวจสอบและจัดการการไหลของวัสดุ การบำรุงรักษาเชิงพยากรณ์" },
-  { c: "EN-135-127", s: "หุ่นยนต์อุตสาหกรรม", t: "หุ่นยนต์อุตสาหกรรมและระบบขับเคลื่อน", e: "Industrial Robotics and Drive Systems", cr: "3(2-2-5)", g: "elec", tr: 2, p: [2, 1],
-    d: "โครงสร้าง พิกัด ประเภทของหุ่นยนต์อุตสาหกรรม จลนศาสตร์และพลศาสตร์ของแขนกลหุ่นยนต์ ระบบขับเคลื่อนและอุปกรณ์ตรวจรู้ในงานหุ่นยนต์ ระบบขับเคลื่อนด้วยมอเตอร์ไฟฟ้า ไฮดรอลิกส์ นิวแมติกส์ การควบคุมการเคลื่อนที่วิถีและการวางท่าทางการทำงาน การโปรแกรมและจำลองการทำงานของหุ่นยนต์อุตสาหกรรม การเชื่อมต่อหุ่นยนต์เข้ากับระบบควบคุมอัตโนมัติ การประยุกต์ใช้ปัญญาประดิษฐ์ในระบบหุ่นยนต์เพื่อการคัดแยก การหยิบจับวาง การแพ็คสินค้าในกระบวนการผลิตและคลังสินค้าอัจฉริยะ มาตรฐานความปลอดภัยในการปฏิบัติงานร่วมกับหุ่นยนต์" },
-  { c: "EN-135-128", s: "เพิ่มประสิทธิภาพผลิต AI", t: "การเพิ่มประสิทธิภาพการผลิตด้วยปัญญาประดิษฐ์", e: "Manufacturing Optimization with AI", cr: "3(2-2-5)", g: "elec", tr: 2, p: [6, 2],
-    d: "แนวคิดการจัดการการผลิตและการเพิ่มผลผลิตในโรงงานอุตสาหกรรม การระบุปัญหาและคอขวดในกระบวนการผลิต การเก็บรวบรวมข้อมูลสายการผลิตเพื่อการวิเคราะห์ การประยุกต์ใช้ปัญญาประดิษฐ์และการเรียนรู้ของเครื่องเพื่อหาสภาวะที่เหมาะสมที่สุดในกระบวนการผลิต การวางแผนและจัดตารางการผลิตด้วยปัญญาประดิษฐ์ การใช้ตัวแบบจำลองและการจำลองเพื่อเปรียบเทียบผลลัพธ์ การลดของเสียและการปรับปรุงคุณภาพอย่างต่อเนื่อง การเชื่อมต่อกับระบบอีอาร์พีเพื่อการผลิตอัจฉริยะ" },
+  { c: "EN-135-127", s: "Motion/Cobot Cell", t: "การควบคุมการเคลื่อนที่และวิศวกรรมเซลล์หุ่นยนต์ร่วมปฏิบัติงาน", e: "Motion Control and Collaborative Robot Cell Engineering", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 2, 4], h: ["EN-132-106"], w: ["EN-132-109"],
+    d: "การเลือกและกำหนดขนาดมอเตอร์ เซอร์โวมอเตอร์ สเต็ปเปอร์มอเตอร์ ตัวขับ และระบบส่งกำลัง การควบคุมตำแหน่ง ความเร็ว แรงบิด และการเคลื่อนที่หลายแกน การสร้างเส้นทางและโปรไฟล์การเคลื่อนที่ การปรับตั้งระบบเซอร์โว การประสานการทำงานกับตัวควบคุมแบบโปรแกรมได้ เครือข่ายอุตสาหกรรม และระบบวิสัยทัศน์ หลักการและสมรรถนะของหุ่นยนต์ร่วมปฏิบัติงาน การเลือกอุปกรณ์ปลายแขน การออกแบบผังและลำดับการทำงานของเซลล์หุ่นยนต์ การโปรแกรม การจำลอง และการทดสอบเสมือนจริง การประยุกต์ปัญญาประดิษฐ์สำหรับการตรวจรู้และการหยิบจับ การประเมินความเสี่ยง ขีดจำกัดแรงและกำลัง ระยะปลอดภัย อินเตอร์ล็อก การหยุดฉุกเฉิน การบูรณาการและการทดสอบการยอมรับ" },
+  { c: "EN-135-128", s: "Lean/AI Process", t: "การปรับปรุงกระบวนการด้วยลีนและปัญญาประดิษฐ์", e: "Lean and AI-Enabled Process Improvement", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 2, 6], h: ["EN-132-105"], w: ["EN-132-102"],
+    d: "หลักการลีนและซิกซ์ซิกมา การกำหนดคุณค่าจากมุมมองผู้ใช้และการทำแผนที่สายธารคุณค่า การจำแนกและลดความสูญเปล่า การไหล การดึง และการปรับปรุงงานมาตรฐาน กระบวนการดีเอ็มเอไอซี การกำหนดปัญหาและตัวชี้วัด การตรวจสอบคุณภาพข้อมูล การวิเคราะห์ประสิทธิผลโดยรวมของเครื่องจักร เวลารอบงาน คอขวด ผลได้ ของเสีย และการหยุดเครื่อง การวิเคราะห์ระบบการวัด การควบคุมกระบวนการเชิงสถิติ ความสามารถกระบวนการ การออกแบบการทดลอง การวิเคราะห์สาเหตุที่แท้จริง และเอฟเอ็มอีเอ การใช้การวิเคราะห์ข้อมูล การเรียนรู้ของเครื่อง และปัญญาประดิษฐ์เพื่อพยากรณ์คุณภาพและจัดลำดับโอกาสปรับปรุง การทดลองมาตรการแก้ไข และการประเมินผลก่อน–หลังด้านคุณภาพ ต้นทุน การส่งมอบ ความปลอดภัย พลังงาน ของเสีย และคาร์บอน" },
   { c: "EN-135-129", s: "CV ควบคุมคุณภาพ", t: "วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม", e: "Computer Vision for Industrial Quality Control", cr: "3(2-2-5)", g: "elec", tr: 2, p: [2, 6],
     d: "หลักการของระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและเลือกใช้เลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การบูรณาการวิสัยทัศน์คอมพิวเตอร์กับการเรียนรู้เชิงลึกเพื่อการจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงานและการตรวจสอบความถูกต้องของการประกอบ การเชื่อมต่อระบบวิสัยทัศน์คอมพิวเตอร์กับหุ่นยนต์และระบบคัดแยกอัตโนมัติ การวิเคราะห์ข้อมูลภาพเพื่อการปรับปรุงกระบวนการผลิตแบบทันท่วงที" },
   { c: "EN-135-130", s: "พลังงานอัจฉริยะโรงงาน", t: "การจัดการพลังงานอัจฉริยะในโรงงานอุตสาหกรรม", e: "Smart Energy Management in Industrial Plants", cr: "3(2-2-5)", g: "elec", tr: 2, p: [6, 2, 4],
@@ -322,12 +327,12 @@ const RAW = [
   /* ========= 2.4 เลือกชีพ — แขนงที่ 3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร (EN-135-131..145) ========= */
   { c: "EN-135-131", s: "Advanced Data Eng", t: "วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล", e: "Advanced Data Engineering and Data Pipelines", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 6],
     d: "สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแส การประมวลผลแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บรวบรวมข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การจัดเรียงข้อมูล การสร้างท่อข้อมูลแบบเวลาจริงสำหรับระบบปัญญาประดิษฐ์ การบูรณาการข้อมูลจากแหล่งข้อมูลหลากหลาย การติดตามและบริหารจัดการท่อข้อมูลในสภาพแวดล้อมการทำงานจริง การประยุกต์ใช้วิศวกรรมข้อมูลขั้นสูงในการสร้างระบบข้อมูลเพื่อการประยุกต์ใช้ในอุตสาหกรรม" },
-  { c: "EN-135-132", s: "Generative AI", t: "ปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับการประยุกต์ใช้งาน", e: "Generative Artificial Intelligence for Applications", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 7, 4],
-    d: "หลักการและสถาปัตยกรรมของปัญญาประดิษฐ์เชิงสร้างสรรค์และตัวแบบภาษาขนาดใหญ่ ประเภทของปัญญาประดิษฐ์เชิงสร้างสรรค์ การสร้างข้อความ การสร้างภาพ และปัญญาประดิษฐ์แบบหลายรูปแบบ การใช้งานส่วนต่อประสานโปรแกรมประยุกต์ของตัวแบบภาษาขนาดใหญ่ การออกแบบวิศวกรรมคำสั่งและการหาค่าคำสั่งที่เหมาะที่สุด การปรับจูนตัวแบบปัญญาประดิษฐ์เชิงสร้างสรรค์สำหรับงานเฉพาะทาง การสร้างระบบค้นหาและตอบคำถามจากฐานความรู้ การพัฒนาผู้ช่วยเสมือนด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์ การบูรณาการกับระบบธุรกิจ การประยุกต์ใช้ปัญญาประดิษฐ์เชิงสร้างสรรค์ในการสร้างนวัตกรรม" },
-  { c: "EN-135-133", s: "AI SW Testing/QA", t: "การทดสอบและการประกันคุณภาพซอฟต์แวร์ปัญญาประดิษฐ์", e: "Testing and Quality Assurance for AI Software", cr: "3(2-2-5)", g: "elec", tr: 3, p: [6, 2, 4],
-    d: "หลักการและกระบวนการทดสอบซอฟต์แวร์ปัญญาประดิษฐ์ ประเภทของการทดสอบ การทดสอบระดับหน่วย การทดสอบการรวมระบบ การทดสอบระบบ และการทดสอบการยอมรับ การทดสอบตัวแบบการเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก การประเมินความลำเอียงและความเป็นธรรมของตัวแบบ การทดสอบประสิทธิภาพและความทนทานของระบบภายใต้สภาวะต่าง ๆ การทดสอบความปลอดภัยและความมั่นคง การประกันคุณภาพซอฟต์แวร์ด้วยมาตรฐานสากล การสร้างชุดข้อมูลทดสอบและเกณฑ์มาตรฐาน การใช้เครื่องมือทดสอบอัตโนมัติ การจัดทำเอกสารและรายงานผล" },
-  { c: "EN-135-134", s: "Cloud Microservices", t: "สถาปัตยกรรมไมโครเซอร์วิสบนระบบคลาวด์", e: "Cloud-Based Microservices Architecture", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 7],
-    d: "หลักการและแนวคิดของสถาปัตยกรรมบริการขนาดเล็กสำหรับระบบปัญญาประดิษฐ์ การเปรียบเทียบสถาปัตยกรรมแบบรวมศูนย์และแบบกระจาย การออกแบบและพัฒนาบริการขนาดเล็ก การจัดการและจัดเรียงที่เก็บบรรจุซอฟต์แวร์ การออกแบบช่องทางสื่อสารระหว่างบริการ การจัดการการกำหนดค่าและข้อมูลความลับในระบบคลาวด์ การประมวลผลแบบไร้เครื่องแม่ข่าย การออกแบบระบบที่มีความสามารถในการขยายและความพร้อมใช้งานสูง การติดตามและบริหารจัดการระบบ การรักษาความปลอดภัยในสถาปัตยกรรมบริการขนาดเล็ก การประยุกต์ใช้สถาปัตยกรรมระบบคลาวด์ในการพัฒนาระบบปัญญาประดิษฐ์" },
+  { c: "EN-135-132", s: "Advanced LLM", t: "ตัวแบบภาษาขนาดใหญ่ขั้นสูง", e: "Advanced Large Language Models", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 6, 7], h: ["EN-132-108"], w: ["EN-131-106"],
+    d: "สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมและกำกับคุณภาพชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่ง การปรับตัวแบบแบบประหยัดพารามิเตอร์และโลรา การบีบอัดและลดความละเอียดตัวแบบ การปรับตัวแบบหลายรูปแบบ การประเมินความถูกต้อง การให้เหตุผล ความเที่ยงตรงต่อข้อเท็จจริง ความเป็นธรรม และความทนทาน การออกแบบเกณฑ์มาตรฐานและการทดลองเปรียบเทียบ การเพิ่มประสิทธิภาพการอนุมานด้านความเร็ว หน่วยความจำ ต้นทุน และพลังงาน การให้บริการตัวแบบในระบบจริง การติดตามการเสื่อมของสมรรถนะ และการจัดทำเอกสารตัวแบบ" },
+  { c: "EN-135-133", s: "AI Reliability/Safety", t: "ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์", e: "AI Reliability and Safety", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 4, 6], h: ["EN-132-107"], w: ["EN-131-105"],
+    d: "วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลปกติ ข้อมูลนอกการแจกแจง และกรณีขอบ การวัดความไม่แน่นอน การสอบเทียบความเชื่อมั่น ความทนทานต่อสัญญาณรบกวนและการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม การทดสอบข้อมูลเท็จของตัวแบบเชิงสร้างสรรค์ การทดสอบเชิงรุกและกลไกป้องกัน การวิเคราะห์อันตรายและจัดทำกรณีความปลอดภัย การติดตามการเลื่อนของข้อมูลและตัวแบบ การจัดการเหตุการณ์ การย้อนกลับรุ่น และการจัดทำบัตรตัวแบบกับหลักฐานการประกันคุณภาพ" },
+  { c: "EN-135-134", s: "Enterprise AI Arch", t: "สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร", e: "Enterprise AI Architecture", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 4, 7], h: ["EN-132-107"], w: ["EN-131-105"],
+    d: "การออกแบบสถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร การแบ่งขอบเขตโดเมนและบริการ สถาปัตยกรรมขับเคลื่อนด้วยเหตุการณ์ ส่วนต่อประสานและการจัดการเอพีไอ การบูรณาการกับระบบวางแผนทรัพยากรองค์กร ระบบบริหารลูกค้าสัมพันธ์ ระบบข้อมูล และกระบวนการทำงานเดิม การจัดการอัตลักษณ์ สิทธิ์ ข้อมูลลับ และสถาปัตยกรรมแบบไม่ไว้วางใจโดยปริยาย การออกแบบระบบหลายผู้เช่า ความสามารถในการขยาย ความพร้อมใช้งานสูง การกู้คืนจากภัยพิบัติ และความต่อเนื่องทางธุรกิจ การสังเกตการณ์ระบบ การบริหารต้นทุนคลาวด์ การวิเคราะห์ข้อแลกเปลี่ยน และการจัดทำแผนภาพกับข้อกำหนดการตัดสินใจทางสถาปัตยกรรม" },
   { c: "EN-135-135", s: "UX/UI ระบบอัจฉริยะ", t: "การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ", e: "UX/UI Design for Intelligent Systems", cr: "3(3-0-6)", g: "elec", tr: 3, p: [3, 2],
     d: "หลักการและกระบวนการออกแบบประสบการณ์ผู้ใช้และส่วนต่อประสานกับผู้ใช้สำหรับระบบปัญญาประดิษฐ์ การวิจัยและวิเคราะห์ความต้องการผู้ใช้ การคิดเชิงออกแบบ การออกแบบโครงร่างและต้นแบบ การออกแบบแผงควบคุมข้อมูลสำหรับการแสดงผล หลักการปัญญาประดิษฐ์ที่อธิบายได้สำหรับการออกแบบส่วนต่อประสานที่โปร่งใสและเข้าใจได้ การทดสอบความสามารถในการใช้งานและการประเมินประสบการณ์ผู้ใช้ การออกแบบที่ครอบคลุม การประยุกต์ใช้การออกแบบประสบการณ์ผู้ใช้สำหรับแอปพลิเคชันปัญญาประดิษฐ์เชิงพาณิชย์" },
   { c: "EN-135-136", s: "AI การแพทย์", t: "ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ", e: "Artificial Intelligence in Medical and Healthcare", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 4, 6],
@@ -338,44 +343,52 @@ const RAW = [
     d: "หลักการของเทคโนโลยีทางการเงินและนวัตกรรมบริการทางการเงิน การประยุกต์ใช้ปัญญาประดิษฐ์ในอุตสาหกรรมการเงินและการธนาคาร ระบบการชำระเงินอิเล็กทรอนิกส์และเทคโนโลยีบล็อกเชน การวิเคราะห์ความเสี่ยงด้านสินเชื่อด้วยการเรียนรู้ของเครื่อง การตรวจจับการทุจริตทางการเงินด้วยปัญญาประดิษฐ์ ระบบการลงทุนอัตโนมัติและการให้คำปรึกษาทางการเงินด้วยหุ่นยนต์ การวิเคราะห์พฤติกรรมผู้บริโภคและลูกค้ารายบุคคล การพัฒนาตัวแบบปัญญาประดิษฐ์สำหรับการประเมินมูลค่าสินทรัพย์ กฎระเบียบและนโยบายด้านเทคโนโลยีทางการเงิน" },
   { c: "EN-135-139", s: "วิเคราะห์คาดการณ์การเงิน", t: "การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน", e: "Predictive Data Analysis in Finance", cr: "3(2-2-5)", g: "elec", tr: 3, p: [6, 2],
     d: "เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างตัวแบบพยากรณ์ราคาหุ้นและสินทรัพย์ทางการเงินด้วยการเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ที่มีผลต่อตลาด การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ การประยุกต์ใช้อัลกอริทึมการซื้อขายความถี่สูง การสร้างและทดสอบระบบเทรดอัตโนมัติ การแปลผลและการแสดงภาพข้อมูลทางการเงินเชิงลึกเพื่อการตัดสินใจทางธุรกิจ" },
-  { c: "EN-135-140", s: "นวัตกรรม/ผู้ประกอบการ AI", t: "นวัตกรรมและการเป็นผู้ประกอบการด้านปัญญาประดิษฐ์", e: "AI Innovation and Entrepreneurship", cr: "3(2-2-5)", g: "elec", tr: 3, p: [7, 2, 3],
-    d: "หลักการและกระบวนการสร้างนวัตกรรมปัญญาประดิษฐ์ การค้นหาโอกาสและการประเมินความเป็นไปได้ทางธุรกิจสำหรับเทคโนโลยีปัญญาประดิษฐ์ การสร้างรูปแบบธุรกิจนวัตกรรมและผืนผ้าใบรูปแบบธุรกิจ การบริหารจัดการวิสาหกิจเริ่มต้นด้านปัญญาประดิษฐ์ การสร้างผลิตภัณฑ์ต้นแบบที่ใช้งานได้จริงเพื่อทดสอบตลาด การระดมทุนและการนำเสนอแผนธุรกิจต่อนักลงทุน การจัดการทรัพย์สินทางปัญญาสำหรับนวัตกรรมซอฟต์แวร์ กรณีศึกษาความสำเร็จและความล้มเหลวของธุรกิจด้านปัญญาประดิษฐ์ทั้งในและต่างประเทศ" },
+  { c: "EN-135-140", s: "AI Venture", t: "การสร้างธุรกิจปัญญาประดิษฐ์", e: "AI Venture Creation", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 3, 7], h: ["EN-132-101"],
+    d: "การต่อยอดต้นแบบปัญญาประดิษฐ์สู่ธุรกิจ การตรวจสอบตลาดและความพร้อมของเทคโนโลยี การกำหนดรูปแบบรายได้ ราคา เศรษฐศาสตร์ต่อหน่วย และต้นทุนการให้บริการตัวแบบ กลยุทธ์เข้าสู่ตลาด การขายระหว่างธุรกิจ การจัดซื้อจัดจ้าง และการบริหารโครงการนำร่อง การจัดการทรัพย์สินทางปัญญา การอนุญาตใช้สิทธิ์ ข้อมูล และข้อตกลงระดับบริการ การวางแผนการปฏิบัติการ ความเสี่ยง และการขยายธุรกิจ การจัดทำประมาณการทางการเงิน การระดมทุน และการนำเสนอแก่นักลงทุนหรือพันธมิตร นักศึกษาพัฒนาและทดสอบแผนพาณิชย์จากผลิตภัณฑ์ปัญญาประดิษฐ์กับผู้ใช้หรือสถานประกอบการจริง" },
   { c: "EN-135-141", s: "จัดการโครงการซอฟต์แวร์", t: "การจัดการโครงการซอฟต์แวร์อัจฉริยะ", e: "Intelligent Software Project Management", cr: "3(3-0-6)", g: "elec", tr: 3, p: [7, 5, 3],
     d: "หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูลและปัญญาประดิษฐ์ การประเมินความเสี่ยงและระยะเวลาการทำงานของโครงการพัฒนาตัวแบบ การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง การบริหารความคาดหวังของผู้มีส่วนได้ส่วนเสีย การใช้ปัญญาประดิษฐ์เพื่อช่วยในการจัดการและติดตามความคืบหน้าของโครงการ การควบคุมคุณภาพและการส่งมอบระบบอย่างต่อเนื่อง การวัดผลความสำเร็จของโครงการปัญญาประดิษฐ์" },
   { c: "EN-135-142", s: "ธุรกิจ/ตลาดดิจิทัล AI", t: "การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์", e: "Business Development and Digital Marketing with AI", cr: "3(3-0-6)", g: "elec", tr: 3, p: [7, 6, 3],
     d: "แนวคิดการพัฒนาธุรกิจดิจิทัลโดยใช้ปัญญาประดิษฐ์เป็นฐาน การสร้างกลยุทธ์การตลาดดิจิทัลที่ขับเคลื่อนด้วยข้อมูล การวิเคราะห์และแบ่งกลุ่มลูกค้าเป้าหมายด้วยการเรียนรู้ของเครื่อง การสร้างเนื้อหาโฆษณาและการสื่อสารการตลาดอัตโนมัติด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์ ระบบแนะนำสินค้าและบริการแบบเฉพาะบุคคล การวิเคราะห์ประสิทธิผลของแคมเปญการตลาดดิจิทัล การประยุกต์ใช้แชตบอตสำหรับการบริการลูกค้าและการขายเชิงรุก การเพิ่มประสิทธิภาพอัตราการตอบรับด้วยเทคโนโลยีอัจฉริยะ" },
-  { c: "EN-135-143", s: "ออกแบบผลิตภัณฑ์ AI", t: "การออกแบบและพัฒนาผลิตภัณฑ์ปัญญาประดิษฐ์", e: "AI Product Design and Development", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 7, 3],
-    d: "หลักการออกแบบและพัฒนาผลิตภัณฑ์ปัญญาประดิษฐ์ที่ตอบสนองความต้องการของผู้ใช้ การบูรณาการหลักการยศาสตร์และพฤติกรรมศาสตร์เข้ากับการพัฒนาเทคโนโลยีอัจฉริยะ กระบวนการคิดเชิงออกแบบสำหรับการสร้างฟังก์ชันการทำงานใหม่ การสร้างปฏิสัมพันธ์ระหว่างมนุษย์และระบบปัญญาประดิษฐ์ การออกแบบอุปกรณ์ฮาร์ดแวร์อัจฉริยะที่เชื่อมต่อกับระบบคลาวด์ การจัดการวงจรชีวิตผลิตภัณฑ์ การทดสอบความพึงพอใจของผลิตภัณฑ์ในสภาวะตลาดจริง การปรับปรุงและต่อยอดคุณสมบัติของผลิตภัณฑ์ปัญญาประดิษฐ์อย่างต่อเนื่อง" },
+  { c: "EN-135-143", s: "AI Product Mgmt", t: "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์", e: "AI Product Management", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 3, 5, 7], h: ["EN-132-101"], w: ["EN-132-107"],
+    d: "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ตลอดวงจรชีวิต การกำหนดวิสัยทัศน์ กลุ่มผู้ใช้ คุณค่าที่เสนอ และผลลัพธ์ทางธุรกิจ การจัดทำแผนที่เส้นทางผลิตภัณฑ์ รายการงาน และเกณฑ์จัดลำดับความสำคัญ การกำหนดตัวชี้วัดผลิตภัณฑ์ ตัวชี้วัดสมรรถนะตัวแบบ และข้อจำกัดด้านความเสี่ยง การออกแบบปฏิสัมพันธ์ระหว่างมนุษย์กับปัญญาประดิษฐ์ การทดลองแบบเอ/บี การวิเคราะห์การใช้งาน การยอมรับ และผลกระทบ การจัดการข้อมูลย้อนกลับ การเลื่อนของตัวแบบ ต้นทุน และการเปลี่ยนแปลงผลิตภัณฑ์ การประสานงานระหว่างผู้ใช้ ธุรกิจ ข้อมูล วิศวกรรม และฝ่ายกำกับดูแล ตลอดจนการตัดสินใจขยาย ปรับ หรือยุติผลิตภัณฑ์จากหลักฐาน" },
   { c: "EN-135-144", s: "VR/AR + AI", t: "เทคโนโลยีโลกเสมือนจริงและปัญญาประดิษฐ์", e: "Virtual Reality Technology and Artificial Intelligence", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 7],
     d: "เทคโนโลยีโลกเสมือนจริง ความเป็นจริงเสริม และความเป็นจริงผสม การบูรณาการปัญญาประดิษฐ์กับการสร้างสภาพแวดล้อมจำลอง การประมวลผลและสร้างเนื้อหาสามมิติด้วยปัญญาประดิษฐ์เชิงสร้างสรรค์ การโต้ตอบกับวัตถุเสมือนด้วยคอมพิวเตอร์วิทัศน์และการประมวลผลภาษาธรรมชาติ การพัฒนาแอปพลิเคชันโลกเสมือนสำหรับการจำลองทางการแพทย์ การฝึกอบรมอุตสาหกรรม และการตลาดดิจิทัล อุปกรณ์สวมใส่สำหรับการรับรู้และตอบสนองในโลกเสมือน การวิเคราะห์พฤติกรรมผู้ใช้ในสภาพแวดล้อมดิจิทัล" },
-  { c: "EN-135-145", s: "จริยธรรม/กฎหมาย AI", t: "จริยธรรมและกฎหมายสำหรับเทคโนโลยีปัญญาประดิษฐ์", e: "Ethics and Law for Artificial Intelligence Technology", cr: "3(3-0-6)", g: "elec", tr: 3, p: [4, 3],
-    d: "แนวคิดและหลักจริยธรรมที่เกี่ยวข้องกับการพัฒนาและใช้งานปัญญาประดิษฐ์ ความเป็นส่วนตัวและการปกป้องข้อมูลส่วนบุคคลตามกฎหมาย ความรับผิดชอบต่อความเสียหายที่เกิดจากระบบอัตโนมัติ กฎหมายลิขสิทธิ์และทรัพย์สินทางปัญญาสำหรับผลงานที่สร้างโดยปัญญาประดิษฐ์ ความตระหนักรู้ด้านอคติและความโปร่งใสของขั้นตอนวิธี การตรวจสอบย้อนกลับของการตัดสินใจ การกำกับดูแลระบบปัญญาประดิษฐ์ในอุตสาหกรรมการแพทย์ การเงิน และบริการสาธารณะ มาตรฐานและข้อกำหนดสากลเกี่ยวกับการใช้ปัญญาประดิษฐ์อย่างยั่งยืน" }
+  { c: "EN-135-145", s: "AI Governance/Risk", t: "ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์", e: "AI Governance and Risk", cr: "3(2-2-5)", g: "elec", tr: 3, p: [3, 4, 7], h: ["EN-131-108"], w: ["EN-132-107"],
+    d: "กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว ความเป็นธรรม ความปลอดภัย และสิ่งแวดล้อม การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูล ทรัพย์สินทางปัญญา กฎหมายเฉพาะภาค และมาตรฐานที่เกี่ยวข้อง การจัดการความเสี่ยงจากผู้ให้บริการและตัวแบบภายนอก การจัดทำทะเบียนความเสี่ยง เอกสารข้อมูล บัตรตัวแบบ บันทึกการตัดสินใจ และหลักฐานสำหรับการตรวจประเมิน การติดตามหลังนำใช้ การรายงานเหตุการณ์ มาตรการแก้ไข และการฝึกปฏิบัติทบทวนธรรมาภิบาลจากกรณีศึกษาระดับองค์กร" }
 ];
 
 // เติมคำอธิบายภาษาอังกฤษแบบมาตรฐานให้วิชาที่เอกสารใช้รูปแบบมาตรฐาน
-export const COURSES = RAW.map(c => ({
-  ...c,
-  dEn: c.dEn || DEN[c.c] || boiler(c.e, CTX[c.ctx || (c.tr ? `e${c.tr}` : c.g)] || CTX.eng)
-}));
+export const COURSES = RAW.map(c => {
+  const revision = COURSE_REVISION[c.c];
+  const cloRevision = CLO_REVISION[c.c];
+  return {
+    ...c,
+    ...revision,
+    p: cloRevision
+      ? [...new Set(cloRevision.clos.flatMap(clo => clo.plo.map(([plo]) => plo)))].sort((a, b) => a - b)
+      : c.p,
+    dEn: revision?.dEn || c.dEn || DEN[c.c] || boiler(c.e, CTX[c.ctx || (c.tr ? `e${c.tr}` : c.g)] || CTX.eng)
+  };
+});
 
 export const CORE = COURSES.filter(c => c.sem && c.g !== "ge" && c.g !== "elec");
 
-/* ยอดหน่วยกิตรายภาค ตรงตาม 11_Year_Level_Course_Sequence_and_YLO.md (ปี 1=35 · 2=37 · 3=36 · 4=22) */
-export const SEM_TOTALS = { 1: 16, 2: 19, 3: 19, 4: 18, 5: 19, 6: 17, 7: 16, 8: 6 };
+/* แผนข้อเสนอ 133 นก.: ปี 1–3 กระจายใกล้เคียงกัน และปี 4 เหลือ 15+6 สำหรับ Capstone/สหกิจ */
+export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 18, 5: 19, 6: 18, 7: 15, 8: 6 };
 export const SEM_TITLE = {
-  1: "Engineering and AI Foundations", 2: "Quantitative and Hardware Foundations",
-  3: "Intelligent Components", 4: "AI Platform and Deployment Foundations",
-  5: "Domain Integration I", 6: "Domain Integration II",
-  7: "Capstone and Professional Preparation", 8: "Cooperative Education"
+  1: "Engineering, Programming and Data Foundations", 2: "Physical, Electrical and Quantitative Foundations",
+  3: "AI, Data and Sensing Foundations", 4: "AI Platforms and Decision Foundations",
+  5: "Domain Systems Integration", 6: "Advanced Intelligent Systems and Project Preparation",
+  7: "Capstone, Leadership and Professional Electives", 8: "Cooperative Education"
 };
 export const SEM_EXTRA = {
-  5: [{ s: "วิชาเลือกชีพ 1", k: 3 }, { s: "วิชาเลือกชีพ 2", k: 3 }],
-  6: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 }],
+  5: [{ s: "วิชาเลือกชีพ 1", k: 3 }],
+  6: [{ s: "วิชาเลือกชีพ 2", k: 3 }, { s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 }],
   7: [{ s: "วิชาเลือกชีพ 5", k: 3 }, { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
 };
-export const YEAR_CREDITS = { 1: 35, 2: 37, 3: 36, 4: 22 };
+export const YEAR_CREDITS = { 1: 38, 2: 37, 3: 37, 4: 21 };
 
-/* ---------------- โครงสร้างหลักสูตร 130 หน่วยกิต ---------------- */
+/* ---------------- โครงสร้างข้อเสนอ 133 หน่วยกิต (รอยืนยันการลด/จัดสรรใหม่ 3 หน่วยกิต) ---------------- */
 export const STRUCTURE = [
   { id: "ge", no: "1", name: "หมวดวิชาศึกษาทั่วไป", code: "GE-010 / GE-020", credits: 24, n: 8, g: "ge",
     note: "บังคับ 6 วิชา 18 นก. · เลือก 2 วิชา 6 นก.",
@@ -385,8 +398,8 @@ export const STRUCTURE = [
     sub: [{ name: "พื้นฐานทางวิศวกรรม", credits: 21 }, { name: "ปฏิบัติการเชิงบูรณาการ I–III", credits: 3 }] },
   { id: "ai", no: "2.2", name: "กลุ่มวิชาแกนปัญญาประดิษฐ์และระบบอัจฉริยะ", code: "EN-131", credits: 24, n: 8, g: "ai",
     note: "แกน AI บังคับทุกแขนง 8 วิชา" },
-  { id: "track", no: "2.3", name: "กลุ่มวิชาชีพบังคับ", code: "EN-132", credits: 24, n: 8, g: "track",
-    note: "วิชาบูรณาการโดเมนที่ทุกแขนงเรียนร่วมกัน" },
+  { id: "track", no: "2.3", name: "กลุ่มวิชาแกนร่วมของสาม Track", code: "EN-132", credits: 27, n: 9, g: "track",
+    note: "Core Track ร่วม 9 วิชา; กระจายจากพื้นฐานระบบตรวจวัดสู่การบูรณาการโดเมน" },
   { id: "elec", no: "2.4", name: "กลุ่มวิชาชีพเลือก", code: "EN-135-1xx", credits: 15, n: 5, g: "elec",
     note: "เลือก 5 วิชาจาก pool 45 วิชา (3 แขนง × 15)" },
   { id: "proj", no: "2.5", name: "กลุ่มวิชาโครงงานและสัมมนา", code: "EN-134", credits: 6, n: 4, g: "proj",
@@ -418,7 +431,7 @@ export const SUBGROUPS = {
     ]
   },
   ai: { by: "sem", note: "รายวิชาแกนบังคับทุกแขนง จัดกลุ่มตามภาคการศึกษาในแผนการเรียน" },
-  track: { by: "sem", note: "รายวิชาบูรณาการโดเมนที่ทุกแขนงเรียนร่วมกัน จัดกลุ่มตามภาคการศึกษาในแผนการเรียน" },
+  track: { by: "sem", note: "Core Track ร่วม 9 วิชา เริ่มจาก Sensing/Actuation และ Product/Decision Foundations ก่อนบูรณาการระบบโดเมน" },
   elec: { by: "track", note: "pool รวม 45 วิชา แยกตามแขนงวิชา นักศึกษาเลือกเรียนรวม 5 วิชา 15 หน่วยกิต" },
   proj: {
     note: "ไล่ลำดับจากการสืบค้นและสัมมนา → เขียนข้อเสนอโครงงาน → ดำเนินโครงงานจริง",
@@ -461,13 +474,23 @@ export function subgroupsOf(gid) {
   }
   if (spec.by === "sem") {
     const list = COURSES.filter(c => c.g === gid && c.sem);
-    return [...new Set(list.map(c => c.sem))].sort((a, b) => a - b).map(s => {
+    const groups = [...new Set(list.map(c => c.sem))].sort((a, b) => a - b).map(s => {
       const courses = list.filter(c => c.sem === s);
       return {
         key: `sem${s}`, name: `ชั้นปีที่ ${courses[0].y} · ภาคการศึกษาที่ ${s}`, sub: SEM_TITLE[s],
         courses, credits: courses.reduce((a, c) => a + creditOf(c), 0), n: courses.length, sem: s
       };
     });
+    const pending = COURSES.filter(c => c.g === gid && c.pendingSemester);
+    if (pending.length) {
+      groups.push({
+        key: "pending", name: "รอยืนยันภาคการศึกษา",
+        sub: "รายวิชาใหม่ในโครงสร้างข้อเสนอ ยังไม่กำหนดลงใน baseline 8 ภาคเรียน",
+        courses: pending, credits: pending.reduce((a, c) => a + creditOf(c), 0),
+        n: pending.length, pending: true
+      });
+    }
+    return groups;
   }
   if (spec.by === "track") {
     return [1, 2, 3].map(tr => {
@@ -484,10 +507,12 @@ export function subgroupsOf(gid) {
 
 export const STRUCTURE_TOP = [
   { name: "หมวดวิชาศึกษาทั่วไป", credits: 24, ids: ["ge"] },
-  { name: "หมวดวิชาเฉพาะ", credits: 100, ids: ["eng", "ai", "track", "elec", "proj", "field"] },
+  { name: "หมวดวิชาเฉพาะ", credits: 103, ids: ["eng", "ai", "track", "elec", "proj", "field"] },
   { name: "หมวดวิชาเลือกเสรี", credits: 6, ids: ["free"] }
 ];
-export const TOTAL_CREDITS = 130;
+export const TOTAL_CREDITS = 133;
+export const APPROVED_BASELINE_CREDITS = 130;
+export const PENDING_PLAN_COURSES = COURSES.filter(c => c.pendingSemester);
 
 /* ---------------- รายละเอียด PLO 7 ข้อ (04_PLOs_7_OBE.md) ----------------
    ถ้อยคำ PLO ยกมาตามต้นฉบับ ซึ่งขึ้นต้นด้วยคำกริยาโดยตรง โดยมีประโยคนำร่วมกันคือ PLO_LEAD */
@@ -503,33 +528,33 @@ export const PLO_TIMEFRAME =
 
 export const PLO_DETAIL = {
   1: { title: "การแก้ปัญหาเชิงวิศวกรรม", en: "Engineering Problem Solving", so: "SO(1)",
-    text: "ระบุ วิเคราะห์ และแก้ปัญหาทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะที่ซับซ้อน โดยประยุกต์ใช้หลักการทางคณิตศาสตร์ วิทยาศาสตร์ และวิศวกรรมศาสตร์ เพื่อตอบสนองโจทย์ปัญหาจริงของภาคเกษตรและอุตสาหกรรมที่เกี่ยวข้อง",
+    text: "ระบุ วิเคราะห์ และแก้ปัญหาทางวิศวกรรมที่ซับซ้อน โดยประยุกต์ใช้หลักคณิตศาสตร์ วิทยาศาสตร์ วิศวกรรมศาสตร์ ปัญญาประดิษฐ์ และความรู้เฉพาะทาง เพื่อจัดการกับปัญหาจริงในบริบทของภาคการเกษตร อุตสาหกรรม หรือองค์กร",
     main: "ความรู้", side: "ทักษะ", level: "วิเคราะห์ (Analyze)", type: "Subject Specific",
     evidence: "การวิเคราะห์โจทย์ แบบจำลองทางวิศวกรรม การเปรียบเทียบทางเลือก และเหตุผลสนับสนุนแนวทางแก้ปัญหา" },
-  2: { title: "การออกแบบระบบภายใต้ข้อจำกัด", en: "System Design under Constraints", so: "SO(2)",
-    text: "ออกแบบและพัฒนาระบบปัญญาประดิษฐ์ ระบบอัตโนมัติ หรือซอฟต์แวร์อัจฉริยะ เพื่อตอบสนองความต้องการที่กำหนด โดยคำนึงถึงข้อจำกัดด้านเศรษฐกิจ สังคม และสิ่งแวดล้อม ตามแนวทางการพัฒนาอย่างยั่งยืน",
+  2: { title: "การออกแบบและบูรณาการระบบ", en: "System Design and Integration", so: "SO(2)",
+    text: "ออกแบบ พัฒนา และบูรณาการข้อมูล อุปกรณ์ตรวจวัด ปัญญาประดิษฐ์ ซอฟต์แวร์ และระบบควบคุมให้ตอบสนองความต้องการ โดยคำนึงถึงความปลอดภัย มาตรฐาน ความคุ้มค่า และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี (BCG)",
     main: "ทักษะ", side: "ความรู้และจริยธรรม", level: "สร้างสรรค์ (Create)", type: "Subject Specific",
     evidence: "ข้อกำหนดระบบ แบบสถาปัตยกรรม ต้นแบบ ผลการทดสอบ และการตรวจสอบข้อจำกัดของการออกแบบ" },
-  3: { title: "การสื่อสารเชิงวิชาชีพ", en: "Professional Communication", so: "SO(3)",
-    text: "สื่อสารข้อมูลเทคนิคด้านปัญญาประดิษฐ์และระบบอัจฉริยะที่ซับซ้อนในภาคอุตสาหกรรมและชุมชน ผ่านการเขียน การนำเสนอ การแสดงผลข้อมูลเชิงทัศนภาพ แผงควบคุมอัจฉริยะ และสื่อดิจิทัล",
+  3: { title: "สื่อสารเชิงวิชาชีพ", en: "Professional Communication", so: "SO(3)",
+    text: "สื่อสารข้อกำหนด แนวทางการออกแบบ ผลการวิเคราะห์ และคุณค่าของระบบปัญญาประดิษฐ์ผ่านรายงาน การนำเสนอ การแสดงผลข้อมูล และสื่อดิจิทัล ให้แก่ผู้รับสารทั้งด้านเทคนิคและบุคคลทั่วไป",
     main: "ทักษะ", side: "ลักษณะบุคคล", level: "ประยุกต์ใช้ (Apply)", type: "Generic",
     evidence: "รายงานภาษาไทยและภาษาอังกฤษ การนำเสนอ การตอบคำถาม และการสื่อสารกับวิศวกร ผู้บริหาร เกษตรกร หรือชุมชน" },
   4: { title: "จริยธรรมและความรับผิดชอบวิชาชีพ", en: "Ethics and Professional Responsibility", so: "SO(4)",
-    text: "ปฏิบัติงานบนพื้นฐานของจริยธรรมและความรับผิดชอบต่อวิชาชีพวิศวกรรม โดยคำนึงถึงผลกระทบของปัญญาประดิษฐ์ต่อเศรษฐกิจ สังคม และสิ่งแวดล้อม ภายใต้หลักจริยธรรม ธรรมาภิบาล กฎหมายคุ้มครองข้อมูลส่วนบุคคล และความมั่นคงปลอดภัยทางไซเบอร์",
+    text: "ปฏิบัติงานด้วยจริยธรรมและความรับผิดชอบต่อวิชาชีพ โดยคำนึงถึงกฎหมาย ธรรมาภิบาลปัญญาประดิษฐ์ ความมั่นคงปลอดภัย มาตรฐาน ความปลอดภัยของระบบ และผลกระทบต่อเศรษฐกิจ สังคม และสิ่งแวดล้อม",
     main: "จริยธรรม", side: "ลักษณะบุคคล", level: "ประเมินและตัดสินใจ (Evaluate)", type: "Generic",
     evidence: "การวิเคราะห์กรณีศึกษาจริยธรรม การประเมินความเสี่ยง แผนลดผลกระทบ และเหตุผลประกอบการตัดสินใจ",
     need: "ครอบคลุม N16 ด้านธรรมาภิบาล AI การปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล และความมั่นคงปลอดภัยไซเบอร์" },
-  5: { title: "การทำงานเป็นทีมและภาวะผู้นำ", en: "Teamwork and Leadership", so: "SO(5)",
-    text: "ปฏิบัติงานร่วมกับผู้อื่นหรือทีม ในบทบาทผู้นำและสมาชิกของทีมได้อย่างมีประสิทธิภาพ สร้างบรรยากาศการทำงานแบบมีส่วนร่วม กำหนดเป้าหมาย วางแผน และดำเนินงานในโครงงานเชิงสหวิทยาการเพื่อแก้ไขปัญหาจริงของภาคอุตสาหกรรมหรือชุมชนจนบรรลุเป้าหมาย",
+  5: { title: "ทำงานเป็นทีมและภาวะผู้นำ", en: "Teamwork and Leadership", so: "SO(5)",
+    text: "ปฏิบัติงานร่วมกับทีมสหวิทยาการได้อย่างมีประสิทธิภาพทั้งในบทบาทผู้นำและสมาชิก โดยสามารถกำหนดเป้าหมาย วางแผน แบ่งหน้าที่ บริหารความเสี่ยง จัดการข้อขัดแย้ง และส่งมอบผลงานที่ตอบสนองต่อการใช้งานจริง",
     main: "ลักษณะบุคคล", side: "ทักษะ", level: "จัดระบบและปฏิบัติ (Organize)", type: "Generic",
     evidence: "แผนงานทีม บันทึกการประชุม ผลงานตามบทบาท การประเมินโดยเพื่อนร่วมทีม และผลสำเร็จของโครงงาน",
     need: "ครอบคลุม N6 ด้านการเรียนรู้จากโจทย์จริงร่วมกับ Project-based Learning, CWIE และสหกิจศึกษา" },
-  6: { title: "การทดลองและวิเคราะห์ข้อมูล", en: "Experimentation and Data Analysis", so: "SO(6)",
-    text: "ออกแบบและดำเนินการทดลอง เก็บรวบรวม วิเคราะห์ และตีความหมายข้อมูลที่มีความซับซ้อน โดยใช้หลักสถิติและวิทยาการข้อมูล พร้อมทั้งใช้วิจารณญาณทางวิศวกรรมในการสรุปผลได้อย่างถูกต้องและน่าเชื่อถือ",
+  6: { title: "ทดลองและวิเคราะห์ข้อมูล", en: "Experimentation and Data Analysis", so: "SO(6)",
+    text: "ออกแบบและดำเนินการทดลอง เก็บรวบรวม วิเคราะห์ และตีความข้อมูลโดยใช้หลักสถิติ วิทยาการข้อมูล และวิจารณญาณทางวิศวกรรม เพื่อประเมินสมรรถนะ คุณภาพ ความน่าเชื่อถือ และความปลอดภัยของระบบ",
     main: "ทักษะ", side: "ความรู้", level: "ประเมิน (Evaluate)", type: "Subject Specific",
     evidence: "แผนการทดลอง ชุดข้อมูล กระบวนการวิเคราะห์ ผลการตรวจสอบความถูกต้อง การตีความข้อมูล และข้อสรุปเชิงวิศวกรรม" },
   7: { title: "การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ", en: "Lifelong Learning and Entrepreneurship", so: "SO(7)",
-    text: "แสวงหาและประยุกต์ใช้ความรู้ใหม่ด้วยตนเอง ผ่านกลยุทธ์การเรียนรู้ที่เหมาะสม เพื่อให้ก้าวทันต่อเทคโนโลยีอุบัติใหม่และแนวปฏิบัติการพัฒนาระบบปัญญาประดิษฐ์สมัยใหม่ พร้อมทั้งแสดงออกถึงทักษะและความเป็นผู้ประกอบการด้านนวัตกรรมและเทคโนโลยี",
+    text: "แสวงหา ประเมิน และประยุกต์ใช้ความรู้ เทคโนโลยี กฎหมาย และมาตรฐานใหม่ ๆ ด้วยตนเองอย่างต่อเนื่อง เพื่อพัฒนานวัตกรรม ผลิตภัณฑ์ หรือบริการที่สร้างคุณค่าทางเศรษฐกิจ สังคม และสิ่งแวดล้อม",
     main: "ลักษณะบุคคล", side: "ทักษะ", level: "จัดการตนเองและสร้างสรรค์ (Self-directed/Create)", type: "Generic",
     evidence: "แผนพัฒนาตนเอง Learning Portfolio การทบทวนแหล่งความรู้ ต้นแบบนวัตกรรม และการประเมินความเป็นไปได้" }
 };
@@ -537,10 +562,10 @@ export const PLO_DETAIL = {
 /* ความสัมพันธ์กับ PLO เดิม 5 ข้อ */
 export const PLO_LEGACY = [
   ["PLO1 ความรู้และการแก้ปัญหา", "PLO1 การแก้ปัญหาเชิงวิศวกรรม"],
-  ["PLO2 การออกแบบและพัฒนาระบบ", "PLO2 การออกแบบระบบภายใต้ข้อจำกัด"],
-  ["PLO3 ทดลอง วิเคราะห์ข้อมูล และสื่อสาร", "PLO6 การทดลองและวิเคราะห์ข้อมูล + PLO3 การสื่อสารเชิงวิชาชีพ"],
+  ["PLO2 การออกแบบและพัฒนาระบบ", "PLO2 การออกแบบและบูรณาการระบบ"],
+  ["PLO3 ทดลอง วิเคราะห์ข้อมูล และสื่อสาร", "PLO6 ทดลองและวิเคราะห์ข้อมูล + PLO3 สื่อสารเชิงวิชาชีพ"],
   ["PLO4 จริยธรรมและความรับผิดชอบ", "PLO4 จริยธรรมและความรับผิดชอบวิชาชีพ"],
-  ["PLO5 ทีม สื่อสาร เรียนรู้ตลอดชีวิต และผู้ประกอบการ", "PLO5 การทำงานเป็นทีม + PLO3 การสื่อสาร + PLO7 การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ"]
+  ["PLO5 ทีม สื่อสาร เรียนรู้ตลอดชีวิต และผู้ประกอบการ", "PLO5 ทำงานเป็นทีมและภาวะผู้นำ + PLO3 สื่อสารเชิงวิชาชีพ + PLO7 การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ"]
 ];
 
 export const PLO_SMART = [
@@ -624,7 +649,7 @@ export const SEQ_PRINCIPLES = [
 
 export const shortOf = code => (COURSES.find(x => x.c === code) || {}).s || code;
 
-/* ---------------- 17 อาชีพเป้าหมาย ---------------- */
+/* ---------------- 26 อาชีพเป้าหมายและอาชีพต่อยอด ---------------- */
 export const CAREER_STATUS = {
   M: { label: "Market Core — ตำแหน่งหลักในตลาดกว้าง", color: "#1f7d52" },
   S: { label: "Sector Critical — สำคัญในอุตสาหกรรมเฉพาะ", color: "#b8760f" },
@@ -638,12 +663,12 @@ export const TRACK_NAME = {
 
 export const CAREERS = [
   { id: "C01", track: 3, st: "M", th: "วิศวกรปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง", en: "AI/ML Engineer",
-    courses: ["EN-131-102", "EN-131-106", "EN-131-107", "EN-131-105", "EN-132-107", "EN-134-104"],
-    why: "พัฒนา ประเมิน นำขึ้นใช้งาน และติดตามแบบจำลอง AI/ML ตั้งแต่ข้อมูลจนถึงระบบ production",
+    courses: ["EN-131-106", "EN-131-105", "EN-132-107", "EN-135-132", "EN-135-133", "EN-134-104"],
+    why: "พัฒนา ปรับ ประเมิน และนำตัวแบบ AI/ML หรือ LLM ขึ้นใช้งาน โดยคำนึงถึงความแม่นยำ ความน่าเชื่อถือ ต้นทุน และการติดตามหลังนำใช้",
     kw: "AI Engineer · Machine Learning Engineer · Applied AI Engineer · ML Engineer" },
   { id: "C02", track: 0, st: "M", th: "วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์", en: "AI Application / Solutions Engineer",
-    courses: ["EN-132-101", "EN-132-107", "EN-132-108", "EN-134-104", "EN-135-402"],
-    why: "วิเคราะห์ความต้องการ ออกแบบสถาปัตยกรรม บูรณาการโมเดลและระบบ และส่งมอบโซลูชัน AI ในบริบทจริงของทุกแขนง",
+    courses: ["EN-132-101", "EN-132-107", "EN-132-108", "EN-135-134", "EN-134-104", "EN-135-402"],
+    why: "วิเคราะห์ความต้องการ ออกแบบสถาปัตยกรรมองค์กร บูรณาการโมเดล ข้อมูล API และระบบเดิม แล้วทดสอบและส่งมอบโซลูชัน AI",
     kw: "AI Solutions Engineer · AI Application Engineer · Implementation Engineer · Technical Consultant" },
   { id: "C03", track: 1, st: "S", th: "วิศวกรเกษตรอัจฉริยะและไอโอที", en: "Smart Agriculture and IoT Engineer",
     courses: ["EN-001-027", "EN-131-104", "EN-132-103", "EN-135-101", "EN-135-109", "EN-134-104"],
@@ -659,7 +684,7 @@ export const CAREERS = [
     kw: "Robotics Engineer · System Integration Engineer · Mechatronics Engineer" },
   { id: "C06", track: 3, st: "M", th: "วิศวกรซอฟต์แวร์และแอปพลิเคชันปัญญาประดิษฐ์", en: "AI Software and Application Engineer",
     courses: ["EN-132-107", "EN-132-108", "EN-135-132", "EN-135-133", "EN-135-134", "EN-134-104"],
-    why: "พัฒนาซอฟต์แวร์ API แอปพลิเคชัน และบริการ AI ที่ผ่านการทดสอบและพร้อมใช้งานระดับองค์กร",
+    why: "พัฒนา LLM ซอฟต์แวร์ API และบริการ AI ที่มีสถาปัตยกรรมระดับองค์กร ผ่านการประเมินความน่าเชื่อถือและพร้อมใช้งานจริง",
     kw: "AI Software Engineer · AI Application Developer · Backend AI Engineer · Generative AI Engineer" },
   { id: "C07", track: 3, st: "M", th: "วิศวกรข้อมูล", en: "Data Engineer",
     courses: ["EN-131-107", "EN-131-105", "EN-135-131", "EN-135-134"],
@@ -667,19 +692,19 @@ export const CAREERS = [
     kw: "Data Engineer · ETL Developer · Data Platform Engineer · Analytics Engineer" },
   { id: "C08", track: 3, st: "F", th: "นักออกแบบและสร้างนวัตกรรมด้านปัญญาประดิษฐ์", en: "AI Innovator",
     courses: ["EN-132-101", "EN-132-107", "EN-135-135", "EN-135-140", "EN-135-143", "EN-134-104"],
-    why: "ค้นหาโอกาส ออกแบบประสบการณ์ สร้างต้นแบบ และทดสอบคุณค่าของผลิตภัณฑ์หรือนวัตกรรม AI",
-    kw: "AI Innovator · AI Product Developer · AI Product Designer · Innovation Specialist" },
+    why: "ค้นหาโอกาส ออกแบบประสบการณ์ สร้างต้นแบบ จัดการผลิตภัณฑ์ และทดลองวัดการยอมรับกับคุณค่าของนวัตกรรม AI",
+    kw: "AI Innovator · AI Product Manager · AI Product Developer · Innovation Specialist" },
   { id: "C09", track: 3, st: "F", th: "ผู้ประกอบการด้านธุรกิจเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์", en: "Technology and AI Entrepreneur",
     courses: ["EN-001-021", "EN-132-101", "EN-135-140", "EN-135-142", "EN-135-143", "EN-134-104"],
-    why: "สร้างแบบจำลองธุรกิจ วางกลยุทธ์ผลิตภัณฑ์และตลาด และพัฒนากิจการเทคโนโลยีดิจิทัลและ AI",
+    why: "พัฒนาต้นแบบสู่ธุรกิจ กำหนดราคาและเศรษฐศาสตร์ต่อหน่วย วางกลยุทธ์เข้าสู่ตลาด ระดมทุน และขยายกิจการ AI",
     kw: "AI Entrepreneur · Tech Founder · AI Startup Founder · Digital Technology Entrepreneur" },
   { id: "C10", track: 0, st: "F", th: "นักวิจัยด้านปัญญาประดิษฐ์และระบบอัจฉริยะ", en: "AI and Intelligent Systems Researcher",
-    courses: ["EN-131-102", "EN-131-106", "EN-134-101", "EN-134-102", "EN-134-103", "EN-134-104"],
-    why: "ตั้งคำถามวิจัย ออกแบบการทดลอง วิเคราะห์ผล และสร้างองค์ความรู้หรือต้นแบบใหม่ด้าน AI และระบบอัจฉริยะ",
+    courses: ["EN-131-102", "EN-131-106", "EN-135-132", "EN-135-133", "EN-134-103", "EN-134-104"],
+    why: "ตั้งคำถามวิจัย ปรับตัวแบบ ออกแบบเกณฑ์มาตรฐานและการทดลองที่ทำซ้ำได้ วิเคราะห์ความน่าเชื่อถือ และสร้างองค์ความรู้ใหม่",
     kw: "AI Researcher · Machine Learning Researcher · Research Engineer · Intelligent Systems Researcher" },
   { id: "C11", track: 0, st: "S", th: "ข้าราชการ/พนักงานหน่วยงานของรัฐด้านเทคโนโลยีดิจิทัล", en: "Government Officer / Digital Technology Specialist",
     courses: ["EN-132-101", "EN-132-102", "EN-135-145", "EN-134-104", "EN-135-401", "EN-135-402"],
-    why: "วิเคราะห์ ออกแบบ จัดหา กำกับดูแล และประยุกต์ใช้ระบบดิจิทัลหรือ AI สำหรับบริการสาธารณะและภารกิจภาครัฐ",
+    why: "วิเคราะห์ ออกแบบ จัดหา และกำกับระบบ AI ด้วยการจำแนกความเสี่ยง ประเมินผลกระทบ และจัดทำหลักฐานตรวจสอบสำหรับบริการภาครัฐ",
     kw: "Digital Technology Specialist · IT Officer · Computer Technical Officer · Government Digital Service" },
   { id: "C12", track: 0, st: "M", th: "นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล", en: "Data Scientist / Data Analyst",
     courses: ["EN-001-022", "EN-131-102", "EN-131-106", "EN-131-107", "EN-135-131"],
@@ -704,5 +729,41 @@ export const CAREERS = [
   { id: "C17", track: 2, st: "F", th: "วิศวกรปัญญาประดิษฐ์อุตสาหกรรม", en: "AI Industrial Engineer",
     courses: ["EN-001-022", "EN-001-027", "EN-132-106", "EN-135-116", "EN-135-127", "EN-134-104"],
     why: "บูรณาการ AI ข้อมูลอุตสาหกรรม ระบบอัตโนมัติ และหลักวิศวกรรมอุตสาหการเพื่อปรับปรุงระบบผลิตแบบครบวงจร",
-    kw: "Industrial AI Engineer · AI Industrial Engineer · Industrial Data Scientist · Manufacturing AI Engineer" }
+    kw: "Industrial AI Engineer · AI Industrial Engineer · Industrial Data Scientist · Manufacturing AI Engineer" },
+  { id: "C18", track: 1, st: "S", th: "วิศวกรระบบตรวจวัดและควบคุมฟาร์มอัจฉริยะ", en: "Smart Farm Sensing and Control Engineer",
+    courses: ["EN-131-104", "EN-132-109", "EN-132-103", "EN-135-101", "EN-135-109", "EN-134-104"],
+    why: "ออกแบบ ติดตั้ง และทดสอบระบบตรวจวัด เครือข่ายเซนเซอร์ Edge IoT และการควบคุมน้ำหรือสภาพแวดล้อมในฟาร์ม",
+    kw: "Smart Farm Control Engineer · Farm IoT Engineer · Agricultural Instrumentation Engineer · Irrigation Control Engineer" },
+  { id: "C19", track: 1, st: "S", th: "วิศวกรระบบอัตโนมัติและหุ่นยนต์เพื่อการเกษตร", en: "Agricultural Automation and Robotics Engineer",
+    courses: ["EN-001-030", "EN-132-109", "EN-132-104", "EN-135-111", "EN-134-104"],
+    why: "พัฒนาหุ่นยนต์เคลื่อนที่ ระบบขับเคลื่อน การรับรู้ และระบบอัตโนมัติสำหรับดูแล พ่น คัดแยก หรือเก็บเกี่ยวผลผลิต",
+    kw: "Agricultural Robotics Engineer · Farm Automation Engineer · Agri-Robot Engineer · Autonomous Farm Systems Engineer" },
+  { id: "C20", track: 1, st: "S", th: "วิศวกรอากาศยานไร้คนขับและภูมิสารสนเทศเพื่อการเกษตร", en: "Agricultural UAV and GeoAI Engineer",
+    courses: ["EN-131-103", "EN-132-104", "EN-135-103", "EN-135-112", "EN-134-104"],
+    why: "วางแผนการบิน เก็บและประมวลผลภาพหลายช่วงคลื่น สร้างแผนที่ และใช้ GeoAI ประเมินสุขภาพพืชและพื้นที่เพาะปลูก",
+    kw: "Agricultural UAV Engineer · Drone Mapping Specialist · GeoAI Engineer · Remote Sensing Agriculture" },
+  { id: "C21", track: 1, st: "S", th: "นักวิเคราะห์ข้อมูลและระบบสนับสนุนการตัดสินใจทางการเกษตร", en: "Agricultural Data and Decision Support Specialist",
+    courses: ["EN-131-107", "EN-132-102", "EN-132-103", "EN-135-105", "EN-135-113", "EN-134-104"],
+    why: "บูรณาการข้อมูลฟาร์ม ภูมิอากาศ ผลผลิต และห่วงโซ่อุปทาน เพื่อพยากรณ์ สร้างสถานการณ์ และสนับสนุนการตัดสินใจ",
+    kw: "Agricultural Data Analyst · Farm Data Scientist · Agricultural DSS Specialist · Agri Supply Chain Analyst" },
+  { id: "C22", track: 0, st: "M", th: "วิศวกรโครงการและติดตั้งระบบอัจฉริยะ", en: "Intelligent Systems Project and Implementation Engineer",
+    courses: ["EN-132-101", "EN-132-107", "EN-135-141", "EN-134-103", "EN-134-104", "EN-135-402"],
+    why: "จัดทำข้อกำหนด วางแผน ประสานงาน ติดตั้ง ทดสอบ ส่งมอบ และบริหารความเสี่ยงของโครงการ AI หรือระบบอัจฉริยะ",
+    kw: "AI Project Engineer · Implementation Engineer · Technical Project Engineer · Intelligent Systems Engineer" },
+  { id: "C23", track: 0, st: "M", th: "วิศวกรบูรณาการระบบอัจฉริยะ", en: "Intelligent Systems Integration Engineer",
+    courses: ["EN-001-030", "EN-132-107", "EN-132-109", "EN-135-133", "EN-135-134", "EN-134-104"],
+    why: "เชื่อมข้อมูล อุปกรณ์ ระบบควบคุม ซอฟต์แวร์ API และ AI ตามสถาปัตยกรรมองค์กร พร้อมทดสอบความน่าเชื่อถือแบบครบวงจร",
+    kw: "Systems Integration Engineer · AI Integration Engineer · Solution Integration Engineer · Integration Test Engineer" },
+  { id: "C24", track: 0, st: "M", th: "ที่ปรึกษาโซลูชันปัญญาประดิษฐ์และการเปลี่ยนผ่านสู่ดิจิทัล", en: "AI Solutions and Digital Transformation Consultant",
+    courses: ["EN-001-021", "EN-132-101", "EN-132-102", "EN-135-134", "EN-135-140", "EN-135-145", "EN-134-104"],
+    why: "วิเคราะห์ความพร้อมองค์กร ออกแบบสถาปัตยกรรมและแผนเปลี่ยนผ่าน ประเมินความคุ้มค่า ความเสี่ยง และแนวทางนำ AI ไปใช้จริง",
+    kw: "AI Consultant · Digital Transformation Consultant · AI Solutions Consultant · Technology Consultant" },
+  { id: "C25", track: 0, st: "M", th: "นักวิเคราะห์ธุรกิจอัจฉริยะและการตัดสินใจ", en: "Business Intelligence and Decision Analyst",
+    courses: ["EN-001-022", "EN-131-107", "EN-132-102", "EN-135-119", "EN-135-131", "EN-134-104"],
+    why: "สร้างตัวชี้วัด แบบจำลองพยากรณ์ การจำลองและการเพิ่มประสิทธิภาพ พร้อมสื่อสารข้อเสนอเพื่อการตัดสินใจทางธุรกิจและการปฏิบัติการ",
+    kw: "Business Intelligence Analyst · Decision Analyst · Operations Analyst · Analytics Consultant" },
+  { id: "C26", track: 3, st: "F", th: "นักวิเคราะห์ผลิตภัณฑ์และผู้ประสานงานโครงการปัญญาประดิษฐ์", en: "AI Product and Project Analyst",
+    courses: ["EN-132-101", "EN-132-107", "EN-135-135", "EN-135-141", "EN-135-143", "EN-134-104"],
+    why: "ศึกษาผู้ใช้ จัดทำ roadmap และ backlog กำหนดตัวชี้วัด ออกแบบการทดลอง ประสานทีมเทคนิค–ธุรกิจ และติดตามผลิตภัณฑ์ AI",
+    kw: "AI Product Analyst · Associate AI Product Manager · AI Project Coordinator · Technical Product Analyst" }
 ];

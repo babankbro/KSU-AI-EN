@@ -4,7 +4,7 @@ import { COURSES, GROUP_NAME, TRACK_NAME, shortOf } from "../data.js";
 import { PageHead, Section, PloTag } from "./ui.jsx";
 
 const FILTERS = [["all", "ทั้งหมด"], ["ge", "ศึกษาทั่วไป"], ["eng", "พื้นฐานวิศวฯ"], ["ai", "แกน AI"],
-  ["track", "บังคับแขนง"], ["elec", "เลือกชีพ"], ["proj", "โครงงาน"], ["field", "สหกิจ"]];
+  ["track", "Core Track"], ["elec", "เลือกชีพ"], ["proj", "โครงงาน"], ["field", "สหกิจ"]];
 
 const PANEL_W = 460;
 const GAP = 14;
@@ -49,6 +49,7 @@ function CoursePopover({ c, anchor, onEnter, onLeave }) {
         <span className={`gtag g-${c.g}`}>{GROUP_NAME[c.g]}</span>
         {c.tr && <span className="gtag">{TRACK_NAME[c.tr]}</span>}
         {c.sem && <span className="semtag">ชั้นปีที่ {c.y} · ภาค {c.sem}</span>}
+        {c.pendingSemester && <span className="semtag">รอยืนยันภาคเรียน</span>}
         {c.p.map(p => <PloTag key={p} n={p} small />)}
       </div>
 
@@ -152,6 +153,7 @@ export default function Courses() {
                   <span className={`gtag g-${c.g}`}>{GROUP_NAME[c.g]}</span>
                   {c.tr && <span className="gtag">Track {c.tr}</span>}
                   {c.sem && <span className="semtag">ภาค {c.sem}</span>}
+                  {c.pendingSemester && <span className="semtag">รอยืนยันภาคเรียน</span>}
                   {c.p.map(p => <PloTag key={p} n={p} small />)}
                 </div>
               </Link>

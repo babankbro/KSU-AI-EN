@@ -5,12 +5,14 @@ import { PageHead, Section, PloChip, IRM, GroupTag } from "./ui.jsx";
 import { PLO_NAME, PLO_DETAIL, YLO_DETAIL } from "../data.js";
 import { GROUPS, SKILL_SETS } from "../obeData.js";
 import {
-  CLO_LIST, CLO_TOTAL, CLO_PRINCIPLES, CLO_NOTES, ELECTIVE_NOTES,
+  CLO_LIST, CORE_CLO_LIST, CORE_CLO_TOTAL, CLO_PRINCIPLES, CLO_NOTES, ELECTIVE_NOTES,
   PLO_ROLLUP, SET_FEED, YLO_ROLLUP, LEVEL_NAME, ploLevels
 } from "../cloData.js";
 
 const PLOS = [1, 2, 3, 4, 5, 6, 7];
-const SEM_LABEL = s => `ชั้นปีที่ ${Math.ceil(s / 2)} · ภาคการศึกษาที่ ${s % 2 === 1 ? 1 : 2}`;
+const SEM_LABEL = s => s === 99
+  ? "รายวิชาใหม่ — รอยืนยันภาคการศึกษา"
+  : `ชั้นปีที่ ${Math.ceil(s / 2)} · ภาคการศึกษาที่ ${s % 2 === 1 ? 1 : 2}`;
 const setOf = id => SKILL_SETS.find(s => s.id === id);
 
 /* จัดรายวิชาเป็นกลุ่มตามภาคการศึกษา */
@@ -65,14 +67,14 @@ export default function Clo() {
       <PageHead
         eyebrow="หมวด 4.6 – 4.7 · เอกสารหลักสูตร"
         title="ผลลัพธ์การเรียนรู้รายวิชา (CLO) และแผนที่ความเชื่อมโยง"
-        lead="สรุป CLO ของทุกรายวิชาแกน พร้อม K–S–A ที่รายวิชารับผิดชอบ ชุดทักษะ EN-AISK01–08 ที่ป้อนเข้า และเส้นทางการสอบย้อนกลับ CLO → Sub-YLO → PLO ตามระดับพัฒนาการ I–R–M"
+        lead="สรุป CLO ของรายวิชาแกนตามข้อเสนอใหม่ พร้อม K–S–A ชุดทักษะ EN-AISK01–09 หลักฐานประเมิน และเส้นทาง CLO → Sub-YLO → PLO ตามระดับ I–R–M"
         crumbs={[{ label: "CLO และ Curriculum Mapping" }]}
       />
 
       <div className="wrap">
         <div className="clo-stats">
-          <div><b>{CLO_LIST.length}</b><span>รายวิชาที่กำหนด CLO แล้ว</span></div>
-          <div><b>{CLO_TOTAL}</b><span>ข้อ CLO รวมทั้งหลักสูตร</span></div>
+          <div><b>{CORE_CLO_LIST.length}</b><span>รายวิชาเฉพาะ/กิจกรรมบังคับที่กำหนด CLO</span></div>
+          <div><b>{CORE_CLO_TOTAL}</b><span>ข้อ CLO ตาม Mapping ฉบับใหม่</span></div>
           <div><b>{YLO_ROLLUP.reduce((s, y) => s + y.subs.length, 0)}</b><span>Sub-YLO ที่ CLO ป้อนเข้า</span></div>
           <div><b>7</b><span>PLO ที่ทุกเส้นทางสอบย้อนกลับถึง</span></div>
         </div>
@@ -176,7 +178,7 @@ export default function Clo() {
 
           <div className="note">
             <b>Constructive Alignment</b> — ทุก PLO มีเส้นทาง I → R → M ครบ: Introduce ที่ปี 1 (วิชาพื้นฐาน/แกน) →
-            Reinforce ที่ปี 2–3 (แกน AI และวิชาบังคับแขนง) → Mastery ที่โครงงาน (EN-134-104) และสหกิจศึกษา (EN-135-402)
+            Reinforce ที่ปี 2–3 (แกน AI และ Core Track) → Mastery ที่โครงงาน (EN-134-104) และสหกิจศึกษา (EN-135-402)
             โดย CLO ทุกข้อสอบย้อนกลับถึง Sub-YLO และ PLO ได้
           </div>
         </Section>
@@ -214,11 +216,15 @@ export default function Clo() {
 
         {/* ─────────── Skill Set Feed ─────────── */}
         <Section id="feed" title="การกระจายรายวิชาสู่ชุดทักษะ (Skill Set Feed)"
-          sub="รายวิชาที่ป้อนเข้าแต่ละชุดทักษะ EN-AISK01–08 เพื่อใช้ออก Skill Transcript">
+          sub="แยกชุดทักษะเจ้าภาพหลักของ CLO ออกจากชุดทักษะสนับสนุน เพื่อไม่ให้นับภาระของรายวิชาบูรณาการซ้ำเต็มจำนวน">
           <div className="scroll-x">
             <table className="tbl">
               <thead>
-                <tr><th>ชุดทักษะ</th><th>กลุ่ม</th><th className="c">วิชา</th><th>รายวิชาที่ป้อนเข้า</th></tr>
+                <tr>
+                  <th>ชุดทักษะ</th><th>กลุ่ม</th>
+                  <th className="c">วิชาเจ้าภาพ</th><th className="c">CLO หลัก</th><th>รายวิชาเจ้าภาพหลัก</th>
+                  <th className="c">วิชาสนับสนุน</th><th className="c">CLO สนับสนุน</th><th>รายวิชาสนับสนุน</th>
+                </tr>
               </thead>
               <tbody>
                 {SET_FEED.map(f => {
@@ -232,9 +238,19 @@ export default function Clo() {
                       </td>
                       <td className="mut">{s ? s.g : "—"}<br /><small>{g ? g.en : ""}</small></td>
                       <td className="c">{f.courses.length}</td>
+                      <td className="c">{f.primaryCloCount}</td>
                       <td>
                         <div className="clo-chips">
                           {f.courses.map(c => (
+                            <Link key={c} to={`/courses/${c}`} className="clo-cchip">{c}</Link>
+                          ))}
+                        </div>
+                      </td>
+                      <td className="c">{f.supportCourses.length}</td>
+                      <td className="c">{f.supportCloCount}</td>
+                      <td>
+                        <div className="clo-chips">
+                          {f.supportCourses.map(c => (
                             <Link key={c} to={`/courses/${c}`} className="clo-cchip">{c}</Link>
                           ))}
                         </div>
@@ -246,8 +262,9 @@ export default function Clo() {
             </table>
           </div>
           <p className="hint">
+            รหัส AISK ตัวแรกใน CLO คือ <b>เจ้าภาพหลัก</b>; รหัสถัดไปเป็นชุดทักษะสนับสนุน และหลักฐานรายบุคคลต้องบันทึกตามบทบาทหรือบริบทจริง
+            {" "}·{" "}
             รายละเอียดทักษะย่อย ระดับ L1–L4 และวิธีวัดผลของแต่ละชุดทักษะอยู่ที่ <Link to="/obe#set">ขั้นตอน OBE ⑤ ชุดทักษะ</Link>
-            {" "}· <b>EN-134-104</b> และ <b>EN-135-402</b> บูรณาการครบทุกชุด (G1–G6)
           </p>
         </Section>
 
@@ -295,6 +312,7 @@ export default function Clo() {
                     <div className="clo-cmeta">
                       <GroupTag g={e.g} />
                       {c && c.sem && <span className="semtag">ปี {c.y} · ภาค {c.sem}</span>}
+                      {c && c.pendingSemester && <span className="semtag">รอยืนยันภาคเรียน</span>}
                       {c && <span className="clo-cr">{c.cr}</span>}
                     </div>
                   </header>
@@ -318,7 +336,12 @@ export default function Clo() {
                     <tbody>
                       {e.clos.map(clo => (
                         <tr key={clo.n}>
-                          <td><b className="clo-n">CLO{clo.n}</b> {clo.t}</td>
+                          <td>
+                            <b className="clo-n">CLO{clo.n}</b> {clo.t}
+                            {clo.evidence && <small className="mut" style={{ display: "block", marginTop: 5 }}>
+                              หลักฐาน: {clo.evidence}
+                            </small>}
+                          </td>
                           <td className="c">{clo.ylo.map(id => <YloChip key={id} id={id} />)}</td>
                           <td className="c">
                             <div className="clo-plocell">

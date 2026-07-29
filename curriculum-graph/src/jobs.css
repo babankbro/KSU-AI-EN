@@ -40,6 +40,11 @@
 .job-pagination{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0 8px;color:var(--muted);font-size:.8rem}
 .job-pagination button{border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--navy);font:inherit;font-size:.78rem;font-weight:700;padding:7px 12px;cursor:pointer}
 .job-pagination button:disabled{opacity:.4;cursor:not-allowed}
+.jobs-toolbar :disabled{opacity:.58;cursor:progress}
+.jobs-loading{display:flex;align-items:center;justify-content:center;gap:12px;min-height:120px;background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--navy)}
+.jobs-loading b,.jobs-loading small{display:block}.jobs-loading small{margin-top:3px;color:var(--muted);font-size:.72rem}
+.jobs-spinner{width:24px;height:24px;border:3px solid var(--soft);border-top-color:var(--gold);border-radius:50%;animation:jobs-spin .8s linear infinite}
+@keyframes jobs-spin{to{transform:rotate(360deg)}}
 @media(max-width:800px){
   .job-stats{grid-template-columns:repeat(2,1fr)}
   .skills-split{grid-template-columns:1fr}

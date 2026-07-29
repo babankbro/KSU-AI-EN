@@ -1,58 +1,60 @@
 # กลุ่มวิชาพื้นฐานและปฏิบัติการทางวิศวกรรม
 
-> สถานะ: ร่างคำอธิบายรายวิชาภาษาไทย–อังกฤษเพื่อการทวนสอบของคณะกรรมการหลักสูตร
-> จำนวนรายการ: **10 รายวิชา**
+> สถานะ: ร่างคำอธิบายรายวิชาภาษาไทย–อังกฤษตามข้อเสนอปรับหลักสูตร พ.ศ. 2570 เพื่อทวนสอบโดยคณะกรรมการหลักสูตร  
+> จำนวนรายการ: **10 รายวิชา / 24 หน่วยกิต**
 
-ถ้อยคำยึดสาระภาษาไทยจากไฟล์ต้นทาง และปรับคำอธิบายภาษาอังกฤษให้ตรงกับหัวข้อภาษาไทยแบบข้อต่อข้อ
+คำอธิบายภาษาไทยและภาษาอังกฤษเรียงสาระให้ตรงกันแบบข้อต่อข้อ โดยเพิ่มฐานวิศวกรรมกายภาพ เศรษฐศาสตร์ การเขียนแบบ ความปลอดภัย การสร้างและประกอบ ระบบกำลังของไหล และการบูรณาการระบบ เพื่อรองรับสามบริบท ได้แก่ เกษตรอัจฉริยะ อุตสาหกรรมอัจฉริยะ และระบบปัญญาประดิษฐ์ระดับองค์กร
 
 ---
 
-EN-001-021 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน 3(3-0-6)
-Engineering Economics and Cost Analysis
-แนวคิดพื้นฐานทางเศรษฐศาสตร์วิศวกรรม มูลค่าของเงินตามเวลา อัตราดอกเบี้ยและการคิดลด การวิเคราะห์มูลค่าปัจจุบันสุทธิและอัตราผลตอบแทนภายใน การวิเคราะห์ต้นทุนและผลประโยชน์ของโครงการวิศวกรรม การประเมินความเป็นไปได้ทางเศรษฐศาสตร์ของโครงการลงทุนด้านปัญญาประดิษฐ์และระบบอัจฉริยะ ต้นทุนวงจรชีวิตของระบบ การคิดค่าเสื่อมราคา การวิเคราะห์จุดคุ้มทุน การตัดสินใจทางเศรษฐศาสตร์ภายใต้ความไม่แน่นอน กรณีศึกษาการลงทุนในระบบปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม
-Fundamental concepts of engineering economics; time value of money; interest rates and discounting; net present value and internal rate of return analysis; cost-benefit analysis of engineering projects; economic feasibility assessment of AI and intelligent-systems investment projects; system life-cycle costing; depreciation; break-even analysis; economic decision-making under uncertainty; case studies of investment in AI, agriculture, industry, and innovation
+EN-001-021 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน 3(3-0-6)  
+Engineering Economics and Cost Analysis  
+หลักเศรษฐศาสตร์วิศวกรรม มูลค่าเงินตามเวลา อัตราดอกเบี้ยและการคิดลด มูลค่าปัจจุบันสุทธิ อัตราผลตอบแทนภายใน อัตราส่วนผลประโยชน์ต่อต้นทุน และระยะเวลาคืนทุน การประมาณต้นทุนระบบข้อมูล คลาวด์ ระบบอัตโนมัติ และปัญญาประดิษฐ์ ต้นทุนรวมในการเป็นเจ้าของและต้นทุนวงจรชีวิต การคิดค่าเสื่อมราคา จุดคุ้มทุน เศรษฐศาสตร์ต่อหน่วย และการสร้างคุณค่าทางธุรกิจ การวิเคราะห์ความไว สถานการณ์ ความเสี่ยง และความไม่แน่นอน การประเมินต้นทุนทรัพยากร พลังงาน และคาร์บอน การจัดทำกรณีธุรกิจและข้อเสนอการลงทุนสำหรับระบบเกษตรอัจฉริยะ โรงงานอัจฉริยะ และบริการปัญญาประดิษฐ์  
+Principles of engineering economics; time value of money; interest and discounting; net present value; internal rate of return; benefit-cost ratio; and payback period; cost estimation for data, cloud, automation, and artificial intelligence systems; total cost of ownership and life-cycle costing; depreciation; break-even analysis; unit economics; and business value creation; sensitivity, scenario, risk, and uncertainty analysis; assessment of resource, energy, and carbon costs; preparation of business cases and investment proposals for smart agriculture, smart manufacturing, and AI services
 
-EN-001-022 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม 3(3-0-6)
-Statistics and Data Analysis for Engineering
-ความน่าจะเป็นและการแจกแจงความน่าจะเป็น ตัวแปรสุ่มและฟังก์ชันการแจกแจง สถิติเชิงพรรณนาและการสรุปอ้างอิง การประมาณค่าและช่วงความเชื่อมั่น การทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การวิเคราะห์การถดถอยและสหสัมพันธ์ การออกแบบการทดลอง การประยุกต์ใช้วิธีการทางสถิติในการวิเคราะห์ข้อมูลสำหรับระบบปัญญาประดิษฐ์ การประเมินประสิทธิภาพตัวแบบการเรียนรู้ของเครื่อง การแก้ปัญหาทางวิศวกรรมเกษตรและอุตสาหกรรม
-Probability and probability distributions; random variables and distribution functions; descriptive and inferential statistics; estimation and confidence intervals; hypothesis testing; analysis of variance; regression and correlation analysis; design of experiments; application of statistical methods to data analysis for AI systems; performance evaluation of machine learning models; problem solving in agricultural and industrial engineering
+EN-001-022 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม 3(3-0-6)  
+Statistics and Data Analysis for Engineering  
+ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและสถิติเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า ช่วงความเชื่อมั่น และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลอง การวิเคราะห์ระบบการวัด และการควบคุมกระบวนการเชิงสถิติ การวิเคราะห์ความไม่แน่นอนและความไว การประเมินตัวแบบปัญญาประดิษฐ์ การตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล การตีความและสื่อสารหลักฐานเชิงสถิติสำหรับการตัดสินใจในงานเกษตร อุตสาหกรรม และระบบดิจิทัล  
+Probability, random variables, and probability distributions; descriptive and inferential statistics; sampling; estimation; confidence intervals; and hypothesis testing; analysis of variance; regression; correlation; and time-series analysis; design of experiments; measurement-system analysis; and statistical process control; uncertainty and sensitivity analysis; evaluation of artificial intelligence models; examination of data leakage and bias; interpretation and communication of statistical evidence for decisions in agriculture, industry, and digital systems
 
-EN-001-023 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ 3(3-0-6)
-Thermal-Fluid Engineering in Smart Systems
-คุณสมบัติของสารและสถานะของสาร กฎข้อที่หนึ่งและกฎข้อที่สองของอุณหพลศาสตร์ พลังงานและการเปลี่ยนรูปพลังงาน วัฏจักรอุณหพลศาสตร์และประสิทธิภาพเครื่องจักรความร้อน คุณสมบัติและพฤติกรรมของของไหล สมการความต่อเนื่อง สมการแบร์นูลลีและการประยุกต์ใช้ การไหลในท่อและการสูญเสียความดัน ปั๊มและกังหัน การประยุกต์ใช้ความรู้อุณหพลศาสตร์และของไหลในระบบผลิตพลังงานร่วม ระบบอบแห้งผลผลิตเกษตร ระบบระบายความร้อนสำหรับอุปกรณ์คอมพิวเตอร์และเครื่องแม่ข่ายปัญญาประดิษฐ์
-Properties and phases of matter; the first and second laws of thermodynamics; energy and energy conversion; thermodynamic cycles and heat-engine efficiency; properties and behavior of fluids; the continuity equation; Bernoulli's equation and its applications; pipe flow and pressure losses; pumps and turbines; application of thermodynamics and fluid mechanics to cogeneration systems, agricultural produce drying systems, and cooling systems for computing equipment and AI servers
+EN-001-023 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ 3(3-0-6)  
+Thermal-Fluid Engineering in Smart Systems  
+คุณสมบัติและสถานะของสาร กฎข้อที่หนึ่งและข้อที่สองของอุณหพลศาสตร์ สมดุลมวลและพลังงาน การนำ การพา และการแผ่รังสีความร้อน เครื่องแลกเปลี่ยนความร้อน การทำความเย็น และการอบแห้ง คุณสมบัติและพฤติกรรมของของไหล สมการความต่อเนื่องและสมการแบร์นูลลี การไหลในท่อ การสูญเสียความดัน ปั๊ม พัดลม และวาล์ว การตรวจวัดอุณหภูมิ ความดัน อัตราการไหล และพลังงาน การควบคุมและเพิ่มประสิทธิภาพกระบวนการความร้อนและของไหล การนำความร้อนทิ้งกลับมาใช้ การประเมินประสิทธิภาพพลังงานและคาร์บอนในระบบชลประทาน โรงเรือน ห้องเย็น กระบวนการอบแห้ง โรงงานเกษตรอุตสาหกรรม และศูนย์ประมวลผลปัญญาประดิษฐ์  
+Properties and phases of matter; the first and second laws of thermodynamics; mass and energy balances; heat conduction, convection, and radiation; heat exchangers; refrigeration; and drying; properties and behavior of fluids; continuity and Bernoulli equations; pipe flow; pressure losses; pumps; fans; and valves; measurement of temperature, pressure, flow, and energy; control and optimization of thermal-fluid processes; waste-heat recovery; assessment of energy and carbon performance in irrigation systems, greenhouses, cold rooms, drying processes, agro-industrial plants, and AI computing facilities
 
-EN-001-024 การเขียนแบบวิศวกรรมและการวางผังระบบ 3(2-2-6)
-Engineering Drawing and System Layout Design
-พื้นฐานและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพออโธกราฟิกและภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ ภาพตัดและภาพช่วย การเขียนแบบชิ้นส่วนและแบบประกอบ การเขียนแบบด้วยโปรแกรมคอมพิวเตอร์ช่วยออกแบบ การสร้างแบบจำลองสองมิติและสามมิติ การประยุกต์ใช้การเขียนแบบวิศวกรรมในการออกแบบโครงสร้างระบบอัตโนมัติ เครื่องจักรกลเกษตร การจัดวางระบบอินเทอร์เน็ตของสรรพสิ่งและเซนเซอร์ในโรงงานและฟาร์มอัจฉริยะ
-Fundamentals and standards of engineering drawing; orthographic and pictorial projection; dimensioning and tolerancing; sectional and auxiliary views; part and assembly drawings; computer-aided design (CAD) drafting; two- and three-dimensional modeling; application of engineering drawing to the design of automation-system structures, agricultural machinery, and the layout of IoT and sensor systems in smart factories and farms
+EN-001-024 การเขียนแบบวิศวกรรมและการวางผังระบบ 3(2-2-6)  
+Engineering Drawing and System Layout Design  
+หลักการและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพ ภาพตัด ภาพสามมิติ การกำหนดขนาด พิกัดความเผื่อ และสัญลักษณ์มาตรฐาน การเขียนแบบชิ้นส่วนและแบบประกอบ การสร้างแบบจำลองสองมิติและสามมิติด้วยคอมพิวเตอร์ช่วยออกแบบ การออกแบบผังฟาร์ม โรงเรือน สถานีตรวจวัด เซลล์หุ่นยนต์ และสายการผลิต แบบท่อและเครื่องมือวัด แบบไฟฟ้าและวงจรควบคุม การจัดวางอุปกรณ์เพื่อความปลอดภัย การบำรุงรักษา และการยศาสตร์ การควบคุมรุ่นและการแก้ไขแบบ การส่งมอบข้อมูลแบบสู่การจำลอง ดิจิทัลทวิน การติดตั้ง และการบำรุงรักษาระบบ  
+Principles and standards of engineering drawing; projection; sectional and pictorial views; dimensioning; tolerancing; and standard symbols; part and assembly drawings; two- and three-dimensional computer-aided design; layouts for farms, greenhouses, sensing stations, robotic cells, and production lines; piping and instrumentation diagrams; electrical and control-circuit drawings; equipment arrangement for safety, maintainability, and ergonomics; drawing revision and configuration control; transfer of drawing data to simulation, digital twins, installation, and system maintenance
 
-EN-001-025 กลศาสตร์วัสดุและการออกแบบโครงสร้าง 3(3-0-6)
-Mechanics of Materials and Structural Design
-แนวคิดพื้นฐานของแรงและระบบแรง สภาวะสมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน ความเค้นเฉือนและความเค้นดัด การบิดของเพลา ไดอะแกรมแรงเฉือนและโมเมนต์ดัด การโก่งตัวของคาน ความเค้นรวมและความเสียหาย ค่าความปลอดภัยและเกณฑ์การออกแบบ การประยุกต์ใช้หลักกลศาสตร์วัสดุในการออกแบบโครงสร้างเครื่องจักรกลเกษตร ระบบโครงรับน้ำหนักสำหรับโดรนและหุ่นยนต์เกษตร โครงสร้างระบบอัตโนมัติในโรงงานอุตสาหกรรม
-Fundamental concepts of force and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear and bending stress; torsion of shafts; shear-force and bending-moment diagrams; beam deflection; combined stresses and failure; factor of safety and design criteria; application of mechanics of materials to the structural design of agricultural machinery, load-bearing frames for agricultural drones and robots, and automation-system structures in industrial plants
+EN-001-025 กลศาสตร์วัสดุและการออกแบบโครงสร้าง 3(3-0-6)  
+Mechanics of Materials and Structural Design  
+แรงและระบบแรง สมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน แรงเฉือน การดัด การบิด และการโก่งตัว ความเค้นรวม ความล้า และรูปแบบความเสียหาย สมบัติวัสดุและการเลือกวัสดุ ค่าความปลอดภัยและเกณฑ์การออกแบบ การออกแบบโครง เครื่องยึด ฐานติดตั้ง และกล่องหุ้มสำหรับเซนเซอร์ เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับ การพิจารณาความปลอดภัย ความสามารถในการผลิต การบำรุงรักษา อายุใช้งาน และผลกระทบตลอดวงจรชีวิตของวัสดุและโครงสร้าง  
+Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear; bending; torsion; and deflection; combined stress; fatigue; and failure modes; material properties and material selection; factors of safety and design criteria; design of frames, fixtures, mounts, and enclosures for sensors, machines, robots, and unmanned aerial vehicles; consideration of safety, manufacturability, maintainability, service life, and life-cycle impacts of materials and structures
 
-EN-001-026 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-6)
-Foundational Programming for Artificial Intelligence
-หลักการเขียนโปรแกรมและขั้นตอนวิธีเบื้องต้น การเขียนโปรแกรมด้วยภาษาไพทอน โครงสร้างข้อมูลพื้นฐาน ตัวแปร นิพจน์ โครงสร้างการควบคุม ฟังก์ชัน โมดูล การเขียนโปรแกรมเชิงวัตถุ การจัดการไฟล์และฐานข้อมูลเบื้องต้น การใช้ชุดคำสั่งสำเร็จรูปสำหรับวิทยาศาสตร์ข้อมูลและปัญญาประดิษฐ์ การแก้จุดบกพร่องและการทดสอบโปรแกรม การประยุกต์ใช้การเขียนโปรแกรมในการวิเคราะห์ข้อมูลเกษตร การควบคุมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่ง การพัฒนาโปรแกรมปัญญาประดิษฐ์เบื้องต้น
-Principles of programming and basic algorithms; programming with the Python language; fundamental data structures, variables, expressions, control structures, functions, and modules; object-oriented programming; introductory file and database handling; use of libraries for data science and AI; debugging and program testing; application of programming to agricultural data analysis, control of IoT devices, and development of introductory AI programs
+EN-001-026 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-6)  
+Foundational Programming for Artificial Intelligence  
+การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน โมดูล โครงสร้างข้อมูล ขั้นตอนวิธี และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูลเชิงสัมพันธ์ ภาษาเอสคิวแอล และการเรียกใช้ส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นด้วยกิต การแก้จุดบกพร่อง การทดสอบหน่วย และการจัดทำเอกสาร การใช้เครื่องมือช่วยเขียนโปรแกรมด้วยปัญญาประดิษฐ์อย่างมีวิจารณญาณ การตรวจสอบความถูกต้อง ความมั่นคงปลอดภัย และสิทธิการใช้งานของรหัสคำสั่ง การพัฒนาโปรแกรมเบื้องต้นสำหรับข้อมูลเกษตร อุปกรณ์อินเทอร์เน็ตของสรรพสิ่ง และแอปพลิเคชันปัญญาประดิษฐ์  
+Algorithmic thinking and problem solving through programming; Python programming; variables; data types; control structures; functions; modules; data structures; algorithms; and object-oriented programming; file handling; relational databases; SQL; and application programming interfaces; use of data and AI libraries; version control with Git; debugging; unit testing; and documentation; critical use of AI coding assistants; verification of code correctness, security, and licensing; development of introductory programs for agricultural data, IoT devices, and AI applications
 
-EN-001-027 พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ 3(3-0-6)
-Electrical and Electronic Fundamentals for Intelligent Systems
-หลักการพื้นฐานของวงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์พื้นฐาน ไดโอด ทรานซิสเตอร์ วงจรรวม ระบบดิจิทัลและตรรกะ มอเตอร์ไฟฟ้าและระบบขับเคลื่อน เซนเซอร์และทรานสดิวเซอร์ การแปลงสัญญาณแอนะล็อกและดิจิทัล การประยุกต์ใช้ความรู้ไฟฟ้าและอิเล็กทรอนิกส์ในการออกแบบวงจรควบคุมระบบอินเทอร์เน็ตของสรรพสิ่ง เซนเซอร์อัจฉริยะ ระบบขับเคลื่อนสำหรับหุ่นยนต์และโดรนเกษตร
-Fundamental principles of direct-current and alternating-current circuits; Kirchhoff's laws and circuit analysis; basic electronic components — diodes, transistors, and integrated circuits; digital and logic systems; electric motors and drive systems; sensors and transducers; analog-to-digital and digital-to-analog signal conversion; application of electrical and electronic knowledge to the design of control circuits for IoT systems, smart sensors, and drive systems for agricultural robots and drones
+EN-001-027 พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ 3(3-0-6)  
+Electrical and Electronic Fundamentals for Intelligent Systems  
+วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ การปรับสภาพสัญญาณ การสอบเทียบ และการเก็บข้อมูล การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ ระบบขับเคลื่อน และอิเล็กทรอนิกส์กำลังเบื้องต้น แหล่งจ่ายไฟ การต่อลงดิน อุปกรณ์ป้องกัน และความปลอดภัยทางไฟฟ้า การออกแบบและทดสอบวงจรตรวจวัดและขับเคลื่อนสำหรับระบบอินเทอร์เน็ตของสรรพสิ่ง หุ่นยนต์ อากาศยานไร้คนขับ ฟาร์ม และโรงงานอัจฉริยะ  
+Direct-current and alternating-current circuits; Kirchhoff's laws and circuit analysis; electronic components; digital and logic systems; sensors; transducers; signal conditioning; calibration; and data acquisition; analog-to-digital and digital-to-analog conversion; actuators; motors; drive systems; and introductory power electronics; power supplies; grounding; protective devices; and electrical safety; design and testing of sensing and actuation circuits for IoT systems, robots, unmanned aerial vehicles, smart farms, and smart factories
 
-EN-001-028 ปฏิบัติการวิศวกรรมเชิงบูรณาการ I 1(0-3-1)
-Integrated Engineering Workshop I
-การใช้เครื่องมือช่าง การประกอบโครงอลูมิเนียมโปรไฟล์ การเดินท่อน้ำและระบบประปาสำหรับโรงเรือน การเดินสายไฟ การประกอบโครงแชสซีหุ่นยนต์
-Safe use of engineering tools; assembly of aluminium-profile structures; installation of water-supply and irrigation piping for greenhouses; electrical wiring; assembly of a mobile-robot chassis through integrated workshop practice
+EN-001-028 ปฏิบัติการวิศวกรรมเชิงบูรณาการ I 1(0-3-1)  
+Integrated Engineering Workshop I  
+ความปลอดภัยในการใช้เครื่องมือและพื้นที่ปฏิบัติงาน การอ่านแบบและการวางแผนการสร้าง การวัด ตัด เจาะ ยึด และประกอบโครงสร้าง การเดินท่อและสายไฟ การบัดกรีและติดตั้งอุปกรณ์ การติดตั้งและสอบเทียบเซนเซอร์ การสร้างต้นแบบสถานีตรวจวัดหรือโครงสร้างระบบอัจฉริยะ การตรวจสอบคุณภาพชิ้นงาน การบันทึกแบบ รายการวัสดุ ผลการสอบเทียบ และบทเรียนจากการปฏิบัติงานเป็นทีม  
+Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork
 
-EN-001-029 ปฏิบัติการวิศวกรรมเชิงบูรณาการ II 1(0-3-1)
-Integrated Engineering Workshop II
-การบัดกรี การติดตั้งเซนเซอร์ การเชื่อมต่อบอร์ดไมโครคอนโทรลเลอร์ การลากสายวางระบบเครือข่ายฮาร์ดแวร์เข้าสู่ตัวโครงสร้าง
-Soldering; sensor installation; microcontroller-board integration; hardware-network cabling and commissioning within an engineering structure developed in Integrated Engineering Workshop I
+EN-001-029 ปฏิบัติการวิศวกรรมเชิงบูรณาการ II 1(0-3-1)  
+Integrated Engineering Workshop II  
+หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว กระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม/ของไหล การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมและส่วนต่อประสานผู้ใช้เบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน การทดสอบการทำงาน การรั่วไหล ความปลอดภัย และการแก้ไขข้อขัดข้องเป็นทีม  
+Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting
 
-EN-001-030 ปฏิบัติการวิศวกรรมเชิงบูรณาการ III 1(0-3-1)
-Integrated Engineering Workshop III
-การต่อตู้ควบคุมระดับอุตสาหกรรม การเชื่อมต่อเซนเซอร์เข้ากับบอร์ดเอดจ์ปัญญาประดิษฐ์ การทดสอบระบบแบบบูรณาการเต็มรูปแบบ
-Industrial control-panel wiring using PLC and SCADA; sensor integration with Edge AI boards; full-system integration and testing through practical cases such as an autonomous greenhouse or an operational mobile robot
+EN-001-030 ปฏิบัติการวิศวกรรมเชิงบูรณาการ III 1(0-3-1)  
+Integrated Engineering Workshop III  
+การวิเคราะห์ข้อกำหนดและออกแบบสถาปัตยกรรมระบบบูรณาการ การประกอบตู้ควบคุมและเชื่อมต่อเซนเซอร์ เอดจ์ปัญญาประดิษฐ์ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา แพลตฟอร์มข้อมูล และตัวกระตุ้น การเชื่อมลำดับการทำงานตั้งแต่การตรวจวัด การประมวลผลข้อมูลและปัญญาประดิษฐ์ การตัดสินใจ การควบคุม ไปจนถึงแผงควบคุม การทดสอบส่วนต่อประสาน สมรรถนะ ความปลอดภัย และความน่าเชื่อถือ การประเมินต้นทุน พลังงาน ทรัพยากร และคาร์บอน การสาธิตระบบแบบครบวงจรและจัดทำเอกสารส่งมอบ  
+Requirements analysis and architecture design for an integrated system; assembly of a control panel and integration of sensors, AI edge devices, programmable logic controllers, SCADA, data platforms, and actuators; connection of the workflow from sensing through data and AI processing, decision-making, control, and dashboards; interface, performance, safety, and reliability testing; assessment of cost, energy, resources, and carbon; end-to-end system demonstration and handover documentation
+
+[[00_Course_Descriptions_Home|← หน้าหลักคำอธิบายรายวิชา]]

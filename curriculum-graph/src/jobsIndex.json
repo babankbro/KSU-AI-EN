@@ -1,0 +1,4439 @@
+{
+  "meta": {
+    "source": "JobsDB Thailand",
+    "capturedAt": "2026-07-28",
+    "displayedRows": 20064,
+    "collectedRows": 20064,
+    "uniqueJobs": 7424,
+    "jobsWithDescriptions": 7404,
+    "companies": 2686,
+    "jobsWithSalary": 2063,
+    "skillExtraction": "gemini-2.5-flash-lite",
+    "skillGroups": {
+      "Technical": 20,
+      "Soft": 10
+    },
+    "geminiProcessedJobs": 7424,
+    "geminiProcessedAt": "2026-07-28T18:49:51.616Z",
+    "rawUniqueJobs": 7424,
+    "classifiedJobs": 3278,
+    "rejectedJobs": 4146,
+    "classifiedRelations": 5377,
+    "careerClassification": "gemini-2.5-flash-lite + semantic-career-v1",
+    "careerClassificationProcessed": 7424,
+    "careerClassificationAt": "2026-07-29T05:31:54.806Z",
+    "runtimeFormat": 2,
+    "detailShards": 32
+  },
+  "careers": [
+    {
+      "id": "C01",
+      "name": "AI/ML Engineer",
+      "query": "AI Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Engineer-jobs",
+      "displayedCount": 797,
+      "collectedRows": 797,
+      "pagesScanned": 10,
+      "subcategories": [
+        {
+          "id": "C01-S01",
+          "name": "AI Engineer",
+          "query": "AI Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Engineer-jobs",
+          "displayedCount": 282,
+          "reportedCount": 282,
+          "collectedRows": 282,
+          "pagesScanned": 3,
+          "classifiedJobs": 22,
+          "classifiedCount": 22
+        },
+        {
+          "id": "C01-S02",
+          "name": "Machine Learning Engineer",
+          "query": "Machine Learning Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Machine-Learning-Engineer-jobs",
+          "displayedCount": 323,
+          "reportedCount": 323,
+          "collectedRows": 323,
+          "pagesScanned": 4,
+          "classifiedJobs": 121,
+          "classifiedCount": 121
+        },
+        {
+          "id": "C01-S03",
+          "name": "MLOps Engineer",
+          "query": "MLOps Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/MLOps-Engineer-jobs",
+          "displayedCount": 85,
+          "reportedCount": 85,
+          "collectedRows": 85,
+          "pagesScanned": 1,
+          "classifiedJobs": 17,
+          "classifiedCount": 17
+        },
+        {
+          "id": "C01-S04",
+          "name": "Generative AI Engineer",
+          "query": "Generative AI Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Generative-AI-Engineer-jobs",
+          "displayedCount": 107,
+          "reportedCount": 107,
+          "collectedRows": 107,
+          "pagesScanned": 2,
+          "classifiedJobs": 32,
+          "classifiedCount": 32
+        }
+      ],
+      "classifiedJobs": 192,
+      "classifiedCount": 192
+    },
+    {
+      "id": "C02",
+      "name": "AI Application / Solutions Engineer",
+      "query": "AI Solutions Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Solutions-Engineer-jobs",
+      "displayedCount": 865,
+      "collectedRows": 865,
+      "pagesScanned": 11,
+      "subcategories": [
+        {
+          "id": "C02-S01",
+          "name": "AI Solutions Engineer",
+          "query": "AI Solutions Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Solutions-Engineer-jobs",
+          "displayedCount": 455,
+          "reportedCount": 455,
+          "collectedRows": 455,
+          "pagesScanned": 5,
+          "classifiedJobs": 633,
+          "classifiedCount": 633
+        },
+        {
+          "id": "C02-S02",
+          "name": "AI Application Engineer",
+          "query": "AI Application Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Application-Engineer-jobs",
+          "displayedCount": 111,
+          "reportedCount": 111,
+          "collectedRows": 111,
+          "pagesScanned": 2,
+          "classifiedJobs": 35,
+          "classifiedCount": 35
+        },
+        {
+          "id": "C02-S03",
+          "name": "AI Solutions Architect",
+          "query": "AI Solutions Architect",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Solutions-Architect-jobs",
+          "displayedCount": 216,
+          "reportedCount": 216,
+          "collectedRows": 216,
+          "pagesScanned": 3,
+          "classifiedJobs": 88,
+          "classifiedCount": 88
+        },
+        {
+          "id": "C02-S04",
+          "name": "AI Implementation Consultant",
+          "query": "AI Implementation Consultant",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Implementation-Consultant-jobs",
+          "displayedCount": 83,
+          "reportedCount": 83,
+          "collectedRows": 83,
+          "pagesScanned": 1,
+          "classifiedJobs": 4,
+          "classifiedCount": 4
+        }
+      ],
+      "classifiedJobs": 760,
+      "classifiedCount": 760
+    },
+    {
+      "id": "C03",
+      "name": "Smart Agriculture and IoT Engineer",
+      "query": "Smart Agriculture and IoT Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Smart-Agriculture-and-IoT-Engineer-jobs",
+      "displayedCount": 250,
+      "collectedRows": 250,
+      "pagesScanned": 5,
+      "subcategories": [
+        {
+          "id": "C03-S01",
+          "name": "Smart Agriculture and IoT Engineer",
+          "query": "Smart Agriculture and IoT Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Smart-Agriculture-and-IoT-Engineer-jobs",
+          "displayedCount": 28,
+          "reportedCount": 28,
+          "collectedRows": 28,
+          "pagesScanned": 1,
+          "classifiedJobs": 21,
+          "classifiedCount": 21
+        },
+        {
+          "id": "C03-S02",
+          "name": "Smart Agriculture Engineer",
+          "query": "Smart Agriculture Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Smart-Agriculture-Engineer-jobs",
+          "displayedCount": 46,
+          "reportedCount": 46,
+          "collectedRows": 46,
+          "pagesScanned": 1,
+          "classifiedJobs": 5,
+          "classifiedCount": 5
+        },
+        {
+          "id": "C03-S03",
+          "name": "Agricultural IoT Engineer",
+          "query": "Agricultural IoT Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Agricultural-IoT-Engineer-jobs",
+          "displayedCount": 25,
+          "reportedCount": 25,
+          "collectedRows": 25,
+          "pagesScanned": 1,
+          "classifiedJobs": 1,
+          "classifiedCount": 1
+        },
+        {
+          "id": "C03-S04",
+          "name": "IoT Engineer and Related Roles",
+          "query": "IoT Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/IoT-Engineer-jobs",
+          "displayedCount": 151,
+          "reportedCount": 151,
+          "collectedRows": 151,
+          "pagesScanned": 2,
+          "classifiedJobs": 12,
+          "classifiedCount": 12
+        }
+      ],
+      "classifiedJobs": 39,
+      "classifiedCount": 39
+    },
+    {
+      "id": "C04",
+      "name": "Automation and Control Engineer",
+      "query": "Automation Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Automation-Engineer-jobs",
+      "displayedCount": 3391,
+      "collectedRows": 3391,
+      "pagesScanned": 36,
+      "subcategories": [
+        {
+          "id": "C04-S01",
+          "name": "Automation Engineer",
+          "query": "Automation Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Automation-Engineer-jobs",
+          "displayedCount": 1248,
+          "reportedCount": 1248,
+          "collectedRows": 1248,
+          "pagesScanned": 13,
+          "classifiedJobs": 441,
+          "classifiedCount": 441
+        },
+        {
+          "id": "C04-S02",
+          "name": "Control Systems Engineer",
+          "query": "Control Systems Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Control-Systems-Engineer-jobs",
+          "displayedCount": 1756,
+          "reportedCount": 1756,
+          "collectedRows": 1756,
+          "pagesScanned": 18,
+          "classifiedJobs": 18,
+          "classifiedCount": 18
+        },
+        {
+          "id": "C04-S03",
+          "name": "PLC Engineer",
+          "query": "PLC Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/PLC-Engineer-jobs",
+          "displayedCount": 240,
+          "reportedCount": 240,
+          "collectedRows": 240,
+          "pagesScanned": 3,
+          "classifiedJobs": 20,
+          "classifiedCount": 20
+        },
+        {
+          "id": "C04-S04",
+          "name": "SCADA Engineer",
+          "query": "SCADA Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/SCADA-Engineer-jobs",
+          "displayedCount": 147,
+          "reportedCount": 147,
+          "collectedRows": 147,
+          "pagesScanned": 2,
+          "classifiedJobs": 2,
+          "classifiedCount": 2
+        }
+      ],
+      "classifiedJobs": 481,
+      "classifiedCount": 481
+    },
+    {
+      "id": "C05",
+      "name": "Robotics and System Integration Engineer",
+      "query": "Robotics Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Robotics-Engineer-jobs",
+      "displayedCount": 584,
+      "collectedRows": 584,
+      "pagesScanned": 8,
+      "subcategories": [
+        {
+          "id": "C05-S01",
+          "name": "Robotics Engineer",
+          "query": "Robotics Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Robotics-Engineer-jobs",
+          "displayedCount": 171,
+          "reportedCount": 171,
+          "collectedRows": 171,
+          "pagesScanned": 2,
+          "classifiedJobs": 21,
+          "classifiedCount": 21
+        },
+        {
+          "id": "C05-S02",
+          "name": "System Integration Engineer",
+          "query": "System Integration Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/System-Integration-Engineer-jobs",
+          "displayedCount": 185,
+          "reportedCount": 185,
+          "collectedRows": 185,
+          "pagesScanned": 2,
+          "classifiedJobs": 63,
+          "classifiedCount": 63
+        },
+        {
+          "id": "C05-S03",
+          "name": "Mechatronics Engineer",
+          "query": "Mechatronics Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Mechatronics-Engineer-jobs",
+          "displayedCount": 116,
+          "reportedCount": 116,
+          "collectedRows": 116,
+          "pagesScanned": 2,
+          "classifiedJobs": 37,
+          "classifiedCount": 37
+        },
+        {
+          "id": "C05-S04",
+          "name": "Robotics Automation Engineer",
+          "query": "Robotics Automation Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Robotics-Automation-Engineer-jobs",
+          "displayedCount": 112,
+          "reportedCount": 112,
+          "collectedRows": 112,
+          "pagesScanned": 2,
+          "classifiedJobs": 15,
+          "classifiedCount": 15
+        }
+      ],
+      "classifiedJobs": 136,
+      "classifiedCount": 136
+    },
+    {
+      "id": "C06",
+      "name": "AI Software and Application Engineer",
+      "query": "AI Software Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Software-Engineer-jobs",
+      "displayedCount": 360,
+      "collectedRows": 360,
+      "pagesScanned": 5,
+      "subcategories": [
+        {
+          "id": "C06-S01",
+          "name": "AI Software Engineer",
+          "query": "AI Software Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Software-Engineer-jobs",
+          "displayedCount": 135,
+          "reportedCount": 135,
+          "collectedRows": 135,
+          "pagesScanned": 2,
+          "classifiedJobs": 477,
+          "classifiedCount": 477
+        },
+        {
+          "id": "C06-S02",
+          "name": "AI Application Developer",
+          "query": "AI Application Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Application-Developer-jobs",
+          "displayedCount": 96,
+          "reportedCount": 96,
+          "collectedRows": 96,
+          "pagesScanned": 1,
+          "classifiedJobs": 42,
+          "classifiedCount": 42
+        },
+        {
+          "id": "C06-S03",
+          "name": "Generative AI Developer",
+          "query": "Generative AI Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/Generative-AI-Developer-jobs",
+          "displayedCount": 72,
+          "reportedCount": 72,
+          "collectedRows": 72,
+          "pagesScanned": 1,
+          "classifiedJobs": 15,
+          "classifiedCount": 15
+        },
+        {
+          "id": "C06-S04",
+          "name": "AI Full Stack Developer",
+          "query": "AI Full Stack Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Full-Stack-Developer-jobs",
+          "displayedCount": 57,
+          "reportedCount": 57,
+          "collectedRows": 57,
+          "pagesScanned": 1,
+          "classifiedJobs": 58,
+          "classifiedCount": 58
+        }
+      ],
+      "classifiedJobs": 592,
+      "classifiedCount": 592
+    },
+    {
+      "id": "C07",
+      "name": "Data Engineer",
+      "query": "Data Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Data-Engineer-jobs",
+      "displayedCount": 2207,
+      "collectedRows": 2207,
+      "pagesScanned": 24,
+      "subcategories": [
+        {
+          "id": "C07-S01",
+          "name": "Data Engineer",
+          "query": "Data Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Data-Engineer-jobs",
+          "displayedCount": 1382,
+          "reportedCount": 1312,
+          "collectedRows": 1382,
+          "pagesScanned": 14,
+          "classifiedJobs": 360,
+          "classifiedCount": 360
+        },
+        {
+          "id": "C07-S02",
+          "name": "Analytics Engineer",
+          "query": "Analytics Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Analytics-Engineer-jobs",
+          "displayedCount": 335,
+          "reportedCount": 335,
+          "collectedRows": 335,
+          "pagesScanned": 4,
+          "classifiedJobs": 70,
+          "classifiedCount": 70
+        },
+        {
+          "id": "C07-S03",
+          "name": "ETL Developer",
+          "query": "ETL Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/ETL-Developer-jobs",
+          "displayedCount": 118,
+          "reportedCount": 118,
+          "collectedRows": 118,
+          "pagesScanned": 2,
+          "classifiedJobs": 13,
+          "classifiedCount": 13
+        },
+        {
+          "id": "C07-S04",
+          "name": "Data Platform Engineer",
+          "query": "Data Platform Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Data-Platform-Engineer-jobs",
+          "displayedCount": 372,
+          "reportedCount": 379,
+          "collectedRows": 372,
+          "pagesScanned": 4,
+          "classifiedJobs": 54,
+          "classifiedCount": 54
+        }
+      ],
+      "classifiedJobs": 497,
+      "classifiedCount": 497
+    },
+    {
+      "id": "C08",
+      "name": "AI Innovator",
+      "query": "AI Product Developer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Product-Developer-jobs",
+      "displayedCount": 1185,
+      "collectedRows": 1185,
+      "pagesScanned": 13,
+      "subcategories": [
+        {
+          "id": "C08-S01",
+          "name": "AI Product Developer",
+          "query": "AI Product Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Product-Developer-jobs",
+          "displayedCount": 255,
+          "reportedCount": 255,
+          "collectedRows": 255,
+          "pagesScanned": 3,
+          "classifiedJobs": 52,
+          "classifiedCount": 52
+        },
+        {
+          "id": "C08-S02",
+          "name": "AI Product Manager",
+          "query": "AI Product Manager",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Product-Manager-jobs",
+          "displayedCount": 90,
+          "reportedCount": 90,
+          "collectedRows": 90,
+          "pagesScanned": 1,
+          "classifiedJobs": 20,
+          "classifiedCount": 20
+        },
+        {
+          "id": "C08-S03",
+          "name": "Innovation Engineer",
+          "query": "Innovation Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Innovation-Engineer-jobs",
+          "displayedCount": 753,
+          "reportedCount": 753,
+          "collectedRows": 753,
+          "pagesScanned": 8,
+          "classifiedJobs": 25,
+          "classifiedCount": 25
+        },
+        {
+          "id": "C08-S04",
+          "name": "AI Research and Development Engineer",
+          "query": "AI Research Development Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Research-Development-Engineer-jobs",
+          "displayedCount": 87,
+          "reportedCount": 87,
+          "collectedRows": 87,
+          "pagesScanned": 1,
+          "classifiedJobs": 1,
+          "classifiedCount": 1
+        }
+      ],
+      "classifiedJobs": 98,
+      "classifiedCount": 98
+    },
+    {
+      "id": "C09",
+      "name": "Technology and AI Entrepreneur",
+      "query": "AI Entrepreneur",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Entrepreneur-jobs",
+      "displayedCount": 638,
+      "collectedRows": 638,
+      "pagesScanned": 9,
+      "subcategories": [
+        {
+          "id": "C09-S01",
+          "name": "AI Entrepreneur",
+          "query": "AI Entrepreneur",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Entrepreneur-jobs",
+          "displayedCount": 108,
+          "reportedCount": 108,
+          "collectedRows": 108,
+          "pagesScanned": 2,
+          "classifiedJobs": 8,
+          "classifiedCount": 8
+        },
+        {
+          "id": "C09-S02",
+          "name": "Technology Entrepreneur",
+          "query": "Technology Entrepreneur",
+          "sourceUrl": "https://th.jobsdb.com/th/Technology-Entrepreneur-jobs",
+          "displayedCount": 45,
+          "reportedCount": 45,
+          "collectedRows": 45,
+          "pagesScanned": 1,
+          "classifiedJobs": 9,
+          "classifiedCount": 9
+        },
+        {
+          "id": "C09-S03",
+          "name": "Technology Startup Founder",
+          "query": "Technology Startup Founder",
+          "sourceUrl": "https://th.jobsdb.com/th/Technology-Startup-Founder-jobs",
+          "displayedCount": 16,
+          "reportedCount": 16,
+          "collectedRows": 16,
+          "pagesScanned": 1,
+          "classifiedJobs": 1,
+          "classifiedCount": 1
+        },
+        {
+          "id": "C09-S04",
+          "name": "AI Business Development",
+          "query": "AI Business Development",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Business-Development-jobs",
+          "displayedCount": 469,
+          "reportedCount": 469,
+          "collectedRows": 469,
+          "pagesScanned": 5,
+          "classifiedJobs": 61,
+          "classifiedCount": 61
+        }
+      ],
+      "classifiedJobs": 79,
+      "classifiedCount": 79
+    },
+    {
+      "id": "C10",
+      "name": "AI and Intelligent Systems Researcher",
+      "query": "AI Researcher",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Researcher-jobs",
+      "displayedCount": 413,
+      "collectedRows": 413,
+      "pagesScanned": 6,
+      "subcategories": [
+        {
+          "id": "C10-S01",
+          "name": "AI Researcher",
+          "query": "AI Researcher",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Researcher-jobs",
+          "displayedCount": 148,
+          "reportedCount": 148,
+          "collectedRows": 148,
+          "pagesScanned": 2,
+          "classifiedJobs": 14,
+          "classifiedCount": 14
+        },
+        {
+          "id": "C10-S02",
+          "name": "Machine Learning Researcher",
+          "query": "Machine Learning Researcher",
+          "sourceUrl": "https://th.jobsdb.com/th/Machine-Learning-Researcher-jobs",
+          "displayedCount": 59,
+          "reportedCount": 59,
+          "collectedRows": 59,
+          "pagesScanned": 1,
+          "classifiedJobs": 0,
+          "classifiedCount": 0
+        },
+        {
+          "id": "C10-S03",
+          "name": "Computer Vision Researcher",
+          "query": "Computer Vision Researcher",
+          "sourceUrl": "https://th.jobsdb.com/th/Computer-Vision-Researcher-jobs",
+          "displayedCount": 42,
+          "reportedCount": 42,
+          "collectedRows": 42,
+          "pagesScanned": 1,
+          "classifiedJobs": 0,
+          "classifiedCount": 0
+        },
+        {
+          "id": "C10-S04",
+          "name": "AI Research Engineer",
+          "query": "AI Research Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Research-Engineer-jobs",
+          "displayedCount": 164,
+          "reportedCount": 164,
+          "collectedRows": 164,
+          "pagesScanned": 2,
+          "classifiedJobs": 3,
+          "classifiedCount": 3
+        }
+      ],
+      "classifiedJobs": 17,
+      "classifiedCount": 17
+    },
+    {
+      "id": "C11",
+      "name": "Government Officer / Digital Technology Specialist",
+      "query": "IT Officer",
+      "sourceUrl": "https://th.jobsdb.com/th/IT-Officer-jobs",
+      "displayedCount": 769,
+      "collectedRows": 769,
+      "pagesScanned": 10,
+      "subcategories": [
+        {
+          "id": "C11-S01",
+          "name": "IT Officer",
+          "query": "IT Officer",
+          "sourceUrl": "https://th.jobsdb.com/th/IT-Officer-jobs",
+          "displayedCount": 287,
+          "reportedCount": 287,
+          "collectedRows": 287,
+          "pagesScanned": 3,
+          "classifiedJobs": 70,
+          "classifiedCount": 70
+        },
+        {
+          "id": "C11-S02",
+          "name": "Digital Technology Officer",
+          "query": "Digital Technology Officer",
+          "sourceUrl": "https://th.jobsdb.com/th/Digital-Technology-Officer-jobs",
+          "displayedCount": 50,
+          "reportedCount": 50,
+          "collectedRows": 50,
+          "pagesScanned": 1,
+          "classifiedJobs": 2,
+          "classifiedCount": 2
+        },
+        {
+          "id": "C11-S03",
+          "name": "Government Digital Specialist",
+          "query": "Government Digital Specialist",
+          "sourceUrl": "https://th.jobsdb.com/th/Government-Digital-Specialist-jobs",
+          "displayedCount": 2,
+          "reportedCount": 2,
+          "collectedRows": 2,
+          "pagesScanned": 1,
+          "classifiedJobs": 3,
+          "classifiedCount": 3
+        },
+        {
+          "id": "C11-S04",
+          "name": "Information Technology Specialist",
+          "query": "Information Technology Specialist",
+          "sourceUrl": "https://th.jobsdb.com/th/Information-Technology-Specialist-jobs",
+          "displayedCount": 430,
+          "reportedCount": 430,
+          "collectedRows": 430,
+          "pagesScanned": 5,
+          "classifiedJobs": 153,
+          "classifiedCount": 153
+        }
+      ],
+      "classifiedJobs": 228,
+      "classifiedCount": 228
+    },
+    {
+      "id": "C12",
+      "name": "Data Scientist / Data Analyst",
+      "query": "Data Scientist",
+      "sourceUrl": "https://th.jobsdb.com/th/Data-Scientist-jobs",
+      "displayedCount": 5426,
+      "collectedRows": 5426,
+      "pagesScanned": 57,
+      "subcategories": [
+        {
+          "id": "C12-S01",
+          "name": "Data Scientist",
+          "query": "Data Scientist",
+          "sourceUrl": "https://th.jobsdb.com/th/Data-Scientist-jobs",
+          "displayedCount": 802,
+          "reportedCount": 802,
+          "collectedRows": 802,
+          "pagesScanned": 9,
+          "classifiedJobs": 269,
+          "classifiedCount": 269
+        },
+        {
+          "id": "C12-S02",
+          "name": "Data Analyst",
+          "query": "Data Analyst",
+          "sourceUrl": "https://th.jobsdb.com/th/Data-Analyst-jobs",
+          "displayedCount": 4388,
+          "reportedCount": 4388,
+          "collectedRows": 4388,
+          "pagesScanned": 44,
+          "classifiedJobs": 145,
+          "classifiedCount": 145
+        },
+        {
+          "id": "C12-S03",
+          "name": "Business Intelligence Analyst",
+          "query": "Business Intelligence Analyst",
+          "sourceUrl": "https://th.jobsdb.com/th/Business-Intelligence-Analyst-jobs",
+          "displayedCount": 110,
+          "reportedCount": 110,
+          "collectedRows": 110,
+          "pagesScanned": 2,
+          "classifiedJobs": 138,
+          "classifiedCount": 138
+        },
+        {
+          "id": "C12-S04",
+          "name": "Machine Learning Scientist",
+          "query": "Machine Learning Scientist",
+          "sourceUrl": "https://th.jobsdb.com/th/Machine-Learning-Scientist-jobs",
+          "displayedCount": 126,
+          "reportedCount": 126,
+          "collectedRows": 126,
+          "pagesScanned": 2,
+          "classifiedJobs": 0,
+          "classifiedCount": 0
+        }
+      ],
+      "classifiedJobs": 552,
+      "classifiedCount": 552
+    },
+    {
+      "id": "C13",
+      "name": "AI Smart Factory Engineer",
+      "query": "AI Smart Factory Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Smart-Factory-Engineer-jobs",
+      "displayedCount": 208,
+      "collectedRows": 208,
+      "pagesScanned": 4,
+      "subcategories": [
+        {
+          "id": "C13-S01",
+          "name": "AI Smart Factory Engineer",
+          "query": "AI Smart Factory Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Smart-Factory-Engineer-jobs",
+          "displayedCount": 79,
+          "reportedCount": 79,
+          "collectedRows": 79,
+          "pagesScanned": 1,
+          "classifiedJobs": 52,
+          "classifiedCount": 52
+        },
+        {
+          "id": "C13-S02",
+          "name": "Smart Factory Engineer",
+          "query": "Smart Factory Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Smart-Factory-Engineer-jobs",
+          "displayedCount": 58,
+          "reportedCount": 58,
+          "collectedRows": 58,
+          "pagesScanned": 1,
+          "classifiedJobs": 3,
+          "classifiedCount": 3
+        },
+        {
+          "id": "C13-S03",
+          "name": "Industry 4.0 Engineer",
+          "query": "Industry 4.0 Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Industry-4.0-Engineer-jobs",
+          "displayedCount": 5,
+          "reportedCount": 5,
+          "collectedRows": 5,
+          "pagesScanned": 1,
+          "classifiedJobs": 0,
+          "classifiedCount": 0
+        },
+        {
+          "id": "C13-S04",
+          "name": "Manufacturing Digitalization Engineer",
+          "query": "Manufacturing Digitalization Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Manufacturing-Digitalization-Engineer-jobs",
+          "displayedCount": 66,
+          "reportedCount": 66,
+          "collectedRows": 66,
+          "pagesScanned": 1,
+          "classifiedJobs": 107,
+          "classifiedCount": 107
+        }
+      ],
+      "classifiedJobs": 162,
+      "classifiedCount": 162
+    },
+    {
+      "id": "C14",
+      "name": "AI Process and Production Engineer",
+      "query": "AI Process Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/AI-Process-Engineer-jobs",
+      "displayedCount": 1693,
+      "collectedRows": 1693,
+      "pagesScanned": 19,
+      "subcategories": [
+        {
+          "id": "C14-S01",
+          "name": "AI Process Engineer",
+          "query": "AI Process Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Process-Engineer-jobs",
+          "displayedCount": 230,
+          "reportedCount": 230,
+          "collectedRows": 230,
+          "pagesScanned": 3,
+          "classifiedJobs": 166,
+          "classifiedCount": 166
+        },
+        {
+          "id": "C14-S02",
+          "name": "AI Production Engineer",
+          "query": "AI Production Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Production-Engineer-jobs",
+          "displayedCount": 220,
+          "reportedCount": 220,
+          "collectedRows": 220,
+          "pagesScanned": 3,
+          "classifiedJobs": 3,
+          "classifiedCount": 3
+        },
+        {
+          "id": "C14-S03",
+          "name": "Manufacturing Process Engineer",
+          "query": "Manufacturing Process Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Manufacturing-Process-Engineer-jobs",
+          "displayedCount": 1045,
+          "reportedCount": 1045,
+          "collectedRows": 1045,
+          "pagesScanned": 11,
+          "classifiedJobs": 694,
+          "classifiedCount": 694
+        },
+        {
+          "id": "C14-S04",
+          "name": "Production Optimization Engineer",
+          "query": "Production Optimization Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Production-Optimization-Engineer-jobs",
+          "displayedCount": 198,
+          "reportedCount": 198,
+          "collectedRows": 198,
+          "pagesScanned": 2,
+          "classifiedJobs": 54,
+          "classifiedCount": 54
+        }
+      ],
+      "classifiedJobs": 917,
+      "classifiedCount": 917
+    },
+    {
+      "id": "C15",
+      "name": "Decision Support Systems Specialist",
+      "query": "Decision Support System Analyst",
+      "sourceUrl": "https://th.jobsdb.com/th/Decision-Support-System-Analyst-jobs",
+      "displayedCount": 310,
+      "collectedRows": 310,
+      "pagesScanned": 6,
+      "subcategories": [
+        {
+          "id": "C15-S01",
+          "name": "Decision Support System Analyst",
+          "query": "Decision Support System Analyst",
+          "sourceUrl": "https://th.jobsdb.com/th/Decision-Support-System-Analyst-jobs",
+          "displayedCount": 37,
+          "reportedCount": 37,
+          "collectedRows": 37,
+          "pagesScanned": 1,
+          "classifiedJobs": 105,
+          "classifiedCount": 105
+        },
+        {
+          "id": "C15-S02",
+          "name": "Decision Support System Developer",
+          "query": "Decision Support System Developer",
+          "sourceUrl": "https://th.jobsdb.com/th/Decision-Support-System-Developer-jobs",
+          "displayedCount": 13,
+          "reportedCount": 13,
+          "collectedRows": 13,
+          "pagesScanned": 1,
+          "classifiedJobs": 8,
+          "classifiedCount": 8
+        },
+        {
+          "id": "C15-S03",
+          "name": "Business Decision Analyst",
+          "query": "Business Decision Analyst",
+          "sourceUrl": "https://th.jobsdb.com/th/Business-Decision-Analyst-jobs",
+          "displayedCount": 218,
+          "reportedCount": 218,
+          "collectedRows": 218,
+          "pagesScanned": 3,
+          "classifiedJobs": 36,
+          "classifiedCount": 36
+        },
+        {
+          "id": "C15-S04",
+          "name": "Operations Research Analyst",
+          "query": "Operations Research Analyst",
+          "sourceUrl": "https://th.jobsdb.com/th/Operations-Research-Analyst-jobs",
+          "displayedCount": 42,
+          "reportedCount": 42,
+          "collectedRows": 42,
+          "pagesScanned": 1,
+          "classifiedJobs": 88,
+          "classifiedCount": 88
+        }
+      ],
+      "classifiedJobs": 237,
+      "classifiedCount": 237
+    },
+    {
+      "id": "C16",
+      "name": "AI Maintenance Engineer",
+      "query": "Predictive Maintenance Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Predictive-Maintenance-Engineer-jobs",
+      "displayedCount": 673,
+      "collectedRows": 673,
+      "pagesScanned": 8,
+      "subcategories": [
+        {
+          "id": "C16-S01",
+          "name": "Predictive Maintenance Engineer",
+          "query": "Predictive Maintenance Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Predictive-Maintenance-Engineer-jobs",
+          "displayedCount": 140,
+          "reportedCount": 140,
+          "collectedRows": 140,
+          "pagesScanned": 2,
+          "classifiedJobs": 44,
+          "classifiedCount": 44
+        },
+        {
+          "id": "C16-S02",
+          "name": "AI Maintenance Engineer",
+          "query": "AI Maintenance Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Maintenance-Engineer-jobs",
+          "displayedCount": 76,
+          "reportedCount": 76,
+          "collectedRows": 76,
+          "pagesScanned": 1,
+          "classifiedJobs": 62,
+          "classifiedCount": 62
+        },
+        {
+          "id": "C16-S03",
+          "name": "Reliability Engineer",
+          "query": "Reliability Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Reliability-Engineer-jobs",
+          "displayedCount": 258,
+          "reportedCount": 258,
+          "collectedRows": 258,
+          "pagesScanned": 3,
+          "classifiedJobs": 158,
+          "classifiedCount": 158
+        },
+        {
+          "id": "C16-S04",
+          "name": "Condition Monitoring Engineer",
+          "query": "Condition Monitoring Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Condition-Monitoring-Engineer-jobs",
+          "displayedCount": 199,
+          "reportedCount": 199,
+          "collectedRows": 199,
+          "pagesScanned": 2,
+          "classifiedJobs": 15,
+          "classifiedCount": 15
+        }
+      ],
+      "classifiedJobs": 279,
+      "classifiedCount": 279
+    },
+    {
+      "id": "C17",
+      "name": "AI Industrial Engineer",
+      "query": "Industrial AI Engineer",
+      "sourceUrl": "https://th.jobsdb.com/th/Industrial-AI-Engineer-jobs",
+      "displayedCount": 295,
+      "collectedRows": 295,
+      "pagesScanned": 5,
+      "subcategories": [
+        {
+          "id": "C17-S01",
+          "name": "Industrial AI Engineer",
+          "query": "Industrial AI Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Industrial-AI-Engineer-jobs",
+          "displayedCount": 103,
+          "reportedCount": 103,
+          "collectedRows": 103,
+          "pagesScanned": 2,
+          "classifiedJobs": 8,
+          "classifiedCount": 8
+        },
+        {
+          "id": "C17-S02",
+          "name": "AI Industrial Engineer",
+          "query": "AI Industrial Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/AI-Industrial-Engineer-jobs",
+          "displayedCount": 91,
+          "reportedCount": 91,
+          "collectedRows": 91,
+          "pagesScanned": 1,
+          "classifiedJobs": 33,
+          "classifiedCount": 33
+        },
+        {
+          "id": "C17-S03",
+          "name": "Industrial Data Scientist",
+          "query": "Industrial Data Scientist",
+          "sourceUrl": "https://th.jobsdb.com/th/Industrial-Data-Scientist-jobs",
+          "displayedCount": 13,
+          "reportedCount": 13,
+          "collectedRows": 13,
+          "pagesScanned": 1,
+          "classifiedJobs": 37,
+          "classifiedCount": 37
+        },
+        {
+          "id": "C17-S04",
+          "name": "Manufacturing AI Engineer",
+          "query": "Manufacturing AI Engineer",
+          "sourceUrl": "https://th.jobsdb.com/th/Manufacturing-AI-Engineer-jobs",
+          "displayedCount": 88,
+          "reportedCount": 88,
+          "collectedRows": 88,
+          "pagesScanned": 1,
+          "classifiedJobs": 33,
+          "classifiedCount": 33
+        }
+      ],
+      "classifiedJobs": 111,
+      "classifiedCount": 111
+    }
+  ],
+  "skillCounts": [
+    {
+      "name": "Data Analytics & BI",
+      "category": "Technical",
+      "count": 904,
+      "percent": 27.6
+    },
+    {
+      "name": "Cloud Platforms",
+      "category": "Technical",
+      "count": 513,
+      "percent": 15.6
+    },
+    {
+      "name": "SQL",
+      "category": "Technical",
+      "count": 484,
+      "percent": 14.8
+    },
+    {
+      "name": "Python",
+      "category": "Technical",
+      "count": 407,
+      "percent": 12.4
+    },
+    {
+      "name": "API & Backend Development",
+      "category": "Technical",
+      "count": 349,
+      "percent": 10.6
+    },
+    {
+      "name": "Data Engineering & Pipelines",
+      "category": "Technical",
+      "count": 245,
+      "percent": 7.5
+    },
+    {
+      "name": "Generative AI",
+      "category": "Technical",
+      "count": 199,
+      "percent": 6.1
+    },
+    {
+      "name": "Machine Learning",
+      "category": "Technical",
+      "count": 178,
+      "percent": 5.4
+    },
+    {
+      "name": "CI/CD",
+      "category": "Technical",
+      "count": 173,
+      "percent": 5.3
+    },
+    {
+      "name": "Docker",
+      "category": "Technical",
+      "count": 123,
+      "percent": 3.8
+    },
+    {
+      "name": "Kubernetes",
+      "category": "Technical",
+      "count": 98,
+      "percent": 3
+    },
+    {
+      "name": "LLM",
+      "category": "Technical",
+      "count": 94,
+      "percent": 2.9
+    },
+    {
+      "name": "Agentic AI",
+      "category": "Technical",
+      "count": 73,
+      "percent": 2.2
+    },
+    {
+      "name": "Prompt Engineering",
+      "category": "Technical",
+      "count": 54,
+      "percent": 1.6
+    },
+    {
+      "name": "RAG",
+      "category": "Technical",
+      "count": 45,
+      "percent": 1.4
+    },
+    {
+      "name": "Deep Learning Frameworks",
+      "category": "Technical",
+      "count": 43,
+      "percent": 1.3
+    },
+    {
+      "name": "MLOps",
+      "category": "Technical",
+      "count": 40,
+      "percent": 1.2
+    },
+    {
+      "name": "Vector Databases",
+      "category": "Technical",
+      "count": 32,
+      "percent": 1
+    },
+    {
+      "name": "Computer Vision",
+      "category": "Technical",
+      "count": 30,
+      "percent": 0.9
+    },
+    {
+      "name": "NLP & Speech",
+      "category": "Technical",
+      "count": 26,
+      "percent": 0.8
+    },
+    {
+      "name": "Communication",
+      "category": "Soft",
+      "count": 2122,
+      "percent": 64.7
+    },
+    {
+      "name": "English Communication",
+      "category": "Soft",
+      "count": 1841,
+      "percent": 56.2
+    },
+    {
+      "name": "Problem Solving",
+      "category": "Soft",
+      "count": 1674,
+      "percent": 51.1
+    },
+    {
+      "name": "Collaboration & Teamwork",
+      "category": "Soft",
+      "count": 1505,
+      "percent": 45.9
+    },
+    {
+      "name": "Analytical Thinking",
+      "category": "Soft",
+      "count": 1174,
+      "percent": 35.8
+    },
+    {
+      "name": "Stakeholder Management",
+      "category": "Soft",
+      "count": 1000,
+      "percent": 30.5
+    },
+    {
+      "name": "Leadership",
+      "category": "Soft",
+      "count": 838,
+      "percent": 25.6
+    },
+    {
+      "name": "Project Management",
+      "category": "Soft",
+      "count": 644,
+      "percent": 19.6
+    },
+    {
+      "name": "Presentation",
+      "category": "Soft",
+      "count": 562,
+      "percent": 17.1
+    },
+    {
+      "name": "Agile / Scrum",
+      "category": "Soft",
+      "count": 271,
+      "percent": 8.3
+    }
+  ],
+  "skillCountsByCareer": {
+    "C01": [
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 98,
+        "percent": 51
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 86,
+        "percent": 44.8
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 79,
+        "percent": 41.1
+      },
+      {
+        "name": "SQL",
+        "category": "Technical",
+        "count": 68,
+        "percent": 35.4
+      },
+      {
+        "name": "Data Engineering & Pipelines",
+        "category": "Technical",
+        "count": 67,
+        "percent": 34.9
+      },
+      {
+        "name": "Generative AI",
+        "category": "Technical",
+        "count": 67,
+        "percent": 34.9
+      },
+      {
+        "name": "API & Backend Development",
+        "category": "Technical",
+        "count": 64,
+        "percent": 33.3
+      },
+      {
+        "name": "Data Analytics & BI",
+        "category": "Technical",
+        "count": 50,
+        "percent": 26
+      },
+      {
+        "name": "LLM",
+        "category": "Technical",
+        "count": 49,
+        "percent": 25.5
+      },
+      {
+        "name": "CI/CD",
+        "category": "Technical",
+        "count": 35,
+        "percent": 18.2
+      },
+      {
+        "name": "Agentic AI",
+        "category": "Technical",
+        "count": 32,
+        "percent": 16.7
+      },
+      {
+        "name": "Deep Learning Frameworks",
+        "category": "Technical",
+        "count": 32,
+        "percent": 16.7
+      },
+      {
+        "name": "Docker",
+        "category": "Technical",
+        "count": 32,
+        "percent": 16.7
+      },
+      {
+        "name": "Kubernetes",
+        "category": "Technical",
+        "count": 26,
+        "percent": 13.5
+      },
+      {
+        "name": "RAG",
+        "category": "Technical",
+        "count": 26,
+        "percent": 13.5
+      },
+      {
+        "name": "MLOps",
+        "category": "Technical",
+        "count": 24,
+        "percent": 12.5
+      },
+      {
+        "name": "Prompt Engineering",
+        "category": "Technical",
+        "count": 20,
+        "percent": 10.4
+      },
+      {
+        "name": "Vector Databases",
+        "category": "Technical",
+        "count": 18,
+        "percent": 9.4
+      },
+      {
+        "name": "NLP & Speech",
+        "category": "Technical",
+        "count": 17,
+        "percent": 8.9
+      },
+      {
+        "name": "Computer Vision",
+        "category": "Technical",
+        "count": 12,
+        "percent": 6.3
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 129,
+        "percent": 67.2
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 93,
+        "percent": 48.4
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 81,
+        "percent": 42.2
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 80,
+        "percent": 41.7
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 59,
+        "percent": 30.7
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 58,
+        "percent": 30.2
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 46,
+        "percent": 24
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 28,
+        "percent": 14.6
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 21,
+        "percent": 10.9
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 20,
+        "percent": 10.4
+      }
+    ],
+    "C02": [
+      {
+        "name": "AI Security & Governance",
+        "category": "Technical",
+        "count": 176,
+        "percent": 23.2
+      },
+      {
+        "name": "Application Development",
+        "category": "Technical",
+        "count": 168,
+        "percent": 22.1
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 152,
+        "percent": 20
+      },
+      {
+        "name": "SQL & Databases",
+        "category": "Technical",
+        "count": 140,
+        "percent": 18.4
+      },
+      {
+        "name": "APIs & Backend Development",
+        "category": "Technical",
+        "count": 128,
+        "percent": 16.8
+      },
+      {
+        "name": "Prototyping & UX",
+        "category": "Technical",
+        "count": 97,
+        "percent": 12.8
+      },
+      {
+        "name": "Generative AI",
+        "category": "Technical",
+        "count": 94,
+        "percent": 12.4
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 62,
+        "percent": 8.2
+      },
+      {
+        "name": "System Integration",
+        "category": "Technical",
+        "count": 52,
+        "percent": 6.8
+      },
+      {
+        "name": "Solution Architecture",
+        "category": "Technical",
+        "count": 42,
+        "percent": 5.5
+      },
+      {
+        "name": "LLM",
+        "category": "Technical",
+        "count": 36,
+        "percent": 4.7
+      },
+      {
+        "name": "Agentic AI",
+        "category": "Technical",
+        "count": 32,
+        "percent": 4.2
+      },
+      {
+        "name": "AI Platforms & Services",
+        "category": "Technical",
+        "count": 29,
+        "percent": 3.8
+      },
+      {
+        "name": "Prompt Engineering",
+        "category": "Technical",
+        "count": 25,
+        "percent": 3.3
+      },
+      {
+        "name": "Data Engineering & Pipelines",
+        "category": "Technical",
+        "count": 24,
+        "percent": 3.2
+      },
+      {
+        "name": "Docker",
+        "category": "Technical",
+        "count": 16,
+        "percent": 2.1
+      },
+      {
+        "name": "RAG",
+        "category": "Technical",
+        "count": 13,
+        "percent": 1.7
+      },
+      {
+        "name": "Kubernetes",
+        "category": "Technical",
+        "count": 12,
+        "percent": 1.6
+      },
+      {
+        "name": "MLOps",
+        "category": "Technical",
+        "count": 7,
+        "percent": 0.9
+      },
+      {
+        "name": "Vector Databases",
+        "category": "Technical",
+        "count": 5,
+        "percent": 0.7
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 625,
+        "percent": 82.2
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 417,
+        "percent": 54.9
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 355,
+        "percent": 46.7
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 332,
+        "percent": 43.7
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 289,
+        "percent": 38
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 276,
+        "percent": 36.3
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 241,
+        "percent": 31.7
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 191,
+        "percent": 25.1
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 178,
+        "percent": 23.4
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 104,
+        "percent": 13.7
+      }
+    ],
+    "C03": [
+      {
+        "name": "Precision Agriculture",
+        "category": "Technical",
+        "count": 15,
+        "percent": 38.5
+      },
+      {
+        "name": "Data Analytics & Visualization",
+        "category": "Technical",
+        "count": 12,
+        "percent": 30.8
+      },
+      {
+        "name": "IoT Platforms",
+        "category": "Technical",
+        "count": 11,
+        "percent": 28.2
+      },
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 7,
+        "percent": 17.9
+      },
+      {
+        "name": "Cloud IoT Platforms",
+        "category": "Technical",
+        "count": 7,
+        "percent": 17.9
+      },
+      {
+        "name": "Sensors & Instrumentation",
+        "category": "Technical",
+        "count": 7,
+        "percent": 17.9
+      },
+      {
+        "name": "SQL & Databases",
+        "category": "Technical",
+        "count": 7,
+        "percent": 17.9
+      },
+      {
+        "name": "APIs & System Integration",
+        "category": "Technical",
+        "count": 4,
+        "percent": 10.3
+      },
+      {
+        "name": "Microcontrollers & SBC",
+        "category": "Technical",
+        "count": 4,
+        "percent": 10.3
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 4,
+        "percent": 10.3
+      },
+      {
+        "name": "Embedded Systems",
+        "category": "Technical",
+        "count": 3,
+        "percent": 7.7
+      },
+      {
+        "name": "MQTT & IoT Protocols",
+        "category": "Technical",
+        "count": 3,
+        "percent": 7.7
+      },
+      {
+        "name": "Wireless & Networking",
+        "category": "Technical",
+        "count": 3,
+        "percent": 7.7
+      },
+      {
+        "name": "Edge Computing",
+        "category": "Technical",
+        "count": 2,
+        "percent": 5.1
+      },
+      {
+        "name": "Electronics & Circuit Design",
+        "category": "Technical",
+        "count": 2,
+        "percent": 5.1
+      },
+      {
+        "name": "SCADA & HMI",
+        "category": "Technical",
+        "count": 2,
+        "percent": 5.1
+      },
+      {
+        "name": "C/C++",
+        "category": "Technical",
+        "count": 1,
+        "percent": 2.6
+      },
+      {
+        "name": "Computer Vision",
+        "category": "Technical",
+        "count": 1,
+        "percent": 2.6
+      },
+      {
+        "name": "GIS, Remote Sensing & Drones",
+        "category": "Technical",
+        "count": 1,
+        "percent": 2.6
+      },
+      {
+        "name": "PLC & Industrial Control",
+        "category": "Technical",
+        "count": 1,
+        "percent": 2.6
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 25,
+        "percent": 64.1
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 17,
+        "percent": 43.6
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 15,
+        "percent": 38.5
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 14,
+        "percent": 35.9
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 12,
+        "percent": 30.8
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 10,
+        "percent": 25.6
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 8,
+        "percent": 20.5
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 7,
+        "percent": 17.9
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 6,
+        "percent": 15.4
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 0,
+        "percent": 0
+      }
+    ],
+    "C04": [
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 260,
+        "percent": 54.1
+      },
+      {
+        "name": "PLC Programming",
+        "category": "Technical",
+        "count": 136,
+        "percent": 28.3
+      },
+      {
+        "name": "CAD & Engineering Drawings",
+        "category": "Technical",
+        "count": 101,
+        "percent": 21
+      },
+      {
+        "name": "SCADA & HMI",
+        "category": "Technical",
+        "count": 87,
+        "percent": 18.1
+      },
+      {
+        "name": "Instrumentation",
+        "category": "Technical",
+        "count": 60,
+        "percent": 12.5
+      },
+      {
+        "name": "Sensors & Actuators",
+        "category": "Technical",
+        "count": 53,
+        "percent": 11
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 42,
+        "percent": 8.7
+      },
+      {
+        "name": "Electrical Design",
+        "category": "Technical",
+        "count": 41,
+        "percent": 8.5
+      },
+      {
+        "name": "Motor Drives & Motion Control",
+        "category": "Technical",
+        "count": 40,
+        "percent": 8.3
+      },
+      {
+        "name": "MES & Manufacturing Systems",
+        "category": "Technical",
+        "count": 29,
+        "percent": 6
+      },
+      {
+        "name": "DCS",
+        "category": "Technical",
+        "count": 28,
+        "percent": 5.8
+      },
+      {
+        "name": "Robotics",
+        "category": "Technical",
+        "count": 28,
+        "percent": 5.8
+      },
+      {
+        "name": "Process Control",
+        "category": "Technical",
+        "count": 26,
+        "percent": 5.4
+      },
+      {
+        "name": "IIoT & Industry 4.0",
+        "category": "Technical",
+        "count": 24,
+        "percent": 5
+      },
+      {
+        "name": "Industrial Protocols",
+        "category": "Technical",
+        "count": 24,
+        "percent": 5
+      },
+      {
+        "name": "C/C++",
+        "category": "Technical",
+        "count": 19,
+        "percent": 4
+      },
+      {
+        "name": "Industrial Networks",
+        "category": "Technical",
+        "count": 18,
+        "percent": 3.7
+      },
+      {
+        "name": "Machine Vision",
+        "category": "Technical",
+        "count": 12,
+        "percent": 2.5
+      },
+      {
+        "name": "Safety & Standards",
+        "category": "Technical",
+        "count": 8,
+        "percent": 1.7
+      },
+      {
+        "name": "MATLAB & Simulink",
+        "category": "Technical",
+        "count": 4,
+        "percent": 0.8
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 384,
+        "percent": 79.8
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 304,
+        "percent": 63.2
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 286,
+        "percent": 59.5
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 190,
+        "percent": 39.5
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 106,
+        "percent": 22
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 104,
+        "percent": 21.6
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 96,
+        "percent": 20
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 92,
+        "percent": 19.1
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 48,
+        "percent": 10
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 11,
+        "percent": 2.3
+      }
+    ],
+    "C05": [
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 87,
+        "percent": 64
+      },
+      {
+        "name": "Mechatronics",
+        "category": "Technical",
+        "count": 57,
+        "percent": 41.9
+      },
+      {
+        "name": "Testing & Commissioning",
+        "category": "Technical",
+        "count": 55,
+        "percent": 40.4
+      },
+      {
+        "name": "CAD & Mechanical Design",
+        "category": "Technical",
+        "count": 51,
+        "percent": 37.5
+      },
+      {
+        "name": "Robotics",
+        "category": "Technical",
+        "count": 38,
+        "percent": 27.9
+      },
+      {
+        "name": "PLC Programming",
+        "category": "Technical",
+        "count": 37,
+        "percent": 27.2
+      },
+      {
+        "name": "System Integration",
+        "category": "Technical",
+        "count": 35,
+        "percent": 25.7
+      },
+      {
+        "name": "Sensors & Actuators",
+        "category": "Technical",
+        "count": 34,
+        "percent": 25
+      },
+      {
+        "name": "SCADA & HMI",
+        "category": "Technical",
+        "count": 14,
+        "percent": 10.3
+      },
+      {
+        "name": "Embedded Systems",
+        "category": "Technical",
+        "count": 11,
+        "percent": 8.1
+      },
+      {
+        "name": "Machine Vision",
+        "category": "Technical",
+        "count": 11,
+        "percent": 8.1
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 10,
+        "percent": 7.4
+      },
+      {
+        "name": "Simulation & Digital Twin",
+        "category": "Technical",
+        "count": 10,
+        "percent": 7.4
+      },
+      {
+        "name": "C/C++",
+        "category": "Technical",
+        "count": 8,
+        "percent": 5.9
+      },
+      {
+        "name": "Safety & Risk Assessment",
+        "category": "Technical",
+        "count": 6,
+        "percent": 4.4
+      },
+      {
+        "name": "Motion Planning & Control",
+        "category": "Technical",
+        "count": 5,
+        "percent": 3.7
+      },
+      {
+        "name": "Industrial Networks",
+        "category": "Technical",
+        "count": 4,
+        "percent": 2.9
+      },
+      {
+        "name": "Robot Platforms",
+        "category": "Technical",
+        "count": 4,
+        "percent": 2.9
+      },
+      {
+        "name": "Electrical & Control Panels",
+        "category": "Technical",
+        "count": 3,
+        "percent": 2.2
+      },
+      {
+        "name": "ROS",
+        "category": "Technical",
+        "count": 3,
+        "percent": 2.2
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 116,
+        "percent": 85.3
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 94,
+        "percent": 69.1
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 87,
+        "percent": 64
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 52,
+        "percent": 38.2
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 36,
+        "percent": 26.5
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 31,
+        "percent": 22.8
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 31,
+        "percent": 22.8
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 19,
+        "percent": 14
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 17,
+        "percent": 12.5
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 4,
+        "percent": 2.9
+      }
+    ],
+    "C06": [
+      {
+        "name": "Backend & APIs",
+        "category": "Technical",
+        "count": 220,
+        "percent": 37.2
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 216,
+        "percent": 36.5
+      },
+      {
+        "name": "SQL & Databases",
+        "category": "Technical",
+        "count": 214,
+        "percent": 36.1
+      },
+      {
+        "name": "Security & Authentication",
+        "category": "Technical",
+        "count": 196,
+        "percent": 33.1
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 146,
+        "percent": 24.7
+      },
+      {
+        "name": "CI/CD",
+        "category": "Technical",
+        "count": 126,
+        "percent": 21.3
+      },
+      {
+        "name": "JavaScript & TypeScript",
+        "category": "Technical",
+        "count": 119,
+        "percent": 20.1
+      },
+      {
+        "name": "Generative AI",
+        "category": "Technical",
+        "count": 99,
+        "percent": 16.7
+      },
+      {
+        "name": "Docker",
+        "category": "Technical",
+        "count": 86,
+        "percent": 14.5
+      },
+      {
+        "name": "Frontend Frameworks",
+        "category": "Technical",
+        "count": 83,
+        "percent": 14
+      },
+      {
+        "name": "Testing & Quality",
+        "category": "Technical",
+        "count": 76,
+        "percent": 12.8
+      },
+      {
+        "name": "Software Architecture",
+        "category": "Technical",
+        "count": 66,
+        "percent": 11.1
+      },
+      {
+        "name": "Kubernetes",
+        "category": "Technical",
+        "count": 64,
+        "percent": 10.8
+      },
+      {
+        "name": "LLM",
+        "category": "Technical",
+        "count": 56,
+        "percent": 9.5
+      },
+      {
+        "name": "NoSQL & Vector Databases",
+        "category": "Technical",
+        "count": 55,
+        "percent": 9.3
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 47,
+        "percent": 7.9
+      },
+      {
+        "name": "Agentic AI",
+        "category": "Technical",
+        "count": 40,
+        "percent": 6.8
+      },
+      {
+        "name": "Prompt Engineering",
+        "category": "Technical",
+        "count": 31,
+        "percent": 5.2
+      },
+      {
+        "name": "RAG",
+        "category": "Technical",
+        "count": 25,
+        "percent": 4.2
+      },
+      {
+        "name": "MLOps & Model Serving",
+        "category": "Technical",
+        "count": 12,
+        "percent": 2
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 444,
+        "percent": 75
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 287,
+        "percent": 48.5
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 278,
+        "percent": 47
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 267,
+        "percent": 45.1
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 194,
+        "percent": 32.8
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 152,
+        "percent": 25.7
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 123,
+        "percent": 20.8
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 114,
+        "percent": 19.3
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 103,
+        "percent": 17.4
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 102,
+        "percent": 17.2
+      }
+    ],
+    "C07": [
+      {
+        "name": "SQL",
+        "category": "Technical",
+        "count": 216,
+        "percent": 43.5
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 156,
+        "percent": 31.4
+      },
+      {
+        "name": "BI & Visualization",
+        "category": "Technical",
+        "count": 129,
+        "percent": 26
+      },
+      {
+        "name": "ETL & ELT",
+        "category": "Technical",
+        "count": 113,
+        "percent": 22.7
+      },
+      {
+        "name": "AWS Data Services",
+        "category": "Technical",
+        "count": 102,
+        "percent": 20.5
+      },
+      {
+        "name": "Azure Data Services",
+        "category": "Technical",
+        "count": 100,
+        "percent": 20.1
+      },
+      {
+        "name": "GCP Data Services",
+        "category": "Technical",
+        "count": 90,
+        "percent": 18.1
+      },
+      {
+        "name": "Data Quality & Testing",
+        "category": "Technical",
+        "count": 87,
+        "percent": 17.5
+      },
+      {
+        "name": "CI/CD & Infrastructure as Code",
+        "category": "Technical",
+        "count": 82,
+        "percent": 16.5
+      },
+      {
+        "name": "Data Modeling",
+        "category": "Technical",
+        "count": 70,
+        "percent": 14.1
+      },
+      {
+        "name": "Docker & Kubernetes",
+        "category": "Technical",
+        "count": 68,
+        "percent": 13.7
+      },
+      {
+        "name": "Cloud Data Platforms",
+        "category": "Technical",
+        "count": 65,
+        "percent": 13.1
+      },
+      {
+        "name": "Data Governance & Catalog",
+        "category": "Technical",
+        "count": 60,
+        "percent": 12.1
+      },
+      {
+        "name": "Apache Spark",
+        "category": "Technical",
+        "count": 44,
+        "percent": 8.9
+      },
+      {
+        "name": "Data Warehousing",
+        "category": "Technical",
+        "count": 42,
+        "percent": 8.5
+      },
+      {
+        "name": "NoSQL Databases",
+        "category": "Technical",
+        "count": 36,
+        "percent": 7.2
+      },
+      {
+        "name": "Data Lake & Lakehouse",
+        "category": "Technical",
+        "count": 34,
+        "percent": 6.8
+      },
+      {
+        "name": "Kafka & Streaming",
+        "category": "Technical",
+        "count": 32,
+        "percent": 6.4
+      },
+      {
+        "name": "Airflow & Orchestration",
+        "category": "Technical",
+        "count": 23,
+        "percent": 4.6
+      },
+      {
+        "name": "dbt & Analytics Engineering",
+        "category": "Technical",
+        "count": 18,
+        "percent": 3.6
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 369,
+        "percent": 74.2
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 262,
+        "percent": 52.7
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 237,
+        "percent": 47.7
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 236,
+        "percent": 47.5
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 209,
+        "percent": 42.1
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 187,
+        "percent": 37.6
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 99,
+        "percent": 19.9
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 65,
+        "percent": 13.1
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 64,
+        "percent": 12.9
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 53,
+        "percent": 10.7
+      }
+    ],
+    "C08": [
+      {
+        "name": "Product Management",
+        "category": "Technical",
+        "count": 38,
+        "percent": 38.8
+      },
+      {
+        "name": "AI Product Development",
+        "category": "Technical",
+        "count": 35,
+        "percent": 35.7
+      },
+      {
+        "name": "Data Analytics & BI",
+        "category": "Technical",
+        "count": 31,
+        "percent": 31.6
+      },
+      {
+        "name": "Agile Product Delivery",
+        "category": "Technical",
+        "count": 16,
+        "percent": 16.3
+      },
+      {
+        "name": "Market & Technology Research",
+        "category": "Technical",
+        "count": 16,
+        "percent": 16.3
+      },
+      {
+        "name": "Rapid Prototyping",
+        "category": "Technical",
+        "count": 14,
+        "percent": 14.3
+      },
+      {
+        "name": "User Research & UX",
+        "category": "Technical",
+        "count": 14,
+        "percent": 14.3
+      },
+      {
+        "name": "Generative AI",
+        "category": "Technical",
+        "count": 10,
+        "percent": 10.2
+      },
+      {
+        "name": "APIs & System Integration",
+        "category": "Technical",
+        "count": 9,
+        "percent": 9.2
+      },
+      {
+        "name": "Robotics & Automation",
+        "category": "Technical",
+        "count": 6,
+        "percent": 6.1
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 5,
+        "percent": 5.1
+      },
+      {
+        "name": "AI Ethics & Governance",
+        "category": "Technical",
+        "count": 4,
+        "percent": 4.1
+      },
+      {
+        "name": "Design Thinking",
+        "category": "Technical",
+        "count": 3,
+        "percent": 3.1
+      },
+      {
+        "name": "IoT & Smart Systems",
+        "category": "Technical",
+        "count": 2,
+        "percent": 2
+      },
+      {
+        "name": "No-code & Workflow Automation",
+        "category": "Technical",
+        "count": 2,
+        "percent": 2
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 2,
+        "percent": 2
+      },
+      {
+        "name": "Intellectual Property",
+        "category": "Technical",
+        "count": 1,
+        "percent": 1
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 1,
+        "percent": 1
+      },
+      {
+        "name": "Computer Vision",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Experimentation & A/B Testing",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 84,
+        "percent": 85.7
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 57,
+        "percent": 58.2
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 54,
+        "percent": 55.1
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 42,
+        "percent": 42.9
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 40,
+        "percent": 40.8
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 38,
+        "percent": 38.8
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 35,
+        "percent": 35.7
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 32,
+        "percent": 32.7
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 30,
+        "percent": 30.6
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 16,
+        "percent": 16.3
+      }
+    ],
+    "C09": [
+      {
+        "name": "AI & Machine Learning",
+        "category": "Technical",
+        "count": 27,
+        "percent": 34.2
+      },
+      {
+        "name": "Product Metrics & Experimentation",
+        "category": "Technical",
+        "count": 21,
+        "percent": 26.6
+      },
+      {
+        "name": "Cloud & SaaS",
+        "category": "Technical",
+        "count": 19,
+        "percent": 24.1
+      },
+      {
+        "name": "Data Analytics & BI",
+        "category": "Technical",
+        "count": 19,
+        "percent": 24.1
+      },
+      {
+        "name": "Business Model & Lean Startup",
+        "category": "Technical",
+        "count": 11,
+        "percent": 13.9
+      },
+      {
+        "name": "CRM & Sales Technology",
+        "category": "Technical",
+        "count": 10,
+        "percent": 12.7
+      },
+      {
+        "name": "Financial Modeling & Unit Economics",
+        "category": "Technical",
+        "count": 10,
+        "percent": 12.7
+      },
+      {
+        "name": "Market Validation",
+        "category": "Technical",
+        "count": 10,
+        "percent": 12.7
+      },
+      {
+        "name": "Technology Commercialization",
+        "category": "Technical",
+        "count": 9,
+        "percent": 11.4
+      },
+      {
+        "name": "E-commerce & Digital Platforms",
+        "category": "Technical",
+        "count": 8,
+        "percent": 10.1
+      },
+      {
+        "name": "Generative AI",
+        "category": "Technical",
+        "count": 7,
+        "percent": 8.9
+      },
+      {
+        "name": "No-code & Automation",
+        "category": "Technical",
+        "count": 7,
+        "percent": 8.9
+      },
+      {
+        "name": "Fundraising & Venture Capital",
+        "category": "Technical",
+        "count": 6,
+        "percent": 7.6
+      },
+      {
+        "name": "AI Product Strategy",
+        "category": "Technical",
+        "count": 4,
+        "percent": 5.1
+      },
+      {
+        "name": "Cybersecurity & Data Privacy",
+        "category": "Technical",
+        "count": 4,
+        "percent": 5.1
+      },
+      {
+        "name": "Digital Marketing & Growth",
+        "category": "Technical",
+        "count": 4,
+        "percent": 5.1
+      },
+      {
+        "name": "APIs & System Integration",
+        "category": "Technical",
+        "count": 2,
+        "percent": 2.5
+      },
+      {
+        "name": "Rapid Prototyping & MVP",
+        "category": "Technical",
+        "count": 2,
+        "percent": 2.5
+      },
+      {
+        "name": "AI Governance & Ethics",
+        "category": "Technical",
+        "count": 1,
+        "percent": 1.3
+      },
+      {
+        "name": "Intellectual Property",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 63,
+        "percent": 79.7
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 50,
+        "percent": 63.3
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 37,
+        "percent": 46.8
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 35,
+        "percent": 44.3
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 30,
+        "percent": 38
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 29,
+        "percent": 36.7
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 22,
+        "percent": 27.8
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 19,
+        "percent": 24.1
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 13,
+        "percent": 16.5
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 4,
+        "percent": 5.1
+      }
+    ],
+    "C10": [
+      {
+        "name": "Scientific Writing & Publication",
+        "category": "Technical",
+        "count": 9,
+        "percent": 52.9
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 4,
+        "percent": 23.5
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 4,
+        "percent": 23.5
+      },
+      {
+        "name": "Computer Vision",
+        "category": "Technical",
+        "count": 3,
+        "percent": 17.6
+      },
+      {
+        "name": "Deep Learning",
+        "category": "Technical",
+        "count": 3,
+        "percent": 17.6
+      },
+      {
+        "name": "Experimental Design",
+        "category": "Technical",
+        "count": 3,
+        "percent": 17.6
+      },
+      {
+        "name": "NLP & Speech",
+        "category": "Technical",
+        "count": 3,
+        "percent": 17.6
+      },
+      {
+        "name": "Cloud Research Platforms",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Data Engineering",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Generative AI & LLM",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Mathematics & Statistics",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "MLOps & Reproducibility",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Patents & Technology Transfer",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Reinforcement Learning",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "Version Control",
+        "category": "Technical",
+        "count": 2,
+        "percent": 11.8
+      },
+      {
+        "name": "GPU & High-performance Computing",
+        "category": "Technical",
+        "count": 1,
+        "percent": 5.9
+      },
+      {
+        "name": "Optimization Algorithms",
+        "category": "Technical",
+        "count": 1,
+        "percent": 5.9
+      },
+      {
+        "name": "Time Series & Forecasting",
+        "category": "Technical",
+        "count": 1,
+        "percent": 5.9
+      },
+      {
+        "name": "Research Methodology",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Responsible AI & Ethics",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 14,
+        "percent": 82.4
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 12,
+        "percent": 70.6
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 8,
+        "percent": 47.1
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 7,
+        "percent": 41.2
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 6,
+        "percent": 35.3
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 6,
+        "percent": 35.3
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 4,
+        "percent": 23.5
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 4,
+        "percent": 23.5
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 3,
+        "percent": 17.6
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 0,
+        "percent": 0
+      }
+    ],
+    "C11": [
+      {
+        "name": "Procurement & Vendor Management",
+        "category": "Technical",
+        "count": 228,
+        "percent": 100
+      },
+      {
+        "name": "Microsoft 365 & Collaboration",
+        "category": "Technical",
+        "count": 120,
+        "percent": 52.6
+      },
+      {
+        "name": "IT Operations & Support",
+        "category": "Technical",
+        "count": 91,
+        "percent": 39.9
+      },
+      {
+        "name": "Cybersecurity",
+        "category": "Technical",
+        "count": 60,
+        "percent": 26.3
+      },
+      {
+        "name": "Backup & Disaster Recovery",
+        "category": "Technical",
+        "count": 58,
+        "percent": 25.4
+      },
+      {
+        "name": "Cloud Services",
+        "category": "Technical",
+        "count": 48,
+        "percent": 21.1
+      },
+      {
+        "name": "Digital Identity & Access",
+        "category": "Technical",
+        "count": 45,
+        "percent": 19.7
+      },
+      {
+        "name": "IT Service Management",
+        "category": "Technical",
+        "count": 45,
+        "percent": 19.7
+      },
+      {
+        "name": "Digital Project Delivery",
+        "category": "Technical",
+        "count": 44,
+        "percent": 19.3
+      },
+      {
+        "name": "Digital Government & e-Service",
+        "category": "Technical",
+        "count": 41,
+        "percent": 18
+      },
+      {
+        "name": "AI & Process Automation",
+        "category": "Technical",
+        "count": 40,
+        "percent": 17.5
+      },
+      {
+        "name": "Data Analytics & BI",
+        "category": "Technical",
+        "count": 37,
+        "percent": 16.2
+      },
+      {
+        "name": "Systems Administration",
+        "category": "Technical",
+        "count": 36,
+        "percent": 15.8
+      },
+      {
+        "name": "Network Administration",
+        "category": "Technical",
+        "count": 32,
+        "percent": 14
+      },
+      {
+        "name": "Data Governance & PDPA",
+        "category": "Technical",
+        "count": 21,
+        "percent": 9.2
+      },
+      {
+        "name": "Database Administration",
+        "category": "Technical",
+        "count": 17,
+        "percent": 7.5
+      },
+      {
+        "name": "APIs & System Integration",
+        "category": "Technical",
+        "count": 14,
+        "percent": 6.1
+      },
+      {
+        "name": "Software & Web Development",
+        "category": "Technical",
+        "count": 8,
+        "percent": 3.5
+      },
+      {
+        "name": "Enterprise Architecture",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.9
+      },
+      {
+        "name": "Systems Analysis",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.9
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 184,
+        "percent": 80.7
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 142,
+        "percent": 62.3
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 122,
+        "percent": 53.5
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 87,
+        "percent": 38.2
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 75,
+        "percent": 32.9
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 54,
+        "percent": 23.7
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 52,
+        "percent": 22.8
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 41,
+        "percent": 18
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 17,
+        "percent": 7.5
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 5,
+        "percent": 2.2
+      }
+    ],
+    "C12": [
+      {
+        "name": "Business Intelligence",
+        "category": "Technical",
+        "count": 409,
+        "percent": 74.1
+      },
+      {
+        "name": "Excel & Spreadsheets",
+        "category": "Technical",
+        "count": 267,
+        "percent": 48.4
+      },
+      {
+        "name": "Data Visualization",
+        "category": "Technical",
+        "count": 232,
+        "percent": 42
+      },
+      {
+        "name": "Power BI",
+        "category": "Technical",
+        "count": 190,
+        "percent": 34.4
+      },
+      {
+        "name": "SQL",
+        "category": "Technical",
+        "count": 181,
+        "percent": 32.8
+      },
+      {
+        "name": "Statistics & Probability",
+        "category": "Technical",
+        "count": 120,
+        "percent": 21.7
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 114,
+        "percent": 20.7
+      },
+      {
+        "name": "Predictive Modeling",
+        "category": "Technical",
+        "count": 99,
+        "percent": 17.9
+      },
+      {
+        "name": "Tableau",
+        "category": "Technical",
+        "count": 87,
+        "percent": 15.8
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 45,
+        "percent": 8.2
+      },
+      {
+        "name": "R",
+        "category": "Technical",
+        "count": 32,
+        "percent": 5.8
+      },
+      {
+        "name": "Cloud Analytics",
+        "category": "Technical",
+        "count": 31,
+        "percent": 5.6
+      },
+      {
+        "name": "Big Data & Spark",
+        "category": "Technical",
+        "count": 29,
+        "percent": 5.3
+      },
+      {
+        "name": "Data Cleaning & Preparation",
+        "category": "Technical",
+        "count": 26,
+        "percent": 4.7
+      },
+      {
+        "name": "A/B Testing & Experimentation",
+        "category": "Technical",
+        "count": 24,
+        "percent": 4.3
+      },
+      {
+        "name": "Data Storytelling",
+        "category": "Technical",
+        "count": 12,
+        "percent": 2.2
+      },
+      {
+        "name": "Deep Learning",
+        "category": "Technical",
+        "count": 10,
+        "percent": 1.8
+      },
+      {
+        "name": "Exploratory Data Analysis",
+        "category": "Technical",
+        "count": 8,
+        "percent": 1.4
+      },
+      {
+        "name": "NLP",
+        "category": "Technical",
+        "count": 7,
+        "percent": 1.3
+      },
+      {
+        "name": "Computer Vision",
+        "category": "Technical",
+        "count": 3,
+        "percent": 0.5
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 425,
+        "percent": 77
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 313,
+        "percent": 56.7
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 260,
+        "percent": 47.1
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 254,
+        "percent": 46
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 226,
+        "percent": 40.9
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 201,
+        "percent": 36.4
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 179,
+        "percent": 32.4
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 92,
+        "percent": 16.7
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 76,
+        "percent": 13.8
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 39,
+        "percent": 7.1
+      }
+    ],
+    "C13": [
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 79,
+        "percent": 48.8
+      },
+      {
+        "name": "ERP & Production Systems",
+        "category": "Technical",
+        "count": 38,
+        "percent": 23.5
+      },
+      {
+        "name": "Data Analytics & BI",
+        "category": "Technical",
+        "count": 37,
+        "percent": 22.8
+      },
+      {
+        "name": "Lean Manufacturing & OEE",
+        "category": "Technical",
+        "count": 31,
+        "percent": 19.1
+      },
+      {
+        "name": "PLC Programming",
+        "category": "Technical",
+        "count": 29,
+        "percent": 17.9
+      },
+      {
+        "name": "SCADA & HMI",
+        "category": "Technical",
+        "count": 25,
+        "percent": 15.4
+      },
+      {
+        "name": "Smart Factory & Industry 4.0",
+        "category": "Technical",
+        "count": 24,
+        "percent": 14.8
+      },
+      {
+        "name": "Industrial IoT",
+        "category": "Technical",
+        "count": 23,
+        "percent": 14.2
+      },
+      {
+        "name": "Sensors & Instrumentation",
+        "category": "Technical",
+        "count": 23,
+        "percent": 14.2
+      },
+      {
+        "name": "Data Integration & APIs",
+        "category": "Technical",
+        "count": 21,
+        "percent": 13
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 20,
+        "percent": 12.3
+      },
+      {
+        "name": "MES",
+        "category": "Technical",
+        "count": 19,
+        "percent": 11.7
+      },
+      {
+        "name": "Predictive Maintenance",
+        "category": "Technical",
+        "count": 10,
+        "percent": 6.2
+      },
+      {
+        "name": "Robotics & Material Handling",
+        "category": "Technical",
+        "count": 10,
+        "percent": 6.2
+      },
+      {
+        "name": "Industrial Networks & Protocols",
+        "category": "Technical",
+        "count": 9,
+        "percent": 5.6
+      },
+      {
+        "name": "Digital Twin & Simulation",
+        "category": "Technical",
+        "count": 4,
+        "percent": 2.5
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 4,
+        "percent": 2.5
+      },
+      {
+        "name": "OT Cybersecurity",
+        "category": "Technical",
+        "count": 4,
+        "percent": 2.5
+      },
+      {
+        "name": "Edge Computing",
+        "category": "Technical",
+        "count": 3,
+        "percent": 1.9
+      },
+      {
+        "name": "Machine Vision",
+        "category": "Technical",
+        "count": 3,
+        "percent": 1.9
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 140,
+        "percent": 86.4
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 106,
+        "percent": 65.4
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 99,
+        "percent": 61.1
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 77,
+        "percent": 47.5
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 77,
+        "percent": 47.5
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 63,
+        "percent": 38.9
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 57,
+        "percent": 35.2
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 55,
+        "percent": 34
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 18,
+        "percent": 11.1
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 13,
+        "percent": 8
+      }
+    ],
+    "C14": [
+      {
+        "name": "Process Optimization",
+        "category": "Technical",
+        "count": 503,
+        "percent": 54.9
+      },
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 282,
+        "percent": 30.8
+      },
+      {
+        "name": "Process Engineering",
+        "category": "Technical",
+        "count": 273,
+        "percent": 29.8
+      },
+      {
+        "name": "Data Analytics & Visualization",
+        "category": "Technical",
+        "count": 240,
+        "percent": 26.2
+      },
+      {
+        "name": "Quality Engineering",
+        "category": "Technical",
+        "count": 213,
+        "percent": 23.2
+      },
+      {
+        "name": "Industrial Standards & Safety",
+        "category": "Technical",
+        "count": 202,
+        "percent": 22
+      },
+      {
+        "name": "Lean Manufacturing",
+        "category": "Technical",
+        "count": 197,
+        "percent": 21.5
+      },
+      {
+        "name": "MES & ERP",
+        "category": "Technical",
+        "count": 195,
+        "percent": 21.3
+      },
+      {
+        "name": "Six Sigma",
+        "category": "Technical",
+        "count": 135,
+        "percent": 14.7
+      },
+      {
+        "name": "Production Engineering",
+        "category": "Technical",
+        "count": 132,
+        "percent": 14.4
+      },
+      {
+        "name": "Statistical Process Control",
+        "category": "Technical",
+        "count": 123,
+        "percent": 13.4
+      },
+      {
+        "name": "Production Planning & Scheduling",
+        "category": "Technical",
+        "count": 111,
+        "percent": 12.1
+      },
+      {
+        "name": "OEE & Manufacturing KPI",
+        "category": "Technical",
+        "count": 72,
+        "percent": 7.9
+      },
+      {
+        "name": "Forecasting & Demand Planning",
+        "category": "Technical",
+        "count": 62,
+        "percent": 6.8
+      },
+      {
+        "name": "SQL & Manufacturing Data",
+        "category": "Technical",
+        "count": 54,
+        "percent": 5.9
+      },
+      {
+        "name": "Design of Experiments",
+        "category": "Technical",
+        "count": 32,
+        "percent": 3.5
+      },
+      {
+        "name": "Python & R",
+        "category": "Technical",
+        "count": 28,
+        "percent": 3.1
+      },
+      {
+        "name": "Simulation & Digital Twin",
+        "category": "Technical",
+        "count": 21,
+        "percent": 2.3
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 6,
+        "percent": 0.7
+      },
+      {
+        "name": "Operations Research",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 781,
+        "percent": 85.2
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 617,
+        "percent": 67.3
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 579,
+        "percent": 63.1
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 472,
+        "percent": 51.5
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 375,
+        "percent": 40.9
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 332,
+        "percent": 36.2
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 205,
+        "percent": 22.4
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 191,
+        "percent": 20.8
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 92,
+        "percent": 10
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 46,
+        "percent": 5
+      }
+    ],
+    "C15": [
+      {
+        "name": "Excel & Spreadsheet Modeling",
+        "category": "Technical",
+        "count": 106,
+        "percent": 44.7
+      },
+      {
+        "name": "Business Intelligence",
+        "category": "Technical",
+        "count": 91,
+        "percent": 38.4
+      },
+      {
+        "name": "Data Analytics",
+        "category": "Technical",
+        "count": 90,
+        "percent": 38
+      },
+      {
+        "name": "Data Visualization",
+        "category": "Technical",
+        "count": 70,
+        "percent": 29.5
+      },
+      {
+        "name": "Forecasting",
+        "category": "Technical",
+        "count": 58,
+        "percent": 24.5
+      },
+      {
+        "name": "Optimization",
+        "category": "Technical",
+        "count": 36,
+        "percent": 15.2
+      },
+      {
+        "name": "SQL & Databases",
+        "category": "Technical",
+        "count": 30,
+        "percent": 12.7
+      },
+      {
+        "name": "Statistics & Probability",
+        "category": "Technical",
+        "count": 21,
+        "percent": 8.9
+      },
+      {
+        "name": "Python & R",
+        "category": "Technical",
+        "count": 18,
+        "percent": 7.6
+      },
+      {
+        "name": "Scenario & Sensitivity Analysis",
+        "category": "Technical",
+        "count": 14,
+        "percent": 5.9
+      },
+      {
+        "name": "Simulation",
+        "category": "Technical",
+        "count": 9,
+        "percent": 3.8
+      },
+      {
+        "name": "APIs & Application Integration",
+        "category": "Technical",
+        "count": 7,
+        "percent": 3
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 6,
+        "percent": 2.5
+      },
+      {
+        "name": "ETL & Data Integration",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.8
+      },
+      {
+        "name": "Operations Research",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.8
+      },
+      {
+        "name": "Data Warehousing",
+        "category": "Technical",
+        "count": 1,
+        "percent": 0.4
+      },
+      {
+        "name": "Decision Modeling",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Decision Support Systems",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "GIS & Spatial Decision Support",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Multi-criteria Decision Analysis",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 191,
+        "percent": 80.6
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 138,
+        "percent": 58.2
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 129,
+        "percent": 54.4
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 113,
+        "percent": 47.7
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 109,
+        "percent": 46
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 107,
+        "percent": 45.1
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 77,
+        "percent": 32.5
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 70,
+        "percent": 29.5
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 64,
+        "percent": 27
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 14,
+        "percent": 5.9
+      }
+    ],
+    "C16": [
+      {
+        "name": "Maintenance Planning",
+        "category": "Technical",
+        "count": 107,
+        "percent": 38.4
+      },
+      {
+        "name": "Root Cause Analysis",
+        "category": "Technical",
+        "count": 93,
+        "percent": 33.3
+      },
+      {
+        "name": "PLC, SCADA & Historian",
+        "category": "Technical",
+        "count": 55,
+        "percent": 19.7
+      },
+      {
+        "name": "Predictive Maintenance",
+        "category": "Technical",
+        "count": 40,
+        "percent": 14.3
+      },
+      {
+        "name": "FMEA & Risk Analysis",
+        "category": "Technical",
+        "count": 37,
+        "percent": 13.3
+      },
+      {
+        "name": "Sensors & Data Acquisition",
+        "category": "Technical",
+        "count": 27,
+        "percent": 9.7
+      },
+      {
+        "name": "CMMS & EAM",
+        "category": "Technical",
+        "count": 25,
+        "percent": 9
+      },
+      {
+        "name": "Reliability Engineering",
+        "category": "Technical",
+        "count": 16,
+        "percent": 5.7
+      },
+      {
+        "name": "Asset Management",
+        "category": "Technical",
+        "count": 15,
+        "percent": 5.4
+      },
+      {
+        "name": "Industrial IoT",
+        "category": "Technical",
+        "count": 9,
+        "percent": 3.2
+      },
+      {
+        "name": "RCM",
+        "category": "Technical",
+        "count": 8,
+        "percent": 2.9
+      },
+      {
+        "name": "Condition Monitoring",
+        "category": "Technical",
+        "count": 7,
+        "percent": 2.5
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 6,
+        "percent": 2.2
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 4,
+        "percent": 1.4
+      },
+      {
+        "name": "Thermography & Lubrication",
+        "category": "Technical",
+        "count": 4,
+        "percent": 1.4
+      },
+      {
+        "name": "Digital Twin",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.7
+      },
+      {
+        "name": "Vibration Analysis",
+        "category": "Technical",
+        "count": 2,
+        "percent": 0.7
+      },
+      {
+        "name": "Time Series Analytics",
+        "category": "Technical",
+        "count": 1,
+        "percent": 0.4
+      },
+      {
+        "name": "Anomaly & Fault Detection",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Signal Processing",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 232,
+        "percent": 83.2
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 187,
+        "percent": 67
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 175,
+        "percent": 62.7
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 105,
+        "percent": 37.6
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 89,
+        "percent": 31.9
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 81,
+        "percent": 29
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 51,
+        "percent": 18.3
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 37,
+        "percent": 13.3
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 15,
+        "percent": 5.4
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 6,
+        "percent": 2.2
+      }
+    ],
+    "C17": [
+      {
+        "name": "Process Optimization",
+        "category": "Technical",
+        "count": 46,
+        "percent": 41.4
+      },
+      {
+        "name": "Automation & Control",
+        "category": "Technical",
+        "count": 38,
+        "percent": 34.2
+      },
+      {
+        "name": "Industrial Data Analytics",
+        "category": "Technical",
+        "count": 35,
+        "percent": 31.5
+      },
+      {
+        "name": "Lean, Six Sigma & OEE",
+        "category": "Technical",
+        "count": 32,
+        "percent": 28.8
+      },
+      {
+        "name": "Predictive Maintenance",
+        "category": "Technical",
+        "count": 21,
+        "percent": 18.9
+      },
+      {
+        "name": "Python",
+        "category": "Technical",
+        "count": 19,
+        "percent": 17.1
+      },
+      {
+        "name": "Machine Learning",
+        "category": "Technical",
+        "count": 14,
+        "percent": 12.6
+      },
+      {
+        "name": "ERP & Supply Chain Systems",
+        "category": "Technical",
+        "count": 12,
+        "percent": 10.8
+      },
+      {
+        "name": "IIoT & Sensors",
+        "category": "Technical",
+        "count": 12,
+        "percent": 10.8
+      },
+      {
+        "name": "Cloud Platforms",
+        "category": "Technical",
+        "count": 11,
+        "percent": 9.9
+      },
+      {
+        "name": "Digital Twin & Simulation",
+        "category": "Technical",
+        "count": 10,
+        "percent": 9
+      },
+      {
+        "name": "MES & Manufacturing Systems",
+        "category": "Technical",
+        "count": 6,
+        "percent": 5.4
+      },
+      {
+        "name": "Machine Vision & AI Quality",
+        "category": "Technical",
+        "count": 5,
+        "percent": 4.5
+      },
+      {
+        "name": "PLC & SCADA",
+        "category": "Technical",
+        "count": 5,
+        "percent": 4.5
+      },
+      {
+        "name": "MLOps & Model Deployment",
+        "category": "Technical",
+        "count": 4,
+        "percent": 3.6
+      },
+      {
+        "name": "Industrial Networks",
+        "category": "Technical",
+        "count": 3,
+        "percent": 2.7
+      },
+      {
+        "name": "Edge AI",
+        "category": "Technical",
+        "count": 1,
+        "percent": 0.9
+      },
+      {
+        "name": "Industrial AI",
+        "category": "Technical",
+        "count": 1,
+        "percent": 0.9
+      },
+      {
+        "name": "Robotics",
+        "category": "Technical",
+        "count": 1,
+        "percent": 0.9
+      },
+      {
+        "name": "OT Cybersecurity",
+        "category": "Technical",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "name": "Communication",
+        "category": "Soft",
+        "count": 97,
+        "percent": 87.4
+      },
+      {
+        "name": "English Communication",
+        "category": "Soft",
+        "count": 80,
+        "percent": 72.1
+      },
+      {
+        "name": "Problem Solving",
+        "category": "Soft",
+        "count": 68,
+        "percent": 61.3
+      },
+      {
+        "name": "Collaboration & Teamwork",
+        "category": "Soft",
+        "count": 61,
+        "percent": 55
+      },
+      {
+        "name": "Analytical Thinking",
+        "category": "Soft",
+        "count": 45,
+        "percent": 40.5
+      },
+      {
+        "name": "Leadership",
+        "category": "Soft",
+        "count": 25,
+        "percent": 22.5
+      },
+      {
+        "name": "Stakeholder Management",
+        "category": "Soft",
+        "count": 22,
+        "percent": 19.8
+      },
+      {
+        "name": "Project Management",
+        "category": "Soft",
+        "count": 20,
+        "percent": 18
+      },
+      {
+        "name": "Presentation",
+        "category": "Soft",
+        "count": 11,
+        "percent": 9.9
+      },
+      {
+        "name": "Agile / Scrum",
+        "category": "Soft",
+        "count": 7,
+        "percent": 6.3
+      }
+    ]
+  },
+  "stats": {
+    "all": {
+      "jobs": 3278,
+      "companies": 1507,
+      "salary": 923
+    },
+    "byCareer": {
+      "C01": {
+        "jobs": 192,
+        "companies": 156,
+        "salary": 50
+      },
+      "C02": {
+        "jobs": 760,
+        "companies": 556,
+        "salary": 223
+      },
+      "C03": {
+        "jobs": 39,
+        "companies": 35,
+        "salary": 9
+      },
+      "C04": {
+        "jobs": 481,
+        "companies": 316,
+        "salary": 152
+      },
+      "C05": {
+        "jobs": 136,
+        "companies": 111,
+        "salary": 34
+      },
+      "C06": {
+        "jobs": 592,
+        "companies": 433,
+        "salary": 175
+      },
+      "C07": {
+        "jobs": 497,
+        "companies": 348,
+        "salary": 114
+      },
+      "C08": {
+        "jobs": 98,
+        "companies": 86,
+        "salary": 23
+      },
+      "C09": {
+        "jobs": 79,
+        "companies": 76,
+        "salary": 24
+      },
+      "C10": {
+        "jobs": 17,
+        "companies": 15,
+        "salary": 6
+      },
+      "C11": {
+        "jobs": 228,
+        "companies": 193,
+        "salary": 65
+      },
+      "C12": {
+        "jobs": 552,
+        "companies": 361,
+        "salary": 130
+      },
+      "C13": {
+        "jobs": 162,
+        "companies": 110,
+        "salary": 48
+      },
+      "C14": {
+        "jobs": 917,
+        "companies": 478,
+        "salary": 266
+      },
+      "C15": {
+        "jobs": 237,
+        "companies": 188,
+        "salary": 59
+      },
+      "C16": {
+        "jobs": 279,
+        "companies": 213,
+        "salary": 65
+      },
+      "C17": {
+        "jobs": 111,
+        "companies": 81,
+        "salary": 32
+      }
+    }
+  }
+}

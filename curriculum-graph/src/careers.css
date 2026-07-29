@@ -3,6 +3,9 @@
   padding:10px 11px;margin:0 0 10px}
 .jp-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:8px}
 .jp-head>b{font-size:.83rem}
+.jp-controls{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.career-select{max-width:min(430px,80vw);border:1px solid var(--line);border-radius:8px;background:var(--card);
+  color:var(--ink);padding:6px 9px;font:inherit;font-size:.76rem}
 .jp-mode{display:inline-flex;gap:4px;background:var(--soft);border-radius:8px;padding:3px}
 .jp-m{font-size:.76rem;font-weight:700;border:0;background:none;color:var(--muted);
   border-radius:6px;padding:4px 10px;cursor:pointer;font-family:inherit;transition:.12s}
@@ -24,4 +27,8 @@
   font-size:.79rem;color:var(--muted);line-height:1.7}
 .jp-now b{color:var(--ink)}
 .jp-why{font-style:italic}
+@media(max-width:760px){
+  .jp-controls{width:100%;justify-content:flex-start}
+  .career-select{width:100%;max-width:none}
+}
 @media(max-width:560px){.jp-th{max-width:150px}}

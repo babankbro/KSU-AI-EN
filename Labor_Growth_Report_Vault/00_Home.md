@@ -30,6 +30,7 @@ Vault แบ่งข้อมูลเป็นหมวดตามวัต�
 - [[01_Labor_Market_Research/10_PLOs_ABET_Design|PLO 7 ข้อและรายละเอียดการเทียบเคียง ABET — เอกสารมาตรฐานกลาง]]
 - [[01_Labor_Market_Research/11_Career_Paths_by_Track|เส้นทางอาชีพจำแนกตาม 3 Tracks]] 🆕
 - [[01_Labor_Market_Research/12_Priority_Careers_12|12 อาชีพเป้าหมายสำคัญของหลักสูตร]] 🆕
+- [[01_Labor_Market_Research/13_Career_Codes_and_Course_Pathways_C01_C26|รหัสอาชีพและเส้นทางรายวิชา C01–C26]] 🆕
 
 > [!important] มาตรฐานถ้อยคำ PLO ของ Vault
 > ให้ใช้ PLO1–PLO7 และถ้อยคำตาม [[01_Labor_Market_Research/10_PLOs_ABET_Design|PLO 7 ข้อและรายละเอียด ABET]] ในเอกสารทุกชุด ส่วน [[02_Current_Curriculum_2570/02_PLOs_5|PLO 5 ข้อจากต้นฉบับเดิม]] เก็บไว้เพื่อสอบย้อนกลับเชิงประวัติเท่านั้น

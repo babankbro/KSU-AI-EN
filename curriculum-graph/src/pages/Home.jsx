@@ -3,15 +3,15 @@ import { COURSES, STRUCTURE_TOP, YEAR_CREDITS, YLO_DETAIL, PLO_DETAIL, YEAR_COLO
 import { Section, PloChip } from "./ui.jsx";
 
 const CARDS = [
-  { to: "/structure", icon: "▦", t: "โครงสร้างหลักสูตร", d: "130 หน่วยกิต แยกตามหมวดและกลุ่มวิชา พร้อมรายวิชาทั้งหมดในแต่ละกลุ่ม" },
+  { to: "/structure", icon: "▦", t: "โครงสร้างหลักสูตร", d: "ข้อเสนอชั่วคราว 133 หน่วยกิต แยกตามหมวดและกลุ่มวิชา พร้อมสถานะรายการที่รอมติ" },
   { to: "/plo", icon: "◎", t: "PLO 7 ข้อ", d: "ผลลัพธ์การเรียนรู้ระดับหลักสูตร เทียบ ABET SO(1)–(7) พร้อมรายวิชาที่รับผิดชอบ" },
   { to: "/ylo", icon: "◈", t: "YLO 4 ชั้นปี", d: "ผลลัพธ์การเรียนรู้รายชั้นปี Sub-YLO ตาราง I–R–M และจุดตรวจประเมิน (Year Gates)" },
   { to: "/clo", icon: "✓", t: "CLO รายวิชา", d: "ผลลัพธ์รายวิชาและ K–S–A พร้อม Curriculum Mapping (4.6) และตารางสรุป CLO สู่ YLO/PLO (4.7)" },
   { to: "/plan", icon: "▤", t: "แผนการเรียน", d: "8 ภาคการศึกษา พร้อมบทบาทของแต่ละรายวิชาต่อ YLO" },
-  { to: "/graph", icon: "⇄", t: "กราฟรายวิชา", d: "ลำดับก่อน–หลังของ 32 วิชาแกน แบบ Hard / Weak / Co-requisite" },
-  { to: "/careers", icon: "◆", t: "เส้นทางอาชีพ", d: "สายวิชาของแต่ละแขนงจนถึงอาชีพเป้าหมาย 17 ตำแหน่งจากข้อมูลตลาดแรงงาน" },
+  { to: "/graph", icon: "⇄", t: "กราฟรายวิชา", d: "ลำดับก่อน–หลังของวิชาแกนที่ยืนยันภาคเรียนแล้ว แบบ Hard / Weak / Co-requisite" },
+  { to: "/careers", icon: "◆", t: "เส้นทางอาชีพ", d: "เส้นทางรายวิชาสู่อาชีพเป้าหมายและอาชีพต่อยอด 26 บทบาท ครอบคลุมทั้ง 3 แขนง" },
   { to: "/jobs", icon: "▥", t: "Jobs & Skills", d: "หลักฐานตำแหน่งงานจริง พร้อม Technical Skills และ Soft Skills สำหรับอาชีพเป้าหมายของหลักสูตร" },
-  { to: "/courses", icon: "☰", t: "คำอธิบายรายวิชา", d: "85 รายวิชา คำอธิบายภาษาไทยและภาษาอังกฤษตามเอกสารหลักสูตร" }
+  { to: "/courses", icon: "☰", t: "คำอธิบายรายวิชา", d: "86 รายวิชา พร้อมคำอธิบายไทย–อังกฤษที่ซิงก์จาก Vault" }
 ];
 
 export default function Home() {
@@ -31,9 +31,14 @@ export default function Home() {
             <div><b>{TOTAL_CREDITS}</b><span>หน่วยกิตรวม</span></div>
             <div><b>7</b><span>PLO · ABET SO(1)–(7)</span></div>
             <div><b>4</b><span>YLO รายชั้นปี</span></div>
-            <div><b>32</b><span>รายวิชาแกนบังคับ</span></div>
+            <div><b>33</b><span>รายวิชาแกนบังคับ</span></div>
             <div><b>{nElec}</b><span>วิชาเลือกชีพใน pool</span></div>
             <div><b>3</b><span>แขนงวิชา (Track)</span></div>
+          </div>
+          <div className="note">
+            <b>สถานะข้อเสนอ:</b> Core Track 9 วิชา / 27 หน่วยกิต และวิชาเลือกชีพ 5 วิชา / 15 หน่วยกิต
+            รวม 133 หน่วยกิต แผน 8 ภาคกระจายเป็น 19–19–19–18–19–18–15–6 หน่วยกิต
+            โดยคณะกรรมการยังต้องยืนยันยอดรวมและการจัดสรร 3 หน่วยกิตก่อนประกาศใช้
           </div>
           <div className="hero-cta">
             <Link className="btn primary" to="/structure">ดูโครงสร้างหลักสูตร</Link>

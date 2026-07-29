@@ -99,8 +99,8 @@ function viewGroupSub() {
   });
   return {
     columns: [
-      { key: "grp", label: "① กลุ่มทักษะ (G1–G6)" },
-      { key: "set", label: "② ชุดทักษะ (AISK01–08)" },
+      { key: "grp", label: "① กลุ่มทักษะ (G1–G7)" },
+      { key: "set", label: "② ชุดทักษะ (AISK01–09)" },
       { key: "sub", label: "③ ทักษะย่อย + ระดับเป้าหมาย" }
     ], nodes, links, height: 1180
   };
@@ -188,7 +188,7 @@ export const VIEWS = [
   { id: "v2", name: "Need → ชุดทักษะ → กลุ่มรายวิชา",
     desc: "ความต้องการแต่ละข้อถูกแปลงเป็นชุดทักษะ และลงเรียนที่กลุ่มรายวิชาใด", build: viewNeedSkillCourse },
   { id: "v3", name: "กลุ่มทักษะ → ชุดทักษะ → ทักษะย่อย",
-    desc: "โครงสร้าง G1–G6 แตกเป็น AISK01–08 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewGroupSub },
+    desc: "โครงสร้าง G1–G7 แตกเป็น AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewGroupSub },
   { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–A",
     desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–ทัศนคติ", build: viewPloCloKsa },
   { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSA",

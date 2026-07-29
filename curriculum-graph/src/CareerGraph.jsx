@@ -14,6 +14,36 @@ import {
  */
 const NODE_W = 208, NODE_H = 74, JOB_W = 290, JOB_H = 124;
 const byCode = Object.fromEntries(COURSES.map(c => [c.c, c]));
+const courseOrder = Object.fromEntries(COURSES.map((c, index) => [c.c, index]));
+
+const CAREER_PATH_STAGES = [
+  { id: "foundation", label: "1 · พื้นฐานวิศวกรรม", groups: ["eng"] },
+  { id: "ai", label: "2 · แกนปัญญาประดิษฐ์", groups: ["ai"] },
+  { id: "track", label: "3 · แกนบูรณาการและเฉพาะบริบท", groups: ["track"] },
+  { id: "depth", label: "4 · วิชาเลือกสร้างความเชี่ยวชาญ", groups: ["elec"] },
+  { id: "experience", label: "5 · โครงงานและประสบการณ์วิชาชีพ", groups: ["proj", "field"] },
+];
+
+const careerEndpoints = career => [...new Set([...career.courses, "EN-135-402"])];
+
+function careerPath(career) {
+  const need = new Set();
+  const walk = code => {
+    if (!code || need.has(code) || !byCode[code]) return;
+    need.add(code);
+    const course = byCode[code];
+    [...(course.h || []), ...(course.w || []), ...(course.co || [])].forEach(walk);
+  };
+  const endpoints = new Set(careerEndpoints(career));
+  endpoints.forEach(walk);
+  return CAREER_PATH_STAGES.map(stage => ({
+    ...stage,
+    courses: [...need]
+      .filter(code => stage.groups.includes(byCode[code]?.g))
+      .sort((a, b) => courseOrder[a] - courseOrder[b])
+      .map(code => ({ ...byCode[code], endpoint: endpoints.has(code) }))
+  })).filter(stage => stage.courses.length);
+}
 
 const EDGE_STYLE = {
   hard: { stroke: "#16335c", w: 2.1, dash: "0", label: "บังคับก่อน (Hard)" },
@@ -66,6 +96,8 @@ export default function CareerGraph() {
   const [zoom, setZoom] = useState(0.75);
   const [selJob, setSelJob] = useState(null);
   const [focus, setFocus] = useState(false);   // true = วาดกราฟเฉพาะอาชีพที่เลือก
+  const [graphOpen, setGraphOpen] = useState(true);
+  const [graphExpanded, setGraphExpanded] = useState(false);
 
   const careers = useMemo(() => {
     if (track === 0) return CAREERS.filter(c => c.track === 0);
@@ -84,6 +116,17 @@ export default function CareerGraph() {
     else { setSelJob(id); setFocus(true); }
   };
 
+  const selectJob = id => {
+    if (!id) {
+      setSelJob(null);
+      setFocus(false);
+      return;
+    }
+    setSelJob(id);
+    setFocus(true);
+    setGraphOpen(true);
+  };
+
   const layout = useMemo(() => {
     // 1) วิชาปลายทางที่แต่ละอาชีพระบุ + ไล่ย้อน prerequisite chain ทั้งหมด
     const need = new Set();
@@ -93,7 +136,7 @@ export default function CareerGraph() {
       const c = byCode[code];
       [...(c.h || []), ...(c.w || []), ...(c.co || [])].forEach(walk);
     };
-    graphCareers.forEach(j => j.courses.forEach(walk));
+    graphCareers.forEach(j => careerEndpoints(j).forEach(walk));
 
     // 2) nodes: วิชา + อาชีพ
     const nodeDefs = [...need].map(code => ({ id: code, w: NODE_W, h: NODE_H, kind: "course", c: byCode[code] }));
@@ -107,7 +150,7 @@ export default function CareerGraph() {
       (c.w || []).forEach(s => need.has(s) && edgeDefs.push({ id: `${s}|${code}|weak`, source: s, target: code, kind: "weak" }));
       (c.co || []).forEach(s => need.has(s) && edgeDefs.push({ id: `${s}|${code}|co`, source: s, target: code, kind: "co" }));
     });
-    graphCareers.forEach(j => j.courses.forEach(code => {
+    graphCareers.forEach(j => careerEndpoints(j).forEach(code => {
       if (byCode[code]) edgeDefs.push({ id: `${code}|${j.id}|job`, source: code, target: j.id, kind: "job" });
     }));
 
@@ -126,7 +169,7 @@ export default function CareerGraph() {
       const c = byCode[code];
       [...(c.h || []), ...(c.w || []), ...(c.co || [])].forEach(walk);
     };
-    job.courses.forEach(walk);
+    careerEndpoints(job).forEach(walk);
     const dim = new Set(layout.nodes.filter(n => !keep.has(n.id)).map(n => n.id));
     const lit = new Set(layout.edges.filter(e => keep.has(e.source) && keep.has(e.target)).map(e => e.id));
     return { dimSet: dim, litEdges: lit };
@@ -146,18 +189,26 @@ export default function CareerGraph() {
       <div className="graphbar">
         {TRACK_TABS.map(t => (
           <button key={t.id} className={`gmode ${track === t.id ? "on" : ""}`}
-            onClick={() => { setTrack(t.id); setSelJob(null); }}>{t.label}</button>
+            onClick={() => { setTrack(t.id); setSelJob(null); setFocus(false); }}>{t.label}</button>
         ))}
         {track !== 0 && (
           <label className="gtoggle">
-            <input type="checkbox" checked={withCommon} onChange={e => { setWithCommon(e.target.checked); setSelJob(null); }} />
+            <input type="checkbox" checked={withCommon} onChange={e => { setWithCommon(e.target.checked); setSelJob(null); setFocus(false); }} />
             รวมอาชีพข้ามแขนง {COMMON_CAREER_COUNT} ตำแหน่ง
           </label>
         )}
         <span className="gsep" />
         <span className="glabel">ซูม</span>
+        <button className="gtool" aria-label="ย่อกราฟ" onClick={() => setZoom(value => Math.max(0.35, value - 0.1))}>−</button>
         <input type="range" min="0.35" max="1.4" step="0.05" value={zoom} onChange={e => setZoom(+e.target.value)} style={{ width: 100 }} />
-        <span className="glabel">{Math.round(zoom * 100)}%</span>
+        <button className="gtool" aria-label="ขยายกราฟ" onClick={() => setZoom(value => Math.min(1.4, value + 0.1))}>+</button>
+        <button className="gtool wide" onClick={() => setZoom(0.75)}>{Math.round(zoom * 100)}% · รีเซ็ต</button>
+        <button className={`gtool wide${graphExpanded ? " on" : ""}`} onClick={() => setGraphExpanded(value => !value)}>
+          {graphExpanded ? "ย่อพื้นที่กราฟ" : "ขยายพื้นที่กราฟ"}
+        </button>
+        <button className="gtool wide" onClick={() => setGraphOpen(value => !value)}>
+          {graphOpen ? "ซ่อนกราฟ" : "แสดงกราฟ"}
+        </button>
         {selJob && <button className="gclear" onClick={() => { setSelJob(null); setFocus(false); }}>✕ กลับสู่ภาพรวม</button>}
       </div>
 
@@ -165,12 +216,21 @@ export default function CareerGraph() {
       <div className="jobpick">
         <div className="jp-head">
           <b>เลือกอาชีพเพื่อแยกดูทีละสาย</b>
-          <span className="jp-mode">
-            <button className={`jp-m${!focus ? " on" : ""}`}
-              onClick={() => setFocus(false)}>ภาพรวมทั้งแขนง</button>
-            <button className={`jp-m${focus ? " on" : ""}`} disabled={!selJob}
-              onClick={() => selJob && setFocus(true)}>เฉพาะอาชีพที่เลือก</button>
-          </span>
+          <div className="jp-controls">
+            <select className="career-select" aria-label="เลือกอาชีพเพื่อแสดงกราฟ"
+              value={selJob || ""} onChange={event => selectJob(event.target.value)}>
+              <option value="">ภาพรวมอาชีพในแขนง</option>
+              {careers.map(career => (
+                <option key={career.id} value={career.id}>{career.id} · {career.th}</option>
+              ))}
+            </select>
+            <span className="jp-mode">
+              <button className={`jp-m${!focus ? " on" : ""}`}
+                onClick={() => setFocus(false)}>ภาพรวมทั้งแขนง</button>
+              <button className={`jp-m${focus ? " on" : ""}`} disabled={!selJob}
+                onClick={() => selJob && setFocus(true)}>เฉพาะอาชีพที่เลือก</button>
+            </span>
+          </div>
         </div>
         <div className="jp-chips">
           {careers.map(j => {
@@ -178,7 +238,7 @@ export default function CareerGraph() {
             const on = selJob === j.id;
             return (
               <button key={j.id} className={`jp-c${on ? " on" : ""}`} style={{ "--sc": sc }}
-                onClick={() => pickJob(j.id)} title={`${j.en} · ${j.courses.length} รายวิชาหลัก`}>
+                onClick={() => pickJob(j.id)} title={`${j.en} · ${careerEndpoints(j).length} รายวิชาปลายทางรวมสหกิจศึกษา`}>
                 <span className="jp-id">{j.id}</span>
                 <span className="jp-th">{j.th}</span>
                 <span className="jp-st">{j.st}</span>
@@ -194,7 +254,7 @@ export default function CareerGraph() {
         )}
       </div>
 
-      <div className="graphcanvas">
+      {graphOpen && <div className={`graphcanvas${graphExpanded ? " expanded" : ""}`}>
         <div className="graphscroll">
           <svg width={layout.width * zoom} height={layout.height * zoom}
             viewBox={`0 0 ${layout.width} ${layout.height}`} className="gsvg">
@@ -296,23 +356,46 @@ export default function CareerGraph() {
               : <>คลิก <b>กล่องอาชีพ</b> หรือเลือกจากแถบด้านบน เพื่อแยกกราฟเฉพาะสายนั้น</>}
           </div>
         </div>
-      </div>
+      </div>}
 
       {/* รายละเอียดอาชีพ */}
       <div className="joblist">
         {careers.map(j => {
           const sc = CAREER_STATUS[j.st[0]].color;
+          const path = careerPath(j);
           return (
             <details key={j.id} className="jobcard" open={selJob === j.id}>
-              <summary>
+              <summary onClick={event => {
+                event.preventDefault();
+                selectJob(selJob === j.id ? "" : j.id);
+              }}>
                 <span className="gjob-id" style={{ background: sc }}>{j.id}</span>
                 <span className="jc-th">{j.th}</span>
                 <span className="jc-en">{j.en}</span>
                 <span className="gjob-st" style={{ color: sc, borderColor: sc }}>{j.st}</span>
+                <span className="jc-toggle">{selJob === j.id ? "ย่อรายละเอียด ▲" : "ขยายและดูกราฟ ▼"}</span>
               </summary>
               <div className="jc-body">
                 <p className="jc-why"><b>เหตุผลที่เลือก:</b> {j.why}</p>
-                <p className="jc-courses"><b>รายวิชาหลัก:</b> {j.courses.map(c => byCode[c] ? `${c} ${byCode[c].s}` : c).join(" · ")}</p>
+                <div className="career-path">
+                  <b>เส้นทางรายวิชา:</b>
+                  <div className="career-path-stages">
+                    {path.map((stage, index) => (
+                      <div className="career-path-stage" key={stage.id}>
+                        <div className="career-path-title">{stage.label}</div>
+                        <div className="career-path-courses">
+                          {stage.courses.map(course => (
+                            <span className={course.endpoint ? "career-course endpoint" : "career-course"} key={course.c}>
+                              <small>{course.c}</small>{course.s}
+                            </span>
+                          ))}
+                        </div>
+                        {index < path.length - 1 && <span className="career-path-arrow" aria-hidden="true">→</span>}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="career-path-note">กรอบสีเข้มคือรายวิชาปลายทางที่ควรใช้สร้าง Portfolio ของอาชีพนี้ ส่วนรายวิชาอื่นเป็นพื้นฐานหรือวิชาที่ควรเรียนก่อน</div>
+                </div>
                 <p className="jc-kw"><b>คำค้นงาน:</b> {j.kw}</p>
               </div>
             </details>

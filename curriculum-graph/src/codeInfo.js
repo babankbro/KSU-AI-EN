@@ -1,6 +1,6 @@
 // ทะเบียนคำอธิบายรหัสย่อทั้งหมดของเว็บ — ใช้โดย CodeTip.jsx เพื่อแสดงป๊อปอัปเมื่อชี้ที่รหัส
-// ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–08 · G1–G6 · N1–N18 · SH1–SH8 · GA1–GA5
-//            H1–H15 · S1–S8 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C17
+// ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–09 · G1–G7 · N1–N18 · SH1–SH8 · GA1–GA5
+//            H1–H20 · S1–S10 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
 // รูปแบบผลลัพธ์: { id, kind, accent, title, en, body, rows:[[label,value]], plo:[], sets:[], to }
 
 import {
@@ -20,11 +20,11 @@ const PATTERN = new RegExp(
   "^(" +
   "PLO[1-7]|" +
   "YLO[1-4]\\.[1-9]|YLO[1-4]|" +
-  "AISK0[1-8]|EN-AISK0[1-8]|" +
-  "G[1-6]|" +
+  "AISK0[1-9]|EN-AISK0[1-9]|" +
+  "G[1-7]|" +
   "N1[0-8]|N[1-9]|" +
   "SH[1-8]|GA[1-5]|" +
-  "H1[0-5]|H[1-9]|S[1-8]|L[1-4]|" +
+  "H20|H1[0-9]|H[1-9]|S10|S[1-9]|L[1-4]|" +
   "C[0-1][0-9]|" +
   "[A-Z]{2}-\\d{3}-\\d{3}|" +
   "[IRM]" +
@@ -102,8 +102,8 @@ export function lookup(raw) {
     };
   }
 
-  /* ── กลุ่มทักษะ G1–G6 ── */
-  if (/^G[1-6]$/.test(id)) {
+  /* ── กลุ่มทักษะ G1–G7 ── */
+  if (/^G[1-7]$/.test(id)) {
     const g = GROUPS[id];
     if (!g) return null;
     const sets = SKILL_SETS.filter(s => s.g === id).map(s => s.id);
@@ -212,7 +212,7 @@ export function lookup(raw) {
     };
   }
 
-  /* ── อาชีพเป้าหมาย C01–C17 ── */
+  /* ── อาชีพเป้าหมายและอาชีพต่อยอด C01–C26 ── */
   if (/^C\d{2}$/.test(id)) {
     const c = CAREERS.find(x => x.id === id);
     if (!c) return null;

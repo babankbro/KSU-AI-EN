@@ -3,14 +3,15 @@
 > AI Engineering & Intelligent Systems — Skill Set Matrix + Knowledge/Skill/Attitude Analysis
 > ต่อยอดจาก [[03_Target_Skills|ทักษะเป้าหมาย H/S]] · [[04_PLOs_7_OBE|PLO 7 ข้อ]] · [[10_Course_Learning_Outcomes_CLO_Mapping|CLO Mapping]] · [[../03_OBE_PLO_Design_2570/07_Curriculum_PLO_Mapping|Curriculum–PLO Mapping]]
 
-เอกสารนี้แบ่งเป็น 4 ส่วน:
+เอกสารนี้แบ่งเป็น 5 ส่วน:
 - **ส่วน A — วิเคราะห์ KSA รายข้อ PLO:** แยกแยะแต่ละ PLO ออกเป็น **ความรู้ (Knowledge)** ที่ควรมีพร้อมคำสำคัญ/หัวข้อ · **ทักษะ (Skill)** ที่ควรมีพร้อมทักษะย่อย เครื่องมือ และ **Skill Set/กลุ่มที่ผูก** · **ทัศนคติ (Attitude)** · แล้วกระจายลงรายวิชาและลิงก์ CLO
 - **ส่วน B — Skill Set Matrix:** ชุดทักษะสำหรับ **Skill Transcript** (รหัส EN-AISK01–09) จัดเป็น **7 กลุ่มทักษะ (G1–G7)** พร้อมระดับความเชี่ยวชาญ CLO ที่เกี่ยวข้อง และวิธีวัดผล
 - **ส่วน C — การเทียบเคียงมาตรฐานสากล:** IMDA/AI Verify/Career Maps · CS2023/ISO 42001/NIST AI RMF · การประยุกต์เฉพาะโดเมน
 - **ส่วน D — การตรวจสอบความสอดคล้อง (Skill Alignment):** ทักษะ → Skill Set → CLO → YLO → PLO ครบวงจร
+- **ส่วน E — Needs Alignment:** ความต้องการผู้มีส่วนได้ส่วนเสีย → Skill Set → หลักฐานรายวิชา
 
 > [!abstract] เอกลักษณ์วิศวกรรมของหลักสูตร
-> ชุดทักษะออกแบบให้สะท้อน 2 เสาเอกลักษณ์ — **EN-AISK02 Smart Agriculture Engineering** และ **EN-AISK03 Smart Industry (AI Industrial Engineering & Automation)** — ซึ่งทำหน้าที่ **"สร้างและประกอบโครงสร้างพื้นฐาน กลไก และเครื่องจักร" (G2)** ทำงานร่วมกับ **"ระบบอัจฉริยะและความเข้าใจของเครื่อง" (G3: AISK04 ฟาร์ม–โรงงาน · AISK05 การประยุกต์ AI)** บนฐาน **"แกนวิศวกรรม AI — การเรียนรู้ ตัดสินใจ ข้อมูล ซอฟต์แวร์" (G1: AISK01)** และส่งมอบสู่ระบบองค์กรผ่าน **AISK09 Enterprise Solutions & Decision Intelligence (G7)**
+> ชุดทักษะออกแบบให้สะท้อน 2 เสาเอกลักษณ์ — **EN-AISK02 Smart Agriculture Engineering** และ **EN-AISK03 Smart Industry (AI Industrial Engineering & Automation)** — ซึ่งทำหน้าที่ **"สร้างและประกอบโครงสร้างพื้นฐาน กลไก และเครื่องจักร" (G2)** ทำงานร่วมกับ **G3: AISK04 ระบบตรวจวัด/Edge/CPS และ AISK05 การรับรู้/พยากรณ์/ตัดสินใจ** บนฐาน **"แกนวิศวกรรม AI — การเรียนรู้ ตัดสินใจ ข้อมูล ซอฟต์แวร์" (G1: AISK01)** และส่งมอบระบบผ่าน **AISK09 Requirements, Architecture, Integration & Delivery (G7)**
 
 **สัญกรณ์ระดับความลึก (จาก [[03_Target_Skills#3.3 ระดับความลึกของทักษะ|§3.3]]):** L1 เข้าใจ · L2 ประยุกต์ · L3 บูรณาการ · L4 นำไปใช้และประเมิน
 
@@ -45,7 +46,7 @@
 
 ---
 
-## PLO2 — การออกแบบระบบภายใต้ข้อจำกัด *(ทักษะ · Create)*
+## PLO2 — การออกแบบและบูรณาการระบบ *(ทักษะ · Create)*
 
 **🧠 Knowledge (Keywords)**
 > System Architecture · Requirement Engineering · Design under Constraints (เศรษฐกิจ/สังคม/สิ่งแวดล้อม) · Sustainable Design · CAD/การเขียนแบบ · สถาปัตยกรรม IoT–Edge–Cloud · ML System Design · Software Architecture/Microservices · Digital Twin · Design Trade-off & Safety Factor
@@ -58,9 +59,9 @@
 - **H9 · IoT, Embedded & Edge AI** (L2–L3) → Sensor/MCU/MQTT/TinyML/Cyber-Physical → **AISK04 (G3 ระบบอัจฉริยะฟาร์ม–โรงงาน)**
 - **H20 · Enterprise Solution Architecture & Integration** (L2–L3) → Requirements/API/Integration/Digital Services → **AISK09 (G7)**
 - **S2 · Engineering Judgment** (L3) → เลือกแบบภายใต้ข้อจำกัด → **AISK08 (G6)**
-- **S9 · Stakeholder, Requirements & Change Facilitation** (L2–L3) → ยืนยัน requirement/acceptance criteria และจัดการการเปลี่ยนผ่าน → **AISK08 (G6) · AISK09 (G7)**
+- **S9 · Stakeholder, Requirements & Change Facilitation** (L2–L3) → ยืนยัน requirement/acceptance criteria และจัดการการเปลี่ยนผ่าน → **AISK09 (G7)**
 
-> **แกนการออกแบบของ PLO2:** "สร้างและประกอบโครงสร้างพื้นฐาน + กลไก/เครื่องจักร" = **G2 (AISK02 เกษตร · AISK03 อุตสาหกรรม)** ทำงานร่วมกับ "ระบบอัจฉริยะและความเข้าใจของเครื่อง" = **G3 (AISK04 · AISK05)** บนฐาน **G1 (AISK01)**
+> **แกนการออกแบบของ PLO2:** "สร้างและประกอบโครงสร้างพื้นฐาน + กลไก/เครื่องจักร" = **G2 (AISK02 เกษตร · AISK03 อุตสาหกรรม)** ทำงานร่วมกับ **G3 (AISK04 ระบบตรวจวัด/Edge/CPS · AISK05 การรับรู้/พยากรณ์/ตัดสินใจ)** บนฐาน **G1 (AISK01)**
 
 **❤️ Attitude**
 > คำนึงถึงผู้ใช้และความยั่งยืน (sustainability & user-centered) · ยอมรับข้อจำกัดจริงและออกแบบให้ดูแลรักษาได้ · ความรับผิดชอบต่อคุณภาพและความปลอดภัยของระบบ
@@ -77,7 +78,7 @@
 
 ---
 
-## PLO3 — การสื่อสารเชิงวิชาชีพ *(ทักษะ · Apply)*
+## PLO3 — สื่อสารเชิงวิชาชีพ *(ทักษะ · Apply)*
 
 **🧠 Knowledge (Keywords)**
 > Technical Writing (ไทย/อังกฤษ) · Data Storytelling · Data Visualization · Dashboard Design · การนำเสนอเชิงเทคนิค · Report Structure (IMRaD) · Audience Adaptation (วิศวกร/ผู้บริหาร/เกษตรกร/ชุมชน) · Technical English
@@ -85,7 +86,7 @@
 **🛠️ Skill + Sub-skill + เครื่องมือ**
 - **S4 · Professional Communication, Technical English & Data Storytelling** (L3) → รายงาน · การนำเสนอ · การตอบคำถาม · *เครื่องมือ: Power BI/Tableau, Matplotlib, Canva/Slides, LaTeX/Word* → **AISK08 (G6)**
 - **H3 · Data Analytics & Visualization** (L2–L3, ส่วน Visualization) → สร้าง Dashboard สื่อสารผล → **AISK01 (G1) · AISK05 (G3 สื่อสารผลเชิงโดเมน)**
-- **S9 · Stakeholder & Requirements Facilitation** (L2–L3) → ปรับสารและข้อกำหนดให้ผู้ใช้/ผู้บริหาร/ทีมเทคนิคเข้าใจตรงกัน → **AISK08 (G6) · AISK09 (G7)**
+- **S9 · Stakeholder & Requirements Facilitation** (L2–L3) → ปรับสารและข้อกำหนดให้ผู้ใช้/ผู้บริหาร/ทีมเทคนิคเข้าใจตรงกัน → **AISK09 (G7)**
 
 **❤️ Attitude**
 > ยึดผู้รับสารเป็นศูนย์กลาง (clarity over jargon) · ความซื่อตรงในการนำเสนอข้อมูล (ไม่บิดเบือน) · เปิดรับคำถามและข้อโต้แย้ง
@@ -131,7 +132,7 @@
 
 ---
 
-## PLO5 — การทำงานเป็นทีมและภาวะผู้นำ *(ลักษณะบุคคล · Organize)*
+## PLO5 — ทำงานเป็นทีมและภาวะผู้นำ *(ลักษณะบุคคล · Organize)*
 
 **🧠 Knowledge (Keywords)**
 > Team Roles · Team Charter · Project Planning · Conflict Management · Psychological Safety · Agile/Scrum เบื้องต้น · Peer Assessment · Cross-functional Collaboration · Leadership Styles
@@ -139,7 +140,7 @@
 **🛠️ Skill + Sub-skill + เครื่องมือ**
 - **S5 · Teamwork, Collaboration & Leadership** (L3–L4) → กำหนดเป้าหมาย · แบ่งงาน · จัดการความขัดแย้ง · *เครื่องมือ: Git/GitHub (collaboration), Trello/Jira, Team Charter template* → **AISK08 (G6)**
 - **S2 · Engineering Judgment** (L2) ในบทบาททีม → **AISK08 (G6)**
-- **S10 · Agile Delivery, Quality, Safety & Accountability** (L2–L3) → Definition of Done · review · retrospective · quality/safety evidence → **AISK08 (G6)**
+- **S10 · Agile Delivery, Quality, Safety & Accountability** (L2–L3) → Definition of Done · review · retrospective · quality/safety evidence → **AISK09 (G7)**
 
 **❤️ Attitude**
 > รับผิดชอบต่อผลลัพธ์ร่วม · รับฟังและเคารพความเห็นต่าง · ความน่าเชื่อถือ/ตรงต่อเวลา (accountability) · ภาวะผู้นำเชิงบริการ (servant leadership)
@@ -156,7 +157,7 @@
 
 ---
 
-## PLO6 — การทดลองและวิเคราะห์ข้อมูล *(ทักษะ · Evaluate)*
+## PLO6 — ทดลองและวิเคราะห์ข้อมูล *(ทักษะ · Evaluate)*
 
 **🧠 Knowledge (Keywords)**
 > Design of Experiments (DOE) · Hypothesis Testing · Data Collection & Cleaning · Feature Engineering · Model Evaluation Metrics · Data Pipeline/ETL · Big Data (Spark/Kafka) · Time-Series/Forecasting · Data Quality & Governance · Data-Centric AI/Annotation · การตีความผลเชิงวิศวกรรม
@@ -168,7 +169,7 @@
 - **H11 · Time-Series & Predictive Analytics** (L3, T1/T2) → พยากรณ์ผลผลิต/อุปสงค์/การบำรุงรักษา → **AISK05 (G3) · AISK03 (G2 อุตสาหกรรม)**
 - **H17 · Smart Manufacturing/Process/Quality** (L2–L3, T2) → วิเคราะห์ OEE, process capability, quality และ MES data → **AISK03 (G2)**
 - **H18 · Maintenance/Reliability/Asset Intelligence** (L2–L3, T2) → RCA/FMEA/CMMS/condition monitoring → **AISK03 (G2)**
-- **H19 · Decision Intelligence/BI/DSS** (L2–L3) → Forecast, scenario, optimization และ decision model → **AISK09 (G7)**
+- **H19 · Decision Intelligence/BI/DSS** (L2–L3) → Forecast, scenario, optimization และ decision model → **AISK05 (G3)**
 - **H8 · Computer Vision & Remote Sensing** (L2–L3) → วิเคราะห์ภาพ/สำรวจระยะไกล → **AISK05 (G3 ความเข้าใจของเครื่อง)**
 - **S1 · Analytical Thinking** (L3) → ตรวจสอบความน่าเชื่อถือของผล → **AISK08 (G6)**
 
@@ -196,7 +197,7 @@
 - **S6 · Product, Entrepreneurial & Project Management Mindset** (L2–L3) → user discovery · value proposition · feasibility/ROI · roadmap · *เครื่องมือ: BMC, Lean Canvas, Gantt* → **AISK08 (G6)**
 - **S3 · Adaptability, Resilience & Lifelong Learning** (L3) → learning plan · technology review · reflective portfolio → **AISK08 (G6)**
 - **H6 · Generative AI/Agentic** (L2–L3, T3) → ต่อยอดเทคโนโลยีอุบัติใหม่ → **AISK06 (G4)**
-- **S9 · Stakeholder & Change Facilitation** (L2–L3) → ทดสอบคุณค่ากับผู้ใช้และวางแผน adoption → **AISK08 (G6) · AISK09 (G7)**
+- **S9 · Stakeholder & Change Facilitation** (L2–L3) → ทดสอบคุณค่ากับผู้ใช้และวางแผน adoption → **AISK09 (G7)**
 
 **❤️ Attitude**
 > ความอยากรู้อยากเห็น (curiosity) · เปิดรับการเปลี่ยนแปลงและความล้มเหลว (growth mindset) · ริเริ่ม/ลงมือ (proactive/entrepreneurial) · เรียนรู้ด้วยตนเองอย่างต่อเนื่อง
@@ -225,17 +226,17 @@
 |---|---|---|---|
 | **G1** | แกนวิศวกรรมปัญญาประดิษฐ์<br>*(AI Core Engineering — Learning, Decision, Data & Software)* | สอน/ฝึกโมเดลให้เรียนรู้และตัดสินใจ ("AI Teaching") + ซอฟต์แวร์/MLOps + ข้อมูล | **AISK01** |
 | **G2** | วิศวกรรมโดเมนอัจฉริยะ: การสร้างและประกอบโครงสร้างพื้นฐาน กลไก และเครื่องจักร<br>*(Smart Domain Engineering: Build & Construct Infrastructure, Mechanics & Machines)* | สร้าง/ประกอบโครงสร้างพื้นฐานกายภาพ · กลไก/เครื่องจักร · ระบบอัตโนมัติ ตามโดเมน | **AISK02 (เกษตร), AISK03 (อุตสาหกรรม)** |
-| **G3** | ระบบอัจฉริยะและความเข้าใจของเครื่องจักร<br>*(Intelligent Systems & Machine Understanding)* | ระบบไซเบอร์-กายภาพ/IoT/Edge ที่เชื่อมฟาร์ม–โรงงาน · การรับรู้/มองเห็น/พยากรณ์ของเครื่อง | **AISK04, AISK05** |
-| **G4** | ปัญญาประดิษฐ์เชิงสร้างและนวัตกรรม<br>*(Generative AI & Innovation)* | GenAI/LLM/Agentic + นวัตกรรมอุบัติใหม่ | **AISK06** |
-| **G5** | ธรรมาภิบาลและความรับผิดชอบ AI<br>*(Responsible AI & Governance)* | ความปลอดภัย จริยธรรม มาตรฐานสากล | **AISK07** |
-| **G6** | วิชาชีพ ผู้นำ และผู้ประกอบการ<br>*(Professional, Leadership & Entrepreneurship)* | สื่อสาร ทีม ผู้นำ ผู้ประกอบการ | **AISK08** |
-| **G7** | โซลูชันองค์กรและระบบตัดสินใจ<br>*(Enterprise Solutions & Decision Intelligence)* | Requirements, architecture, integration, digital services, BI/DSS และ change delivery | **AISK09** |
+| **G3** | ระบบตรวจวัด การรับรู้ และการตัดสินใจอัจฉริยะ<br>*(Sensing, Perception & Decision Intelligence)* | IoT/Edge/CPS · การรับรู้/มองเห็น · การพยากรณ์ · ระบบสนับสนุนการตัดสินใจ | **AISK04, AISK05** |
+| **G4** | ปัญญาประดิษฐ์เชิงสร้าง ระบบเอเจนต์ และการทำงานร่วมกับ AI<br>*(Generative, Agentic & Human–AI Systems)* | GenAI/LLM/Agentic · การใช้เครื่องมือ AI อย่างตรวจสอบได้ · นวัตกรรมอุบัติใหม่ | **AISK06** |
+| **G5** | ธรรมาภิบาล ความมั่นคงปลอดภัย และการรับรองระบบ<br>*(Responsible AI, Security & Assurance)* | จริยธรรม ความมั่นคงปลอดภัย มาตรฐาน หลักฐานธรรมาภิบาล และการรับรองระบบ | **AISK07** |
+| **G6** | การสื่อสาร ทีม ภาวะผู้นำ และผู้ประกอบการ<br>*(Communication, Teamwork & Entrepreneurship)* | การคิดวิเคราะห์ การสื่อสาร ทีม ภาวะผู้นำ การเรียนรู้ และผู้ประกอบการ | **AISK08** |
+| **G7** | ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบ<br>*(Requirements, Architecture, Integration & Delivery)* | Requirements, architecture, integration, quality, change, acceptance และ operational handover | **AISK09** |
 
 > [!abstract] เอกลักษณ์วิศวกรรม 2 เสาของหลักสูตร (Two Engineering Identities)
-> ทั้งสองเสายืนบนแกนร่วม **G1 (การเรียนรู้/ตัดสินใจของเครื่อง — "AI Teaching")** + **G2 (สร้างและประกอบโครงสร้างพื้นฐาน กลไก เครื่องจักร)** + **G3 (ระบบอัจฉริยะและความเข้าใจของเครื่อง)**
+> ทั้งสองเสายืนบนแกนร่วม **G1 (การเรียนรู้/ตัดสินใจของเครื่อง — "AI Teaching")** + **G2 (สร้างและประกอบโครงสร้างพื้นฐาน กลไก เครื่องจักร)** + **G3 (ระบบตรวจวัด การรับรู้ การพยากรณ์ และการตัดสินใจอัจฉริยะ)**
 > - **① Smart Agriculture Engineering (T1)** → **AISK02** (H16: Precision Agriculture/โครงสร้างพื้นฐาน/กลไกฟาร์ม) + **AISK04** (ระบบอัจฉริยะฟาร์ม) + **AISK05** (การรับรู้/พยากรณ์) บนฐาน **AISK01**
 > - **② AI Industrial Engineering & Automation (T2)** → **AISK03** (H17–H18: ระบบอัตโนมัติ/กระบวนการ/คุณภาพ/บำรุงรักษา) + **AISK04** (ระบบอัจฉริยะโรงงาน) + **AISK05** บนฐาน **AISK01**
-> - **③ Enterprise/Innovative AI (T3)** → **AISK06** (GenAI/Agentic) + **AISK09** (Solution Architecture/DSS/Digital Services) + **AISK08** บนฐาน **AISK01**
+> - **③ Enterprise/Innovative AI (T3)** → **AISK06** (Generative/Agentic/Human–AI) + **AISK05** (Decision Intelligence) + **AISK09** (Solution Architecture/Integration/Delivery) + **AISK08** บนฐาน **AISK01**
 
 ## EN-AISK01 · แกนวิศวกรรมปัญญาประดิษฐ์: การเรียนรู้ การตัดสินใจ ข้อมูล และซอฟต์แวร์<br>*(AI Core Engineering Stack — Learning, Decision, Data & Software)*
 **กลุ่ม:** **G1 · แกนวิศวกรรมปัญญาประดิษฐ์ (AI Core Engineering)** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H1, H2, H3, H4 (+H12, H14) · **เทียบเคียง:** ACM/IEEE-CS/AAAI **CS2023** · NUS 3 เสาหลัก · AI Singapore **AIAP** (Software+Data เป็นฐานบังคับ)
@@ -245,7 +246,7 @@
 | 1 | คณิตศาสตร์ประยุกต์สำหรับ AI (Applied Math) | L3 บูรณาการ | EN-131-102 (CLO1,2,3) · EN-001-022 (CLO1) | Python, NumPy, SymPy |
 | 2 | การพัฒนาและฝึกสอนโมเดล ML/DL — **"AI Teaching"** *(Subsymbolic)* | L4 นำไปใช้/ประเมิน | EN-131-106 (CLO1,2) · EN-134-104 (CLO1) | scikit-learn, PyTorch, TensorFlow |
 | 3 | การให้เหตุผลและการตัดสินใจ *(Symbolic/Neurosymbolic: Search, Planning, KR, Bayesian Reasoning)* | L2–L3 | EN-131-101 (CLO1) · EN-132-108 (CLO1) | Search/Planning, Bayesian Networks, Knowledge Graph |
-| 4 | การประเมินและอธิบายผลโมเดล (Evaluation/XAI) | L3 บูรณาการ | EN-131-106 (CLO2) · EN-001-022 (CLO3) | MLflow, SHAP |
+| 4 | การประเมินและอธิบายผลโมเดล (Evaluation/XAI) | L3 บูรณาการ | EN-131-106 (CLO2,3) · EN-001-022 (CLO2,3) | MLflow, SHAP |
 | 5 | วิศวกรรมซอฟต์แวร์ AI และ Full-stack AI Solutioning | L3 บูรณาการ | EN-001-026 (CLO1,3) · EN-132-107 (CLO1) · EN-134-104 (CLO1) | Python, Git, FastAPI, pytest, Streamlit/Gradio |
 | 6 | MLOps, Cloud และโครงสร้างพื้นฐาน AI (Container/GPU/Scale) | L2–L3 | EN-131-105 (CLO1,2) · EN-131-108 (CLO1,2) · EN-132-107 (CLO2) | Docker, Kubernetes, AWS/Azure/GCP, CI/CD |
 | 7 | วิศวกรรมข้อมูลและการวิเคราะห์ (Pipeline/Big Data/Analytics/Data-Centric AI) | L3 บูรณาการ | EN-131-107 (CLO1,2,3) · EN-001-022 (CLO2) | SQL, Airflow, Spark, Power BI, Label Studio |
@@ -281,8 +282,8 @@
 
 **วิธีวัดและประเมินผล:** โครงงานระบบอัตโนมัติ/สายการผลิต (Automation Project) · การวิเคราะห์กรณีศึกษาอุตสาหกรรม (Industry Case Study) · รายงานศึกษาดูงาน · การประเมินผลสหกิจในโรงงาน
 
-## EN-AISK04 · ระบบอัจฉริยะสำหรับฟาร์มและโรงงาน<br>*(Intelligence System for Smart Farm and Factories)*
-**กลุ่ม:** **G3 · ระบบอัจฉริยะและความเข้าใจของเครื่องจักร** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H9, H5 *(บูรณาการ)*, H4 *(Edge–Cloud)* *(แกนร่วมของ **T1 + T2**)*
+## EN-AISK04 · ระบบตรวจวัด การประมวลผลที่ขอบเครือข่าย และระบบไซเบอร์กายภาพ<br>*(Sensing, Edge & Cyber-Physical Systems)*
+**กลุ่ม:** **G3 · ระบบตรวจวัด การรับรู้ และการตัดสินใจอัจฉริยะ** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H9, H5 *(บูรณาการ)*, H4 *(Edge–Cloud)* *(แกนร่วมของ **T1 + T2**)*
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
@@ -293,8 +294,8 @@
 
 **วิธีวัดและประเมินผล:** โครงงานบูรณาการระบบ (System Integration Project — ปฏิบัติการ III) · การสาธิตระบบ IoT–Edge–Cloud ในฟาร์ม/โรงงาน · การประเมินผลสหกิจศึกษา
 
-## EN-AISK05 · การประยุกต์ปัญญาประดิษฐ์ในเกษตร อุตสาหกรรม และองค์กร<br>*(Applied AI in Agriculture, Industry and Enterprise)*
-**กลุ่ม:** **G3 · ระบบอัจฉริยะและความเข้าใจของเครื่องจักร** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H8, H11, H16–H19 *(Applied Domain AI)* *(ครอบคลุม **T1 + T2 + T3**)*
+## EN-AISK05 · การรับรู้ การพยากรณ์ และการตัดสินใจด้วยปัญญาประดิษฐ์<br>*(AI Perception, Prediction & Decision Intelligence)*
+**กลุ่ม:** **G3 · ระบบตรวจวัด การรับรู้ และการตัดสินใจอัจฉริยะ** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H8, H11, H13, H16–H19 *(ครอบคลุม **T1 + T2 + T3**)*
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
@@ -307,91 +308,93 @@
 
 **วิธีวัดและประเมินผล:** โครงงาน CV/พยากรณ์ตามโดเมน · การทดสอบภาคปฏิบัติการบินโดรน (Drone Flight Practical Test) · Dashboard และรายงานการวิเคราะห์เชิงตัดสินใจ
 
-## EN-AISK06 · Generative AI, LLM และระบบเอเจนต์ (Generative AI, LLM & Agentic Systems)
-**กลุ่ม:** **G4 · ปัญญาประดิษฐ์เชิงสร้างและนวัตกรรม (Generative AI & Innovation)** · **ประเภท:** Hard Skill · **ผูกทักษะแกน:** H6, H10 *(แกนของ T3)* · **เทียบเคียง:** IMDA GenAI TSC#3–#6, #9
+## EN-AISK06 · ปัญญาประดิษฐ์เชิงสร้าง ระบบเอเจนต์ และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์<br>*(Generative, Agentic & Human–AI Systems)*
+**กลุ่ม:** **G4 · ปัญญาประดิษฐ์เชิงสร้าง ระบบเอเจนต์ และการทำงานร่วมกับ AI** · **ประเภท:** Hard + Hybrid Skill · **ผูกทักษะแกน:** H6, H10, S7 *(แกนของ T3 และใช้ร่วมทุก Track)* · **เทียบเคียง:** IMDA GenAI TSC#2–#6, #9
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | Prompt/Context Engineering และ RAG *(IMDA TSC#3, #6)* | L2–L3 | EN-131-101 (CLO1) · EN-132-108 (CLO1) | LLM APIs, Vector DB, LangChain |
 | 2 | AI Agents, Agentic & Compound AI Workflows | L3 บูรณาการ | EN-132-108 (CLO1,2) | LangChain/LangGraph, Tool Use, API Orchestration |
-| 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-108 (CLO1) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
+| 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-108 (CLO1,2) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
 | 4 | LLM Red-teaming และการประเมิน Hallucination/Safety *(IMDA TSC#9)* | L3 บูรณาการ | EN-132-108 (CLO2) · EN-134-104 (CLO4) | **Project Moonshot**, Guardrails, Adversarial Prompt Test |
 | 5 | การประมวลผลภาษาไทย (Thai NLP) | L2 ประยุกต์ | EN-132-108 (CLO1) | AI for Thai, HuggingFace |
+| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-026 (CLO2) · EN-132-107 (CLO2) · EN-134-101/102 | AI Coding Tools, Prompt Log, Human Review |
 
 **วิธีวัดและประเมินผล:** โครงงานพัฒนาระบบเอเจนต์ (Agent Project) · การสาธิตระบบ (Demo) · **รายงานการคัดเลือก/ประเมินโมเดลและผล LLM Red-teaming (Baseline Safety Report)** · การประเมินผลสหกิจ (T3)
 
 > [!info] เทียบเคียงมาตรฐานสิงคโปร์ (IMDA / Project Moonshot)
 > ต่อยอดจากทักษะย่อย 1–2 (Prompt/RAG/Agentic) ให้ครอบคลุม **การเลือกโมเดล Open-source vs Proprietary** (ต้นทุน/ความเร็ว/ความปลอดภัย เช่น Llama เทียบ GPT-4) และ **การทดสอบความปลอดภัย LLM** ตามความเสี่ยง 5 ประการของ Project Moonshot (Hallucination · Bias · Undesirable Content · Data Leakage · Adversarial Prompt) — ยกระดับบัณฑิตจากผู้เรียกใช้ API สู่สถาปนิกระบบที่รับประกันความปลอดภัยก่อน Deploy
 
-## EN-AISK07 · AI ที่รับผิดชอบ ความปลอดภัย และธรรมาภิบาล (Responsible AI, Security & Governance)
-**กลุ่ม:** **G5 · ธรรมาภิบาลและความรับผิดชอบ AI (Responsible AI & Governance)** · **ประเภท:** Hybrid *(ความรู้ + ทัศนคติ)* · **ผูกทักษะแกน:** H7, S7 · **เทียบเคียง:** AI Verify (11 หลักการ) · IMDA GenAI TSC#8, #9 · **ISO/IEC 42001 · NIST AI RMF · EU AI Act** · ACM/IEEE/IFIP/ABET Cybersecurity
+## EN-AISK07 · ปัญญาประดิษฐ์ที่รับผิดชอบ ความมั่นคงปลอดภัย ธรรมาภิบาล และการรับรองระบบ<br>*(Responsible AI, Security, Governance & Assurance)*
+**กลุ่ม:** **G5 · ธรรมาภิบาล ความมั่นคงปลอดภัย และการรับรองระบบ** · **ประเภท:** Hybrid *(ความรู้ + ทักษะ + ทัศนคติ)* · **ผูกทักษะแกน:** H7 · **เทียบเคียง:** AI Verify (11 หลักการ) · IMDA GenAI TSC#8, #9 · **ISO/IEC 42001 · NIST AI RMF · EU AI Act** · ACM/IEEE/IFIP/ABET Cybersecurity
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-104 (CLO3) · EN-131-108 (CLO3) · EN-131-105 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
+| 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-104 (CLO3) · EN-131-108 (CLO2) · EN-132-108 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
 | 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-101 (CLO2) · EN-134-102 (CLO2) · EN-132-104 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
 | 3 | การจัดทำหลักฐานเชิงประจักษ์ทางธรรมาภิบาล (Audit & Compliance Evidence) | L3 บูรณาการ | EN-134-102 (CLO2) · EN-134-104 (CLO4) | Model Card · Fairness Evaluation Report · Robustness Log *(Outcome/Process/Evidence)* |
-| 4 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-401 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
+| 4 | การรับรองความปลอดภัย ความน่าเชื่อถือ และความสอดคล้องของระบบ | L3 บูรณาการ | EN-001-030 (CLO2) · EN-134-104 (CLO2) | Risk Register, Assurance Case, Verification Evidence |
+| 5 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-401 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
 
 **วิธีวัดและประเมินผล:** การวิเคราะห์กรณีศึกษา (Case Study) · **การจัดทำ Model Card / Fairness Evaluation Report / Robustness Log ตามกรอบ AI Verify** · การประเมินจากสถานประกอบการ (Employer Evaluation from Co-op)
 
 > [!info] เทียบเคียงมาตรฐานสิงคโปร์ (AI Verify — IMDA)
 > เปลี่ยนการสอนจริยธรรมจาก "กรณีศึกษาเชิงปรัชญา" ให้เป็น **กระบวนการวิศวกรรมที่วัดผลได้** โดยใช้โครงสร้าง **Outcome → Process → Evidence** ของ AI Verify กับหลักการ 11 ประการ (Transparency · Explainability · Repeatability · Safety · Security · Robustness · Fairness · Data Governance · Accountability · Human Oversight · Societal/Environmental Well-being) — ทำให้ทัศนคติ (Attitude) ของ PLO4 กลายเป็นทักษะแข็ง (Hard Skill) ที่ประเมินใน Skill Transcript ได้จริง
 
-## EN-AISK08 · การปฏิบัติวิชาชีพและความเป็นผู้ประกอบการ (Professional & Entrepreneurial Practice)
-**กลุ่ม:** **G6 · วิชาชีพ ผู้นำ และผู้ประกอบการ (Professional, Leadership & Entrepreneurship)** · **ประเภท:** Soft Skill · **ผูกทักษะแกน:** S1–S6, S8–S10
+## EN-AISK08 · การสื่อสาร การทำงานเป็นทีม ภาวะผู้นำ และความเป็นผู้ประกอบการ<br>*(Communication, Teamwork, Leadership & Entrepreneurship)*
+**กลุ่ม:** **G6 · การสื่อสาร ทีม ภาวะผู้นำ และผู้ประกอบการ** · **ประเภท:** Soft Skill · **ผูกทักษะแกน:** S1–S6, S8
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | การคิดวิเคราะห์เชิงระบบ (Analytical/Systems Thinking) | L3 | EN-134-103 (CLO1) · แทรกทุกโครงงาน | System Map, Root-cause |
-| 2 | การสื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-101/102 (CLO1) · EN-135-401 (CLO1) · EN-134-104 (CLO4) | Slides, รายงาน, Technical English |
-| 3 | การทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-104 (CLO3) · EN-135-402 (CLO2) · EN-001-028/029/030 | Git, Team Charter, 360° Feedback |
+| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-101/102 (CLO1) · EN-135-401 (CLO1) · EN-134-104 (CLO4) | Slides, รายงาน, Technical English |
+| 3 | ทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-104 (CLO3) · EN-135-402 (CLO2) · EN-001-028/029/030 | Git, Team Charter, 360° Feedback |
 | 4 | ผู้ประกอบการและการบริหารโครงการ (Entrepreneurial/PM) | L2–L3 | EN-132-101 (CLO1,2) · EN-135-402 · YLO4.4 | BMC, Lean Canvas, Gantt |
 | 5 | การเรียนรู้ตลอดชีวิตและการปรับตัว | L3 | EN-131-105 (CLO3) · EN-134-103 (CLO3) | Learning Portfolio |
 | 6 | กลยุทธ์การแปลงโฉมดิจิทัลและการคิดเชิง Compound AI *(T3)* · **การออกแบบที่ครอบคลุมและเข้าถึงได้ (Inclusive & Accessible Design)** *(ตอบ N17)* | L2–L3 | EN-132-101 (CLO2) · EN-134-104 (CLO1) | Digital Transformation Canvas, System-of-Systems View, Inclusive Design Checklist |
-| 7 | Stakeholder/Requirements/Change Facilitation | L2–L3 | EN-132-101 · EN-134-103/104 · EN-135-402 | Stakeholder Map, Backlog, Acceptance Criteria, Change Plan |
-| 8 | Agile Delivery, Quality, Safety และ Professional Accountability | L3 | EN-001-028/029/030 · EN-134-104 · EN-135-402 | Sprint Board, Definition of Done, Test/Quality/Safety Record, Retrospective |
 
 **วิธีวัดและประเมินผล:** การประเมินการทำงานกลุ่มในโครงงาน (Group Project Assessment) · การนำเสนอในสัมมนา (Seminar Presentation) · การประเมิน 360° จากสหกิจ · แผนธุรกิจ/Value Proposition · Learning Portfolio
 
 > [!info] เทียบเคียงมาตรฐานสิงคโปร์ (NUS BAIS / Compound AI)
 > เสริม **Digital Transformation Strategy** และกรอบคิด **Compound AI Systems** (มองระบบเป็นนิเวศของเครื่องมือหลายชนิดทำงานร่วมกัน ไม่ใช่โมเดลเดี่ยว) เพื่อเสริมจุดแข็งบัณฑิตแขนง T3 ในการวิเคราะห์ช่องว่างธุรกิจ–เทคโนโลยีและบริหารนวัตกรรมให้คุ้มค่าการลงทุน (ROI)
 
-## EN-AISK09 · โซลูชันองค์กรและระบบตัดสินใจ<br>*(Enterprise Solutions, Decision Intelligence & Digital Services)*
+## EN-AISK09 · ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบระบบ<br>*(Requirements, Architecture, Integration & System Delivery)*
 
-**กลุ่ม:** **G7 · โซลูชันองค์กรและระบบตัดสินใจ** · **ประเภท:** Hard + Hybrid Skill · **ผูกทักษะ:** H19, H20, S9, S10 *(เน้น T3 และใช้ข้าม Track)* · **หลักฐานตลาด:** C02, C06, C07, C11, C12, C15
+**กลุ่ม:** **G7 · ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบ** · **ประเภท:** Hard + Hybrid Skill · **ผูกทักษะ:** H20, S9, S10 *(เน้น T3 และใช้ข้าม Track)* · **หลักฐานตลาด:** C02, C06, C07, C11
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ/หลักฐาน |
 |---|---|---|---|---|
 | 1 | Requirements Engineering, stakeholder mapping และ acceptance criteria | L3 | EN-132-101 · EN-134-103/104 | Interview, Context Map, Backlog, Acceptance Criteria |
 | 2 | Solution Architecture, API และ System Integration | L3–L4 *(T3)* | EN-132-107/108 · EN-134-104 | C4/UML, API Contract, Integration Test |
-| 3 | Decision Intelligence, BI/DSS, forecasting, scenario และ optimization | L3 | EN-132-102 · EN-131-107 · EN-134-104 | SQL, Power BI/Tableau, Solver/Simulation, Decision Log |
-| 4 | Enterprise/Digital Services: Cloud/SaaS, IAM, ITSM, backup/DR และ e-Service | L2–L3 | EN-131-105/108 · EN-132-107 | Cloud Architecture, IAM Matrix, Service Catalog, DR Plan |
-| 5 | Change, rollout, adoption และ operational handover | L3 | EN-135-401/402 · EN-134-104 | Change Plan, User Acceptance Test, Runbook, Handover Evidence |
-| 6 | Quality, security และ service performance | L3 | EN-131-105 · EN-134-104 | SLA/SLO, Risk Register, Test Report, Monitoring Dashboard |
+| 3 | สถาปัตยกรรมบริการดิจิทัล: Cloud/SaaS, IAM, ITSM, backup/DR และ e-Service | L2–L3 | EN-131-105/108 · EN-132-107 | Cloud Architecture, IAM Matrix, Service Catalog, DR Plan |
+| 4 | การทวนสอบ คุณภาพ ความปลอดภัย ความมั่นคงปลอดภัย และสมรรถนะบริการ | L3 | EN-001-030 · EN-131-105 · EN-134-104 | SLA/SLO, Risk Register, Test Report, Monitoring Dashboard |
+| 5 | การนำระบบไปใช้ การจัดการการเปลี่ยนแปลง และการยอมรับของผู้ใช้ | L3 | EN-132-101 · EN-134-103/104 | Change Plan, User Acceptance Test, Adoption Evidence |
+| 6 | การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง | L3 | EN-135-401/402 · EN-134-104 | Runbook, Handover Evidence, Incident Review |
 
-**วิธีวัดและประเมินผล:** Solution Architecture Portfolio · Requirements/Acceptance Package · BI/DSS Decision Case · Integration/UAT Demo · Service Runbook และ Change/Adoption Plan · การประเมินจากสถานประกอบการ
+**วิธีวัดและประเมินผล:** Solution Architecture Portfolio · Requirements/Acceptance Package · Integration/UAT Demo · Service Runbook · Change/Adoption Plan · การประเมินจากสถานประกอบการ
 
 > [!note] ขอบเขต
-> AISK09 ไม่แทน AISK01: AISK01 วัดความสามารถสร้าง AI/data/software stack ส่วน AISK09 วัดการแปลงความสามารถนั้นเป็นระบบองค์กรหรือบริการดิจิทัลที่ผู้มีส่วนได้ส่วนเสียยอมรับ เชื่อมต่อระบบเดิม ตัดสินใจได้ และส่งมอบให้ดำเนินงานต่อได้
+> AISK09 ไม่แทน AISK01 หรือ AISK05: AISK01 วัดความสามารถสร้าง AI/data/software stack และ AISK05 วัดการรับรู้ พยากรณ์ และตัดสินใจ ส่วน AISK09 วัดการแปลงความสามารถเหล่านั้นเป็นระบบที่มีข้อกำหนดชัดเจน เชื่อมต่อระบบเดิม ผ่านการยอมรับ และส่งมอบให้ดำเนินงานต่อได้
 
 ---
 
 ## สรุปการเชื่อมโยง Skill Set ↔ PLO ↔ Track
 
-| Skill Set                                                                               | กลุ่ม | ทักษะแกน                    | PLO หลัก         | T1 เกษตร | T2 อุตสาหกรรม | T3 องค์กร |
-| --------------------------------------------------------------------------------------- | :---: | --------------------------- | ---------------- | :------: | :-----------: | :-------: |
-| **AISK01** AI Core Engineering Stack *(Learning · Decision · Data · Software)*          |  G1   | H1, H2, H3, H4, H12, H14    | PLO1, PLO2, PLO6 |    ●     |       ●       |     ●     |
-| **AISK02** Smart Agriculture Engineering *(Farm Infrastructure · Mechanics · Machines)* |  G2   | H9, H15, H16 + ฐานวิศวกรรมกายภาพ | PLO2, PLO1       |  **●**   |       ○       |     ○     |
-| **AISK03** Smart Industry *(AI Industrial Engineering & Automation)*                    |  G2   | H5, H11, H13, H17, H18     | PLO1, PLO2, PLO6 |    ○     |     **●**     |     ○     |
-| **AISK04** Intelligence System for Smart Farm and Factories                             |  G3   | H9, H5, H4                  | PLO2             |    ●     |       ●       |     ○     |
-| **AISK05** Applied AI in Agriculture, Industry and Enterprise                           |  G3   | H8, H11, H16–H19           | PLO2, PLO6       |    ●     |       ●       |     ●     |
-| **AISK06** GenAI, LLM & Agentic Systems                                                 |  G4   | H6, H10                     | PLO2, PLO7       |    ○     |       ○       |   **●**   |
-| **AISK07** Responsible AI, Security & Governance                                        |  G5   | H7, S7                      | PLO4             |    ●     |       ●       |     ●     |
-| **AISK08** Professional & Entrepreneurial Practice                                      |  G6   | S1–S6, S8–S10              | PLO3, PLO5, PLO7 |    ●     |       ●       |     ●     |
-| **AISK09** Enterprise Solutions, Decision Intelligence & Digital Services               |  G7   | H19, H20, S9, S10           | PLO2, PLO3, PLO6, PLO7 | ○ | ○ | **●** |
+| Skill Set | กลุ่ม | ทักษะ/ฐานทักษะ | PLO หลัก | PLO สนับสนุนเมื่อมีหลักฐาน | T1 | T2 | T3 |
+|---|:---:|---|---|---|:---:|:---:|:---:|
+| **AISK01** AI Core Engineering Stack | G1 | H1–H4, H12, H14 | PLO1, PLO2, PLO6 | PLO3, PLO4 | ● | ● | ● |
+| **AISK02** Smart Agriculture Engineering | G2 | H9, H15, H16; EF1–EF5 | PLO1, PLO2 | PLO4, PLO6 | **●** | ○ | ○ |
+| **AISK03** Smart Industry and Automation | G2 | H5, H11, H13, H17, H18; EF1–EF6 | PLO1, PLO2, PLO6 | PLO4, PLO5 | ○ | **●** | ○ |
+| **AISK04** Sensing, Edge and Cyber-Physical Systems | G3 | H4, H5, H9; EF4–EF5 | PLO2, PLO6 | PLO1, PLO4 | ● | ● | ○ |
+| **AISK05** AI Perception, Prediction and Decision Intelligence | G3 | H8, H11, H13, H16–H19 | PLO2, PLO6 | PLO1, PLO3 | ● | ● | ● |
+| **AISK06** Generative, Agentic and Human–AI Systems | G4 | H6, H10, S7 | PLO2, PLO7 | PLO4 | ○ | ○ | **●** |
+| **AISK07** Responsible AI, Security, Governance and Assurance | G5 | H7; EF6 | PLO4 | PLO2, PLO6 | ● | ● | ● |
+| **AISK08** Communication, Teamwork, Leadership and Entrepreneurship | G6 | S1–S6, S8 | PLO3, PLO5, PLO7 | PLO1, PLO2 | ● | ● | ● |
+| **AISK09** Requirements, Architecture, Integration and Delivery | G7 | H20, S9, S10; EF1, EF6 | PLO2, PLO3, PLO5 | PLO4, PLO6, PLO7 | ○ | ○ | **●** |
 
-**การอ่านตาราง:** **AISK01** เป็นแกนกลางบังคับของทุก Track · **AISK02/AISK03** เป็นชุดเฉพาะโดเมนเกษตร/อุตสาหกรรม · **AISK04/AISK05** เป็นชั้นระบบอัจฉริยะและความเข้าใจของเครื่อง · **AISK09** ปิดช่องว่างการส่งมอบ solution, DSS และ digital services ที่พบสูงใน C02/C11/C15
+**การอ่านตาราง:** คอลัมน์ **PLO หลัก** ใช้กำหนดความรับผิดชอบขั้นต่ำของชุดทักษะ ส่วน **PLO สนับสนุน** จะนับเฉพาะเมื่อ CLO และหลักฐานประเมินวัดพฤติกรรมของ PLO นั้นโดยตรง การแยกสองคอลัมน์แก้ความคลาดเคลื่อนเดิมที่นำผลรวมของทุก sub-skill ไปแสดงเป็น PLO หลักของทั้ง Skill Set
+
+**การอ่านภาระรายวิชา:** AISK ตัวแรกในช่อง H/S–AISK ของ CLO คือ **เจ้าภาพหลัก**; AISK ถัดไปเป็นผู้สนับสนุน การรายงาน Skill Set Feed จึงแยกจำนวนวิชา/CLO เจ้าภาพออกจากความสัมพันธ์สนับสนุน เพื่อไม่ให้นับรายวิชาบูรณาการซ้ำเต็มจำนวน
 
 > [!success] ครบทั้ง KSA และ Constructive Alignment
 > - **Knowledge** = หัวข้อ/keywords ต่อ PLO (ส่วน A) → สอนในวิชาแกน
@@ -450,11 +453,11 @@
 | **Automation / Robotics / OT Engineer** | **AISK03** + AISK04 | **T2** |
 | Smart Factory / Process & Production Engineer | **AISK03** + AISK04/05 | **T2** |
 | Predictive Maintenance / Reliability Engineer | **AISK03** + AISK05 | **T2** |
-| Decision Support / Operations Analytics Specialist | **AISK09** + AISK01/05 | T2, T3 |
+| Decision Support / Operations Analytics Specialist | **AISK05** + AISK01 | T2, T3 |
 | Enterprise Solution / Digital Technology Specialist | **AISK09** + AISK01/07 | T3 / ข้าม Track |
 | Business Analyst / AI Translator, Chief AI Officer | AISK08 + **AISK09** | ทุก Track (ผู้นำ) |
 
-> โครงสร้าง 3 Tracks + 9 Skill Set ครอบคลุมเส้นทางอาชีพเดิม C01–C12 และ role clusters เพิ่มเติม C13–C17 โดย AISK02/AISK03 รักษาจุดต่างด้านวิศวกรรมกายภาพเฉพาะโดเมน และ AISK09 เพิ่มความสามารถส่งมอบ Enterprise Solution, DSS และ Digital Services ที่ตลาดต้องการ
+> โครงสร้าง 3 Tracks + 9 Skill Set ครอบคลุมเส้นทางอาชีพเดิม C01–C12 และ role clusters เพิ่มเติม C13–C17 โดย AISK02/AISK03 รักษาจุดต่างด้านวิศวกรรมกายภาพเฉพาะโดเมน AISK05 รับผิดชอบ Decision Intelligence/DSS และ AISK09 รับผิดชอบการส่งมอบ Enterprise Solution กับ Digital Services
 
 ## C.4 มาตรฐานหลักสูตรและธรรมาภิบาลสากล ↔ องค์ประกอบหลักสูตร
 
@@ -499,16 +502,23 @@
 | H8 Computer Vision & Remote Sensing | **AISK05** (G3 ความเข้าใจของเครื่อง) | PLO2, PLO6 | 131-103, 132-104 | ✅ |
 | H9 IoT, Edge & Sensor | **AISK04** (G3) · AISK02 (ประยุกต์ฟาร์ม) | PLO2, PLO1 | 131-104, 001-027 | ✅ |
 | ฐานวิศวกรรมกายภาพ *(กลศาสตร์/วัสดุ/ความร้อน-ของไหล/เขียนแบบ/Workshop)* | **AISK02** (G2 เกษตร) · AISK03 (G2 อุตสาหกรรม) | PLO2, PLO1 | 001-023/024/025, 001-028/029/030 | ✅ **ใหม่ — แกน Build & Construct** |
-| H11 Time-Series & Forecasting | **AISK05** (G3) · AISK03 (Predictive Maintenance) | PLO6, PLO2 | 132-102/103/105 | ◐ เลือก/ลึกตาม Track |
-| H12 Big Data & Streaming · H14 Data-Centric AI | **AISK01** (G1 ย่อย 7) | PLO6 | 131-107 | ◐ เลือก |
-| H13 RL, Optimization & OR | **AISK03** (G2 ย่อย 4) | PLO1, PLO2 | 132-102, 132-106 | ◐ เลือก (T2) |
-| H15 Green/Sustainable AI | **AISK02** (G2 ย่อย 4) | PLO4, PLO2 | 001-023, 132-103 | ◐ เลือก (T1) |
-| H10 NLP / Thai NLP | AISK06 (G4 ย่อย 5) | PLO2, PLO7 | 132-108 | ◐ เลือก (T3) |
-| H16 Smart/Precision Agriculture & Agri-food | **AISK02** (G2 ย่อย 3,5) · AISK05 | PLO1, PLO2, PLO6 | 132-102/103/104 | ◐ ลึก T1 |
-| H17 Smart Manufacturing/Process/Quality/MES | **AISK03** (G2 ย่อย 3,4) · AISK04/05 | PLO1, PLO2, PLO6 | 132-102/105/106 | ◐ ลึก T2 |
-| H18 Maintenance/Reliability/Asset Intelligence | **AISK03** (G2 ย่อย 5) · AISK05 | PLO1, PLO2, PLO6 | 132-105, 134-104 | ◐ ลึก T2 |
-| H19 Decision Intelligence/BI/DSS | **AISK09** (G7 ย่อย 3) · AISK05 | PLO1, PLO2, PLO3, PLO6 | 131-107, 132-102, 134-104 | ◐ T2/T3 |
-| H20 Enterprise Architecture/Integration/Digital Services | **AISK09** (G7 ย่อย 1,2,4–6) | PLO2, PLO3, PLO4, PLO7 | 131-105/108, 132-107/108, 134-104 | ◐ ลึก T3 |
+| H11 Time-Series & Forecasting | **AISK05** · AISK03 | PLO6, PLO2 | 001-022, 132-102/103/105 | ✅ baseline ในแกน; ลึกตาม Track |
+| H12 Big Data & Streaming | **AISK01** (ย่อย 7) | PLO2, PLO6 | 131-107 | ◐ baseline; distributed/streaming L4 ใช้วิชาเลือก |
+| H13 RL, Optimization & OR | **AISK03** · AISK09 | PLO1, PLO2 | 131-102, 132-102/105 | ✅ optimization/OR ในแกน; RL ลึกใช้วิชาเลือก |
+| H14 Data-Centric AI | **AISK01** (ย่อย 7) | PLO6 | 001-022, 131-103/105/106/107 | ◐ ปิดเมื่อใช้ dataset/lineage/label-quality rubric |
+| H15 Green/Sustainable AI | **AISK02** · AISK07/08 | PLO2, PLO4 | 001-021/023/030, 131-105, 132-101/103/105 | ◐ ปิดเมื่อใช้ BCG/carbon rubric ทุก Track |
+| H10 NLP / Thai NLP | AISK06 (ย่อย 5) | PLO2, PLO7 | 131-101, 132-108 | ◐ baseline; Thai NLP L4 ใช้วิชาเลือก |
+| H16 Smart/Precision Agriculture & Agri-food | **AISK02** · AISK05 | PLO1, PLO2, PLO6 | 132-102/103/104 | ✅ baseline ในแกน; ลึก T1 |
+| H17 Smart Manufacturing/Process/Quality/MES | **AISK03** · AISK04/05 | PLO1, PLO2, PLO6 | 001-023/027/029, 132-105/106/109 | ✅ baseline ในแกน; ลึก T2 |
+| H18 Maintenance/Reliability/Asset Intelligence | **AISK03** · AISK05 | PLO1, PLO2, PLO6 | 132-105, 134-104 | ◐ baseline; C16/L4 ใช้ Advanced Maintenance elective |
+| H19 Decision Intelligence/BI/DSS | **AISK05** | PLO1, PLO2, PLO3, PLO6 | 001-021, 131-107, 132-102/103/105 | ✅ ในแกนร่วม |
+| H20 Enterprise Architecture/Integration/Digital Services | **AISK09** | PLO2, PLO3, PLO4, PLO7 | 001-024/030, 131-105/108, 132-101/107/108 | ◐ architecture/integration ในแกน; ITSM/IAM/DR/e-Service L4 ใช้วิชาเลือก |
+| EF1 Drawing/CAD/Layout/P&ID | AISK02/03/09 | PLO2; สนับสนุน PLO3 | 001-024, 132-106 | ✅ |
+| EF2 Mechanics/Materials/Fabrication | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4 | 001-025/028 | ✅ |
+| EF3 Thermal-Fluid/Energy/Process | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4/PLO6 | 001-023, 132-105 | ✅ |
+| EF4 Electrical/Instrumentation/Calibration | AISK03/04 | PLO1, PLO2, PLO6; สนับสนุน PLO4 | 001-027, 132-109 | ✅ |
+| EF5 Actuation/Fluid Power/Control | AISK03/04 | PLO2; สนับสนุน PLO4/PLO6 | 001-029, 132-109 | ◐ ปิดระดับบูรณาการ; ความลึก component design ใช้ Lab/วิชาเลือก |
+| EF6 Safety/Standards/Commissioning/Handover | AISK07/08/09 | PLO2, PLO4; สนับสนุน PLO3/PLO5/PLO6 | 001-028–030, 132-106/109, 134-104/135-402 | ◐ ต้องมี rubric และผู้ทวนสอบ |
 | S1 Analytical/Systems | AISK08 | PLO1, PLO6 | 134-103 + ทุกโครงงาน | ✅ |
 | S2 Problem-Solving/Judgment | AISK08 | PLO1, PLO2 | ทุกโครงงาน | ✅ |
 | S3 Adaptability/Lifelong | AISK08 | PLO7 | 131-105, 134-103 | ✅ |
@@ -517,10 +527,10 @@
 | S6 Product/Entrepreneurial/PM | AISK08 | PLO7 | 132-101, 135-402 | ✅ |
 | S7 AI Literacy/Human–AI | AISK06/07 | PLO4, PLO7 | 131-101 | ✅ AI User TSC#2 |
 | S8 Empathy/Stakeholder | AISK08 | PLO3, PLO5 | 135-401, 132-101 | ✅ |
-| S9 Stakeholder/Requirements/Change | **AISK08/09** | PLO2, PLO3, PLO5, PLO7 | 132-101, 134-103/104, 135-402 | ◐ สอดแทรก Project/Co-op |
-| S10 Agile/Quality/Safety/Accountability | **AISK08/09** | PLO2, PLO4, PLO5 | 001-028/029/030, 134-104, 135-402 | ◐ สอดแทรก Workshop/Project |
+| S9 Stakeholder/Requirements/Change | **AISK09** | PLO2, PLO3, PLO5, PLO7 | 132-101, 134-103/104, 135-402 | ◐ สอดแทรก Project/Co-op |
+| S10 Agile/Quality/Safety/Accountability | **AISK09** | PLO2, PLO4, PLO5 | 001-028/029/030, 134-104, 135-402 | ◐ สอดแทรก Workshop/Project |
 
-**ผลตรวจสอบ:** ทักษะแกน 15 ข้อ (H1–H9, S1–S6) + ส่วนขยาย 15 ข้อ (H10–H20, S7–S10) + **ฐานวิศวกรรมกายภาพ** ผูกกับ Skill Set ครบ และ **รองรับด้วย PLO ทุกข้อ** — ไม่มีทักษะลอย (orphan skill) และไม่มี PLO ที่ขาดทักษะรองรับ
+**ผลตรวจสอบ:** H1–H20, S1–S10 และ EF1–EF6 มี Skill Set, PLO, CLO เจ้าภาพ และหลักฐานปลายทางครบ จึงไม่มีทักษะลอย อย่างไรก็ตาม H7/H14/H15/EF5/EF6 ยังขึ้นกับ rubric และทรัพยากร ส่วน H10/H12/H18/H20 ต้องใช้วิชาเลือกสร้างความลึก L4 ตาม Track
 
 > [!note] การเปลี่ยนแปลงจากการ Regroup
 > **AISK01** รวมทักษะแกนเทคโนโลยี 4 ด้าน (H1 เรียนรู้/ตัดสินใจ · H2 ซอฟต์แวร์ · H3 ข้อมูล · H4 MLOps) เป็น "แกนกลางบังคับทุก Track" · **AISK02/AISK03** เกิดใหม่เป็นชุด **เฉพาะโดเมน** ที่รับ **ฐานวิศวกรรมกายภาพ** (เดิมกระจายอยู่ในรายวิชาแต่ไม่มีชุดทักษะรองรับ = ปิดช่องว่างสำคัญ) · **AISK04/AISK05** เป็นชั้นระบบอัจฉริยะ/ความเข้าใจของเครื่อง ที่เชื่อมฟาร์ม–โรงงาน–องค์กร
@@ -529,19 +539,53 @@
 
 | PLO | ทักษะแกนหลัก | Skill Set | ระดับปลายทาง | ช่องว่าง/การแก้ |
 |---|---|---|:--:|---|
-| PLO1 | H1, H2, S1 + ฐานวิศวกรรมกายภาพ | AISK01 · AISK02/03 | M (Capstone/สหกิจ) | — |
+| PLO1 | H1, H2, S1–S2, H13, H16–H19, EF2–EF4 | AISK01 · AISK02/03/05/08/09 | M (Capstone/สหกิจ) | ตรวจให้ CLO มี problem model/root cause ไม่ใช่เพียงสร้างชิ้นงาน |
 | PLO2 | H2, H4, H5, H8, H9, H16–H20, S9–S10 + ฐานกายภาพ | AISK01 · **AISK02/03** · AISK04/05 · **AISK09** | M | เพิ่ม requirement/solution/industrial decision evidence |
 | PLO3 | S4, S9, H3/H19 (Viz/DSS) | AISK08 · AISK05 · **AISK09** | M | เพิ่ม communication/acceptance กับ stakeholder |
-| **PLO4** | H7, H15, H20, S7, S10 | AISK07 · AISK02 · **AISK09** | M | AI Verify + governance + quality/safety/service evidence |
+| **PLO4** | H7, H15, H20, S7, S10, EF2–EF6 | AISK07 · AISK02/03 · **AISK09** | M | ต้องมี governance + law/standard + safety/impact evidence |
 | PLO5 | S5, S9, S10 | AISK08 · **AISK09** | M | เพิ่ม change facilitation และ accountability |
 | PLO6 | H1, H3, H8, H11, H17–H19 | AISK01 · **AISK03/05/09** | M | เพิ่ม process/maintenance/decision analytics |
-| PLO7 | S3, S6, S9, H6, H20 | AISK06/08/**09** | M | เพิ่ม adoption/change และ digital service learning |
+| PLO7 | S3, S6–S7, S9, H6, H10, H20 | AISK06/08/**09** | M | ต้องมี learning evidence หรือ innovation/value evidence; handover อย่างเดียวไม่พอ |
 
 > [!success] ผลการตรวจสอบ Skill Alignment (ทุกเอกสารรองรับด้วย PLO)
-> - **ทักษะ (03) ↔ Skill Set (11) ↔ CLO (10) ↔ PLO (04) ↔ รายวิชา (07):** เชื่อมโยงครบวงจร ไม่มีจุดขาด
+> - **ทักษะ (03) ↔ Skill Set (11) ↔ CLO (10) ↔ YLO (09) ↔ PLO (04) ↔ รายวิชา (07):** เชื่อมโยงครบวงจร ไม่มี orphan skill
 > - **PLO4 (จริยธรรม)** เดิมเป็นจุดอ่อน (Mastery พึ่งสหกิจ) — การเสริมกรอบ **AI Verify** ทำให้ประเมิน Mastery ในแกนบังคับได้ และเปลี่ยน Attitude เป็น Hard Skill ที่วัดได้
 > - **PLO7/PLO2 (GenAI)** ยกระดับด้วย IMDA TSC#4/5/9 (Model Selection/Evaluation/Red-teaming) — ทันสมัยระดับสากล
-> - ทุก PLO บรรลุระดับ **M (Mastery)** ที่ Capstone (134-104) และสหกิจ (135-402)
+> - ทุก PLO มีจุด **M (Mastery)** ที่ Capstone (134-104) และสหกิจ (135-402) แต่การประกาศว่าปิด Gap ต้องรอ rubric, Lab, basket rule และหลักฐานรายบุคคล
+
+## D.3 ผลทวนสอบระดับ Sub-skill
+
+| Skill Set/ทักษะย่อย | PLO หลัก | PLO สนับสนุนเมื่อมีหลักฐาน | เหตุผลการจัด |
+|---|---|---|---|
+| AISK01 #1–3 Applied Math, ML/DL, Reasoning | PLO1 | PLO6 | ใช้ความรู้กำหนดและแก้ปัญหา; นับ PLO6 เมื่อมี experiment/evaluation |
+| AISK01 #4 Model Evaluation/XAI | PLO6 | PLO3, PLO4 | สื่อสาร/ความรับผิดชอบเมื่อตีความข้อจำกัดและผลกระทบ |
+| AISK01 #5–6 Software/MLOps/Infrastructure | PLO2 | PLO4, PLO6 | เป็นการออกแบบระบบ; นับ PLO6 เมื่อทดลอง performance/reliability |
+| AISK01 #7 Data Engineering/Analytics | PLO2, PLO6 | PLO3, PLO4 | pipeline/data experiment เป็นหลัก; governance/dashboard เป็นหลักฐานเสริม |
+| AISK02 #1–4 Farm structure/build/system/energy | PLO1, PLO2 | PLO4, PLO6 | ฐานวิศวกรรมและการออกแบบฟาร์ม; impact/experiment ต้องมีหลักฐาน |
+| AISK02 #5 Agri-food forecast/traceability/DSS | PLO2, PLO6 | PLO3, PLO7 | ระบบตัดสินใจและข้อมูล; value/innovation เมื่อมี business/BCG case |
+| AISK03 #1–3 Automation/robotics/smart factory | PLO2 | PLO4, PLO5, PLO6 | system design เป็นหลัก; safety/team/test เป็นหลักฐานสนับสนุน |
+| AISK03 #4–5 Optimization/quality/maintenance | PLO1, PLO6 | PLO2, PLO4 | วิเคราะห์และทดลองปรับปรุง; PLO2 เมื่อออกแบบ intervention |
+| AISK04 #1–3 IoT/Edge/CPS integration | PLO2 | PLO1, PLO6 | เน้น architecture/integration; problem/test evidence เป็นส่วนสนับสนุน |
+| AISK04 #4 Edge–Cloud safety/device management | PLO4 | PLO2, PLO6 | security/reliability responsibility เป็นแกน |
+| AISK05 #1–5 Vision/GeoAI/Predictive/DSS | PLO2, PLO6 | PLO1, PLO4 | applied model/system + experiment; problem/impact ตามโจทย์ |
+| AISK05 #6 Domain communication | PLO3 | PLO6 | การสื่อสารเป็นหลักและต้องอิงผลวิเคราะห์ที่ตรวจสอบได้ |
+| AISK06 #1–3 RAG/Agent/Model selection | PLO2 | PLO6, PLO7 | ออกแบบระบบ; evaluation และ technology learning เป็นหลักฐานเพิ่ม |
+| AISK06 #4 Red-teaming/Safety | PLO4, PLO6 | PLO2 | ประเมินความปลอดภัยและตีความผล |
+| AISK06 #5 Thai NLP | PLO2, PLO7 | PLO6 | ประยุกต์เทคโนโลยี/ความรู้ใหม่; evaluation เมื่อมีชุดทดสอบ |
+| AISK06 #6 Human–AI collaboration | PLO7 | PLO2, PLO4 | เรียนรู้และใช้เครื่องมือ AI ใหม่อย่างตรวจสอบได้ โปร่งใส และมีการทบทวนโดยมนุษย์ |
+| AISK07 #1–5 Security/Governance/Audit/Assurance/Ethics | PLO4 | PLO2, PLO6 | ความรับผิดชอบเป็นแกน; privacy-by-design และหลักฐานรับรองระบบสนับสนุน |
+| AISK08 #1 Analytical/Systems Thinking | PLO1 | PLO6 | problem model เป็นหลัก; data evidence สนับสนุน |
+| AISK08 #2 Communication | PLO3 | — | มีผู้รับสารและ communication artifact โดยตรง |
+| AISK08 #3 Team/Leadership | PLO5 | — | ต้องมีบทบาท การวางแผน ความเสี่ยง/ข้อขัดแย้ง และ contribution |
+| AISK08 #4–6 Entrepreneur/Learning/Transformation | PLO7 | PLO1, PLO2, PLO4 | learning/innovation/value เป็นหลัก |
+| AISK09 #1–2 Requirements/Architecture/Integration | PLO2 | PLO1, PLO3 | requirements และ solution design เป็นหลัก |
+| AISK09 #3 Digital Service Architecture | PLO2 | PLO4, PLO7 | service architecture เป็นหลัก; compliance/new-service value สนับสนุน |
+| AISK09 #4 Verification/Quality/Safety/Service Performance | PLO4, PLO6 | PLO2 | ความรับผิดชอบ คุณภาพ และการทดลองสมรรถนะของระบบ |
+| AISK09 #5 Change/Adoption/Acceptance | PLO3, PLO5 | PLO2, PLO7 | stakeholder adoption และ team delivery เป็นหลัก |
+| AISK09 #6 Operational Handover/Improvement | PLO3, PLO5 | PLO2, PLO6 | ส่งมอบหลักฐานการปฏิบัติการและใช้ผลเหตุการณ์ปรับปรุงบริการ |
+
+> [!note] ข้อค้นพบจากการทวนสอบ
+> ความไม่สอดคล้องเดิมไม่ได้เกิดจากการขาด Skill Set แต่เกิดจากการนำ PLO สนับสนุนของ sub-skill บางข้อไปสรุปเป็น PLO หลักของทั้ง AISK จึงแก้ด้วยการแยก **PLO หลัก/สนับสนุน** และปรับ CLO ให้มีหลักฐานตรงตามนิยาม
 
 ---
 
@@ -562,7 +606,7 @@
 | **N7** | ภาษาอังกฤษเทคนิค · สื่อสาร · ทำงานเป็นทีม | ประเด็นที่ถูกกล่าวถึงมากสุดทุกกลุ่ม · Soft Skills 4.04 | **AISK08 (G6 ย่อย 2, 3)** | ✅ ครบ |
 | **N8** | ความคิดเชิงผู้ประกอบการ · แปลง AI เป็นผลิตภัณฑ์ | ผู้เรียน 10/23 ต้องการเป็นนวัตกร/สตาร์ทอัพ | **AISK08 (G6 ย่อย 4, 6–8)** · AISK05 · **AISK09 (solution/adoption)** | ✅ ครบ |
 | **N9** | เทคโนโลยีอุบัติใหม่ (GenAI, Agentic, Prompt) · เรียนรู้ตลอดชีวิต | คำตอบปลายเปิดผู้เรียน+คณาจารย์ | **AISK06 (G4 ทั้งชุด)** · AISK08 (ย่อย 5) | ⭐ ยกระดับด้วย IMDA TSC |
-| **N10** | คิดวิเคราะห์/วิพากษ์ · ใช้ AI อย่างมีวิจารณญาณ | คณาจารย์ + ผู้ใช้บัณฑิต | **AISK08 (ย่อย 1)** · AISK07 (S7 AI Literacy) | ✅ ครบ |
+| **N10** | คิดวิเคราะห์/วิพากษ์ · ใช้ AI อย่างมีวิจารณญาณ | คณาจารย์ + ผู้ใช้บัณฑิต | **AISK08 (ย่อย 1)** · AISK06 (S7 Human–AI) | ✅ ครบ |
 | **N11** | ตอบโจทย์การจ้างงานภาคอีสานและชุมชน | ผู้ปกครอง + ผู้ใช้บัณฑิตภาคเกษตรในพื้นที่ | **AISK02 (G2 เกษตร)** · AISK05 · AISK08 (S8 Stakeholder-centric) | ✅ ครบ |
 
 ## E.2 ความต้องการเชิงแนวโน้ม (N12–N18) ↔ Skill Set
@@ -575,7 +619,7 @@
 | **N15** | Thai NLP / Sovereign AI | **AISK06 (ย่อย 5)** *(H10)* | ✅ ครบ |
 | **N16** | ธรรมาภิบาล AI · การปฏิบัติตามกฎหมาย (PDPA/ร่าง กม. AI) | **AISK07 (ย่อย 2, 3)** *(AI Verify + ISO 42001 + NIST AI RMF)* | ⭐ ยกระดับสูงสุด |
 | **N17** | Inclusive AI · การเข้าถึงดิจิทัล | **AISK08 (ย่อย 6 — เพิ่ม Inclusive & Accessible Design)** · AISK05 · AISK02 (ผู้ใช้ดูแลเองได้) · S8 | ✅ **ปรับแล้ว** |
-| **N18** | Domain Expertise เชิงลึก (เกษตร T1 · การผลิต T2 · ธุรกิจ T3) | **AISK02 (H16 เกษตร) · AISK03 (H17/H18 อุตสาหกรรม) · AISK09 (H19/H20 องค์กร)** | ⭐ **ตอบตรงที่สุด** |
+| **N18** | Domain Expertise เชิงลึก (เกษตร T1 · การผลิต T2 · ธุรกิจ T3) | **AISK02 (H16 เกษตร) · AISK03 (H17/H18 อุตสาหกรรม) · AISK05 (H19 การตัดสินใจ) · AISK09 (H20 โซลูชันองค์กร)** | ⭐ **ตอบตรงที่สุด** |
 
 ## E.3 ข้อค้นพบสำคัญจากการวิเคราะห์
 
@@ -616,7 +660,7 @@
 | องค์ประกอบระดับมหาวิทยาลัย | การตอบสนองของหลักสูตร |
 |---|---|
 | **Skill-based Transcript** (พันธกิจข้อ 1) | **ชุดทักษะ EN-AISK01–09 พร้อมระดับ L1–L4 และวิธีวัดผล** ในเอกสารนี้ = กลไกที่ทำให้ออก Skill Transcript ได้จริงในระดับหลักสูตร |
-| **KSU Soft Skills 5C+** | ครอบคลุมด้วย **AISK08 (G6)** *(S1–S6, S8–S10)* และ **AISK07 (G5)** *(S7 AI Literacy)* |
+| **KSU Soft Skills 5C+** | ครอบคลุมด้วย **AISK08 (G6)** *(S1–S6, S8)*, **AISK06 (G4)** *(S7 AI Literacy/Human–AI)* และ **AISK09 (G7)** *(S9–S10)* |
 | **ค่านิยม CHANGE** *(Collaboration · High Performance · Agility · Networking · Good Governance · Excellence)* | Collaboration/Networking → AISK08 ย่อย 3 · Agility → AISK08 ย่อย 5 · Good Governance → **AISK07** · High Performance/Excellence → เกณฑ์ระดับ L3–L4 ของทุกชุด |
 | **ปรัชญาการศึกษา** *"ประสบการณ์สร้างการเรียนรู้สู่มืออาชีพ"* | ทุกชุดทักษะประเมินผ่าน **Workshop · Project · สหกิจ** (ไม่ใช่ข้อสอบอย่างเดียว) — สอดรับ **N6 (4.87/5)** |
 | **อัตลักษณ์บัณฑิต** *"มุ่งมั่นสร้างสรรค์ เชี่ยวชาญวิชาชีพ"* | มุ่งมั่นสร้างสรรค์ → AISK06/AISK08 · เชี่ยวชาญวิชาชีพ → **AISK02/AISK03 (Domain Expertise)** |
@@ -652,10 +696,11 @@ Skill Transcript + หลักฐานการประเมิน
    - *รอบ 2 (Global Standards/Domains):* เสริม EN-AISK01 (Symbolic/Neurosymbolic AI ตาม CS2023), EN-AISK07 (ISO/IEC 42001, NIST AI RMF, EU AI Act + AI Security specialization), เพิ่มส่วน **C.4 มาตรฐานสากล** และ **C.5 การประยุกต์เฉพาะโดเมน ↔ Track** (Agriculture 5.0/Smart Factory/FinTech + Healthcare watchlist)
    - *รอบ 3 (Regroup ตามเอกลักษณ์วิศวกรรม):* จัดกลุ่มใหม่เป็น **G1–G6** และปรับ AISK01–05 — **AISK01** รวมเป็น *AI Core Engineering Stack* (H1–H4) · **AISK02** *Smart Agriculture Engineering* · **AISK03** *Smart Industry* (ทั้งคู่รับ **ฐานวิศวกรรมกายภาพ** ที่เดิมไม่มีชุดทักษะรองรับ) · **AISK04** *Intelligence System for Smart Farm and Factories* · **AISK05** *Applied AI in Agriculture, Industry and Enterprise* (ขยายคลุม T3)
    - *รอบ 4 (เชื่อมโยง Needs):* เพิ่ม **ส่วน E — Needs Alignment** ตรวจสอบ N1–N18 ↔ Skill Set ครบทุกข้อ · ปรับ **AISK03 ย่อย 2** (Human–Robot Collaboration & Ergonomics → N14) และ **AISK08 ย่อย 6** (Inclusive & Accessible Design → N17) ให้ตอบ Need โดยตรง
-   - *รอบ 5 (JobsDB C01–C17, 2026-07-29):* ขยาย Master Catalog เป็น **H1–H20/S1–S10**, เพิ่ม H16 Precision Agriculture, H17 Smart Manufacturing/Quality/MES, H18 Maintenance/Reliability, H19 Decision Intelligence/DSS, H20 Enterprise Architecture/Digital Services, S9 Stakeholder/Change และ S10 Agile/Quality/Safety/Accountability พร้อมเพิ่ม **AISK09 (G7)** เพื่อปิดช่องว่าง C11/C15 และงาน solution/integration
+   - *รอบ 5 (JobsDB C01–C17, 2026-07-29):* ขยาย Master Catalog เป็น **H1–H20/S1–S10**, เพิ่ม H16 Precision Agriculture, H17 Smart Manufacturing/Quality/MES, H18 Maintenance/Reliability, H19 Decision Intelligence/DSS, H20 Enterprise Architecture/Digital Services, S9 Stakeholder/Change และ S10 Agile/Quality/Safety/Accountability พร้อมเพิ่ม **AISK09 (G7)** เพื่อปิดช่องว่างงาน solution/integration
+   - *รอบ 6 (ปรับสมดุล Skill Set Feed):* กำหนด AISK ตัวแรกของแต่ละ CLO เป็นเจ้าภาพหลัก แยกผู้สนับสนุนออกจากภาระเต็ม ย้าย H19/Decision Intelligence ไป AISK05, ย้าย S7/Human–AI ไป AISK06 และรวม H20/S9/S10 ด้านข้อกำหนด–บูรณาการ–ส่งมอบไว้ที่ AISK09 ทำให้ภาระเจ้าภาพอยู่ในช่วง 5–11 รายวิชาและ 8–16 CLO ต่อชุด
    - *แหล่งอ้างอิง:* IMDA SFw for ICT, AI Verify Foundation, ICT Career Maps, ACM/IEEE-CS/AAAI CS2023, ISO/IEC 42001, NIST AI RMF, NUS BComp(AI)/BAIS, WEF Future of Jobs 2025, [[../03_OBE_PLO_Design_2570/01_Stakeholder_Needs|Stakeholder Needs N1–N18]], [[../07_JobsDB_Semantic_Career_Analysis/00_Home|JobsDB C01–C17]]
 1. **ระดับความเชี่ยวชาญเป้าหมาย** ใช้ L1–L4 ตาม [[03_Target_Skills#3.3 ระดับความลึกของทักษะ]] — นักศึกษาต้องได้ทักษะแกนอย่างน้อย L2–L3 และทักษะเฉพาะ Track ที่เลือกถึง L4 ผ่าน Workshop/Project/สหกิจ
-2. **Skill Transcript** ออกให้เมื่อผ่านเกณฑ์การประเมินของแต่ละทักษะย่อย (Assessment ในตาราง) — เสนอผูกกับ **Year Gates** ใน [[../04_Course_Descriptions_2570/11_Year_Level_Course_Sequence_and_YLO#7-จุดตรวจประเมิน-ylo-year-gates]]
+2. **Skill Transcript** ออกให้เมื่อผ่านเกณฑ์การประเมินของแต่ละทักษะย่อย (Assessment ในตาราง) — ผูกกับ **Year Gates** ใน [[09_Yearly_Learning_Outcomes#7 กติกาการทวนสอบ]]
 3. **วิชาเลือกชีพ (EN-133)** เพิ่มความลึกของ Skill Set ตาม Track ให้ถึง L4 — เติม CLO เฉพาะรายวิชาเมื่อยืนยันคลังวิชา
 4. **เครื่องมือ (Tools)** เป็นตัวอย่างมาตรฐานอุตสาหกรรม ปรับตามความพร้อมห้องปฏิบัติการและแนวโน้มตลาด (ทบทวนปีละครั้งร่วมกับ Advisory Board)
 

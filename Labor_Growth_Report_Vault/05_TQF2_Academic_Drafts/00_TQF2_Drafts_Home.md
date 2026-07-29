@@ -17,8 +17,9 @@
 10. [[10_Course_Learning_Outcomes_CLO_Mapping|Course Learning Outcomes และ Constructive Alignment]]
 11. [[11_Skill_Set_Matrix_and_KSA|Skill Set Matrix และ KSA]]
 12. [[12_Curriculum_Career_Skill_Coverage_Revision|วิเคราะห์ Coverage C01–C17 และข้อเสนอปรับรายวิชาเดิมเทียบใหม่]] 🆕
-13. [[13_Common_Core_and_Track_Foundation_4plus4|ข้อเสนอแกนร่วม 4 วิชา + พื้นฐานเฉพาะ Track 4 วิชา]] 🆕
+13. [[13_Common_Core_and_Track_Foundation_4plus4|ทางเลือกเดิม: แกนร่วม 4 วิชา + พื้นฐานเฉพาะ Track 4 วิชา]]
 14. [[14_External_Expert_Feedback_Analysis|สังเคราะห์ข้อเสนอกรรมการผู้ทรงคุณวุฒิและแนวทางปรับหลักสูตร]] 🆕
+15. [[15_Current_vs_Proposed_Courses_Groups_2_1_to_2_3|แนวทางล่าสุด: Core Track 9 วิชา + เลือกชีพ 5 วิชา และ Gap Closure]] 🆕
 
 ### เอกสารประกอบการวิเคราะห์และสังเคราะห์
 

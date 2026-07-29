@@ -6,7 +6,7 @@
 เอกสารนี้สังเคราะห์อาชีพจากโครงสร้างรายวิชา PLO ทักษะเป้าหมาย และหลักฐานตลาดแรงงาน เพื่อใช้สื่อสารว่า **บัณฑิตสามารถสมัครงานกลุ่มใดได้** และต้องสร้าง Portfolio แบบใดในแต่ละ Track โดยชื่ออาชีพจริงอาจแตกต่างกันตามองค์กร
 
 > [!success] รายการคัดเลือกสำหรับใช้สื่อสารหลักสูตร
-> ดู [[12_Priority_Careers_12|12 อาชีพเป้าหมายและเส้นทางรายวิชา]] — รายการปลายทางมาตรฐานที่ใช้ในเว็บ `curriculum-graph`
+> ดู [[13_Career_Codes_and_Course_Pathways_C01_C26|รหัสอาชีพและเส้นทางรายวิชา C01–C26]] — รายการมาตรฐานล่าสุดที่ใช้ในเว็บ `curriculum-graph` โดย C01–C17 เป็นฐานตลาดแรงงาน และ C18–C26 เป็นอาชีพต่อยอดของหลักสูตร
 
 ## 1. วิธีจำแนกระดับความพร้อมสู่อาชีพ
 
@@ -185,5 +185,6 @@ Junior AI / Software / Data Engineer
 - [[../04_Course_Descriptions_2570/05_Electives_Smart_Agriculture|วิชาเลือก Track 1]]
 - [[../04_Course_Descriptions_2570/06_Electives_Industrial_AI|วิชาเลือก Track 2]]
 - [[../04_Course_Descriptions_2570/07_Electives_AI_Innovation|วิชาเลือก Track 3]]
+- [[13_Career_Codes_and_Course_Pathways_C01_C26|รหัสอาชีพและเส้นทางรายวิชา C01–C26]]
 
 [[01_Executive_Summary|← สรุปผู้บริหาร]] | [[00_Home|กลับหน้าหลัก Vault]]

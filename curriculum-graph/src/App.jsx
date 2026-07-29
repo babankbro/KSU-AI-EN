@@ -54,7 +54,7 @@ export default function App() {
             </span>
           </Link>
           <div className="head-chips">
-            <span className="chip">130 หน่วยกิต</span>
+            <span className="chip">ข้อเสนอ 133 หน่วยกิต</span>
             <span className="chip">PLO 7 ข้อ</span>
             <span className="chip">4 ชั้นปี</span>
           </div>

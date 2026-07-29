@@ -1,12 +1,13 @@
 // ผลลัพธ์การเรียนรู้รายวิชา (CLO) + K–S–A + ชุดทักษะที่รายวิชาป้อนเข้า
 // ซิงก์จาก Vault:
 //   05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md  (CLO → YLO → PLO + กล่อง KSA)
-//   05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md              (Skill Set EN-AISK01–08 · กลุ่ม G1–G6)
+//   05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md              (Skill Set EN-AISK01–09)
 // ลำดับชั้นปี/ภาคเรียนของรายวิชาอ่านจาก COURSES ใน data.js (แหล่งข้อมูลเดียวของเว็บ)
 // โครงสร้าง: c=รหัสวิชา · k/s/a=ความรู้/ทักษะ/ทัศนคติ · sets=[รหัสชุดทักษะ, ทักษะย่อยที่ป้อนเข้า]
 //            clos=[{ n, t=ข้อความ CLO, ylo=[Sub-YLO], plo=[[เลข PLO, ระดับ I/R/M]] }]
 
 import { COURSES } from "./data.js";
+import { CLO_REVISION } from "./cloRevisionData.js";
 
 export const LEVEL_ORDER = { I: 1, R: 2, M: 3 };
 export const LEVEL_NAME = { I: "Introduce — แนะนำ/เริ่มพัฒนา", R: "Reinforce — เสริมย้ำ/ประยุกต์", M: "Mastery — ประเมินปลายทาง/บูรณาการ" };
@@ -17,10 +18,10 @@ export const CLO_PRINCIPLES = [
   "CLO วัดได้ (Measurable): ขึ้นต้นด้วยคำกริยาเชิงพฤติกรรมตาม Bloom's Taxonomy (อธิบาย/คำนวณ/วิเคราะห์/ออกแบบ/พัฒนา/ประเมิน/สร้าง) และสอดคล้องกับวิธีวัดผลของรายวิชา",
   "ระดับพัฒนาการ: I (Introduce) โดยหลักอยู่ชั้นปีที่ 1 · R (Reinforce) ชั้นปีที่ 2–3 · M (Mastery) โครงงานและสหกิจปีที่ 3–4",
   "การกำหนดระดับอ้างตาราง YLO ↔ PLO: ปี 1 = I · ปี 2 = R · ปี 3 = PLO2/5/6 เป็น M ที่เหลือ R · ปี 4 = M",
-  "KSA ผูกกับ Skill Set: ทักษะ (S) ของทุกรายวิชาชี้ไปยังชุดทักษะ EN-AISK01–08 และกลุ่ม G1–G6 เพื่อให้ออก Skill Transcript ได้จากผลการเรียนรายวิชาโดยตรง"
+  "KSA ผูกกับ Skill Set: ทักษะ (S) ของทุกรายวิชาชี้ไปยังชุดทักษะ EN-AISK01–09 เพื่อให้ออก Skill Transcript ได้จากผลการเรียนรายวิชาโดยตรง"
 ];
 
-export const CLO_COURSES = [
+const CLO_COURSES_BASE = [
   /* ───────── ปีที่ 1 ภาคการศึกษาที่ 1 ───────── */
   { c: "GE-010-001", ge: true,
     k: "คำศัพท์และโครงสร้างประโยคพื้นฐาน · การฟังจับใจความ · การอ่านข้อความสั้น",
@@ -427,7 +428,7 @@ export const CLO_COURSES = [
     k: "บูรณาการองค์ความรู้ทุกด้านของหลักสูตรเข้ากับโจทย์ปัญหาจริง",
     s: "วิเคราะห์–ออกแบบ–พัฒนา–ทดสอบ–ส่งมอบระบบ AI พร้อมนำเสนอ",
     a: "ความรับผิดชอบต่อผลงาน · ภาวะผู้นำ · จริยธรรมวิชาชีพ",
-    sets: [["AISK01", "ครบ G1–G6"], ["AISK02", ""], ["AISK03", ""], ["AISK04", ""], ["AISK05", ""], ["AISK06", ""], ["AISK07", ""], ["AISK08", ""]],
+    sets: [["AISK01", "ครบ G1–G7"], ["AISK02", ""], ["AISK03", ""], ["AISK04", ""], ["AISK05", ""], ["AISK06", ""], ["AISK07", ""], ["AISK08", ""], ["AISK09", ""]],
     clos: [
       { n: 1, t: "วิเคราะห์ปัญหา ออกแบบ และพัฒนาระบบ AI/ระบบอัจฉริยะเพื่อแก้ปัญหาจริงได้", ylo: ["YLO4.1"], plo: [[1, "M"], [2, "M"]] },
       { n: 2, t: "ดำเนินการทดลอง เก็บข้อมูล วิเคราะห์ และประเมินสมรรถนะของระบบได้", ylo: ["YLO4.3"], plo: [[6, "M"]] },
@@ -450,13 +451,39 @@ export const CLO_COURSES = [
     k: "บริบทการทำงานจริงและมาตรฐานวิชาชีพในสถานประกอบการ",
     s: "แก้ปัญหาวิศวกรรมจริง ทำงานเป็นทีม และสื่อสารกับผู้บริหาร",
     a: "จรรยาบรรณวิชาชีพ · ความรับผิดชอบ · เรียนรู้ตลอดชีวิต",
-    sets: [["AISK01", "ครบ G1–G6"], ["AISK02", ""], ["AISK03", ""], ["AISK04", ""], ["AISK05", ""], ["AISK06", ""], ["AISK07", ""], ["AISK08", ""]],
+    sets: [["AISK01", "ครบ G1–G7"], ["AISK02", ""], ["AISK03", ""], ["AISK04", ""], ["AISK05", ""], ["AISK06", ""], ["AISK07", ""], ["AISK08", ""], ["AISK09", ""]],
     clos: [
       { n: 1, t: "ปฏิบัติงานจริงในสถานประกอบการ ≥ 16 สัปดาห์ และแก้ปัญหาทางวิศวกรรมที่ได้รับมอบหมายได้", ylo: ["YLO4.1"], plo: [[1, "M"], [2, "M"]] },
       { n: 2, t: "ทำงานเป็นทีมและแสดงภาวะผู้นำ/ผู้ตามในบริบทวิชาชีพได้", ylo: ["YLO4.2"], plo: [[5, "M"]] },
       { n: 3, t: "สรุปผลการดำเนินงานและสื่อสารผลลัพธ์เชิงเทคนิคแก่ผู้บริหาร/ผู้มีส่วนได้ส่วนเสียได้", ylo: ["YLO4.3"], plo: [[3, "M"], [6, "M"]] },
       { n: 4, t: "ยึดมั่นในจรรยาบรรณวิชาชีพและวางแผนพัฒนาตนเองเพื่อเรียนรู้ตลอดชีวิตได้", ylo: ["YLO4.4"], plo: [[4, "M"], [7, "M"]] }
     ] }
+];
+
+const sensingActuationKsa = {
+  c: "EN-132-109",
+  k: "Metrology · Sensors/Transmitters · Signal Conditioning · Pneumatics/Hydraulics · Motors/Drives · PLC/Edge/IIoT · Interlock and Safety",
+  s: "เลือก ติดตั้ง สอบเทียบ และบูรณาการระบบตรวจวัด–ขับเคลื่อนกับ Edge, Cloud, SCADA และ AI",
+  a: "ยึดความปลอดภัย ความน่าเชื่อถือ ความรับผิดชอบ และการทำงานร่วมกันเป็นทีม",
+  sets: [["AISK02", ""], ["AISK03", ""], ["AISK07", ""]],
+  clos: []
+};
+
+export const CLO_COURSES = [
+  ...CLO_COURSES_BASE.map(entry => {
+    const revision = CLO_REVISION[entry.c];
+    if (!revision) return entry;
+    return {
+      ...entry,
+      sets: revision.sets?.length ? revision.sets.map(id => [id, ""]) : entry.sets,
+      clos: revision.clos
+    };
+  }),
+  {
+    ...sensingActuationKsa,
+    sets: CLO_REVISION["EN-132-109"].sets.map(id => [id, ""]),
+    clos: CLO_REVISION["EN-132-109"].clos
+  }
 ];
 
 /* วิชาเลือกชีพ/เลือกเสรี — ยังไม่กำหนด CLO รายข้อ (ขึ้นกับรายวิชาที่นักศึกษาเลือก) */
@@ -520,10 +547,27 @@ export const PLO_ROLLUP = [1, 2, 3, 4, 5, 6, 7].map(n => {
 });
 
 /** สรุปการกระจายรายวิชาสู่ชุดทักษะ (Skill Set Feed) */
-export const SET_FEED = ["AISK01", "AISK02", "AISK03", "AISK04", "AISK05", "AISK06", "AISK07", "AISK08"]
+export const SET_FEED = ["AISK01", "AISK02", "AISK03", "AISK04", "AISK05", "AISK06", "AISK07", "AISK08", "AISK09"]
   .map(id => ({
     id,
-    courses: CLO_LIST.filter(e => e.sets.some(([s]) => s === id)).map(e => e.c)
+    courses: CLO_LIST
+      .filter(e => e.clos.some(clo => clo.primarySet === id))
+      .map(e => e.c),
+    supportCourses: CLO_LIST
+      .filter(e => e.clos.some(
+        clo => clo.primarySet !== id && clo.sets?.includes(id)
+      ))
+      .map(e => e.c),
+    primaryCloCount: CLO_LIST.reduce(
+      (sum, entry) => sum + entry.clos.filter(clo => clo.primarySet === id).length,
+      0
+    ),
+    supportCloCount: CLO_LIST.reduce(
+      (sum, entry) => sum + entry.clos.filter(
+        clo => clo.primarySet !== id && clo.sets?.includes(id)
+      ).length,
+      0
+    )
   }));
 
 /** สรุปราย Sub-YLO: CLO ที่ป้อนเข้าแต่ละ Sub-YLO */
@@ -537,3 +581,5 @@ export const YLO_ROLLUP = [1, 2, 3, 4].map(y => {
 });
 
 export const CLO_TOTAL = CLO_LIST.reduce((s, e) => s + e.clos.length, 0);
+export const CORE_CLO_LIST = CLO_LIST.filter(entry => !entry.ge);
+export const CORE_CLO_TOTAL = CORE_CLO_LIST.reduce((sum, entry) => sum + entry.clos.length, 0);

@@ -306,6 +306,28 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 > **📈 ตลาด** · Project delivery, Agile/Scrum, testing, quality, standards และ safety ปรากฏใน C05, C06, C08, C13, C14, C16 และงานวิศวกรรมที่ต้องส่งมอบระบบจริง
 > **🧭 พฤติกรรม** · Definition of Done, test/quality record, risk and safety checklist, sprint review, retrospective และ individual accountability log
 
+## 3.7c ฐานทักษะวิศวกรรมประกอบ (EF1–EF6)
+
+> [!important] เหตุผลที่แยกรหัส EF
+> Master Catalog H1–H20 สกัดจากอาชีพ AI และระบบอัจฉริยะ จึงไม่ควรบังคับรวมทักษะวิศวกรรมกายภาพไว้ใน H ใดเพียงข้อเดียว หลักสูตรกำหนด **EF1–EF6** เป็นฐานทักษะประกอบเพื่อให้ข้อเสนอเรื่อง CAD, heat transfer, pneumatic/hydraulic, safety, process engineering และ system integration มีเจ้าภาพและหลักฐานชัดเจน ทั้งนี้ EF **ไม่เพิ่มจำนวน H** และใช้ร่วมกับ AISK02/AISK03/AISK04
+
+| รหัส | ฐานทักษะ | Sub-skills ที่ต้องวัด | AISK | PLO หลัก | PLO สนับสนุน |
+|---|---|---|---|---|---|
+| **EF1** | Engineering Drawing & System Layout | CAD 2D/3D, assembly, tolerance, layout, P&ID, electrical/control drawing, revision | AISK02/03/09 | PLO2 | PLO3 |
+| **EF2** | Mechanics, Materials, Structures & Fabrication | force/stress/fatigue, material selection, safety factor, build/assemble, manufacturability | AISK02/03 | PLO1, PLO2 | PLO4 |
+| **EF3** | Thermal-Fluid, Energy & Process Fundamentals | heat transfer, mass/energy balance, pipe flow, pump/fan/valve, drying/cooling, energy/carbon | AISK02/03 | PLO1, PLO2 | PLO4, PLO6 |
+| **EF4** | Electrical, Electronics & Instrumentation | circuit, sensor/transmitter, conditioning, calibration, data acquisition, uncertainty, protection | AISK03/04 | PLO1, PLO2, PLO6 | PLO4 |
+| **EF5** | Actuation, Fluid Power & Control | motor/drive, pneumatic, hydraulic, valve/cylinder, PLC interface, control sequence, interlock | AISK03/04 | PLO2 | PLO4, PLO6 |
+| **EF6** | Safety, Standards, Commissioning & Handover | hazard/risk, machine/electrical safety, standard, interface/acceptance test, commissioning, traceability, handover | AISK07/08/09 | PLO2, PLO4 | PLO3, PLO5, PLO6 |
+
+## 3.7d หลักการเชื่อม Skills/Sub-skills กับ PLO
+
+1. **PLO หลัก** ระบุผลลัพธ์ที่ทักษะนั้นสร้างโดยตรง ส่วน **PLO สนับสนุน** จะนับเมื่อ CLO และหลักฐานประเมินระบุพฤติกรรมของ PLO นั้นจริง
+2. การมีหัวข้อ `security`, `safety`, `BCG`, `team` หรือ `communication` ในเนื้อหาไม่เพียงพอ ต้องมี risk/safety record, BCG KPI, team contribution หรือ communication artifact ตามลำดับ
+3. PLO6 ใช้กับการออกแบบทดลอง เก็บ วิเคราะห์ และตีความข้อมูล ไม่ใช้แทนการคำนวณเชิงธุรกิจทั่วไป
+4. PLO7 ใช้กับการเรียนรู้สิ่งใหม่หรือการสร้างนวัตกรรม/ผลิตภัณฑ์/บริการที่มีคุณค่า ไม่ใช้แทนการ deploy หรือส่งมอบระบบทั่วไป
+5. เมทริกซ์ระดับ sub-skill, CLO เจ้าภาพ และสถานะ Gap Closure ใช้ฉบับหลักที่ [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA#ส่วน D — การตรวจสอบความสอดคล้องของทักษะข้ามเอกสาร (Skill Alignment Verification)|Skill Set Matrix ส่วน D]] และ [[../05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping#7 ผลทวนสอบ Skills/Sub-skills ↔ PLO และ Gap ใหม่|CLO Mapping §7]]
+
 ## 3.8 การนำชุดทักษะไปใช้
 
 1. ใช้ H1–H4 และ H7 เป็นแกนร่วมของนักศึกษาทุก Track

@@ -87,7 +87,7 @@ export default function PlanBoard() {
       </div>
 
       <div className="pb-foot">
-        <span>รวมตลอดหลักสูตร <b>{TOTAL_CREDITS}</b> หน่วยกิต</span>
+        <span>แผนข้อเสนอรวม <b>{TOTAL_CREDITS}</b> นก. · ปี 4 = <b>15 + 6</b> นก.</span>
         <span className="pb-hint">ความสูงของบล็อก = จำนวนหน่วยกิต · คลิกรายวิชาเพื่อดูรายละเอียด · คลิกสีในคำอธิบายเพื่อกรองกลุ่ม</span>
       </div>
     </div>
