@@ -8,10 +8,11 @@
 > เพิ่มการวิเคราะห์เปรียบเทียบหลักสูตรวิศวกรรม AI กับวิศวกรรมหุ่นยนต์และระบบอัตโนมัติ มจพ. เมื่อ 28 กรกฎาคม 2569 (2026-07-28)
 > เพิ่มการวิเคราะห์เทียบ AI Engineering and Entrepreneurship สจล. × ม.กรุงเทพ จาก Program Specification ฉบับเต็ม เมื่อ 28 กรกฎาคม 2569 (2026-07-28)
 > เพิ่มการวิเคราะห์เทียบ Artificial Intelligence and Prompt Engineering ม.อุบลราชธานี จากเล่มหลักสูตรใหม่ พ.ศ. 2568 ฉบับเต็ม เมื่อ 28 กรกฎาคม 2569 (2026-07-28)
+> เพิ่มชุดหลักฐาน JobsDB Thailand และการจำแนกงานรายประกาศด้วย Semantic Career Classification เมื่อ 29 กรกฎาคม 2569 (2026-07-29)
 
 ## เริ่มต้นใช้งาน
 
-Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื่อแยก **ข้อมูลหลักสูตรปัจจุบัน** ออกจาก **หลักฐานตลาดแรงงาน** **กระบวนการออกแบบ PLO (OBE)** และ **ร่างคำอธิบายรายวิชา** อย่างชัดเจน
+Vault แบ่งข้อมูลเป็นหมวดตามวัตถุประสงค์ เพื่อแยก **ข้อมูลหลักสูตรปัจจุบัน** **หลักฐานตลาดแรงงาน** **กระบวนการออกแบบ PLO (OBE)** **ร่างคำอธิบายรายวิชา** และ **ผลวิเคราะห์ข้อมูลประกาศงาน** อย่างชัดเจน
 
 ### 1. หลักฐานตลาดแรงงานและข้อมูลเดิม
 
@@ -110,6 +111,24 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 > เมื่อเทียบกับ AIEE สจล. × ม.กรุงเทพ มกส. มีความลึกด้าน AI systems/deployment มากกว่า ส่วน AIEE มีความลึกด้าน venture creation จากวิชาผู้ประกอบการบังคับและโครงงาน Hatch–Build–Grow
 > เมื่อเทียบกับ ม.อุบลฯ มกส. เด่นด้าน production AI, Data Engineering/MLOps และเกษตรอุตสาหกรรม ส่วน ม.อุบลฯ เด่นด้าน ML/DL/NLP/GenAI/Prompt ที่เป็นวิชาบังคับ และสหกิจศึกษาตลอดปี 4
 
+### 7. หลักฐาน JobsDB และ Semantic Career Classification 🆕
+
+เก็บในโฟลเดอร์ `07_JobsDB_Semantic_Career_Analysis/` — จำแนกประกาศงาน 7,424 รายการแบบรายงานเข้าสู่ C01–C17 โดยใช้ `classifiedMatches` เป็นฐานเดียวสำหรับจำนวนงานและ Skills
+
+- [[07_JobsDB_Semantic_Career_Analysis/00_Home|หน้าหลักชุดวิเคราะห์ JobsDB]]
+- [[07_JobsDB_Semantic_Career_Analysis/01_Executive_Summary|สรุปผู้บริหาร]]
+- [[07_JobsDB_Semantic_Career_Analysis/02_Data_and_Methodology|ข้อมูลและระเบียบวิธี]]
+- [[07_JobsDB_Semantic_Career_Analysis/03_Classification_Policy_C01_C17|เกณฑ์จำแนก C01–C17]]
+- [[07_JobsDB_Semantic_Career_Analysis/04_Career_and_Subgroup_Results|ผลรายอาชีพและกลุ่มย่อย]]
+- [[07_JobsDB_Semantic_Career_Analysis/05_Skills_Evidence|หลักฐาน Technical และ Soft Skills]]
+- [[07_JobsDB_Semantic_Career_Analysis/06_Data_Quality_and_Multiple_Relations|คุณภาพข้อมูลและงานที่สัมพันธ์หลายอาชีพ]]
+- [[07_JobsDB_Semantic_Career_Analysis/07_Audit_Case_93021513|กรณีตรวจสอบ JobsDB #93021513]]
+- [[07_JobsDB_Semantic_Career_Analysis/08_Reproducibility_and_Update_Workflow|การทำซ้ำและขั้นตอนอัปเดต]]
+- [[07_JobsDB_Semantic_Career_Analysis/09_Career_Top_Skills_Summary|สรุปอาชีพและ Technical Top 10 + Soft Top 5]]
+
+> [!important] หลักการนับ
+> `searchMatches` ใช้เก็บที่มาจากคำค้นเท่านั้น ไม่ใช้คำนวณจำนวนงานหรือ Skills ส่วนหน้าเว็บและเอกสารชุดนี้ใช้ `classifiedMatches` เท่านั้น
+
 ## แหล่งข้อมูลหลักสูตรปัจจุบัน
 
 ข้อมูลในโฟลเดอร์หลักสูตรปัจจุบันสังเคราะห์จากไฟล์:
@@ -128,3 +147,4 @@ Vault แบ่งข้อมูลออกเป็น 4 ชุด เพื�
 - ก่อนนำตัวเลขหน่วยกิตไปใช้ → ตรวจ [[02_Current_Curriculum_2570/05_Data_Quality_Notes|ประเด็นที่ต้องตรวจสอบ]]
 - ต้องการข้อมูลหลักสูตรคู่เทียบในประเทศไทย หรือเหตุผลเชิงตำแหน่งทางการตลาด → ใช้ [[05_Benchmark_AI_Programs_TH/00_Benchmark_Home|ชุดเทียบเคียงหลักสูตร]]
 - ต้องการเปรียบเทียบกับหลักสูตรวิศวกรรมสาขาใกล้เคียง → ใช้ [[06_Curriculum_Comparison/00_Curriculum_Comparison_Home|ชุดวิเคราะห์เปรียบเทียบหลักสูตร]]
+- ต้องการหลักฐานจากประกาศงานรายตำแหน่ง จำนวนงาน C01–C17 หรือ Skills ที่พบจริง → ใช้ [[07_JobsDB_Semantic_Career_Analysis/00_Home|ชุดวิเคราะห์ JobsDB และ Semantic Career Classification]]

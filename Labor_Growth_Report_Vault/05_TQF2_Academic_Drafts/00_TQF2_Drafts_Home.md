@@ -14,6 +14,11 @@
 8. [[08_Risks_and_External_Impacts|ความเสี่ยง ผลกระทบจากภายนอก และจุดเด่นหลักสูตร (UVP)]]
 9. [[09_Yearly_Learning_Outcomes|ผลลัพธ์การเรียนรู้ระดับหลักสูตรรายปี (YLO)]]
 9. [[09_Program_Philosophy_and_Objectives|หมวดที่ 3 · ปรัชญา ความสำคัญ และวัตถุประสงค์ของหลักสูตร]] 🆕
+10. [[10_Course_Learning_Outcomes_CLO_Mapping|Course Learning Outcomes และ Constructive Alignment]]
+11. [[11_Skill_Set_Matrix_and_KSA|Skill Set Matrix และ KSA]]
+12. [[12_Curriculum_Career_Skill_Coverage_Revision|วิเคราะห์ Coverage C01–C17 และข้อเสนอปรับรายวิชาเดิมเทียบใหม่]] 🆕
+13. [[13_Common_Core_and_Track_Foundation_4plus4|ข้อเสนอแกนร่วม 4 วิชา + พื้นฐานเฉพาะ Track 4 วิชา]] 🆕
+14. [[14_External_Expert_Feedback_Analysis|สังเคราะห์ข้อเสนอกรรมการผู้ทรงคุณวุฒิและแนวทางปรับหลักสูตร]] 🆕
 
 ### เอกสารประกอบการวิเคราะห์และสังเคราะห์
 

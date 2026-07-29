@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { CAREER_JOB_QUERIES } from "./career-job-config.mjs";
+import { CAREER_JOB_QUERIES, CAREER_JOB_SUBQUERIES } from "./career-job-config.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
@@ -10,6 +10,14 @@ const LEGACY_PATH = path.join(DATA_DIR, "jobsdb-ai-engineer-raw.json");
 const PAGE_SIZE = Number(process.env.JOBSDB_PAGE_SIZE || 100);
 const DETAIL_CONCURRENCY = Number(process.env.JOBSDB_DETAIL_CONCURRENCY || 12);
 const BASE = "https://th.jobsdb.com";
+const careerArg = process.argv.find(arg => arg.startsWith("--career="));
+const requestedCareerId = careerArg?.slice("--career=".length).trim().toUpperCase() || "";
+const selectedCareers = requestedCareerId
+  ? CAREER_JOB_QUERIES.filter(career => career.id === requestedCareerId)
+  : CAREER_JOB_QUERIES;
+if (requestedCareerId && !selectedCareers.length) {
+  throw new Error(`Unknown career ID: ${requestedCareerId}`);
+}
 const headers = {
   accept: "text/html,application/xhtml+xml,application/json",
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
@@ -64,7 +72,7 @@ function extractDescription(html) {
   return decodeHtml(tail.slice(0, end));
 }
 
-function toJob(item, career, rank, page) {
+function toJob(item, career, querySpec, rank, page) {
   const classification = item.classifications?.[0];
   return {
     id: String(item.id),
@@ -80,7 +88,14 @@ function toJob(item, career, rank, page) {
     summary: item.teaser || item.bulletPoints?.join(" · ") || "",
     url: `${BASE}/th/job/${item.id}`,
     careerIds: [career.id],
-    searchMatches: [{ careerId: career.id, query: career.query, rank, page }],
+    searchMatches: [{
+      careerId: career.id,
+      subId: querySpec.id,
+      subName: querySpec.name,
+      query: querySpec.query,
+      rank,
+      page
+    }],
     description: "",
     detailStatus: null,
     descriptionLength: 0
@@ -89,9 +104,11 @@ function toJob(item, career, rank, page) {
 
 function mergeJob(target, incoming) {
   target.careerIds = [...new Set([...(target.careerIds || []), ...incoming.careerIds])];
-  const matches = new Map((target.searchMatches || []).map(match => [match.careerId, match]));
-  for (const match of incoming.searchMatches) matches.set(match.careerId, match);
-  target.searchMatches = [...matches.values()].sort((a, b) => a.careerId.localeCompare(b.careerId));
+  const matchKey = match => `${match.careerId}:${match.subId || match.query || match.careerId}`;
+  const matches = new Map((target.searchMatches || []).map(match => [matchKey(match), match]));
+  for (const match of incoming.searchMatches) matches.set(matchKey(match), match);
+  target.searchMatches = [...matches.values()].sort((a, b) =>
+    a.careerId.localeCompare(b.careerId) || String(a.subId || "").localeCompare(String(b.subId || "")));
   for (const key of ["title", "company", "location", "salary", "employment", "listed", "listingDate",
     "classification", "subClassification", "summary", "url"]) {
     if (!target[key] && incoming[key]) target[key] = incoming[key];
@@ -108,42 +125,73 @@ const legacy = existsSync(LEGACY_PATH)
   : { jobs: [] };
 const previousById = new Map([...legacy.jobs, ...existing.jobs].map(job => [String(job.id), job]));
 const jobsById = new Map();
-const careerMeta = [];
+const careerMeta = requestedCareerId
+  ? (existing.meta?.careers || []).filter(career => career.id !== requestedCareerId)
+  : [];
 
-for (const career of CAREER_JOB_QUERIES) {
-  const firstUrl = `${BASE}/api/jobsearch/v5/search?sitekey=TH&keywords=${encodeURIComponent(career.query)}&page=1&pageSize=${PAGE_SIZE}`;
-  const first = JSON.parse(await fetchText(firstUrl));
-  const total = Number(first.totalCount || first.data?.length || 0);
-  const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-  const pageResults = [first];
-
-  for (let page = 2; page <= pages; page += 1) {
-    const url = `${BASE}/api/jobsearch/v5/search?sitekey=TH&keywords=${encodeURIComponent(career.query)}&page=${page}&pageSize=${PAGE_SIZE}`;
-    pageResults.push(JSON.parse(await fetchText(url)));
-    await sleep(100);
+if (requestedCareerId) {
+  for (const previous of existing.jobs || []) {
+    const job = {
+      ...previous,
+      careerIds: (previous.careerIds || []).filter(id => id !== requestedCareerId),
+      searchMatches: (previous.searchMatches || []).filter(match => match.careerId !== requestedCareerId)
+    };
+    if (job.careerIds.length) jobsById.set(String(job.id), job);
   }
+}
 
-  let rank = 0;
-  for (let pageIndex = 0; pageIndex < pageResults.length; pageIndex += 1) {
-    for (const item of pageResults[pageIndex].data || []) {
-      rank += 1;
-      const incoming = toJob(item, career, rank, pageIndex + 1);
-      const current = jobsById.get(incoming.id);
-      jobsById.set(incoming.id, current ? mergeJob(current, incoming) : incoming);
+for (const career of selectedCareers) {
+  const querySpecs = CAREER_JOB_SUBQUERIES[career.id] || [{
+    id: career.id,
+    name: career.name,
+    query: career.query
+  }];
+  const subcategories = [];
+
+  for (const querySpec of querySpecs) {
+    const firstUrl = `${BASE}/api/jobsearch/v5/search?sitekey=TH&keywords=${encodeURIComponent(querySpec.query)}&page=1&pageSize=${PAGE_SIZE}`;
+    const first = JSON.parse(await fetchText(firstUrl));
+    const total = Number(first.totalCount || first.data?.length || 0);
+    const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+    const pageResults = [first];
+
+    for (let page = 2; page <= pages; page += 1) {
+      const url = `${BASE}/api/jobsearch/v5/search?sitekey=TH&keywords=${encodeURIComponent(querySpec.query)}&page=${page}&pageSize=${PAGE_SIZE}`;
+      pageResults.push(JSON.parse(await fetchText(url)));
+      await sleep(100);
     }
+
+    let rank = 0;
+    for (let pageIndex = 0; pageIndex < pageResults.length; pageIndex += 1) {
+      for (const item of pageResults[pageIndex].data || []) {
+        rank += 1;
+        const incoming = toJob(item, career, querySpec, rank, pageIndex + 1);
+        const current = jobsById.get(incoming.id);
+        jobsById.set(incoming.id, current ? mergeJob(current, incoming) : incoming);
+      }
+    }
+    subcategories.push({
+      ...querySpec,
+      sourceUrl: `${BASE}/th/${querySpec.query.replace(/\s+/g, "-")}-jobs`,
+      displayedCount: rank,
+      reportedCount: total,
+      collectedRows: rank,
+      pagesScanned: pages
+    });
+    console.log(`Search ${querySpec.id}: ${rank}/${total} rows · ${pages} pages`);
   }
 
   careerMeta.push({
     ...career,
-    sourceUrl: `${BASE}/th/${career.query.replace(/\s+/g, "-")}-jobs`,
-    displayedCount: rank,
-    reportedCount: total,
-    collectedRows: rank,
-    pagesScanned: pages
+    sourceUrl: subcategories[0].sourceUrl,
+    displayedCount: subcategories.reduce((sum, item) => sum + item.displayedCount, 0),
+    collectedRows: subcategories.reduce((sum, item) => sum + item.collectedRows, 0),
+    pagesScanned: subcategories.reduce((sum, item) => sum + item.pagesScanned, 0),
+    subcategories
   });
-  console.log(`Search ${career.id}: ${rank}/${total} rows · ${pages} pages`);
 }
 
+careerMeta.sort((a, b) => a.id.localeCompare(b.id));
 const jobs = [...jobsById.values()];
 for (const job of jobs) {
   const previous = previousById.get(job.id);

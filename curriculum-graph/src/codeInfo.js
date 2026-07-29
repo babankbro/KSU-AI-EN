@@ -1,6 +1,6 @@
 // ทะเบียนคำอธิบายรหัสย่อทั้งหมดของเว็บ — ใช้โดย CodeTip.jsx เพื่อแสดงป๊อปอัปเมื่อชี้ที่รหัส
 // ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–08 · G1–G6 · N1–N18 · SH1–SH8 · GA1–GA5
-//            H1–H15 · S1–S8 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C12
+//            H1–H15 · S1–S8 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C17
 // รูปแบบผลลัพธ์: { id, kind, accent, title, en, body, rows:[[label,value]], plo:[], sets:[], to }
 
 import {
@@ -212,7 +212,7 @@ export function lookup(raw) {
     };
   }
 
-  /* ── อาชีพเป้าหมาย C01–C12 ── */
+  /* ── อาชีพเป้าหมาย C01–C17 ── */
   if (/^C\d{2}$/.test(id)) {
     const c = CAREERS.find(x => x.id === id);
     if (!c) return null;

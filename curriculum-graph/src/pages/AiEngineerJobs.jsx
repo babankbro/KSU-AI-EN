@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { PageHead, Section } from "./ui.jsx";
 import jobsData from "../jobsData.json";
 import "../jobs.css";
@@ -21,14 +21,34 @@ function SkillBar({ skill, max }) {
   );
 }
 
-function JobCard({ job }) {
+function recalculateSkillCounts(baseSkills, jobs, getSkills) {
+  return baseSkills.map(skill => {
+    const count = jobs.filter(job => getSkills(job).some(item => item.name === skill.name)).length;
+    return {
+      ...skill,
+      count,
+      percent: jobs.length ? Math.round(count * 1000 / jobs.length) / 10 : 0
+    };
+  }).sort((a, b) => {
+    if (a.category !== b.category) return a.category === "Technical" ? -1 : 1;
+    return b.count - a.count || a.name.localeCompare(b.name);
+  });
+}
+
+function JobCard({ job, skills, contextLabel, classificationMatch }) {
   const [open, setOpen] = useState(false);
   const summary = job.summaryTh || job.summary;
   return (
     <article className="market-job">
       <div className="market-job-head">
         <div>
-          <span className="source-id">JobsDB #{job.id}</span>
+          <span className="source-id">
+            JobsDB #{job.id}
+            {contextLabel ? ` · กลุ่ม: ${contextLabel}` : ""}
+            {classificationMatch
+              ? ` · ${classificationMatch.role} ${Math.round(classificationMatch.confidence * 100)}%`
+              : ""}
+          </span>
           <h3>{job.title}</h3>
           <p>{job.company || "ไม่ระบุบริษัท"} · {job.location || "ไม่ระบุสถานที่"}</p>
         </div>
@@ -43,19 +63,23 @@ function JobCard({ job }) {
       </div>
       <p className="job-summary">{summary || "ประกาศไม่ได้แสดงข้อความสรุปในหน้าค้นหา"}</p>
       <div className="skill-chips">
-        {job.skills.slice(0, open ? 40 : 12).map(skill => (
+        {skills.slice(0, open ? 40 : 12).map(skill => (
           <span className={`skill-chip ${CAT_CLASS[skill.category] || ""}`} key={`${skill.category}-${skill.name}`}>
             {skill.name}{skill.required === false ? " · optional" : ""}
           </span>
         ))}
-        {!job.skills.length && <span className="skill-chip">ไม่พบทักษะในกลุ่มมาตรฐาน 30 รายการ</span>}
+        {!skills.length && <span className="skill-chip">ไม่พบทักษะในกลุ่มมาตรฐาน 30 รายการ</span>}
       </div>
       {open && (
         <div className="job-more">
+          {classificationMatch && (
+            <p><b>เหตุผลจำแนกอาชีพ:</b> {classificationMatch.reason}</p>
+          )}
           {job.degree && <p><b>การศึกษา:</b> {job.degree}</p>}
           {job.requirements && <p><b>หลักฐานคุณสมบัติจากประกาศ:</b> {job.requirements}</p>}
           <p><b>สายงาน:</b> {job.subClassification || "ไม่ระบุ"} {job.classification}</p>
           <p className="job-method">วิธีสกัดทักษะ: {job.skillMethod}</p>
+          <p className="job-method">วิธีจำแนกอาชีพ: {job.classificationMethod}</p>
         </div>
       )}
       <button className="job-toggle" onClick={() => setOpen(value => !value)}>
@@ -71,34 +95,48 @@ export default function AiEngineerJobs() {
     displayedCount: jobsData.meta.displayedCount || jobsData.meta.uniqueJobs
   }];
   const [careerId, setCareerId] = useState(careers.length > 1 ? "ALL" : careers[0].id);
+  const [subId, setSubId] = useState("ALL");
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("ทั้งหมด");
   const [skill, setSkill] = useState("");
   const [page, setPage] = useState(1);
 
   const selectedCareer = careers.find(item => item.id === careerId);
-  const scopedJobs = careerId === "ALL"
-    ? jobsData.jobs
-    : jobsData.jobs.filter(job => job.careerIds?.includes(careerId) || careerId === "C01" && !job.careerIds);
-  const scopedSkillCounts = careerId === "ALL"
+  const subcategories = selectedCareer?.subcategories || [];
+  const selectedSubcategory = subcategories.find(item => item.id === subId);
+  const classifiedJobs = jobsData.jobs.filter(job => job.classifiedMatches?.length);
+  const careerJobs = careerId === "ALL"
+    ? classifiedJobs
+    : classifiedJobs.filter(job =>
+      job.classifiedMatches.some(match => match.careerId === careerId));
+  const scopedJobs = selectedSubcategory
+    ? careerJobs.filter(job =>
+      job.classifiedMatches.some(match => match.subId === selectedSubcategory.id))
+    : careerJobs;
+  const getJobSkills = job => careerId === "ALL"
+    ? job.skills || []
+    : job.skillsByCareer?.[careerId] || [];
+  const baseSkillCounts = careerId === "ALL"
     ? jobsData.skillCounts
     : jobsData.skillCountsByCareer?.[careerId] || jobsData.skillCounts;
+  const scopedSkillCounts = selectedSubcategory
+    ? recalculateSkillCounts(baseSkillCounts, scopedJobs, getJobSkills)
+    : baseSkillCounts;
   const technicalSkills = scopedSkillCounts.filter(item => item.category === "Technical");
   const softSkills = scopedSkillCounts.filter(item => item.category === "Soft");
   const maxTechnical = technicalSkills[0]?.count || 1;
   const maxSoft = softSkills[0]?.count || 1;
   const availableSkills = [...technicalSkills, ...softSkills];
 
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return scopedJobs.filter(job => {
-      const categoryMatch = category === "ทั้งหมด" || job.skills.some(item => item.category === category);
-      const skillMatch = !skill || job.skills.some(item => item.name === skill);
-      const haystack = [job.title, job.company, job.location, job.summary, job.summaryTh, job.salary,
-        ...job.skills.map(item => item.name)].filter(Boolean).join(" ").toLowerCase();
-      return categoryMatch && skillMatch && (!q || haystack.includes(q));
-    });
-  }, [query, category, skill, careerId, jobsData.jobs]);
+  const q = query.trim().toLowerCase();
+  const filtered = scopedJobs.filter(job => {
+    const jobSkills = getJobSkills(job);
+    const categoryMatch = category === "ทั้งหมด" || jobSkills.some(item => item.category === category);
+    const skillMatch = !skill || jobSkills.some(item => item.name === skill);
+    const haystack = [job.title, job.company, job.location, job.summary, job.summaryTh, job.salary,
+      ...jobSkills.map(item => item.name)].filter(Boolean).join(" ").toLowerCase();
+    return categoryMatch && skillMatch && (!q || haystack.includes(q));
+  });
 
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pages);
@@ -110,12 +148,13 @@ export default function AiEngineerJobs() {
       <PageHead
         eyebrow="Jobs & Skills · Labor-market evidence · JobsDB Thailand"
         title={`Jobs & Skills — ${selectedCareer?.name || `${careers.length} Careers`}`}
-        lead="ภาพรวมประกาศงานของอาชีพเป้าหมายทั้ง 12 สาย พร้อมข้อมูลรายตำแหน่งและทักษะจากรายละเอียดประกาศ เพื่อใช้ตรวจความสอดคล้องของหลักสูตรกับความต้องการจริง"
+        lead={`ภาพรวมประกาศงานของอาชีพเป้าหมายทั้ง ${careers.length} สาย พร้อมข้อมูลรายตำแหน่งและทักษะจากรายละเอียดประกาศ เพื่อใช้ตรวจความสอดคล้องของหลักสูตรกับความต้องการจริง`}
         crumbs={[{ label: "Jobs & Skills" }, ...(selectedCareer ? [{ label: `${selectedCareer.id} · ${selectedCareer.name}` }] : [])]} />
 
       <div className="wrap">
         <div className="job-stats">
-          <Stat value={scopedJobs.length.toLocaleString()} label="ประกาศงานไม่ซ้ำ" note={careerId === "ALL" ? `${careers.length} สายอาชีพ` : `คำค้น ${selectedCareer?.query}`} />
+          <Stat value={scopedJobs.length.toLocaleString()} label="งานที่ผ่านการจำแนก"
+            note={careerId === "ALL" ? `${careers.length} สายอาชีพ` : "Primary + Secondary ที่ผ่านเกณฑ์"} />
           <Stat value={new Set(scopedJobs.map(job => job.company).filter(Boolean)).size.toLocaleString()} label="บริษัท/หน่วยงาน" />
           <Stat value={scopedJobs.filter(job => job.salary).length.toLocaleString()} label="ประกาศที่แสดงเงินเดือน" />
           <Stat value="20 + 10" label="Technical + Soft Skills" />
@@ -123,28 +162,61 @@ export default function AiEngineerJobs() {
 
         <div className="jobs-note">
           <b>Snapshot:</b> {jobsData.meta.capturedAt} · แหล่งข้อมูล{" "}
-          <a href={selectedCareer?.sourceUrl || "https://th.jobsdb.com/th"} target="_blank" rel="noreferrer">JobsDB Thailand ↗</a> ·
-          ผลรวมหน้าแสดง {Number(jobsData.meta.displayedRows || jobsData.meta.displayedCount || scopedJobs.length).toLocaleString()} รายการ
-          และรวมประกาศซ้ำข้ามคำค้นเป็น {Number(jobsData.meta.uniqueJobs || scopedJobs.length).toLocaleString()} งานไม่ซ้ำ
+          <a href={selectedSubcategory?.sourceUrl || selectedCareer?.sourceUrl || "https://th.jobsdb.com/th"} target="_blank" rel="noreferrer">JobsDB Thailand ↗</a> ·
+          Raw {Number(jobsData.meta.rawUniqueJobs || jobsData.jobs.length).toLocaleString()} Job IDs ·
+          ผ่าน semantic classification {classifiedJobs.length.toLocaleString()} งาน ·
+          ขอบเขตที่เลือก {scopedJobs.length.toLocaleString()} งาน
         </div>
 
-        <Section title="เลือกสายอาชีพ" sub="ข้อมูลตาม 12 อาชีพเป้าหมายที่ปรากฏในหน้า Careers">
+        <Section title="เลือกสายอาชีพ" sub={`ข้อมูลตาม ${careers.length} อาชีพเป้าหมายที่ปรากฏในหน้า Careers`}>
           <div className="jobs-toolbar">
             <select
               value={careerId}
-              onChange={event => { setCareerId(event.target.value); setSkill(""); setPage(1); }}
+              onChange={event => {
+                setCareerId(event.target.value);
+                setSubId("ALL");
+                setQuery("");
+                setCategory("ทั้งหมด");
+                setSkill("");
+                setPage(1);
+              }}
               aria-label="เลือกสายอาชีพ">
-              <option value="ALL">ทุกสายอาชีพ ({jobsData.jobs.length.toLocaleString()} งานไม่ซ้ำ)</option>
+              <option value="ALL">ทุกสายอาชีพ ({classifiedJobs.length.toLocaleString()} งานที่ผ่านการจำแนก)</option>
               {careers.map(item => (
                 <option key={item.id} value={item.id}>
-                  {item.id} · {item.name} ({Number(item.collectedRows || item.displayedCount || 0).toLocaleString()})
+                  {item.id} · {item.name} ({classifiedJobs
+                    .filter(job => job.classifiedMatches.some(match => match.careerId === item.id))
+                    .length.toLocaleString()} งาน)
                 </option>
               ))}
             </select>
+            {!!subcategories.length && (
+              <select
+                value={subId}
+                onChange={event => {
+                  setSubId(event.target.value);
+                  setQuery("");
+                  setCategory("ทั้งหมด");
+                  setSkill("");
+                  setPage(1);
+                }}
+                aria-label="เลือกกลุ่มงานย่อย">
+                <option value="ALL">ทุกกลุ่มย่อย {careerId} ({careerJobs.length.toLocaleString()} งานไม่ซ้ำ)</option>
+                {subcategories.map(item => (
+                  <option key={item.id} value={item.id}>
+                    {item.name} ({careerJobs
+                      .filter(job => job.classifiedMatches.some(match => match.subId === item.id))
+                      .length.toLocaleString()} งาน)
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
         </Section>
 
-        <Section title="Technical 20 + Soft Skills 10" sub="ชื่อมาตรฐานหลังรวมคำซ้ำจากผล Gemini · นับหนึ่งครั้งต่อประกาศงาน">
+        <Section
+          title={`Technical 20 + Soft Skills 10${selectedCareer ? ` · ${selectedCareer.id}` : ""}`}
+          sub={`${selectedSubcategory?.name || selectedCareer?.name || "ทุกสายอาชีพ"} · คำนวณจาก ${scopedJobs.length.toLocaleString()} งานไม่ซ้ำ · นับหนึ่งครั้งต่อประกาศงาน`}>
           <div className="skills-split">
             <div>
               <h3 className="skill-group-title">Technical Skills · 20</h3>
@@ -160,13 +232,15 @@ export default function AiEngineerJobs() {
             </div>
           </div>
           <div className="evidence-callout">
-            <b>สัญญาณจากตลาด:</b> Python, Machine Learning และ SQL เป็นฐานร่วม ขณะที่ Generative AI/LLM,
-            Cloud, Data Engineering และทักษะแก้ปัญหาเชิงธุรกิจปรากฏร่วมกันบ่อย สะท้อนว่าตำแหน่ง AI Engineer
-            ต้องเชื่อมโมเดลกับข้อมูล ซอฟต์แวร์ และระบบ production ไม่ใช่สร้างโมเดลอย่างเดียว
+            <b>สัญญาณจากตลาด {selectedSubcategory?.name || selectedCareer?.name || "ทุกสายอาชีพ"}:</b>{" "}
+            {technicalSkills.slice(0, 8).map(item => item.name).join(", ")}
+            {" "}เป็นทักษะเทคนิคที่พบสูงสุดในขอบเขตงานที่เลือก โดยคำนวณใหม่จากรายละเอียดประกาศงานของกลุ่มนั้น
           </div>
         </Section>
 
-        <Section title="ข้อมูลรายตำแหน่ง" sub={`${filtered.length} งานที่ตรงกับตัวกรอง`}>
+        <Section
+          title="ข้อมูลรายตำแหน่ง"
+          sub={`${selectedSubcategory?.name || selectedCareer?.name || "ทุกสายอาชีพ"} · ${filtered.length} งานที่ตรงกับตัวกรอง`}>
           <div className="jobs-toolbar">
             <input
               value={query}
@@ -182,8 +256,19 @@ export default function AiEngineerJobs() {
             </select>
           </div>
 
-          <div className="market-job-list">
-            {shown.map(job => <JobCard job={job} key={job.id} />)}
+          <div className="market-job-list" key={`${careerId}-${subId}`}>
+            {shown.map(job => (
+              <JobCard
+                job={job}
+                skills={getJobSkills(job)}
+                contextLabel={selectedSubcategory?.name || selectedCareer?.name || "ทุกสายอาชีพ"}
+                classificationMatch={
+                  careerId === "ALL"
+                    ? job.classifiedMatches.find(match => match.role === "Primary")
+                    : job.classifiedMatches.find(match => match.careerId === careerId)
+                }
+                key={`${careerId}-${subId}-${job.id}`} />
+            ))}
           </div>
 
           {!shown.length && <div className="note">ไม่พบงานที่ตรงกับตัวกรองนี้</div>}

@@ -2,7 +2,13 @@ import { existsSync } from "node:fs";
 import { readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
-import { buildSkillCounts, inferSkillsFromText, normalizeSkills } from "./skill-taxonomy.mjs";
+import {
+  buildCareerSkillCounts,
+  buildSkillCounts,
+  inferCareerSkillsFromText,
+  inferSkillsFromText,
+  normalizeSkills
+} from "./skill-taxonomy.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const RAW_PATH = path.join(ROOT, "data", "jobsdb-careers-raw.json");
@@ -48,6 +54,12 @@ const isGeminiProcessed = job => {
 const site = {
   meta: {
     ...raw.meta,
+    careerClassification: previous.meta?.careerClassification,
+    careerClassificationProcessed: previous.meta?.careerClassificationProcessed,
+    careerClassificationAt: previous.meta?.careerClassificationAt,
+    classifiedJobs: previous.meta?.classifiedJobs,
+    classifiedRelations: previous.meta?.classifiedRelations,
+    rejectedJobs: previous.meta?.rejectedJobs,
     skillExtraction: model,
     skillGroups: { Technical: 20, Soft: 10 }
   },
@@ -75,12 +87,27 @@ const site = {
       url: rawJob.url,
       careerIds: rawJob.careerIds || [],
       searchMatches: rawJob.searchMatches || [],
+      classifiedMatches: old.classifiedMatches || [],
+      primaryCareerId: old.primaryCareerId || null,
+      classificationMethod: old.classificationMethod || "",
+      classifiedAt: old.classifiedAt || "",
       seniority: old.seniority || "Unspecified",
       degree: old.degree || "",
       experienceYears: old.experienceYears ?? null,
       skills: oldIsGemini
         ? normalizeSkills(old.skills || [])
         : normalizeSkills(inferSkillsFromText(rawJob.description)),
+      skillsByCareer: Object.fromEntries((
+        old.classifiedMatches?.length
+          ? [...new Set(old.classifiedMatches.map(match => match.careerId))]
+          : rawJob.careerIds || []
+      ).map(careerId => [
+        careerId,
+        inferCareerSkillsFromText(
+          careerId,
+          [rawJob.description, ...(old.skills || []).map(skill => skill.name)].filter(Boolean).join("\n")
+        )
+      ])),
       skillMethod: oldIsGemini ? old.skillMethod : "pending-gemini + canonical-taxonomy"
     };
   })
@@ -195,10 +222,30 @@ function applyResult(result) {
 }
 
 function rebuildCounts() {
-  site.skillCounts = buildSkillCounts(site.jobs);
+  for (const job of site.jobs) {
+    const rawJob = rawById.get(job.id);
+    const careerIds = job.classifiedMatches?.length
+      ? [...new Set(job.classifiedMatches.map(match => match.careerId))]
+      : job.careerIds || [];
+    job.skillsByCareer = Object.fromEntries(careerIds.map(careerId => [
+      careerId,
+      inferCareerSkillsFromText(
+        careerId,
+        [rawJob?.description, ...(job.skills || []).map(skill => skill.name)].filter(Boolean).join("\n")
+      )
+    ]));
+  }
+  const usesClassifiedMatches = site.jobs.some(job => job.classificationMethod);
+  const countedJobs = usesClassifiedMatches
+    ? site.jobs.filter(job => job.classifiedMatches?.length)
+    : site.jobs;
+  site.skillCounts = buildSkillCounts(countedJobs);
   site.skillCountsByCareer = Object.fromEntries(site.careers.map(career => [
     career.id,
-    buildSkillCounts(site.jobs.filter(job => job.careerIds.includes(career.id)))
+    buildCareerSkillCounts(site.jobs.filter(job =>
+      usesClassifiedMatches
+        ? job.classifiedMatches?.some(match => match.careerId === career.id)
+        : job.careerIds.includes(career.id)), career.id)
   ]));
   site.meta.geminiProcessedJobs = site.jobs.filter(isGeminiProcessed).length;
   site.meta.geminiProcessedAt = new Date().toISOString();

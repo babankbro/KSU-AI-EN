@@ -624,7 +624,7 @@ export const SEQ_PRINCIPLES = [
 
 export const shortOf = code => (COURSES.find(x => x.c === code) || {}).s || code;
 
-/* ---------------- 12 อาชีพเป้าหมาย (12_Priority_Careers_12.md) ---------------- */
+/* ---------------- 17 อาชีพเป้าหมาย ---------------- */
 export const CAREER_STATUS = {
   M: { label: "Market Core — ตำแหน่งหลักในตลาดกว้าง", color: "#1f7d52" },
   S: { label: "Sector Critical — สำคัญในอุตสาหกรรมเฉพาะ", color: "#b8760f" },
@@ -684,5 +684,25 @@ export const CAREERS = [
   { id: "C12", track: 0, st: "M", th: "นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล", en: "Data Scientist / Data Analyst",
     courses: ["EN-001-022", "EN-131-102", "EN-131-106", "EN-131-107", "EN-135-131"],
     why: "รวบรวม วิเคราะห์ สร้างแบบจำลอง และสื่อสารข้อมูลเพื่อสนับสนุนการตัดสินใจในภาคเกษตร อุตสาหกรรม ธุรกิจ และภาครัฐ",
-    kw: "Data Scientist · Data Analyst · Business Intelligence Analyst · Analytics Specialist" }
+    kw: "Data Scientist · Data Analyst · Business Intelligence Analyst · Analytics Specialist" },
+  { id: "C13", track: 2, st: "F", th: "วิศวกรโรงงานอัจฉริยะด้วยปัญญาประดิษฐ์", en: "AI Smart Factory Engineer",
+    courses: ["EN-001-027", "EN-001-030", "EN-132-106", "EN-135-116", "EN-135-127", "EN-134-104"],
+    why: "เชื่อมข้อมูลเครื่องจักร IIoT ระบบผลิต MES/SCADA และ AI เพื่อยกระดับโรงงานสู่ Smart Factory และ Industry 4.0",
+    kw: "AI Smart Factory Engineer · Smart Factory Engineer · Industry 4.0 Engineer · Manufacturing Digitalization Engineer" },
+  { id: "C14", track: 2, st: "M", th: "วิศวกรปัญญาประดิษฐ์ด้านกระบวนการและการผลิต", en: "AI Process and Production Engineer",
+    courses: ["EN-001-022", "EN-001-027", "EN-132-106", "EN-135-116", "EN-135-131", "EN-134-104"],
+    why: "วิเคราะห์และปรับเหมาะกระบวนการผลิตด้วยข้อมูล สถิติ การจำลอง และ AI เพื่อเพิ่มผลผลิต คุณภาพ และประสิทธิภาพ",
+    kw: "AI Process Engineer · AI Production Engineer · Manufacturing Process Engineer · Production Optimization Engineer" },
+  { id: "C15", track: 0, st: "M", th: "ผู้เชี่ยวชาญระบบสนับสนุนการตัดสินใจ", en: "Decision Support Systems Specialist",
+    courses: ["EN-001-022", "EN-131-107", "EN-132-101", "EN-135-131", "EN-135-134"],
+    why: "พัฒนาระบบข้อมูล แบบจำลองการตัดสินใจ การเพิ่มประสิทธิภาพ และแดชบอร์ดเพื่อสนับสนุนผู้บริหารและหน่วยปฏิบัติการ",
+    kw: "Decision Support System Analyst · DSS Developer · Business Decision Analyst · Operations Research Analyst" },
+  { id: "C16", track: 2, st: "M", th: "วิศวกรซ่อมบำรุงด้วยปัญญาประดิษฐ์", en: "AI Maintenance Engineer",
+    courses: ["EN-001-027", "EN-132-106", "EN-135-116", "EN-135-126", "EN-135-131", "EN-134-104"],
+    why: "ใช้ condition monitoring การวิเคราะห์สัญญาณ และ predictive AI เพื่อพยากรณ์ความขัดข้องและวางแผนซ่อมบำรุง",
+    kw: "Predictive Maintenance Engineer · AI Maintenance Engineer · Reliability Engineer · Condition Monitoring Engineer" },
+  { id: "C17", track: 2, st: "F", th: "วิศวกรปัญญาประดิษฐ์อุตสาหกรรม", en: "AI Industrial Engineer",
+    courses: ["EN-001-022", "EN-001-027", "EN-132-106", "EN-135-116", "EN-135-127", "EN-134-104"],
+    why: "บูรณาการ AI ข้อมูลอุตสาหกรรม ระบบอัตโนมัติ และหลักวิศวกรรมอุตสาหการเพื่อปรับปรุงระบบผลิตแบบครบวงจร",
+    kw: "Industrial AI Engineer · AI Industrial Engineer · Industrial Data Scientist · Manufacturing AI Engineer" }
 ];

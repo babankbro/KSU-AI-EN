@@ -16,7 +16,7 @@ Stakeholders' Needs (N1–N18)
 Graduate Attributes — ลักษณะบัณฑิต (GA1–GA5)
         │  จำแนกทักษะรองรับ
         ▼
-Target Skills — Catalog 15 Hard + 8 Soft → เลือกเข้าแกน Hard 9 + Soft 6
+Target Skills — Catalog 20 Hard + 10 Soft → เลือกเข้าแกน Hard 9 + Soft 6
         │  แปลงเป็นผลลัพธ์วัดได้
         ▼
 Program Learning Outcomes (PLO1–PLO7, align ABET SO1–7)
@@ -29,7 +29,7 @@ Mapping: Needs ↔ GA ↔ PLO ครบทุกข้อ
 
 1. [[01_Stakeholder_Needs|① ผู้มีส่วนได้ส่วนเสีย 8 กลุ่ม (SH1–SH8) และความต้องการ N1–N18]]
 2. [[02_Graduate_Attributes|② ลักษณะของบัณฑิต GA1–GA5 + มาตรฐานอ้างอิง]]
-3. [[03_Target_Skills|③ ทักษะเป้าหมาย — Catalog 15 Hard + 8 Soft (แกน 9+6)]]
+3. [[03_Target_Skills|③ ทักษะเป้าหมาย — Catalog 20 Hard + 10 Soft (แกน 9+6)]]
 4. [[04_PLOs_7_OBE|④ ผลลัพธ์การเรียนรู้ที่คาดหวัง (PLO1–PLO7)]]
 5. [[05_Mapping_Tables|⑤ ตารางเชื่อมโยง (Mapping): Needs ↔ GA ↔ PLO]]
 6. [[06_OBE_References|⑥ เอกสารอ้างอิง]]
@@ -41,7 +41,7 @@ Mapping: Needs ↔ GA ↔ PLO ครบทุกข้อ
 
 - ผู้ตอบแบบสำรวจ **55 ราย** จาก 4 กลุ่มรวม → จำแนกบทบาทเพื่อการวิเคราะห์เป็น **8 กลุ่มผู้มีส่วนได้ส่วนเสีย (SH1–SH8)** โดยไม่ประมาณจำนวนกลุ่มย่อย → สังเคราะห์เป็น **18 ความต้องการ (N1–N18)**
 - กำหนด **ลักษณะบัณฑิต 5 ข้อ (GA1–GA5)** อ้างอิงมาตรฐาน 4 ระดับ (IEA GAPC v4, กมอ. 2565, TABEE, ABET EAC)
-- สำรวจ **catalog ทักษะ 23 รายการ** (Hard 15 + Soft 8) จากตลาดแรงงานจริง แล้วคัดเลือกเข้า **แกนบังคับ 15 รายการ** (Hard 9 + Soft 6) ส่วนที่เหลือเป็นวิชาเลือก/Emerging
+- กำหนด **Master Catalog 30 รายการ** (Hard 20 + Soft 10) จากหลักฐานตลาดแรงงานและ JobsDB C01–C17 แล้วคง **แกนบังคับ 15 รายการ** (Hard 9 + Soft 6) ส่วนที่เหลือเป็นความลึกเฉพาะ Track/วิชาเลือก/Emerging
 - กำหนด **PLO 7 ข้อ** แมป 1:1 กับ ABET Student Outcomes (1)–(7)
 - ความต้องการทั้ง 18 ข้อ มี PLO รองรับครบ และทุก PLO **สอบย้อนกลับ (Traceable)** ได้
 

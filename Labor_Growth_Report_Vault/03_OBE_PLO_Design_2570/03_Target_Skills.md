@@ -2,9 +2,9 @@
 
 > ขั้นที่สามของ OBE: สังเคราะห์ทักษะจากหลักฐานตลาดแรงงานระดับโลก ตลาดแรงงานไทย ความต้องการของผู้มีส่วนได้ส่วนเสีย และบริบทของ 3 Tracks
 >
-> เอกสารนี้สำรวจ **catalog ทักษะ 23 รายการ (Hard 15 + Soft 8)** จัดอันดับตามความสำคัญ แล้ว **คัดเลือกเข้า "แกนบังคับ" 15 รายการ = Hard 9 + Soft 6** ส่วนที่เหลือ (Hard 6 + Soft 2) จัดเป็น **ทักษะส่วนขยาย/Emerging** สำหรับความลึกเฉพาะ Track, วิชาเลือก และ Micro-credentials — ดูเส้นแบ่งใน [[#3.9 การคัดเลือกเข้าแกน (Core) กับส่วนขยาย (Extended)|§3.9]]
+> เอกสารนี้กำหนด **Master Catalog 30 รายการ (Hard 20 + Soft 10)** โดยรักษา **แกนบังคับ 15 รายการ = Hard 9 + Soft 6** และจัดส่วนที่เหลือ (Hard 11 + Soft 4) เป็น **ทักษะส่วนขยาย/Emerging** สำหรับความลึกเฉพาะ Track, วิชาเลือก และ Micro-credentials — ดูเส้นแบ่งใน [[#3.9 การคัดเลือกเข้าแกน (Core) กับส่วนขยาย (Extended)|§3.9]]
 >
-> ปรับปรุงจากการทบทวนข้อมูลตลาดแรงงานล่าสุด (สากล + ไทย) เมื่อ 19 กรกฎาคม 2569 / 2026-07-19
+> ปรับปรุงจากการจำแนกประกาศงาน JobsDB Thailand รายงานด้วย `classifiedMatches` ครบ C01–C17 เมื่อ 29 กรกฎาคม 2569 / 2026-07-29
 
 > [!tip] วิธีอ่านเอกสารนี้
 > - 🃏 **การ์ดทักษะพับเก็บได้** — คลิกหัวข้อการ์ดเพื่อขยาย/ย่อรายละเอียด (ขอบเขต · ตลาด · ระดับ)
@@ -37,6 +37,37 @@
 > - [WEF Advanced Manufacturing Outlook](https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/5-region-economy-and-industry-insights/) พบว่าภาคการผลิตขั้นสูงคาดว่าจะนำ AI มาใช้ 81% และหุ่นยนต์ 69% พร้อมความต้องการเพิ่มด้าน AI/Big Data, Cybersecurity, Systems Thinking และ Resource Management
 > - [WEF Jobs of Tomorrow 2025](https://www.weforum.org/press/2025/10/seven-sectors-80-of-workers-four-technologies-driving-the-future-of-work/) ระบุว่า AI, Robotics และ Sensor Networks กำลังเปลี่ยนงานในภาคเกษตรและการผลิต สนับสนุนการคงทักษะ IoT/Edge, Computer Vision, Remote Sensing และ Automation ไว้ในหลักสูตร
 > - [WEF Human–Machine Collaboration Framework 2026](https://www.weforum.org/press/2026/06/new-human-machine-collaboration-framework-to-prepare-industrial-workforce-for-intelligent-factories/) พบว่างานอุตสาหกรรม 3 ใน 4 มีแนวโน้มเปลี่ยนแปลง และประมาณ 40% ของทักษะอุตสาหกรรมในอนาคตเป็นทักษะใหม่หรือกำลังเกิดใหม่ โดยต้องการทั้ง Machine Oversight, Governance, Risk Assessment และ Communication
+
+## 3.2b หลักฐานประกาศงาน C01–C17
+
+การทบทวนรอบนี้ใช้ Snapshot JobsDB Thailand วันที่ 28 กรกฎาคม 2569 ประกอบด้วยประกาศงานไม่ซ้ำ 7,424 รายการ ผ่าน semantic classification 3,278 งาน และมี 5,377 `classifiedMatches` โดยจำนวนงานและ Skills ใช้เฉพาะความสัมพันธ์ที่ผ่านการจำแนก ไม่ใช้ `searchMatches`
+
+หลักฐานฉบับเต็มดู [[../07_JobsDB_Semantic_Career_Analysis/00_Home|JobsDB Semantic Career Analysis]] และ [[../07_JobsDB_Semantic_Career_Analysis/09_Career_Top_Skills_Summary|Technical Top 10 + Soft Top 5 รายอาชีพ]]
+
+| กลุ่มอาชีพ | งาน | ทักษะหลักที่หลักฐานตลาดยืนยัน | รหัสหลักสูตรที่รองรับ |
+|---|---:|---|---|
+| C01 AI/ML Engineer | 192 | Python, ML, Cloud, SQL, Data Pipelines, GenAI/LLM, API, CI/CD | H1–H4, H6 |
+| C02 AI Application / Solutions | 760 | AI Governance, Application, Cloud, Database, API, Prototype, Integration, Architecture | H2, H4, H6, H7, H20 |
+| C03 Smart Agriculture and IoT | 39 | Precision Agriculture, IoT, Sensors, Automation, Cloud IoT, Analytics | H3, H8, H9, H11, **H16** |
+| C04 Automation and Control | 481 | Automation, PLC, CAD, SCADA, Instrumentation, Sensors, MES | H5, H9, **H17** |
+| C05 Robotics and System Integration | 136 | Automation, Mechatronics, Testing, CAD, Robotics, PLC, Integration | H5, H9, H20 |
+| C06 AI Software and Application | 592 | Backend, Cloud, SQL, Security, Python, CI/CD, JavaScript, Docker | H2, H4, H6, H7, H20 |
+| C07 Data Engineer | 497 | SQL, Python, BI, ETL/ELT, Cloud, Data Quality, IaC, Data Modeling | H2–H4, H12, H20 |
+| C08 AI Innovator | 98 | Product Management, AI Product, Analytics, Agile, Market Research, Prototype, UX | H2, H3, H6, H20, S6 |
+| C09 Technology and AI Entrepreneur | 79 | AI/ML, Product Metrics, Cloud/SaaS, Analytics, Business Model, Market Validation | H1, H3, H4, H6, S6 |
+| C10 AI Researcher | 17 | Publication, ML, Python, CV, DL, Experiment, NLP | H1, H3, H8, H10, H14 |
+| C11 Government / Digital Technology | 228 | M365, IT Operations, Cybersecurity, Backup, Cloud, IAM, ITSM, e-Service | H4, H7, **H20** |
+| C12 Data Scientist / Analyst | 552 | BI, Excel, Visualization, SQL, Statistics, Python, Predictive Analytics | H1, H3, H11, **H19** |
+| C13 AI Smart Factory | 162 | Automation, ERP, Analytics, Lean, PLC/SCADA, IIoT, Sensors, Integration | H5, H9, **H17**, H20 |
+| C14 AI Process and Production | 917 | Process Optimization, Automation, Process Engineering, Quality, Lean, MES, Six Sigma | H3, H5, H13, **H17** |
+| C15 Decision Support Systems | 237 | BI, Analytics, Visualization, Forecasting, Optimization, SQL, Scenario Analysis | H3, H11, H13, **H19** |
+| C16 AI Maintenance | 279 | Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA, CMMS | H5, H9, H11, **H18** |
+| C17 AI Industrial Engineer | 111 | Process Optimization, Automation, Industrial Data, Lean, Predictive Analytics, ML | H1, H3, H5, H13, H17–H19 |
+
+> [!note] สถานะอาชีพ
+> C01–C12 คืออาชีพเป้าหมายเดิมของหลักสูตร ส่วน C13–C17 เป็น role clusters ที่ค้นพบเพิ่มเติมจากตลาดแรงงาน ใช้เพื่อเพิ่มความละเอียดของทักษะ T2 และการประยุกต์ข้าม Track โดยยังไม่ถือว่าเป็นการเพิ่มอาชีพเป้าหมายทางการจนกว่าคณะกรรมการหลักสูตรจะให้ความเห็นชอบ
+
+Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่ Communication, English, Problem Solving, Collaboration, Analytical Thinking, Stakeholder Management, Project Management และ Leadership จึงคง S1–S6 เป็นแกน และเพิ่ม S9–S10 เพื่อทำให้ stakeholder/change และคุณภาพการส่งมอบเชิงวิชาชีพวัดผลได้ชัดเจน
 
 ## 3.3 ระดับความลึกของทักษะ
 
@@ -124,10 +155,10 @@
 |      8 | H8   | Computer Vision, Remote Sensing & Multimodal AI |          ●           |        ●         |        ○         |
 |      9 | H9   | IoT, Embedded, Edge AI & Sensor Networks        |          ●           |        ○         |        ○         |
 
-## 3.5b Hard Skills — ส่วนขยาย 6 รายการ (H10–H15)
+## 3.5b Hard Skills — ส่วนขยาย 11 รายการ (H10–H20)
 
 > [!info] สถานะ "ส่วนขยาย"
-> ทักษะ H10–H15 **ไม่ถูกนับในแกนบังคับ 9 ข้อ** แต่มีหลักฐานตลาดแรงงานรองรับชัดเจน จึงบรรจุเป็น **วิชาเลือก / ความลึกเฉพาะ Track / Micro-credential / Watchlist** ที่ทบทวนทุกปี — ส่วนใหญ่เป็นทักษะที่ "แตกหน่อ" จากทักษะแกน (คอลัมน์ 🔗 ผูกกับ)
+> ทักษะ H10–H20 **ไม่ถูกนับในแกนบังคับ 9 ข้อ** แต่มีหลักฐานตลาดแรงงานรองรับชัดเจน จึงบรรจุเป็น **วิชาเลือก / ความลึกเฉพาะ Track / Micro-credential / Watchlist** ที่ทบทวนทุกปี — ส่วนใหญ่เป็นทักษะที่ "แตกหน่อ" จากทักษะแกน (คอลัมน์ 🔗 ผูกกับ)
 
 > [!example]- **H10 · NLP & Thai NLP / Sovereign AI** — T1 ○ T2 ○ T3 ● · ➕
 > พัฒนาระบบประมวลผลภาษาธรรมชาติ ครอบคลุม Tokenization, Text Classification, NER, Information Extraction, Semantic Search และการต่อยอด **ภาษาไทย (Thai NLP)** บนโครงสร้างพื้นฐาน AI ของประเทศ (AI for Thai, ThaiLLM)
@@ -164,6 +195,36 @@
 >
 > **📈 ตลาด** · **Environmental Stewardship ติด 10 ทักษะเติบโตเร็วของ WEF เป็นครั้งแรก**; ตอบ **Need N12** (Green AI/BCG) และเสริมการ deploy บน Edge ที่ทรัพยากรจำกัด (T1)
 > **🎯 ระดับ** · ทุก Track L1–L2 · Edge/MLOps L3 · **🔗 ผูกกับ** H4, H9
+
+> [!example]- **H16 · Smart Agriculture, Precision Agriculture & Agri-food Systems** — T1 ● T2 ○ T3 ○ · ➕
+> บูรณาการ agronomy/food-process context กับ Precision Agriculture, Farm Management, IoT/Sensor, UAV/Remote Sensing, GIS, Variable-rate Control, Yield/Price Forecasting, Traceability และระบบตัดสินใจตลอดห่วงโซ่เกษตร–อาหาร
+>
+> **📈 ตลาด** · C03 ยืนยัน Precision Agriculture, IoT, Sensors, Automation, Cloud IoT และ Analytics เป็นชุดทักษะเฉพาะโดเมน แม้จำนวนชื่อตำแหน่งตรงมีเพียง 39 งาน
+> **🎯 ระดับ** · T1 L3–L4 · T2/T3 L1–L2 · **🔗 ผูกกับ** H3, H8, H9, H11
+
+> [!example]- **H17 · Smart Manufacturing, Process, Production, Quality & MES** — T1 ○ T2 ● T3 ○ · ➕
+> วิเคราะห์และปรับปรุงกระบวนการผลิตด้วย Process Engineering, Lean, Six Sigma, Quality Engineering, Statistical Process Control, MES/ERP, Production Planning, OEE, Traceability, Industrial Data และ Smart Factory Integration
+>
+> **📈 ตลาด** · C14 มี 917 งานและ C13 มี 162 งาน โดยพบ Process Optimization, Automation, Quality, Standards, Lean, MES, ERP และ Industrial Data อย่างต่อเนื่อง
+> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** H3, H5, H13
+
+> [!example]- **H18 · Maintenance, Reliability & Asset Intelligence** — T1 ○ T2 ● T3 ○ · ➕
+> บริหารสุขภาพสินทรัพย์และความพร้อมใช้ด้วย Maintenance Planning, Reliability Engineering, Root Cause Analysis, FMEA/FMECA, CMMS/EAM, Condition Monitoring, Sensors, Predictive Maintenance, Remaining Useful Life และ Asset Performance Management
+>
+> **📈 ตลาด** · C16 มี 279 งาน โดย Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA และ CMMS เป็นทักษะเด่น
+> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** H5, H9, H11
+
+> [!example]- **H19 · Decision Intelligence, BI, DSS & Operations Analytics** — T1 ○ T2 ● T3 ● · ➕
+> พัฒนาระบบสนับสนุนการตัดสินใจด้วย BI, Dashboard, Forecasting, Scenario Analysis, Simulation, Optimization, Operations Research, Decision Models, Explainable Recommendations และการวัดผลการตัดสินใจ
+>
+> **📈 ตลาด** · C15 มี 237 งานและ C12 มี 552 งาน โดย BI, Visualization, Forecasting, Optimization, SQL, Statistics และ Scenario Analysis เป็นหลักฐานตรง
+> **🎯 ระดับ** · T2/T3 L3 · T1 L2 · **🔗 ผูกกับ** H1, H3, H11, H13
+
+> [!example]- **H20 · Enterprise Solution Architecture, Integration & Digital Services** — T1 ○ T2 ○ T3 ● · ➕
+> ออกแบบและส่งมอบระบบองค์กรผ่าน Requirements Engineering, Solution Architecture, APIs, System Integration, Cloud/SaaS, Identity and Access Management, IT Service Management, Backup/Disaster Recovery, Digital Government/e-Service, Vendor Management และ Technology Operations
+>
+> **📈 ตลาด** · C02, C06, C07 และ C11 ยืนยันความต้องการด้าน Architecture, Integration, Cloud, Security, IT Operations, IAM, ITSM และ digital service delivery
+> **🎯 ระดับ** · T3 L3–L4 · T1/T2 L2 · **🔗 ผูกกับ** H2, H4, H7
 
 ## 3.6 Soft Skills — แกนบังคับ 6 รายการ (เรียงตามความสำคัญ)
 
@@ -216,10 +277,10 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 |      5 | S5   | Teamwork, Cross-functional Collaboration & Leadership   |          ●           |        ●         |        ●         |
 |      6 | S6   | Product, Entrepreneurial & Project Management Mindset   |          ●           |        ●         |        ●         |
 
-## 3.7b Soft Skills — ส่วนขยาย 2 รายการ (S7–S8)
+## 3.7b Soft Skills — ส่วนขยาย 4 รายการ (S7–S10)
 
 > [!info] สถานะ "ส่วนขยาย"
-> S7–S8 **ไม่นับในแกนบังคับ 6 ข้อ** แต่มีหลักฐาน WEF/ตลาดไทยรองรับ จึงบรรจุเป็นทักษะที่สอดแทรกในกิจกรรม/Workshop และประเมินเชิงพัฒนาการ
+> S7–S10 **ไม่นับในแกนบังคับ 6 ข้อ** แต่มีหลักฐาน WEF/ตลาดไทยและประกาศงาน C01–C17 รองรับ จึงบรรจุเป็นทักษะที่สอดแทรกในกิจกรรม/Workshop และประเมินเชิงพัฒนาการ
 
 > [!example]- **S7 · Curiosity, AI Literacy & Human–AI Teaming** — ทุก Track ● · ➕
 > ใช้เครื่องมือ AI เป็น "เพื่อนร่วมงาน" อย่างมีวิจารณญาณ — เข้าใจว่า AI ทำอะไรได้/ไม่ได้ ตั้งคำถามและ Prompt อย่างมีประสิทธิภาพ ตรวจสอบผลลัพธ์ และเรียนรู้เครื่องมือใหม่ด้วยความอยากรู้
@@ -233,20 +294,33 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 > **📈 ตลาด** · **Empathy & Active Listening / Service Orientation** อยู่ในกลุ่มทักษะแกนของ WEF; ตอบ **Need N11** (ตอบโจทย์ชุมชนท้องถิ่น) และ N17 (Inclusive AI)
 > **🧭 พฤติกรรม** · User/Field discovery, การรับฟังผู้ใช้ และการออกแบบที่ยึดผู้ใช้เป็นศูนย์กลาง
 
+> [!example]- **S9 · Stakeholder, Requirements & Change Facilitation** — ทุก Track ● · ➕
+> ระบุและจัดลำดับความต้องการ ประสานผู้มีส่วนได้ส่วนเสีย จัดการ expectation/ความขัดแย้ง สื่อสาร trade-off สร้าง acceptance criteria และสนับสนุนการเปลี่ยนผ่านจากต้นแบบสู่การใช้งานจริง
+>
+> **📈 ตลาด** · Stakeholder Management ติด Top 5 ของ C02, C03, C06, C08, C11, C12 และ C15 และเป็นแกนส่งมอบ AI solution ข้ามหลายบทบาท
+> **🧭 พฤติกรรม** · Stakeholder map, interview, requirements backlog, acceptance criteria, change/rollout plan และ sign-off evidence
+
+> [!example]- **S10 · Agile Delivery, Quality, Safety & Professional Accountability** — ทุก Track ● · ➕
+> วางแผนและส่งมอบงานเป็นรอบสั้น รักษาคุณภาพและความปลอดภัย รับผิดชอบต่อเวลา/หลักฐาน/ผลลัพธ์ ใช้ review, testing, retrospective และ continuous improvement กับงานซอฟต์แวร์ ข้อมูล และระบบกายภาพ
+>
+> **📈 ตลาด** · Project delivery, Agile/Scrum, testing, quality, standards และ safety ปรากฏใน C05, C06, C08, C13, C14, C16 และงานวิศวกรรมที่ต้องส่งมอบระบบจริง
+> **🧭 พฤติกรรม** · Definition of Done, test/quality record, risk and safety checklist, sprint review, retrospective และ individual accountability log
+
 ## 3.8 การนำชุดทักษะไปใช้
 
 1. ใช้ H1–H4 และ H7 เป็นแกนร่วมของนักศึกษาทุก Track
-2. ใช้ H8–H9 เป็นแกนเชิงระบบกายภาพของแขนงวิชาเกษตรอัจฉริยะ โดยใช้ข้าว อ้อย มันสำปะหลัง และอุตสาหกรรมแปรรูปเป็นบริบท (เสริม H11 Time-Series, H14 Data-Centric, H15 Green AI)
-3. ใช้ H5 และ H8 เป็นแกนการผลิตอัจฉริยะและระบบอัตโนมัติในโรงงานของแขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม (เสริม H11 Predictive Maintenance, H13 RL/Optimization)
-4. ใช้ H4 และ H6 เป็นแกนระบบ production AI นวัตกรรมซอฟต์แวร์ และธุรกิจเทคโนโลยีระดับองค์กรของแขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร (เสริม H10 NLP/Thai NLP, H12 Big Data)
-5. ใช้ Workshop, Project และสหกิจศึกษาประเมินการบูรณาการ Hard Skills กับ Soft Skills จากโจทย์จริง
-6. ทบทวนอันดับและรายละเอียดอย่างน้อยปีละครั้งจากประกาศงานจริง Advisory Board และข้อมูลศิษย์เก่า/ผู้ใช้บัณฑิต
+2. ใช้ H8–H9 เป็นแกนเชิงระบบกายภาพของแขนงวิชาเกษตรอัจฉริยะ โดยใช้ข้าว อ้อย มันสำปะหลัง และอุตสาหกรรมแปรรูปเป็นบริบท และยกระดับด้วย H16 Precision Agriculture (เสริม H11, H14, H15)
+3. ใช้ H5 และ H8 เป็นแกนระบบอัตโนมัติในแขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม และยกระดับด้วย H17 Smart Manufacturing, H18 Maintenance/Reliability และ H19 Decision Intelligence (เสริม H11, H13)
+4. ใช้ H4 และ H6 เป็นแกน production AI ของแขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร และยกระดับด้วย H19 DSS/BI และ H20 Enterprise Solution Architecture/Digital Services (เสริม H10, H12)
+5. ใช้ S9 วัดการทำ requirements และ stakeholder/change facilitation และใช้ S10 วัดคุณภาพ ความปลอดภัย ความรับผิดชอบ และการส่งมอบแบบ Agile ใน Workshop, Project และสหกิจศึกษา
+6. ใช้ Workshop, Project และสหกิจศึกษาประเมินการบูรณาการ Hard Skills กับ Soft Skills จากโจทย์จริง
+7. ทบทวนอันดับและรายละเอียดอย่างน้อยปีละครั้งจากประกาศงานจริง Advisory Board และข้อมูลศิษย์เก่า/ผู้ใช้บัณฑิต
 
 ## 3.9 การคัดเลือกเข้าแกน (Core) กับส่วนขยาย (Extended)
 
 **เกณฑ์เข้าแกนบังคับ (Core):** ทักษะต้องผ่าน 3 ใน 4 เงื่อนไข — (ก) ใช้กว้างข้ามหลาย Track/อาชีพ, (ข) จำเป็นต่อการสร้างระบบใช้งานจริงตั้งแต่ข้อมูลถึง deployment, (ค) มีอุปสงค์ตลาดสูงต่อเนื่อง, (ง) รองรับ PLO/ABET SO โดยตรง ทักษะที่หลักฐานแรงแต่ **ขอบเขตแคบ/แตกหน่อจากทักษะแกน/เพิ่งอุบัติ** จัดเป็น **ส่วนขยาย**
 
-### Master Catalog — Hard Skills 15 รายการ (● Core 9 · ◐ Extended 6)
+### Master Catalog — Hard Skills 20 รายการ (● Core 9 · ◐ Extended 11)
 
 | อันดับ | รหัส | Hard Skill | สถานะ | T1 | T2 | T3 | หลักฐานตลาดหลัก |
 |---:|---|---|:--:|:--:|:--:|:--:|---|
@@ -265,8 +339,13 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 | 13 | H13 | Reinforcement Learning, Optimization & OR | ◐ Ext | ○ | ● | ○ | RL ~9% ของงาน AI |
 | 14 | H14 | Data-Centric AI & Data Annotation Ops | ◐ Ext | ● | ○ | ● | Data Annotator +586% (TDRI) |
 | 15 | H15 | Green / Sustainable AI & Model Efficiency | ◐ Ext | ● | ○ | ○ | Environmental Stewardship (WEF top-10); N12 |
+| 16 | H16 | Smart Agriculture, Precision Agriculture & Agri-food Systems | ◐ Ext | ● | ○ | ○ | C03: Precision Ag, IoT, Sensors, Analytics |
+| 17 | H17 | Smart Manufacturing, Process, Production, Quality & MES | ◐ Ext | ○ | ● | ○ | C13–C14: 1,079 relations; Process/Quality/MES |
+| 18 | H18 | Maintenance, Reliability & Asset Intelligence | ◐ Ext | ○ | ● | ○ | C16: 279 relations; RCA/FMEA/CMMS/PdM |
+| 19 | H19 | Decision Intelligence, BI, DSS & Operations Analytics | ◐ Ext | ○ | ● | ● | C12/C15: BI, Forecasting, Optimization |
+| 20 | H20 | Enterprise Solution Architecture, Integration & Digital Services | ◐ Ext | ○ | ○ | ● | C02/C06/C07/C11: Architecture/IT Services |
 
-### Master Catalog — Soft Skills 8 รายการ (● Core 6 · ◐ Extended 2)
+### Master Catalog — Soft Skills 10 รายการ (● Core 6 · ◐ Extended 4)
 
 | อันดับ | รหัส | Soft Skill | สถานะ | หลักฐานตลาดหลัก |
 |---:|---|---|:--:|---|
@@ -278,8 +357,10 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 | 6 | S6 | Product, Entrepreneurial & Project Management Mindset | ● Core | Project Management ในประกาศงาน AI |
 | 7 | S7 | Curiosity, AI Literacy & Human–AI Teaming | ◐ Ext | AI Literacy #2 (ManpowerGroup); Curiosity (WEF) |
 | 8 | S8 | Empathy, Service Orientation & Stakeholder-Centric | ◐ Ext | Empathy/Service Orientation ทักษะแกน (WEF); N11 |
+| 9 | S9 | Stakeholder, Requirements & Change Facilitation | ◐ Ext | Stakeholder Management เป็น Top 5 ใน 7 กลุ่ม C |
+| 10 | S10 | Agile Delivery, Quality, Safety & Professional Accountability | ◐ Ext | Agile/Testing/Quality/Safety ใน software+industrial roles |
 
 > [!success] สรุปการคัดเลือก
-> **แกนบังคับ = Hard 9 + Soft 6 (15 รายการ)** ใช้เป็นฐานออกแบบ PLO และ Curriculum Mapping · **ส่วนขยาย = Hard 6 + Soft 2 (8 รายการ)** ใช้เป็นวิชาเลือก/ความลึกเฉพาะ Track/Micro-credential และ **Watchlist ทบทวนทุกปี** ทั้งนี้ทักษะส่วนขยายทุกข้อมี "ทักษะแกนที่ผูกอยู่" (คอลัมน์ผูกกับ) เพื่อไม่ให้หลักสูตรแตกกระจาย
+> **แกนบังคับ = Hard 9 + Soft 6 (15 รายการ)** ใช้เป็นฐานออกแบบ PLO และ Curriculum Mapping · **ส่วนขยาย = Hard 11 + Soft 4 (15 รายการ)** ใช้เป็นวิชาเลือก/ความลึกเฉพาะ Track/Micro-credential และ **Watchlist ทบทวนทุกปี** ทั้งนี้ H16–H20 และ S9–S10 เพิ่มเพื่อปิดช่องว่างจาก C01–C17 โดยผูกกับทักษะแกนเดิมเพื่อไม่ให้หลักสูตรแตกกระจาย
 
 [[02_Graduate_Attributes|← ก่อนหน้า: ลักษณะบัณฑิต]] | [[00_OBE_Home|หน้าหลัก OBE]] | [[04_PLOs_7_OBE|ถัดไป: PLO 7 ข้อ →]]
