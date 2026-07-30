@@ -384,7 +384,7 @@ export const COURSES = RAW.map(c => {
 export const CORE = COURSES.filter(c => c.sem && c.g !== "ge" && c.g !== "elec");
 
 /* แผนข้อเสนอ 133 นก.: ปี 1–3 กระจายใกล้เคียงกัน และปี 4 เหลือ 15+6 สำหรับ Capstone/สหกิจ */
-export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 19, 6: 19, 7: 13, 8: 6 };
+export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 19, 6: 16, 7: 16, 8: 6 };
 export const SEM_TITLE = {
   1: "Engineering, Programming and Data Foundations", 2: "Physical, Electrical and Quantitative Foundations",
   3: "AI, Data and Sensing Foundations", 4: "AI Platforms, Decision Foundations and Academic Seminar",
@@ -393,10 +393,11 @@ export const SEM_TITLE = {
 };
 export const SEM_EXTRA = {
   5: [{ s: "วิชาเลือกชีพ 1", k: 3 }, { s: "วิชาเลือกชีพ 2", k: 3 }],
-  6: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 }],
-  7: [{ s: "วิชาเลือกชีพ 5", k: 3 }, { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
+  6: [{ s: "วิชาเลือกชีพ 3", k: 3 }],
+  7: [{ s: "วิชาเลือกชีพ 4", k: 3 }, { s: "วิชาเลือกชีพ 5", k: 3 },
+      { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
 };
-export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 38, 4: 19 };
+export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 35, 4: 22 };
 
 /* ---------------- โครงสร้างข้อเสนอ 133 หน่วยกิต (รอยืนยันการลด/จัดสรรใหม่ 3 หน่วยกิต) ---------------- */
 export const STRUCTURE = [
