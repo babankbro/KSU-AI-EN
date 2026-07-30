@@ -89,11 +89,11 @@
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | หลักฐานสำคัญ |
 |---|---|---|---|---|
-| EN-134-301 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
+| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
 | EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
 | EN-134-303 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
 | EN-134-404 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
-| EN-135-301 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |
+| EN-135-401 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |
 | EN-135-402 | สหกิจศึกษา | PLO1–PLO7 | — | employer acceptance, team, experiment/data, professional handover |
 
 ## 5. วิชาเลือกชีพ 5 วิชา

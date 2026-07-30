@@ -105,14 +105,14 @@
 
 **AI and Intelligent Systems Researcher · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-131-102, EN-131-202, EN-134-301, EN-134-302, EN-134-303 และ EN-134-404
+- รายวิชาปลายทาง: EN-131-102, EN-131-202, EN-134-201, EN-134-302, EN-134-303 และ EN-134-404
 - สมรรถนะปลายทาง: research question, literature review, experimental design, reproducible analysis และ research communication
 
 ### 11. ข้าราชการ/พนักงานหน่วยงานของรัฐด้านเทคโนโลยีดิจิทัล
 
 **Government Officer / Digital Technology Specialist · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-132-301, EN-132-305, EN-133-348, EN-134-404, EN-135-301 และ EN-135-402
+- รายวิชาปลายทาง: EN-132-301, EN-132-305, EN-133-348, EN-134-404, EN-135-401 และ EN-135-402
 - สมรรถนะปลายทาง: digital service, project/solution analysis, procurement support, AI governance, PDPA, cybersecurity และ public-sector implementation
 
 ### 12. นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล

@@ -97,9 +97,9 @@
 | GE-010-001/002 ภาษาอังกฤษ | CLO (สื่อสารพื้นฐาน) | I |
 | EN-131-204 CV · EN-131-203 Data Eng | CLO3 (รายงาน/Dashboard) | R |
 | EN-132-301/102/105 | CLO นำเสนอผล/Dashboard | R |
-| EN-134-301/102 สัมมนา | CLO1 (นำเสนอ ไทย–อังกฤษ) | R |
+| EN-134-201/102 สัมมนา | CLO1 (นำเสนอ ไทย–อังกฤษ) | R |
 | EN-134-303 เตรียมโครงงาน | CLO2 (ข้อเสนอโครงงาน) | R |
-| EN-135-301 เตรียมสหกิจ | CLO1 (Resume/สัมภาษณ์) | **M** |
+| EN-135-401 เตรียมสหกิจ | CLO1 (Resume/สัมภาษณ์) | **M** |
 | EN-134-404 Capstone · EN-135-402 สหกิจ | CLO นำเสนอ/สอบปากเปล่า | **M** |
 
 ---
@@ -123,8 +123,8 @@
 | EN-131-101 Intro AI | CLO2 (Responsible AI) | I |
 | EN-131-201 IoT · EN-131-205 Cloud · EN-131-206 HW | CLO ความปลอดภัย/ความเป็นส่วนตัว | R |
 | EN-132-306 UAV | CLO3 (กฎหมาย/ความปลอดภัย) | R |
-| EN-134-301/102 สัมมนา | CLO2 (จริยธรรม/ผลกระทบ) | R |
-| EN-135-301 เตรียมสหกิจ | CLO2 (จรรยาบรรณ) | **M** |
+| EN-134-201/102 สัมมนา | CLO2 (จริยธรรม/ผลกระทบ) | R |
+| EN-135-401 เตรียมสหกิจ | CLO2 (จรรยาบรรณ) | **M** |
 | EN-134-404 · EN-135-402 | CLO (จริยธรรมในงานจริง) | **M** |
 
 > [!tip] ข้อเสนอเสริมความหนักแน่น (จาก doc 07 หมายเหตุ #2)
@@ -153,7 +153,7 @@
 | EN-131-202 ML/DL | CLO3 (โครงงานกลุ่ม) | R |
 | EN-132-302/106/107/108 (แขนง) | CLO ปฏิบัติการ/ทีม | **M** |
 | EN-134-404 Capstone | CLO3 (ภาวะผู้นำโครงงาน) | **M** |
-| EN-135-301/402 สหกิจ | CLO (ทีม/360° feedback) | **M** |
+| EN-135-401/402 สหกิจ | CLO (ทีม/360° feedback) | **M** |
 
 ---
 
@@ -211,7 +211,7 @@
 | EN-132-301 ผลิตภัณฑ์/ธุรกิจ AI | CLO2 (feasibility/go-to-market) | R |
 | EN-132-305/107/108 | CLO ประเมินคุณค่า/เทคโนโลยีใหม่ | R |
 | EN-134-303 เตรียมโครงงาน | CLO3 (วางแผนเรียนรู้) | R |
-| EN-135-301/402 สหกิจ | CLO (พัฒนาตนเอง/ผู้ประกอบการ) | **M** |
+| EN-135-401/402 สหกิจ | CLO (พัฒนาตนเอง/ผู้ประกอบการ) | **M** |
 
 ---
 
@@ -318,7 +318,7 @@
 | 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-308 (CLO1,2) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
 | 4 | LLM Red-teaming และการประเมิน Hallucination/Safety *(IMDA TSC#9)* | L3 บูรณาการ | EN-132-308 (CLO2) · EN-134-404 (CLO4) | **Project Moonshot**, Guardrails, Adversarial Prompt Test |
 | 5 | การประมวลผลภาษาไทย (Thai NLP) | L2 ประยุกต์ | EN-132-308 (CLO1) | AI for Thai, HuggingFace |
-| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-106 (CLO2) · EN-132-304 (CLO2) · EN-134-301/102 | AI Coding Tools, Prompt Log, Human Review |
+| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-106 (CLO2) · EN-132-304 (CLO2) · EN-134-201/102 | AI Coding Tools, Prompt Log, Human Review |
 
 **วิธีวัดและประเมินผล:** โครงงานพัฒนาระบบเอเจนต์ (Agent Project) · การสาธิตระบบ (Demo) · **รายงานการคัดเลือก/ประเมินโมเดลและผล LLM Red-teaming (Baseline Safety Report)** · การประเมินผลสหกิจ (T3)
 
@@ -331,10 +331,10 @@
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-201 (CLO3) · EN-131-206 (CLO2) · EN-132-308 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
-| 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-301 (CLO2) · EN-134-302 (CLO2) · EN-132-306 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
+| 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-201 (CLO2) · EN-134-302 (CLO2) · EN-132-306 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
 | 3 | การจัดทำหลักฐานเชิงประจักษ์ทางธรรมาภิบาล (Audit & Compliance Evidence) | L3 บูรณาการ | EN-134-302 (CLO2) · EN-134-404 (CLO4) | Model Card · Fairness Evaluation Report · Robustness Log *(Outcome/Process/Evidence)* |
 | 4 | การรับรองความปลอดภัย ความน่าเชื่อถือ และความสอดคล้องของระบบ | L3 บูรณาการ | EN-001-201 (CLO2) · EN-134-404 (CLO2) | Risk Register, Assurance Case, Verification Evidence |
-| 5 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-301 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
+| 5 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-401 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
 
 **วิธีวัดและประเมินผล:** การวิเคราะห์กรณีศึกษา (Case Study) · **การจัดทำ Model Card / Fairness Evaluation Report / Robustness Log ตามกรอบ AI Verify** · การประเมินจากสถานประกอบการ (Employer Evaluation from Co-op)
 
@@ -347,7 +347,7 @@
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | การคิดวิเคราะห์เชิงระบบ (Analytical/Systems Thinking) | L3 | EN-134-303 (CLO1) · แทรกทุกโครงงาน | System Map, Root-cause |
-| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-301/102 (CLO1) · EN-135-301 (CLO1) · EN-134-404 (CLO4) | Slides, รายงาน, Technical English |
+| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-201/102 (CLO1) · EN-135-401 (CLO1) · EN-134-404 (CLO4) | Slides, รายงาน, Technical English |
 | 3 | ทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-404 (CLO3) · EN-135-402 (CLO2) · EN-001-108/029/030 | Git, Team Charter, 360° Feedback |
 | 4 | ผู้ประกอบการและการบริหารโครงการ (Entrepreneurial/PM) | L2–L3 | EN-132-301 (CLO1,2) · EN-135-402 · YLO4.4 | BMC, Lean Canvas, Gantt |
 | 5 | การเรียนรู้ตลอดชีวิตและการปรับตัว | L3 | EN-131-205 (CLO3) · EN-134-303 (CLO3) | Learning Portfolio |
@@ -369,7 +369,7 @@
 | 3 | สถาปัตยกรรมบริการดิจิทัล: Cloud/SaaS, IAM, ITSM, backup/DR และ e-Service | L2–L3 | EN-131-205/108 · EN-132-304 | Cloud Architecture, IAM Matrix, Service Catalog, DR Plan |
 | 4 | การทวนสอบ คุณภาพ ความปลอดภัย ความมั่นคงปลอดภัย และสมรรถนะบริการ | L3 | EN-001-201 · EN-131-205 · EN-134-404 | SLA/SLO, Risk Register, Test Report, Monitoring Dashboard |
 | 5 | การนำระบบไปใช้ การจัดการการเปลี่ยนแปลง และการยอมรับของผู้ใช้ | L3 | EN-132-301 · EN-134-303/104 | Change Plan, User Acceptance Test, Adoption Evidence |
-| 6 | การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง | L3 | EN-135-301/402 · EN-134-404 | Runbook, Handover Evidence, Incident Review |
+| 6 | การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง | L3 | EN-135-401/402 · EN-134-404 | Runbook, Handover Evidence, Incident Review |
 
 **วิธีวัดและประเมินผล:** Solution Architecture Portfolio · Requirements/Acceptance Package · Integration/UAT Demo · Service Runbook · Change/Adoption Plan · การประเมินจากสถานประกอบการ
 
@@ -498,7 +498,7 @@
 | H4 MLOps & Cloud | **AISK01** (G1 ย่อย 6) · AISK04 (Edge–Cloud) | PLO2, PLO4 | 131-205, 131-206 | ✅ |
 | H5 Automation & Digital Twin | **AISK03** (G2 อุตสาหกรรม) · AISK04 (บูรณาการ) | PLO2, PLO1 | 132-303, 132-307 | ✅ |
 | H6 GenAI, LLM & Agentic | AISK06 (G4) | PLO2, PLO7 | 131-101, 132-308 | ✅ เสริม TSC#4/5/9 |
-| H7 Security & Responsible AI | AISK07 (G5) | PLO4 | 131-201/108, 134-301/102 | ✅ +AI Verify/ISO 42001/NIST |
+| H7 Security & Responsible AI | AISK07 (G5) | PLO4 | 131-201/108, 134-201/102 | ✅ +AI Verify/ISO 42001/NIST |
 | H8 Computer Vision & Remote Sensing | **AISK05** (G3 ความเข้าใจของเครื่อง) | PLO2, PLO6 | 131-204, 132-306 | ✅ |
 | H9 IoT, Edge & Sensor | **AISK04** (G3) · AISK02 (ประยุกต์ฟาร์ม) | PLO2, PLO1 | 131-201, 001-107 | ✅ |
 | ฐานวิศวกรรมกายภาพ *(กลศาสตร์/วัสดุ/ความร้อน-ของไหล/เขียนแบบ/Workshop)* | **AISK02** (G2 เกษตร) · AISK03 (G2 อุตสาหกรรม) | PLO2, PLO1 | 001-103/024/025, 001-108/029/030 | ✅ **ใหม่ — แกน Build & Construct** |
@@ -522,11 +522,11 @@
 | S1 Analytical/Systems | AISK08 | PLO1, PLO6 | 134-303 + ทุกโครงงาน | ✅ |
 | S2 Problem-Solving/Judgment | AISK08 | PLO1, PLO2 | ทุกโครงงาน | ✅ |
 | S3 Adaptability/Lifelong | AISK08 | PLO7 | 131-205, 134-303 | ✅ |
-| S4 Communication/English | AISK08 | PLO3 | 134-301/102, 135-301 | ✅ |
+| S4 Communication/English | AISK08 | PLO3 | 134-201/102, 135-401 | ✅ |
 | S5 Teamwork/Leadership | AISK08 | PLO5 | 001-108/029/030, 134-404 | ✅ |
 | S6 Product/Entrepreneurial/PM | AISK08 | PLO7 | 132-301, 135-402 | ✅ |
 | S7 AI Literacy/Human–AI | AISK06/07 | PLO4, PLO7 | 131-101 | ✅ AI User TSC#2 |
-| S8 Empathy/Stakeholder | AISK08 | PLO3, PLO5 | 135-301, 132-301 | ✅ |
+| S8 Empathy/Stakeholder | AISK08 | PLO3, PLO5 | 135-401, 132-301 | ✅ |
 | S9 Stakeholder/Requirements/Change | **AISK09** | PLO2, PLO3, PLO5, PLO7 | 132-301, 134-303/104, 135-402 | ◐ สอดแทรก Project/Co-op |
 | S10 Agile/Quality/Safety/Accountability | **AISK09** | PLO2, PLO4, PLO5 | 001-108/029/030, 134-404, 135-402 | ◐ สอดแทรก Workshop/Project |
 

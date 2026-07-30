@@ -239,13 +239,13 @@ const RAW = [
     d: "รอซิงก์จาก Vault" },
 
   /* ================= 2.5 กลุ่มวิชาโครงงานและสัมมนา ================= */
-  { c: "EN-134-301", s: "Seminar I", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ I", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems I", cr: "1(0-2-1)", g: "proj", y: 3, sem: 5, p: [3, 4, 7],
+  { c: "EN-134-201", s: "Seminar I", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ I", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems I", cr: "1(0-2-1)", g: "proj", y: 2, sem: 4, p: [3, 4, 7],
     d: "แนวโน้มเทคโนโลยีปัญญาประดิษฐ์ล่าสุดในระดับประเทศและนานาชาติ กรณีศึกษาการประยุกต์ใช้ปัญญาประดิษฐ์ในภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรมธุรกิจ การวิเคราะห์และวิจารณ์บทความวิชาการและงานวิจัยด้านปัญญาประดิษฐ์ การพัฒนาทักษะการนำเสนอด้วยสื่อและเทคโนโลยีทั้งภาษาไทยและภาษาอังกฤษ การแลกเปลี่ยนความรู้กับผู้เชี่ยวชาญจากภาคอุตสาหกรรมและวิชาการ",
     dEn: "Review, analysis, and discussion of current topics in artificial intelligence engineering and intelligent systems; literature searching; source evaluation; technical synthesis; academic integrity; oral and written technical communication" },
-  { c: "EN-134-302", s: "Seminar II", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ II", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems II", cr: "1(0-2-1)", g: "proj", y: 3, sem: 6, p: [3, 4, 7], h: ["EN-134-301"],
+  { c: "EN-134-302", s: "Seminar II", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ II", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems II", cr: "1(0-2-1)", g: "proj", y: 3, sem: 5, p: [3, 4, 7], h: ["EN-134-201"],
     d: "การสืบค้น วิเคราะห์ และสังเคราะห์องค์ความรู้หรือเทคโนโลยีอุบัติใหม่ด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ การเปรียบเทียบแนวทางและประเมินข้อจำกัดของเทคโนโลยี การพิจารณาผลกระทบด้านเทคนิค จริยธรรม เศรษฐกิจ สังคม และอุตสาหกรรม การจัดทำบทความหรือรายงานเชิงวิชาการ การนำเสนอและอภิปรายเชิงวิชาชีพทั้งภาษาไทยและภาษาอังกฤษ",
     dEn: "Advanced investigation of emerging issues in artificial intelligence engineering and intelligent systems; critical comparison of approaches; assessment of technical, ethical, social, and industrial implications; academic writing; professional seminar presentation in Thai and English" },
-  { c: "EN-134-303", s: "Project Prep", t: "การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project Preparation", cr: "1(0-2-1)", g: "proj", y: 3, sem: 6, p: [1, 3, 4, 7], h: ["EN-134-301"], co: ["EN-134-302"],
+  { c: "EN-134-303", s: "Project Prep", t: "การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project Preparation", cr: "1(0-2-1)", g: "proj", y: 3, sem: 6, p: [1, 3, 4, 7], h: ["EN-134-201"], w: ["EN-134-302"],
     d: "การกำหนดหัวข้อและขอบเขตของโครงงานวิศวกรรมปัญญาประดิษฐ์ การทบทวนวรรณกรรมและงานวิจัยที่เกี่ยวข้อง การเขียนเค้าโครงโครงงานและการกำหนดวัตถุประสงค์ วิธีดำเนินการวิจัยและแผนการทำงาน การประเมินความเป็นไปได้ทางเทคนิคและทรัพยากร จริยธรรมการวิจัยและการใช้ปัญญาประดิษฐ์อย่างรับผิดชอบ การนำเสนอเค้าโครงโครงงานต่อคณะกรรมการเพื่อขออนุมัติ การเตรียมความพร้อมด้านเครื่องมือ อุปกรณ์ และซอฟต์แวร์สำหรับดำเนินโครงงาน",
     dEn: "Identification of an authentic industrial or community problem; requirements analysis; literature review; project scoping; engineering design and methodology; data, safety, ethics, budget, and risk planning; proposal preparation and presentation" },
   { c: "EN-134-404", s: "Capstone", t: "โครงงานวิศวกรรมปัญญาประดิษฐ์เเละระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project", cr: "3(1-6-4)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-134-303"],
@@ -253,10 +253,10 @@ const RAW = [
     dEn: "Execution of an approved artificial intelligence engineering or intelligent systems project; iterative design and development; experimentation and validation; project and risk management; responsible teamwork; documentation; demonstration and oral defense of results" },
 
   /* ================= 2.6 กลุ่มวิชาประสบการณ์ภาคสนาม ================= */
-  { c: "EN-135-301", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 3, sem: 6, p: [3, 4, 5, 7],
+  { c: "EN-135-401", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 4, sem: 7, p: [3, 4, 5, 7],
     d: "ปรัชญาและเป้าประสงค์ของสหกิจศึกษา ระเบียบและขั้นตอนการดำเนินสหกิจศึกษาของมหาวิทยาลัยกาฬสินธุ์ การค้นหาและการเลือกสถานประกอบการที่เหมาะสมด้านวิศวกรรมปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม การเขียนประวัติย่อและจดหมายสมัครงานในภาษาไทยและภาษาอังกฤษ ทักษะการสัมภาษณ์งานและการนำเสนอตนเอง จรรยาบรรณวิชาชีพวิศวกรรมและการปฏิบัติตนในสถานประกอบการ ความปลอดภัยในการทำงานและกฎหมายแรงงานที่เกี่ยวข้อง ทักษะการสื่อสารและการทำงานร่วมกับผู้อื่นในสภาพแวดล้อมวิชาชีพ การวางแผนการเรียนรู้และการกำหนดเป้าหมาย การจัดทำแผนการปฏิบัติงานและรูปแบบรายงานสหกิจศึกษา",
     dEn: "Preparation for cooperative education; workplace readiness; professional ethics and safety; communication and teamwork; job application and interview skills; work planning; intellectual property and confidentiality; preparation of a cooperative-education learning plan" },
-  { c: "EN-135-402", s: "Co-op", t: "สหกิจศึกษา", e: "Cooperative Education", cr: "6(0-40-0)", g: "field", y: 4, sem: 8, p: [2, 3, 4, 5, 7], h: ["EN-135-301", "EN-134-404"],
+  { c: "EN-135-402", s: "Co-op", t: "สหกิจศึกษา", e: "Cooperative Education", cr: "6(0-40-0)", g: "field", y: 4, sem: 8, p: [2, 3, 4, 5, 7], h: ["EN-135-401", "EN-134-404"],
     d: "การฝึกประสบการณ์วิชาชีพด้านวิศวกรรมปัญญาประดิษฐ์ในสถานประกอบการที่ได้รับการอนุมัติจากมหาวิทยาลัย โรงงานน้ำตาล โรงงานแป้งมันสำปะหลัง โรงสีข้าว บริษัทเทคโนโลยี วิสาหกิจเริ่มต้นปัญญาประดิษฐ์ หน่วยงานวิจัยและพัฒนา หรือองค์กรภาครัฐด้านปัญญาประดิษฐ์ ไม่น้อยกว่าสิบหกสัปดาห์ การปฏิบัติงานจริงในตำแหน่งวิศวกรปัญญาประดิษฐ์หรืองานที่เกี่ยวข้องโดยบูรณาการความรู้และทักษะจากหลักสูตรสู่การแก้ปัญหาจริง การปฏิบัติตามจรรยาบรรณวิชาชีพวิศวกรรมและจริยธรรมปัญญาประดิษฐ์ การพัฒนาทักษะการทำงานเป็นทีมและการสื่อสารในระดับวิชาชีพ การจัดทำรายงานสหกิจศึกษาฉบับสมบูรณ์ การนำเสนอผลการปฏิบัติสหกิจศึกษาต่อคณะกรรมการและสถานประกอบการ",
     dEn: "Supervised professional practice in an approved workplace; application of artificial intelligence engineering and intelligent systems knowledge to authentic work; professional responsibility, teamwork, communication, problem solving, reflective learning, and presentation of workplace outcomes" },
 
@@ -384,20 +384,19 @@ export const COURSES = RAW.map(c => {
 export const CORE = COURSES.filter(c => c.sem && c.g !== "ge" && c.g !== "elec");
 
 /* แผนข้อเสนอ 133 นก.: ปี 1–3 กระจายใกล้เคียงกัน และปี 4 เหลือ 15+6 สำหรับ Capstone/สหกิจ */
-export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 18, 5: 19, 6: 18, 7: 15, 8: 6 };
+export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 19, 6: 19, 7: 13, 8: 6 };
 export const SEM_TITLE = {
   1: "Engineering, Programming and Data Foundations", 2: "Physical, Electrical and Quantitative Foundations",
-  3: "AI, Data and Sensing Foundations", 4: "AI Platforms and Decision Foundations",
-  5: "Domain Systems Integration", 6: "Advanced Intelligent Systems and Project Preparation",
-  7: "Capstone, Leadership and Professional Electives", 8: "Cooperative Education"
+  3: "AI, Data and Sensing Foundations", 4: "AI Platforms, Decision Foundations and Academic Seminar",
+  5: "Domain Systems Integration and Technology Review", 6: "Advanced Intelligent Systems and Project Preparation",
+  7: "Capstone, Co-op Preparation and Professional Electives", 8: "Cooperative Education"
 };
 export const SEM_EXTRA = {
   5: [{ s: "วิชาเลือกชีพ 1", k: 3 }, { s: "วิชาเลือกชีพ 2", k: 3 }],
-  6: [{ s: "วิชาเลือกชีพ 3", k: 3 }],
-  7: [{ s: "วิชาเลือกชีพ 4", k: 3 }, { s: "วิชาเลือกชีพ 5", k: 3 },
-      { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
+  6: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 }],
+  7: [{ s: "วิชาเลือกชีพ 5", k: 3 }, { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
 };
-export const YEAR_CREDITS = { 1: 38, 2: 37, 3: 37, 4: 21 };
+export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 38, 4: 19 };
 
 /* ---------------- โครงสร้างข้อเสนอ 133 หน่วยกิต (รอยืนยันการลด/จัดสรรใหม่ 3 หน่วยกิต) ---------------- */
 export const STRUCTURE = [
@@ -415,7 +414,7 @@ export const STRUCTURE = [
     note: "เลือก 5 วิชาจาก pool 48 วิชา (T1 15 · T2 18 · T3 15)" },
   { id: "proj", no: "2.5", name: "กลุ่มวิชาโครงงานและสัมมนา", code: "EN-134", credits: 6, n: 4, g: "proj",
     note: "สัมมนา 1–2 · เตรียมโครงงาน · โครงงาน (Capstone)" },
-  { id: "field", no: "2.6", name: "กลุ่มวิชาประสบการณ์ภาคสนาม", code: "EN-135-301 · EN-135-402", credits: 7, n: 2, g: "field",
+  { id: "field", no: "2.6", name: "กลุ่มวิชาประสบการณ์ภาคสนาม", code: "EN-135-401 · EN-135-402", credits: 7, n: 2, g: "field",
     note: "เตรียมสหกิจ 1 นก. · สหกิจศึกษา 6 นก. (≥16 สัปดาห์)" },
   { id: "free", no: "3", name: "หมวดวิชาเลือกเสรี", code: "—", credits: 6, n: 2, g: "free",
     note: "เลือกจากรายวิชาที่มหาวิทยาลัยเปิดสอน" }
@@ -447,7 +446,7 @@ export const SUBGROUPS = {
   proj: {
     note: "ไล่ลำดับจากการสืบค้นและสัมมนา → เขียนข้อเสนอโครงงาน → ดำเนินโครงงานจริง",
     items: [
-      { name: "สัมมนา", sub: "สืบค้น วิเคราะห์ และนำเสนอเทคโนโลยีอุบัติใหม่", codes: ["EN-134-301", "EN-134-302"] },
+      { name: "สัมมนา", sub: "สืบค้น วิเคราะห์ และนำเสนอเทคโนโลยีอุบัติใหม่", codes: ["EN-134-201", "EN-134-302"] },
       { name: "การเตรียมความพร้อมโครงงาน", sub: "กำหนดหัวข้อ ทบทวนวรรณกรรม และเสนอเค้าโครงต่อคณะกรรมการ", codes: ["EN-134-303"] },
       { name: "โครงงานวิศวกรรม (Capstone)", sub: "ดำเนินโครงงานบูรณาการ PLO1–7 และสอบปากเปล่า", codes: ["EN-134-404"] }
     ]
@@ -455,7 +454,7 @@ export const SUBGROUPS = {
   field: {
     note: "ต้องผ่านรายวิชาเตรียมความพร้อมก่อนออกปฏิบัติงานในสถานประกอบการ",
     items: [
-      { name: "การเตรียมความพร้อม", sub: "จรรยาบรรณวิชาชีพ ความปลอดภัย และการเตรียมตัวสมัครงาน", codes: ["EN-135-301"] },
+      { name: "การเตรียมความพร้อม", sub: "จรรยาบรรณวิชาชีพ ความปลอดภัย และการเตรียมตัวสมัครงาน", codes: ["EN-135-401"] },
       { name: "การปฏิบัติงานในสถานประกอบการ", sub: "ปฏิบัติงานจริงไม่น้อยกว่า 16 สัปดาห์ พร้อมรายงานและการนำเสนอ", codes: ["EN-135-402"] }
     ]
   },
@@ -714,7 +713,7 @@ export const CAREERS = [
     why: "ตั้งคำถามวิจัย ปรับตัวแบบ ออกแบบเกณฑ์มาตรฐานและการทดลองที่ทำซ้ำได้ วิเคราะห์ความน่าเชื่อถือ และสร้างองค์ความรู้ใหม่",
     kw: "AI Researcher · Machine Learning Researcher · Research Engineer · Intelligent Systems Researcher" },
   { id: "C11", track: 0, st: "S", th: "ข้าราชการ/พนักงานหน่วยงานของรัฐด้านเทคโนโลยีดิจิทัล", en: "Government Officer / Digital Technology Specialist",
-    courses: ["EN-132-301", "EN-132-305", "EN-133-348", "EN-134-404", "EN-135-301", "EN-135-402"],
+    courses: ["EN-132-301", "EN-132-305", "EN-133-348", "EN-134-404", "EN-135-401", "EN-135-402"],
     why: "วิเคราะห์ ออกแบบ จัดหา และกำกับระบบ AI ด้วยการจำแนกความเสี่ยง ประเมินผลกระทบ และจัดทำหลักฐานตรวจสอบสำหรับบริการภาครัฐ",
     kw: "Digital Technology Specialist · IT Officer · Computer Technical Officer · Government Digital Service" },
   { id: "C12", track: 0, st: "M", th: "นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล", en: "Data Scientist / Data Analyst",

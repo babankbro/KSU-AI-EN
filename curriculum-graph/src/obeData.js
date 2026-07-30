@@ -121,7 +121,7 @@ export const HARD_SKILLS = [
     level: "ทุก Track L2 · T3 L4" },
 
   { id: "H7", name: "AI Security, Privacy, Safety & Responsible AI", core: true, set: "AISK07", rank: 7,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [4], courses: ["EN-131-201", "EN-131-206", "EN-134-301", "EN-134-302"],
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [4], courses: ["EN-131-201", "EN-131-206", "EN-134-201", "EN-134-302"],
     scope: "ออกแบบและตรวจสอบระบบ AI ให้ปลอดภัยและรับผิดชอบ ครอบคลุม Cybersecurity, Data Privacy/PDPA, Threat Modeling, Secure MLOps, Prompt Injection and Data Poisoning Defense, Model/Agent Guardrails, Robustness, Fairness, Explainability, AI Governance และ Regulatory Compliance",
     market: "Networks and Cybersecurity เป็นทักษะเติบโตเร็วอันดับต้นตาม WEF · BLS คาดงาน Information Security Analysts โต 29% · Responsible AI ปรากฏใน 15% ของประกาศงาน AI ไทย (TDRI)",
     bench: "AI Verify 11 หลักการ (Outcome/Process/Evidence) · ISO/IEC 42001 · NIST AI RMF · EU AI Act · IMDA GenAI TSC#8/#9 · ACM/IEEE/IFIP/ABET Cybersecurity",
@@ -229,7 +229,7 @@ export const SOFT_SKILLS = [
     level: "ทุก Track L3" },
 
   { id: "S4", name: "Professional Communication, English & Data Storytelling", core: true, set: "AISK08", rank: 4,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [3], courses: ["EN-134-301", "EN-134-302", "EN-135-301"],
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [3], courses: ["EN-134-201", "EN-134-302", "EN-135-401"],
     scope: "สื่อสารข้อมูลเทคนิคที่ซับซ้อนด้วยภาษาไทยและอังกฤษผ่านรายงาน การนำเสนอ Visualization, Dashboard และสื่อดิจิทัล โดยปรับสารให้เหมาะกับวิศวกร ผู้บริหาร เกษตรกร และชุมชน",
     market: "TDRI พบการสื่อสาร + ภาษาอังกฤษ ระบุใน >75% ของประกาศงาน AI (เป็น necessity) · งานอุตสาหกรรมอัจฉริยะต้องใช้ Executive Communication และ Storytelling",
     act: "รายงานเทคนิค การนำเสนอ การตอบคำถาม และการอธิบายผล AI ต่อผู้ฟังต่างกลุ่ม",
@@ -258,7 +258,7 @@ export const SOFT_SKILLS = [
     level: "ทุก Track L2" },
 
   { id: "S8", name: "Empathy, Service Orientation & Stakeholder-Centric", core: false, set: "AISK08", rank: 8,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [3, 5], courses: ["EN-135-301", "EN-132-301"], link: "S4, S5",
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [3, 5], courses: ["EN-135-401", "EN-132-301"], link: "S4, S5",
     scope: "เข้าใจบริบทและความต้องการของผู้ใช้จริง โดยเฉพาะเกษตรกรและชุมชนท้องถิ่นภาคอีสาน ออกแบบโซลูชันที่ผู้ใช้ดูแลเองได้ และคำนึงถึงผลกระทบทางสังคม",
     market: "Empathy & Active Listening / Service Orientation อยู่ในกลุ่มทักษะแกนของ WEF · ตอบ Need N11 (ตอบโจทย์ชุมชนท้องถิ่น) และ N17 (Inclusive AI)",
     act: "User/Field discovery, การรับฟังผู้ใช้ และการออกแบบที่ยึดผู้ใช้เป็นศูนย์กลาง",
@@ -402,7 +402,7 @@ export const SKILL_SETS = [
       { n: "จรรยาบรรณวิชาชีพในสถานการณ์จริง", lv: "L3", tools: "Case Study, Employer Rubric" }
     ],
     assess: "Case Study · Model Card / Fairness Report / Robustness Log ตามกรอบ AI Verify · Employer Evaluation",
-    courses: ["GE-010-003","EN-131-101","EN-131-201","EN-131-205","EN-131-206","EN-132-306","EN-132-201","EN-134-301","EN-134-302","EN-135-301"] },
+    courses: ["GE-010-003","EN-131-101","EN-131-201","EN-131-205","EN-131-206","EN-132-306","EN-132-201","EN-134-201","EN-134-302","EN-135-401"] },
 
   { id: "AISK08", g: "G6", type: "Soft",
     name: "การสื่อสาร การทำงานเป็นทีม ภาวะผู้นำ และความเป็นผู้ประกอบการ",
@@ -417,7 +417,7 @@ export const SKILL_SETS = [
       { n: "กลยุทธ์การแปลงโฉมดิจิทัลและการออกแบบที่ครอบคลุมผู้ใช้", lv: "L2–L3", tools: "DX Canvas, Inclusive Design Checklist" }
     ],
     assess: "Group Project Assessment · Seminar Presentation · 360° จากสหกิจ · แผนธุรกิจ · Learning Portfolio",
-    courses: ["EN-001-101","EN-001-108","EN-001-109","EN-001-201","EN-131-205","EN-132-301","EN-134-301","EN-134-302","EN-134-303","EN-134-404","EN-135-301","EN-135-402"] },
+    courses: ["EN-001-101","EN-001-108","EN-001-109","EN-001-201","EN-131-205","EN-132-301","EN-134-201","EN-134-302","EN-134-303","EN-134-404","EN-135-401","EN-135-402"] },
 
   { id: "AISK09", g: "G7", type: "Hard + Hybrid",
     name: "ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบระบบ",
@@ -433,7 +433,7 @@ export const SKILL_SETS = [
       { n: "การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง", lv: "L3", tools: "Runbook, Handover Evidence, Incident Review" }
     ],
     assess: "Solution Architecture Portfolio · Requirements/Acceptance Package · BI/DSS Case · Integration/UAT Demo · Service Runbook",
-    courses: ["EN-001-101","EN-001-104","EN-001-201","EN-131-205","EN-131-203","EN-131-206","EN-132-301","EN-132-305","EN-132-304","EN-132-308","EN-134-303","EN-134-404","EN-135-301","EN-135-402"] }
+    courses: ["EN-001-101","EN-001-104","EN-001-201","EN-131-205","EN-131-203","EN-131-206","EN-132-301","EN-132-305","EN-132-304","EN-132-308","EN-134-303","EN-134-404","EN-135-401","EN-135-402"] }
 ];
 
 /* ─── ขั้นที่ 5 · KSA ราย PLO ─── */
