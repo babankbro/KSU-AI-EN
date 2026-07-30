@@ -132,7 +132,7 @@
 - **ปิด Gap:** H5/H7/H8/H9/H16; AISK02/AISK04/AISK05; C03/C05/C12
 
 > [!caution] Scope CT6
-> วิชาแกนนี้ครอบคลุม UAV, remote sensing, GeoAI และ Agricultural Robotics ในระดับพื้นฐานและการบูรณาการ ส่วนความลึกให้รับผิดชอบโดยวิชาเลือก EN-133-311/112 เพื่อควบคุมขอบเขตใน 3 หน่วยกิต
+> วิชาแกนนี้ครอบคลุม UAV, remote sensing, GeoAI และ Agricultural Robotics ในระดับพื้นฐานและการบูรณาการ ส่วนความลึกให้รับผิดชอบโดยวิชาเลือก EN-133-311/312 เพื่อควบคุมขอบเขตใน 3 หน่วยกิต
 
 ### CT7 Smart Manufacturing Systems
 
@@ -215,7 +215,7 @@
 | **CT3 Software and AI Engineering** | H2/H4/H20; S9/S10; AISK01/09 | AI-assisted development, application, system integration และ handover | deployable AI app + test/CI-CD/monitoring/runbook |
 | **CT4 Agentic AI Systems** | H6/H7/H10 baseline; S3/S7; AISK06/07 | เทคโนโลยีใหม่โดยยังรักษา core, human oversight และ safety | RAG/agent + evaluation/risk card + cost/latency |
 | **CT5 Smart Agriculture Systems** | H9/H11/H15/H16/H19; AISK02/04/05 | ปลูก–ดูแล–รักษา–ผลิตด้วย AI, BCG และ farm value | farm system/DSS + water/input/carbon/value KPI |
-| **CT6 Autonomous Systems for Agriculture** | H5/H7/H8/H9/H16; AISK02/04/05 | Drone ใหม่, remote sensing, GeoAI, robotics, regulation และ field integration | UAV/GeoAI mission + robotic subsystem; advanced depth ใช้ EN-133-311/112 |
+| **CT6 Autonomous Systems for Agriculture** | H5/H7/H8/H9/H16; AISK02/04/05 | Drone ใหม่, remote sensing, GeoAI, robotics, regulation และ field integration | UAV/GeoAI mission + robotic subsystem; advanced depth ใช้ EN-133-311/312 |
 | **CT7 Smart Manufacturing Systems** | H11/H13/H15/H17/H18 baseline/H19; AISK03/05/09 | Heat/process, MES, quality, Lean Six Sigma, OEE, standards และ optimization | process/digital twin + MES/SPC/OEE + optimization/BCG report |
 | **CT8 Intelligent Industrial Automation and Robotics Systems** | H5/H7/H8/H9/H17; S10; AISK03/04/07 | PLC/SCADA/DCS, robot, CAD/P&ID, commissioning และ safety | integrated cell + drawing + commissioning/safety test |
 | **CT9 Intelligent Sensing and Actuation Systems** | H5/H9/H17; AISK02/03/04 | Instrumentation, Pneumatics, Hydraulics, IIoT/Edge และ input/output | calibration + fluid-power control + IIoT/edge demo; ต้องมี Lab |
@@ -273,15 +273,15 @@
 
 | Skill Set | รายวิชาเจ้าภาพในโครงสร้างใหม่ | ผลการปิด Gap |
 |---|---|---|
-| AISK01 AI Core Engineering | 001-106; 131-102/105–108; CT2/CT3 | **ปิดในแกนร่วม** |
-| AISK02 Smart Agriculture Engineering | 001-103–025/Workshop; CT5/CT6/CT9 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T1 elective** |
-| AISK03 Smart Industry & Automation | 001-103/024/027/Workshop; CT7/CT8/CT9; EN-133-331–133 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T2 elective ด้านกำลังของไหล ความร้อน และความปลอดภัยอุตสาหกรรม** |
-| AISK04 Intelligent Farm/Factory Systems | 001-107/029/030; 131-201/108; CT5/CT8/CT9 | **ปิดในแกนร่วม** |
-| AISK05 Applied Domain AI | 131-204/106; CT2/CT5–CT8 | **ปิดในแกนร่วม** |
+| AISK01 AI Core Engineering | 001-106; 131-102/201–206; CT2/CT3 | **ปิดในแกนร่วม** |
+| AISK02 Smart Agriculture Engineering | 001-103–105/Workshop; CT5/CT6/CT9 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T1 elective** |
+| AISK03 Smart Industry & Automation | 001-103/104/107/Workshop; CT7/CT8/CT9; EN-133-331–333 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T2 elective ด้านกำลังของไหล ความร้อน และความปลอดภัยอุตสาหกรรม** |
+| AISK04 Intelligent Farm/Factory Systems | 001-107/109/201; 131-201/206; CT5/CT8/CT9 | **ปิดในแกนร่วม** |
+| AISK05 Applied Domain AI | 131-204/202; CT2/CT5–CT8 | **ปิดในแกนร่วม** |
 | AISK06 GenAI/LLM/Agentic | CT4 | **ปิด baseline; advanced/Thai NLP ผ่าน elective** |
-| AISK07 Responsible AI/Security/Governance | 131-101/108; CT1/CT4/CT8; Capstone | **ปิดแบบมีเงื่อนไขด้าน CLO/Rubric** |
+| AISK07 Responsible AI/Security/Governance | 131-101/206; CT1/CT4/CT8; Capstone | **ปิดแบบมีเงื่อนไขด้าน CLO/Rubric** |
 | AISK08 Professional/Entrepreneurial | 001-101; CT1/CT2/CT3; Project/CWIE | **ปิดแบบมีเงื่อนไขด้าน Assessment** |
-| AISK09 Enterprise Solutions/DSS | CT1–CT3; 131-203/108 | **ปิด baseline; Enterprise depth ผ่าน T3 elective** |
+| AISK09 Enterprise Solutions/DSS | CT1–CT3; 131-203/206 | **ปิด baseline; Enterprise depth ผ่าน T3 elective** |
 
 ## 9. Gap Closure ต่อ H1–H20 และ S1–S10
 
@@ -319,7 +319,7 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | ฐานทักษะ | รายวิชาเจ้าภาพ | สถานะ |
 |---|---|---|
 | EF1 Drawing/CAD/Layout/P&ID | 001-104, CT8 | ปิดในแกน |
-| EF2 Mechanics/Materials/Fabrication | 001-105/028 | ปิดในแกน |
+| EF2 Mechanics/Materials/Fabrication | 001-105/108 | ปิดในแกน |
 | EF3 Thermal-Fluid/Energy/Process | 001-103, CT7 | ปิดในแกน |
 | EF4 Electrical/Instrumentation/Calibration | 001-107, CT9 | ปิดในแกน |
 | EF5 Actuation/Fluid Power/Control | 001-109, CT9 | ปิดระดับบูรณาการ; ต้องมี Lab |
@@ -354,11 +354,11 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | Pneumatics/Hydraulics | 001-109 + CT9 | ปิดเชิงโครงสร้าง; ต้องมี Lab |
 | Heat Transfer | 001-103 + CT7 process/energy | ปิด |
 | Process Engineering/Production | CT7 | ปิด |
-| Safety | 001-105/027/029 + CT8/CT9 + Capstone | ปิดแบบมีเงื่อนไขด้าน rubric |
+| Safety | 001-105/107/109 + CT8/CT9 + Capstone | ปิดแบบมีเงื่อนไขด้าน rubric |
 | CAD/แบบเฉพาะทาง | 001-104 + CT8 layout/P&ID/control drawing | ปิด |
 | System Integration | 001-201 + CT3/CT6/CT8/CT9 | ปิด; ต้องบังคับ end-to-end demo |
 | Business/Economics/Decision | 001-101 + CT1/CT2 | ปิด |
-| BCG/Carbon | 001-101/023 + CT1/CT2/CT5/CT7 | ปิดแบบมีเงื่อนไขด้าน KPI |
+| BCG/Carbon | 001-101/103 + CT1/CT2/CT5/CT7 | ปิดแบบมีเงื่อนไขด้าน KPI |
 | Drone ใหม่/กฎหมาย | CT6: RTK, multispectral/thermal, GeoAI, safety/regulation | ปิด baseline; ต้องทบทวนกฎหมาย/อุปกรณ์รายปี |
 | Standards/Trade | CT1/CT7/CT8 + industry module | ปิด baseline |
 | Input–Process–Output–Value | 001-201 + CT2/CT3 + domain core + Capstone | ปิด |

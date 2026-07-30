@@ -268,7 +268,7 @@
 | 4 | เพิ่ม MLOps สำหรับ cyber-physical system | `EN-131-205`, `EN-132-307` | versioned model + rollback + monitoring + digital thread |
 | 5 | เพิ่ม safety/calibration/OT security rubric | Workshop III และ Capstone | hazard analysis, fail-safe test, calibration record และ security checklist |
 | 6 | ทำ elective pathway “AI Robotics Integration” | แขนง Industrial AI | ROS 2, autonomous systems, machine vision และ predictive maintenance อย่างน้อย 3 วิชาเชื่อมกัน |
-| 7 | ทบทวนขนาด Capstone | `EN-134-303/104` | workload สอดคล้องจำนวนหน่วยกิต หรือแยก Capstone I–II |
+| 7 | ทบทวนขนาด Capstone | `EN-134-303/404` | workload สอดคล้องจำนวนหน่วยกิต หรือแยก Capstone I–II |
 
 ## 11. ตัวชี้วัดสำหรับ benchmark รอบถัดไป
 

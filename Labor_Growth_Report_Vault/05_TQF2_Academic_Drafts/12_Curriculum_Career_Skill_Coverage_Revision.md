@@ -60,23 +60,23 @@
 | H1 AI/ML & Mathematics | แข็งแรง | 131-102, 131-202, 001-102 | คงเดิม; เพิ่ม experiment/reproducibility ในโครงงาน |
 | H2 Programming & AI Software | แข็งแรง | 001-106, 132-304 | เพิ่ม data structures, Git, automated testing, SQL/API ตั้งแต่ปี 1–2 |
 | H3 Data Engineering/Analytics/Viz | แข็งแรง | 131-203, 132-305 | เพิ่ม semantic model, BI/DSS และ data quality gate |
-| H4 MLOps/Cloud/Infrastructure | แข็งแรง | 131-205/108, 132-304 | เพิ่ม observability, IAM, backup/DR, SLO และ runbook |
-| H5 Automation/Robotics/Digital Twin | แข็งแรง | 132-307/106, 133-316/127 | แยก control/robotics ออกจาก process/quality ให้ชัด |
+| H4 MLOps/Cloud/Infrastructure | แข็งแรง | 131-205/206, 132-304 | เพิ่ม observability, IAM, backup/DR, SLO และ runbook |
+| H5 Automation/Robotics/Digital Twin | แข็งแรง | 132-307/303, 133-316/327 | แยก control/robotics ออกจาก process/quality ให้ชัด |
 | H6 GenAI/LLM/Agentic | แข็งแรง | 132-308, 133-332 | ลดความซ้ำ; ให้ 132-308 เป็นฐาน และ elective เป็น advanced LLM |
-| H7 Security/Responsible AI | ปานกลาง | 131-101/104/105/108, 133-345 | รวม AI QA + Security + Governance เป็นวิชาบังคับ T3 หรือ cross-track |
-| H8 CV/Remote Sensing/Multimodal | แข็งแรง | 131-204, 132-306, 133-308/129 | คงแกน; elective ต้องเป็น advanced domain application |
-| H9 IoT/Embedded/Edge/Sensors | แข็งแรง | 001-107/029, 131-201, 132-302/106 | คงเดิม; เพิ่ม device management และ industrial protocol |
+| H7 Security/Responsible AI | ปานกลาง | 131-101/201/205/206, 133-345 | รวม AI QA + Security + Governance เป็นวิชาบังคับ T3 หรือ cross-track |
+| H8 CV/Remote Sensing/Multimodal | แข็งแรง | 131-204, 132-306, 133-308/329 | คงแกน; elective ต้องเป็น advanced domain application |
+| H9 IoT/Embedded/Edge/Sensors | แข็งแรง | 001-107/109, 131-201, 132-302/303 | คงเดิม; เพิ่ม device management และ industrial protocol |
 | H10 NLP/Thai NLP | อ่อน–ปานกลาง | 132-308, 133-332 | เพิ่ม elective Thai NLP/Sovereign AI โดยตรง |
-| H11 Time-Series/Predictive | แข็งแรง | 132-305/103/105, 133-305/117 | ลดวิชาเกษตรที่ซ้ำ และใช้หนึ่งวิชา Farm Data Intelligence |
+| H11 Time-Series/Predictive | แข็งแรง | 132-305/302/307, 133-305/317 | ลดวิชาเกษตรที่ซ้ำ และใช้หนึ่งวิชา Farm Data Intelligence |
 | H12 Big Data/Streaming | แข็งแรง | 131-203, 133-331 | แยกระดับพื้นฐานกับ advanced streaming/platform ให้ชัด |
-| H13 RL/Optimization/OR | ปานกลาง | 132-305, 133-319/128 | ทำ Decision Intelligence & Optimization เป็นแกนร่วม EN-132 |
+| H13 RL/Optimization/OR | ปานกลาง | 132-305, 133-319/328 | ทำ Decision Intelligence & Optimization เป็นแกนร่วม EN-132 |
 | H14 Data-Centric AI/Annotation | ปานกลาง | 131-203, project | เพิ่ม dataset specification, labeling QA และ data lineage ใน AI Core/Capstone |
-| H15 Sustainable/Green AI | ปานกลาง | 001-103, 131-205, 133-315/130 | กำหนด energy/cost/carbon metric ใน Project และวิชา Track |
-| H16 Precision Agriculture/Agri-food | แข็งแรงแต่ซ้ำ | 132-302/104, 133-301/102/105/109/110/112 | คง 132-302/104 เป็น Track required; ควบรวม electives ที่ซ้ำ |
-| H17 Smart Manufacturing/Quality/MES | ปานกลาง | 132-307/106, 133-320/128/129 | ขยาย 132-307 ให้มี MES, OEE, SPC, Lean/Six Sigma |
+| H15 Sustainable/Green AI | ปานกลาง | 001-103, 131-205, 133-315/330 | กำหนด energy/cost/carbon metric ใน Project และวิชา Track |
+| H16 Precision Agriculture/Agri-food | แข็งแรงแต่ซ้ำ | 132-302/306, 133-301/302/305/309/310/312 | คง 132-302/306 เป็น Track required; ควบรวม electives ที่ซ้ำ |
+| H17 Smart Manufacturing/Quality/MES | ปานกลาง | 132-307/303, 133-320/328/329 | ขยาย 132-307 ให้มี MES, OEE, SPC, Lean/Six Sigma |
 | H18 Maintenance/Reliability/Asset | ปานกลาง | 132-307, 133-317 | เลื่อน 133-317 เป็น Track required และเพิ่ม RCA/FMEA/CMMS/EAM/RUL |
 | H19 BI/DSS/Decision Intelligence | ปานกลาง | 131-203, 132-305, 133-319 | ทำ 132-305 เป็นแกน Decision Intelligence; 133-319 เป็น advanced DSS/OR |
-| H20 Architecture/Integration/Digital Services | ปานกลาง–อ่อน | 132-301/107, 131-205/108, 133-334 | เพิ่ม Enterprise Architecture, IAM, ITSM, DR, UAT, change และ handover |
+| H20 Architecture/Integration/Digital Services | ปานกลาง–อ่อน | 132-301/304, 131-205/206, 133-334 | เพิ่ม Enterprise Architecture, IAM, ITSM, DR, UAT, change และ handover |
 
 ## 4. Coverage อาชีพ C01–C17: เดิมเทียบข้อเสนอ
 
@@ -189,19 +189,19 @@
 วิชาที่ควบรวม/ยุติความซ้ำ:
 
 - 133-302 → รวมใน 132-302
-- 133-305/109/110 → รวมเป็น Track-required Agri-food Data and Decision Intelligence
+- 133-305/309/310 → รวมเป็น Track-required Agri-food Data and Decision Intelligence
 - 133-312 UAV → รวมใน 132-306
-- ตรวจและแก้ชื่อ/รหัส 133-312–115 ใน Course Index ให้ตรงกับไฟล์คำอธิบาย
+- ตรวจและแก้ชื่อ/รหัส 133-312–315 ใน Course Index ให้ตรงกับไฟล์คำอธิบาย
 
 ### 7.2 T2 Industrial AI — 9 วิชา
 
 | วิชาเสนอ | ดำเนินการจากของเดิม |
 |---|---|
-| Advanced Process Control and Distributed Control Systems | ยกระดับ 133-316 ต่อจาก EN-132-303/109 |
+| Advanced Process Control and Distributed Control Systems | ยกระดับ 133-316 ต่อจาก EN-132-303/201 |
 | Smart Warehouse, AGV and Material Handling | รวม 133-318 + 133-326 |
 | Advanced Operations Research and Industrial Optimization | เปลี่ยน 133-319 เพื่อลดความซ้ำกับ EN-132-305 |
 | Agro-industrial Process, Food Quality and Safety | ปรับ 133-320 |
-| Rice–Sugar–Cassava Industrial AI Studio | รวม 133-321/122/123 เป็น rotating case studio |
+| Rice–Sugar–Cassava Industrial AI Studio | รวม 133-321/322/323 เป็น rotating case studio |
 | Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 133-327 ต่อจาก EN-132-303 |
 | Lean and AI-Enabled Process Improvement | เปลี่ยน 133-328 ต่อจาก EN-132-307 |
 | Industrial Computer Vision and Automated Quality | คง/เพิ่ม SPC integration ใน 133-329 |
@@ -228,13 +228,13 @@
 
 - EN-133-334 Advanced Data Engineering and Data Pipelines
 - EN-133-338 UX/UI Design for Intelligent Systems
-- EN-133-339–137 Healthcare AI and Medical Image Analysis
-- EN-133-341–139 Financial AI and Predictive Finance
+- EN-133-339/340 Healthcare AI and Medical Image Analysis
+- EN-133-341/342 Financial AI and Predictive Finance
 - EN-133-344 Intelligent Software Project Management
 - EN-133-345 Business Development and Digital Marketing with AI
 - EN-133-347 Virtual Reality Technology and Artificial Intelligence
 
-ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-133-339/137 เป็น Healthcare AI Studio และ EN-133-341/139 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
+ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-133-339/337 เป็น Healthcare AI Studio และ EN-133-341/339 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
 
 ## 8. Basket Rule สำหรับวิชาเลือก 15 หน่วยกิต
 
@@ -266,8 +266,8 @@
 |---|---|---|
 | **คง** | AI Math, ML/DL, CV, IoT/Edge, Data Engineering, Cloud/MLOps | เป็นแกนตลาด C01/C06/C07/C12 |
 | **ปรับชื่อ/ขอบเขต** | 132-301, 132-305, 132-307, 132-304 | เพิ่ม requirements, DSS, MES/quality, architecture/integration |
-| **เลื่อนเป็น Track required** | 133-311, 133-317, 133-331, 133-333/145, 133-334 | เป็น Skill สำคัญที่ pathway ต้องรับประกัน |
-| **ควบรวม** | 133-305/109/110, 118/126, 121/122/123, 125/130, 136/137, 138/139, 135/141/143 | ลดเนื้อหาซ้ำและลดภาระ staffing/lab |
+| **เลื่อนเป็น Track required** | 133-311, 133-317, 133-331, 133-333/345, 133-334 | เป็น Skill สำคัญที่ pathway ต้องรับประกัน |
+| **ควบรวม** | 133-305/309/310, 118/126, 121/122/123, 125/130, 136/137, 138/139, 135/141/143 | ลดเนื้อหาซ้ำและลดภาระ staffing/lab |
 | **รวมเข้าวิชาแกน** | 133-302 → 132-302; 133-312 → 132-306 | ซ้ำกับวิชาบังคับโดยตรง |
 | **เพิ่มใหม่** | Thai NLP; AI Research; Enterprise Digital Services content | ปิด H10, C10 และ C11/H20 |
 | **Rotating/Watchlist** | Biotechnology, Healthcare, Finance, XR และ domain studio | เปิดตามอาจารย์/พันธมิตร/ทรัพยากร ไม่ใช้รับประกันแกน |
@@ -277,7 +277,7 @@
 1. ยืนยันว่า EN-132 จะใช้โครงสร้าง **4 common + 4 track-required**
 2. ยืนยัน active elective pool และ basket rule
 3. กำหนดรหัสวิชาใหม่ โดยแยก prefix elective ออกจาก EN-135-401/402
-4. แก้ Course Index ให้ตรงกับไฟล์คำอธิบาย โดยเฉพาะ EN-133-312–115
+4. แก้ Course Index ให้ตรงกับไฟล์คำอธิบาย โดยเฉพาะ EN-133-312–315
 5. จัดทำคำอธิบายไทย–อังกฤษและ CLO ใหม่สำหรับวิชาที่ควบรวม/เลื่อน
 6. จัดทำ prerequisite map และตรวจภาระหน่วยกิตรายภาค
 7. กำหนดอาจารย์/ห้องปฏิบัติการเจ้าภาพของ Track-required ทุกวิชา
