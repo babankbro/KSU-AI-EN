@@ -36,7 +36,7 @@
 | EN-001-107 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์ | เพิ่ม instrumentation, signal conditioning, sensor/actuator, motor/drive, protection และ electrical safety | Instrumentation/drive/safety |
 | EN-001-108 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
 | EN-001-109 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
-| EN-001-110 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
+| EN-001-201 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
 
 ## 3. กลุ่ม 2.2 วิชาชีพหลักด้าน AI — 24 หน่วยกิต
 
@@ -191,7 +191,7 @@
 | EN-001-107 ไฟฟ้าและอิเล็กทรอนิกส์ | H5/H9/H17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
 | EN-001-108 Workshop I | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
 | EN-001-109 Workshop II | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
-| EN-001-110 Workshop III | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
+| EN-001-201 Workshop III | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
 
 ### 5.2 AI Core
 
@@ -356,12 +356,12 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | Process Engineering/Production | CT7 | ปิด |
 | Safety | 001-105/027/029 + CT8/CT9 + Capstone | ปิดแบบมีเงื่อนไขด้าน rubric |
 | CAD/แบบเฉพาะทาง | 001-104 + CT8 layout/P&ID/control drawing | ปิด |
-| System Integration | 001-110 + CT3/CT6/CT8/CT9 | ปิด; ต้องบังคับ end-to-end demo |
+| System Integration | 001-201 + CT3/CT6/CT8/CT9 | ปิด; ต้องบังคับ end-to-end demo |
 | Business/Economics/Decision | 001-101 + CT1/CT2 | ปิด |
 | BCG/Carbon | 001-101/023 + CT1/CT2/CT5/CT7 | ปิดแบบมีเงื่อนไขด้าน KPI |
 | Drone ใหม่/กฎหมาย | CT6: RTK, multispectral/thermal, GeoAI, safety/regulation | ปิด baseline; ต้องทบทวนกฎหมาย/อุปกรณ์รายปี |
 | Standards/Trade | CT1/CT7/CT8 + industry module | ปิด baseline |
-| Input–Process–Output–Value | 001-110 + CT2/CT3 + domain core + Capstone | ปิด |
+| Input–Process–Output–Value | 001-201 + CT2/CT3 + domain core + Capstone | ปิด |
 | Lifelong Learning/AI Trend | 131-101 + CT4 + Seminar | ปิดแบบมีกลไกทบทวนรายปี |
 | PLO สะท้อน 3 Track | PLO1–2 ระบุบริบทเกษตร/อุตสาหกรรม/องค์กร และ PLO2/4/7 ระบุ BCG, governance, standards/value; ใช้ PI/Capstone แยก Track | **ปรับ PLO และ Mapping แล้ว; รออนุมัติ PI/Rubric** |
 | ภาษาจีน | ไม่ใช้หน่วยกิตแกน | จัด GE/Free Elective |

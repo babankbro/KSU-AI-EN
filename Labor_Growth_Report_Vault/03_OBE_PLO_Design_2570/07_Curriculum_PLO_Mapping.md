@@ -56,7 +56,7 @@
 | EN-001-107 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H5, H9, H17; EF4 |
 | EN-001-108 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
 | EN-001-109 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
-| EN-001-110 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
+| EN-001-201 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
 
 ### 4.2 กลุ่ม 2.2 แกนปัญญาประดิษฐ์และระบบอัจฉริยะ
 
@@ -75,25 +75,25 @@
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | Skills หลัก |
 |---|---|---|---|---|
-| EN-132-202 | AI Business Intelligence and Product Design | PLO1, PLO2, PLO7 | PLO3, PLO4, PLO5, PLO6 | H7, H15, H20; S1, S2, S6, S8, S9, S10 |
-| EN-132-203 | Decision Intelligence and Supply Chain Management | PLO1, PLO2, PLO6 | PLO3 | H3, H11, H13, H19; S1, S2, S4, S8 |
-| EN-132-204 | Smart Agriculture Systems | PLO2, PLO6, PLO7 | PLO4, PLO5 | H9, H11, H15, H16, H19; S5, S9, S10 |
-| EN-132-205 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
-| EN-132-208 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
-| EN-132-206 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
-| EN-132-207 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
-| EN-132-209 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
+| EN-132-301 | AI Business Intelligence and Product Design | PLO1, PLO2, PLO7 | PLO3, PLO4, PLO5, PLO6 | H7, H15, H20; S1, S2, S6, S8, S9, S10 |
+| EN-132-305 | Decision Intelligence and Supply Chain Management | PLO1, PLO2, PLO6 | PLO3 | H3, H11, H13, H19; S1, S2, S4, S8 |
+| EN-132-302 | Smart Agriculture Systems | PLO2, PLO6, PLO7 | PLO4, PLO5 | H9, H11, H15, H16, H19; S5, S9, S10 |
+| EN-132-306 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
+| EN-132-307 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
+| EN-132-303 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
+| EN-132-304 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
+| EN-132-308 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
 | EN-132-201 | Intelligent Sensing and Actuation Systems | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H9, H17; EF4, EF5, EF6 |
 
 ### 4.4 กลุ่มโครงงาน สัมมนา และประสบการณ์วิชาชีพ
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | หลักฐานสำคัญ |
 |---|---|---|---|---|
-| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
+| EN-134-301 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
 | EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
 | EN-134-303 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
 | EN-134-404 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
-| EN-135-401 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |
+| EN-135-301 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |
 | EN-135-402 | สหกิจศึกษา | PLO1–PLO7 | — | employer acceptance, team, experiment/data, professional handover |
 
 ## 5. วิชาเลือกชีพ 5 วิชา

@@ -20,6 +20,7 @@
 13. [[13_Common_Core_and_Track_Foundation_4plus4|ทางเลือกเดิม: แกนร่วม 4 วิชา + พื้นฐานเฉพาะ Track 4 วิชา]]
 14. [[14_External_Expert_Feedback_Analysis|สังเคราะห์ข้อเสนอกรรมการผู้ทรงคุณวุฒิและแนวทางปรับหลักสูตร]] 🆕
 15. [[15_Current_vs_Proposed_Courses_Groups_2_1_to_2_3|แนวทางล่าสุด: Core Track 9 วิชา + เลือกชีพ 5 วิชา และ Gap Closure]] 🆕
+16. [[16_Teaching_Learning_Process_Section5|หมวดที่ 5 · กระบวนการจัดการเรียนการสอน (กลยุทธ์การสอน 5 รูปแบบ, Growth Mindset, Lifelong Learning, การพัฒนาคณาจารย์)]] 🆕
 
 ### เอกสารประกอบการวิเคราะห์และสังเคราะห์
 

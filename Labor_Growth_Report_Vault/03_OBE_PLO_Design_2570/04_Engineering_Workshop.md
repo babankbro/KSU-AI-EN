@@ -23,7 +23,7 @@
 
 ---
 
-### **EN-001-110 ปฏิบัติการวิศวกรรมเชิงบูรณาการ III (Integrated Engineering Workshop III)**
+### **EN-001-201 ปฏิบัติการวิศวกรรมเชิงบูรณาการ III (Integrated Engineering Workshop III)**
 **หน่วยกิต:** 1(0-3-1)
 **เป้าหมายทักษะ:** ระบบอัตโนมัติทางอุตสาหกรรม (PLC), Edge AI, และการทดสอบระบบแบบบูรณาการ (System Integration)
 

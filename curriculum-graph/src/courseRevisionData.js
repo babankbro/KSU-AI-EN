@@ -73,7 +73,7 @@ export const COURSE_REVISION = {
     "dEn": "Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-110": {
+  "EN-001-201": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ III",
     "e": "Integrated Engineering Workshop III",
     "cr": "1(0-3-1)",
@@ -145,7 +145,7 @@ export const COURSE_REVISION = {
     "dEn": "Computer architecture and AI accelerators; graphics processing units and specialized accelerators; storage and parallel computing; network architectures, protocols, routing, wireless networks, and industrial networks; integration of information technology, operational technology, edge, and cloud; network segmentation; identity and access management; encryption; secure configuration; and vulnerability management; high-availability design; backup and restore; disaster recovery; monitoring of resources and services; introductory incident, problem, change, and asset management; design of infrastructure that is secure, resilient, scalable, and ready for operational handover",
     "source": "03_AI_Core.md"
   },
-  "EN-132-202": {
+  "EN-132-301": {
     "t": "ธุรกิจอัจฉริยะและการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Business Intelligence and Product Design",
     "cr": "3(2-2-5)",
@@ -153,7 +153,7 @@ export const COURSE_REVISION = {
     "dEn": "Discovery and formulation of problems suitable for artificial intelligence; user, customer, market, and stakeholder research; process and value-chain mapping; analysis of business data to identify product opportunities; definition of functional, data, model, performance, security, and operational requirements; assessment of data, technology, legal, resource, and business readiness and feasibility; conceptual architecture and product prototyping; business-model, value-proposition, total-cost-of-ownership, and return design; responsible and sustainable design; intellectual property; acceptance criteria; user testing; adoption planning; change management; and AI product roadmaps for agriculture, industry, and enterprise",
     "source": "04_Track_Core.md"
   },
-  "EN-132-203": {
+  "EN-132-305": {
     "t": "ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน",
     "e": "Decision Intelligence and Supply Chain Management",
     "cr": "3(2-2-5)",
@@ -161,7 +161,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of decision-support systems and decision intelligence; operational indicators and data models; descriptive, diagnostic, predictive, and prescriptive analytics; forecasting of demand, supply, prices, yields, and capacity; planning of materials, inventory, production, warehouses, logistics, and transportation; traceability and risk management; scenario and uncertainty analysis, simulation, and operations-research optimization; design of recommendation and human-in-the-loop decision systems; dashboards and communication of recommendations to operators, executives, farmers, and entrepreneurs; case studies in rice, sugarcane, sugar, cassava, industrial production, and enterprise services",
     "source": "04_Track_Core.md"
   },
-  "EN-132-204": {
+  "EN-132-302": {
     "t": "ระบบเกษตรอัจฉริยะ",
     "e": "Smart Agriculture Systems",
     "cr": "3(2-2-5)",
@@ -169,7 +169,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
-  "EN-132-205": {
+  "EN-132-306": {
     "t": "ระบบอัตโนมัติทางการเกษตร",
     "e": "Autonomous Systems for Agriculture",
     "cr": "3(2-2-5)",
@@ -177,7 +177,7 @@ export const COURSE_REVISION = {
     "dEn": "Regulation, law, safety, and ethics of autonomous agricultural systems; principles of unmanned aerial vehicles; operating conditions; transportation; and aircraft registration; mission and flight-path planning; high-precision satellite positioning; spatial data acquisition using sensors and RGB, multispectral, and thermal cameras; principles of remote sensing; digital mapping; terrain and three-dimensional modeling; geographic information systems and GeoAI; application of artificial intelligence to the processing and analysis of aerial imagery; principles of agricultural mobile robots and manipulators; perception, localization, navigation, obstacle avoidance, machine vision, and actuator control; crop-health assessment; precision spraying; surveying; and harvesting; integration of UAV and robot data with farm systems; field testing of performance, safety, and environmental responsibility",
     "source": "04_Track_Core.md"
   },
-  "EN-132-208": {
+  "EN-132-307": {
     "t": "ระบบการผลิตอัจฉริยะ",
     "e": "Smart Manufacturing Systems",
     "cr": "3(2-2-5)",
@@ -185,7 +185,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of process and production engineering; mass and energy balances; thermal processes and utilities; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; manufacturing execution systems and integration with enterprise resource planning; overall equipment effectiveness; statistical process control; traceability; quality analysis and prediction; Lean production; Six Sigma; scheduling; and optimization; foundations of maintenance and reliability; quality and safety standards and trade requirements; assessment of cost, energy, waste, carbon, and sustainability in rice mills, sugar plants, cassava starch plants, and related industries",
     "source": "04_Track_Core.md"
   },
-  "EN-132-206": {
+  "EN-132-303": {
     "t": "ระบบอัตโนมัติและหุ่นยนต์อุตสาหกรรมอัจฉริยะ",
     "e": "Intelligent Industrial Automation and Robotics Systems",
     "cr": "3(2-2-5)",
@@ -193,7 +193,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture of automation and control systems; programmable logic controllers and standard programming languages; distributed control systems; SCADA; and human-machine interfaces; input and output signals; industrial networks and protocols; industrial and collaborative robots; drive systems; motion control; and machine vision; design of robotic cells, system layouts, piping and instrumentation diagrams, and control-circuit drawings; simulation and integration with AI, IoT, digital twins, and manufacturing systems; interface and acceptance testing; installation; verification; and handover; machine and robot safety; interlocks; emergency stops; risk assessment; ergonomics; and operational-technology cybersecurity",
     "source": "04_Track_Core.md"
   },
-  "EN-132-207": {
+  "EN-132-304": {
     "t": "วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์",
     "e": "Software and AI Engineering",
     "cr": "3(2-2-5)",
@@ -201,7 +201,7 @@ export const COURSE_REVISION = {
     "dEn": "Processes and lifecycle of AI software engineering; requirements analysis and solution-architecture design; design of data models, databases, application programming interfaces, and system integration; development of back-end, front-end, and full-stack applications connected to AI models; responsible use of AI development assistants; version control; code review; unit, interface, system, and model testing; quality assurance, security, and privacy; continuous integration and delivery pipelines; containerization and deployment to cloud and edge; monitoring of logs, metrics, traces, and service-level objectives; acceptance testing; documentation; operational runbooks; incident management; and system handover",
     "source": "04_Track_Core.md"
   },
-  "EN-132-209": {
+  "EN-132-308": {
     "t": "ระบบเอเจนต์ปัญญาประดิษฐ์",
     "e": "Agentic AI Systems",
     "cr": "3(2-2-5)",
