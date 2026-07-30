@@ -2,7 +2,7 @@
 
 > หลักสูตรวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ พ.ศ. 2570  
 > สถานะ: ข้อเสนอเพื่อพิจารณา — รหัสวิชาเฉพาะ Track เป็นรหัสชั่วคราว  
-> **หมายเหตุรหัส:** รหัส EN-132-211 ถึง EN-132-224 ในเอกสารนี้เป็นรหัสสมมติของทางเลือก 4+4 ที่ยังไม่ได้ใช้จริง และกำหนดขึ้น**ก่อน**หลักเลขตัวที่สามตามชั้นปี จึงไม่ปรากฏใน [[../04_Course_Descriptions_2570/11_Course_Index|ดัชนีรายวิชา]] และไม่ควรนำไปอ้างอิงในเล่มหลักสูตร ให้ใช้ EN-132-201 กับ EN-132-301–308 ตามแนวทางล่าสุดแทน  
+> **หมายเหตุรหัส:** รหัส EN-132-211 ถึง EN-132-224 ในเอกสารนี้เป็นรหัสสมมติของทางเลือก 4+4 ที่ยังไม่ได้ใช้จริง และกำหนดขึ้น**ก่อน**หลักเลขตัวที่สามตามชั้นปี จึงไม่ปรากฏใน [[../04_Course_Descriptions_2570/11_Course_Index|ดัชนีรายวิชา]] และไม่ควรนำไปอ้างอิงในเล่มหลักสูตร ให้ใช้ EN-132-201 กับ EN-132-302–309 ตามแนวทางล่าสุดแทน  
 > วันที่: 29 กรกฎาคม 2569 / 2026-07-29
 
 > ตารางเปรียบเทียบรายวิชาเดิมกับข้อเสนอใหม่ครบกลุ่ม 2.1–2.3 ดู [[15_Current_vs_Proposed_Courses_Groups_2_1_to_2_3|Current vs Proposed Courses]]
@@ -31,7 +31,7 @@
 
 ### CC1 การออกแบบผลิตภัณฑ์ ข้อกำหนด และโซลูชันปัญญาประดิษฐ์
 
-**AI Product, Requirements and Solution Design** — เสนอใช้ EN-132-301 (ปรับจาก AI Business and Product Design)
+**AI Product, Requirements and Solution Design** — เสนอใช้ EN-132-302 (ปรับจาก AI Business and Product Design)
 
 - Problem discovery, stakeholder/user research และ process mapping
 - Functional/non-functional requirements, data/AI feasibility และ risk
@@ -43,7 +43,7 @@
 
 ### CC2 ระบบสนับสนุนการตัดสินใจและการวิเคราะห์การดำเนินงาน
 
-**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-305 (ปรับจาก AI for Production and Supply Chain)
+**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-303 (ปรับจาก AI for Production and Supply Chain)
 
 - KPI/BI, descriptive–predictive–prescriptive analytics รวม business, energy, resource และ carbon KPI
 - Forecasting, scenario analysis, simulation และ optimization/operations research
@@ -55,7 +55,7 @@
 
 ### CC3 วิศวกรรมซอฟต์แวร์ สถาปัตยกรรม และการบูรณาการระบบ AI
 
-**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-304 (ปรับจาก Software Development and AI Engineering)
+**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-308 (ปรับจาก Software Development and AI Engineering)
 
 - Backend/API, event/data flow, database และส่วนติดต่อผู้ใช้ที่จำเป็น
 - Architecture pattern, system/interface contract และ integration testing
@@ -67,7 +67,7 @@
 
 ### CC4 ระบบปัญญาประดิษฐ์เชิงสร้างสรรค์และเอเจนต์
 
-**Generative and Agentic AI Systems** — เสนอใช้ EN-132-308 (ปรับจาก Agentic AI Systems)
+**Generative and Agentic AI Systems** — เสนอใช้ EN-132-309 (ปรับจาก Agentic AI Systems)
 
 - Foundation models, prompt/context engineering, embedding และ vector retrieval
 - RAG, tool/function use, workflow agents และ multi-agent pattern
@@ -83,9 +83,9 @@
 | รหัสชั่วคราว | รายวิชา | ขอบเขตแกน | Skills | อาชีพ |
 |---|---|---|---|---|
 | EN-132-201 | **ระบบตรวจวัด IoT และ Edge สำหรับฟาร์มอัจฉริยะ** / *Smart Farming IoT, Edge and Sensing Systems* | sensor/actuator, connectivity, edge gateway, calibration, soil-water-weather data, reliability และ field deployment | H5, H9, H11, H16 | C03, C04 |
-| EN-132-301 | **เกษตรแม่นยำและระบบตัดสินใจฟาร์ม** / *Precision Agriculture and Farm Decision Intelligence* | crop/soil/livestock data, yield/disease forecasting, recommendation, irrigation, traceability และ farm economics | H3, H8, H11, H16, H19 | C03, C12 |
-| EN-132-305 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | H7, H8, H11, H16 | C03, C05, C12 |
-| EN-132-302 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | H5, H8, H9, H16 | C03–C05 |
+| EN-132-302 | **เกษตรแม่นยำและระบบตัดสินใจฟาร์ม** / *Precision Agriculture and Farm Decision Intelligence* | crop/soil/livestock data, yield/disease forecasting, recommendation, irrigation, traceability และ farm economics | H3, H8, H11, H16, H19 | C03, C12 |
+| EN-132-303 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | H7, H8, H11, H16 | C03, C05, C12 |
+| EN-132-304 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | H5, H8, H9, H16 | C03–C05 |
 
 **สิ่งที่ควรย้ายไปเป็นวิชาเลือก T1:** โรงงานผลิตพืช/เกษตรแนวดิ่ง, ปศุสัตว์อัจฉริยะ, หลังการเก็บเกี่ยว, biotechnology, climate risk และ agri-supply-chain เชิงลึก
 

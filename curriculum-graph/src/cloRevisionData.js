@@ -1,7 +1,7 @@
 // Generated from 10_Course_Learning_Outcomes_CLO_Mapping.md.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const CLO_REVISION = {
-  "EN-001-101": {
+  "EN-001-121": {
     "clos": [
       {
         "n": 1,
@@ -81,7 +81,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-102": {
+  "EN-001-122": {
     "clos": [
       {
         "n": 1,
@@ -164,7 +164,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-103": {
+  "EN-001-123": {
     "clos": [
       {
         "n": 1,
@@ -240,7 +240,7 @@ export const CLO_REVISION = {
       "AISK03"
     ]
   },
-  "EN-001-104": {
+  "EN-001-124": {
     "clos": [
       {
         "n": 1,
@@ -324,7 +324,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-105": {
+  "EN-001-125": {
     "clos": [
       {
         "n": 1,
@@ -395,7 +395,7 @@ export const CLO_REVISION = {
       "AISK03"
     ]
   },
-  "EN-001-106": {
+  "EN-001-126": {
     "clos": [
       {
         "n": 1,
@@ -473,7 +473,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-107": {
+  "EN-001-127": {
     "clos": [
       {
         "n": 1,
@@ -553,7 +553,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-001-108": {
+  "EN-001-128": {
     "clos": [
       {
         "n": 1,
@@ -614,7 +614,7 @@ export const CLO_REVISION = {
       "AISK04"
     ]
   },
-  "EN-001-109": {
+  "EN-001-129": {
     "clos": [
       {
         "n": 1,
@@ -695,7 +695,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-201": {
+  "EN-001-230": {
     "clos": [
       {
         "n": 1,
@@ -923,7 +923,7 @@ export const CLO_REVISION = {
       "AISK05"
     ]
   },
-  "EN-131-204": {
+  "EN-131-203": {
     "clos": [
       {
         "n": 1,
@@ -1001,7 +1001,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-201": {
+  "EN-131-204": {
     "clos": [
       {
         "n": 1,
@@ -1153,7 +1153,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-202": {
+  "EN-131-206": {
     "clos": [
       {
         "n": 1,
@@ -1231,7 +1231,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-131-203": {
+  "EN-131-207": {
     "clos": [
       {
         "n": 1,
@@ -1309,7 +1309,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-131-206": {
+  "EN-131-208": {
     "clos": [
       {
         "n": 1,
@@ -1390,7 +1390,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-132-301": {
+  "EN-132-302": {
     "clos": [
       {
         "n": 1,
@@ -1496,7 +1496,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-132-305": {
+  "EN-132-303": {
     "clos": [
       {
         "n": 1,
@@ -1588,7 +1588,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-302": {
+  "EN-132-304": {
     "clos": [
       {
         "n": 1,
@@ -1700,7 +1700,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-306": {
+  "EN-132-305": {
     "clos": [
       {
         "n": 1,
@@ -1779,7 +1779,7 @@ export const CLO_REVISION = {
       "AISK04"
     ]
   },
-  "EN-132-307": {
+  "EN-132-306": {
     "clos": [
       {
         "n": 1,
@@ -1862,7 +1862,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-132-303": {
+  "EN-132-307": {
     "clos": [
       {
         "n": 1,
@@ -1944,7 +1944,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-304": {
+  "EN-132-308": {
     "clos": [
       {
         "n": 1,
@@ -2028,7 +2028,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-308": {
+  "EN-132-309": {
     "clos": [
       {
         "n": 1,
@@ -2747,7 +2747,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-133-331": {
+  "EN-135-331": {
     "clos": [
       {
         "n": 1,
@@ -2840,7 +2840,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-133-332": {
+  "EN-135-332": {
     "clos": [
       {
         "n": 1,
@@ -2930,7 +2930,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-133-333": {
+  "EN-135-333": {
     "clos": [
       {
         "n": 1,

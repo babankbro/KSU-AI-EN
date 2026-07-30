@@ -1,7 +1,7 @@
 // Generated from Labor_Growth_Report_Vault/04_Course_Descriptions_2570.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const COURSE_REVISION = {
-  "EN-001-101": {
+  "EN-001-121": {
     "t": "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน",
     "e": "Engineering Economics and Cost Analysis",
     "cr": "3(3-0-6)",
@@ -9,7 +9,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of engineering economics; time value of money; interest and discounting; net present value; internal rate of return; benefit-cost ratio; and payback period; cost estimation for data, cloud, automation, and artificial intelligence systems; total cost of ownership and life-cycle costing; depreciation; break-even analysis; unit economics; and business value creation; sensitivity, scenario, risk, and uncertainty analysis; assessment of resource, energy, and carbon costs; preparation of business cases and investment proposals for smart agriculture, smart manufacturing, and AI services",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-102": {
+  "EN-001-122": {
     "t": "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม",
     "e": "Statistics and Data Analysis for Engineering",
     "cr": "3(3-0-6)",
@@ -17,7 +17,7 @@ export const COURSE_REVISION = {
     "dEn": "Probability, random variables, and probability distributions; descriptive and inferential statistics; sampling; estimation; confidence intervals; and hypothesis testing; analysis of variance; regression; correlation; and time-series analysis; design of experiments; measurement-system analysis; and statistical process control; uncertainty and sensitivity analysis; evaluation of artificial intelligence models; examination of data leakage and bias; interpretation and communication of statistical evidence for decisions in agriculture, industry, and digital systems",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-103": {
+  "EN-001-123": {
     "t": "วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ",
     "e": "Thermal-Fluid Engineering in Smart Systems",
     "cr": "3(3-0-6)",
@@ -25,7 +25,7 @@ export const COURSE_REVISION = {
     "dEn": "Fundamental principles of thermodynamics; properties and phases of matter; ideal gases and working fluids; the first and second laws of thermodynamics; thermodynamic processes; and mass and energy balances; combustion and thermal-energy systems; heat conduction, convection, and radiation; heat exchangers; refrigeration and air-conditioning systems; and drying processes; fluid properties; fluid statics; continuity and Bernoulli equations; internal pipe flow; head losses; pumps; fans; and valves; measurement of temperature, pressure, flow, and energy; applications of thermal-fluid engineering to agricultural drying, irrigation, greenhouses, cold rooms, agro-industrial plants, and thermal management of computer equipment and artificial intelligence servers; energy-efficiency improvement; waste-heat recovery; and carbon-emission assessment",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-104": {
+  "EN-001-124": {
     "t": "การเขียนแบบวิศวกรรมและการวางผังระบบ",
     "e": "Engineering Drawing and System Layout Design",
     "cr": "3(2-2-6)",
@@ -33,7 +33,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and standards of engineering drawing; projection; sectional and pictorial views; dimensioning; tolerancing; and standard symbols; part and assembly drawings; two- and three-dimensional computer-aided design; layouts for farms, greenhouses, sensing stations, robotic cells, and production lines; piping and instrumentation diagrams; electrical and control-circuit drawings; equipment arrangement for safety, maintainability, and ergonomics; drawing revision and configuration control; transfer of drawing data to simulation, digital twins, installation, and system maintenance",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-105": {
+  "EN-001-125": {
     "t": "กลศาสตร์วัสดุและการออกแบบโครงสร้าง",
     "e": "Mechanics of Materials and Structural Design",
     "cr": "3(3-0-6)",
@@ -41,7 +41,7 @@ export const COURSE_REVISION = {
     "dEn": "Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear; bending; torsion; and deflection; combined stress; fatigue; and failure modes; material properties and material selection; factors of safety and design criteria; design of frames, fixtures, mounts, and enclosures for sensors, machines, robots, and unmanned aerial vehicles; consideration of safety, manufacturability, maintainability, service life, and life-cycle impacts of materials and structures",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-106": {
+  "EN-001-126": {
     "t": "การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Foundational Programming for Artificial Intelligence",
     "cr": "3(2-2-6)",
@@ -49,7 +49,7 @@ export const COURSE_REVISION = {
     "dEn": "Algorithmic thinking and problem solving through programming; Python programming; variables; data types; control structures; functions; modules; data structures; algorithms; and object-oriented programming; file handling; relational databases; SQL; and application programming interfaces; use of data and AI libraries; version control with Git; debugging; unit testing; and documentation; critical use of AI coding assistants; verification of code correctness, security, and licensing; development of introductory programs for agricultural data, IoT devices, and AI applications",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-107": {
+  "EN-001-127": {
     "t": "พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ",
     "e": "Electrical and Electronic Fundamentals for Intelligent Systems",
     "cr": "3(3-0-6)",
@@ -57,7 +57,7 @@ export const COURSE_REVISION = {
     "dEn": "Direct-current and alternating-current circuits; Kirchhoff's laws and circuit analysis; electronic components; digital and logic systems; sensors; transducers; signal conditioning; calibration; and data acquisition; analog-to-digital and digital-to-analog conversion; actuators; motors; drive systems; and introductory power electronics; power supplies; grounding; protective devices; and electrical safety; design and testing of sensing and actuation circuits for IoT systems, robots, unmanned aerial vehicles, smart farms, and smart factories",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-108": {
+  "EN-001-128": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ I",
     "e": "Integrated Engineering Workshop I",
     "cr": "1(0-3-1)",
@@ -65,7 +65,7 @@ export const COURSE_REVISION = {
     "dEn": "Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-109": {
+  "EN-001-129": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ II",
     "e": "Integrated Engineering Workshop II",
     "cr": "1(0-3-1)",
@@ -73,7 +73,7 @@ export const COURSE_REVISION = {
     "dEn": "Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-201": {
+  "EN-001-230": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ III",
     "e": "Integrated Engineering Workshop III",
     "cr": "1(0-3-1)",
@@ -97,7 +97,7 @@ export const COURSE_REVISION = {
     "dEn": "Linear algebra; vectors; matrices; linear transformations; eigenvalues; and singular value decomposition; multivariable calculus; partial derivatives; and the chain rule; probability; random variables; distributions; and Bayesian inference; numerical methods and stability analysis; unconstrained and constrained optimization; gradient descent; backpropagation; linear and nonlinear optimization; foundations of operations research and decision modeling; application of mathematics to the development, analysis, and comparison of AI models and engineering systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-204": {
+  "EN-131-203": {
     "t": "คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ",
     "e": "Computer Vision and Image Analysis",
     "cr": "3(2-2-5)",
@@ -105,7 +105,7 @@ export const COURSE_REVISION = {
     "dEn": "Image formation, camera calibration, and image representation; digital image and video processing; image enhancement, filtering, segmentation, and transformation; feature extraction; object detection, classification, tracking, and segmentation with deep learning; analysis of RGB, multispectral, and thermal imagery; preparation and annotation of image data; evaluation of model performance, bias, robustness, and explainability; model adaptation for edge deployment; applications to plant disease, agricultural-area assessment, grading, quality inspection, safety, and production-process monitoring",
     "source": "03_AI_Core.md"
   },
-  "EN-131-201": {
+  "EN-131-204": {
     "t": "ระบบอินเทอร์เน็ตของสรรพสิ่งอัจฉริยะและการประมวลผลที่ขอบเครือข่าย",
     "e": "Smart Internet of Things and Edge Computing",
     "cr": "3(2-2-5)",
@@ -121,7 +121,7 @@ export const COURSE_REVISION = {
     "dEn": "Cloud architectures and service models; virtual machines, containers, and management of AI computing resources; experiment tracking; management of data, features, models, and model registries; construction of model training, testing, deployment, and updating pipelines; continuous integration, delivery, and training; quality gates and deployment approval; monitoring of performance and data or model drift; logs, metrics, traces, and alerts; service-level objectives and operational runbooks; rollback and incident response; balancing accuracy, latency, availability, cost, energy, and carbon; application of MLOps to agricultural, industrial, and digital-service systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-202": {
+  "EN-131-206": {
     "t": "การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก",
     "e": "Machine Learning and Deep Learning",
     "cr": "3(2-2-5)",
@@ -129,7 +129,7 @@ export const COURSE_REVISION = {
     "dEn": "The machine learning model-development process; supervised, unsupervised, and semi-supervised learning; regression, classification, clustering, and dimensionality reduction; decision trees, ensemble methods, support vector machines, and neural networks; convolutional, sequential, and transformer architectures; transfer learning and fine-tuning; dataset splitting; prevention of data leakage; management of class imbalance and data quality; metric selection; cross-validation; hyperparameter tuning; uncertainty, robustness, explainability, and experiment tracking; reproducible experimentation and model evaluation for agricultural, production-process, and business data",
     "source": "03_AI_Core.md"
   },
-  "EN-131-203": {
+  "EN-131-207": {
     "t": "วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่",
     "e": "Data Engineering and Big Data",
     "cr": "3(3-0-6)",
@@ -137,7 +137,7 @@ export const COURSE_REVISION = {
     "dEn": "Data lifecycle and architecture; dataset specifications, data models, and data contracts; relational databases, SQL, NoSQL databases, data warehouses, data lakes, and lakehouse architecture; design of batch and streaming pipelines; extract, transform, and load processes; workflow orchestration and distributed processing; validation of data quality, completeness, and change; data governance, metadata, lineage, versioning, and data protection; design of semantic layers and models for business analytics; integration of sensor, farm, production-process, supply-chain, and enterprise data for AI and decision-support systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-206": {
+  "EN-131-208": {
     "t": "โครงสร้างพื้นฐานฮาร์ดแวร์และระบบเครือข่ายสำหรับการประมวลผลปัญญาประดิษฐ์",
     "e": "Infrastructure and Network Systems for AI Computing",
     "cr": "3(3-0-6)",
@@ -145,7 +145,7 @@ export const COURSE_REVISION = {
     "dEn": "Computer architecture and AI accelerators; graphics processing units and specialized accelerators; storage and parallel computing; network architectures, protocols, routing, wireless networks, and industrial networks; integration of information technology, operational technology, edge, and cloud; network segmentation; identity and access management; encryption; secure configuration; and vulnerability management; high-availability design; backup and restore; disaster recovery; monitoring of resources and services; introductory incident, problem, change, and asset management; design of infrastructure that is secure, resilient, scalable, and ready for operational handover",
     "source": "03_AI_Core.md"
   },
-  "EN-132-301": {
+  "EN-132-302": {
     "t": "ธุรกิจอัจฉริยะและการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Business Intelligence and Product Design",
     "cr": "3(2-2-5)",
@@ -153,7 +153,7 @@ export const COURSE_REVISION = {
     "dEn": "Discovery and formulation of problems suitable for artificial intelligence; user, customer, market, and stakeholder research; process and value-chain mapping; analysis of business data to identify product opportunities; definition of functional, data, model, performance, security, and operational requirements; assessment of data, technology, legal, resource, and business readiness and feasibility; conceptual architecture and product prototyping; business-model, value-proposition, total-cost-of-ownership, and return design; responsible and sustainable design; intellectual property; acceptance criteria; user testing; adoption planning; change management; and AI product roadmaps for agriculture, industry, and enterprise",
     "source": "04_Track_Core.md"
   },
-  "EN-132-305": {
+  "EN-132-303": {
     "t": "ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน",
     "e": "Decision Intelligence and Supply Chain Management",
     "cr": "3(2-2-5)",
@@ -161,7 +161,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of decision-support systems and decision intelligence; operational indicators and data models; descriptive, diagnostic, predictive, and prescriptive analytics; forecasting of demand, supply, prices, yields, and capacity; planning of materials, inventory, production, warehouses, logistics, and transportation; traceability and risk management; scenario and uncertainty analysis, simulation, and operations-research optimization; design of recommendation and human-in-the-loop decision systems; dashboards and communication of recommendations to operators, executives, farmers, and entrepreneurs; case studies in rice, sugarcane, sugar, cassava, industrial production, and enterprise services",
     "source": "04_Track_Core.md"
   },
-  "EN-132-302": {
+  "EN-132-304": {
     "t": "ระบบเกษตรอัจฉริยะ",
     "e": "Smart Agriculture Systems",
     "cr": "3(2-2-5)",
@@ -169,7 +169,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
-  "EN-132-306": {
+  "EN-132-305": {
     "t": "ระบบอัตโนมัติทางการเกษตร",
     "e": "Autonomous Systems for Agriculture",
     "cr": "3(2-2-5)",
@@ -177,7 +177,7 @@ export const COURSE_REVISION = {
     "dEn": "Regulation, law, safety, and ethics of autonomous agricultural systems; principles of unmanned aerial vehicles; operating conditions; transportation; and aircraft registration; mission and flight-path planning; high-precision satellite positioning; spatial data acquisition using sensors and RGB, multispectral, and thermal cameras; principles of remote sensing; digital mapping; terrain and three-dimensional modeling; geographic information systems and GeoAI; application of artificial intelligence to the processing and analysis of aerial imagery; principles of agricultural mobile robots and manipulators; perception, localization, navigation, obstacle avoidance, machine vision, and actuator control; crop-health assessment; precision spraying; surveying; and harvesting; integration of UAV and robot data with farm systems; field testing of performance, safety, and environmental responsibility",
     "source": "04_Track_Core.md"
   },
-  "EN-132-307": {
+  "EN-132-306": {
     "t": "ระบบการผลิตอัจฉริยะ",
     "e": "Smart Manufacturing Systems",
     "cr": "3(2-2-5)",
@@ -185,7 +185,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of process and production engineering; mass and energy balances; thermal processes and utilities; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; manufacturing execution systems and integration with enterprise resource planning; overall equipment effectiveness; statistical process control; traceability; quality analysis and prediction; Lean production; Six Sigma; scheduling; and optimization; foundations of maintenance and reliability; quality and safety standards and trade requirements; assessment of cost, energy, waste, carbon, and sustainability in rice mills, sugar plants, cassava starch plants, and related industries",
     "source": "04_Track_Core.md"
   },
-  "EN-132-303": {
+  "EN-132-307": {
     "t": "ระบบอัตโนมัติและหุ่นยนต์อุตสาหกรรมอัจฉริยะ",
     "e": "Intelligent Industrial Automation and Robotics Systems",
     "cr": "3(2-2-5)",
@@ -193,7 +193,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture of automation and control systems; programmable logic controllers and standard programming languages; distributed control systems; SCADA; and human-machine interfaces; input and output signals; industrial networks and protocols; industrial and collaborative robots; drive systems; motion control; and machine vision; design of robotic cells, system layouts, piping and instrumentation diagrams, and control-circuit drawings; simulation and integration with AI, IoT, digital twins, and manufacturing systems; interface and acceptance testing; installation; verification; and handover; machine and robot safety; interlocks; emergency stops; risk assessment; ergonomics; and operational-technology cybersecurity",
     "source": "04_Track_Core.md"
   },
-  "EN-132-304": {
+  "EN-132-308": {
     "t": "วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์",
     "e": "Software and AI Engineering",
     "cr": "3(2-2-5)",
@@ -201,7 +201,7 @@ export const COURSE_REVISION = {
     "dEn": "Processes and lifecycle of AI software engineering; requirements analysis and solution-architecture design; design of data models, databases, application programming interfaces, and system integration; development of back-end, front-end, and full-stack applications connected to AI models; responsible use of AI development assistants; version control; code review; unit, interface, system, and model testing; quality assurance, security, and privacy; continuous integration and delivery pipelines; containerization and deployment to cloud and edge; monitoring of logs, metrics, traces, and service-level objectives; acceptance testing; documentation; operational runbooks; incident management; and system handover",
     "source": "04_Track_Core.md"
   },
-  "EN-132-308": {
+  "EN-132-309": {
     "t": "ระบบเอเจนต์ปัญญาประดิษฐ์",
     "e": "Agentic AI Systems",
     "cr": "3(2-2-5)",
@@ -217,7 +217,7 @@ export const COURSE_REVISION = {
     "dEn": "Measurement science and instrumentation systems; selection, installation, and calibration of sensors and transmitters; signal conditioning; data acquisition; and uncertainty analysis; actuators, motors, and drive systems; principles of pneumatic and hydraulic systems; power sources, valves, cylinders, and electro-pneumatic and electro-hydraulic circuits; integration with microcontrollers, programmable logic controllers, and edge devices; IoT and industrial protocols; gateways; edge processing and inference; device management and monitoring; reliability; fault diagnosis; interlocks; and safety; design, connection, testing, and integration of a farm sensing station and an industrial sensing-actuation station with cloud, SCADA, and AI systems",
     "source": "04_Track_Core.md"
   },
-  "EN-133-301": {
+  "EN-135-301": {
     "t": "เกษตรกรรมอัจฉริยะและการจัดชลประทาน",
     "e": "Smart Agriculture and Irrigation Management",
     "cr": "3(2-2-5)",
@@ -225,7 +225,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of smart agriculture and precision farming; analysis and management of soil and water resources with AI; design of smart irrigation systems — drip, sprinkler, and flood irrigation; soil-moisture and field-water measurement with sensors and IoT; crop water-demand forecasting with machine learning; automatic irrigation control and water conservation; AI-based drought and flood warning systems; water management at plot and watershed levels; application of smart irrigation to crop production",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-302": {
+  "EN-135-302": {
     "t": "ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำ",
     "e": "Artificial Intelligence for Precision Agriculture",
     "cr": "3(3-0-6)",
@@ -233,7 +233,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and concepts of precision agriculture; application of artificial intelligence to crop and livestock production; management and analysis of agricultural data from sensors, soil, weather, satellites, and unmanned aerial vehicles; crop-nutrient management recommendations; detection and classification of plant diseases and insect pests using computer vision and deep learning; yield forecasting and production planning using machine learning; smart-farm management recommendation systems; integration of multi-source data to support precision-agriculture decisions; application of artificial intelligence to improve the efficiency of rice, sugarcane, cassava, and livestock production",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-303": {
+  "EN-135-303": {
     "t": "ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ทางการเกษตร",
     "e": "Geographic Information Systems and Spatial Analysis for Agriculture",
     "cr": "3(2-2-5)",
@@ -241,7 +241,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and components of geographic information systems (GIS); spatial data and reference coordinate systems; management and analysis of vector and raster spatial data; creation and analysis of digital maps with dedicated software; processing of satellite data and aerial imagery; spatial analysis with overlay, buffer, and network analysis; integration of GIS with AI and machine learning for advanced spatial analysis; application of GIS to agricultural land-use planning, water-resource management, crop-area suitability assessment, and land-use-change monitoring",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-304": {
+  "EN-135-304": {
     "t": "เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว",
     "e": "Postharvest Management Technology and Innovation",
     "cr": "3(3-0-6)",
@@ -249,7 +249,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and processes of postharvest management of agricultural produce; physiology and biochemistry of harvested produce; produce losses and loss-reduction approaches; produce sorting and grading with AI and computer vision; smart drying and produce-storage systems; temperature and humidity control in storage with IoT and AI; smart packaging and shelf-life extension; traceability and produce-quality certification systems; new innovations and technologies in postharvest management; applications to postharvest management of rice, sugarcane, and cassava in agro-industrial contexts",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-305": {
+  "EN-135-305": {
     "t": "การพยากรณ์และวิเคราะห์ข้อมูลฟาร์มด้วยปัญญาประดิษฐ์",
     "e": "AI-Based Farm Data Forecasting and Analytics",
     "cr": "3(2-2-5)",
@@ -257,7 +257,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and methods of forecasting agricultural data with AI; collection and management of big data from farm sensor networks; time-series analysis of crop-yield and weather data; yield-forecasting models with machine learning and deep learning; agricultural commodity price forecasting and production planning; risk and uncertainty analysis in agriculture with AI; design of data dashboards and farm-data visualization systems for farmers and managers; evaluation and validation of forecasting models; application of AI analytics to forecasting and analyzing rice, sugarcane, and cassava production data",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-306": {
+  "EN-135-306": {
     "t": "โรงงานผลิตพืชอัจฉริยะและเกษตรกรรมแนวดิ่ง",
     "e": "Smart Plant Factories and Vertical Farming",
     "cr": "3(2-2-5)",
@@ -265,7 +265,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and concepts of closed plant factories and vertical farming; architecture and components of plant factories; LED artificial-lighting systems and AI-based light-spectrum control; soilless cultivation systems — hydroponics, aeroponics, and aquaponics; automated greenhouse control of temperature, humidity, carbon dioxide, and nutrients; crop-health monitoring and disease management with computer vision and AI; energy conservation and resource management in plant factories; cost-benefit analysis of plant-factory investment; application of smart plant-factory technology to high-value crops and medicinal plants",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-307": {
+  "EN-135-307": {
     "t": "เทคโนโลยีปัญญาประดิษฐ์เพื่อการปศุสัตว์อัจฉริยะ",
     "e": "Artificial Intelligence Technology for Smart Livestock",
     "cr": "3(2-2-5)",
@@ -273,7 +273,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and concepts of smart livestock farming; animal-health monitoring with IoT and wearable sensors; animal-behavior analysis with computer vision and AI; animal-disease prediction and detection with machine learning; automatic feeding systems and AI-based nutrition management; IoT-based environmental management of livestock housing; herd tracking and management with GPS and AI; analysis of production data and livestock-farm efficiency; livestock-product traceability systems; application of AI technology to beef cattle, dairy cattle, swine, and poultry farming",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-308": {
+  "EN-135-308": {
     "t": "วิสัยทัศน์คอมพิวเตอร์สำหรับการจำแนกและคัดเกรดทางการเกษตร",
     "e": "Computer Vision for Agricultural Classification and Grading",
     "cr": "3(2-2-5)",
@@ -281,7 +281,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of computer vision for classification and grading of agricultural produce; design and installation of camera and lighting systems for produce inspection; creation and management of agricultural-produce image datasets for training AI models; training and fine-tuning of deep learning models for classification and defect detection; measurement of produce size and weight with image processing; integration of computer-vision systems with conveyor belts and automatic sorting systems; assessment of system accuracy and performance; application of computer vision to the classification and grading of rice, sugarcane, cassava, and other produce on agro-industrial production lines",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-309": {
+  "EN-135-309": {
     "t": "การเรียนรู้ของเครื่องและการวิเคราะห์ข้อมูลเซนเซอร์ในฟาร์ม",
     "e": "Machine Learning and Farm Sensor Data Analytics",
     "cr": "3(2-2-5)",
@@ -289,7 +289,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and architecture of farm sensor networks; collection and transmission of data from various sensor types — soil, water, air, and crop sensors; signal processing and noise filtering of sensor data; cleaning and preparation of sensor data for AI analysis; time-series analysis and pattern discovery in sensor data; building machine learning models for forecasting and decision-making from sensor data; anomaly detection and smart alerting in farm sensor systems; visualization and reporting of sensor data through dashboards; application of machine learning to sensor-data analysis for precise management of rice, sugarcane, and cassava farms",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-310": {
+  "EN-135-310": {
     "t": "การจัดการการผลิตพืชอัจฉริยะด้วยปัญญาประดิษฐ์",
     "e": "Artificial Intelligence for Smart Crop Production Management",
     "cr": "3(2-2-5)",
@@ -297,7 +297,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and concepts of smart crop production; soil-property analysis and soil-fertility assessment; crop-nutrient analysis and site-specific fertilizer planning; water management and precision irrigation; use of sensor, IoT, and UAV imagery data to monitor crop growth; application of machine learning and deep learning to analyze plant diseases and pests from digital images; yield forecasting; production-cost analysis; profit and break-even assessment; development of decision-support systems with AI and generative AI for sustainable crop-production management; practical model development and applied projects",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-311": {
+  "EN-135-311": {
     "t": "หุ่นยนต์และระบบอัตโนมัติทางการเกษตร",
     "e": "Agricultural Robotics and Automation",
     "cr": "3(2-2-5)",
@@ -305,7 +305,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of agricultural robotics and automation; components of robotic systems — sensors, actuators, and control systems; application of IoT, AI, computer vision, and machine learning in agricultural robots; autonomous navigation, localization, and path planning; field data collection, spraying, fertilizing, weeding, harvesting, and produce-quality inspection; use of robotic arms and mobile robots in agricultural work; integration of robots with UAVs and smart-farm systems; design and development of robotic systems to solve agricultural problems; laboratory practice and projects",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-312": {
+  "EN-135-312": {
     "t": "เทคโนโลยีอากาศยานไร้คนขับและการสำรวจระยะไกลเพื่อการเกษตร",
     "e": "UAV Technology and Remote Sensing for Agriculture",
     "cr": "3(2-2-5)",
@@ -313,7 +313,7 @@ export const COURSE_REVISION = {
     "dEn": "Working principles and types of unmanned aerial vehicles; flight-path planning for agricultural surveying; use of multispectral and thermal imaging sensors to monitor crop health; processing and analysis of aerial imagery with dedicated software and machine learning; assessment of crop-field damage from disasters; creation of vegetation-index maps for growth assessment; use of UAVs for precision liquid spraying in agriculture; laws and safety in UAV operation",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-313": {
+  "EN-135-313": {
     "t": "การจัดการห่วงโซ่อุปทานสินค้าเกษตรด้วยเทคโนโลยีอัจฉริยะ",
     "e": "Smart Agricultural Supply Chain Management",
     "cr": "3(3-0-6)",
@@ -321,7 +321,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of supply-chain and logistics management for agricultural goods; use of AI in planning the sourcing and distribution of agricultural produce; smart agricultural warehouse management with IoT; produce tracking and traceability with blockchain technology across the supply chain; market-demand forecasting with machine learning to reduce food loss; efficient analysis and routing of agricultural-produce transportation; integration of technology to increase transparency and sustainability in the supply chain",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-314": {
+  "EN-135-314": {
     "t": "การประยุกต์ใช้ปัญญาประดิษฐ์ในเทคโนโลยีชีวภาพการเกษตร",
     "e": "AI Applications in Agricultural Biotechnology",
     "cr": "3(2-2-5)",
@@ -329,7 +329,7 @@ export const COURSE_REVISION = {
     "dEn": "Relationship between AI and agricultural biotechnology; use of machine learning to analyze plant and animal genetic data; DNA-sequence analysis for selecting disease- and climate-resistant varieties; use of AI to discover bioactive compounds for agricultural bio-products; simulation and prediction of interactions between organisms and their environment; ethics and biosafety in applying AI to biotechnology",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-315": {
+  "EN-135-315": {
     "t": "การจัดการความเสี่ยงทางการเกษตรและการเปลี่ยนแปลงสภาพภูมิอากาศด้วยปัญญาประดิษฐ์",
     "e": "Agricultural Risk and Climate Change Management with AI",
     "cr": "3(3-0-6)",
@@ -337,7 +337,7 @@ export const COURSE_REVISION = {
     "dEn": "Impacts of climate change on agriculture; application of AI to the analysis of large-scale climate data; forecasting of extreme weather, drought, and flooding; analysis and assessment of risk to agricultural yield with computer models; design of smart early-warning systems; adaptation strategies of the agricultural sector to climate change; crop insurance based on satellite data and AI; agricultural policy and sustainability",
     "source": "05_Electives_Smart_Agriculture.md"
   },
-  "EN-133-316": {
+  "EN-135-316": {
     "t": "การควบคุมกระบวนการขั้นสูงและระบบควบคุมแบบกระจาย",
     "e": "Advanced Process Control and Distributed Control Systems",
     "cr": "3(2-2-5)",
@@ -345,7 +345,7 @@ export const COURSE_REVISION = {
     "dEn": "Dynamic modeling and system identification of industrial processes; analysis of control-loop stability and performance; advanced PID tuning; cascade, feedforward, ratio, split-range, and multivariable control; model-predictive control and applications of artificial intelligence to process control; architecture and configuration of distributed control systems; continuous and batch process control; alarm management; human-machine interfaces; process historians; and integration with SCADA, manufacturing-execution systems, and industrial data platforms; process simulation; loop testing; factory and site acceptance testing; commissioning; and performance evaluation using stability, quality, energy, and safety indicators; case studies in sugar plants, cassava-starch plants, rice mills, and process industries",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-317": {
+  "EN-135-317": {
     "t": "การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์",
     "e": "AI-Based Predictive and Preventive Maintenance",
     "cr": "3(2-2-5)",
@@ -353,7 +353,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and strategies of industrial machine maintenance — corrective, preventive, and predictive; collection of vibration, acoustic, temperature, and electrical-current signal data from machinery; signal processing and feature extraction for machine diagnosis; building machine learning and deep learning models for anomaly detection and failure prediction; digital-twin technology for simulating and forecasting machine condition; automatic alerting and maintenance-planning systems; AI-based root-cause analysis; return-on-investment assessment of predictive-maintenance systems; application to machinery in sugar mills, cassava-starch plants, rice mills, and agricultural machinery in industrial contexts",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-318": {
+  "EN-135-318": {
     "t": "การออกแบบและการจัดการคลังสินค้าอัจฉริยะ",
     "e": "Smart Warehouse Design and Management",
     "cr": "3(2-2-5)",
@@ -361,7 +361,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and types of automated warehouse systems; warehouse design and layout for agro-industrial plants; automated storage and retrieval systems — conveyors, freight elevators, and automated guided vehicles; integration of AI and computer vision in warehouse systems for goods inspection and sorting; warehouse operation with warehouse-management systems; goods tracking with RFID and barcodes; AI-based inventory-management systems; analysis and optimization of goods flow in the warehouse through simulation; application of smart warehouse systems to rice, sugarcane, cassava, and processed agricultural products",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-319": {
+  "EN-135-319": {
     "t": "การวิจัยดำเนินงานขั้นสูงและการหาค่าเหมาะที่สุดทางอุตสาหกรรม",
     "e": "Advanced Operations Research and Industrial Optimization",
     "cr": "3(2-2-5)",
@@ -369,7 +369,7 @@ export const COURSE_REVISION = {
     "dEn": "Industrial decision modeling; linear, mixed-integer, nonlinear, and multi-objective programming; network, flow, and transportation models; resource allocation; production and workforce scheduling; routing and logistics; inventory and capacity planning; queueing theory and discrete-event simulation; simulation optimization; decision-making under uncertainty; stochastic and robust optimization; heuristic and metaheuristic methods; use of Python and optimization solvers to formulate and verify models; sensitivity and scenario analysis; comparison of alternatives using cost, time, quality, energy, carbon, and risk indicators; communication of recommendations to operators and executives; case studies in production, warehousing, maintenance, and agro-industrial supply chains",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-320": {
+  "EN-135-320": {
     "t": "เทคโนโลยีอุตสาหกรรมเกษตรและการแปรรูป",
     "e": "Agro-Industrial and Processing Technology",
     "cr": "3(3-0-6)",
@@ -377,7 +377,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and processes of agro-industrial product processing; food quality and safety standards including GMP, HACCP, ISO 22000, and food safety; integrated sugarcane and sugar production; cassava starch extraction and production; rice milling and processing; waste and wastewater management; energy efficiency and cogeneration; applications of AI and digital technologies to improve efficiency and reduce cost; trends and innovations in agro-industrial processing",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-321": {
+  "EN-135-321": {
     "t": "ปัญญาประดิษฐ์และการจัดการโรงสีข้าวอัจฉริยะ",
     "e": "Artificial Intelligence and Smart Rice Mill Management",
     "cr": "3(2-2-5)",
@@ -385,7 +385,7 @@ export const COURSE_REVISION = {
     "dEn": "Complete rice-milling processes from paddy procurement, cleaning, husking, whitening, sorting, and packaging; AI and computer-vision inspection of whiteness, moisture, broken grains, and impurities; smart drying and moisture control; IoT- and AI-based silo and storage management; predictive maintenance; digital twins and production simulation; cost and process optimization; traceability; quality certification; applications in the rice industry",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-322": {
+  "EN-135-322": {
     "t": "เทคโนโลยีอัจฉริยะในกระบวนการผลิตอ้อยและน้ำตาล",
     "e": "Smart Technology in Sugarcane and Sugar Production Processes",
     "cr": "3(2-2-5)",
@@ -393,7 +393,7 @@ export const COURSE_REVISION = {
     "dEn": "Complete sugar production from sugarcane receiving, weighing, and quality analysis through milling, juice clarification, evaporation, crystallization, and packaging; AI-based cane-quality and CCS forecasting; AI- and PLC-based process control; sugar-quality control; cogeneration and AI-based biomass energy management; bagasse, filter cake, and molasses management; digital-twin simulation and optimization; traceability; quality certification",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-323": {
+  "EN-135-323": {
     "t": "เทคโนโลยีอัจฉริยะในกระบวนการผลิตมันสำปะหลังและแป้ง",
     "e": "Smart Technology in Cassava and Starch Production Processes",
     "cr": "3(2-2-5)",
@@ -401,7 +401,7 @@ export const COURSE_REVISION = {
     "dEn": "Complete cassava-starch production from cassava receiving, weighing, and quality analysis through washing and peeling, grinding and starch extraction, pulp separation and starch purification, drying, and packaging; AI-based cassava-quality and starch-yield forecasting at the receiving point; AI- and PLC-based extraction-process control to raise extraction rate and reduce losses; AI inspection of starch purity and physical-chemical properties; smart starch drying and energy conservation; AI-based wastewater and waste management; production of high-value cassava products — modified starch, alcohol, and bioplastics; digital-twin simulation and optimization of starch plants; traceability and starch-quality certification; application of smart technology to cassava-starch plant management in agro-processing contexts",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-324": {
+  "EN-135-324": {
     "t": "เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร",
     "e": "Internet of Things Technology for Agricultural Produce Storage",
     "cr": "3(2-2-5)",
@@ -409,7 +409,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and IoT technologies for agricultural-produce storage; design and installation of sensor networks in warehouses, silos, and cold rooms; sensors for temperature, humidity, carbon dioxide, oxygen, and ethylene in produce storage; automatic environmental-control systems in storage with IoT and AI; AI-based inspection and analysis of produce quality during storage; alerting and emergency management in smart storage; shelf-life forecasting and inventory management with machine learning; energy conservation in storage systems with AI; integration of IoT systems with cloud platforms for real-time monitoring; application to storage of paddy, sugarcane, cassava, and processed agricultural produce in agro-industrial contexts",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-325": {
+  "EN-135-325": {
     "t": "ระบบอบแห้งอัจฉริยะในอุตสาหกรรมเกษตร",
     "e": "Smart Drying Systems in Agro-Industry",
     "cr": "3(2-2-5)",
@@ -417,7 +417,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of heat and mass transfer in the drying process; thermodynamic properties and moisture transfer of agricultural produce; various drying technologies — hot-air, microwave, infrared, heat-pump, and freeze drying; design and calculation of drying systems for agricultural produce; automatic drying-process control with PLC and AI; real-time moisture measurement and control with sensors and IoT; building machine learning models to forecast and optimize the drying process; energy conservation and integration with cogeneration systems in agro-industrial plants; AI-based post-drying produce-quality control; application of smart drying to paddy, cassava chips, cassava starch, and other processed agricultural produce",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-326": {
+  "EN-135-326": {
     "t": "วิศวกรรมระบบขนถ่ายวัสดุและบรรจุภัณฑ์อัตโนมัติ",
     "e": "Automated Material Handling and Packaging Systems Engineering",
     "cr": "3(2-2-5)",
@@ -425,7 +425,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and theory of industrial material-handling systems; analysis and design of material-handling and packaging systems for agro-industrial plants; types and selection of material-handling equipment — conveyors, screw conveyors, bucket elevators, and pneumatic conveying; design of automatic packaging machinery; integration of sensors and IoT systems in handling systems; control and management of handling systems with PLC and SCADA; application of AI and computer vision to inspect and manage material flow; AI-based predictive maintenance; performance evaluation of handling systems; application of automated material-handling and packaging engineering in agro-industrial plants",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-327": {
+  "EN-135-327": {
     "t": "การควบคุมการเคลื่อนที่และวิศวกรรมเซลล์หุ่นยนต์ร่วมปฏิบัติงาน",
     "e": "Motion Control and Collaborative Robot Cell Engineering",
     "cr": "3(2-2-5)",
@@ -433,7 +433,7 @@ export const COURSE_REVISION = {
     "dEn": "Selection and sizing of motors, servo motors, stepper motors, drives, and transmission systems; position, velocity, torque, and multi-axis motion control; path generation and motion profiles; servo tuning; coordination with programmable logic controllers, industrial networks, and vision systems; principles and capabilities of collaborative robots; selection of end effectors and part-feeding equipment; robot-cell layout and sequence design; programming, simulation, and virtual testing; applications of artificial intelligence to perception, grasping, and adaptive operations; risk assessment, force and power limits, protective separation, interlocks, and emergency stops; integration, performance testing, and acceptance testing of robot cells for production, sorting, packaging, and material handling",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-328": {
+  "EN-135-328": {
     "t": "การปรับปรุงกระบวนการด้วยลีนและปัญญาประดิษฐ์",
     "e": "Lean and AI-Enabled Process Improvement",
     "cr": "3(2-2-5)",
@@ -441,7 +441,7 @@ export const COURSE_REVISION = {
     "dEn": "Lean and Six Sigma principles; definition of customer value and value-stream mapping; identification and reduction of waste; flow, pull, and standardized-work improvement; the DMAIC process; problem and metric definition; data collection and quality verification; analysis of overall equipment effectiveness, cycle time, bottlenecks, yield, scrap, and downtime; measurement-system analysis; statistical process control; process capability; design of experiments; root-cause analysis; and failure-mode and effects analysis; use of data analytics, machine learning, and artificial intelligence to discover patterns, predict quality, and prioritize improvement opportunities; design and experimentation of countermeasures; sustaining improvements through control; before-and-after evaluation using quality, cost, delivery, safety, energy, waste, and carbon indicators; process-improvement studio using real industrial or agro-industrial data",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-329": {
+  "EN-135-329": {
     "t": "วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม",
     "e": "Computer Vision for Industrial Quality Control",
     "cr": "3(2-2-5)",
@@ -449,7 +449,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects of workpieces on conveyors; integration of computer vision with deep learning for defect classification; workpiece dimension measurement and assembly-correctness verification; integration of computer-vision systems with robots and automatic sorting systems; analysis of image data for real-time production-process improvement; industrial quality-control standards",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-330": {
+  "EN-135-330": {
     "t": "การจัดการพลังงานอัจฉริยะและระบบพลังงานแสงอาทิตย์",
     "e": "Smart Energy Management and Solar Energy Systems",
     "cr": "3(3-0-6)",
@@ -457,7 +457,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of energy management and conservation in industrial facilities; auditing and analysis of energy use in electrical systems, machinery, air-conditioning, compressed-air, and boiler systems; improvement of energy efficiency; solar-energy technologies; design and installation of photovoltaic power-generation systems; integration of sensors, smart meters, and energy management systems for real-time data collection; application of the Internet of Things and artificial intelligence to energy monitoring, analysis, demand forecasting, anomaly detection, and optimization; economic feasibility and cost-effectiveness analysis; reduction of energy cost and greenhouse-gas emissions in industrial applications",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-331": {
+  "EN-135-331": {
     "t": "ระบบนิวแมติกส์และไฮดรอลิกอัจฉริยะสำหรับวิศวกรรมปัญญาประดิษฐ์",
     "e": "Intelligent Pneumatic and Hydraulic Systems for Artificial Intelligence Engineering",
     "cr": "3(2-2-5)",
@@ -465,7 +465,7 @@ export const COURSE_REVISION = {
     "dEn": "Fundamental principles of pneumatic and hydraulic systems; structure and operation of components, power supplies, valves, and cylinders; design of pneumatic, hydraulic, electro-pneumatic, and electro-hydraulic control circuits; selection and application of sensors and linear or rotary actuators in industrial automation; interfacing with microcontrollers, programmable logic controllers, and edge-computing devices; real-time signal acquisition from valves and cylinders; applications of artificial intelligence and machine learning to anomaly detection, predictive maintenance, and adaptive position or pressure control; fluid-power safety and energy efficiency; laboratory practice in designing, testing, troubleshooting, and maintaining intelligent pneumatic and hydraulic systems for manufacturing and processing industries",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-332": {
+  "EN-135-332": {
     "t": "การถ่ายโอนความร้อนและมวลสารสำหรับระบบอัจฉริยะ",
     "e": "Heat and Mass Transfer for Smart Systems",
     "cr": "3(3-0-6)",
@@ -473,7 +473,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of heat and mass transfer; heat conduction, convection, and radiation; analysis of steady-state and transient heat conduction in one- and two-dimensional systems; thermal-insulation selection; natural and forced convection; radiation exchange between surfaces; diffusion and mass transfer; selection and analysis of heat-transfer equipment; application of finite-difference methods to heat- and mass-transfer problems; mathematical modeling and application of machine learning to predict transfer rates and system performance; thermal management of artificial intelligence hardware; drying systems; cold rooms; energy systems; and thermal-process control in smart systems",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-333": {
+  "EN-135-333": {
     "t": "วิศวกรรมความปลอดภัยและอาชีวอนามัยอุตสาหกรรม",
     "e": "Industrial Safety Engineering and Occupational Health",
     "cr": "3(2-2-5)",
@@ -481,7 +481,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of industrial safety engineering and occupational health; engineering safety laws, regulations, and standards; hazard identification and risk assessment using checklists, job safety analysis, hazard and operability studies, and failure-mode and effects analysis; prevention of accidents and occupational diseases; safety of machinery, electrical systems, chemicals, and pneumatic and hydraulic systems; functional safety, interlocks, emergency-stop systems, and safety standards for robotics and automation; ergonomics; industrial hygiene; contractor management; permit-to-work systems; emergency planning and response; incident reporting and investigation; applications of sensors, computer vision, the Internet of Things, and artificial intelligence to risk monitoring, warning, and analysis, with consideration of privacy, reliability, and human oversight; practical safety surveys and preparation of risk-reduction plans for industrial workplaces",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-133-334": {
+  "EN-135-334": {
     "t": "วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล",
     "e": "Advanced Data Engineering and Data Pipelines",
     "cr": "3(2-2-5)",
@@ -489,7 +489,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and design of advanced data pipelines for AI systems; stream processing; distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; building real-time data pipelines for AI systems; integration of data from diverse sources; monitoring and management of data pipelines in production environments; application of advanced data engineering to building data systems for industrial use",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-335": {
+  "EN-135-335": {
     "t": "ตัวแบบภาษาขนาดใหญ่ขั้นสูง",
     "e": "Advanced Large Language Models",
     "cr": "3(2-2-5)",
@@ -497,7 +497,7 @@ export const COURSE_REVISION = {
     "dEn": "Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning; parameter-efficient fine-tuning and LoRA; model compression and quantization; multimodal model adaptation; evaluation of accuracy, reasoning, factuality, fairness, and robustness; benchmark and comparative-experiment design; inference optimization for latency, memory, cost, and energy; model serving in production; performance-degradation monitoring; and model documentation",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-336": {
+  "EN-135-336": {
     "t": "ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์",
     "e": "AI Reliability and Safety",
     "cr": "3(2-2-5)",
@@ -505,7 +505,7 @@ export const COURSE_REVISION = {
     "dEn": "Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to noise and adversarial attacks; bias and fairness evaluation; hallucination testing for generative models; red teaming and guardrails; hazard analysis and safety cases; data- and model-drift monitoring; incident management; model rollback; and preparation of model cards and assurance evidence",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-337": {
+  "EN-135-337": {
     "t": "สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร",
     "e": "Enterprise AI Architecture",
     "cr": "3(2-2-5)",
@@ -513,7 +513,7 @@ export const COURSE_REVISION = {
     "dEn": "Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, data platforms, and legacy workflows; identity, access, secret management, and zero-trust architecture; multi-tenancy, scalability, high availability, disaster recovery, and business continuity; observability; cloud-cost management; trade-off analysis; and preparation of architecture diagrams and decision records",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-338": {
+  "EN-135-338": {
     "t": "การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ",
     "e": "UX/UI Design for Intelligent Systems",
     "cr": "3(3-0-6)",
@@ -521,7 +521,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for designing transparent and understandable interfaces; usability testing and user-experience evaluation; inclusive design; application of user-experience design to commercial AI applications",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-339": {
+  "EN-135-339": {
     "t": "ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ",
     "e": "Artificial Intelligence in Medical and Healthcare",
     "cr": "3(2-2-5)",
@@ -529,7 +529,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; development of machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment and healthcare recommendation systems; integration of AI with wearable devices to monitor vital signs; management of health big data; application of natural-language processing to extract information from medical documents; ethics and privacy of patient data under international standards",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-340": {
+  "EN-135-340": {
     "t": "การวิเคราะห์ข้อมูลภาพทางการแพทย์",
     "e": "Medical Image Analysis",
     "cr": "3(2-2-5)",
@@ -537,7 +537,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of medical image processing and analysis; working with X-ray, computed-tomography (CT), and magnetic-resonance (MRI) image data; use of deep learning for organ detection and segmentation; analysis of abnormalities and lesions from medical images; building AI models to assist physicians in diagnosis; noise reduction and contrast enhancement of medical images; integration of image-analysis systems with picture archiving and communication systems (PACS); performance evaluation of medical-image-analysis models",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-341": {
+  "EN-135-341": {
     "t": "เทคโนโลยีทางการเงินและปัญญาประดิษฐ์",
     "e": "Financial Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
@@ -545,7 +545,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of financial technology and financial-service innovation; application of AI in the finance and banking industry; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection with AI; automated investment systems and robo-advisory; consumer and individual-customer behavior analysis; development of AI models for asset valuation; regulations and policies on financial technology",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-342": {
+  "EN-135-342": {
     "t": "การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน",
     "e": "Predictive Data Analysis in Finance",
     "cr": "3(2-2-5)",
@@ -553,7 +553,7 @@ export const COURSE_REVISION = {
     "dEn": "Predictive-analytics techniques for financial markets; analysis of financial time-series data; building stock- and financial-asset price-forecasting models with machine learning and deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; application of high-frequency trading algorithms; building and testing automated trading systems; interpretation and visualization of in-depth financial data for business decisions",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-343": {
+  "EN-135-343": {
     "t": "การสร้างธุรกิจปัญญาประดิษฐ์",
     "e": "AI Venture Creation",
     "cr": "3(2-2-5)",
@@ -561,7 +561,7 @@ export const COURSE_REVISION = {
     "dEn": "Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy; business-to-business sales, procurement, and pilot management; intellectual property, licensing, data, and service-level agreements; operations, risk, and scaling plans; financial projections, fundraising, and investor or partner pitching; development and validation of a commercialization plan for an AI product with real users or an enterprise partner",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-344": {
+  "EN-135-344": {
     "t": "การจัดการโครงการซอฟต์แวร์อัจฉริยะ",
     "e": "Intelligent Software Project Management",
     "cr": "3(3-0-6)",
@@ -569,7 +569,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and methodologies of intelligent software project management; agile and Scrum project management; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system life cycle; stakeholder-expectation management; use of AI to assist in managing and tracking project progress; quality control and continuous system delivery; measuring the success of AI projects",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-345": {
+  "EN-135-345": {
     "t": "การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์",
     "e": "Business Development and Digital Marketing with AI",
     "cr": "3(3-0-6)",
@@ -577,7 +577,7 @@ export const COURSE_REVISION = {
     "dEn": "Concepts of AI-based digital business development; building data-driven digital-marketing strategies; analysis and segmentation of target customers with machine learning; automated advertising-content creation and marketing communication with generative AI; personalized product and service recommendation systems; analysis of digital-marketing campaign effectiveness; application of chatbots for customer service and proactive selling; conversion-rate optimization with smart technology",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-346": {
+  "EN-135-346": {
     "t": "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Product Management",
     "cr": "3(2-2-5)",
@@ -585,7 +585,7 @@ export const COURSE_REVISION = {
     "dEn": "AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps, backlogs, and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human–AI interaction design; A/B testing; analysis of usage, adoption, and impact; management of feedback, model drift, cost, and product change; coordination among users, business, data, engineering, and governance teams; and evidence-based decisions to scale, pivot, or retire AI products",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-347": {
+  "EN-135-347": {
     "t": "เทคโนโลยีโลกเสมือนจริงและปัญญาประดิษฐ์",
     "e": "Virtual Reality Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
@@ -593,7 +593,7 @@ export const COURSE_REVISION = {
     "dEn": "Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with the creation of simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of virtual-world applications for medical simulation, industrial training, and digital marketing; wearable devices for perception and response in virtual worlds; analysis of user behavior in digital environments",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-133-348": {
+  "EN-135-348": {
     "t": "ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์",
     "e": "AI Governance and Risk",
     "cr": "3(2-2-5)",
