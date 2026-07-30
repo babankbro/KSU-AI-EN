@@ -19,7 +19,7 @@
 
 # ส่วน A — วิเคราะห์ KSA รายข้อ PLO (Knowledge · Skill · Attitude)
 
-## PLO1 — การแก้ปัญหาเชิงวิศวกรรม *(ความรู้ · Analyze)*
+## PLO1 — การแก้ปัญหาทางวิศวกรรม *(ความรู้ · Analyze)*
 
 **🧠 Knowledge — ความรู้และหัวข้อที่ควรรู้ (Keywords)**
 > คณิตศาสตร์วิศวกรรม (พีชคณิตเชิงเส้น · แคลคูลัส · ความน่าจะเป็น) · สถิติและการอนุมาน · Linear Algebra for AI · Optimization/Gradient Descent · ฟิสิกส์วิศวกรรม (กลศาสตร์ · เทอร์โมฟลูอิด · วัสดุ) · การเขียนโปรแกรมเชิงคำนวณ · การนิยามปัญหา (Problem Formulation) · Engineering Modeling · การวิเคราะห์ Trade-off
@@ -46,7 +46,7 @@
 
 ---
 
-## PLO2 — การออกแบบและบูรณาการระบบ *(ทักษะ · Create)*
+## PLO2 — การออกแบบระบบปัญญาประดิษฐ์และระบบควบคุม *(ทักษะ · Create)*
 
 **🧠 Knowledge (Keywords)**
 > System Architecture · Requirement Engineering · Design under Constraints (เศรษฐกิจ/สังคม/สิ่งแวดล้อม) · Sustainable Design · CAD/การเขียนแบบ · สถาปัตยกรรม IoT–Edge–Cloud · ML System Design · Software Architecture/Microservices · Digital Twin · Design Trade-off & Safety Factor
@@ -78,7 +78,7 @@
 
 ---
 
-## PLO3 — สื่อสารเชิงวิชาชีพ *(ทักษะ · Apply)*
+## PLO3 — การสื่อสารสารสนเทศทางเทคนิค *(ทักษะ · Apply)*
 
 **🧠 Knowledge (Keywords)**
 > Technical Writing (ไทย/อังกฤษ) · Data Storytelling · Data Visualization · Dashboard Design · การนำเสนอเชิงเทคนิค · Report Structure (IMRaD) · Audience Adaptation (วิศวกร/ผู้บริหาร/เกษตรกร/ชุมชน) · Technical English
@@ -104,7 +104,7 @@
 
 ---
 
-## PLO4 — จริยธรรมและความรับผิดชอบวิชาชีพ *(จริยธรรม · Evaluate)*
+## PLO4 — จริยธรรมและธรรมาภิบาลปัญญาประดิษฐ์ *(จริยธรรม · Evaluate)*
 
 **🧠 Knowledge (Keywords)**
 > Responsible AI · AI Ethics · AI Governance · PDPA/Data Privacy · Cybersecurity พื้นฐาน · Bias/Fairness · Explainability · Regulatory Compliance · จรรยาบรรณวิศวกร (สภาวิศวกร) · Safety Standard · Environmental/Social Impact Assessment · กฎหมายโดรน/การกำกับ
@@ -132,7 +132,7 @@
 
 ---
 
-## PLO5 — ทำงานเป็นทีมและภาวะผู้นำ *(ลักษณะบุคคล · Organize)*
+## PLO5 — การทำงานเป็นทีมและการบริหารโครงการ *(ลักษณะบุคคล · Organize)*
 
 **🧠 Knowledge (Keywords)**
 > Team Roles · Team Charter · Project Planning · Conflict Management · Psychological Safety · Agile/Scrum เบื้องต้น · Peer Assessment · Cross-functional Collaboration · Leadership Styles
@@ -157,7 +157,7 @@
 
 ---
 
-## PLO6 — ทดลองและวิเคราะห์ข้อมูล *(ทักษะ · Evaluate)*
+## PLO6 — การทดลองและประเมินสมรรถนะระบบ *(ทักษะ · Evaluate)*
 
 **🧠 Knowledge (Keywords)**
 > Design of Experiments (DOE) · Hypothesis Testing · Data Collection & Cleaning · Feature Engineering · Model Evaluation Metrics · Data Pipeline/ETL · Big Data (Spark/Kafka) · Time-Series/Forecasting · Data Quality & Governance · Data-Centric AI/Annotation · การตีความผลเชิงวิศวกรรม
@@ -188,7 +188,7 @@
 
 ---
 
-## PLO7 — การเรียนรู้ตลอดชีวิตและความเป็นผู้ประกอบการ *(ลักษณะบุคคล · Self-directed/Create)*
+## PLO7 — การเรียนรู้ตลอดชีวิตและนวัตกรรมยั่งยืน *(ลักษณะบุคคล · Self-directed/Create)*
 
 **🧠 Knowledge (Keywords)**
 > Self-directed Learning · Technology Watch/Trend Scanning · Emerging AI (GenAI/Agentic AI) · Business Model Canvas · Value Proposition · Feasibility/ROI · IP/ทรัพย์สินทางปัญญา · Go-to-Market · Innovation Management · Learning Portfolio
