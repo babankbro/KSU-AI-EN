@@ -31,11 +31,11 @@
 |---|---:|---:|
 | ศึกษาทั่วไป | 24 | 8 |
 | 2.1 พื้นฐานและปฏิบัติการทางวิศวกรรม | 24 | 10 |
-| 2.2 วิชาชีพหลักด้านปัญญาประดิษฐ์ | 24 | 8 |
-| 2.3 Core Track ร่วม | 27 | 9 |
-| 2.4 วิชาเลือกชีพ | 15 | เลือก 5 |
-| 2.6 โครงงานและสัมมนา | 6 | 4 |
-| 2.7 ฝึกประสบการณ์วิชาชีพ | 7 | 2 |
+| 2.2 กลุ่มวิชาแกนปัญญาประดิษฐ์และระบบอัจฉริยะ | 24 | 8 |
+| 2.3 กลุ่มวิชาชีพบังคับ | 27 | 9 |
+| 2.4 กลุ่มวิชาชีพเลือก | 15 | เลือก 5 |
+| 2.5 กลุ่มวิชาโครงงานและสัมมนา | 6 | 4 |
+| 2.6 กลุ่มวิชาประสบการณ์ภาคสนาม | 7 | 2 |
 | เลือกเสรี | 6 | 2 |
 | **รวม** | **133** | |
 
@@ -47,52 +47,52 @@
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | Skills/EF หลัก |
 |---|---|---|---|---|
-| EN-001-021 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | PLO1, PLO7 | PLO2, PLO3 | H15, H19; S1, S6; EF3 |
-| EN-001-022 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม | PLO1, PLO6 | PLO3, PLO4 | H1, H11, H14; S1, S4 |
-| EN-001-023 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H15, H17; EF3 |
-| EN-001-024 | การเขียนแบบวิศวกรรมและการวางผังระบบ | PLO2, PLO3 | PLO4, PLO5 | H20; S4, S10; EF1, EF6 |
-| EN-001-025 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | PLO1, PLO2, PLO4 | — | H15; S1, S2; EF2 |
-| EN-001-026 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | PLO1, PLO5 | PLO2, PLO4 | H2, H7; S5, S7, S10 |
-| EN-001-027 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H5, H9, H17; EF4 |
-| EN-001-028 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
-| EN-001-029 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
-| EN-001-030 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
+| EN-001-101 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | PLO1, PLO7 | PLO2, PLO3 | H15, H19; S1, S6; EF3 |
+| EN-001-102 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม | PLO1, PLO6 | PLO3, PLO4 | H1, H11, H14; S1, S4 |
+| EN-001-103 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H15, H17; EF3 |
+| EN-001-104 | การเขียนแบบวิศวกรรมและการวางผังระบบ | PLO2, PLO3 | PLO4, PLO5 | H20; S4, S10; EF1, EF6 |
+| EN-001-105 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | PLO1, PLO2, PLO4 | — | H15; S1, S2; EF2 |
+| EN-001-106 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | PLO1, PLO5 | PLO2, PLO4 | H2, H7; S5, S7, S10 |
+| EN-001-107 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H5, H9, H17; EF4 |
+| EN-001-108 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
+| EN-001-109 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
+| EN-001-110 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
 
-### 4.2 กลุ่ม 2.2 วิชาชีพหลักด้านปัญญาประดิษฐ์
+### 4.2 กลุ่ม 2.2 แกนปัญญาประดิษฐ์และระบบอัจฉริยะ
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | Skills หลัก |
 |---|---|---|---|---|
 | EN-131-101 | ความรู้เบื้องต้นสำหรับปัญญาประดิษฐ์ | PLO1, PLO4, PLO7 | — | H1, H6, H7; S3, S7 |
 | EN-131-102 | คณิตศาสตร์วิศวกรรมปัญญาประดิษฐ์ | PLO1, PLO6 | — | H1, H13; S1 |
-| EN-131-103 | คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ | PLO2, PLO6 | PLO3, PLO4 | H8, H9, H14; S4, S10 |
-| EN-131-104 | ระบบ IoT อัจฉริยะและการประมวลผลที่ขอบเครือข่าย | PLO2, PLO4, PLO6 | — | H4, H7, H9, H11 |
-| EN-131-105 | ระบบคลาวด์และการดำเนินการเรียนรู้ของเครื่อง | PLO2, PLO4, PLO6 | — | H4, H14, H15; S10 |
-| EN-131-106 | การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก | PLO1, PLO2, PLO6 | PLO4 | H1, H14; S1, S2, S10 |
-| EN-131-107 | วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่ | PLO2, PLO3, PLO6 | PLO4 | H3, H7, H12, H14, H19 |
-| EN-131-108 | โครงสร้างพื้นฐานฮาร์ดแวร์และเครือข่ายสำหรับ AI | PLO1, PLO2, PLO4 | PLO6 | H4, H7, H20; S10 |
+| EN-131-204 | คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ | PLO2, PLO6 | PLO3, PLO4 | H8, H9, H14; S4, S10 |
+| EN-131-201 | ระบบ IoT อัจฉริยะและการประมวลผลที่ขอบเครือข่าย | PLO2, PLO4, PLO6 | — | H4, H7, H9, H11 |
+| EN-131-205 | ระบบคลาวด์และการดำเนินการเรียนรู้ของเครื่อง | PLO2, PLO4, PLO6 | — | H4, H14, H15; S10 |
+| EN-131-202 | การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก | PLO1, PLO2, PLO6 | PLO4 | H1, H14; S1, S2, S10 |
+| EN-131-203 | วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่ | PLO2, PLO3, PLO6 | PLO4 | H3, H7, H12, H14, H19 |
+| EN-131-206 | โครงสร้างพื้นฐานฮาร์ดแวร์และเครือข่ายสำหรับ AI | PLO1, PLO2, PLO4 | PLO6 | H4, H7, H20; S10 |
 
 ### 4.3 กลุ่ม 2.3 Core Track ร่วม
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | Skills หลัก |
 |---|---|---|---|---|
-| EN-132-101 | AI Business Intelligence and Product Design | PLO1, PLO2, PLO7 | PLO3, PLO4, PLO5, PLO6 | H7, H15, H20; S1, S2, S6, S8, S9, S10 |
-| EN-132-102 | Decision Intelligence and Supply Chain Management | PLO1, PLO2, PLO6 | PLO3 | H3, H11, H13, H19; S1, S2, S4, S8 |
-| EN-132-103 | Smart Agriculture Systems | PLO2, PLO6, PLO7 | PLO4, PLO5 | H9, H11, H15, H16, H19; S5, S9, S10 |
-| EN-132-104 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
-| EN-132-105 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
-| EN-132-106 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
-| EN-132-107 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
-| EN-132-108 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
-| EN-132-109 | Intelligent Sensing and Actuation Systems | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H9, H17; EF4, EF5, EF6 |
+| EN-132-202 | AI Business Intelligence and Product Design | PLO1, PLO2, PLO7 | PLO3, PLO4, PLO5, PLO6 | H7, H15, H20; S1, S2, S6, S8, S9, S10 |
+| EN-132-203 | Decision Intelligence and Supply Chain Management | PLO1, PLO2, PLO6 | PLO3 | H3, H11, H13, H19; S1, S2, S4, S8 |
+| EN-132-204 | Smart Agriculture Systems | PLO2, PLO6, PLO7 | PLO4, PLO5 | H9, H11, H15, H16, H19; S5, S9, S10 |
+| EN-132-205 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
+| EN-132-208 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
+| EN-132-206 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
+| EN-132-207 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
+| EN-132-209 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
+| EN-132-201 | Intelligent Sensing and Actuation Systems | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H9, H17; EF4, EF5, EF6 |
 
 ### 4.4 กลุ่มโครงงาน สัมมนา และประสบการณ์วิชาชีพ
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | หลักฐานสำคัญ |
 |---|---|---|---|---|
-| EN-134-101 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
-| EN-134-102 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
-| EN-134-103 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
-| EN-134-104 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
+| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
+| EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
+| EN-134-303 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
+| EN-134-404 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
 | EN-135-401 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |
 | EN-135-402 | สหกิจศึกษา | PLO1–PLO7 | — | employer acceptance, team, experiment/data, professional handover |
 
@@ -129,10 +129,10 @@ PLO สนับสนุนระดับ sub-skill และสถานะ G
 ## 7. ผลทวนสอบและเงื่อนไข
 
 - **สอดคล้องเชิงโครงสร้าง:** ทักษะทุกข้อมี AISK, PLO, CLO เจ้าภาพ และหลักฐานปลายทาง ไม่มี orphan skill
-- **ปิดในแกนร่วม:** H1–H6, H8–H9, H11, H13, H16–H17, H19, S1–S2/S4–S6/S8 และ EF1–EF4
+- **ปิดในวิชาชีพบังคับ:** H1–H6, H8–H9, H11, H13, H16–H17, H19, S1–S2/S4–S6/S8 และ EF1–EF4
 - **ปิดแบบมีเงื่อนไข:** H7/H14/H15, S3/S7/S9/S10 และ EF5–EF6 ต้องมี rubric ร่วม หลักฐานรายบุคคล และ Lab/ผู้ทวนสอบตามบริบท
 - **ต้องสร้างความลึกผ่านวิชาเลือก:** H10 Thai NLP, H12 distributed/streaming, H18 maintenance/reliability และ H20 enterprise services
-- **จุด Mastery:** EN-134-104 และ EN-135-402 ต้องเก็บหลักฐานรายบุคคลครบ PLO ไม่ใช้คะแนนโครงงานรวมเพียงค่าเดียว
+- **จุด Mastery:** EN-134-404 และ EN-135-402 ต้องเก็บหลักฐานรายบุคคลครบ PLO ไม่ใช้คะแนนโครงงานรวมเพียงค่าเดียว
 
 ---
 

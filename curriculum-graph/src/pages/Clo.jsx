@@ -178,7 +178,7 @@ export default function Clo() {
 
           <div className="note">
             <b>Constructive Alignment</b> — ทุก PLO มีเส้นทาง I → R → M ครบ: Introduce ที่ปี 1 (วิชาพื้นฐาน/แกน) →
-            Reinforce ที่ปี 2–3 (แกน AI และ Core Track) → Mastery ที่โครงงาน (EN-134-104) และสหกิจศึกษา (EN-135-402)
+            Reinforce ที่ปี 2–3 (แกน AI และ Core Track) → Mastery ที่โครงงาน (EN-134-404) และสหกิจศึกษา (EN-135-402)
             โดย CLO ทุกข้อสอบย้อนกลับถึง Sub-YLO และ PLO ได้
           </div>
         </Section>

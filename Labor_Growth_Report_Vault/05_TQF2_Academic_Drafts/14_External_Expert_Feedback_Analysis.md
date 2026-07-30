@@ -107,14 +107,15 @@
 
 | ข้อเสนอผู้ทรงคุณวุฒิ | Skills/Sub-skills | รายวิชาเจ้าภาพ | PLO | สถานะ |
 |---|---|---|---|:--:|
-| CAD/แบบเฉพาะทาง | EF1 | EN-001-024, EN-132-106 | PLO2, PLO3 | ปิดในแกน |
-| กลศาสตร์ วัสดุ การสร้างและประกอบ | EF2 | EN-001-025/028 | PLO1, PLO2, PLO4 | ปิดในแกน |
-| Heat transfer, fluid, process และ energy | EF3, H15, H17 | EN-001-023, EN-132-105 | PLO1, PLO2, PLO4, PLO6 | ปิดในแกน |
-| ไฟฟ้า เครื่องมือวัด และการสอบเทียบ | EF4, H9 | EN-001-027, EN-132-109 | PLO1, PLO2, PLO6 | ปิดในแกน |
-| Pneumatic, hydraulic และ actuation | EF5, H5 | EN-001-029, EN-132-109 | PLO2, PLO4, PLO6 | ปิดระดับบูรณาการ; ต้องมี Lab |
-| Safety, standards, commissioning และ handover | EF6, H7, S10 | Workshop, EN-132-106/109, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดแบบมีเงื่อนไขด้าน rubric/ผู้ทวนสอบ |
-| BCG/carbon/value | H15, H19, S6 | EN-001-021/023/030, EN-132-101/103/105 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
-| System integration input–process–output–value | H2/H4/H5/H9/H20, S9/S10, EF6 | EN-001-030, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |
+| CAD/แบบเฉพาะทาง | EF1 | EN-001-104, EN-132-206 | PLO2, PLO3 | ปิดในแกน |
+| กลศาสตร์ วัสดุ การสร้างและประกอบ | EF2 | EN-001-105/028 | PLO1, PLO2, PLO4 | ปิดในแกน |
+| Heat transfer, fluid, process และ energy | EF3, H15, H17 | EN-001-103, EN-132-208 | PLO1, PLO2, PLO4, PLO6 | ปิดในแกน |
+| ไฟฟ้า เครื่องมือวัด และการสอบเทียบ | EF4, H9 | EN-001-107, EN-132-201 | PLO1, PLO2, PLO6 | ปิดในแกน |
+| Pneumatic, hydraulic และ actuation | EF5, H5 | EN-001-109, EN-132-201, EN-133-331 | PLO2, PLO4, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านการออกแบบ การวินิจฉัย และการควบคุมระบบกำลังของไหล |
+| Heat and mass transfer | EF3, H15, H17 | EN-001-103, EN-133-325, EN-133-332 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านแบบจำลองเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
+| Safety, standards, commissioning และ handover | EF6, H7, S10 | Workshop, EN-132-206/109, EN-133-333, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านความปลอดภัยอุตสาหกรรม |
+| BCG/carbon/value | H15, H19, S6 | EN-001-101/023/030, EN-132-202/103/105 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
+| System integration input–process–output–value | H2/H4/H5/H9/H20, S9/S10, EF6 | EN-001-110, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |
 
 > **ข้อสรุป:** skill set ตอบ expert gap ครบเชิงสมรรถนะ แต่การปิดสมบูรณ์ยังขึ้นกับ Lab, common rubric, Track PI, กฎหมาย/มาตรฐานที่ทบทวนรายปี และความร่วมมือสถานประกอบการ
 
@@ -126,7 +127,7 @@
 |---|---|---|
 | Business/Product/Requirements/Value | CT1 AI Business Intelligence and Product Design; CT2 Decision Intelligence and Supply Chain Management | requirements/architecture concept + ROI/TCO + decision/supply-chain model |
 | AI Application/System Integration | CT3 Software and AI Engineering; CT4 Agentic AI Systems | deployable AI application + tests/CI-CD/monitoring + evaluated agent |
-| Smart Agriculture | CT5 Smart Agriculture Systems; CT6 Autonomous Systems for Agriculture | farm decision/BCG project + UAV/GeoAI/robot integration demo |
+| Smart Agriculture | CT5 Smart Agriculture Systems; CT6 Autonomous Systems for Agriculture | farm decision/BCG project + UAV/remote-sensing/GeoAI/robot integration demo; ความลึกใช้วิชาเลือก EN-133-311/112 |
 | Smart Manufacturing/Process/Quality | CT7 Smart Manufacturing Systems | process/digital-twin model + MES/OEE/SPC + Lean/Six Sigma/optimization |
 | Automation/Robotics/CAD/Safety | CT8 Intelligent Industrial Automation and Robotics Systems | CAD/P&ID + PLC/SCADA/robot cell + commissioning/safety test |
 | Instrumentation/Fluid Power/IIoT/Edge | CT9 Intelligent Sensing and Actuation Systems | calibrated sensing + pneumatic/hydraulic control + IIoT/edge integration |
@@ -227,10 +228,10 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 |---|---|---|---|---|
 | โครงสร้างหลักสูตร 133/130 นก. และลำดับรายวิชา | คณะกรรมการบริหารหลักสูตร | ประธานหลักสูตร/เลขานุการหลักสูตร | ผู้ประสานงานทุกกลุ่มวิชา, งานทะเบียน | โครงสร้างที่อนุมัติ, prerequisite map, ภาระรายภาค และแผนทรัพยากร |
 | PLO 7 ข้อและ Track-specific PI | คณะกรรมการบริหารหลักสูตร | ผู้รับผิดชอบ OBE/ประกันคุณภาพ | T1–T3 Leads, ผู้ใช้บัณฑิต | PLO–PI–CLO mapping, rubric และเกณฑ์ผ่านแยก Track |
-| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-021–030 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop I–III portfolio |
+| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-101–030 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop I–III portfolio |
 | ฐาน AI/Data/Deployment | ผู้ประสานงาน AI Core | อาจารย์ EN-131-101–108 | T1–T3 Leads, Industry Advisory Board | model/data/deployment evidence และ technology watch รายปี |
-| System Integration ร่วมทุก Track | ประธานหลักสูตร | ผู้รับผิดชอบ EN-001-030 และ EN-134-104 | CT3/CT8/CT9, T1–T3 Leads, อุตสาหกรรม | end-to-end architecture และ demo: input → AI → decision/control → process → value |
-| BCG/Carbon และ sustainability assurance | คณะกรรมการบริหารหลักสูตร | **BCG and Sustainability Lead** | T1–T3 Leads, EN-001-021/023, QA, partner | baseline, target, before/after, data source, uncertainty และ BCG report |
+| System Integration ร่วมทุก Track | ประธานหลักสูตร | ผู้รับผิดชอบ EN-001-110 และ EN-134-404 | CT3/CT8/CT9, T1–T3 Leads, อุตสาหกรรม | end-to-end architecture และ demo: input → AI → decision/control → process → value |
+| BCG/Carbon และ sustainability assurance | คณะกรรมการบริหารหลักสูตร | **BCG and Sustainability Lead** | T1–T3 Leads, EN-001-101/023, QA, partner | baseline, target, before/after, data source, uncertainty และ BCG report |
 | Safety, standards, law และ trade compliance | คณะกรรมการบริหารหลักสูตร | **Safety and Standards Lead** | CT6/CT7/CT8/CT9, ผู้เชี่ยวชาญภายนอก | risk register, safety case, standards matrix และ compliance dossier |
 | วิชาเลือกชีพ 5 วิชาและความลึกของ Track | คณะกรรมการบริหารหลักสูตร | T1–T3 Leads | อาจารย์ที่ปรึกษา, งานทะเบียน | ตรวจ basket rule: 3 Track depth + 1 cross-track + 1 emerging/research |
 | Capstone/CWIE และโจทย์จริง | ประธานหลักสูตร | ผู้ประสานงาน Capstone/CWIE | T1–T3 Leads, industry mentor | problem bank, joint rubric, mentor record, adoption/placement outcome |
@@ -242,20 +243,20 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 
 | Track | Track Lead รับผิดชอบผลลัพธ์ | รายวิชาเจ้าภาพหลัก | BCG/Business KPI ขั้นต่ำ | หลักฐานปลายทางบังคับ | กลุ่มพันธมิตรเป้าหมาย |
 |---|---|---|---|---|---|
-| **T1 Smart Agriculture and Autonomous Systems** | บูรณาการ IoT, sensing, GeoAI, UAV และ robotics กับการปลูก–ดูแล–เก็บเกี่ยว–traceability ภายใต้กฎหมายและความปลอดภัย | EN-132-103, EN-132-104, EN-132-109 + elective EN-135-101–115 | water-use efficiency, input reduction, crop loss/yield, energy/carbon per area, traceability และ farm value | field prototype + mission/safety plan + farm DSS/control + before/after BCG and value report | ฟาร์ม/สหกรณ์, อ้อย–น้ำตาล, ข้าว, มันสำปะหลัง, UAV/GeoAI provider |
-| **T2 Industrial AI, Automation and Smart Manufacturing** | บูรณาการ instrumentation, fluid power, PLC/SCADA, robot/vision, MES/quality, maintenance และ process/energy optimization อย่างปลอดภัยตามมาตรฐาน | EN-132-105, EN-132-106, EN-132-109 + elective EN-135-116–130 | energy/water/material per unit, OEE, yield/scrap, downtime, waste heat, emissions estimate และ ROI/TCO | CAD/P&ID + control/robot integration test + safety case + MES/OEE/quality/BCG dashboard | โรงงานน้ำตาล/แป้ง/โรงสี, system integrator, PLC/robot/vision vendor, หน่วยงานพลังงาน/มาตรฐาน |
-| **T3 Enterprise AI, Software and Decision Systems** | บูรณาการ data/cloud/API/AI/agent กับ workflow และบริการองค์กร โดยมี security, governance, adoption และ business value | EN-132-101, EN-132-102, EN-132-107, EN-132-108 + elective EN-135-131–145 | compute/AI cost and energy, process time, error/rework, paper/travel reduction, adoption, service inclusion และ ROI/TCO | solution architecture + deployed service + test/observability + governance dossier + adoption/value report | บริษัทซอฟต์แวร์/คลาวด์, enterprise IT, startup, หน่วยงานรัฐและผู้ให้บริการดิจิทัล |
-| **Cross-track System Integration** | รับประกันว่าทุก Track เชื่อม input–process–output–value และไม่จบเพียงโมเดล AI | EN-001-030, EN-134-103, EN-134-104, EN-135-401/402 | อย่างน้อย 1 sustainability KPI + 1 business/value KPI | Capstone/CWIE dossier ที่ผ่าน rubric ร่วมและมีผู้ใช้/partner ร่วมประเมิน | Industry problem owner และสถานประกอบการสหกิจของทุก Track |
+| **T1 Smart Agriculture and Autonomous Systems** | บูรณาการ IoT, sensing, GeoAI, UAV และ robotics กับการปลูก–ดูแล–เก็บเกี่ยว–traceability ภายใต้กฎหมายและความปลอดภัย | EN-132-204, EN-132-205, EN-132-201 + elective EN-133-301–115 | water-use efficiency, input reduction, crop loss/yield, energy/carbon per area, traceability และ farm value | field prototype + mission/safety plan + farm DSS/control + before/after BCG and value report | ฟาร์ม/สหกรณ์, อ้อย–น้ำตาล, ข้าว, มันสำปะหลัง, UAV/GeoAI provider |
+| **T2 Industrial AI, Automation and Smart Manufacturing** | บูรณาการ instrumentation, fluid power, PLC/SCADA, robot/vision, MES/quality, maintenance และ process/energy optimization อย่างปลอดภัยตามมาตรฐาน | EN-132-208, EN-132-206, EN-132-201 + elective EN-133-316–133 | energy/water/material per unit, OEE, yield/scrap, downtime, waste heat, emissions estimate และ ROI/TCO | CAD/P&ID + control/robot integration test + safety case + MES/OEE/quality/BCG dashboard | โรงงานน้ำตาล/แป้ง/โรงสี, system integrator, PLC/robot/vision vendor, หน่วยงานพลังงาน/มาตรฐาน |
+| **T3 Enterprise AI, Software and Decision Systems** | บูรณาการ data/cloud/API/AI/agent กับ workflow และบริการองค์กร โดยมี security, governance, adoption และ business value | EN-132-202, EN-132-203, EN-132-207, EN-132-209 + elective EN-133-334–145 | compute/AI cost and energy, process time, error/rework, paper/travel reduction, adoption, service inclusion และ ROI/TCO | solution architecture + deployed service + test/observability + governance dossier + adoption/value report | บริษัทซอฟต์แวร์/คลาวด์, enterprise IT, startup, หน่วยงานรัฐและผู้ให้บริการดิจิทัล |
+| **Cross-track System Integration** | รับประกันว่าทุก Track เชื่อม input–process–output–value และไม่จบเพียงโมเดล AI | EN-001-110, EN-134-303, EN-134-404, EN-135-401/402 | อย่างน้อย 1 sustainability KPI + 1 business/value KPI | Capstone/CWIE dossier ที่ผ่าน rubric ร่วมและมีผู้ใช้/partner ร่วมประเมิน | Industry problem owner และสถานประกอบการสหกิจของทุก Track |
 
 ### 8.4 ตารางความรับผิดชอบ BCG และ Carbon
 
 | มิติ | A | รายวิชา/หน่วยงาน R | ความรับผิดชอบ T1 | ความรับผิดชอบ T2 | ความรับผิดชอบ T3 | หลักฐานทวนสอบ |
 |---|---|---|---|---|---|---|
-| **Bio Economy** — ใช้ทรัพยากรชีวภาพสร้างมูลค่า | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1 Lead; EN-132-103/104 | ผลผลิต คุณภาพ สุขภาพพืช การใช้ปัจจัยการผลิต และ traceability | การแปรรูป คุณภาพ yield และการใช้ผลพลอยได้/ชีวมวล | ระบบข้อมูล ตลาด DSS และ digital service เชื่อม value chain | mass/value flow, data provenance และมูลค่าเพิ่มที่คำนวณได้ |
-| **Circular Economy** — ลดของเสียและหมุนเวียนทรัพยากร | คณะกรรมการบริหารหลักสูตร | BCG Lead, T2 Lead; EN-001-023, EN-132-105 | ลดน้ำ ปุ๋ย สารเคมี และการสูญเสียหลังเก็บเกี่ยว | material/energy balance, scrap/rework, waste heat, water reuse และ maintenance | ลด compute waste, paper/travel และออกแบบ workflow ใช้ทรัพยากรคุ้มค่า | baseline–target–actual, boundary, assumption และ before/after |
-| **Green Economy** — ลดพลังงาน/คาร์บอนและผลกระทบ | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1–T3 Leads; EN-001-021/023, EN-131-105 | energy/carbon per area or product และ climate-resilient decision | energy/emissions per unit, peak demand และ efficiency improvement | compute energy/cost, carbon-aware deployment และ service inclusion | activity data, emission factor/source, uncertainty และ improvement verification |
-| **Business viability** — ความยั่งยืนทางเศรษฐกิจ | ประธานหลักสูตร | EN-001-021, EN-132-101/102 | farm income, payback และ risk reduction | ROI/TCO, unit economics, downtime/scrap cost | adoption, service cost, revenue/cost avoidance | business case ที่เชื่อมกับ BCG KPI ไม่รายงานแยกส่วน |
-| **Capstone/CWIE assurance** | คณะกรรมการบริหารหลักสูตร | EN-134-104 และ EN-135-402 | เลือก KPI ที่ตรงกับ T1 | เลือก KPI ที่ตรงกับ T2 | เลือก KPI ที่ตรงกับ T3 | ต้องมี sustainability KPI ≥1 และ business/value KPI ≥1 พร้อมข้อมูลตรวจสอบย้อนกลับได้ |
+| **Bio Economy** — ใช้ทรัพยากรชีวภาพสร้างมูลค่า | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1 Lead; EN-132-204/104 | ผลผลิต คุณภาพ สุขภาพพืช การใช้ปัจจัยการผลิต และ traceability | การแปรรูป คุณภาพ yield และการใช้ผลพลอยได้/ชีวมวล | ระบบข้อมูล ตลาด DSS และ digital service เชื่อม value chain | mass/value flow, data provenance และมูลค่าเพิ่มที่คำนวณได้ |
+| **Circular Economy** — ลดของเสียและหมุนเวียนทรัพยากร | คณะกรรมการบริหารหลักสูตร | BCG Lead, T2 Lead; EN-001-103, EN-132-208 | ลดน้ำ ปุ๋ย สารเคมี และการสูญเสียหลังเก็บเกี่ยว | material/energy balance, scrap/rework, waste heat, water reuse และ maintenance | ลด compute waste, paper/travel และออกแบบ workflow ใช้ทรัพยากรคุ้มค่า | baseline–target–actual, boundary, assumption และ before/after |
+| **Green Economy** — ลดพลังงาน/คาร์บอนและผลกระทบ | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1–T3 Leads; EN-001-101/023, EN-131-205 | energy/carbon per area or product และ climate-resilient decision | energy/emissions per unit, peak demand และ efficiency improvement | compute energy/cost, carbon-aware deployment และ service inclusion | activity data, emission factor/source, uncertainty และ improvement verification |
+| **Business viability** — ความยั่งยืนทางเศรษฐกิจ | ประธานหลักสูตร | EN-001-101, EN-132-202/102 | farm income, payback และ risk reduction | ROI/TCO, unit economics, downtime/scrap cost | adoption, service cost, revenue/cost avoidance | business case ที่เชื่อมกับ BCG KPI ไม่รายงานแยกส่วน |
+| **Capstone/CWIE assurance** | คณะกรรมการบริหารหลักสูตร | EN-134-404 และ EN-135-402 | เลือก KPI ที่ตรงกับ T1 | เลือก KPI ที่ตรงกับ T2 | เลือก KPI ที่ตรงกับ T3 | ต้องมี sustainability KPI ≥1 และ business/value KPI ≥1 พร้อมข้อมูลตรวจสอบย้อนกลับได้ |
 
 #### กติกาประเมินร่วม BCG
 
@@ -265,20 +266,20 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 
 | ข้อเสนอ | ผู้เสนอ | A | R/รายวิชาเจ้าภาพ | หลักฐานที่ต้องเกิด | สถานะ/จุดตรวจ |
 |---|---|---|---|---|---|
-| นิวแมติกส์และไฮดรอลิกส์ | ทั้งสองท่าน | Engineering Core/CT Lead | EN-001-029, EN-132-109, EN-132-106 | pneumatic/hydraulic circuit, interlock และ commissioning test | มีเจ้าภาพแล้ว; ตรวจความพร้อมชุดฝึกและอาจารย์ |
-| Heat transfer และ process engineering | ดร. อัปสรรัชย์ | Engineering Core/T2 Lead | EN-001-023, EN-132-105 | material-energy balance, heat/process efficiency และ carbon metric | มี baseline; ทวนระดับความลึกกับผู้ทรงคุณวุฒิ |
-| CAD และแบบระบบเฉพาะทาง | ทั้งสองท่าน | Engineering Core/T2 Lead | EN-001-024 ต่อด้วย EN-132-106/109 | assembly/layout, P&ID, electrical/control/fluid-power drawing และ as-built handoff | มีเจ้าภาพแล้ว; เพิ่ม rubric ความถูกต้องตามมาตรฐาน |
-| Safety และมาตรฐานโรงงาน | ทั้งสองท่าน | Safety and Standards Lead | EN-001-025/027/029/030, EN-132-105/106/109 | risk assessment, FMEA/HAZOP ตามบริบท, guarding/interlock/E-stop และ safety case | ต้องสร้าง common rubric และ standards matrix |
-| System Integration เป็นจุดเด่น | ดร. อัปสรรัชย์; คุณพิษณุสนับสนุน input–process–output | ประธานหลักสูตร | EN-001-030, Core Track 9, Capstone/CWIE | end-to-end demo และ architecture เชื่อม sensing–AI–control–process–value | ปรับ PLO/CLO mapping แล้ว; ต้องอนุมัติ Track PI/rubric และสื่อประชาสัมพันธ์ |
-| เศรษฐศาสตร์ การตัดสินใจ และการสร้าง value | คุณพิษณุ | Engineering Core/CT Lead | EN-001-021, EN-132-101/102 | ROI/TCO, scenario/optimization, decision log และ business case | มีเจ้าภาพแล้ว; บังคับใช้ใน Capstone |
-| BCG, carbon footprint และ traceability | ทั้งสองท่าน | BCG and Sustainability Lead | EN-001-021/023, EN-132-102/103/105, ทุก Track project | baseline/before-after, carbon/resource KPI และ traceable data | ปิดแบบมีเงื่อนไข; ต้องแต่งตั้ง Lead และ rubric ร่วม |
-| Drone ยุคใหม่และกฎหมาย | คุณพิษณุ | T1 Lead | EN-132-104 + T1 electives | RTK/GNSS, multispectral/thermal, edge AI, mission planning, regulation และ safety record | มี baseline; ทบทวนกฎหมาย/อุปกรณ์ทุกปี |
-| กล้องครอบคลุม input–processing–output | คุณพิษณุ | AI Core/Track Leads | EN-131-103, EN-132-104/105/106 | vision model เชื่อม decision/control และ process/quality outcome | มีเจ้าภาพแล้ว; ห้ามประเมินเฉพาะ accuracy |
+| นิวแมติกส์และไฮดรอลิกส์ | ทั้งสองท่าน | Engineering Core/CT Lead | EN-001-109, EN-132-201, EN-132-206 | pneumatic/hydraulic circuit, interlock และ commissioning test | มีเจ้าภาพแล้ว; ตรวจความพร้อมชุดฝึกและอาจารย์ |
+| Heat transfer และ process engineering | ดร. อัปสรรัชย์ | Engineering Core/T2 Lead | EN-001-103, EN-132-208 | material-energy balance, heat/process efficiency และ carbon metric | มี baseline; ทวนระดับความลึกกับผู้ทรงคุณวุฒิ |
+| CAD และแบบระบบเฉพาะทาง | ทั้งสองท่าน | Engineering Core/T2 Lead | EN-001-104 ต่อด้วย EN-132-206/109 | assembly/layout, P&ID, electrical/control/fluid-power drawing และ as-built handoff | มีเจ้าภาพแล้ว; เพิ่ม rubric ความถูกต้องตามมาตรฐาน |
+| Safety และมาตรฐานโรงงาน | ทั้งสองท่าน | Safety and Standards Lead | EN-001-105/027/029/030, EN-132-208/106/109 | risk assessment, FMEA/HAZOP ตามบริบท, guarding/interlock/E-stop และ safety case | ต้องสร้าง common rubric และ standards matrix |
+| System Integration เป็นจุดเด่น | ดร. อัปสรรัชย์; คุณพิษณุสนับสนุน input–process–output | ประธานหลักสูตร | EN-001-110, Core Track 9, Capstone/CWIE | end-to-end demo และ architecture เชื่อม sensing–AI–control–process–value | ปรับ PLO/CLO mapping แล้ว; ต้องอนุมัติ Track PI/rubric และสื่อประชาสัมพันธ์ |
+| เศรษฐศาสตร์ การตัดสินใจ และการสร้าง value | คุณพิษณุ | Engineering Core/CT Lead | EN-001-101, EN-132-202/102 | ROI/TCO, scenario/optimization, decision log และ business case | มีเจ้าภาพแล้ว; บังคับใช้ใน Capstone |
+| BCG, carbon footprint และ traceability | ทั้งสองท่าน | BCG and Sustainability Lead | EN-001-101/023, EN-132-203/103/105, ทุก Track project | baseline/before-after, carbon/resource KPI และ traceable data | ปิดแบบมีเงื่อนไข; ต้องแต่งตั้ง Lead และ rubric ร่วม |
+| Drone ยุคใหม่และกฎหมาย | คุณพิษณุ | T1 Lead | EN-132-205 + T1 electives | RTK/GNSS, multispectral/thermal, edge AI, mission planning, regulation และ safety record | มี baseline; ทบทวนกฎหมาย/อุปกรณ์ทุกปี |
+| กล้องครอบคลุม input–processing–output | คุณพิษณุ | AI Core/Track Leads | EN-131-204, EN-132-205/105/106 | vision model เชื่อม decision/control และ process/quality outcome | มีเจ้าภาพแล้ว; ห้ามประเมินเฉพาะ accuracy |
 | กฎหมาย มาตรฐาน การค้า และบริบทเอเชีย | คุณพิษณุ | Safety and Standards Lead | CT6–CT9, AI Governance elective, industry module | compliance matrix, traceability, product/factory standard และ non-tariff risk case | ต้องแต่งตั้งผู้ทวนสอบภายนอกและทบทวนรายปี |
 | Core ระยะยาวกับเทคโนโลยีอายุสั้น | คุณพิษณุ | คณะกรรมการบริหารหลักสูตร | Engineering/AI Core; seminar/elective/microcredential | annual technology watch และบันทึกเหตุผลว่าอะไรคง Core/ย้าย elective | กำหนดกลไกแล้ว; เริ่มทบทวนก่อนเปิดรับรุ่นแรก |
 | ความร่วมมืออ้อย–น้ำตาลและมันสำปะหลัง | ดร. อัปสรรัชย์ | ประธานหลักสูตร | Industry/CWIE Coordinator + T1/T2 Leads | active problem, mentor, dataset/equipment, student placement และ joint assessment | ต้องระบุ partner owner แยกแต่ละ value chain |
 | เส้นทางอาชีพ งานในพื้นที่ และคุณภาพชีวิต | คุณพิษณุ | ประธานหลักสูตร | Career/Stakeholder Data Lead + T1–T3 Leads | career map, skill transcript, placement/retention และ graduate outcome | มี career C01–C17; ต้องติดตามผลรายรุ่น |
-| ผู้ประกอบการและการสร้างคุณค่าแก่ผู้เรียน | คุณพิษณุ | CT/T3 Lead | EN-132-101/102, electives, incubation challenge | validated problem, prototype, feasibility, customer/user evidence | มีรายวิชาเจ้าภาพ; เพิ่ม external pitch/review |
+| ผู้ประกอบการและการสร้างคุณค่าแก่ผู้เรียน | คุณพิษณุ | CT/T3 Lead | EN-132-202/102, electives, incubation challenge | validated problem, prototype, feasibility, customer/user evidence | มีรายวิชาเจ้าภาพ; เพิ่ม external pitch/review |
 | ภาษาจีนเพื่อวิชาชีพ/ธุรกิจ | คุณพิษณุ | คณะกรรมการหลักสูตร | GE/Free Elective Coordinator | elective pathway และผลการเรียนรู้การสื่อสารบริบทเอเชีย | เสนอเป็น GE/Free Elective; ไม่ลดแกนวิศวกรรม |
 | ผู้เรียนเป็นฐาน–ผลลัพธ์ผู้เรียนเป็นจุดหมาย | คุณพิษณุ | คณะกรรมการบริหารหลักสูตร | OBE/QA Lead, อาจารย์ที่ปรึกษา, Career Lead | student journey, advising, early warning, portfolio และ outcome dashboard | ต้องกำหนด KPI รับเข้า–คงอยู่–สำเร็จ–ได้งาน–คุณภาพชีวิต |
 

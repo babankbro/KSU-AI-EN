@@ -30,7 +30,7 @@
 
 ### CC1 การออกแบบผลิตภัณฑ์ ข้อกำหนด และโซลูชันปัญญาประดิษฐ์
 
-**AI Product, Requirements and Solution Design** — เสนอใช้ EN-132-101 (ปรับจาก AI Business and Product Design)
+**AI Product, Requirements and Solution Design** — เสนอใช้ EN-132-202 (ปรับจาก AI Business and Product Design)
 
 - Problem discovery, stakeholder/user research และ process mapping
 - Functional/non-functional requirements, data/AI feasibility และ risk
@@ -42,7 +42,7 @@
 
 ### CC2 ระบบสนับสนุนการตัดสินใจและการวิเคราะห์การดำเนินงาน
 
-**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-102 (ปรับจาก AI for Production and Supply Chain)
+**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-203 (ปรับจาก AI for Production and Supply Chain)
 
 - KPI/BI, descriptive–predictive–prescriptive analytics รวม business, energy, resource และ carbon KPI
 - Forecasting, scenario analysis, simulation และ optimization/operations research
@@ -54,7 +54,7 @@
 
 ### CC3 วิศวกรรมซอฟต์แวร์ สถาปัตยกรรม และการบูรณาการระบบ AI
 
-**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-107 (ปรับจาก Software Development and AI Engineering)
+**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-207 (ปรับจาก Software Development and AI Engineering)
 
 - Backend/API, event/data flow, database และส่วนติดต่อผู้ใช้ที่จำเป็น
 - Architecture pattern, system/interface contract และ integration testing
@@ -66,7 +66,7 @@
 
 ### CC4 ระบบปัญญาประดิษฐ์เชิงสร้างสรรค์และเอเจนต์
 
-**Generative and Agentic AI Systems** — เสนอใช้ EN-132-108 (ปรับจาก Agentic AI Systems)
+**Generative and Agentic AI Systems** — เสนอใช้ EN-132-209 (ปรับจาก Agentic AI Systems)
 
 - Foundation models, prompt/context engineering, embedding และ vector retrieval
 - RAG, tool/function use, workflow agents และ multi-agent pattern

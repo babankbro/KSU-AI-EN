@@ -42,84 +42,84 @@
 
 **AI/ML Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-131-102, EN-131-106, EN-131-107, EN-131-105, EN-132-107 และ EN-134-104
+- รายวิชาปลายทาง: EN-131-102, EN-131-202, EN-131-203, EN-131-205, EN-132-207 และ EN-134-404
 - สมรรถนะปลายทาง: แบบจำลอง AI/ML, data pipeline, deployment, monitoring และ end-to-end AI system
 
 ### 2. วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์
 
 **AI Application / Solutions Engineer · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-132-101, EN-132-107, EN-132-108, EN-134-104 และ EN-135-402
+- รายวิชาปลายทาง: EN-132-202, EN-132-207, EN-132-209, EN-134-404 และ EN-135-402
 - สมรรถนะปลายทาง: requirements, solution architecture, system integration, prototype และ implementation ในบริบทจริง
 
 ### 3. วิศวกรเกษตรอัจฉริยะและไอโอที
 
 **Smart Agriculture and IoT Engineer · แขนงวิชาเกษตรอัจฉริยะ**
 
-- รายวิชาปลายทาง: EN-001-027, EN-131-104, EN-132-103, EN-135-101, EN-135-109 และ EN-134-104
+- รายวิชาปลายทาง: EN-001-107, EN-131-201, EN-132-204, EN-133-301, EN-133-309 และ EN-134-404
 - สมรรถนะปลายทาง: sensor–edge–cloud, ระบบควบคุมฟาร์ม และการประยุกต์กับข้าว อ้อย มันสำปะหลังและอุตสาหกรรมแปรรูป
 
 ### 4. วิศวกรระบบควบคุมและอัตโนมัติ
 
 **Automation and Control Engineer · แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม**
 
-- รายวิชาปลายทาง: EN-001-027, EN-001-030, EN-132-106 และ EN-135-116
+- รายวิชาปลายทาง: EN-001-107, EN-001-110, EN-132-206 และ EN-133-316
 - สมรรถนะปลายทาง: PLC/SCADA, instrumentation, control panel และระบบอัตโนมัติในโรงงาน
 
 ### 5. วิศวกรหุ่นยนต์และบูรณาการระบบ
 
 **Robotics and System Integration Engineer · แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม**
 
-- รายวิชาปลายทาง: EN-001-030, EN-132-106, EN-135-127, EN-135-126, EN-135-118 และ EN-134-104
+- รายวิชาปลายทาง: EN-001-110, EN-132-206, EN-133-327, EN-133-326, EN-133-318 และ EN-134-404
 - สมรรถนะปลายทาง: robotics, sensor/actuator, material handling, warehouse automation และ system integration
 
 ### 6. วิศวกรซอฟต์แวร์และแอปพลิเคชันปัญญาประดิษฐ์
 
 **AI Software and Application Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-107, EN-132-108, EN-135-132, EN-135-133, EN-135-134 และ EN-134-104
+- รายวิชาปลายทาง: EN-132-207, EN-132-209, EN-133-335, EN-133-336, EN-133-337 และ EN-134-404
 - สมรรถนะปลายทาง: AI software, API, GenAI/agentic application, testing, cloud microservices และ production deployment
 
 ### 7. วิศวกรข้อมูล
 
 **Data Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-131-107, EN-131-105, EN-135-131 และ EN-135-134
+- รายวิชาปลายทาง: EN-131-203, EN-131-205, EN-133-334 และ EN-133-337
 - สมรรถนะปลายทาง: database, ETL/ELT, batch/stream pipeline, orchestration, data quality และ data platform
 
 ### 8. นักออกแบบและสร้างนวัตกรรมด้านปัญญาประดิษฐ์
 
 **AI Innovator · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-101, EN-132-107, EN-135-135, EN-135-140, EN-135-143 และ EN-134-104
+- รายวิชาปลายทาง: EN-132-202, EN-132-207, EN-133-338, EN-133-343, EN-133-346 และ EN-134-404
 - สมรรถนะปลายทาง: opportunity discovery, UX, product concept, rapid prototype, validation และ AI innovation
 
 ### 9. ผู้ประกอบการด้านธุรกิจเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์
 
 **Technology and AI Entrepreneur · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-001-021, EN-132-101, EN-135-140, EN-135-142, EN-135-143 และ EN-134-104
+- รายวิชาปลายทาง: EN-001-101, EN-132-202, EN-133-343, EN-133-345, EN-133-346 และ EN-134-404
 - สมรรถนะปลายทาง: business model, value proposition, product strategy, digital marketing, feasibility และ venture pitch
 
 ### 10. นักวิจัยด้านปัญญาประดิษฐ์และระบบอัจฉริยะ
 
 **AI and Intelligent Systems Researcher · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-131-102, EN-131-106, EN-134-101, EN-134-102, EN-134-103 และ EN-134-104
+- รายวิชาปลายทาง: EN-131-102, EN-131-202, EN-134-201, EN-134-302, EN-134-303 และ EN-134-404
 - สมรรถนะปลายทาง: research question, literature review, experimental design, reproducible analysis และ research communication
 
 ### 11. ข้าราชการ/พนักงานหน่วยงานของรัฐด้านเทคโนโลยีดิจิทัล
 
 **Government Officer / Digital Technology Specialist · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-132-101, EN-132-102, EN-135-145, EN-134-104, EN-135-401 และ EN-135-402
+- รายวิชาปลายทาง: EN-132-202, EN-132-203, EN-133-348, EN-134-404, EN-135-401 และ EN-135-402
 - สมรรถนะปลายทาง: digital service, project/solution analysis, procurement support, AI governance, PDPA, cybersecurity และ public-sector implementation
 
 ### 12. นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล
 
 **Data Scientist / Data Analyst · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-001-022, EN-131-102, EN-131-106, EN-131-107 และ EN-135-131
+- รายวิชาปลายทาง: EN-001-102, EN-131-102, EN-131-202, EN-131-203 และ EN-133-334
 - สมรรถนะปลายทาง: statistics, data preparation, analytics, machine learning, visualization และการสื่อสารข้อค้นพบเพื่อการตัดสินใจ
 
 ## การกระจายอาชีพตามแขนง

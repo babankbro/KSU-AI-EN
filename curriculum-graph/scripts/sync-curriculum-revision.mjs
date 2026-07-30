@@ -51,7 +51,7 @@ for (const filename of sources) {
 }
 
 // 27 engineering/AI/track-core courses + 45 professional electives.
-const expected = 72;
+const expected = 75;
 if (Object.keys(courses).length !== expected) {
   throw new Error(`Expected ${expected} revised courses, found ${Object.keys(courses).length}`);
 }
@@ -154,12 +154,12 @@ for (const code of cloRequiredCodes) {
     throw new Error(`No CLO rows found for ${code}`);
   }
 }
-if (Object.keys(cloRevision).length !== 33) {
-  throw new Error(`Expected CLO mapping for 33 required courses/activities, found ${Object.keys(cloRevision).length}`);
+if (Object.keys(cloRevision).length !== 36) {
+  throw new Error(`Expected CLO mapping for 36 courses/activities, found ${Object.keys(cloRevision).length}`);
 }
 const cloCount = Object.values(cloRevision).reduce((sum, item) => sum + item.clos.length, 0);
-if (cloCount !== 102) {
-  throw new Error(`Expected 102 CLO rows, found ${cloCount}`);
+if (cloCount !== 111) {
+  throw new Error(`Expected 111 CLO rows, found ${cloCount}`);
 }
 
 const cloOutput = `// Generated from 10_Course_Learning_Outcomes_CLO_Mapping.md.
