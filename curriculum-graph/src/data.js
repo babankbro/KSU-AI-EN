@@ -240,8 +240,8 @@ const RAW = [
 
   /* ================= 2.5 กลุ่มวิชาโครงงานและสัมมนา ================= */
   { c: "EN-134-201", s: "Seminar I", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems I", cr: "1(0-2-1)", g: "proj", y: 2, sem: 4, p: [3, 4, 7],
-    d: "แนวโน้มเทคโนโลยีปัญญาประดิษฐ์ล่าสุดในระดับประเทศและนานาชาติ กรณีศึกษาการประยุกต์ใช้ปัญญาประดิษฐ์ในภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรมธุรกิจ การวิเคราะห์และวิจารณ์บทความวิชาการและงานวิจัยด้านปัญญาประดิษฐ์ การพัฒนาทักษะการนำเสนอด้วยสื่อและเทคโนโลยีทั้งภาษาไทยและภาษาอังกฤษ การแลกเปลี่ยนความรู้กับผู้เชี่ยวชาญจากภาคอุตสาหกรรมและวิชาการ",
-    dEn: "Review, analysis, and discussion of current topics in artificial intelligence engineering and intelligent systems; literature searching; source evaluation; technical synthesis; academic integrity; oral and written technical communication" },
+    d: "แนวโน้มเทคโนโลยีปัญญาประดิษฐ์ล่าสุดในระดับประเทศและนานาชาติ กรณีศึกษาการประยุกต์ใช้ปัญญาประดิษฐ์ในภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรมธุรกิจ การวิเคราะห์และวิจารณ์บทความวิชาการและงานวิจัยด้านปัญญาประดิษฐ์ การพัฒนาทักษะการนำเสนอด้วยสื่อและเทคโนโลยีทั้งภาษาไทยและภาษาอังกฤษ การแลกเปลี่ยนความรู้กับผู้เชี่ยวชาญจากภาคอุตสาหกรรมและวิชาการ การประเมินความถนัดและความสนใจของตนเองเทียบกับเส้นทางอาชีพและแขนงวิชา และการจัดทำแผนพัฒนาตนเองเพื่อใช้ประกอบการเลือกวิชาชีพเลือกและสถานประกอบการสหกิจศึกษา",
+    dEn: "Review, analysis, and discussion of current topics in artificial intelligence engineering and intelligent systems; literature searching; source evaluation; technical synthesis; academic integrity; oral and written technical communication; self-assessment of aptitude and interest against career paths and study tracks; preparation of an individual development plan to inform the selection of professional electives and cooperative-education workplaces" },
   { c: "EN-134-302", s: "Seminar II", t: "สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II", e: "Seminar in Artificial Intelligence Engineering and Intelligent Systems II", cr: "1(0-2-1)", g: "proj", y: 3, sem: 5, p: [3, 4, 7], h: ["EN-134-201"],
     d: "การสืบค้น วิเคราะห์ และสังเคราะห์องค์ความรู้หรือเทคโนโลยีอุบัติใหม่ด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ การเปรียบเทียบแนวทางและประเมินข้อจำกัดของเทคโนโลยี การพิจารณาผลกระทบด้านเทคนิค จริยธรรม เศรษฐกิจ สังคม และอุตสาหกรรม การจัดทำบทความหรือรายงานเชิงวิชาการ การนำเสนอและอภิปรายเชิงวิชาชีพทั้งภาษาไทยและภาษาอังกฤษ",
     dEn: "Advanced investigation of emerging issues in artificial intelligence engineering and intelligent systems; critical comparison of approaches; assessment of technical, ethical, social, and industrial implications; academic writing; professional seminar presentation in Thai and English" },
@@ -253,7 +253,7 @@ const RAW = [
     dEn: "Execution of an approved artificial intelligence engineering or intelligent systems project; iterative design and development; experimentation and validation; project and risk management; responsible teamwork; documentation; demonstration and oral defense of results" },
 
   /* ================= 2.6 กลุ่มวิชาประสบการณ์ภาคสนาม ================= */
-  { c: "EN-135-401", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 4, sem: 7, p: [3, 4, 5, 7],
+  { c: "EN-135-401", s: "Co-op Prep", t: "เตรียมความพร้อมสหกิจศึกษา", e: "Cooperative Education Preparation", cr: "1(0-2-1)", g: "field", y: 3, sem: 6, p: [3, 4, 5, 7], co: ["EN-134-303"],
     d: "ปรัชญาและเป้าประสงค์ของสหกิจศึกษา ระเบียบและขั้นตอนการดำเนินสหกิจศึกษาของมหาวิทยาลัยกาฬสินธุ์ การค้นหาและการเลือกสถานประกอบการที่เหมาะสมด้านวิศวกรรมปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม การเขียนประวัติย่อและจดหมายสมัครงานในภาษาไทยและภาษาอังกฤษ ทักษะการสัมภาษณ์งานและการนำเสนอตนเอง จรรยาบรรณวิชาชีพวิศวกรรมและการปฏิบัติตนในสถานประกอบการ ความปลอดภัยในการทำงานและกฎหมายแรงงานที่เกี่ยวข้อง ทักษะการสื่อสารและการทำงานร่วมกับผู้อื่นในสภาพแวดล้อมวิชาชีพ การวางแผนการเรียนรู้และการกำหนดเป้าหมาย การจัดทำแผนการปฏิบัติงานและรูปแบบรายงานสหกิจศึกษา",
     dEn: "Preparation for cooperative education; workplace readiness; professional ethics and safety; communication and teamwork; job application and interview skills; work planning; intellectual property and confidentiality; preparation of a cooperative-education learning plan" },
   { c: "EN-135-402", s: "Co-op", t: "สหกิจศึกษา", e: "Cooperative Education", cr: "6(0-40-0)", g: "field", y: 4, sem: 8, p: [2, 3, 4, 5, 7], h: ["EN-135-401", "EN-134-404"],
@@ -383,13 +383,15 @@ export const COURSES = RAW.map(c => {
 
 export const CORE = COURSES.filter(c => c.sem && c.g !== "ge" && c.g !== "elec");
 
-/* แผนข้อเสนอ 133 นก.: ปี 1–3 กระจายใกล้เคียงกัน และปี 4 เหลือ 15+6 สำหรับ Capstone/สหกิจ */
-export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 19, 6: 16, 7: 16, 8: 6 };
+/* แผนการเรียน 133 นก. (ยอดยืนยันแล้ว): ปี 1–3 กระจายใกล้เคียงกัน และปี 4 เหลือ 15+6 สำหรับ Capstone/สหกิจ
+   ภาค 6 = 17 นก. และภาค 7 = 15 นก. หลังย้าย EN-135-401 เตรียมความพร้อมสหกิจศึกษาจากภาค 7 ไปภาค 6 */
+export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 19, 6: 17, 7: 15, 8: 6 };
 export const SEM_TITLE = {
   1: "Engineering, Programming and Data Foundations", 2: "Physical, Electrical and Quantitative Foundations",
   3: "AI, Data and Sensing Foundations", 4: "AI Platforms, Decision Foundations and Academic Seminar",
-  5: "Domain Systems Integration and Technology Review", 6: "Advanced Intelligent Systems and Project Preparation",
-  7: "Capstone, Co-op Preparation and Professional Electives", 8: "Cooperative Education"
+  5: "Domain Systems Integration and Technology Review",
+  6: "Advanced Intelligent Systems, Project and Workplace Preparation",
+  7: "Capstone and Workplace-aligned Professional Electives", 8: "Cooperative Education"
 };
 export const SEM_EXTRA = {
   5: [{ s: "วิชาเลือกชีพ 1", k: 3 }, { s: "วิชาเลือกชีพ 2", k: 3 }],
@@ -397,9 +399,9 @@ export const SEM_EXTRA = {
   7: [{ s: "วิชาเลือกชีพ 4", k: 3 }, { s: "วิชาเลือกชีพ 5", k: 3 },
       { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
 };
-export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 35, 4: 22 };
+export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 36, 4: 21 };
 
-/* ---------------- โครงสร้างข้อเสนอ 133 หน่วยกิต (รอยืนยันการลด/จัดสรรใหม่ 3 หน่วยกิต) ---------------- */
+/* ---------------- โครงสร้างหลักสูตร 133 หน่วยกิต (ยอดยืนยันแล้ว) ---------------- */
 export const STRUCTURE = [
   { id: "ge", no: "1", name: "หมวดวิชาศึกษาทั่วไป", code: "GE-010 / GE-020", credits: 24, n: 8, g: "ge",
     note: "บังคับ 6 วิชา 18 นก. · เลือก 2 วิชา 6 นก.",
@@ -496,7 +498,7 @@ export function subgroupsOf(gid) {
     if (pending.length) {
       groups.push({
         key: "pending", name: "รอยืนยันภาคการศึกษา",
-        sub: "รายวิชาใหม่ในโครงสร้างข้อเสนอ ยังไม่กำหนดลงใน baseline 8 ภาคเรียน",
+        sub: "รายวิชาที่ยังไม่กำหนดภาคการศึกษาในแผนการเรียน 8 ภาคเรียน",
         courses: pending, credits: pending.reduce((a, c) => a + creditOf(c), 0),
         n: pending.length, pending: true
       });
@@ -763,8 +765,8 @@ export const CAREERS = [
     kw: "AI Project Engineer · Implementation Engineer · Technical Project Engineer · Intelligent Systems Engineer" },
   { id: "C23", track: 0, st: "M", th: "วิศวกรบูรณาการระบบอัจฉริยะ", en: "Intelligent Systems Integration Engineer",
     courses: ["EN-001-230", "EN-132-308", "EN-132-201", "EN-135-336", "EN-135-337", "EN-134-404"],
-    why: "เชื่อมข้อมูล อุปกรณ์ ระบบควบคุม ซอฟต์แวร์ API และ AI ตามสถาปัตยกรรมองค์กร พร้อมทดสอบความน่าเชื่อถือแบบครบวงจร",
-    kw: "Systems Integration Engineer · AI Integration Engineer · Solution Integration Engineer · Integration Test Engineer" },
+    why: "เชื่อมข้อมูล อุปกรณ์ ระบบควบคุม ซอฟต์แวร์ API และ AI ตามสถาปัตยกรรมองค์กร พร้อมทดสอบความน่าเชื่อถือแบบครบวงจร · ครอบคลุมบทบาทผู้ดูแลระบบในภาพรวมของโรงงาน ซึ่งเป็นความต้องการที่อุตสาหกรรมแป้งและเกษตรแปรรูประบุว่ายังขาดกำลังคน",
+    kw: "Systems Integration Engineer · AI Integration Engineer · Solution Integration Engineer · Integration Test Engineer · Plant Systems Integrator · OT System Owner" },
   { id: "C24", track: 0, st: "M", th: "ที่ปรึกษาโซลูชันปัญญาประดิษฐ์และการเปลี่ยนผ่านสู่ดิจิทัล", en: "AI Solutions and Digital Transformation Consultant",
     courses: ["EN-001-121", "EN-132-302", "EN-132-303", "EN-135-337", "EN-135-343", "EN-135-348", "EN-134-404"],
     why: "วิเคราะห์ความพร้อมองค์กร ออกแบบสถาปัตยกรรมและแผนเปลี่ยนผ่าน ประเมินความคุ้มค่า ความเสี่ยง และแนวทางนำ AI ไปใช้จริง",

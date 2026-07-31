@@ -67,7 +67,7 @@ export default function Clo() {
       <PageHead
         eyebrow="หมวด 4.6 – 4.7 · เอกสารหลักสูตร"
         title="ผลลัพธ์การเรียนรู้รายวิชา (CLO) และแผนที่ความเชื่อมโยง"
-        lead="สรุป CLO ของรายวิชาแกนตามข้อเสนอใหม่ พร้อม K–S–A ชุดทักษะ EN-AISK01–09 หลักฐานประเมิน และเส้นทาง CLO → Sub-YLO → PLO ตามระดับ I–R–M"
+        lead="สรุป CLO ของรายวิชาแกน พร้อม K–S–A ชุดทักษะ EN-AISK01–09 หลักฐานประเมิน และเส้นทาง CLO → Sub-YLO → PLO ตามระดับ I–R–M"
         crumbs={[{ label: "CLO และ Curriculum Mapping" }]}
       />
 
