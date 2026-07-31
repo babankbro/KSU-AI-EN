@@ -492,43 +492,43 @@
 
 | ทักษะแกน | Skill Set | PLO ที่รองรับ | รายวิชาหลัก | สถานะ |
 |---|---|---|---|:--:|
-| H1 AI/ML & Math | **AISK01** (G1 ย่อย 1–4) | PLO1, PLO6 | 131-102, 131-202, 131-101 | ✅ +Symbolic/CS2023 |
-| H2 Programming & SW Eng | **AISK01** (G1 ย่อย 5) | PLO2, PLO1 | 001-106, 132-304 | ✅ +Full-stack |
-| H3 Data Eng & Analytics | **AISK01** (G1 ย่อย 7) | PLO6, PLO2, PLO3 | 131-203, 132-305 | ✅ |
-| H4 MLOps & Cloud | **AISK01** (G1 ย่อย 6) · AISK04 (Edge–Cloud) | PLO2, PLO4 | 131-205, 131-206 | ✅ |
-| H5 Automation & Digital Twin | **AISK03** (G2 อุตสาหกรรม) · AISK04 (บูรณาการ) | PLO2, PLO1 | 132-303, 132-307 | ✅ |
-| H6 GenAI, LLM & Agentic | AISK06 (G4) | PLO2, PLO7 | 131-101, 132-308 | ✅ เสริม TSC#4/5/9 |
-| H7 Security & Responsible AI | AISK07 (G5) | PLO4 | 131-201/206, 134-201/302 | ✅ +AI Verify/ISO 42001/NIST |
-| H8 Computer Vision & Remote Sensing | **AISK05** (G3 ความเข้าใจของเครื่อง) | PLO2, PLO6 | 131-204, 132-306 | ✅ |
-| H9 IoT, Edge & Sensor | **AISK04** (G3) · AISK02 (ประยุกต์ฟาร์ม) | PLO2, PLO1 | 131-201, 001-107 | ✅ |
-| ฐานวิศวกรรมกายภาพ *(กลศาสตร์/วัสดุ/ความร้อน-ของไหล/เขียนแบบ/Workshop)* | **AISK02** (G2 เกษตร) · AISK03 (G2 อุตสาหกรรม) | PLO2, PLO1 | 001-103/104/105, 001-108/109/201 | ✅ **ใหม่ — แกน Build & Construct** |
-| H11 Time-Series & Forecasting | **AISK05** · AISK03 | PLO6, PLO2 | 001-102, 132-305/302/307 | ✅ baseline ในแกน; ลึกตาม Track |
-| H12 Big Data & Streaming | **AISK01** (ย่อย 7) | PLO2, PLO6 | 131-203 | ◐ baseline; distributed/streaming L4 ใช้วิชาเลือก |
-| H13 RL, Optimization & OR | **AISK03** · AISK09 | PLO1, PLO2 | 131-102, 132-305/307 | ✅ optimization/OR ในแกน; RL ลึกใช้วิชาเลือก |
-| H14 Data-Centric AI | **AISK01** (ย่อย 7) | PLO6 | 001-102, 131-204/205/202/203 | ◐ ปิดเมื่อใช้ dataset/lineage/label-quality rubric |
-| H15 Green/Sustainable AI | **AISK02** · AISK07/08 | PLO2, PLO4 | 001-101/103/201, 131-205, 132-301/302/307 | ◐ ปิดเมื่อใช้ BCG/carbon rubric ทุก Track |
-| H10 NLP / Thai NLP | AISK06 (ย่อย 5) | PLO2, PLO7 | 131-101, 132-308 | ◐ baseline; Thai NLP L4 ใช้วิชาเลือก |
-| H16 Smart/Precision Agriculture & Agri-food | **AISK02** · AISK05 | PLO1, PLO2, PLO6 | 132-305/302/306 | ✅ baseline ในแกน; ลึก T1 |
-| H17 Smart Manufacturing/Process/Quality/MES | **AISK03** · AISK04/05 | PLO1, PLO2, PLO6 | 001-103/107/109, 132-307/303/201 | ✅ baseline ในแกน; ลึก T2 |
-| H18 Maintenance/Reliability/Asset Intelligence | **AISK03** · AISK05 | PLO1, PLO2, PLO6 | 132-307, 134-404 | ◐ baseline; C16/L4 ใช้ Advanced Maintenance elective |
-| H19 Decision Intelligence/BI/DSS | **AISK05** | PLO1, PLO2, PLO3, PLO6 | 001-101, 131-203, 132-305/302/307 | ✅ ในแกนร่วม |
-| H20 Enterprise Architecture/Integration/Digital Services | **AISK09** | PLO2, PLO3, PLO4, PLO7 | 001-104/201, 131-205/206, 132-301/304/308 | ◐ architecture/integration ในแกน; ITSM/IAM/DR/e-Service L4 ใช้วิชาเลือก |
-| EF1 Drawing/CAD/Layout/P&ID | AISK02/03/09 | PLO2; สนับสนุน PLO3 | 001-104, 132-303 | ✅ |
-| EF2 Mechanics/Materials/Fabrication | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4 | 001-105/108 | ✅ |
-| EF3 Thermal-Fluid/Energy/Process | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4/PLO6 | 001-103, 132-307 | ✅ |
-| EF4 Electrical/Instrumentation/Calibration | AISK03/04 | PLO1, PLO2, PLO6; สนับสนุน PLO4 | 001-107, 132-201 | ✅ |
-| EF5 Actuation/Fluid Power/Control | AISK03/04 | PLO2; สนับสนุน PLO4/PLO6 | 001-109, 132-201 | ◐ ปิดระดับบูรณาการ; ความลึก component design ใช้ Lab/วิชาเลือก |
-| EF6 Safety/Standards/Commissioning/Handover | AISK07/08/09 | PLO2, PLO4; สนับสนุน PLO3/PLO5/PLO6 | 001-108/109/201, 132-303/201, 134-404/135-402 | ◐ ต้องมี rubric และผู้ทวนสอบ |
+| H1 AI/ML & Math | **AISK01** (G1 ย่อย 1–4) | PLO1, PLO6 | 131-102, 131-206, 131-101 | ✅ +Symbolic/CS2023 |
+| H2 Programming & SW Eng | **AISK01** (G1 ย่อย 5) | PLO2, PLO1 | 001-126, 132-308 | ✅ +Full-stack |
+| H3 Data Eng & Analytics | **AISK01** (G1 ย่อย 7) | PLO6, PLO2, PLO3 | 131-207, 132-303 | ✅ |
+| H4 MLOps & Cloud | **AISK01** (G1 ย่อย 6) · AISK04 (Edge–Cloud) | PLO2, PLO4 | 131-205, 131-208 | ✅ |
+| H5 Automation & Digital Twin | **AISK03** (G2 อุตสาหกรรม) · AISK04 (บูรณาการ) | PLO2, PLO1 | 132-307, 132-306 | ✅ |
+| H6 GenAI, LLM & Agentic | AISK06 (G4) | PLO2, PLO7 | 131-101, 132-309 | ✅ เสริม TSC#4/5/9 |
+| H7 Security & Responsible AI | AISK07 (G5) | PLO4 | 131-204/208, 134-201/302 | ✅ +AI Verify/ISO 42001/NIST |
+| H8 Computer Vision & Remote Sensing | **AISK05** (G3 ความเข้าใจของเครื่อง) | PLO2, PLO6 | 131-203, 132-305 | ✅ |
+| H9 IoT, Edge & Sensor | **AISK04** (G3) · AISK02 (ประยุกต์ฟาร์ม) | PLO2, PLO1 | 131-204, 001-127 | ✅ |
+| ฐานวิศวกรรมกายภาพ *(กลศาสตร์/วัสดุ/ความร้อน-ของไหล/เขียนแบบ/Workshop)* | **AISK02** (G2 เกษตร) · AISK03 (G2 อุตสาหกรรม) | PLO2, PLO1 | 001-123/124/125, 001-128/129/230 | ✅ **ใหม่ — แกน Build & Construct** |
+| H11 Time-Series & Forecasting | **AISK05** · AISK03 | PLO6, PLO2 | 001-122, 132-303/304/306 | ✅ baseline ในแกน; ลึกตาม Track |
+| H12 Big Data & Streaming | **AISK01** (ย่อย 7) | PLO2, PLO6 | 131-207 | ◐ baseline; distributed/streaming L4 ใช้วิชาเลือก |
+| H13 RL, Optimization & OR | **AISK03** · AISK09 | PLO1, PLO2 | 131-102, 132-303/306 | ✅ optimization/OR ในแกน; RL ลึกใช้วิชาเลือก |
+| H14 Data-Centric AI | **AISK01** (ย่อย 7) | PLO6 | 001-122, 131-203/205/206/207 | ◐ ปิดเมื่อใช้ dataset/lineage/label-quality rubric |
+| H15 Green/Sustainable AI | **AISK02** · AISK07/08 | PLO2, PLO4 | 001-121/123/230, 131-205, 132-302/304/306 | ◐ ปิดเมื่อใช้ BCG/carbon rubric ทุก Track |
+| H10 NLP / Thai NLP | AISK06 (ย่อย 5) | PLO2, PLO7 | 131-101, 132-309 | ◐ baseline; Thai NLP L4 ใช้วิชาเลือก |
+| H16 Smart/Precision Agriculture & Agri-food | **AISK02** · AISK05 | PLO1, PLO2, PLO6 | 132-303/304/305 | ✅ baseline ในแกน; ลึก T1 |
+| H17 Smart Manufacturing/Process/Quality/MES | **AISK03** · AISK04/05 | PLO1, PLO2, PLO6 | 001-123/127/129, 132-306/307/201 | ✅ baseline ในแกน; ลึก T2 |
+| H18 Maintenance/Reliability/Asset Intelligence | **AISK03** · AISK05 | PLO1, PLO2, PLO6 | 132-306, 134-404 | ◐ baseline; C16/L4 ใช้ Advanced Maintenance elective |
+| H19 Decision Intelligence/BI/DSS | **AISK05** | PLO1, PLO2, PLO3, PLO6 | 001-121, 131-207, 132-303/304/306 | ✅ ในแกนร่วม |
+| H20 Enterprise Architecture/Integration/Digital Services | **AISK09** | PLO2, PLO3, PLO4, PLO7 | 001-124/230, 131-205/208, 132-302/308/309 | ◐ architecture/integration ในแกน; ITSM/IAM/DR/e-Service L4 ใช้วิชาเลือก |
+| EF1 Drawing/CAD/Layout/P&ID | AISK02/03/09 | PLO2; สนับสนุน PLO3 | 001-124, 132-307 | ✅ |
+| EF2 Mechanics/Materials/Fabrication | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4 | 001-125/128 | ✅ |
+| EF3 Thermal-Fluid/Energy/Process | AISK02/03 | PLO1, PLO2; สนับสนุน PLO4/PLO6 | 001-123, 132-306 | ✅ |
+| EF4 Electrical/Instrumentation/Calibration | AISK03/04 | PLO1, PLO2, PLO6; สนับสนุน PLO4 | 001-127, 132-201 | ✅ |
+| EF5 Actuation/Fluid Power/Control | AISK03/04 | PLO2; สนับสนุน PLO4/PLO6 | 001-129, 132-201 | ◐ ปิดระดับบูรณาการ; ความลึก component design ใช้ Lab/วิชาเลือก |
+| EF6 Safety/Standards/Commissioning/Handover | AISK07/08/09 | PLO2, PLO4; สนับสนุน PLO3/PLO5/PLO6 | 001-128/129/230, 132-307/201, 134-404/135-402 | ◐ ต้องมี rubric และผู้ทวนสอบ |
 | S1 Analytical/Systems | AISK08 | PLO1, PLO6 | 134-303 + ทุกโครงงาน | ✅ |
 | S2 Problem-Solving/Judgment | AISK08 | PLO1, PLO2 | ทุกโครงงาน | ✅ |
 | S3 Adaptability/Lifelong | AISK08 | PLO7 | 131-205, 134-303 | ✅ |
 | S4 Communication/English | AISK08 | PLO3 | 134-201/302, 135-401 | ✅ |
-| S5 Teamwork/Leadership | AISK08 | PLO5 | 001-108/109/201, 134-404 | ✅ |
-| S6 Product/Entrepreneurial/PM | AISK08 | PLO7 | 132-301, 135-402 | ✅ |
+| S5 Teamwork/Leadership | AISK08 | PLO5 | 001-128/129/230, 134-404 | ✅ |
+| S6 Product/Entrepreneurial/PM | AISK08 | PLO7 | 132-302, 135-402 | ✅ |
 | S7 AI Literacy/Human–AI | AISK06/07 | PLO4, PLO7 | 131-101 | ✅ AI User TSC#2 |
-| S8 Empathy/Stakeholder | AISK08 | PLO3, PLO5 | 135-401, 132-301 | ✅ |
-| S9 Stakeholder/Requirements/Change | **AISK09** | PLO2, PLO3, PLO5, PLO7 | 132-301, 134-303/404, 135-402 | ◐ สอดแทรก Project/Co-op |
-| S10 Agile/Quality/Safety/Accountability | **AISK09** | PLO2, PLO4, PLO5 | 001-108/109/201, 134-404, 135-402 | ◐ สอดแทรก Workshop/Project |
+| S8 Empathy/Stakeholder | AISK08 | PLO3, PLO5 | 135-401, 132-302 | ✅ |
+| S9 Stakeholder/Requirements/Change | **AISK09** | PLO2, PLO3, PLO5, PLO7 | 132-302, 134-303/404, 135-402 | ◐ สอดแทรก Project/Co-op |
+| S10 Agile/Quality/Safety/Accountability | **AISK09** | PLO2, PLO4, PLO5 | 001-128/129/230, 134-404, 135-402 | ◐ สอดแทรก Workshop/Project |
 
 **ผลตรวจสอบ:** H1–H20, S1–S10 และ EF1–EF6 มี Skill Set, PLO, CLO เจ้าภาพ และหลักฐานปลายทางครบ จึงไม่มีทักษะลอย อย่างไรก็ตาม H7/H14/H15/EF5/EF6 ยังขึ้นกับ rubric และทรัพยากร ส่วน H10/H12/H18/H20 ต้องใช้วิชาเลือกสร้างความลึก L4 ตาม Track
 

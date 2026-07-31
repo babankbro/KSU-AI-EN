@@ -57,26 +57,26 @@
 
 | Skill | Coverage เดิม | หลักฐานรายวิชาเดิม | Gap และการปรับที่เสนอ |
 |---|:---:|---|---|
-| H1 AI/ML & Mathematics | แข็งแรง | 131-102, 131-202, 001-102 | คงเดิม; เพิ่ม experiment/reproducibility ในโครงงาน |
-| H2 Programming & AI Software | แข็งแรง | 001-106, 132-304 | เพิ่ม data structures, Git, automated testing, SQL/API ตั้งแต่ปี 1–2 |
-| H3 Data Engineering/Analytics/Viz | แข็งแรง | 131-203, 132-305 | เพิ่ม semantic model, BI/DSS และ data quality gate |
-| H4 MLOps/Cloud/Infrastructure | แข็งแรง | 131-205/206, 132-304 | เพิ่ม observability, IAM, backup/DR, SLO และ runbook |
-| H5 Automation/Robotics/Digital Twin | แข็งแรง | 132-307/303, 135-316/327 | แยก control/robotics ออกจาก process/quality ให้ชัด |
-| H6 GenAI/LLM/Agentic | แข็งแรง | 132-308, 135-332 | ลดความซ้ำ; ให้ 132-308 เป็นฐาน และ elective เป็น advanced LLM |
-| H7 Security/Responsible AI | ปานกลาง | 131-101/201/205/206, 135-345 | รวม AI QA + Security + Governance เป็นวิชาบังคับ T3 หรือ cross-track |
-| H8 CV/Remote Sensing/Multimodal | แข็งแรง | 131-204, 132-306, 135-308/329 | คงแกน; elective ต้องเป็น advanced domain application |
-| H9 IoT/Embedded/Edge/Sensors | แข็งแรง | 001-107/109, 131-201, 132-302/303 | คงเดิม; เพิ่ม device management และ industrial protocol |
-| H10 NLP/Thai NLP | อ่อน–ปานกลาง | 132-308, 135-332 | เพิ่ม elective Thai NLP/Sovereign AI โดยตรง |
-| H11 Time-Series/Predictive | แข็งแรง | 132-305/302/307, 135-305/317 | ลดวิชาเกษตรที่ซ้ำ และใช้หนึ่งวิชา Farm Data Intelligence |
-| H12 Big Data/Streaming | แข็งแรง | 131-203, 135-331 | แยกระดับพื้นฐานกับ advanced streaming/platform ให้ชัด |
-| H13 RL/Optimization/OR | ปานกลาง | 132-305, 135-319/328 | ทำ Decision Intelligence & Optimization เป็นแกนร่วม EN-132 |
-| H14 Data-Centric AI/Annotation | ปานกลาง | 131-203, project | เพิ่ม dataset specification, labeling QA และ data lineage ใน AI Core/Capstone |
-| H15 Sustainable/Green AI | ปานกลาง | 001-103, 131-205, 135-315/330 | กำหนด energy/cost/carbon metric ใน Project และวิชา Track |
-| H16 Precision Agriculture/Agri-food | แข็งแรงแต่ซ้ำ | 132-302/306, 135-301/302/305/309/310/312 | คง 132-302/306 เป็น Track required; ควบรวม electives ที่ซ้ำ |
-| H17 Smart Manufacturing/Quality/MES | ปานกลาง | 132-307/303, 135-320/328/329 | ขยาย 132-307 ให้มี MES, OEE, SPC, Lean/Six Sigma |
-| H18 Maintenance/Reliability/Asset | ปานกลาง | 132-307, 135-317 | เลื่อน 135-317 เป็น Track required และเพิ่ม RCA/FMEA/CMMS/EAM/RUL |
-| H19 BI/DSS/Decision Intelligence | ปานกลาง | 131-203, 132-305, 135-319 | ทำ 132-305 เป็นแกน Decision Intelligence; 135-319 เป็น advanced DSS/OR |
-| H20 Architecture/Integration/Digital Services | ปานกลาง–อ่อน | 132-301/304, 131-205/206, 135-334 | เพิ่ม Enterprise Architecture, IAM, ITSM, DR, UAT, change และ handover |
+| H1 AI/ML & Mathematics | แข็งแรง | 131-102, 131-206, 001-122 | คงเดิม; เพิ่ม experiment/reproducibility ในโครงงาน |
+| H2 Programming & AI Software | แข็งแรง | 001-126, 132-308 | เพิ่ม data structures, Git, automated testing, SQL/API ตั้งแต่ปี 1–2 |
+| H3 Data Engineering/Analytics/Viz | แข็งแรง | 131-207, 132-303 | เพิ่ม semantic model, BI/DSS และ data quality gate |
+| H4 MLOps/Cloud/Infrastructure | แข็งแรง | 131-205/208, 132-308 | เพิ่ม observability, IAM, backup/DR, SLO และ runbook |
+| H5 Automation/Robotics/Digital Twin | แข็งแรง | 132-306/307, 135-316/327 | แยก control/robotics ออกจาก process/quality ให้ชัด |
+| H6 GenAI/LLM/Agentic | แข็งแรง | 132-309, 135-332 | ลดความซ้ำ; ให้ 132-309 เป็นฐาน และ elective เป็น advanced LLM |
+| H7 Security/Responsible AI | ปานกลาง | 131-101/204/205/208, 135-345 | รวม AI QA + Security + Governance เป็นวิชาบังคับ T3 หรือ cross-track |
+| H8 CV/Remote Sensing/Multimodal | แข็งแรง | 131-203, 132-305, 135-308/329 | คงแกน; elective ต้องเป็น advanced domain application |
+| H9 IoT/Embedded/Edge/Sensors | แข็งแรง | 001-127/129, 131-204, 132-304/307 | คงเดิม; เพิ่ม device management และ industrial protocol |
+| H10 NLP/Thai NLP | อ่อน–ปานกลาง | 132-309, 135-332 | เพิ่ม elective Thai NLP/Sovereign AI โดยตรง |
+| H11 Time-Series/Predictive | แข็งแรง | 132-303/304/306, 135-305/317 | ลดวิชาเกษตรที่ซ้ำ และใช้หนึ่งวิชา Farm Data Intelligence |
+| H12 Big Data/Streaming | แข็งแรง | 131-207, 135-331 | แยกระดับพื้นฐานกับ advanced streaming/platform ให้ชัด |
+| H13 RL/Optimization/OR | ปานกลาง | 132-303, 135-319/328 | ทำ Decision Intelligence & Optimization เป็นแกนร่วม EN-132 |
+| H14 Data-Centric AI/Annotation | ปานกลาง | 131-207, project | เพิ่ม dataset specification, labeling QA และ data lineage ใน AI Core/Capstone |
+| H15 Sustainable/Green AI | ปานกลาง | 001-123, 131-205, 135-315/330 | กำหนด energy/cost/carbon metric ใน Project และวิชา Track |
+| H16 Precision Agriculture/Agri-food | แข็งแรงแต่ซ้ำ | 132-304/305, 135-301/302/305/309/310/312 | คง 132-304/305 เป็น Track required; ควบรวม electives ที่ซ้ำ |
+| H17 Smart Manufacturing/Quality/MES | ปานกลาง | 132-306/307, 135-320/328/329 | ขยาย 132-306 ให้มี MES, OEE, SPC, Lean/Six Sigma |
+| H18 Maintenance/Reliability/Asset | ปานกลาง | 132-306, 135-317 | เลื่อน 135-317 เป็น Track required และเพิ่ม RCA/FMEA/CMMS/EAM/RUL |
+| H19 BI/DSS/Decision Intelligence | ปานกลาง | 131-207, 132-303, 135-319 | ทำ 132-303 เป็นแกน Decision Intelligence; 135-319 เป็น advanced DSS/OR |
+| H20 Architecture/Integration/Digital Services | ปานกลาง–อ่อน | 132-302/308, 131-205/208, 135-334 | เพิ่ม Enterprise Architecture, IAM, ITSM, DR, UAT, change และ handover |
 
 ## 4. Coverage อาชีพ C01–C17: เดิมเทียบข้อเสนอ
 
@@ -96,7 +96,7 @@
 | C12 Data Scientist/Analyst | ปานกลาง–แข็งแรง | BI/Excel/DSS ไม่ใช่แกนชัด | แข็งแรง |
 | C13 AI Smart Factory | ปานกลาง | MES/ERP/IIoT/quality กระจาย | แข็งแรงตาม T2 |
 | C14 AI Process/Production | ปานกลาง | Process Engineering, Lean, Six Sigma, OEE ยังบาง | แข็งแรงตาม T2 |
-| C15 DSS Specialist | ปานกลาง | อยู่ใน elective 135-319 เป็นหลัก | แข็งแรงด้วยแกน 132-305 |
+| C15 DSS Specialist | ปานกลาง | อยู่ใน elective 135-319 เป็นหลัก | แข็งแรงด้วยแกน 132-303 |
 | C16 AI Maintenance | ปานกลาง | Reliability/CMMS/FMEA ไม่ครบ | แข็งแรงตาม T2 |
 | C17 AI Industrial Engineer | ปานกลาง | Industrial data + process/decision integration ไม่เป็น pathway | แข็งแรงตาม T2 |
 
@@ -136,8 +136,8 @@
 
 | สถานะ          | รายวิชาเสนอ                                                 | แหล่งจากวิชาเดิม          | Skill หลัก        |
 | -------------- | ----------------------------------------------------------- | ------------------------- | ----------------- |
-| คง/ปรับ        | Smart Farming and Precision Agriculture                     | 132-302                   | H9, H11, H16      |
-| คง/ปรับ        | UAV, Remote Sensing and GeoAI for Agriculture               | 132-306                   | H8, H16           |
+| คง/ปรับ        | Smart Farming and Precision Agriculture                     | 132-304                   | H9, H11, H16      |
+| คง/ปรับ        | UAV, Remote Sensing and GeoAI for Agriculture               | 132-305                   | H8, H16           |
 | เลื่อนจากเลือก | Agricultural Robotics and Automation Studio                 | 135-311                   | H5, H9, H16       |
 | ควบรวม         | Agri-food Data, Traceability and Farm Decision Intelligence | 135-305 + 109 + 110 + 113 | H3, H11, H16, H19 |
 
@@ -145,8 +145,8 @@
 
 | สถานะ          | รายวิชาเสนอ                                                       | แหล่งจากวิชาเดิม          | Skill หลัก    |
 | -------------- | ----------------------------------------------------------------- | ------------------------- | ------------- |
-| ปรับมาก        | Smart Manufacturing, MES, Digital Twin and Quality                | 132-307                   | H5, H17, H19  |
-| คง/ปรับ        | Industrial Automation, Control and Robotics                       | 132-303                   | H5, H9, H17   |
+| ปรับมาก        | Smart Manufacturing, MES, Digital Twin and Quality                | 132-306                   | H5, H17, H19  |
+| คง/ปรับ        | Industrial Automation, Control and Robotics                       | 132-307                   | H5, H9, H17   |
 | เลื่อนจากเลือก | Maintenance, Reliability and Asset Intelligence                   | 135-317                   | H11, H18      |
 | ยกระดับแยกเจ้าภาพ | Advanced Operations Research and Industrial Optimization + Lean and AI-Enabled Process Improvement | 135-319 + 135-328 | H13, H17, H19 |
 
@@ -188,9 +188,9 @@
 
 วิชาที่ควบรวม/ยุติความซ้ำ:
 
-- 135-302 → รวมใน 132-302
+- 135-302 → รวมใน 132-304
 - 135-305/309/310 → รวมเป็น Track-required Agri-food Data and Decision Intelligence
-- 135-312 UAV → รวมใน 132-306
+- 135-312 UAV → รวมใน 132-305
 - ตรวจและแก้ชื่อ/รหัส 135-312–315 ใน Course Index ให้ตรงกับไฟล์คำอธิบาย
 
 ### 7.2 T2 Industrial AI — 9 วิชา
@@ -265,10 +265,10 @@
 | การตัดสินใจ | รายวิชาเดิม | เหตุผล |
 |---|---|---|
 | **คง** | AI Math, ML/DL, CV, IoT/Edge, Data Engineering, Cloud/MLOps | เป็นแกนตลาด C01/C06/C07/C12 |
-| **ปรับชื่อ/ขอบเขต** | 132-301, 132-305, 132-307, 132-304 | เพิ่ม requirements, DSS, MES/quality, architecture/integration |
+| **ปรับชื่อ/ขอบเขต** | 132-302, 132-303, 132-306, 132-308 | เพิ่ม requirements, DSS, MES/quality, architecture/integration |
 | **เลื่อนเป็น Track required** | 135-311, 135-317, 135-331, 135-333/345, 135-334 | เป็น Skill สำคัญที่ pathway ต้องรับประกัน |
 | **ควบรวม** | 135-305/309/310, 118/126, 121/122/123, 125/130, 136/137, 138/139, 135/141/143 | ลดเนื้อหาซ้ำและลดภาระ staffing/lab |
-| **รวมเข้าวิชาแกน** | 135-302 → 132-302; 135-312 → 132-306 | ซ้ำกับวิชาบังคับโดยตรง |
+| **รวมเข้าวิชาแกน** | 135-302 → 132-304; 135-312 → 132-305 | ซ้ำกับวิชาบังคับโดยตรง |
 | **เพิ่มใหม่** | Thai NLP; AI Research; Enterprise Digital Services content | ปิด H10, C10 และ C11/H20 |
 | **Rotating/Watchlist** | Biotechnology, Healthcare, Finance, XR และ domain studio | เปิดตามอาจารย์/พันธมิตร/ทรัพยากร ไม่ใช้รับประกันแกน |
 

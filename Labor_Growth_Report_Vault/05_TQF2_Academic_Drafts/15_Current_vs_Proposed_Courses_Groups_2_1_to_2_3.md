@@ -17,7 +17,7 @@
 
 > [!important] ตรวจเลขจำนวนวิชา
 > เมื่อเทียบฐานเดิม 8 วิชา รายชื่อใหม่ 9 วิชาคือการ **เพิ่ม 1 วิชา** ไม่ใช่ 2 วิชา  
-> การคงวิชาเลือกชีพ 5 วิชาทำให้หลักสูตรเป็น **133 หน่วยกิต** หากต้องคงเพดาน 130 หน่วยกิต ต้องลด 3 หน่วยกิตจากหมวดอื่น ปรับหน่วยกิตของรายวิชา หรือกลับไปใช้ Core Track 8 วิชา
+> การคงวิชาเลือกชีพ 5 วิชาทำให้หลักสูตรเป็น **133 หน่วยกิต ซึ่งเป็นยอดที่ยืนยันแล้ว** จึงไม่ลดกลับสู่เพดาน 130 หน่วยกิตและไม่กลับไปใช้ Core Track 8 วิชา
 
 ข้อเสนอนี้ต่างจากทางเลือก 4+4 ก่อนหน้า โดยกำหนดให้ Core Track ทั้ง 9 วิชาเป็นฐานร่วมของนักศึกษาทุกคน แล้วสร้างความลึกของ T1–T3 ผ่านวิชาเลือกชีพ 5 วิชา, Capstone และ CWIE
 
@@ -273,15 +273,15 @@
 
 | Skill Set | รายวิชาเจ้าภาพในโครงสร้างใหม่ | ผลการปิด Gap |
 |---|---|---|
-| AISK01 AI Core Engineering | 001-106; 131-102/201–206; CT2/CT3 | **ปิดในแกนร่วม** |
-| AISK02 Smart Agriculture Engineering | 001-103–105/Workshop; CT5/CT6/CT9 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T1 elective** |
-| AISK03 Smart Industry & Automation | 001-103/104/107/Workshop; CT7/CT8/CT9; EN-135-331–333 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T2 elective ด้านกำลังของไหล ความร้อน และความปลอดภัยอุตสาหกรรม** |
-| AISK04 Intelligent Farm/Factory Systems | 001-107/109/201; 131-201/206; CT5/CT8/CT9 | **ปิดในแกนร่วม** |
-| AISK05 Applied Domain AI | 131-204/202; CT2/CT5–CT8 | **ปิดในแกนร่วม** |
+| AISK01 AI Core Engineering | 001-126; 131-102/204–206; CT2/CT3 | **ปิดในแกนร่วม** |
+| AISK02 Smart Agriculture Engineering | 001-123–105/Workshop; CT5/CT6/CT9 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T1 elective** |
+| AISK03 Smart Industry & Automation | 001-123/124/127/Workshop; CT7/CT8/CT9; EN-135-331–333 | **ปิดพื้นฐานในแกนร่วม; ลึกผ่าน T2 elective ด้านกำลังของไหล ความร้อน และความปลอดภัยอุตสาหกรรม** |
+| AISK04 Intelligent Farm/Factory Systems | 001-127/129/230; 131-204/208; CT5/CT8/CT9 | **ปิดในแกนร่วม** |
+| AISK05 Applied Domain AI | 131-203/206; CT2/CT5–CT8 | **ปิดในแกนร่วม** |
 | AISK06 GenAI/LLM/Agentic | CT4 | **ปิด baseline; advanced/Thai NLP ผ่าน elective** |
-| AISK07 Responsible AI/Security/Governance | 131-101/206; CT1/CT4/CT8; Capstone | **ปิดแบบมีเงื่อนไขด้าน CLO/Rubric** |
-| AISK08 Professional/Entrepreneurial | 001-101; CT1/CT2/CT3; Project/CWIE | **ปิดแบบมีเงื่อนไขด้าน Assessment** |
-| AISK09 Enterprise Solutions/DSS | CT1–CT3; 131-203/206 | **ปิด baseline; Enterprise depth ผ่าน T3 elective** |
+| AISK07 Responsible AI/Security/Governance | 131-101/208; CT1/CT4/CT8; Capstone | **ปิดแบบมีเงื่อนไขด้าน CLO/Rubric** |
+| AISK08 Professional/Entrepreneurial | 001-121; CT1/CT2/CT3; Project/CWIE | **ปิดแบบมีเงื่อนไขด้าน Assessment** |
+| AISK09 Enterprise Solutions/DSS | CT1–CT3; 131-207/208 | **ปิด baseline; Enterprise depth ผ่าน T3 elective** |
 
 ## 9. Gap Closure ต่อ H1–H20 และ S1–S10
 
@@ -292,7 +292,7 @@
 | H1–H6, H8–H9, H11, H13, H16–H17, H19 | **ปิดในแกนร่วม** | มีรายวิชาเจ้าภาพและชิ้นงานบังคับ |
 | H7 Security/Responsible AI | **ปิดแบบมีเงื่อนไข** | ต้องมี risk/governance evidence ใน CT4/Capstone |
 | H10 Thai NLP | **ปิดบางส่วน** | CT4 ให้ NLP/RAG baseline; Thai NLP ต้องเป็น elective |
-| H12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-203 รองรับ data engineering; distributed/streaming L4 ใช้ Advanced Data elective |
+| H12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-207 รองรับ data engineering; distributed/streaming L4 ใช้ Advanced Data elective |
 | H14 Data-Centric AI | **ปิดแบบมีเงื่อนไข** | ต้องเพิ่ม dataset specification, labeling QA และ lineage ใน CLO |
 | H15 Sustainable/Green AI | **ปิดแบบมีเงื่อนไข** | ต้องใช้ business + BCG/carbon KPI ทุก Track |
 | H18 Maintenance/Reliability | **ปิด baseline** | CT7 ให้พื้นฐาน; C16 ต้องมี Advanced Maintenance elective |
@@ -306,7 +306,7 @@
 | S3 Lifelong Learning | 131-101 + CT4 + Seminar/technology watch |
 | S4 Communication | CT2 dashboard/decision communication + Seminar/Capstone |
 | S5 Teamwork/Leadership | Workshop + CT6/CT8/CT9 lab + Capstone |
-| S6 Product/Entrepreneurial | 001-101 + CT1/CT2 |
+| S6 Product/Entrepreneurial | 001-121 + CT1/CT2 |
 | S7 AI Literacy/Human–AI | 131-101 + CT4 |
 | S8 Stakeholder/Empathy | CT1 + CWIE |
 | S9 Requirements/Change | CT1/CT3 + Capstone/CWIE |
@@ -318,11 +318,11 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 
 | ฐานทักษะ | รายวิชาเจ้าภาพ | สถานะ |
 |---|---|---|
-| EF1 Drawing/CAD/Layout/P&ID | 001-104, CT8 | ปิดในแกน |
-| EF2 Mechanics/Materials/Fabrication | 001-105/108 | ปิดในแกน |
-| EF3 Thermal-Fluid/Energy/Process | 001-103, CT7 | ปิดในแกน |
-| EF4 Electrical/Instrumentation/Calibration | 001-107, CT9 | ปิดในแกน |
-| EF5 Actuation/Fluid Power/Control | 001-109, CT9 | ปิดระดับบูรณาการ; ต้องมี Lab |
+| EF1 Drawing/CAD/Layout/P&ID | 001-124, CT8 | ปิดในแกน |
+| EF2 Mechanics/Materials/Fabrication | 001-125/128 | ปิดในแกน |
+| EF3 Thermal-Fluid/Energy/Process | 001-123, CT7 | ปิดในแกน |
+| EF4 Electrical/Instrumentation/Calibration | 001-127, CT9 | ปิดในแกน |
+| EF5 Actuation/Fluid Power/Control | 001-129, CT9 | ปิดระดับบูรณาการ; ต้องมี Lab |
 | EF6 Safety/Standards/Commissioning/Handover | Workshop, CT8/CT9, Capstone/CWIE | ปิดแบบมีเงื่อนไขด้าน rubric/ผู้ทวนสอบ |
 
 ## 10. Gap Closure ต่ออาชีพ C01–C17
@@ -334,15 +334,15 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | C03 Smart Agriculture/IoT | CT2/CT5/CT6/CT9 | แข็งแรง |
 | C04 Automation/Control | CT8/CT9 | แข็งแรง |
 | C05 Robotics/System Integration | CT3/CT6/CT8/CT9 | แข็งแรง |
-| C06 AI Software/Application | 001-106 + 131-205 + CT3/CT4 | แข็งแรง |
-| C07 Data Engineer | 131-203 + CT3 | แข็งแรง baseline; advanced platform elective |
+| C06 AI Software/Application | 001-126 + 131-205 + CT3/CT4 | แข็งแรง |
+| C07 Data Engineer | 131-207 + CT3 | แข็งแรง baseline; advanced platform elective |
 | C08 AI Innovator | CT1/CT3/CT4 | แข็งแรง |
-| C09 AI Entrepreneur | 001-101 + CT1/CT2 | ปานกลาง–แข็งแรง; Venture elective |
-| C10 AI Researcher | 001-102 + 131-202 + Capstone | **ยังต้อง Research elective** |
-| C11 Government/Digital Technology | 131-206 + CT1/CT3/CT4 | ปานกลาง; Enterprise/Governance elective |
-| C12 Data Scientist/Analyst | 001-102 + 131-203 + CT2 | แข็งแรง |
+| C09 AI Entrepreneur | 001-121 + CT1/CT2 | ปานกลาง–แข็งแรง; Venture elective |
+| C10 AI Researcher | 001-122 + 131-206 + Capstone | **ยังต้อง Research elective** |
+| C11 Government/Digital Technology | 131-208 + CT1/CT3/CT4 | ปานกลาง; Enterprise/Governance elective |
+| C12 Data Scientist/Analyst | 001-122 + 131-207 + CT2 | แข็งแรง |
 | C13 Smart Factory | CT7/CT8/CT9 | แข็งแรง |
-| C14 Process/Production | 001-103 + CT7 | แข็งแรง |
+| C14 Process/Production | 001-123 + CT7 | แข็งแรง |
 | C15 DSS Specialist | CT2/CT7 | แข็งแรง |
 | C16 AI Maintenance | CT7 | **ปิด baseline; ต้อง Advanced Maintenance elective** |
 | C17 AI Industrial Engineer | CT2/CT7–CT9 | แข็งแรง |
@@ -351,17 +351,17 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 
 | ข้อเสนอ | การตอบสนองในโครงสร้าง 9 Core Track | สถานะ |
 |---|---|:---:|
-| Pneumatics/Hydraulics | 001-109 + CT9 | ปิดเชิงโครงสร้าง; ต้องมี Lab |
-| Heat Transfer | 001-103 + CT7 process/energy | ปิด |
+| Pneumatics/Hydraulics | 001-129 + CT9 | ปิดเชิงโครงสร้าง; ต้องมี Lab |
+| Heat Transfer | 001-123 + CT7 process/energy | ปิด |
 | Process Engineering/Production | CT7 | ปิด |
-| Safety | 001-105/107/109 + CT8/CT9 + Capstone | ปิดแบบมีเงื่อนไขด้าน rubric |
-| CAD/แบบเฉพาะทาง | 001-104 + CT8 layout/P&ID/control drawing | ปิด |
-| System Integration | 001-201 + CT3/CT6/CT8/CT9 | ปิด; ต้องบังคับ end-to-end demo |
-| Business/Economics/Decision | 001-101 + CT1/CT2 | ปิด |
-| BCG/Carbon | 001-101/103 + CT1/CT2/CT5/CT7 | ปิดแบบมีเงื่อนไขด้าน KPI |
+| Safety | 001-125/127/129 + CT8/CT9 + Capstone | ปิดแบบมีเงื่อนไขด้าน rubric |
+| CAD/แบบเฉพาะทาง | 001-124 + CT8 layout/P&ID/control drawing | ปิด |
+| System Integration | 001-230 + CT3/CT6/CT8/CT9 | ปิด; ต้องบังคับ end-to-end demo |
+| Business/Economics/Decision | 001-121 + CT1/CT2 | ปิด |
+| BCG/Carbon | 001-121/123 + CT1/CT2/CT5/CT7 | ปิดแบบมีเงื่อนไขด้าน KPI |
 | Drone ใหม่/กฎหมาย | CT6: RTK, multispectral/thermal, GeoAI, safety/regulation | ปิด baseline; ต้องทบทวนกฎหมาย/อุปกรณ์รายปี |
 | Standards/Trade | CT1/CT7/CT8 + industry module | ปิด baseline |
-| Input–Process–Output–Value | 001-201 + CT2/CT3 + domain core + Capstone | ปิด |
+| Input–Process–Output–Value | 001-230 + CT2/CT3 + domain core + Capstone | ปิด |
 | Lifelong Learning/AI Trend | 131-101 + CT4 + Seminar | ปิดแบบมีกลไกทบทวนรายปี |
 | PLO สะท้อน 3 Track | PLO1–2 ระบุบริบทเกษตร/อุตสาหกรรม/องค์กร และ PLO2/4/7 ระบุ BCG, governance, standards/value; ใช้ PI/Capstone แยก Track | **ปรับ PLO และ Mapping แล้ว; รออนุมัติ PI/Rubric** |
 | ภาษาจีน | ไม่ใช้หน่วยกิตแกน | จัด GE/Free Elective |
@@ -373,7 +373,7 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | Gap/ความเสี่ยง | สิ่งที่ต้องดำเนินการ |
 |---|---|
 | ถ้อยคำ “เพิ่ม Core 2 วิชา” ไม่ตรงกับรายชื่อ 9 วิชา | ยืนยันมติเป็น 9 Core/27 นก.; รายชื่อ 9 คือเพิ่มจากเดิม 1 วิชา |
-| หน่วยกิตรวมเพิ่มเป็น 133 | ระบุว่าจะลด 3 หน่วยกิตจากหมวดใด ปรับน้ำหนักรายวิชา หรือขออนุมัติโครงสร้าง 133 นก. |
+| หน่วยกิตรวมเพิ่มเป็น 133 | **ยุติแล้ว** — ใช้โครงสร้าง 133 นก. ไม่ปรับลดกลับสู่ 130 |
 | CT6/CT7/CT9 scope กว้าง | จำกัด CLO ระดับ foundation/integration และย้าย advanced depth ไป elective |
 | H10/C10 | เปิด Thai NLP และ AI Research/Reproducible Experimentation elective |
 | H18/C16 | กำหนด Advanced Maintenance/Reliability เป็น elective สำคัญของ T2 |

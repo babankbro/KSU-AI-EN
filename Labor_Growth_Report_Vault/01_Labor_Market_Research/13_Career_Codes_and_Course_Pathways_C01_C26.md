@@ -20,6 +20,7 @@
 | C21 | นักวิเคราะห์ข้อมูลและระบบสนับสนุนการตัดสินใจทางการเกษตร | Agricultural Data and Decision Support Specialist | C03/C15 | T1 |
 | C22 | วิศวกรโครงการและติดตั้งระบบอัจฉริยะ | Intelligent Systems Project and Implementation Engineer | C02 | ทุก Track |
 | C23 | วิศวกรบูรณาการระบบอัจฉริยะ | Intelligent Systems Integration Engineer | C02/C05 | ทุก Track |
+| | *ขอบเขตครอบคลุมบทบาท “ผู้ดูแลระบบในภาพรวมของโรงงาน” (Plant Systems Integrator / OT System Owner) ตามข้อเสนอผู้มีส่วนได้ส่วนเสียรอบที่ 2 · ดู [[../05_TQF2_Academic_Drafts/17_Stakeholder_Feedback_Round2_and_Action_Plan\|ข้อเสนอแนะรอบที่ 2]]* | | | |
 | C24 | ที่ปรึกษาโซลูชันปัญญาประดิษฐ์และการเปลี่ยนผ่านสู่ดิจิทัล | AI Solutions and Digital Transformation Consultant | C02/C08 | ทุก Track |
 | C25 | นักวิเคราะห์ธุรกิจอัจฉริยะและการตัดสินใจ | Business Intelligence and Decision Analyst | C12/C15 | ทุก Track |
 | C26 | นักวิเคราะห์ผลิตภัณฑ์และผู้ประสานงานโครงการปัญญาประดิษฐ์ | AI Product and Project Analyst | C08/C09 | T3 |

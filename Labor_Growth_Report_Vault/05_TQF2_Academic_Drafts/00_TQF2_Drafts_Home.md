@@ -21,6 +21,7 @@
 14. [[14_External_Expert_Feedback_Analysis|สังเคราะห์ข้อเสนอกรรมการผู้ทรงคุณวุฒิและแนวทางปรับหลักสูตร]] 🆕
 15. [[15_Current_vs_Proposed_Courses_Groups_2_1_to_2_3|แนวทางล่าสุด: Core Track 9 วิชา + เลือกชีพ 5 วิชา และ Gap Closure]] 🆕
 16. [[16_Teaching_Learning_Process_Section5|หมวดที่ 5 · กระบวนการจัดการเรียนการสอน (กลยุทธ์การสอน 5 รูปแบบ, Growth Mindset, Lifelong Learning, การพัฒนาคณาจารย์)]] 🆕
+17. [[17_Stakeholder_Feedback_Round2_and_Action_Plan|ข้อเสนอแนะผู้มีส่วนได้ส่วนเสีย รอบที่ 2 และแผนปรับหลักสูตร (โดรน · อุตสาหกรรมแป้ง · เส้นทางการมีงานทำ)]] 🆕
 
 ### เอกสารประกอบการวิเคราะห์และสังเคราะห์
 
