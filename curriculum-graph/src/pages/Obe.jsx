@@ -148,8 +148,8 @@ export default function Obe() {
         </Section>
 
         {/* ─── 1 · Stakeholders ─── */}
-        <Section id="sh" title="① ผู้มีส่วนได้ส่วนเสีย (SH1–SH8)"
-          sub="จัดลำดับด้วย Power–Interest Matrix · แกนตั้ง = อำนาจต่อการตัดสินใจหลักสูตร · แกนนอน = ระดับความสนใจ/ผลกระทบที่ได้รับ">
+        <Section id="sh" title="① ผู้มีส่วนได้ส่วนเสีย (SH1–SH8 · เป้าหมาย 355 คน)"
+          sub="จำนวนที่แสดงเป็นโควตาเป้าหมายของการสำรวจรอบขยาย ไม่ใช่จำนวนผู้ตอบจริง · จัดลำดับด้วย Power–Interest Matrix">
           <div className="pim">
             <div className="pim-axis pim-x">
               <span>Interest สูง</span><span>Interest ต่ำ / เป็นครั้งคราว</span>
@@ -173,6 +173,7 @@ export default function Obe() {
                           <div className="pim-shtop">
                             <span className="obe-code">{s.id}</span>
                             <b>{s.name}</b>
+                            <span className="sh-count">{s.sample} คน</span>
                           </div>
                           <p>{s.expect}</p>
                           <div className="sh-needs">
@@ -190,6 +191,7 @@ export default function Obe() {
             ))}
           </div>
           <p className="obe-note">
+            <b>รวมโควตาเป้าหมาย {STAKEHOLDERS.reduce((sum, s) => sum + s.sample, 0)} คน</b> · เมื่อเก็บข้อมูลจริงแล้วต้องแทนที่ด้วยจำนวนผู้ตอบจริงและรายงานอัตราการตอบกลับ · {" "}
             <b>SH1 (นายจ้าง/ผู้ใช้บัณฑิต) อยู่กลุ่ม HPHI</b> จึงต้องมีส่วนร่วมตั้งแต่กำหนด Needs ทวนสอบ PLO
             ให้โจทย์โครงงาน/สหกิจ จนถึงประเมินผลบัณฑิต · คลิกรหัส <b>N</b> เพื่อดูว่าความต้องการนั้นตอบด้วยชุดทักษะใด
           </p>

@@ -8,8 +8,12 @@
 .pb-lg i{width:10px;height:10px;border-radius:3px;background:var(--gc)}
 .pb-lg:hover{color:var(--gc);border-color:var(--gc)}
 .pb-lg.on{background:var(--gb);color:var(--gc);border-color:var(--gc)}
-.pb-clear{margin-left:auto;font-size:.77rem;border:1px solid var(--line);background:var(--card);
+.pb-clear{font-size:.77rem;border:1px solid var(--line);background:var(--card);
   color:var(--muted);border-radius:8px;padding:4px 9px;cursor:pointer;font-family:inherit}
+.pb-fs{margin-left:auto;font-size:.77rem;font-weight:700;border:1px solid var(--line);
+  background:var(--card);color:var(--muted);border-radius:8px;padding:4px 10px;
+  cursor:pointer;font-family:inherit;transition:.12s;white-space:nowrap}
+.pb-fs:hover{color:var(--ink);border-color:var(--ink)}
 
 .pb-scroll{overflow-x:auto;padding-bottom:6px}
 .pb-board{display:grid;grid-template-columns:repeat(4,minmax(310px,1fr));gap:10px;min-width:1290px}
@@ -48,6 +52,14 @@
   border-top:1px solid var(--line);margin-top:8px;padding-top:8px;font-size:.78rem;color:var(--muted)}
 .pb-foot b{color:var(--ink);font-size:.92rem}
 .pb-hint{font-size:.74rem}
+
+/* ── โหมดเต็มจอ: ย่อกระดานให้เห็นครบทั้งหลักสูตรโดยไม่ต้องเลื่อนจอ ── */
+.pb.full{position:fixed;inset:0;z-index:80;margin:0;border:0;border-radius:0;
+  padding:10px 14px 6px;background:var(--card);display:flex;flex-direction:column;overflow:hidden}
+.pb.full .pb-scroll{flex:1;min-height:0;position:relative;overflow:hidden;padding:0}
+.pb.full .pb-board{position:absolute;top:50%;left:50%;width:1440px;min-width:0;
+  transform:translate(-50%,-50%) scale(var(--k,1));transform-origin:center center}
+.pb.full .pb-foot{margin-top:6px;padding-top:6px}
 
 @media (max-width:640px){
   .pb-board{grid-template-columns:repeat(4,minmax(270px,1fr));min-width:1120px}

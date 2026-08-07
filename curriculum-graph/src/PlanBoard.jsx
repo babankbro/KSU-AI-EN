@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   COURSES, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR,
@@ -11,9 +11,54 @@ const GROUPS = ["ge", "eng", "ai", "track", "elec", "proj", "field"];
 
 export default function PlanBoard() {
   const [hl, setHl] = useState(null);   // กลุ่มวิชาที่กรอง
+  const [full, setFull] = useState(false);
+  const [k, setK] = useState(1);        // อัตราย่อ/ขยายให้พอดีจอในโหมดเต็มจอ
+  const pbRef = useRef(null), fitRef = useRef(null), boardRef = useRef(null);
+
+  const openFull = () => {
+    pbRef.current?.requestFullscreen?.().catch(() => {});
+    setFull(true);
+  };
+  const closeFull = () => {
+    if (document.fullscreenElement) document.exitFullscreen?.();
+    setFull(false);
+  };
+
+  // ออกจากโหมดเต็มจอเมื่อผู้ใช้กด Esc หรือออกจาก fullscreen ของเบราว์เซอร์
+  useEffect(() => {
+    const onFs = () => { if (!document.fullscreenElement) setFull(false); };
+    document.addEventListener("fullscreenchange", onFs);
+    return () => document.removeEventListener("fullscreenchange", onFs);
+  }, []);
+
+  // ล็อกการเลื่อนหน้าหลัก และรับ Esc เผื่อกรณีที่เบราว์เซอร์ไม่อนุญาต fullscreen จริง
+  useEffect(() => {
+    if (!full) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = e => { if (e.key === "Escape") setFull(false); };
+    document.addEventListener("keydown", onKey);
+    return () => { document.body.style.overflow = prev; document.removeEventListener("keydown", onKey); };
+  }, [full]);
+
+  // ย่อกระดานให้พอดีพื้นที่ที่เหลือ เพื่อให้เห็นครบทั้งหลักสูตรโดยไม่ต้องเลื่อนจอ
+  useLayoutEffect(() => {
+    if (!full) { setK(1); return; }
+    const fit = () => {
+      const box = fitRef.current, board = boardRef.current;
+      if (!box || !board) return;
+      const bw = board.offsetWidth, bh = board.offsetHeight;
+      if (!bw || !bh) return;
+      setK(Math.min(box.clientWidth / bw, box.clientHeight / bh));
+    };
+    fit();
+    const t = setTimeout(fit, 150);   // เผื่อเบราว์เซอร์ยังปรับขนาดจอไม่เสร็จ
+    window.addEventListener("resize", fit);
+    return () => { clearTimeout(t); window.removeEventListener("resize", fit); };
+  }, [full]);
 
   return (
-    <div className="pb">
+    <div className={`pb${full ? " full" : ""}`} ref={pbRef} style={{ "--k": k }}>
       {/* คำอธิบายสี — คลิกเพื่อไฮไลต์เฉพาะกลุ่ม */}
       <div className="pb-legend">
         {GROUPS.map(g => (
@@ -24,10 +69,13 @@ export default function PlanBoard() {
           </button>
         ))}
         {hl && <button className="pb-clear" onClick={() => setHl(null)}>✕ แสดงทุกกลุ่ม</button>}
+        {full
+          ? <button className="pb-fs" onClick={closeFull}>✕ ออกจากเต็มจอ (Esc)</button>
+          : <button className="pb-fs" onClick={openFull}>⛶ ดูเต็มจอ</button>}
       </div>
 
-      <div className="pb-scroll">
-        <div className="pb-board">
+      <div className="pb-scroll" ref={fitRef}>
+        <div className="pb-board" ref={boardRef}>
           {[1, 2, 3, 4].map(y => (
             <div className="pb-year" key={y} style={{ "--yc": YEAR_COLOR[y].fg, "--yb": YEAR_COLOR[y].bg }}>
               <div className="pb-yhead">
