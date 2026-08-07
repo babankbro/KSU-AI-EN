@@ -58,24 +58,24 @@ export const COURSE_REVISION = {
     "source": "02_Engineering_Fundamentals.md"
   },
   "EN-001-128": {
-    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ I",
-    "e": "Integrated Engineering Workshop I",
+    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1",
+    "e": "Integrated Engineering Workshop 1",
     "cr": "1(0-3-1)",
     "d": "ความปลอดภัยในการใช้เครื่องมือและพื้นที่ปฏิบัติงาน การอ่านแบบและการวางแผนการสร้าง การวัด ตัด เจาะ ยึด และประกอบโครงสร้าง การเดินท่อและสายไฟ การบัดกรีและติดตั้งอุปกรณ์ การติดตั้งและสอบเทียบเซนเซอร์ การสร้างต้นแบบสถานีตรวจวัดหรือโครงสร้างระบบอัจฉริยะ การตรวจสอบคุณภาพชิ้นงาน การบันทึกแบบ รายการวัสดุ ผลการสอบเทียบ และบทเรียนจากการปฏิบัติงานเป็นทีม",
     "dEn": "Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork",
     "source": "02_Engineering_Fundamentals.md"
   },
   "EN-001-129": {
-    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ II",
-    "e": "Integrated Engineering Workshop II",
+    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2",
+    "e": "Integrated Engineering Workshop 2",
     "cr": "1(0-3-1)",
     "d": "หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว กระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม/ของไหล การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมและส่วนต่อประสานผู้ใช้เบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน การทดสอบการทำงาน การรั่วไหล ความปลอดภัย และการแก้ไขข้อขัดข้องเป็นทีม",
     "dEn": "Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting",
     "source": "02_Engineering_Fundamentals.md"
   },
   "EN-001-230": {
-    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ III",
-    "e": "Integrated Engineering Workshop III",
+    "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3",
+    "e": "Integrated Engineering Workshop 3",
     "cr": "1(0-3-1)",
     "d": "การวิเคราะห์ข้อกำหนดและออกแบบสถาปัตยกรรมระบบบูรณาการ การประกอบตู้ควบคุมและเชื่อมต่อเซนเซอร์ เอดจ์ปัญญาประดิษฐ์ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา แพลตฟอร์มข้อมูล และตัวกระตุ้น การเชื่อมลำดับการทำงานตั้งแต่การตรวจวัด การประมวลผลข้อมูลและปัญญาประดิษฐ์ การตัดสินใจ การควบคุม ไปจนถึงแผงควบคุม การทดสอบส่วนต่อประสาน สมรรถนะ ความปลอดภัย และความน่าเชื่อถือ การรับผิดชอบระบบในภาพรวมทั้งสาย การจัดทำเอกสารความเป็นเจ้าของระบบ ได้แก่ สถาปัตยกรรม ส่วนต่อประสาน รูปแบบความล้มเหลว และคู่มือปฏิบัติการ การประเมินต้นทุน พลังงาน ทรัพยากร และคาร์บอน การสาธิตระบบแบบครบวงจรและจัดทำเอกสารส่งมอบ",
     "dEn": "Requirements analysis and architecture design for an integrated system; assembly of a control panel and integration of sensors, AI edge devices, programmable logic controllers, SCADA, data platforms, and actuators; connection of the workflow from sensing through data and AI processing, decision-making, control, and dashboards; interface, performance, safety, and reliability testing; ownership of the whole system rather than a single component, evidenced by a system-ownership dossier covering architecture, interfaces, failure modes, and an operations runbook; assessment of cost, energy, resources, and carbon; end-to-end system demonstration and handover documentation",

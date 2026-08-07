@@ -54,9 +54,9 @@
 | EN-001-125 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | PLO1, PLO2, PLO4 | — | H15; S1, S2; EF2 |
 | EN-001-126 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | PLO1, PLO5 | PLO2, PLO4 | H2, H7; S5, S7, S10 |
 | EN-001-127 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H5, H9, H17; EF4 |
-| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
-| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
-| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
+| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
+| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
+| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | PLO2, PLO3, PLO6 | PLO4, PLO5, PLO7 | H2, H4, H5, H9, H15, H20; EF6 |
 
 ### 4.2 กลุ่ม 2.2 แกนปัญญาประดิษฐ์และระบบอัจฉริยะ
 
@@ -89,8 +89,8 @@
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | หลักฐานสำคัญ |
 |---|---|---|---|---|
-| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ I | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
-| EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ II | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
+| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1 | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
+| EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 2 | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
 | EN-134-303 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
 | EN-134-404 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
 | EN-135-401 | เตรียมความพร้อมสหกิจศึกษา | PLO3, PLO4, PLO5, PLO7 | — | portfolio, compliance, CWIE learning plan |

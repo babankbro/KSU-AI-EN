@@ -42,18 +42,18 @@ Electrical and Electronic Fundamentals for Intelligent Systems
 วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ การปรับสภาพสัญญาณ การสอบเทียบ และการเก็บข้อมูล การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ ระบบขับเคลื่อน และอิเล็กทรอนิกส์กำลังเบื้องต้น แหล่งจ่ายไฟ การต่อลงดิน อุปกรณ์ป้องกัน และความปลอดภัยทางไฟฟ้า การออกแบบและทดสอบวงจรตรวจวัดและขับเคลื่อนสำหรับระบบอินเทอร์เน็ตของสรรพสิ่ง หุ่นยนต์ อากาศยานไร้คนขับ ฟาร์ม และโรงงานอัจฉริยะ  
 Direct-current and alternating-current circuits; Kirchhoff's laws and circuit analysis; electronic components; digital and logic systems; sensors; transducers; signal conditioning; calibration; and data acquisition; analog-to-digital and digital-to-analog conversion; actuators; motors; drive systems; and introductory power electronics; power supplies; grounding; protective devices; and electrical safety; design and testing of sensing and actuation circuits for IoT systems, robots, unmanned aerial vehicles, smart farms, and smart factories
 
-EN-001-128 ปฏิบัติการวิศวกรรมเชิงบูรณาการ I 1(0-3-1)  
-Integrated Engineering Workshop I  
+EN-001-128 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 1(0-3-1)  
+Integrated Engineering Workshop 1  
 ความปลอดภัยในการใช้เครื่องมือและพื้นที่ปฏิบัติงาน การอ่านแบบและการวางแผนการสร้าง การวัด ตัด เจาะ ยึด และประกอบโครงสร้าง การเดินท่อและสายไฟ การบัดกรีและติดตั้งอุปกรณ์ การติดตั้งและสอบเทียบเซนเซอร์ การสร้างต้นแบบสถานีตรวจวัดหรือโครงสร้างระบบอัจฉริยะ การตรวจสอบคุณภาพชิ้นงาน การบันทึกแบบ รายการวัสดุ ผลการสอบเทียบ และบทเรียนจากการปฏิบัติงานเป็นทีม  
 Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork
 
-EN-001-129 ปฏิบัติการวิศวกรรมเชิงบูรณาการ II 1(0-3-1)  
-Integrated Engineering Workshop II  
+EN-001-129 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 1(0-3-1)  
+Integrated Engineering Workshop 2  
 หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว กระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม/ของไหล การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมและส่วนต่อประสานผู้ใช้เบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน การทดสอบการทำงาน การรั่วไหล ความปลอดภัย และการแก้ไขข้อขัดข้องเป็นทีม  
 Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting
 
-EN-001-230 ปฏิบัติการวิศวกรรมเชิงบูรณาการ III 1(0-3-1)  
-Integrated Engineering Workshop III  
+EN-001-230 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 1(0-3-1)  
+Integrated Engineering Workshop 3  
 การวิเคราะห์ข้อกำหนดและออกแบบสถาปัตยกรรมระบบบูรณาการ การประกอบตู้ควบคุมและเชื่อมต่อเซนเซอร์ เอดจ์ปัญญาประดิษฐ์ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา แพลตฟอร์มข้อมูล และตัวกระตุ้น การเชื่อมลำดับการทำงานตั้งแต่การตรวจวัด การประมวลผลข้อมูลและปัญญาประดิษฐ์ การตัดสินใจ การควบคุม ไปจนถึงแผงควบคุม การทดสอบส่วนต่อประสาน สมรรถนะ ความปลอดภัย และความน่าเชื่อถือ การรับผิดชอบระบบในภาพรวมทั้งสาย การจัดทำเอกสารความเป็นเจ้าของระบบ ได้แก่ สถาปัตยกรรม ส่วนต่อประสาน รูปแบบความล้มเหลว และคู่มือปฏิบัติการ การประเมินต้นทุน พลังงาน ทรัพยากร และคาร์บอน การสาธิตระบบแบบครบวงจรและจัดทำเอกสารส่งมอบ  
 Requirements analysis and architecture design for an integrated system; assembly of a control panel and integration of sensors, AI edge devices, programmable logic controllers, SCADA, data platforms, and actuators; connection of the workflow from sensing through data and AI processing, decision-making, control, and dashboards; interface, performance, safety, and reliability testing; ownership of the whole system rather than a single component, evidenced by a system-ownership dossier covering architecture, interfaces, failure modes, and an operations runbook; assessment of cost, energy, resources, and carbon; end-to-end system demonstration and handover documentation
 

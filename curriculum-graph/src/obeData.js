@@ -279,6 +279,49 @@ export const SOFT_SKILLS = [
     level: "ทุก Track L3" }
 ];
 
+/* ─── ฐานทักษะวิศวกรรมประกอบ EF1–EF6 ───
+   แยกจาก H1–H20 เพราะ H มาจากอาชีพ AI/ระบบอัจฉริยะ ส่วน EF ทำให้ข้อเสนอ
+   ผู้ทรงคุณวุฒิด้าน CAD, thermo-fluid, instrumentation, fluid power, safety
+   และ system handover มีเจ้าภาพ CLO/PLO และหลักฐานประเมินที่สอบย้อนกลับได้ */
+export const ENGINEERING_FOUNDATIONS = [
+  { id: "EF1", name: "Engineering Drawing & System Layout", core: true,
+    sets: ["AISK02","AISK03","AISK09"], plo: [2,3],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-124","EN-132-307","EN-134-404"],
+    scope: "จัดทำและควบคุมแบบ CAD 2D/3D แบบประกอบ ค่าความคลาดเคลื่อน ผังระบบ P&ID และแบบไฟฟ้าหรือระบบควบคุมสำหรับการติดตั้งและส่งมอบ",
+    market: "ฐานวิศวกรรมจากข้อเสนอผู้ทรงคุณวุฒิด้านการเขียนแบบ CAD และการประกาศสมรรถนะ System Integration",
+    level: "ทุก Track L2 · T1–T2 และโครงงานบูรณาการ L3" },
+  { id: "EF2", name: "Mechanics, Materials, Structures & Fabrication", core: true,
+    sets: ["AISK02","AISK03"], plo: [1,2,4],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-125","EN-001-128","EN-132-305"],
+    scope: "วิเคราะห์แรง ความเค้น ความล้า เลือกวัสดุและค่าความปลอดภัย แล้วสร้างหรือประกอบโครงสร้างที่ผลิตและบำรุงรักษาได้",
+    market: "ฐานวิศวกรรมสำหรับโครงสร้างฟาร์ม เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับตามข้อเสนอผู้ทรงคุณวุฒิ",
+    level: "ทุก Track L2 · งานสร้างชิ้นงาน T1–T2 L3" },
+  { id: "EF3", name: "Thermal-Fluid, Energy & Process Fundamentals", core: true,
+    sets: ["AISK02","AISK03"], plo: [1,2,4,6],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-123","EN-001-230","EN-132-304","EN-132-306"],
+    scope: "วิเคราะห์การถ่ายเทความร้อน สมดุลมวลและพลังงาน การไหลในท่อ ปั๊ม พัดลม วาล์ว ระบบอบแห้ง ทำความเย็น และตัวชี้วัดพลังงานหรือคาร์บอน",
+    market: "ตอบข้อเสนอผู้ทรงคุณวุฒิด้าน heat transfer, process engineering, พลังงาน และความยั่งยืน BCG",
+    level: "ทุก Track L2 · T1–T2 L3" },
+  { id: "EF4", name: "Electrical, Electronics & Instrumentation", core: true,
+    sets: ["AISK03","AISK04"], plo: [1,2,4,6],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-127","EN-001-128","EN-132-201"],
+    scope: "วิเคราะห์วงจรและสัญญาณ เลือกและต่อเซนเซอร์หรือทรานสมิตเตอร์ ปรับสภาพสัญญาณ สอบเทียบ เก็บข้อมูล ประเมินความไม่แน่นอน และติดตั้งอุปกรณ์ป้องกัน",
+    market: "ฐานเครื่องมือวัดและการประมวล input–process–output ที่ภาคอุตสาหกรรมและผู้ทรงคุณวุฒิต้องการ",
+    level: "ทุก Track L2 · T1–T2 L3" },
+  { id: "EF5", name: "Actuation, Fluid Power & Control", core: true,
+    sets: ["AISK03","AISK04"], plo: [2,4,6],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-129","EN-132-201","EN-132-307"],
+    scope: "บูรณาการมอเตอร์และระบบขับเคลื่อน นิวแมติกส์ ไฮดรอลิกส์ วาล์ว กระบอกสูบ PLC ลำดับควบคุม อินเตอร์ล็อก และการหยุดฉุกเฉิน",
+    market: "ตอบข้อเสนอผู้ทรงคุณวุฒิด้านนิวแมติกส์ ไฮดรอลิกส์ เครื่องจักร และการควบคุมระบบจริง",
+    level: "ทุก Track L2 · T2 และระบบอัตโนมัติ T1 L3" },
+  { id: "EF6", name: "Safety, Standards, Commissioning & Handover", core: true,
+    sets: ["AISK07","AISK08","AISK09"], plo: [2,3,4,5,6],
+    track: { T1: "●", T2: "●", T3: "●" }, courses: ["EN-001-128","EN-001-129","EN-001-230","EN-132-307","EN-134-404","EN-135-402"],
+    scope: "ชี้บ่งอันตรายและความเสี่ยง ใช้มาตรฐานความปลอดภัย ทดสอบส่วนต่อประสานและการยอมรับ ดำเนิน commissioning จัดทำ traceability และเอกสาร handover",
+    market: "ปิดช่องว่างผู้ทรงคุณวุฒิด้าน safety, standards, system integrator และหลักฐานการส่งมอบระบบ",
+    level: "ทุก Track L3 · โครงงานและสหกิจศึกษาประเมินระดับปลายทาง" }
+];
+
 /* เกณฑ์คัดเลือกแกน/ส่วนขยาย (§3.9) */
 export const SKILL_CORE_RULE =
   "เกณฑ์เข้าแกนบังคับ: ทักษะต้องผ่าน 3 ใน 4 เงื่อนไข — (ก) ใช้กว้างข้ามหลาย Track/อาชีพ (ข) จำเป็นต่อการสร้างระบบใช้งานจริงตั้งแต่ข้อมูลถึง deployment " +
@@ -291,7 +334,8 @@ export const LEVELS = [
   { id: "L4", label: "Deploy & Evaluate", th: "นำไปใช้และประเมิน" }
 ];
 
-/* ─── ขั้นที่ 4 · ชุดทักษะ EN-AISK01–09 + กลุ่ม G1–G7 ─── */
+/* ─── ขั้นที่ 4 · ชุดทักษะ EN-AISK01–09 ───
+   g คงไว้เป็น metadata สีเดิมเท่านั้น; หน้าเว็บเชื่อม AISK ตรงกับ H/S/EF */
 export const GROUPS = {
   G1: { name: "แกนวิศวกรรมปัญญาประดิษฐ์", en: "AI Core Engineering", color: "#2f6fb0" },
   G2: { name: "วิศวกรรมโดเมนอัจฉริยะ: สร้างและประกอบโครงสร้างพื้นฐาน กลไก เครื่องจักร", en: "Smart Domain Engineering", color: "#2f9e6b" },
@@ -321,7 +365,7 @@ export const SKILL_SETS = [
 
   { id: "AISK02", g: "G2", type: "Hard",
     name: "วิศวกรรมเกษตรอัจฉริยะ",
-    en: "Smart Agriculture Engineering — Farm Infrastructure, Mechanics & Machines", skills: ["H9","H15","H16"], plo: [1,2,4,6],
+    en: "Smart Agriculture Engineering — Farm Infrastructure, Mechanics & Machines", skills: ["H9","H15","H16","EF1","EF2","EF3","EF4","EF5"], plo: [1,2,4,6],
     track: { T1: "●", T2: "○", T3: "○" },
     sub: [
       { n: "โครงสร้างพื้นฐานและกลไกทางการเกษตร", lv: "L2–L3", tools: "CAD, Statics/Strength Analysis" },
@@ -330,12 +374,12 @@ export const SKILL_SETS = [
       { n: "ระบบพลังงาน ความร้อน–ของไหล และความยั่งยืนในฟาร์ม", lv: "L2–L3", tools: "Thermo-fluid Analysis, Energy Audit" },
       { n: "ห่วงโซ่เกษตร–อาหารอัจฉริยะ การพยากรณ์ การตรวจสอบย้อนกลับ และระบบสนับสนุนการตัดสินใจ", lv: "L3", tools: "GIS/UAV Data, Time-Series, Traceability, Farm DSS" }
     ],
-    assess: "โครงงานสร้าง/ประกอบระบบฟาร์มอัจฉริยะ · ปฏิบัติการภาคสนาม Workshop I–III · สหกิจภาคเกษตร",
+    assess: "โครงงานสร้าง/ประกอบระบบฟาร์มอัจฉริยะ · ปฏิบัติการภาคสนาม Workshop 1–3 · สหกิจภาคเกษตร",
     courses: ["EN-001-123","EN-001-124","EN-001-125","EN-001-128","EN-001-129","EN-001-230","EN-132-303","EN-132-304","EN-132-305","EN-132-201","EN-134-404"] },
 
   { id: "AISK03", g: "G2", type: "Hard",
     name: "วิศวกรรมอุตสาหกรรมอัจฉริยะและระบบอัตโนมัติ",
-    en: "Smart Industry — AI Industrial Engineering & Automation", skills: ["H5","H11","H13","H17","H18"], plo: [1,2,4,6],
+    en: "Smart Industry — AI Industrial Engineering & Automation", skills: ["H5","H11","H13","H17","H18","EF1","EF2","EF3","EF4","EF5","EF6"], plo: [1,2,4,6],
     track: { T1: "○", T2: "●", T3: "○" },
     sub: [
       { n: "ระบบควบคุมอัตโนมัติ PLC/SCADA และเครือข่ายอุตสาหกรรม", lv: "L3–L4", tools: "PLC (Ladder/FBD/ST), SCADA/HMI" },
@@ -349,7 +393,7 @@ export const SKILL_SETS = [
 
   { id: "AISK04", g: "G3", type: "Hard",
     name: "ระบบตรวจวัด การประมวลผลที่ขอบเครือข่าย และระบบไซเบอร์กายภาพ",
-    en: "Sensing, Edge & Cyber-Physical Systems", skills: ["H9","H5","H4"], plo: [2,6],
+    en: "Sensing, Edge & Cyber-Physical Systems", skills: ["H9","H5","H4","EF4","EF5","EF6"], plo: [2,6],
     track: { T1: "●", T2: "●", T3: "○" },
     sub: [
       { n: "IoT เครือข่ายเซนเซอร์ และการรับสัญญาณเรียลไทม์", lv: "L3–L4", tools: "Arduino/RPi, MQTT, LoRa" },
@@ -357,7 +401,7 @@ export const SKILL_SETS = [
       { n: "ระบบไซเบอร์-กายภาพและการบูรณาการ OT/IT", lv: "L3", tools: "PLC↔Edge AI, SCADA Gateway" },
       { n: "ความปลอดภัยและการจัดการอุปกรณ์ Edge–Cloud", lv: "L2", tools: "Device Management, Edge Security" }
     ],
-    assess: "System Integration Project (ปฏิบัติการ III) · สาธิตระบบ IoT–Edge–Cloud · สหกิจศึกษา",
+    assess: "System Integration Project (ปฏิบัติการ 3) · สาธิตระบบ IoT–Edge–Cloud · สหกิจศึกษา",
     courses: ["EN-001-127","EN-001-129","EN-001-230","EN-131-204","EN-131-208","EN-132-304","EN-132-306","EN-132-307","EN-132-201"] },
 
   { id: "AISK05", g: "G3", type: "Hard",
@@ -392,7 +436,7 @@ export const SKILL_SETS = [
 
   { id: "AISK07", g: "G5", type: "Hybrid",
     name: "ปัญญาประดิษฐ์ที่รับผิดชอบ ความมั่นคงปลอดภัย ธรรมาภิบาล และการรับรองระบบ",
-    en: "Responsible AI, Security, Governance & Assurance", skills: ["H7"], plo: [2,4,6],
+    en: "Responsible AI, Security, Governance & Assurance", skills: ["H7","S7","S10","EF6"], plo: [2,4,6],
     track: { T1: "●", T2: "●", T3: "●" },
     sub: [
       { n: "ความปลอดภัยของ AI และความเป็นส่วนตัว (Data Poisoning, Model Inversion, PDPA)", lv: "L2–L3", tools: "Threat Modeling, PDPA Checklist" },
@@ -406,7 +450,7 @@ export const SKILL_SETS = [
 
   { id: "AISK08", g: "G6", type: "Soft",
     name: "การสื่อสาร การทำงานเป็นทีม ภาวะผู้นำ และความเป็นผู้ประกอบการ",
-    en: "Communication, Teamwork, Leadership & Entrepreneurship", skills: ["S1","S2","S3","S4","S5","S6","S8"], plo: [1,2,3,5,7],
+    en: "Communication, Teamwork, Leadership & Entrepreneurship", skills: ["S1","S2","S3","S4","S5","S6","S8","EF6"], plo: [1,2,3,5,7],
     track: { T1: "●", T2: "●", T3: "●" },
     sub: [
       { n: "การคิดวิเคราะห์เชิงระบบ", lv: "L3", tools: "System Map, Root-cause" },
@@ -422,7 +466,7 @@ export const SKILL_SETS = [
   { id: "AISK09", g: "G7", type: "Hard + Hybrid",
     name: "ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบระบบ",
     en: "Requirements, Architecture, Integration & System Delivery",
-    skills: ["H20","S9","S10"], plo: [2,3,4,5,6,7],
+    skills: ["H20","S9","S10","EF1","EF6"], plo: [2,3,4,5,6,7],
     track: { T1: "●", T2: "●", T3: "●" },
     sub: [
       { n: "Requirements Engineering, stakeholder mapping และ acceptance criteria", lv: "L3", tools: "Interview, Context Map, Backlog, Acceptance Criteria" },
@@ -475,8 +519,8 @@ export const REFS = [
   { step: 1, title: "ผู้มีส่วนได้ส่วนเสีย (SH1–SH8)", file: "03_OBE_PLO_Design_2570/01_Stakeholder_Needs.md" },
   { step: 2, title: "ความต้องการ (N1–N18)", file: "03_OBE_PLO_Design_2570/01_Stakeholder_Needs.md" },
   { step: 3, title: "ลักษณะบัณฑิต (GA1–GA5)", file: "03_OBE_PLO_Design_2570/02_Graduate_Attributes.md" },
-  { step: 4, title: "ทักษะเป้าหมาย (H1–H20 · S1–S10)", file: "03_OBE_PLO_Design_2570/03_Target_Skills.md" },
-  { step: 5, title: "ชุดทักษะและ KSA (EN-AISK01–09 · G1–G7)", file: "05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md" },
+  { step: 4, title: "ทักษะเป้าหมายและฐานวิศวกรรม (H1–H20 · S1–S10 · EF1–EF6)", file: "03_OBE_PLO_Design_2570/03_Target_Skills.md" },
+  { step: 5, title: "ชุดทักษะและ KSA (EN-AISK01–09)", file: "05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md" },
   { step: 6, title: "ผลลัพธ์ระดับหลักสูตร (PLO1–7)", file: "03_OBE_PLO_Design_2570/04_PLOs_7_OBE.md" },
   { step: 7, title: "ผลลัพธ์รายชั้นปี (YLO1–4 · Sub-YLO 16 ข้อ)", file: "05_TQF2_Academic_Drafts/09_Yearly_Learning_Outcomes.md" },
   { step: 8, title: "ผลลัพธ์รายวิชา (CLO) + KSA รายวิชา", file: "05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md" },

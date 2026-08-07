@@ -10,8 +10,8 @@ YLO ใช้ลำดับพัฒนาการ **I–R–M** ได้แ�
 
 | ชั้นปี | จุดเน้น | ระดับเด่น | หลักฐานผ่านชั้นปี |
 |---:|---|:---:|---|
-| 1 | คณิตศาสตร์ สถิติ โปรแกรม แบบวิศวกรรม ไฟฟ้า กลศาสตร์ และการสร้างชิ้นงานอย่างปลอดภัย | I | โปรแกรมและข้อมูลเบื้องต้น · ชุดแบบ/CAD · Workshop I–II |
-| 2 | AI/Data/IoT/Edge/Sensing, MLOps และการออกแบบผลิตภัณฑ์กับระบบตัดสินใจ | R | ML/Data/IoT project · Workshop III · sensing-actuation demo · product/DSS case |
+| 1 | คณิตศาสตร์ สถิติ โปรแกรม แบบวิศวกรรม ไฟฟ้า กลศาสตร์ และการสร้างชิ้นงานอย่างปลอดภัย | I | โปรแกรมและข้อมูลเบื้องต้น · ชุดแบบ/CAD · Workshop 1–2 |
+| 2 | AI/Data/IoT/Edge/Sensing, MLOps และการออกแบบผลิตภัณฑ์กับระบบตัดสินใจ | R | ML/Data/IoT project · Workshop 3 · sensing-actuation demo · product/DSS case |
 | 3 | บูรณาการระบบเกษตร อุตสาหกรรม ซอฟต์แวร์ และ Agentic AI พร้อมข้อเสนอโครงงาน | R–M | domain integration · system test · seminar · project proposal |
 | 4 | พัฒนา ทดสอบ ประเมินคุณค่า และส่งมอบระบบจากโจทย์จริง | M | Capstone · Skill Portfolio · Cooperative Education |
 

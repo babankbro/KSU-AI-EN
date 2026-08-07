@@ -1,12 +1,14 @@
 // สร้างชุดข้อมูล alluvial 5 มุมมองจาก obeData + data
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  GROUPS, SKILL_SETS, KSA
+  ENGINEERING_FOUNDATIONS, GROUPS, SKILL_SETS, KSA
 } from "./obeData.js";
 import { COURSES, GROUP_NAME, GROUP_COLOR, PLO_COLOR, PLO_NAME } from "./data.js";
 
 const setColor = id => GROUPS[SKILL_SETS.find(s => s.id === id)?.g]?.color || "#42618c";
-const allSkills = [...HARD_SKILLS, ...SOFT_SKILLS];
+const allSkills = [...HARD_SKILLS, ...SOFT_SKILLS, ...ENGINEERING_FOUNDATIONS];
+const skillSetIds = skill => skill.sets || (skill.set ? [skill.set] : []);
+const skillColor = id => id.startsWith("H") ? "#2f6fb0" : id.startsWith("S") ? "#0e9aa7" : "#b8760f";
 
 /* ① ผู้มีส่วนได้ส่วนเสีย + แหล่งหลักฐาน → ความต้องการ → ชุดทักษะ */
 function viewShNeed() {
@@ -82,15 +84,15 @@ function viewNeedSkillCourse() {
   };
 }
 
-/* ③ กลุ่มทักษะ → ชุดทักษะ → ทักษะย่อย */
-function viewGroupSub() {
+/* ③ ทักษะเป้าหมาย/ฐานวิศวกรรม → ชุดทักษะ → ทักษะย่อย */
+function viewTargetSetSub() {
   const nodes = [], links = [];
-  Object.entries(GROUPS).forEach(([k, g]) => nodes.push({
-    id: `g:${k}`, col: "grp", label: k, sub: g.name.slice(0, 40), color: g.color
+  allSkills.forEach(skill => nodes.push({
+    id: `sk:${skill.id}`, col: "skill", label: skill.id, sub: skill.name.slice(0, 44), color: skillColor(skill.id)
   }));
   SKILL_SETS.forEach(s => {
     nodes.push({ id: `set:${s.id}`, col: "set", label: s.id, sub: s.name.slice(0, 28), color: setColor(s.id) });
-    links.push({ s: `g:${s.g}`, t: `set:${s.id}`, v: s.sub.length });
+    s.skills.forEach(skillId => links.push({ s: `sk:${skillId}`, t: `set:${s.id}`, v: 1 }));
     s.sub.forEach((x, i) => {
       const id = `sub:${s.id}:${i}`;
       nodes.push({ id, col: "sub", label: `${x.lv}`, sub: x.n.slice(0, 52), color: setColor(s.id) });
@@ -99,10 +101,10 @@ function viewGroupSub() {
   });
   return {
     columns: [
-      { key: "grp", label: "① กลุ่มทักษะ (G1–G7)" },
+      { key: "skill", label: "① ทักษะเป้าหมาย/ฐานวิศวกรรม (H/S/EF)" },
       { key: "set", label: "② ชุดทักษะ (AISK01–09)" },
       { key: "sub", label: "③ ทักษะย่อย + ระดับเป้าหมาย" }
-    ], nodes, links, height: 1180
+    ], nodes, links, height: 1560
   };
 }
 
@@ -159,7 +161,9 @@ function viewSkillKsa() {
     id: `p:${p}`, col: "plo", label: `PLO${p}`, sub: PLO_NAME[p], color: PLO_COLOR[p]
   }));
 
-  allSkills.forEach(s => links.push({ s: `sk:${s.id}`, t: `set:${s.set}`, v: 1 }));
+  allSkills.forEach(s => skillSetIds(s).forEach(setId => {
+    if (SKILL_SETS.some(set => set.id === setId)) links.push({ s: `sk:${s.id}`, t: `set:${setId}`, v: 1 });
+  }));
   SKILL_SETS.forEach(s => s.plo.forEach(p => links.push({ s: `set:${s.id}`, t: `p:${p}`, v: 1 })));
 
   // PLO → ทักษะที่ KSA ระบุ (ปลายทางแสดงจำนวนทักษะที่ PLO นั้นกำหนด)
@@ -174,7 +178,7 @@ function viewSkillKsa() {
 
   return {
     columns: [
-      { key: "sk", label: "① ทักษะเป้าหมาย (H/S)" },
+      { key: "sk", label: "① ทักษะเป้าหมาย/ฐานวิศวกรรม (H/S/EF)" },
       { key: "set", label: "② ชุดทักษะ" },
       { key: "plo", label: "③ PLO" },
       { key: "ksa", label: "④ KSA รายละเอียด" }
@@ -187,10 +191,10 @@ export const VIEWS = [
     desc: "เสียงของใคร ผ่านหลักฐานอะไร กลายเป็นความต้องการข้อไหน และตอบด้วยชุดทักษะใด", build: viewShNeed },
   { id: "v2", name: "Need → ชุดทักษะ → กลุ่มรายวิชา",
     desc: "ความต้องการแต่ละข้อถูกแปลงเป็นชุดทักษะ และลงเรียนที่กลุ่มรายวิชาใด", build: viewNeedSkillCourse },
-  { id: "v3", name: "กลุ่มทักษะ → ชุดทักษะ → ทักษะย่อย",
-    desc: "โครงสร้าง G1–G7 แตกเป็น AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewGroupSub },
+  { id: "v3", name: "ทักษะเป้าหมาย → ชุดทักษะ → ทักษะย่อย",
+    desc: "H1–H20, S1–S10 และ EF1–EF6 เชื่อมตรงสู่ AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewTargetSetSub },
   { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–A",
     desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–ทัศนคติ", build: viewPloCloKsa },
   { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSA",
-    desc: "ทักษะเป้าหมายแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa }
+    desc: "ทักษะเป้าหมายและฐานวิศวกรรมแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa }
 ];

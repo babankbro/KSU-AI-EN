@@ -66,7 +66,7 @@
 | วิชาชีพบังคับ | Core AI 24 + Basic Core Track 24 ตามรายละเอียดใน vault | 60 | มกส. แบ่งแกน AI กับบริบทประยุกต์; มจพ. บังคับสายหุ่นยนต์เกือบทั้งหมด |
 | วิชาชีพเลือก | วิชาเลือกแขนง 15 | 3 | มกส. ให้นักศึกษาสร้างความแตกต่างตาม 3 แขนงมากกว่า |
 | ฝึกงาน/สหกิจ | เตรียมสหกิจ 1 + สหกิจ 6 หน่วยกิต; แผนให้เต็มภาคเรียนที่ 8 | Internship 240 ชั่วโมง แบบ S/U ช่วงฤดูร้อน | มกส. ให้ immersion ในสถานประกอบการนานกว่าในเชิงโครงสร้างแผน |
-| โครงงาน | เตรียมโครงงาน 1 + Capstone 3; มีสัมมนา I–II | Industrial-based Design Project 3 + Project I 3 + Project II 3 | มจพ. มีโครงงานบังคับ 9 หน่วยกิตและต่อเนื่องหลายช่วง |
+| โครงงาน | เตรียมโครงงาน 1 + Capstone 3; มีสัมมนา 1–2 | Industrial-based Design Project 3 + Project I 3 + Project II 3 | มจพ. มีโครงงานบังคับ 9 หน่วยกิตและต่อเนื่องหลายช่วง |
 | ภาษาหลักสูตร | ต้องยืนยันจากเล่มฉบับอนุมัติ | ภาษาอังกฤษ | ไม่ควรสรุปจากการมีคำอธิบายสองภาษาเพียงอย่างเดียว |
 
 > [!caution] คุณภาพข้อมูลฝั่ง มกส.
@@ -266,7 +266,7 @@
 | 2 | เพิ่ม ROS 2, coordinate frame และ sensor/actuator integration | `EN-132-307 ระบบอัตโนมัติและหุ่นยนต์` | mobile/industrial robot demo ที่ส่งข้อมูลและคำสั่งผ่าน ROS 2 |
 | 3 | เพิ่ม latency, profiling และ edge deployment | `EN-131-204`, `EN-131-208` | deploy model บน edge พร้อมวัด latency/power/resource |
 | 4 | เพิ่ม MLOps สำหรับ cyber-physical system | `EN-131-205`, `EN-132-306` | versioned model + rollback + monitoring + digital thread |
-| 5 | เพิ่ม safety/calibration/OT security rubric | Workshop III และ Capstone | hazard analysis, fail-safe test, calibration record และ security checklist |
+| 5 | เพิ่ม safety/calibration/OT security rubric | Workshop 3 และ Capstone | hazard analysis, fail-safe test, calibration record และ security checklist |
 | 6 | ทำ elective pathway “AI Robotics Integration” | แขนง Industrial AI | ROS 2, autonomous systems, machine vision และ predictive maintenance อย่างน้อย 3 วิชาเชื่อมกัน |
 | 7 | ทบทวนขนาด Capstone | `EN-134-303/404` | workload สอดคล้องจำนวนหน่วยกิต หรือแยก Capstone I–II |
 

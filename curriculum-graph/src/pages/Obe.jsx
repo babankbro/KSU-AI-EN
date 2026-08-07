@@ -5,7 +5,7 @@ import { PageHead, Section } from "./ui.jsx";
 import { PLO_DETAIL, YLO_DETAIL, COURSES, PLO_NAME } from "../data.js";
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  LEVELS, GROUPS, SKILL_SETS, KSA, GA, REFS, BENCHMARKS, SKILL_CORE_RULE
+  ENGINEERING_FOUNDATIONS, LEVELS, GROUPS, SKILL_SETS, KSA, GA, REFS, BENCHMARKS, SKILL_CORE_RULE
 } from "../obeData.js";
 import Alluvial from "../Alluvial.jsx";
 import { VIEWS } from "../alluvialViews.js";
@@ -14,7 +14,7 @@ const STEPS = [
   { n: 1, id: "sh",    label: "ผู้มีส่วนได้ส่วนเสีย", en: "Stakeholders", tag: "SH1–SH8" },
   { n: 2, id: "needs", label: "ความต้องการ",         en: "Needs",        tag: "N1–N18" },
   { n: 3, id: "ga",    label: "ลักษณะบัณฑิต",        en: "Graduate Attributes", tag: "GA1–GA5" },
-  { n: 4, id: "skill", label: "ทักษะเป้าหมาย",        en: "Target Skills", tag: "H1–H20 · S1–S10" },
+  { n: 4, id: "skill", label: "ทักษะเป้าหมายและฐานวิศวกรรม", en: "Target Skills & Engineering Foundations", tag: "H1–H20 · S1–S10 · EF1–EF6" },
   { n: 5, id: "set",   label: "ชุดทักษะ",             en: "Skill Sets",   tag: "AISK01–09" },
   { n: 6, id: "plo",   label: "ผลลัพธ์หลักสูตร",       en: "PLO",          tag: "PLO1–7" },
   { n: 7, id: "ylo",   label: "ผลลัพธ์รายชั้นปี",      en: "YLO",          tag: "YLO1–4" },
@@ -28,21 +28,20 @@ const jump = id => e => {
 };
 
 const setById = id => SKILL_SETS.find(s => s.id === id);
-const skillById = id => [...HARD_SKILLS, ...SOFT_SKILLS].find(s => s.id === id);
+const skillById = id => [...HARD_SKILLS, ...SOFT_SKILLS, ...ENGINEERING_FOUNDATIONS].find(s => s.id === id);
 
 const TRACK_SHORT = { T1: "T1 เกษตร", T2: "T2 อุตสาหกรรม", T3: "T3 องค์กร" };
 
 /* แถวทักษะเป้าหมาย — คลิกเพื่อขยายดูรายละเอียดจาก 03_Target_Skills.md */
 function SkillRow({ s, open, onToggle }) {
-  const st = setById(s.set);
-  const g = st ? GROUPS[st.g] : null;
+  const setIds = s.sets || (s.set ? [s.set] : []);
   return (
     <div className={`skill-row${s.core ? "" : " ext"}${open ? " open" : ""}`}>
       <button className="skill-head" onClick={onToggle} aria-expanded={open}>
         <span className="obe-code sm">{s.id}</span>
         <span className="skill-nm">{s.name}</span>
         {!s.core && <span className="ext-tag">ส่วนขยาย</span>}
-        <span className="setchip sm">{s.set}</span>
+        {setIds.map(id => <span className="setchip sm" key={id}>{id}</span>)}
         <span className="skill-caret">{open ? "▾" : "▸"}</span>
       </button>
 
@@ -67,8 +66,8 @@ function SkillRow({ s, open, onToggle }) {
             <div>
               <dt>🧩 ชุดทักษะ</dt>
               <dd>
-                <span className="setchip sm">{s.set}</span>{" "}
-                {st ? `${st.name} · กลุ่ม ${st.g}${g ? ` (${g.name})` : ""}` : ""}
+                {setIds.map(id => <span className="setchip sm" key={id}>{id}</span>)}{" "}
+                {st ? st.name : ""}
               </dd>
             </div>
           </dl>
@@ -270,7 +269,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 4 · Target Skills ─── */}
-        <Section id="skill" title="④ ทักษะเป้าหมาย (H1–H20 · S1–S10)" sub="แกนบังคับ Hard 9 + Soft 6 · ส่วนขยาย Hard 11 + Soft 4">
+        <Section id="skill" title="④ ทักษะเป้าหมายและฐานวิศวกรรม (H1–H20 · S1–S10 · EF1–EF6)" sub="ทักษะอาชีพ Hard/Soft เชื่อมกับฐานวิศวกรรมที่ผู้ทรงคุณวุฒิกำหนด">
           <div className="lvbar">
             {LEVELS.map(l => <span key={l.id}><b>{l.id}</b> {l.th} <i>({l.label})</i></span>)}
           </div>
@@ -291,21 +290,21 @@ export default function Obe() {
               ))}
             </div>
           </div>
+          <div className="foundation-block">
+            <h3 className="skill-h">Engineering Foundations <small>ฐานทักษะวิศวกรรมประกอบ EF1–EF6</small></h3>
+            <p className="obe-note">EF ไม่เพิ่มจำนวน Hard Skills แต่ทำให้ CAD โครงสร้าง ความร้อน–ของไหล เครื่องมือวัด ระบบขับเคลื่อน ความปลอดภัย มาตรฐาน และการส่งมอบมีเจ้าภาพและหลักฐานประเมินชัดเจน</p>
+            <div className="skill-cols">
+              {ENGINEERING_FOUNDATIONS.map(s => (
+                <SkillRow key={s.id} s={s} open={openSkill === s.id}
+                  onToggle={() => setOpenSkill(openSkill === s.id ? null : s.id)} />
+              ))}
+            </div>
+          </div>
           <p className="obe-note"><b>เกณฑ์แกน/ส่วนขยาย</b> — {SKILL_CORE_RULE}</p>
         </Section>
 
         {/* ─── 5 · Skill Sets ─── */}
-        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–09" sub="จัดเป็น 7 กลุ่ม (G1–G7) · ใช้ออก Skill Transcript">
-          <div className="gbar">
-            {Object.entries(GROUPS).map(([k, g]) => (
-              <div className="gbox" key={k} style={{ "--ac": g.color }}>
-                <b>{k}</b>
-                <span>{g.name}</span>
-                <small>{g.en}</small>
-              </div>
-            ))}
-          </div>
-
+        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–09" sub="เชื่อมตรงกับ H1–H20 · S1–S10 · EF1–EF6 เพื่อใช้จัดทำ Skill Transcript">
           <div className="setlist">
             {SKILL_SETS.map(s => {
               const g = GROUPS[s.g];
@@ -320,7 +319,7 @@ export default function Obe() {
                       <small>{s.en}</small>
                     </span>
                     <span className="set-meta">
-                      <span className="gtag">{s.g}</span>
+                      <span className="gtag">{s.skills.length} ทักษะเป้าหมาย/ฐาน</span>
                       <span className="ttag">{s.type}</span>
                       <span className="tracks">T1 {s.track.T1} · T2 {s.track.T2} · T3 {s.track.T3}</span>
                     </span>
@@ -330,7 +329,7 @@ export default function Obe() {
                   {open && (
                     <div className="setcard-body">
                       <div className="set-skills">
-                        <span className="lab">ทักษะแกนที่ผูก:</span>
+                        <span className="lab">ทักษะเป้าหมายและฐานวิศวกรรมที่ผูก:</span>
                         {s.skills.map(k => {
                           const sk = skillById(k);
                           return <span className="skchip" key={k} title={sk ? sk.name : ""}>{k}</span>;

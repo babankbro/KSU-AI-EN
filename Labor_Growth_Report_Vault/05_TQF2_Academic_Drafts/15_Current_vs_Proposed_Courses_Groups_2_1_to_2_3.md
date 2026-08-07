@@ -34,9 +34,9 @@
 | EN-001-125 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | เพิ่ม safety factor, fatigue, frame/mount/enclosure, material/lifecycle selection | Mechanical safety/lifecycle |
 | EN-001-126 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
 | EN-001-127 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์ | เพิ่ม instrumentation, signal conditioning, sensor/actuator, motor/drive, protection และ electrical safety | Instrumentation/drive/safety |
-| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
-| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
-| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
+| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
+| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
+| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
 
 ## 3. กลุ่ม 2.2 วิชาชีพหลักด้าน AI — 24 หน่วยกิต
 
@@ -189,9 +189,9 @@
 | EN-001-125 กลศาสตร์วัสดุและโครงสร้าง | H7/H15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
 | EN-001-126 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
 | EN-001-127 ไฟฟ้าและอิเล็กทรอนิกส์ | H5/H9/H17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
-| EN-001-128 Workshop I | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
-| EN-001-129 Workshop II | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
-| EN-001-230 Workshop III | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
+| EN-001-128 Workshop 1 | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
+| EN-001-129 Workshop 2 | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
+| EN-001-230 Workshop 3 | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
 
 ### 5.2 AI Core
 

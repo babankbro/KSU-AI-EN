@@ -1,6 +1,6 @@
 // ทะเบียนคำอธิบายรหัสย่อทั้งหมดของเว็บ — ใช้โดย CodeTip.jsx เพื่อแสดงป๊อปอัปเมื่อชี้ที่รหัส
-// ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–09 · G1–G7 · N1–N18 · SH1–SH8 · GA1–GA5
-//            H1–H20 · S1–S10 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
+// ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–09 · N1–N18 · SH1–SH8 · GA1–GA5
+//            H1–H20 · S1–S10 · EF1–EF6 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
 // รูปแบบผลลัพธ์: { id, kind, accent, title, en, body, rows:[[label,value]], plo:[], sets:[], to }
 
 import {
@@ -9,11 +9,11 @@ import {
 } from "./data.js";
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  LEVELS, GROUPS, SKILL_SETS, GA
+  ENGINEERING_FOUNDATIONS, LEVELS, GROUPS, SKILL_SETS, GA
 } from "./obeData.js";
 import { LEVEL_NAME } from "./cloData.js";
 
-const skillById = id => [...HARD_SKILLS, ...SOFT_SKILLS].find(s => s.id === id);
+const skillById = id => [...HARD_SKILLS, ...SOFT_SKILLS, ...ENGINEERING_FOUNDATIONS].find(s => s.id === id);
 
 /* รูปแบบรหัสที่รู้จัก — ดึงเฉพาะส่วนที่เป็นรหัสออกจากข้อความของป้าย */
 const PATTERN = new RegExp(
@@ -21,10 +21,9 @@ const PATTERN = new RegExp(
   "PLO[1-7]|" +
   "YLO[1-4]\\.[1-9]|YLO[1-4]|" +
   "AISK0[1-9]|EN-AISK0[1-9]|" +
-  "G[1-7]|" +
   "N1[0-8]|N[1-9]|" +
   "SH[1-8]|GA[1-5]|" +
-  "H20|H1[0-9]|H[1-9]|S10|S[1-9]|L[1-4]|" +
+  "H20|H1[0-9]|H[1-9]|S10|S[1-9]|EF[1-6]|L[1-4]|" +
   "C[0-1][0-9]|" +
   "[A-Z]{2}-\\d{3}-\\d{3}|" +
   "[IRM]" +
@@ -83,14 +82,14 @@ export function lookup(raw) {
   }
 
   /* ── ชุดทักษะ AISK ── */
-  if (/^AISK0[1-8]$/.test(id)) {
+  if (/^AISK0[1-9]$/.test(id)) {
     const s = SKILL_SETS.find(x => x.id === id);
     if (!s) return null;
     const g = GROUPS[s.g];
     return {
       id: `EN-${id}`, kind: "ชุดทักษะ", accent: g ? g.color : "var(--navy)", to: "/obe#set",
       title: s.name, en: s.en,
-      body: g ? `กลุ่ม ${s.g} · ${g.name}` : "",
+      body: "เชื่อมตรงจากทักษะเป้าหมายและฐานวิศวกรรมสู่ CLO และหลักฐานประเมิน",
       rows: [
         ["ประเภท", `${s.type} Skill`],
         ["ทักษะแกนที่ผูก", (s.skills || []).join(", ")],
@@ -99,18 +98,6 @@ export function lookup(raw) {
         ["วิธีวัดผล", s.assess]
       ],
       plo: s.plo || []
-    };
-  }
-
-  /* ── กลุ่มทักษะ G1–G7 ── */
-  if (/^G[1-7]$/.test(id)) {
-    const g = GROUPS[id];
-    if (!g) return null;
-    const sets = SKILL_SETS.filter(s => s.g === id).map(s => s.id);
-    return {
-      id, kind: "กลุ่มทักษะ", accent: g.color, to: "/obe#set",
-      title: g.name, en: g.en, body: "", sets,
-      rows: [["ชุดทักษะในกลุ่ม", sets.join(" · ") || "—"]]
     };
   }
 
@@ -186,6 +173,26 @@ export function lookup(raw) {
         ["ชุดทักษะที่ผูก", st ? `${st.id} · ${st.name}` : s.set]
       ],
       sets: [s.set], plo: s.plo || []
+    };
+  }
+
+  /* ── ฐานทักษะวิศวกรรม EF1–EF6 ── */
+  if (/^EF[1-6]$/.test(id)) {
+    const s = skillById(id);
+    if (!s) return null;
+    const tr = Object.entries(s.track || {}).map(([t, m]) => `${t} ${m}`).join(" · ");
+    return {
+      id, kind: "ฐานทักษะวิศวกรรมประกอบ (Engineering Foundation)",
+      accent: "#b8760f", to: "/obe#skill",
+      title: s.name, en: "", body: s.scope,
+      rows: [
+        ["บทบาท", "ฐานประกอบจากข้อเสนอผู้ทรงคุณวุฒิ ไม่เพิ่มจำนวน H1–H20"],
+        ["แขนงที่ใช้", tr],
+        ["ระดับเป้าหมาย", s.level],
+        ["ที่มา/เหตุผล", s.market],
+        ["ชุดทักษะที่ผูก", (s.sets || []).join(" · ")]
+      ],
+      sets: s.sets || [], plo: s.plo || []
     };
   }
 

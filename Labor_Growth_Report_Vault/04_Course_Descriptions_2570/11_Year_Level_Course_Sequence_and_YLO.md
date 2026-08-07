@@ -29,7 +29,7 @@
 3. **ML/Data ก่อน Decision Intelligence**: EN-131-206/EN-131-207 มาก่อน EN-132-303
 4. **ML ก่อน Vision และ Cloud ก่อน Software AI Engineering**: EN-131-206 มาก่อน EN-131-203/EN-131-205 และ EN-131-205 มาก่อน EN-132-308
 5. **Vision ก่อน Autonomous Agriculture**: EN-131-203 มาก่อน EN-132-305
-6. **Seminar I → Seminar II/Project Preparation → Capstone → Cooperative Education**
+6. **Seminar 1 → Seminar 2/Project Preparation → Capstone → Cooperative Education**
 7. **เตรียมสหกิจในภาค 7** ควบกับโครงงาน เพื่อให้มีเวลาพัฒนาประวัติย่อ สมัคร สัมภาษณ์ และจับคู่สถานประกอบการก่อนภาคสหกิจ
 
 ## 3. การกระจาย GE ตามพัฒนาการผู้เรียน
@@ -55,7 +55,7 @@ GE จึงไม่กองอยู่เฉพาะต้นหลัก�
 | EN-001-122 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม | 3 |
 | EN-001-124 | การเขียนแบบวิศวกรรมและการวางผังระบบ | 3 |
 | EN-001-126 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | 3 |
-| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ I | 1 |
+| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | 1 |
 | EN-131-101 | ความรู้เบื้องต้นสำหรับปัญญาประดิษฐ์ | 3 |
 | | **รวม** | **19** |
 
@@ -68,7 +68,7 @@ GE จึงไม่กองอยู่เฉพาะต้นหลัก�
 | EN-001-123 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | 3 |
 | EN-001-125 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | 3 |
 | EN-001-127 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | 3 |
-| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ II | 1 |
+| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | 1 |
 | EN-131-102 | คณิตศาสตร์วิศวกรรมปัญญาประดิษฐ์ | 3 |
 | | **รวม** | **19** |
 
@@ -78,7 +78,7 @@ GE จึงไม่กองอยู่เฉพาะต้นหลัก�
 |---|---|---:|
 | GE-010-005 | ชีวิตออกแบบได้ | 3 |
 | EN-001-121 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | 3 |
-| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ III | 1 |
+| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | 1 |
 | EN-131-204 | ระบบอินเทอร์เน็ตของสรรพสิ่งอัจฉริยะและการประมวลผลที่ขอบเครือข่าย | 3 |
 | EN-131-206 | การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก | 3 |
 | EN-131-207 | วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่ | 3 |
@@ -146,9 +146,9 @@ GE จึงไม่กองอยู่เฉพาะต้นหลัก�
 
 | ชั้นปี | YLO โดยสรุป | PLO ที่ตรวจโดยตรง | หลักฐานสำคัญ |
 |---:|---|---|---|
-| 1 | วิเคราะห์โจทย์พื้นฐาน สร้างชิ้นงาน/สถานีตรวจวัดตามแบบอย่างปลอดภัย สื่อสารผล และทำงานกลุ่มย่อย | PLO1–PLO7 ระดับ I | โปรแกรม/ข้อมูล · CAD · calibration/safety record · Workshop I–II |
-| 2 | ออกแบบและทดสอบระบบย่อย AI/Data/IoT/Edge/Cloud/Sensing–Actuation พร้อม product/DSS/value case | PLO1–PLO7 ระดับ R | Workshop III · ML/Data/IoT project · sensing-actuation demo · product/DSS case |
-| 3 | บูรณาการระบบเกษตร อุตสาหกรรม ซอฟต์แวร์ และ Agentic AI พร้อม experiment, governance, BCG และ project proposal | PLO1–PLO7 ระดับ R–M | domain integration · system test · Seminar I–II · project proposal |
+| 1 | วิเคราะห์โจทย์พื้นฐาน สร้างชิ้นงาน/สถานีตรวจวัดตามแบบอย่างปลอดภัย สื่อสารผล และทำงานกลุ่มย่อย | PLO1–PLO7 ระดับ I | โปรแกรม/ข้อมูล · CAD · calibration/safety record · Workshop 1–2 |
+| 2 | ออกแบบและทดสอบระบบย่อย AI/Data/IoT/Edge/Cloud/Sensing–Actuation พร้อม product/DSS/value case | PLO1–PLO7 ระดับ R | Workshop 3 · ML/Data/IoT project · sensing-actuation demo · product/DSS case |
+| 3 | บูรณาการระบบเกษตร อุตสาหกรรม ซอฟต์แวร์ และ Agentic AI พร้อม experiment, governance, BCG และ project proposal | PLO1–PLO7 ระดับ R–M | domain integration · system test · Seminar 1–2 · project proposal |
 | 4 | พัฒนา ทดลอง ประเมินคุณค่า และส่งมอบระบบจากโจทย์จริง พร้อมหลักฐานรายบุคคล | PLO1–PLO7 ระดับ M | Capstone · Skill Portfolio · Cooperative Education |
 
 รายละเอียด YLO1.1–YLO4.4 และกติกา Year Gate ใช้ฉบับหลักที่ [[../05_TQF2_Academic_Drafts/09_Yearly_Learning_Outcomes|Yearly Learning Outcomes]]

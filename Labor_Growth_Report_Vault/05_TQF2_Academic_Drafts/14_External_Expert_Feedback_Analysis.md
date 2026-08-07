@@ -228,7 +228,7 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 |---|---|---|---|---|
 | โครงสร้างหลักสูตร 133 นก. และลำดับรายวิชา | คณะกรรมการบริหารหลักสูตร | ประธานหลักสูตร/เลขานุการหลักสูตร | ผู้ประสานงานทุกกลุ่มวิชา, งานทะเบียน | โครงสร้างที่อนุมัติ, prerequisite map, ภาระรายภาค และแผนทรัพยากร |
 | PLO 7 ข้อและ Track-specific PI | คณะกรรมการบริหารหลักสูตร | ผู้รับผิดชอบ OBE/ประกันคุณภาพ | T1–T3 Leads, ผู้ใช้บัณฑิต | PLO–PI–CLO mapping, rubric และเกณฑ์ผ่านแยก Track |
-| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-121–109 และ EN-001-230 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop I–III portfolio |
+| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-121–109 และ EN-001-230 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop 1–3 portfolio |
 | ฐาน AI/Data/Deployment | ผู้ประสานงาน AI Core | อาจารย์ EN-131-101/102 และ EN-131-203–208 | T1–T3 Leads, Industry Advisory Board | model/data/deployment evidence และ technology watch รายปี |
 | System Integration ร่วมทุก Track | ประธานหลักสูตร | ผู้รับผิดชอบ EN-001-230 และ EN-134-404 | CT3/CT8/CT9, T1–T3 Leads, อุตสาหกรรม | end-to-end architecture และ demo: input → AI → decision/control → process → value |
 | BCG/Carbon และ sustainability assurance | คณะกรรมการบริหารหลักสูตร | **BCG and Sustainability Lead** | T1–T3 Leads, EN-001-121/123, QA, partner | baseline, target, before/after, data source, uncertainty และ BCG report |
