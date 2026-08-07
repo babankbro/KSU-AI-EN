@@ -11,6 +11,7 @@ import YloDetail from "./pages/YloDetail.jsx";
 import Clo from "./pages/Clo.jsx";
 import Plan from "./pages/Plan.jsx";
 import Courses from "./pages/Courses.jsx";
+import References from "./pages/References.jsx";
 import CourseDetail from "./pages/CourseDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import CodeTip from "./CodeTip.jsx";
@@ -29,7 +30,8 @@ const NAV = [
   { to: "/graph", label: "กราฟรายวิชา" },
   { to: "/careers", label: "เส้นทางอาชีพ" },
   { to: "/jobs", label: "Jobs & Skills" },
-  { to: "/courses", label: "รายวิชา" }
+  { to: "/courses", label: "รายวิชา" },
+  { to: "/refs", label: "ข้อมูลอ้างอิง" }
 ];
 
 /* เลื่อนขึ้นบนสุดทุกครั้งที่เปลี่ยนหน้า — ยกเว้นเมื่อลิงก์ระบุ hash ไว้ (ให้หน้านั้นเลื่อนไปยังหัวข้อเอง) */
@@ -95,6 +97,7 @@ export default function App() {
         } />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:code" element={<CourseDetail />} />
+        <Route path="/refs" element={<References />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
