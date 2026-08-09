@@ -12,6 +12,9 @@ const sources = [
   "05_Electives_Smart_Agriculture.md",
   "06_Electives_Industrial_AI.md",
   "07_Electives_AI_Innovation.md",
+  "07B_Electives_Work_Integrated.md",
+  "08_Project_and_Seminar.md",
+  "09_Field_Experience.md",
 ];
 const cloSource = resolve(
   repo,
@@ -19,7 +22,7 @@ const cloSource = resolve(
 );
 
 const courses = {};
-const courseLine = /^(EN-\d{3}-\d{3})\s+(.+?)\s+(\d+\(\d+-\d+-\d+\))\s*$/;
+const courseLine = /^#*\s*\**(EN-\d{3}-\d{3})\s+(.+?)\s+(\d+\(\d+-\d+-\d+\))\**\s*$/;
 
 for (const filename of sources) {
   const lines = readFileSync(resolve(sourceDir, filename), "utf8")
@@ -50,8 +53,8 @@ for (const filename of sources) {
   }
 }
 
-// 27 engineering/AI/track-core courses + 45 professional electives.
-const expected = 75;
+// 26 engineering/AI/track-core + 57 professional electives + 4 project/seminar + 2 field experience.
+const expected = 89;
 if (Object.keys(courses).length !== expected) {
   throw new Error(`Expected ${expected} revised courses, found ${Object.keys(courses).length}`);
 }
@@ -148,6 +151,13 @@ const cloRequiredSources = new Set([
 const cloRequiredCodes = Object.entries(courses)
   .filter(([, course]) => cloRequiredSources.has(course.source))
   .map(([code]) => code);
+
+// ผลลัพธ์การเรียนรู้ระดับรายวิชาย้ายไปดูแลใน src/cloData.js แล้ว
+// ส่วนนี้จึงทำงานเฉพาะเมื่อสั่ง SYNC_CLO=1 เท่านั้น
+if (process.env.SYNC_CLO !== "1") {
+  console.log(`เขียน COURSE_REVISION แล้ว ${Object.keys(courses).length} รายวิชา (ข้ามการ sync CLO)`);
+  process.exit(0);
+}
 
 for (const code of cloRequiredCodes) {
   if (!cloRevision[code]?.clos.length) {
