@@ -1,5 +1,10 @@
 # ตารางสรุปชุดทักษะและการวิเคราะห์ KSA — หลักสูตรวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ
 
+> [!warning] สถานะการปรับให้ตรงกับหลักสูตร 125 หน่วยกิต
+> ส่วน B ของเอกสารนี้คือคำตอบของ **หมวดที่ 4 หัวข้อ 4.7** รหัสรายวิชาปรับเป็นชุดปัจจุบันแล้ว
+> ยังเหลือรายวิชาที่ต้องแทรกเข้าตารางทักษะย่อยด้วยมือ ได้แก่ **EN-132-308 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5** **EN-134-301 สัมมนา** และ **EN-134-404 โครงงานบูรณาการกับสถานประกอบการ (แผน ข)** เพราะคอลัมน์เครื่องมือและวิธีประเมินเป็นข้อมูลที่กำหนดโดยคณะกรรมการหลักสูตร ไม่สามารถสร้างอัตโนมัติได้
+> ความครอบคลุมของ **วิชาชีพเลือกทั้ง 57 รายวิชา** อยู่ที่ [[../08_TQF2_Book_Revisions/17_Section4_7_Skill_Set_Coverage|ภาคผนวกความครอบคลุมชุดทักษะ]] ซึ่งสร้างจากข้อมูลรายวิชาโดยอัตโนมัติ
+
 > AI Engineering & Intelligent Systems — Skill Set Matrix + Knowledge/Skill/Attitude Analysis
 > ต่อยอดจาก [[03_Target_Skills|ทักษะเป้าหมาย H/S]] · [[04_PLOs_7_OBE|PLO 7 ข้อ]] · [[10_Course_Learning_Outcomes_CLO_Mapping|CLO Mapping]] · [[../03_OBE_PLO_Design_2570/07_Curriculum_PLO_Mapping|Curriculum–PLO Mapping]]
 
@@ -97,7 +102,7 @@
 | GE-010-001/002 ภาษาอังกฤษ | CLO (สื่อสารพื้นฐาน) | I |
 | EN-131-206 CV · EN-131-204 Data Eng | CLO3 (รายงาน/Dashboard) | R |
 | EN-132-201/303/306 | CLO นำเสนอผล/Dashboard | R |
-| EN-134-201/302 สัมมนา | CLO1 (นำเสนอ ไทย–อังกฤษ) | R |
+| EN-134-301/302 สัมมนา | CLO1 (นำเสนอ ไทย–อังกฤษ) | R |
 | EN-134-302 เตรียมโครงงาน | CLO2 (ข้อเสนอโครงงาน) | R |
 | EN-135-401 เตรียมสหกิจ | CLO1 (Resume/สัมภาษณ์) | **M** |
 | EN-134-403 Capstone · EN-135-402 สหกิจ | CLO นำเสนอ/สอบปากเปล่า | **M** |
@@ -123,7 +128,7 @@
 | EN-131-101 Intro AI | CLO2 (Responsible AI) | I |
 | EN-131-205 IoT · EN-131-207 Cloud · EN-131-208 HW | CLO ความปลอดภัย/ความเป็นส่วนตัว | R |
 | EN-132-307 UAV | CLO3 (กฎหมาย/ความปลอดภัย) | R |
-| EN-134-201/302 สัมมนา | CLO2 (จริยธรรม/ผลกระทบ) | R |
+| EN-134-301/302 สัมมนา | CLO2 (จริยธรรม/ผลกระทบ) | R |
 | EN-135-401 เตรียมสหกิจ | CLO2 (จรรยาบรรณ) | **M** |
 | EN-134-403 · EN-135-402 | CLO (จริยธรรมในงานจริง) | **M** |
 
@@ -318,7 +323,7 @@
 | 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-306 (CLO1,2) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
 | 4 | LLM Red-teaming และการประเมิน Hallucination/Safety *(IMDA TSC#9)* | L3 บูรณาการ | EN-132-306 (CLO2) · EN-134-403 (CLO4) | **Project Moonshot**, Guardrails, Adversarial Prompt Test |
 | 5 | การประมวลผลภาษาไทย (Thai NLP) | L2 ประยุกต์ | EN-132-306 (CLO1) | AI for Thai, HuggingFace |
-| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-122 (CLO2) · EN-132-305 (CLO2) · EN-134-201/302 | AI Coding Tools, Prompt Log, Human Review |
+| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-122 (CLO2) · EN-132-305 (CLO2) · EN-134-301/302 | AI Coding Tools, Prompt Log, Human Review |
 
 **วิธีวัดและประเมินผล:** โครงงานพัฒนาระบบเอเจนต์ (Agent Project) · การสาธิตระบบ (Demo) · **รายงานการคัดเลือก/ประเมินโมเดลและผล LLM Red-teaming (Baseline Safety Report)** · การประเมินผลสหกิจ (T3)
 
@@ -331,7 +336,7 @@
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-205 (CLO3) · EN-131-208 (CLO2) · EN-132-306 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
-| 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-201 (CLO2) · EN-134-302 (CLO2) · EN-132-307 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
+| 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-301 (CLO2) · EN-134-302 (CLO2) · EN-132-307 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
 | 3 | การจัดทำหลักฐานเชิงประจักษ์ทางธรรมาภิบาล (Audit & Compliance Evidence) | L3 บูรณาการ | EN-134-302 (CLO2) · EN-134-403 (CLO4) | Model Card · Fairness Evaluation Report · Robustness Log *(Outcome/Process/Evidence)* |
 | 4 | การรับรองความปลอดภัย ความน่าเชื่อถือ และความสอดคล้องของระบบ | L3 บูรณาการ | EN-001-230 (CLO2) · EN-134-403 (CLO2) | Risk Register, Assurance Case, Verification Evidence |
 | 5 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-401 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
@@ -347,7 +352,7 @@
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
 | 1 | การคิดวิเคราะห์เชิงระบบ (Analytical/Systems Thinking) | L3 | EN-134-302 (CLO1) · แทรกทุกโครงงาน | System Map, Root-cause |
-| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-201/302 (CLO1) · EN-135-401 (CLO1) · EN-134-403 (CLO4) | Slides, รายงาน, Technical English |
+| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-301/302 (CLO1) · EN-135-401 (CLO1) · EN-134-403 (CLO4) | Slides, รายงาน, Technical English |
 | 3 | ทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-403 (CLO3) · EN-135-402 (CLO2) · EN-001-128/129/230 | Git, Team Charter, 360° Feedback |
 | 4 | ผู้ประกอบการและการบริหารโครงการ (Entrepreneurial/PM) | L2–L3 | EN-132-201 (CLO1,2) · EN-135-402 · YLO4.4 | BMC, Lean Canvas, Gantt |
 | 5 | การเรียนรู้ตลอดชีวิตและการปรับตัว | L3 | EN-131-207 (CLO3) · EN-134-302 (CLO3) | Learning Portfolio |
