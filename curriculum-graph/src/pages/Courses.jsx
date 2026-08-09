@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
-import { COURSES, GROUP_NAME, TRACK_NAME, shortOf } from "../data.js";
+import { COURSES, byOrderNo, GROUP_NAME, TRACK_NAME, shortOf } from "../data.js";
 import { PageHead, Section, PloTag } from "./ui.jsx";
 
 const FILTERS = [["all", "ทั้งหมด"], ["ge", "ศึกษาทั่วไป"], ["eng", "พื้นฐานวิศวฯ"], ["ai", "แกน AI"],
@@ -114,7 +114,7 @@ export default function Courses() {
     let l = COURSES;
     if (f !== "all") l = l.filter(c => c.g === f);
     if (q) { const s = q.toLowerCase(); l = l.filter(c => (c.c + c.t + c.e + c.s + c.d + c.dEn).toLowerCase().includes(s)); }
-    return l;
+    return [...l].sort(byOrderNo);
   }, [q, f]);
 
   return (

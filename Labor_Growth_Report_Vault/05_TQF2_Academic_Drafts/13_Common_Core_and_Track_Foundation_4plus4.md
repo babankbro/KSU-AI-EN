@@ -43,7 +43,7 @@
 
 ### CC2 ระบบสนับสนุนการตัดสินใจและการวิเคราะห์การดำเนินงาน
 
-**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-203 (ปรับจาก AI for Production and Supply Chain)
+**Decision Intelligence and Operations Analytics** — เสนอใช้ EN-132-202 (ปรับจาก AI for Production and Supply Chain)
 
 - KPI/BI, descriptive–predictive–prescriptive analytics รวม business, energy, resource และ carbon KPI
 - Forecasting, scenario analysis, simulation และ optimization/operations research
@@ -84,8 +84,8 @@
 |---|---|---|---|---|
 | EN-132-201 | **ระบบตรวจวัด IoT และ Edge สำหรับฟาร์มอัจฉริยะ** / *Smart Farming IoT, Edge and Sensing Systems* | sensor/actuator, connectivity, edge gateway, calibration, soil-water-weather data, reliability และ field deployment | H5, H9, H11, H16 | C03, C04 |
 | EN-132-201 | **เกษตรแม่นยำและระบบตัดสินใจฟาร์ม** / *Precision Agriculture and Farm Decision Intelligence* | crop/soil/livestock data, yield/disease forecasting, recommendation, irrigation, traceability และ farm economics | H3, H8, H11, H16, H19 | C03, C12 |
-| EN-132-203 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | H7, H8, H11, H16 | C03, C05, C12 |
-| EN-132-202 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | H5, H8, H9, H16 | C03–C05 |
+| EN-132-202 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | H7, H8, H11, H16 | C03, C05, C12 |
+| EN-132-303 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | H5, H8, H9, H16 | C03–C05 |
 
 **สิ่งที่ควรย้ายไปเป็นวิชาเลือก T1:** โรงงานผลิตพืช/เกษตรแนวดิ่ง, ปศุสัตว์อัจฉริยะ, หลังการเก็บเกี่ยว, biotechnology, climate risk และ agri-supply-chain เชิงลึก
 

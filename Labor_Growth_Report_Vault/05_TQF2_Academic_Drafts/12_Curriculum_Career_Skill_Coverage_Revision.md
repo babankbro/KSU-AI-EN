@@ -126,7 +126,7 @@
 | รหัสเดิม   | ชื่อเดิม                                | ชื่อ/ขอบเขตเสนอใหม่                                                                                                                                 | Skills/Careers                     |
 | ---------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | EN-132-201 | AI Business and Product Design          | **AI Product, Requirements and Solution Design** — problem discovery, requirements, architecture concept, prototype, feasibility, acceptance/change | H20, S6, S8–S10 · C02/C08/C09      |
-| EN-132-203 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | H3, H11, H13, H19 · C12/C15/C17    |
+| EN-132-202 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | H3, H11, H13, H19 · C12/C15/C17    |
 | EN-132-304 | Software Development and AI Engineering | **AI Software, Solution Architecture and Integration** — backend/API, full-stack, integration, testing, CI/CD, observability, handover              | H2, H4, H20, S10 · C02/C06/C07/C11 |
 | EN-132-307 | Agentic AI Systems                      | **Generative and Agentic AI Systems** — LLM/RAG/agents/tool use, evaluation, security, cost/latency                                                 | H6, H7, H10, H20 · C01/C02/C06     |
 
@@ -163,10 +163,10 @@
 
 | รายวิชาเดิม | ปรับเนื้อหาที่เสนอ | เหตุผลจากตลาด |
 |---|---|---|
-| EN-001-128 Programming Fundamentals | เพิ่ม data structures, Git, testing, SQL/API basics | Python/SQL/API/testing เป็นฐาน C01/C06/C07 |
+| EN-001-123 Programming Fundamentals | เพิ่ม data structures, Git, testing, SQL/API basics | Python/SQL/API/testing เป็นฐาน C01/C06/C07 |
 | EN-131-101 Introduction to AI | เพิ่ม research literacy, AI limitations, governance baseline | รองรับ C10 และ Responsible AI |
 | EN-131-207 Cloud and MLOps | เพิ่ม observability, SLO, service reliability, cost, runbook | Cloud/CI-CD/operations เด่นใน C01/C06/C07 |
-| EN-131-203 Data Engineering | เพิ่ม data modeling, BI semantic layer, data quality/lineage | C07/C12/C15 |
+| EN-131-204 Data Engineering | เพิ่ม data modeling, BI semantic layer, data quality/lineage | C07/C12/C15 |
 | EN-131-208 AI Infrastructure and Networks | เพิ่ม IAM, backup/DR, enterprise security และ IT service concepts | ปิด gap C11/H20 |
 
 ## 7. วิชาเลือกเสนอใหม่: Active Pool 24 วิชา
@@ -197,13 +197,13 @@
 
 | วิชาเสนอ | ดำเนินการจากของเดิม |
 |---|---|
-| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-132-306/201 |
+| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-132-305/201 |
 | Smart Warehouse, AGV and Material Handling | รวม 135-318 + 135-326 |
-| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-132-203 |
+| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-132-202 |
 | Agro-industrial Process, Food Quality and Safety | ปรับ 135-320 |
 | Rice–Sugar–Cassava Industrial AI Studio | รวม 135-321/322/323 เป็น rotating case studio |
-| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-132-306 |
-| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-132-306 |
+| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-132-305 |
+| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-132-305 |
 | Industrial Computer Vision and Automated Quality | คง/เพิ่ม SPC integration ใน 135-329 |
 | Smart Energy, Thermal Process and Sustainable Factory | รวม 135-325 + 135-330 |
 

@@ -27,16 +27,16 @@
 
 | รหัส | รายวิชาเดิม | ขอบเขตเสนอปรับ | Gap ที่ปิด |
 |---|---|---|---|
-| EN-001-130 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | เพิ่ม ROI, TCO, unit economics, sensitivity/scenario, resource/carbon cost | Business value, economics, decision |
-| EN-001-129 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกร | เพิ่ม DOE, uncertainty, time series, SPC และ measurement-system analysis | Experiment, quality, decision evidence |
+| EN-001-127 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | เพิ่ม ROI, TCO, unit economics, sensitivity/scenario, resource/carbon cost | Business value, economics, decision |
+| EN-001-126 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกร | เพิ่ม DOE, uncertainty, time series, SPC และ measurement-system analysis | Experiment, quality, decision evidence |
 | EN-001-124 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | เพิ่ม heat transfer, material/energy balance, pump/fan, drying/cooling และ energy efficiency | Heat transfer, process, BCG |
 | EN-001-121 | การเขียนแบบวิศวกรรมและการวางผังระบบ | เพิ่ม 2D/3D CAD, assembly, layout, P&ID, electrical/control drawing และ revision | CAD/แบบเฉพาะทาง |
 | EN-001-122 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | เพิ่ม safety factor, fatigue, frame/mount/enclosure, material/lifecycle selection | Mechanical safety/lifecycle |
-| EN-001-128 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
+| EN-001-123 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
 | EN-001-125 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์ | เพิ่ม instrumentation, signal conditioning, sensor/actuator, motor/drive, protection และ electrical safety | Instrumentation/drive/safety |
-| EN-001-123 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
-| EN-001-126 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
-| EN-001-227 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
+| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
+| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
+| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
 
 ## 3. กลุ่ม 2.2 วิชาชีพหลักด้าน AI — 24 หน่วยกิต
 
@@ -46,11 +46,11 @@
 |---|---|---|---|
 | EN-131-101 | ความรู้เบื้องต้นสำหรับ AI | เพิ่ม AI lifecycle, research/technology literacy, limitation, responsible AI และ technology watch | Lifelong learning/governance baseline |
 | EN-131-102 | คณิตศาสตร์วิศวกรรม AI | เพิ่ม numerical optimization, constraint และพื้นฐาน OR/control | H13 Optimization/OR |
-| EN-131-205 | Computer Vision | เพิ่ม industrial/agricultural inspection, video/thermal input, multimodal และ edge deployment | H8/domain vision |
-| EN-131-206 | Intelligent IoT and Edge | เพิ่ม cyber-physical system, device management, industrial protocol, reliability และ security | H9/OT–IT integration |
+| EN-131-206 | Computer Vision | เพิ่ม industrial/agricultural inspection, video/thermal input, multimodal และ edge deployment | H8/domain vision |
+| EN-131-205 | Intelligent IoT and Edge | เพิ่ม cyber-physical system, device management, industrial protocol, reliability และ security | H9/OT–IT integration |
 | EN-131-207 | Cloud and MLOps | เพิ่ม CI/CD/CT, drift, observability, SLO, runbook, cost/latency/carbon | H4 production reliability |
-| EN-131-204 | ML/DL | เพิ่ม data leakage, imbalance, XAI, uncertainty และ reproducible experiment | H1/H14/research quality |
-| EN-131-203 | Data Engineering and Big Data | เพิ่ม batch/stream, quality, lineage, semantic/BI layer และ governance | H3/H12/H14/H19 |
+| EN-131-203 | ML/DL | เพิ่ม data leakage, imbalance, XAI, uncertainty และ reproducible experiment | H1/H14/research quality |
+| EN-131-204 | Data Engineering and Big Data | เพิ่ม batch/stream, quality, lineage, semantic/BI layer และ governance | H3/H12/H14/H19 |
 | EN-131-208 | AI Infrastructure and Networks | เพิ่ม IAM, segmentation, OT/IT, backup/DR, cybersecurity และ IT service concepts | H7/H20 |
 
 ## 4. กลุ่ม 2.3 Core Track ใหม่ — 9 วิชา / 27 หน่วยกิต
@@ -182,16 +182,16 @@
 
 | รหัส/รายวิชา | Skill/AISK Gap ที่ปิด | Expert Gap ที่ตอบ | หลักฐานยืนยัน/ข้อจำกัด |
 |---|---|---|---|
-| EN-001-130 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | H13/H15; S1/S6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
-| EN-001-129 สถิติและการวิเคราะห์ข้อมูล | H1/H11/H14; S1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
+| EN-001-127 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | H13/H15; S1/S6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
+| EN-001-126 สถิติและการวิเคราะห์ข้อมูล | H1/H11/H14; S1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
 | EN-001-124 วิศวกรรมความร้อนและของไหล | H15/H17 + ฐานกายภาพ; AISK02/03 | Heat transfer, process engineering, energy และ BCG | heat/fluid/material-energy calculation + efficiency/carbon metric |
 | EN-001-121 การเขียนแบบและวางผังระบบ | H20; S10 + ฐานกายภาพ; AISK02/03/09 | CAD ต่อเนื่อง แบบเฉพาะทาง layout/P&ID และ system integration | drawing package + revision/control; CT8 รับช่วงความลึก |
 | EN-001-122 กลศาสตร์วัสดุและโครงสร้าง | H7/H15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
-| EN-001-128 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
+| EN-001-123 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
 | EN-001-125 ไฟฟ้าและอิเล็กทรอนิกส์ | H5/H9/H17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
-| EN-001-123 Workshop 1 | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
-| EN-001-126 Workshop 2 | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
-| EN-001-227 Workshop 3 | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
+| EN-001-128 Workshop 1 | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
+| EN-001-129 Workshop 2 | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
+| EN-001-230 Workshop 3 | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
 
 ### 5.2 AI Core
 
@@ -199,11 +199,11 @@
 |---|---|---|---|
 | EN-131-101 พื้นฐาน AI | H1/H6/H7; S3/S7; AISK01/06/07 | Lifelong learning, AI trend อายุสั้น, แนวโน้มโลก/เอเชีย/ประเทศ | technology watch + limitation/governance case |
 | EN-131-102 คณิตศาสตร์ AI | H1/H13; S1; AISK01 | รักษา Core ที่มีอายุยาวและเพิ่มการตัดสินใจเชิงปริมาณ | mathematical model + constrained optimization |
-| EN-131-205 Computer Vision | H8; AISK05 | กล้องและการประมวลผลจาก input ไป process/output | vision pipeline + edge/domain inspection |
-| EN-131-206 IoT and Edge | H4/H9; AISK04 | เชื่อม sensor, edge, network และระบบฟาร์ม/โรงงาน | device-to-edge/cloud demo + reliability/security test |
+| EN-131-206 Computer Vision | H8; AISK05 | กล้องและการประมวลผลจาก input ไป process/output | vision pipeline + edge/domain inspection |
+| EN-131-205 IoT and Edge | H4/H9; AISK04 | เชื่อม sensor, edge, network และระบบฟาร์ม/โรงงาน | device-to-edge/cloud demo + reliability/security test |
 | EN-131-207 Cloud and MLOps | H4/H15; AISK01 | ระบบใช้งานจริง การดูแลต่อเนื่อง ต้นทุน/พลังงาน | CI/CD + monitoring/SLO/runbook + cost/carbon report |
-| EN-131-204 ML/DL | H1/H14; AISK01 | ความถูกต้องเชิงวิศวกรรมและการเรียนรู้ตลอดเวลา | reproducible experiment + XAI/uncertainty evaluation |
-| EN-131-203 Data Engineering | H3/H11/H12/H14/H19; AISK01/09 | BI/DSS, data quality และการตัดสินใจ | pipeline + lineage/quality gate + semantic/BI layer |
+| EN-131-203 ML/DL | H1/H14; AISK01 | ความถูกต้องเชิงวิศวกรรมและการเรียนรู้ตลอดเวลา | reproducible experiment + XAI/uncertainty evaluation |
+| EN-131-204 Data Engineering | H3/H11/H12/H14/H19; AISK01/09 | BI/DSS, data quality และการตัดสินใจ | pipeline + lineage/quality gate + semantic/BI layer |
 | EN-131-208 AI Infrastructure and Networks | H4/H7/H20; AISK01/07/09 | Security, law/standard, OT–IT, IAM และความต่อเนื่องบริการ | secure architecture + IAM/backup/DR exercise |
 
 ### 5.3 Core Track

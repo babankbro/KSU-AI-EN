@@ -1,7 +1,7 @@
 // Generated from Labor_Growth_Report_Vault/04_Course_Descriptions_2570.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const COURSE_REVISION = {
-  "EN-001-130": {
+  "EN-001-127": {
     "t": "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน",
     "e": "Engineering Economics and Cost Analysis",
     "cr": "3(3-0-6)",
@@ -9,7 +9,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of engineering economics; time value of money; interest and discounting; net present value; internal rate of return; benefit-cost ratio; and payback period; cost estimation for data, cloud, automation, and artificial intelligence systems; total cost of ownership and life-cycle costing; depreciation; break-even analysis; unit economics; and business value creation; sensitivity, scenario, risk, and uncertainty analysis; assessment of resource, energy, and carbon costs; preparation of business cases and investment proposals for smart agriculture, smart manufacturing, and AI services",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-129": {
+  "EN-001-126": {
     "t": "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม",
     "e": "Statistics and Data Analysis for Engineering",
     "cr": "3(3-0-6)",
@@ -41,7 +41,7 @@ export const COURSE_REVISION = {
     "dEn": "Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear; bending; torsion; and deflection; combined stress; fatigue; and failure modes; material properties and material selection; factors of safety and design criteria; design of frames, fixtures, mounts, and enclosures for sensors, machines, robots, and unmanned aerial vehicles; consideration of safety, manufacturability, maintainability, service life, and life-cycle impacts of materials and structures",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-128": {
+  "EN-001-123": {
     "t": "การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Foundational Programming for Artificial Intelligence",
     "cr": "3(2-2-6)",
@@ -57,7 +57,7 @@ export const COURSE_REVISION = {
     "dEn": "Direct-current and alternating-current circuits; Kirchhoff's laws and circuit analysis; electronic components; digital and logic systems; sensors; transducers; signal conditioning; calibration; and data acquisition; analog-to-digital and digital-to-analog conversion; actuators; motors; drive systems; and introductory power electronics; power supplies; grounding; protective devices; and electrical safety; design and testing of sensing and actuation circuits for IoT systems, robots, unmanned aerial vehicles, smart farms, and smart factories",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-123": {
+  "EN-001-128": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1",
     "e": "Integrated Engineering Workshop 1",
     "cr": "1(0-3-1)",
@@ -65,7 +65,7 @@ export const COURSE_REVISION = {
     "dEn": "Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-126": {
+  "EN-001-129": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2",
     "e": "Integrated Engineering Workshop 2",
     "cr": "1(0-3-1)",
@@ -73,7 +73,7 @@ export const COURSE_REVISION = {
     "dEn": "Practical principles of drive and fluid-power systems; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic or hydraulic circuits; integration of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and human-machine interfaces; design of interlocks and emergency stops; functional, leakage, and safety testing; and collaborative troubleshooting",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-227": {
+  "EN-001-230": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3",
     "e": "Integrated Engineering Workshop 3",
     "cr": "1(0-3-1)",
@@ -97,7 +97,7 @@ export const COURSE_REVISION = {
     "dEn": "Linear algebra; vectors; matrices; linear transformations; eigenvalues; and singular value decomposition; multivariable calculus; partial derivatives; and the chain rule; probability; random variables; distributions; and Bayesian inference; numerical methods and stability analysis; unconstrained and constrained optimization; gradient descent; backpropagation; linear and nonlinear optimization; foundations of operations research and decision modeling; application of mathematics to the development, analysis, and comparison of AI models and engineering systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-205": {
+  "EN-131-206": {
     "t": "คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ",
     "e": "Computer Vision and Image Analysis",
     "cr": "3(2-2-5)",
@@ -105,7 +105,7 @@ export const COURSE_REVISION = {
     "dEn": "Image formation, camera calibration, and image representation; digital image and video processing; image enhancement, filtering, segmentation, and transformation; feature extraction; object detection, classification, tracking, and segmentation with deep learning; analysis of RGB, multispectral, and thermal imagery; preparation and annotation of image data; evaluation of model performance, bias, robustness, and explainability; model adaptation for edge deployment; applications to plant disease, agricultural-area assessment, grading, quality inspection, safety, and production-process monitoring",
     "source": "03_AI_Core.md"
   },
-  "EN-131-206": {
+  "EN-131-205": {
     "t": "ระบบตรวจวัด ขับเคลื่อน และไอโอทีอัจฉริยะ",
     "e": "Smart Sensing, Actuation and Internet of Things Systems",
     "cr": "3(2-2-5)",
@@ -121,7 +121,7 @@ export const COURSE_REVISION = {
     "dEn": "Cloud architectures and service models; virtual machines, containers, and management of AI computing resources; experiment tracking; management of data, features, models, and model registries; construction of model training, testing, deployment, and updating pipelines; continuous integration, delivery, and training; quality gates and deployment approval; monitoring of performance and data or model drift; logs, metrics, traces, and alerts; service-level objectives and operational runbooks; rollback and incident response; balancing accuracy, latency, availability, cost, energy, and carbon; application of MLOps to agricultural, industrial, and digital-service systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-204": {
+  "EN-131-203": {
     "t": "การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก",
     "e": "Machine Learning and Deep Learning",
     "cr": "3(2-2-5)",
@@ -129,7 +129,7 @@ export const COURSE_REVISION = {
     "dEn": "The machine learning model-development process; supervised, unsupervised, and semi-supervised learning; regression, classification, clustering, and dimensionality reduction; decision trees, ensemble methods, support vector machines, and neural networks; convolutional, sequential, and transformer architectures; transfer learning and fine-tuning; dataset splitting; prevention of data leakage; management of class imbalance and data quality; metric selection; cross-validation; hyperparameter tuning; uncertainty, robustness, explainability, and experiment tracking; reproducible experimentation and model evaluation for agricultural, production-process, and business data",
     "source": "03_AI_Core.md"
   },
-  "EN-131-203": {
+  "EN-131-204": {
     "t": "วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่",
     "e": "Data Engineering and Big Data",
     "cr": "3(3-0-6)",
@@ -145,7 +145,7 @@ export const COURSE_REVISION = {
     "dEn": "Discovery and formulation of problems suitable for artificial intelligence; user, customer, market, and stakeholder research; process and value-chain mapping; analysis of business data to identify product opportunities; definition of functional, data, model, performance, security, and operational requirements; assessment of data, technology, legal, resource, and business readiness and feasibility; conceptual architecture and product prototyping; business-model, value-proposition, total-cost-of-ownership, and return design; responsible and sustainable design; intellectual property; acceptance criteria; user testing; adoption planning; change management; and AI product roadmaps for agriculture, industry, and enterprise",
     "source": "04_Track_Core.md"
   },
-  "EN-132-203": {
+  "EN-132-202": {
     "t": "ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน",
     "e": "Decision Intelligence and Supply Chain Management",
     "cr": "3(2-2-5)",
@@ -153,7 +153,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of decision-support systems and decision intelligence; operational indicators and data models; descriptive, diagnostic, predictive, and prescriptive analytics; forecasting of demand, supply, prices, yields, and capacity; planning of materials, inventory, production, warehouses, logistics, and transportation; traceability and risk management; scenario and uncertainty analysis, simulation, and operations-research optimization; design of recommendation and human-in-the-loop decision systems; dashboards and communication of recommendations to operators, executives, farmers, and entrepreneurs; case studies in rice, sugarcane, sugar, cassava, industrial production, and enterprise services",
     "source": "04_Track_Core.md"
   },
-  "EN-132-202": {
+  "EN-132-303": {
     "t": "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ",
     "e": "Smart Farming Systems and Precision Agriculture",
     "cr": "3(2-2-5)",
@@ -161,7 +161,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
-  "EN-132-305": {
+  "EN-132-306": {
     "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
     "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
