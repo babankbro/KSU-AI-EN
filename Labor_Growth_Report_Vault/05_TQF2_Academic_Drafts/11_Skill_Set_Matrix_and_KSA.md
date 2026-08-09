@@ -277,7 +277,7 @@
 | 1 | ระบบควบคุมอัตโนมัติ PLC/SCADA และเครือข่ายอุตสาหกรรม | L3–L4 *(T2)* | EN-132-304 (CLO1,2) · EN-001-230 (CLO1) | PLC (Ladder/FBD/ST), SCADA/HMI, Industrial Protocols |
 | 2 | หุ่นยนต์อุตสาหกรรมและหุ่นยนต์ร่วมปฏิบัติงาน (Robotics & Cobots) · **ระบบอัตโนมัติเพื่อทดแทนแรงงานที่ขาดแคลนและการทำงานร่วมมนุษย์–เครื่องจักรอย่างปลอดภัย** *(ตอบ N14)* | L2–L3 | EN-132-304 (CLO2,3) | ROS, Robot Arm, Motion Control, Safety/Ergonomics |
 | 3 | Smart Factory, MES/ERP, Digital Twin และ OT/IT integration | L3 บูรณาการ | EN-132-304 (CLO1,2,3) | MES/ERP, Simulation, Digital Twin Platform |
-| 4 | Process/Production Optimization, Lean, Six Sigma, Quality/SPC และ OEE | L3–L4 *(T2)* | EN-132-202/306/307 · EN-001-127 | SPC, OEE, Optimization Solver, Lean/Six Sigma |
+| 4 | Process/Production Optimization, Lean, Six Sigma, Quality/SPC และ OEE | L3–L4 *(T2)* | EN-132-202/306/307 · EN-001-227 | SPC, OEE, Optimization Solver, Lean/Six Sigma |
 | 5 | Maintenance, Reliability และ Asset Intelligence | L3–L4 *(T2)* | EN-132-304 · EN-134-403 | RCA, FMEA/FMECA, CMMS/EAM, Condition Monitoring, RUL |
 
 **วิธีวัดและประเมินผล:** โครงงานระบบอัตโนมัติ/สายการผลิต (Automation Project) · การวิเคราะห์กรณีศึกษาอุตสาหกรรม (Industry Case Study) · รายงานศึกษาดูงาน · การประเมินผลสหกิจในโรงงาน

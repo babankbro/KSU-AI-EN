@@ -1,7 +1,7 @@
 // Generated from Labor_Growth_Report_Vault/04_Course_Descriptions_2570.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const COURSE_REVISION = {
-  "EN-001-127": {
+  "EN-001-227": {
     "t": "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน",
     "e": "Engineering Economics and Cost Analysis",
     "cr": "3(3-0-6)",

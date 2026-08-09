@@ -114,7 +114,7 @@
 | Pneumatic, hydraulic และ actuation | EF5, H5 | EN-001-129, EN-132-201, EN-135-331 | PLO2, PLO4, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านการออกแบบ การวินิจฉัย และการควบคุมระบบกำลังของไหล |
 | Heat and mass transfer | EF3, H15, H17 | EN-001-124, EN-135-325, EN-135-332 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านแบบจำลองเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
 | Safety, standards, commissioning และ handover | EF6, H7, S10 | Workshop, EN-132-304/201, EN-135-333, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านความปลอดภัยอุตสาหกรรม |
-| BCG/carbon/value | H15, H19, S6 | EN-001-127/123/230, EN-132-201/304/306 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
+| BCG/carbon/value | H15, H19, S6 | EN-001-227/123/230, EN-132-201/304/306 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
 | System integration input–process–output–value | H2/H4/H5/H9/H20, S9/S10, EF6 | EN-001-230, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |
 
 > **ข้อสรุป:** skill set ตอบ expert gap ครบเชิงสมรรถนะ แต่การปิดสมบูรณ์ยังขึ้นกับ Lab, common rubric, Track PI, กฎหมาย/มาตรฐานที่ทบทวนรายปี และความร่วมมือสถานประกอบการ
@@ -228,10 +228,10 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 |---|---|---|---|---|
 | โครงสร้างหลักสูตร 133 นก. และลำดับรายวิชา | คณะกรรมการบริหารหลักสูตร | ประธานหลักสูตร/เลขานุการหลักสูตร | ผู้ประสานงานทุกกลุ่มวิชา, งานทะเบียน | โครงสร้างที่อนุมัติ, prerequisite map, ภาระรายภาค และแผนทรัพยากร |
 | PLO 7 ข้อและ Track-specific PI | คณะกรรมการบริหารหลักสูตร | ผู้รับผิดชอบ OBE/ประกันคุณภาพ | T1–T3 Leads, ผู้ใช้บัณฑิต | PLO–PI–CLO mapping, rubric และเกณฑ์ผ่านแยก Track |
-| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-127–109 และ EN-001-230 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop 1–3 portfolio |
+| ฐานวิศวกรรมระยะยาว | ผู้ประสานงาน Engineering Core | อาจารย์ EN-001-227–109 และ EN-001-230 | T1/T2 Leads, Lab/Safety Lead | ข้อสอบ/แบบคำนวณ แบบระบบ และ Workshop 1–3 portfolio |
 | ฐาน AI/Data/Deployment | ผู้ประสานงาน AI Core | อาจารย์ EN-131-101/102 และ EN-131-206–208 | T1–T3 Leads, Industry Advisory Board | model/data/deployment evidence และ technology watch รายปี |
 | System Integration ร่วมทุก Track | ประธานหลักสูตร | ผู้รับผิดชอบ EN-001-230 และ EN-134-403 | CT3/CT8/CT9, T1–T3 Leads, อุตสาหกรรม | end-to-end architecture และ demo: input → AI → decision/control → process → value |
-| BCG/Carbon และ sustainability assurance | คณะกรรมการบริหารหลักสูตร | **BCG and Sustainability Lead** | T1–T3 Leads, EN-001-127/123, QA, partner | baseline, target, before/after, data source, uncertainty และ BCG report |
+| BCG/Carbon และ sustainability assurance | คณะกรรมการบริหารหลักสูตร | **BCG and Sustainability Lead** | T1–T3 Leads, EN-001-227/123, QA, partner | baseline, target, before/after, data source, uncertainty และ BCG report |
 | Safety, standards, law และ trade compliance | คณะกรรมการบริหารหลักสูตร | **Safety and Standards Lead** | CT6/CT7/CT8/CT9, ผู้เชี่ยวชาญภายนอก | risk register, safety case, standards matrix และ compliance dossier |
 | วิชาเลือกชีพ 5 วิชาและความลึกของ Track | คณะกรรมการบริหารหลักสูตร | T1–T3 Leads | อาจารย์ที่ปรึกษา, งานทะเบียน | ตรวจ basket rule: 3 Track depth + 1 cross-track + 1 emerging/research |
 | Capstone/CWIE และโจทย์จริง | ประธานหลักสูตร | ผู้ประสานงาน Capstone/CWIE | T1–T3 Leads, industry mentor | problem bank, joint rubric, mentor record, adoption/placement outcome |
@@ -254,8 +254,8 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 |---|---|---|---|---|---|---|
 | **Bio Economy** — ใช้ทรัพยากรชีวภาพสร้างมูลค่า | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1 Lead; EN-132-303/305 | ผลผลิต คุณภาพ สุขภาพพืช การใช้ปัจจัยการผลิต และ traceability | การแปรรูป คุณภาพ yield และการใช้ผลพลอยได้/ชีวมวล | ระบบข้อมูล ตลาด DSS และ digital service เชื่อม value chain | mass/value flow, data provenance และมูลค่าเพิ่มที่คำนวณได้ |
 | **Circular Economy** — ลดของเสียและหมุนเวียนทรัพยากร | คณะกรรมการบริหารหลักสูตร | BCG Lead, T2 Lead; EN-001-124, EN-132-304 | ลดน้ำ ปุ๋ย สารเคมี และการสูญเสียหลังเก็บเกี่ยว | material/energy balance, scrap/rework, waste heat, water reuse และ maintenance | ลด compute waste, paper/travel และออกแบบ workflow ใช้ทรัพยากรคุ้มค่า | baseline–target–actual, boundary, assumption และ before/after |
-| **Green Economy** — ลดพลังงาน/คาร์บอนและผลกระทบ | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1–T3 Leads; EN-001-127/123, EN-131-207 | energy/carbon per area or product และ climate-resilient decision | energy/emissions per unit, peak demand และ efficiency improvement | compute energy/cost, carbon-aware deployment และ service inclusion | activity data, emission factor/source, uncertainty และ improvement verification |
-| **Business viability** — ความยั่งยืนทางเศรษฐกิจ | ประธานหลักสูตร | EN-001-127, EN-132-201/303 | farm income, payback และ risk reduction | ROI/TCO, unit economics, downtime/scrap cost | adoption, service cost, revenue/cost avoidance | business case ที่เชื่อมกับ BCG KPI ไม่รายงานแยกส่วน |
+| **Green Economy** — ลดพลังงาน/คาร์บอนและผลกระทบ | คณะกรรมการบริหารหลักสูตร | BCG Lead, T1–T3 Leads; EN-001-227/123, EN-131-207 | energy/carbon per area or product และ climate-resilient decision | energy/emissions per unit, peak demand และ efficiency improvement | compute energy/cost, carbon-aware deployment และ service inclusion | activity data, emission factor/source, uncertainty และ improvement verification |
+| **Business viability** — ความยั่งยืนทางเศรษฐกิจ | ประธานหลักสูตร | EN-001-227, EN-132-201/303 | farm income, payback และ risk reduction | ROI/TCO, unit economics, downtime/scrap cost | adoption, service cost, revenue/cost avoidance | business case ที่เชื่อมกับ BCG KPI ไม่รายงานแยกส่วน |
 | **Capstone/CWIE assurance** | คณะกรรมการบริหารหลักสูตร | EN-134-403 และ EN-135-402 | เลือก KPI ที่ตรงกับ T1 | เลือก KPI ที่ตรงกับ T2 | เลือก KPI ที่ตรงกับ T3 | ต้องมี sustainability KPI ≥1 และ business/value KPI ≥1 พร้อมข้อมูลตรวจสอบย้อนกลับได้ |
 
 #### กติกาประเมินร่วม BCG
@@ -271,8 +271,8 @@ BCG ไม่ควรเป็นเพียงคำในปรัชญา�
 | CAD และแบบระบบเฉพาะทาง | ทั้งสองท่าน | Engineering Core/T2 Lead | EN-001-121 ต่อด้วย EN-132-304/201 | assembly/layout, P&ID, electrical/control/fluid-power drawing และ as-built handoff | มีเจ้าภาพแล้ว; เพิ่ม rubric ความถูกต้องตามมาตรฐาน |
 | Safety และมาตรฐานโรงงาน | ทั้งสองท่าน | Safety and Standards Lead | EN-001-123/127/129/230, EN-132-304/307/201 | risk assessment, FMEA/HAZOP ตามบริบท, guarding/interlock/E-stop และ safety case | ต้องสร้าง common rubric และ standards matrix |
 | System Integration เป็นจุดเด่น | ดร. อัปสรรัชย์; คุณพิษณุสนับสนุน input–process–output | ประธานหลักสูตร | EN-001-230, Core Track 9, Capstone/CWIE | end-to-end demo และ architecture เชื่อม sensing–AI–control–process–value | ปรับ PLO/CLO mapping แล้ว; ต้องอนุมัติ Track PI/rubric และสื่อประชาสัมพันธ์ |
-| เศรษฐศาสตร์ การตัดสินใจ และการสร้าง value | คุณพิษณุ | Engineering Core/CT Lead | EN-001-127, EN-132-201/303 | ROI/TCO, scenario/optimization, decision log และ business case | มีเจ้าภาพแล้ว; บังคับใช้ใน Capstone |
-| BCG, carbon footprint และ traceability | ทั้งสองท่าน | BCG and Sustainability Lead | EN-001-127/123, EN-132-202/304/306, ทุก Track project | baseline/before-after, carbon/resource KPI และ traceable data | ปิดแบบมีเงื่อนไข; ต้องแต่งตั้ง Lead และ rubric ร่วม |
+| เศรษฐศาสตร์ การตัดสินใจ และการสร้าง value | คุณพิษณุ | Engineering Core/CT Lead | EN-001-227, EN-132-201/303 | ROI/TCO, scenario/optimization, decision log และ business case | มีเจ้าภาพแล้ว; บังคับใช้ใน Capstone |
+| BCG, carbon footprint และ traceability | ทั้งสองท่าน | BCG and Sustainability Lead | EN-001-227/123, EN-132-202/304/306, ทุก Track project | baseline/before-after, carbon/resource KPI และ traceable data | ปิดแบบมีเงื่อนไข; ต้องแต่งตั้ง Lead และ rubric ร่วม |
 | Drone ยุคใหม่และกฎหมาย | คุณพิษณุ | T1 Lead | EN-132-307 + T1 electives | RTK/GNSS, multispectral/thermal, edge AI, mission planning, regulation และ safety record | มี baseline; ทบทวนกฎหมาย/อุปกรณ์ทุกปี |
 | กล้องครอบคลุม input–processing–output | คุณพิษณุ | AI Core/Track Leads | EN-131-206, EN-132-307/306/307 | vision model เชื่อม decision/control และ process/quality outcome | มีเจ้าภาพแล้ว; ห้ามประเมินเฉพาะ accuracy |
 | กฎหมาย มาตรฐาน การค้า และบริบทเอเชีย | คุณพิษณุ | Safety and Standards Lead | CT6–CT9, AI Governance elective, industry module | compliance matrix, traceability, product/factory standard และ non-tariff risk case | ต้องแต่งตั้งผู้ทวนสอบภายนอกและทบทวนรายปี |

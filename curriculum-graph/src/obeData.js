@@ -389,7 +389,7 @@ export const SKILL_SETS = [
       { n: "การบำรุงรักษา ความน่าเชื่อถือ และการจัดการสินทรัพย์อัจฉริยะ", lv: "L3–L4", tools: "RCA, FMEA/FMECA, CMMS/EAM, Condition Monitoring, RUL" }
     ],
     assess: "โครงงานระบบอัตโนมัติ/สายการผลิต · Industry Case Study · รายงานศึกษาดูงาน · สหกิจในโรงงาน",
-    courses: ["EN-001-127","EN-001-124","EN-001-121","EN-001-123","EN-001-125","EN-001-230","EN-132-202","EN-132-304","EN-132-304","EN-132-201","EN-134-403"] },
+    courses: ["EN-001-227","EN-001-124","EN-001-121","EN-001-123","EN-001-125","EN-001-230","EN-132-202","EN-132-304","EN-132-304","EN-132-201","EN-134-403"] },
 
   { id: "AISK04", g: "G3", type: "Hard",
     name: "ระบบตรวจวัด การประมวลผลที่ขอบเครือข่าย และระบบไซเบอร์กายภาพ",
@@ -461,7 +461,7 @@ export const SKILL_SETS = [
       { n: "กลยุทธ์การแปลงโฉมดิจิทัลและการออกแบบที่ครอบคลุมผู้ใช้", lv: "L2–L3", tools: "DX Canvas, Inclusive Design Checklist" }
     ],
     assess: "Group Project Assessment · Seminar Presentation · 360° จากสหกิจ · แผนธุรกิจ · Learning Portfolio",
-    courses: ["EN-001-127","EN-001-128","EN-001-129","EN-001-230","EN-131-207","EN-132-201","EN-134-201","EN-134-302","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] },
+    courses: ["EN-001-227","EN-001-128","EN-001-129","EN-001-230","EN-131-207","EN-132-201","EN-134-201","EN-134-302","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] },
 
   { id: "AISK09", g: "G7", type: "Hard + Hybrid",
     name: "ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบระบบ",
@@ -477,7 +477,7 @@ export const SKILL_SETS = [
       { n: "การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง", lv: "L3", tools: "Runbook, Handover Evidence, Incident Review" }
     ],
     assess: "Solution Architecture Portfolio · Requirements/Acceptance Package · BI/DSS Case · Integration/UAT Demo · Service Runbook",
-    courses: ["EN-001-127","EN-001-121","EN-001-230","EN-131-207","EN-131-204","EN-131-208","EN-132-201","EN-132-202","EN-132-305","EN-132-306","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] }
+    courses: ["EN-001-227","EN-001-121","EN-001-230","EN-131-207","EN-131-204","EN-131-208","EN-132-201","EN-132-202","EN-132-305","EN-132-306","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] }
 ];
 
 /* ─── ขั้นที่ 5 · KSA ราย PLO ─── */

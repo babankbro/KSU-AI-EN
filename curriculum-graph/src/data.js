@@ -68,7 +68,7 @@ const boiler = (en, ctx) =>
 // ใช้แทน boiler() เดิมที่เป็นข้อความสำเร็จรูปทั่วไป — คีย์ด้วยรหัสวิชา
 const DEN = {
   // ---- 2.1 กลุ่มวิชาพื้นฐานและปฏิบัติการทางวิศวกรรม ----
-  "EN-001-127": "Fundamental concepts of engineering economics; time value of money; interest rates and discounting; net present value and internal rate of return analysis; cost-benefit analysis of engineering projects; economic feasibility assessment of AI and intelligent-systems investment projects; system life-cycle costing; depreciation; break-even analysis; economic decision-making under uncertainty; case studies of investment in AI, agriculture, industry, and innovation",
+  "EN-001-227": "Fundamental concepts of engineering economics; time value of money; interest rates and discounting; net present value and internal rate of return analysis; cost-benefit analysis of engineering projects; economic feasibility assessment of AI and intelligent-systems investment projects; system life-cycle costing; depreciation; break-even analysis; economic decision-making under uncertainty; case studies of investment in AI, agriculture, industry, and innovation",
   "EN-001-126": "Probability and probability distributions; random variables and distribution functions; descriptive and inferential statistics; estimation and confidence intervals; hypothesis testing; analysis of variance; regression and correlation analysis; design of experiments; application of statistical methods to data analysis for AI systems; performance evaluation of machine learning models; problem solving in agricultural and industrial engineering",
   "EN-001-124": "Properties and phases of matter; the first and second laws of thermodynamics; energy and energy conversion; thermodynamic cycles and heat-engine efficiency; properties and behavior of fluids; the continuity equation; Bernoulli's equation and its applications; pipe flow and pressure losses; pumps and turbines; application of thermodynamics and fluid mechanics to cogeneration systems, agricultural produce drying systems, and cooling systems for computing equipment and AI servers",
   "EN-001-121": "Fundamentals and standards of engineering drawing; orthographic and pictorial projection; dimensioning and tolerancing; sectional and auxiliary views; part and assembly drawings; computer-aided design (CAD) drafting; two- and three-dimensional modeling; application of engineering drawing to the design of automation-system structures, agricultural machinery, and the layout of IoT and sensor systems in smart factories and farms",
@@ -185,7 +185,7 @@ const RAW = [
   { c: "EN-001-128", s: "Workshop 1", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1", e: "Integrated Engineering Workshop 1", cr: "1(0-3-1)", g: "eng", y: 1, sem: 1, p: [1, 2, 5],
     d: "การใช้เครื่องมือช่าง การประกอบโครงอลูมิเนียมโปรไฟล์ การเดินท่อน้ำและระบบประปาสำหรับโรงเรือน การเดินสายไฟ การประกอบโครงแชสซีหุ่นยนต์",
     dEn: "Safe use of engineering hand tools; assembly of aluminium-profile structures; installation of water piping and plumbing systems for greenhouses; electrical wiring; assembly of a robot chassis" },
-  { c: "EN-001-127", s: "เศรษฐศาสตร์วิศวฯ", t: "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน", e: "Engineering Economics and Cost Analysis", cr: "3(3-0-6)", g: "eng", y: 1, sem: 3, p: [1, 6, 7], ctx: "eng",
+  { c: "EN-001-227", s: "เศรษฐศาสตร์วิศวฯ", t: "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน", e: "Engineering Economics and Cost Analysis", cr: "3(3-0-6)", g: "eng", y: 2, sem: 3, p: [1, 6, 7], ctx: "eng",
     d: "แนวคิดพื้นฐานทางเศรษฐศาสตร์วิศวกรรม มูลค่าของเงินตามเวลา อัตราดอกเบี้ยและการคิดลด การวิเคราะห์มูลค่าปัจจุบันสุทธิและอัตราผลตอบแทนภายใน การวิเคราะห์ต้นทุนและผลประโยชน์ของโครงการวิศวกรรม การประเมินความเป็นไปได้ทางเศรษฐศาสตร์ของโครงการลงทุนด้านปัญญาประดิษฐ์และระบบอัจฉริยะ ต้นทุนวงจรชีวิตของระบบ การคิดค่าเสื่อมราคา การวิเคราะห์จุดคุ้มทุน การตัดสินใจทางเศรษฐศาสตร์ภายใต้ความไม่แน่นอน กรณีศึกษาการลงทุนในระบบปัญญาประดิษฐ์ เกษตรกรรม อุตสาหกรรม และนวัตกรรม" },
   { c: "EN-001-124", s: "ความร้อน-ของไหล", t: "วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ", e: "Thermal-Fluid Engineering in Smart Systems", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 2], ctx: "eng", h: ["EN-001-123"],
     d: "คุณสมบัติของสารและสถานะของสาร กฎข้อที่หนึ่งและกฎข้อที่สองของอุณหพลศาสตร์ พลังงานและการเปลี่ยนรูปพลังงาน วัฏจักรอุณหพลศาสตร์และประสิทธิภาพเครื่องจักรความร้อน คุณสมบัติและพฤติกรรมของของไหล สมการความต่อเนื่อง สมการแบร์นูลลีและการประยุกต์ใช้ การไหลในท่อและการสูญเสียความดัน ปั๊มและกังหัน การประยุกต์ใช้ความรู้อุณหพลศาสตร์และของไหลในระบบผลิตพลังงานร่วม ระบบอบแห้งผลผลิตเกษตร ระบบระบายความร้อนสำหรับอุปกรณ์คอมพิวเตอร์และเครื่องแม่ข่ายปัญญาประดิษฐ์" },
@@ -221,7 +221,7 @@ const RAW = [
     dEn: "Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation" },
 
   /* ================= 2.3 กลุ่มวิชาชีพบังคับ ================= */
-  { c: "EN-132-201", s: "AI BI/Product", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 2, sem: 4, p: [1, 2, 3, 4, 5, 6, 7], ctx: "track", w: ["EN-131-101", "EN-001-127"],
+  { c: "EN-132-201", s: "AI BI/Product", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 2, sem: 4, p: [1, 2, 3, 4, 5, 6, 7], ctx: "track", w: ["EN-131-101", "EN-001-227"],
     d: "หลักการและกระบวนการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์ การคิดเชิงออกแบบสำหรับการพัฒนานวัตกรรมปัญญาประดิษฐ์ การวิเคราะห์ความต้องการของผู้ใช้และตลาด การออกแบบและทดสอบต้นแบบ การประเมินความเป็นไปได้ทางเทคโนโลยีและธุรกิจ ผืนผ้าใบแบบจำลองธุรกิจสำหรับธุรกิจปัญญาประดิษฐ์ การวิเคราะห์คู่แข่งและการหาตำแหน่งทางการตลาด กลยุทธ์การนำผลิตภัณฑ์ออกสู่ตลาด การประเมินมูลค่าและผลตอบแทน ทรัพย์สินทางปัญญาสำหรับนวัตกรรมปัญญาประดิษฐ์ การประยุกต์ใช้สำหรับภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรม" },
   { c: "EN-132-303", s: "Smart Farming", t: "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ", e: "Smart Farming Systems and Precision Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 5, 6], ctx: "track", h: ["EN-131-205", "EN-131-203"], w: ["EN-131-206"],
     d: "แนวคิดและสถาปัตยกรรมของระบบฟาร์มอัจฉริยะและเกษตรกรรมแม่นยำสูง การออกแบบและติดตั้งเครือข่ายเซนเซอร์ไร้สายในแปลงเพาะปลูก การตรวจวัดและวิเคราะห์สภาพดิน น้ำ สภาพอากาศ และการเจริญเติบโตของพืชด้วยเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งและปัญญาประดิษฐ์ ระบบชลประทานอัจฉริยะและการควบคุมการจ่ายน้ำอัตโนมัติ การวิเคราะห์แบบจำลองเพื่อพยากรณ์และเตือนภัยโรคพืชและแมลงศัตรูพืช การบริหารจัดการฟาร์มด้วยแผงควบคุมข้อมูลและระบบสนับสนุนการตัดสินใจ การเชื่อมต่อแพลตฟอร์มคลาวด์เพื่อการบูรณาการข้อมูลเชิงพื้นที่สำหรับการผลิตข้าว อ้อย และมันสำปะหลัง" },
@@ -334,6 +334,13 @@ const RAW = [
     d: "กฎหมายและมาตรฐานความปลอดภัย การชี้บ่งอันตรายและประเมินความเสี่ยง ความปลอดภัยของเครื่องจักร ไฟฟ้า สารเคมี และระบบกำลังของไหล ความปลอดภัยเชิงหน้าที่ อินเตอร์ล็อก ระบบหยุดฉุกเฉิน สรีรศาสตร์ สุขศาสตร์อุตสาหกรรม การตอบโต้ภาวะฉุกเฉิน การสืบสวนอุบัติการณ์ และการใช้ปัญญาประดิษฐ์หรือเซนเซอร์เฝ้าระวังความปลอดภัย" },
 
   /* ========= 2.4 วิชาชีพเลือก — แขนงที่ 3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร (EN-135-334..348) ========= */
+  { c: "EN-135-349", s: "ออกแบบเครื่องจักรกล", t: "การออกแบบเครื่องจักรกลอัจฉริยะ", e: "Intelligent Machine Design", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 2], h: ["EN-001-123"], w: ["EN-001-121"],
+    d: "การประยุกต์หลักการทางวิศวกรรมสำหรับการออกแบบเครื่องจักรกล การวิเคราะห์ภาระ ความเค้น ความเมื่อยล้า และความปลอดภัยของชิ้นส่วนเครื่องจักร การเลือกวัสดุและกระบวนการผลิต การออกแบบชิ้นส่วนส่งกำลัง เพลา เฟือง สายพาน และตลับลูกปืน การเขียนแบบและการสร้างแบบจำลองสามมิติด้วยคอมพิวเตอร์ การวิเคราะห์ด้วยระเบียบวิธีไฟไนต์เอลิเมนต์ การบูรณาการเซนเซอร์เข้ากับเครื่องจักร และการใช้ปัญญาประดิษฐ์หาค่าเหมาะที่สุดของการออกแบบและทำนายความเสียหาย",
+    dEn: "Application of engineering principles to machine design; analysis of loads, stresses, fatigue, and component safety; selection of materials and manufacturing processes; design of power-transmission components, shafts, gears, belts, and bearings; engineering drawing and three-dimensional computer modeling; finite element analysis; integration of sensors into machines; AI for design optimization and failure prediction" },
+  { c: "EN-135-350", s: "ออกแบบเครื่องจักรชั้นสูง", t: "การออกแบบเครื่องจักรกลชั้นสูงสำหรับระบบอัตโนมัติและหุ่นยนต์", e: "Advanced Machine Design for Automation and Robotics", cr: "3(2-2-5)", g: "elec", tr: 2, p: [1, 2, 4], h: ["EN-135-349"], w: ["EN-132-304"],
+    d: "ประเภทและการทำงานของเครื่องจักรกลในระบบอัตโนมัติและหุ่นยนต์ การออกแบบกลไกและระบบส่งกำลังสำหรับการเคลื่อนที่แม่นยำ จลนศาสตร์และพลศาสตร์ของกลไกและแขนกล การเลือกมอเตอร์ เซอร์โว สเต็ปเปอร์ และชุดขับ การออกแบบโครงสร้างเครื่องจักรเพื่อความแข็งแรงและการสั่นสะเทือนต่ำ การออกแบบอุปกรณ์จับยึดและปลายแขนกล การบูรณาการระบบควบคุม เซนเซอร์ และการมองเห็นของเครื่องจักร และการประเมินความเสี่ยงพร้อมทดสอบการยอมรับ",
+    dEn: "Types and operation of machinery in automation and robotic systems; design of mechanisms and transmission systems for precise motion; kinematics and dynamics of mechanisms and manipulators; selection of motors, servo and stepper drives; machine structure design for stiffness and low vibration; design of fixtures and end effectors; integration of control systems, sensors, and machine vision; risk assessment and acceptance testing" },
+
   { c: "EN-135-334", s: "Advanced Data Eng", t: "วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล", e: "Advanced Data Engineering and Data Pipelines", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 6],
     d: "สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแส การประมวลผลแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บรวบรวมข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การจัดเรียงข้อมูล การสร้างท่อข้อมูลแบบเวลาจริงสำหรับระบบปัญญาประดิษฐ์ การบูรณาการข้อมูลจากแหล่งข้อมูลหลากหลาย การติดตามและบริหารจัดการท่อข้อมูลในสภาพแวดล้อมการทำงานจริง การประยุกต์ใช้วิศวกรรมข้อมูลขั้นสูงในการสร้างระบบข้อมูลเพื่อการประยุกต์ใช้ในอุตสาหกรรม" },
   { c: "EN-135-335", s: "Advanced LLM", t: "ตัวแบบภาษาขนาดใหญ่ขั้นสูง", e: "Advanced Large Language Models", cr: "3(2-2-5)", g: "elec", tr: 3, p: [2, 6, 7], h: ["EN-132-306"], w: ["EN-131-203"],
@@ -439,7 +446,7 @@ export const SUBGROUPS = {
     note: "แบ่งเป็นรายวิชาบรรยายพื้นฐานและชุดปฏิบัติการที่เรียนต่อเนื่องสามภาคการศึกษา",
     items: [
       { name: "พื้นฐานทางวิศวกรรม", sub: "เศรษฐศาสตร์วิศวกรรม · สถิติ · ความร้อนและของไหล · เขียนแบบ · กลศาสตร์วัสดุ · การเขียนโปรแกรม · ไฟฟ้าและอิเล็กทรอนิกส์",
-        codes: ["EN-001-127", "EN-001-126", "EN-001-124", "EN-001-121", "EN-001-123", "EN-001-122", "EN-001-125"] },
+        codes: ["EN-001-227", "EN-001-126", "EN-001-124", "EN-001-121", "EN-001-123", "EN-001-122", "EN-001-125"] },
       { name: "ปฏิบัติการเชิงบูรณาการ", sub: "ชุดปฏิบัติการต่อเนื่อง I → II → III สร้างชิ้นงานเดียวกันจนเป็นระบบสมบูรณ์",
         codes: ["EN-001-128", "EN-001-129", "EN-001-230"] }
     ]
@@ -713,7 +720,7 @@ export const CAREERS = [
     why: "ค้นหาโอกาส ออกแบบประสบการณ์ สร้างต้นแบบ จัดการผลิตภัณฑ์ และทดลองวัดการยอมรับกับคุณค่าของนวัตกรรม AI",
     kw: "AI Innovator · AI Product Manager · AI Product Developer · Innovation Specialist" },
   { id: "C09", track: 3, st: "F", th: "ผู้ประกอบการด้านธุรกิจเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์", en: "Technology and AI Entrepreneur",
-    courses: ["EN-001-127", "EN-132-201", "EN-135-343", "EN-135-345", "EN-135-346", "EN-134-403"],
+    courses: ["EN-001-227", "EN-132-201", "EN-135-343", "EN-135-345", "EN-135-346", "EN-134-403"],
     why: "พัฒนาต้นแบบสู่ธุรกิจ กำหนดราคาและเศรษฐศาสตร์ต่อหน่วย วางกลยุทธ์เข้าสู่ตลาด ระดมทุน และขยายกิจการ AI",
     kw: "AI Entrepreneur · Tech Founder · AI Startup Founder · Digital Technology Entrepreneur" },
   { id: "C10", track: 0, st: "F", th: "นักวิจัยด้านปัญญาประดิษฐ์และระบบอัจฉริยะ", en: "AI and Intelligent Systems Researcher",
@@ -773,7 +780,7 @@ export const CAREERS = [
     why: "เชื่อมข้อมูล อุปกรณ์ ระบบควบคุม ซอฟต์แวร์ API และ AI ตามสถาปัตยกรรมองค์กร พร้อมทดสอบความน่าเชื่อถือแบบครบวงจร · ครอบคลุมบทบาทผู้ดูแลระบบในภาพรวมของโรงงาน ซึ่งเป็นความต้องการที่อุตสาหกรรมแป้งและเกษตรแปรรูประบุว่ายังขาดกำลังคน",
     kw: "Systems Integration Engineer · AI Integration Engineer · Solution Integration Engineer · Integration Test Engineer · Plant Systems Integrator · OT System Owner" },
   { id: "C24", track: 0, st: "M", th: "ที่ปรึกษาโซลูชันปัญญาประดิษฐ์และการเปลี่ยนผ่านสู่ดิจิทัล", en: "AI Solutions and Digital Transformation Consultant",
-    courses: ["EN-001-127", "EN-132-201", "EN-132-202", "EN-135-337", "EN-135-343", "EN-135-348", "EN-134-403"],
+    courses: ["EN-001-227", "EN-132-201", "EN-132-202", "EN-135-337", "EN-135-343", "EN-135-348", "EN-134-403"],
     why: "วิเคราะห์ความพร้อมองค์กร ออกแบบสถาปัตยกรรมและแผนเปลี่ยนผ่าน ประเมินความคุ้มค่า ความเสี่ยง และแนวทางนำ AI ไปใช้จริง",
     kw: "AI Consultant · Digital Transformation Consultant · AI Solutions Consultant · Technology Consultant" },
   { id: "C25", track: 0, st: "M", th: "นักวิเคราะห์ธุรกิจอัจฉริยะและการตัดสินใจ", en: "Business Intelligence and Decision Analyst",

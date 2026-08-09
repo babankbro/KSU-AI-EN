@@ -1,7 +1,7 @@
 // Generated from 10_Course_Learning_Outcomes_CLO_Mapping.md.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const CLO_REVISION = {
-  "EN-001-127": {
+  "EN-001-227": {
     "clos": [
       {
         "n": 1,

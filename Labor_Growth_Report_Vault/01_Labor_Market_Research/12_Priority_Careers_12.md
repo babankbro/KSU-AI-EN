@@ -98,7 +98,7 @@
 
 **Technology and AI Entrepreneur · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-001-127, EN-132-201, EN-135-343, EN-135-345, EN-135-346 และ EN-134-403
+- รายวิชาปลายทาง: EN-001-227, EN-132-201, EN-135-343, EN-135-345, EN-135-346 และ EN-134-403
 - สมรรถนะปลายทาง: business model, value proposition, product strategy, digital marketing, feasibility และ venture pitch
 
 ### 10. นักวิจัยด้านปัญญาประดิษฐ์และระบบอัจฉริยะ

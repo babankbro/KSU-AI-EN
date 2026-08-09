@@ -27,7 +27,7 @@
 
 | รหัส | รายวิชาเดิม | ขอบเขตเสนอปรับ | Gap ที่ปิด |
 |---|---|---|---|
-| EN-001-127 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | เพิ่ม ROI, TCO, unit economics, sensitivity/scenario, resource/carbon cost | Business value, economics, decision |
+| EN-001-227 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | เพิ่ม ROI, TCO, unit economics, sensitivity/scenario, resource/carbon cost | Business value, economics, decision |
 | EN-001-126 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกร | เพิ่ม DOE, uncertainty, time series, SPC และ measurement-system analysis | Experiment, quality, decision evidence |
 | EN-001-124 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | เพิ่ม heat transfer, material/energy balance, pump/fan, drying/cooling และ energy efficiency | Heat transfer, process, BCG |
 | EN-001-121 | การเขียนแบบวิศวกรรมและการวางผังระบบ | เพิ่ม 2D/3D CAD, assembly, layout, P&ID, electrical/control drawing และ revision | CAD/แบบเฉพาะทาง |
@@ -182,7 +182,7 @@
 
 | รหัส/รายวิชา | Skill/AISK Gap ที่ปิด | Expert Gap ที่ตอบ | หลักฐานยืนยัน/ข้อจำกัด |
 |---|---|---|---|
-| EN-001-127 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | H13/H15; S1/S6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
+| EN-001-227 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | H13/H15; S1/S6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
 | EN-001-126 สถิติและการวิเคราะห์ข้อมูล | H1/H11/H14; S1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
 | EN-001-124 วิศวกรรมความร้อนและของไหล | H15/H17 + ฐานกายภาพ; AISK02/03 | Heat transfer, process engineering, energy และ BCG | heat/fluid/material-energy calculation + efficiency/carbon metric |
 | EN-001-121 การเขียนแบบและวางผังระบบ | H20; S10 + ฐานกายภาพ; AISK02/03/09 | CAD ต่อเนื่อง แบบเฉพาะทาง layout/P&ID และ system integration | drawing package + revision/control; CT8 รับช่วงความลึก |
