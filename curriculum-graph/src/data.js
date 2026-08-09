@@ -165,7 +165,7 @@ const RAW = [
   { c: "GE-010-002", s: "อังกฤษ 2", t: "ภาษาอังกฤษฟุดฟิดฟอฟัน", e: "English is Fun", cr: "3(2-2-5)", g: "ge", y: 2, sem: 2, p: [],
     d: "การสื่อสารและใช้ภาษาอังกฤษในบริบทต่าง ๆ คำศัพท์ ประโยค ไวยากรณ์และสำนวนภาษาอังกฤษในสังคมพหุวัฒนธรรม การฟัง การเขียนและโต้ตอบในบริบทการท่องเที่ยว การเดินทาง และเพื่อนต่างวัฒนธรรม",
     dEn: "English communication in a range of contexts; vocabulary, sentence patterns, grammar, and idiomatic expressions in multicultural society; listening, writing, and interaction in the contexts of tourism, travel, and cross-cultural friendship" },
-  { c: "GE-010-006", s: "ปรัชญา/เศรษฐฯ", t: "ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์", e: "Human Philosophy; Society; and Economics", cr: "3(2-2-5)", g: "ge", y: 2, sem: 4, p: [],
+  { c: "GE-010-006", s: "ปรัชญา/เศรษฐฯ", t: "ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์", e: "Human Philosophy; Society; and Economics", cr: "3(2-2-5)", g: "ge", y: 2, sem: 3, p: [],
     d: "สภาพแวดล้อมทางสังคม เศรษฐกิจ และการเมือง การปกครองทั้งภายในและภายนอกประเทศ หลักการบริหาร หลักกฎหมายเบื้องต้น การวิเคราะห์ปัญหาด้านจริยธรรมทางเศรษฐกิจระดับบุคคล องค์กร ประเทศและระดับโลก อุปสงค์ อุปทาน ทฤษฎีพฤติกรรมผู้บริโภค การออมและการลงทุน ปัญหาเงินเฟ้อ เงินฝืด การว่างงาน ปรัชญาเศรษฐกิจพอเพียง",
     dEn: "Philosophical inquiry concerning humanity, society, and economics; social, economic, and political environments; principles of administration and introductory law; analysis of economic-ethical problems at individual, organizational, national, and global levels; supply and demand; consumer behavior; saving and investment; inflation, deflation, unemployment; the philosophy of sufficiency economy" },
   { c: "GE-020-008", s: "ธุรกิจดิจิทัล", t: "การพัฒนาธุรกิจในสังคมดิจิทัล", e: "Business Development in the Digital Era", cr: "3(3-0-6)", g: "ge", y: 2, sem: 5, p: [],
@@ -221,9 +221,9 @@ const RAW = [
     dEn: "Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation" },
 
   /* ================= 2.3 กลุ่มวิชาชีพบังคับ ================= */
-  { c: "EN-132-301", s: "AI BI/Product", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 3, sem: 6, p: [1, 2, 3, 4, 5, 6, 7], ctx: "track", w: ["EN-131-101", "EN-001-130"],
+  { c: "EN-132-301", s: "AI BI/Product", t: "การออกแบบผลิตภัณฑ์และธุรกิจปัญญาประดิษฐ์", e: "AI Business and Product Design", cr: "3(3-0-6)", g: "track", y: 3, sem: 4, p: [1, 2, 3, 4, 5, 6, 7], ctx: "track", w: ["EN-131-101", "EN-001-130"],
     d: "หลักการและกระบวนการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์ การคิดเชิงออกแบบสำหรับการพัฒนานวัตกรรมปัญญาประดิษฐ์ การวิเคราะห์ความต้องการของผู้ใช้และตลาด การออกแบบและทดสอบต้นแบบ การประเมินความเป็นไปได้ทางเทคโนโลยีและธุรกิจ ผืนผ้าใบแบบจำลองธุรกิจสำหรับธุรกิจปัญญาประดิษฐ์ การวิเคราะห์คู่แข่งและการหาตำแหน่งทางการตลาด กลยุทธ์การนำผลิตภัณฑ์ออกสู่ตลาด การประเมินมูลค่าและผลตอบแทน ทรัพย์สินทางปัญญาสำหรับนวัตกรรมปัญญาประดิษฐ์ การประยุกต์ใช้สำหรับภาคเกษตรกรรม อุตสาหกรรม และนวัตกรรม" },
-  { c: "EN-132-304", s: "Smart Farming", t: "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ", e: "Smart Farming Systems and Precision Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 4, 5, 6], ctx: "track", h: ["EN-131-206", "EN-131-204"], w: ["EN-131-205"],
+  { c: "EN-132-304", s: "Smart Farming", t: "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ", e: "Smart Farming Systems and Precision Agriculture", cr: "3(2-2-5)", g: "track", y: 3, sem: 4, p: [2, 4, 5, 6], ctx: "track", h: ["EN-131-206", "EN-131-204"], w: ["EN-131-205"],
     d: "แนวคิดและสถาปัตยกรรมของระบบฟาร์มอัจฉริยะและเกษตรกรรมแม่นยำสูง การออกแบบและติดตั้งเครือข่ายเซนเซอร์ไร้สายในแปลงเพาะปลูก การตรวจวัดและวิเคราะห์สภาพดิน น้ำ สภาพอากาศ และการเจริญเติบโตของพืชด้วยเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งและปัญญาประดิษฐ์ ระบบชลประทานอัจฉริยะและการควบคุมการจ่ายน้ำอัตโนมัติ การวิเคราะห์แบบจำลองเพื่อพยากรณ์และเตือนภัยโรคพืชและแมลงศัตรูพืช การบริหารจัดการฟาร์มด้วยแผงควบคุมข้อมูลและระบบสนับสนุนการตัดสินใจ การเชื่อมต่อแพลตฟอร์มคลาวด์เพื่อการบูรณาการข้อมูลเชิงพื้นที่สำหรับการผลิตข้าว อ้อย และมันสำปะหลัง" },
   { c: "EN-132-302", s: "Software & AI Eng", t: "การพัฒนาซอฟต์แวรและวิศวกรรมปัญญาประดิษฐ์", e: "Software Development and AI Engineering", cr: "3(2-2-5)", g: "track", y: 3, sem: 5, p: [2, 3, 5, 6, 7], ctx: "track", h: ["EN-001-128", "EN-131-207"], w: ["EN-131-203"],
     d: "วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบที่ขับเคลื่อนด้วยปัญญาประดิษฐ์ การพัฒนาซอฟต์แวร์แบบบริการย่อยและการออกแบบเรสฟูลเอพีไอและกราฟคิวแอล รูปแบบสถาปัตยกรรมระบบและทฤษฎีการออกแบบซอฟต์แวร์ที่สะอาดและบำรุงรักษาง่าย วิธีการทดสอบซอฟต์แวร์และการประกันคุณภาพตัวแบบปัญญาประดิษฐ์ การจัดการเวอร์ชันของรหัสคำสั่งและการทำงานร่วมกันเป็นทีมด้วยกิต แนวคิดปฏิบัติการการเรียนรู้ของเครื่องและปฏิบัติการการพัฒนา การสร้างไปป์ไลน์การรวมและส่งมอบอย่างต่อเนื่อง การติดตั้งใช้งานระบบบนโครงสร้างพื้นฐานคลาวด์ แพลตฟอร์มคอนเทนเนอร์ และอุปกรณ์ปลายทาง กรณีศึกษาการพัฒนาแอปพลิเคชันเชิงพาณิชย์" },
@@ -394,10 +394,8 @@ export const SEM_TITLE = {
   7: "Capstone and Workplace-aligned Professional Electives", 8: "Cooperative Education"
 };
 export const SEM_EXTRA = {
-  3: [{ s: "วิชาเลือกเสรี 1", k: 3 }],
-  4: [{ s: "วิชาเลือกเสรี 2", k: 3 }],
-  5: [{ s: "วิชาเลือกชีพ 1", k: 3 }],
-  6: [{ s: "วิชาเลือกชีพ 2", k: 3 }],
+  5: [{ s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกชีพ 1", k: 3 }],
+  6: [{ s: "วิชาเลือกเสรี 2", k: 3 }, { s: "วิชาเลือกชีพ 2", k: 3 }],
   7: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 },
       { s: "วิชาเลือกชีพ 5", k: 3 }]
 };
