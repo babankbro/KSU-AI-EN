@@ -33,7 +33,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and standards of engineering drawing; projection; sectional and pictorial views; dimensioning; tolerancing; and standard symbols; part and assembly drawings; two- and three-dimensional computer-aided design; layouts for farms, greenhouses, sensing stations, robotic cells, and production lines; piping and instrumentation diagrams; electrical and control-circuit drawings; equipment arrangement for safety, maintainability, and ergonomics; drawing revision and configuration control; transfer of drawing data to simulation, digital twins, installation, and system maintenance",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-122": {
+  "EN-001-123": {
     "t": "กลศาสตร์วัสดุและการออกแบบโครงสร้าง",
     "e": "Mechanics of Materials and Structural Design",
     "cr": "3(3-0-6)",
@@ -41,7 +41,7 @@ export const COURSE_REVISION = {
     "dEn": "Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear; bending; torsion; and deflection; combined stress; fatigue; and failure modes; material properties and material selection; factors of safety and design criteria; design of frames, fixtures, mounts, and enclosures for sensors, machines, robots, and unmanned aerial vehicles; consideration of safety, manufacturability, maintainability, service life, and life-cycle impacts of materials and structures",
     "source": "02_Engineering_Fundamentals.md"
   },
-  "EN-001-123": {
+  "EN-001-122": {
     "t": "การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Foundational Programming for Artificial Intelligence",
     "cr": "3(2-2-6)",
@@ -161,7 +161,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
-  "EN-132-306": {
+  "EN-132-307": {
     "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
     "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
@@ -169,7 +169,7 @@ export const COURSE_REVISION = {
     "dEn": "Regulation, law, safety, and ethics of autonomous agricultural systems; principles of unmanned aerial vehicles; operating conditions; transportation; and aircraft registration; mission and flight-path planning; high-precision satellite positioning; spatial data acquisition using sensors and RGB, multispectral, and thermal cameras; principles of remote sensing; digital mapping; terrain and three-dimensional modeling; geographic information systems and GeoAI; application of artificial intelligence to the processing and analysis of aerial imagery; principles of agricultural mobile robots and manipulators; perception, localization, navigation, obstacle avoidance, machine vision, and actuator control; crop-health assessment; precision spraying; surveying; and harvesting; integration of UAV and robot data with farm systems; field testing of performance, safety, and environmental responsibility",
     "source": "04_Track_Core.md"
   },
-  "EN-132-304": {
+  "EN-132-305": {
     "t": "วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์",
     "e": "Software and AI Engineering",
     "cr": "3(2-2-5)",
@@ -177,7 +177,7 @@ export const COURSE_REVISION = {
     "dEn": "Processes and lifecycle of AI software engineering; requirements analysis and solution-architecture design; design of data models, databases, application programming interfaces, and system integration; development of back-end, front-end, and full-stack applications connected to AI models; responsible use of AI development assistants; version control; code review; unit, interface, system, and model testing; quality assurance, security, and privacy; continuous integration and delivery pipelines; containerization and deployment to cloud and edge; monitoring of logs, metrics, traces, and service-level objectives; acceptance testing; documentation; operational runbooks; incident management; and system handover",
     "source": "04_Track_Core.md"
   },
-  "EN-132-307": {
+  "EN-132-306": {
     "t": "ระบบเอเจนต์ปัญญาประดิษฐ์",
     "e": "Agentic AI Systems",
     "cr": "3(2-2-5)",

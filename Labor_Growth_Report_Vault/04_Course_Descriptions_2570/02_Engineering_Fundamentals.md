@@ -4,8 +4,8 @@
 > จำนวนรายการ: **10 รายวิชา / 24 หน่วยกิต**
 >
 > [!note] ลำดับการเรียนตามแผนปรับโครงสร้าง 125 หน่วยกิต (S1)
-> EN-001-122 กลศาสตร์วัสดุและการออกแบบโครงสร้าง ย้ายไปภาคการศึกษาที่ 1 และ EN-001-126 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม ย้ายไปภาคการศึกษาที่ 2
-> โดยกำหนดให้ **EN-001-122 เป็นวิชาก่อนของ EN-001-124 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ**
+> EN-001-123 กลศาสตร์วัสดุและการออกแบบโครงสร้าง ย้ายไปภาคการศึกษาที่ 1 และ EN-001-126 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม ย้ายไปภาคการศึกษาที่ 2
+> โดยกำหนดให้ **EN-001-123 เป็นวิชาก่อนของ EN-001-124 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ**
 
 คำอธิบายภาษาไทยและภาษาอังกฤษเรียงสาระให้ตรงกันแบบข้อต่อข้อ โดยเพิ่มฐานวิศวกรรมกายภาพ เศรษฐศาสตร์ การเขียนแบบ ความปลอดภัย การสร้างและประกอบ ระบบกำลังของไหล และการบูรณาการระบบ เพื่อรองรับสามบริบท ได้แก่ เกษตรอัจฉริยะ อุตสาหกรรมอัจฉริยะ และระบบปัญญาประดิษฐ์ระดับองค์กร
 
@@ -16,15 +16,15 @@ Engineering Drawing and System Layout Design
 หลักการและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพ ภาพตัด ภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ การเขียนแบบชิ้นส่วนและแบบประกอบ การสร้างแบบจำลองสองมิติและสามมิติด้วยคอมพิวเตอร์ช่วยออกแบบ การออกแบบผังฟาร์ม โรงเรือน สถานีตรวจวัด และสายการผลิต แบบท่อและเครื่องมือวัด แบบไฟฟ้าและวงจรควบคุม การจัดวางอุปกรณ์เพื่อความปลอดภัยและการบำรุงรักษา และการส่งมอบข้อมูลแบบสู่การจำลองและดิจิทัลทวิน  
 Principles and standards of engineering drawing; orthographic, sectional, and pictorial projection; dimensioning and tolerancing; part and assembly drawings; two- and three-dimensional computer-aided modeling; layout design for farms, greenhouses, sensing stations, and production lines; piping and instrumentation diagrams; electrical and control-circuit drawings; equipment layout for safety and maintenance; handover of drawing data to simulation and digital twins
 
-EN-001-122 กลศาสตร์วัสดุและการออกแบบโครงสร้าง 3(3-0-6)  
-Mechanics of Materials and Structural Design  
-แรงและระบบแรง สมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน แรงเฉือน การดัด การบิด และการโก่งตัว ความเค้นรวม ความล้า และรูปแบบความเสียหาย สมบัติวัสดุและการเลือกวัสดุ ค่าความปลอดภัยและเกณฑ์การออกแบบ การออกแบบโครง เครื่องยึด ฐานติดตั้ง และกล่องหุ้มสำหรับเซนเซอร์ เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับ และการพิจารณาความสามารถในการผลิต การบำรุงรักษา และอายุใช้งาน  
-Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear, bending, torsion, and deflection; combined stresses, fatigue, and failure modes; material properties and selection; factors of safety and design criteria; design of frames, fixtures, mounting bases, and enclosures for sensors, machinery, robots, and unmanned aerial vehicles; consideration of manufacturability, maintainability, and service life
-
-EN-001-123 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-6)  
+EN-001-122 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-6)  
 Foundational Programming for Artificial Intelligence  
 การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน โครงสร้างข้อมูล และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูลเชิงสัมพันธ์ และการเรียกใช้ส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นด้วยกิต การทดสอบหน่วยและการจัดทำเอกสาร การใช้เครื่องมือช่วยเขียนโปรแกรมด้วยปัญญาประดิษฐ์อย่างมีวิจารณญาณพร้อมตรวจสอบความถูกต้องและความมั่นคงปลอดภัยของรหัสคำสั่ง  
 Algorithmic thinking and problem solving through programming; programming with Python, variables, data types, control structures, functions, data structures, and object-oriented programming; file handling, relational databases, and use of application programming interfaces; data and AI libraries; version control with Git; unit testing and documentation; critical use of AI coding assistants with verification of correctness and security
+
+EN-001-123 กลศาสตร์วัสดุและการออกแบบโครงสร้าง 3(3-0-6)  
+Mechanics of Materials and Structural Design  
+แรงและระบบแรง สมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน แรงเฉือน การดัด การบิด และการโก่งตัว ความเค้นรวม ความล้า และรูปแบบความเสียหาย สมบัติวัสดุและการเลือกวัสดุ ค่าความปลอดภัยและเกณฑ์การออกแบบ การออกแบบโครง เครื่องยึด ฐานติดตั้ง และกล่องหุ้มสำหรับเซนเซอร์ เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับ และการพิจารณาความสามารถในการผลิต การบำรุงรักษา และอายุใช้งาน  
+Forces and force systems; equilibrium of rigid bodies; analysis of structures and frames; axial stress and strain; shear, bending, torsion, and deflection; combined stresses, fatigue, and failure modes; material properties and selection; factors of safety and design criteria; design of frames, fixtures, mounting bases, and enclosures for sensors, machinery, robots, and unmanned aerial vehicles; consideration of manufacturability, maintainability, and service life
 
 EN-001-124 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ 3(3-0-6)  
 Thermal-Fluid Engineering in Smart Systems  

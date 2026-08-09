@@ -55,7 +55,7 @@
 
 ### CC3 วิศวกรรมซอฟต์แวร์ สถาปัตยกรรม และการบูรณาการระบบ AI
 
-**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-304 (ปรับจาก Software Development and AI Engineering)
+**AI Software, Solution Architecture and Systems Integration** — เสนอใช้ EN-132-305 (ปรับจาก Software Development and AI Engineering)
 
 - Backend/API, event/data flow, database และส่วนติดต่อผู้ใช้ที่จำเป็น
 - Architecture pattern, system/interface contract และ integration testing
@@ -67,7 +67,7 @@
 
 ### CC4 ระบบปัญญาประดิษฐ์เชิงสร้างสรรค์และเอเจนต์
 
-**Generative and Agentic AI Systems** — เสนอใช้ EN-132-307 (ปรับจาก Agentic AI Systems)
+**Generative and Agentic AI Systems** — เสนอใช้ EN-132-306 (ปรับจาก Agentic AI Systems)
 
 - Foundation models, prompt/context engineering, embedding และ vector retrieval
 - RAG, tool/function use, workflow agents และ multi-agent pattern

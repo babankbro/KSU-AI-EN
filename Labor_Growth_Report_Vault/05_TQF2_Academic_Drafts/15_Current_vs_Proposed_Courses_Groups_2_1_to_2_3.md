@@ -31,8 +31,8 @@
 | EN-001-126 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกร | เพิ่ม DOE, uncertainty, time series, SPC และ measurement-system analysis | Experiment, quality, decision evidence |
 | EN-001-124 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | เพิ่ม heat transfer, material/energy balance, pump/fan, drying/cooling และ energy efficiency | Heat transfer, process, BCG |
 | EN-001-121 | การเขียนแบบวิศวกรรมและการวางผังระบบ | เพิ่ม 2D/3D CAD, assembly, layout, P&ID, electrical/control drawing และ revision | CAD/แบบเฉพาะทาง |
-| EN-001-122 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | เพิ่ม safety factor, fatigue, frame/mount/enclosure, material/lifecycle selection | Mechanical safety/lifecycle |
-| EN-001-123 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
+| EN-001-123 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | เพิ่ม safety factor, fatigue, frame/mount/enclosure, material/lifecycle selection | Mechanical safety/lifecycle |
+| EN-001-122 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
 | EN-001-125 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์ | เพิ่ม instrumentation, signal conditioning, sensor/actuator, motor/drive, protection และ electrical safety | Instrumentation/drive/safety |
 | EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
 | EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
@@ -186,8 +186,8 @@
 | EN-001-126 สถิติและการวิเคราะห์ข้อมูล | H1/H11/H14; S1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
 | EN-001-124 วิศวกรรมความร้อนและของไหล | H15/H17 + ฐานกายภาพ; AISK02/03 | Heat transfer, process engineering, energy และ BCG | heat/fluid/material-energy calculation + efficiency/carbon metric |
 | EN-001-121 การเขียนแบบและวางผังระบบ | H20; S10 + ฐานกายภาพ; AISK02/03/09 | CAD ต่อเนื่อง แบบเฉพาะทาง layout/P&ID และ system integration | drawing package + revision/control; CT8 รับช่วงความลึก |
-| EN-001-122 กลศาสตร์วัสดุและโครงสร้าง | H7/H15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
-| EN-001-123 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
+| EN-001-123 กลศาสตร์วัสดุและโครงสร้าง | H7/H15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
+| EN-001-122 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
 | EN-001-125 ไฟฟ้าและอิเล็กทรอนิกส์ | H5/H9/H17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
 | EN-001-128 Workshop 1 | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
 | EN-001-129 Workshop 2 | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |

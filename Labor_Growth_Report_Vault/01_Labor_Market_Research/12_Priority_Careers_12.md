@@ -42,14 +42,14 @@
 
 **AI/ML Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-131-102, EN-131-203, EN-131-204, EN-131-207, EN-132-304 และ EN-134-403
+- รายวิชาปลายทาง: EN-131-102, EN-131-203, EN-131-204, EN-131-207, EN-132-305 และ EN-134-403
 - สมรรถนะปลายทาง: แบบจำลอง AI/ML, data pipeline, deployment, monitoring และ end-to-end AI system
 
 ### 2. วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์
 
 **AI Application / Solutions Engineer · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-132-201, EN-132-304, EN-132-307, EN-134-403 และ EN-135-402
+- รายวิชาปลายทาง: EN-132-201, EN-132-305, EN-132-306, EN-134-403 และ EN-135-402
 - สมรรถนะปลายทาง: requirements, solution architecture, system integration, prototype และ implementation ในบริบทจริง
 
 ### 3. วิศวกรเกษตรอัจฉริยะและไอโอที
@@ -63,21 +63,21 @@
 
 **Automation and Control Engineer · แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม**
 
-- รายวิชาปลายทาง: EN-001-125, EN-001-230, EN-132-305 และ EN-135-316
+- รายวิชาปลายทาง: EN-001-125, EN-001-230, EN-132-304 และ EN-135-316
 - สมรรถนะปลายทาง: PLC/SCADA, instrumentation, control panel และระบบอัตโนมัติในโรงงาน
 
 ### 5. วิศวกรหุ่นยนต์และบูรณาการระบบ
 
 **Robotics and System Integration Engineer · แขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม**
 
-- รายวิชาปลายทาง: EN-001-230, EN-132-305, EN-135-327, EN-135-326, EN-135-318 และ EN-134-403
+- รายวิชาปลายทาง: EN-001-230, EN-132-304, EN-135-327, EN-135-326, EN-135-318 และ EN-134-403
 - สมรรถนะปลายทาง: robotics, sensor/actuator, material handling, warehouse automation และ system integration
 
 ### 6. วิศวกรซอฟต์แวร์และแอปพลิเคชันปัญญาประดิษฐ์
 
 **AI Software and Application Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-304, EN-132-307, EN-135-335, EN-135-336, EN-135-337 และ EN-134-403
+- รายวิชาปลายทาง: EN-132-305, EN-132-306, EN-135-335, EN-135-336, EN-135-337 และ EN-134-403
 - สมรรถนะปลายทาง: AI software, API, GenAI/agentic application, testing, cloud microservices และ production deployment
 
 ### 7. วิศวกรข้อมูล
@@ -91,7 +91,7 @@
 
 **AI Innovator · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-201, EN-132-304, EN-135-338, EN-135-343, EN-135-346 และ EN-134-403
+- รายวิชาปลายทาง: EN-132-201, EN-132-305, EN-135-338, EN-135-343, EN-135-346 และ EN-134-403
 - สมรรถนะปลายทาง: opportunity discovery, UX, product concept, rapid prototype, validation และ AI innovation
 
 ### 9. ผู้ประกอบการด้านธุรกิจเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์

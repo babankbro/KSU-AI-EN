@@ -90,7 +90,7 @@ export const HARD_SKILLS = [
     level: "ทุก Track L3 · โครงงานพัฒนาโมเดลหลัก L4" },
 
   { id: "H2", name: "Programming & AI Software Engineering", core: true, set: "AISK01", rank: 2,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [2, 1], courses: ["EN-001-123", "EN-132-304"],
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [2, 1], courses: ["EN-001-122", "EN-132-305"],
     scope: "พัฒนาซอฟต์แวร์ AI ที่ดูแลรักษาและทดสอบได้ด้วย Python, SQL, API, Git, Data Structures and Algorithms, Software Architecture, Automated Testing, CI/CD, Clean Code และการใช้ AI Coding Tools อย่างมีวิจารณญาณ",
     market: "Python พบบ่อยมากในประกาศงาน AI · Software Developers อยู่ในกลุ่มงานเทคโนโลยีที่เติบโตและมีจำนวนงานใหม่สูง · TDRI ระบุเป็นส่วนหนึ่งของ Minimum Viable Stack",
     level: "ทุก Track L3 · T3 และโครงงานซอฟต์แวร์ L4" },
@@ -108,13 +108,13 @@ export const HARD_SKILLS = [
     level: "ทุก Track L2–L3 · T3 L4" },
 
   { id: "H5", name: "Industrial Automation, Robotics & Digital Twin", core: true, set: "AISK03", rank: 5,
-    track: { T1: "○", T2: "●", T3: "○" }, plo: [2, 1], courses: ["EN-132-305", "EN-132-305"],
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [2, 1], courses: ["EN-132-304", "EN-132-304"],
     scope: "ออกแบบและบูรณาการ PLC/SCADA, Industrial Networks, Robotics, Machine Control, Predictive Maintenance, Simulation, Digital Twin, Machine Vision Interface และ OT/IT Integration สำหรับสายการผลิตและระบบโลจิสติกส์อัตโนมัติ",
     market: "ไทยต้องการ Smart Electronics & Industrial Robotics 226,423 ตำแหน่ง (2568–2572) · การผลิตขั้นสูงคาดใช้ AI 81% และหุ่นยนต์ 69%",
     level: "ทุก Track L2 · T2 L4 · T1 (ระบบอัตโนมัติ) L3" },
 
   { id: "H6", name: "Generative AI, LLM & Agentic Systems", core: true, set: "AISK06", rank: 6,
-    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-131-101", "EN-132-307"],
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-131-101", "EN-132-306"],
     scope: "พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows, Model Selection & Evaluation, LLM Red-teaming และ Guardrails",
     market: "LinkedIn ระบุ AI Agents เป็นทักษะ AI ที่เติบโตเร็วที่สุดในปี 2025 · Stanford/Lightcast พบการเติบโตสูงของ Generative AI, LLM, RAG และ Context Engineering",
     bench: "IMDA GenAI TSC#3–#7, #9 (Model Selection/Evaluation/App Dev/Fine-tuning/Security) · Project Moonshot (LLM Red-teaming)",
@@ -128,7 +128,7 @@ export const HARD_SKILLS = [
     level: "ทุก Track L3 · ผู้รับผิดชอบระบบ production L4" },
 
   { id: "H8", name: "Computer Vision, Remote Sensing & Multimodal AI", core: true, set: "AISK05", rank: 8,
-    track: { T1: "●", T2: "●", T3: "○" }, plo: [2, 6], courses: ["EN-131-206", "EN-132-306"],
+    track: { T1: "●", T2: "●", T3: "○" }, plo: [2, 6], courses: ["EN-131-206", "EN-132-307"],
     scope: "พัฒนาระบบ Image Processing, Object Detection, Segmentation, Tracking, Quality Inspection, Multispectral/Hyperspectral Analysis, UAV/Remote Sensing, GeoAI และ Multimodal Data Fusion สำหรับภาคสนามและสายการผลิต",
     market: "Visual Image Recognition และ Multimodal Models ปรากฏในข้อมูลประกาศงาน AI · เชื่อมตรงกับการตรวจโรค/ผลผลิตใน T1 และ Quality Inspection ใน T2",
     level: "ทุก Track L2 · T1–T2 L4" },
@@ -140,13 +140,13 @@ export const HARD_SKILLS = [
     level: "ทุก Track L2 · T1 L4 · T2 L3" },
 
   { id: "H10", name: "NLP & Thai NLP / Sovereign AI", core: false, set: "AISK06", rank: 10,
-    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-132-307"], link: "H6",
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2, 7], courses: ["EN-132-306"], link: "H6",
     scope: "พัฒนาระบบประมวลผลภาษาธรรมชาติ ครอบคลุม Tokenization, Text Classification, NER, Information Extraction, Semantic Search และการต่อยอดภาษาไทย (Thai NLP) บนโครงสร้างพื้นฐาน AI ของประเทศ (AI for Thai, ThaiLLM)",
     market: "NLP เป็นทักษะเทคนิคที่ประกาศงานโตเร็วที่สุด +155% YoY และเป็นกลุ่มค่าตอบแทนสูง (Second Talent 2026) · ตอบ Need N15 โดยตรง",
     level: "ทุก Track L2 · T3 L4" },
 
   { id: "H11", name: "Time-Series Forecasting & Predictive Analytics", core: false, set: "AISK05", rank: 11,
-    track: { T1: "●", T2: "●", T3: "○" }, plo: [6, 2], courses: ["EN-132-202", "EN-132-303", "EN-132-305"], link: "H1, H3",
+    track: { T1: "●", T2: "●", T3: "○" }, plo: [6, 2], courses: ["EN-132-202", "EN-132-303", "EN-132-304"], link: "H1, H3",
     scope: "วิเคราะห์และพยากรณ์ข้อมูลเชิงเวลา (Seasonality, Trend, Anomaly Detection) เพื่อพยากรณ์ผลผลิต ราคา ความต้องการ และการบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance)",
     market: "เป็นแกนของ Precision Farming (พยากรณ์ผลผลิต T1) และ Predictive Maintenance ในสายการผลิต (T2) ที่ผู้ใช้บัณฑิตระบุเป็นเทคโนโลยีนำรายแขนง",
     level: "T1–T2 L3–L4 · T3 L2" },
@@ -158,7 +158,7 @@ export const HARD_SKILLS = [
     level: "T3 L3–L4 · T1–T2 L2" },
 
   { id: "H13", name: "Reinforcement Learning, Optimization & OR", core: false, set: "AISK03", rank: 13,
-    track: { T1: "○", T2: "●", T3: "○" }, plo: [1, 2], courses: ["EN-132-202", "EN-132-305"], link: "H1, H5",
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [1, 2], courses: ["EN-132-202", "EN-132-304"], link: "H1, H5",
     scope: "ประยุกต์ Reinforcement Learning, Mathematical Optimization และ Operations Research กับปัญหาการควบคุม การจัดตาราง การวางแผนทรัพยากร และการควบคุมหุ่นยนต์/กระบวนการ",
     market: "RL ปรากฏใน ~9% ของงาน AI (recommendation, robotics, control) · เป็นแกนของ Industrial Optimization และ Autonomous Control (T2)",
     level: "T2 L3 · T1/T3 L2" },
@@ -176,19 +176,19 @@ export const HARD_SKILLS = [
     level: "ทุก Track L1–L2 · Edge/MLOps L3" },
 
   { id: "H16", name: "Smart Agriculture, Precision Agriculture & Agri-food Systems", core: false, set: "AISK02", rank: 16,
-    track: { T1: "●", T2: "○", T3: "○" }, plo: [2,4,6], courses: ["EN-132-303","EN-132-306","EN-132-201"],
+    track: { T1: "●", T2: "○", T3: "○" }, plo: [2,4,6], courses: ["EN-132-303","EN-132-307","EN-132-201"],
     scope: "ออกแบบระบบเกษตรแม่นยำตั้งแต่ sensing, irrigation/input control, farm data, GeoAI/UAV, forecasting และ traceability พร้อมประเมินน้ำ พลังงาน ต้นทุน คาร์บอน และความน่าเชื่อถือ",
     market: "เชื่อมตรงกับ C03 และอาชีพ Smart Agriculture, Agricultural IoT, UAV/GeoAI และ Agricultural Automation",
     level: "ทุก Track L1–L2 · T1 L3–L4" },
 
   { id: "H17", name: "Smart Manufacturing, Process, Production, Quality & MES", core: false, set: "AISK03", rank: 17,
-    track: { T1: "○", T2: "●", T3: "○" }, plo: [2,4,6], courses: ["EN-132-305","EN-132-305"],
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [2,4,6], courses: ["EN-132-304","EN-132-304"],
     scope: "บูรณาการ Smart Manufacturing, MES/ERP, Digital Twin, OEE, SPC, traceability, Lean/Six Sigma และ AI quality inspection เพื่อปรับปรุงกระบวนการผลิต",
     market: "รองรับ C04, Smart Factory, Process/Production, Quality และ Industrial AI",
     level: "ทุก Track L1–L2 · T2 L3–L4" },
 
   { id: "H18", name: "Maintenance, Reliability & Asset Intelligence", core: false, set: "AISK03", rank: 18,
-    track: { T1: "○", T2: "●", T3: "○" }, plo: [2,4,6], courses: ["EN-132-305","EN-132-201","EN-135-317"],
+    track: { T1: "○", T2: "●", T3: "○" }, plo: [2,4,6], courses: ["EN-132-304","EN-132-201","EN-135-317"],
     scope: "วิเคราะห์สภาพสินทรัพย์และความขัดข้องด้วย condition monitoring, RCA, FMEA, reliability baseline, predictive maintenance และ CMMS พร้อมวางแผนการบำรุงรักษา",
     market: "รองรับงาน AI Maintenance, Reliability และ Asset/Plant Engineering",
     level: "ทุก Track L1–L2 · T2 L3–L4" },
@@ -200,7 +200,7 @@ export const HARD_SKILLS = [
     level: "ทุก Track L3 · โครงงาน DSS L4" },
 
   { id: "H20", name: "Enterprise Solution Architecture, Integration & Digital Services", core: false, set: "AISK09", rank: 20,
-    track: { T1: "○", T2: "○", T3: "●" }, plo: [2,3,4,7], courses: ["EN-132-201","EN-132-304","EN-132-307"],
+    track: { T1: "○", T2: "○", T3: "●" }, plo: [2,3,4,7], courses: ["EN-132-201","EN-132-305","EN-132-306"],
     scope: "แปลงปัญหาเป็น requirements, architecture, API/interface contract, integration, testing/UAT, observability, runbook, handover และ digital-service operation",
     market: "ปิดช่องว่างงาน AI Solution, System Integration, Enterprise AI และ AI Product/Consulting",
     level: "ทุก Track L2–L3 · T3 L4" }
@@ -265,14 +265,14 @@ export const SOFT_SKILLS = [
     level: "ทุก Track L2" },
 
   { id: "S9", name: "Stakeholder, Requirements & Change Facilitation", core: false, set: "AISK09", rank: 9,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [2,3,5,7], courses: ["EN-132-201","EN-132-304","EN-134-403"],
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [2,3,5,7], courses: ["EN-132-201","EN-132-305","EN-134-403"],
     scope: "ทำ stakeholder mapping, discovery, requirement negotiation, acceptance criteria, UAT, adoption และ change facilitation ให้ผู้ใช้ ธุรกิจ และทีมเทคนิคเข้าใจตรงกัน",
     market: "ปรากฏสูงในงาน Solution, Product, Project, Consulting และ Digital Transformation",
     act: "Requirements brief, stakeholder map, acceptance package, UAT และ change plan",
     level: "ทุก Track L2–L3" },
 
   { id: "S10", name: "Agile Delivery, Quality, Safety & Professional Accountability", core: false, set: "AISK09", rank: 10,
-    track: { T1: "●", T2: "●", T3: "●" }, plo: [4,5,6], courses: ["EN-001-230","EN-132-305","EN-132-305","EN-132-304","EN-132-201"],
+    track: { T1: "●", T2: "●", T3: "●" }, plo: [4,5,6], courses: ["EN-001-230","EN-132-304","EN-132-304","EN-132-305","EN-132-201"],
     scope: "ทำงานแบบ iterative โดยรักษาคุณภาพ ความปลอดภัย traceability และความรับผิดชอบต่อผลลัพธ์ ผ่าน test evidence, review, incident learning และ handover",
     market: "เป็นทักษะร่วมของงาน production AI, industrial systems, regulated environments และระบบที่มีผลต่อความปลอดภัย",
     act: "Definition of Done, test/safety dossier, quality review, incident record และ accountable handover",
@@ -286,19 +286,19 @@ export const SOFT_SKILLS = [
 export const ENGINEERING_FOUNDATIONS = [
   { id: "EF1", name: "Engineering Drawing & System Layout", core: true,
     sets: ["AISK02","AISK03","AISK09"], plo: [2,3],
-    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-121","EN-132-305","EN-134-403"],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-121","EN-132-304","EN-134-403"],
     scope: "จัดทำและควบคุมแบบ CAD 2D/3D แบบประกอบ ค่าความคลาดเคลื่อน ผังระบบ P&ID และแบบไฟฟ้าหรือระบบควบคุมสำหรับการติดตั้งและส่งมอบ",
     market: "ฐานวิศวกรรมจากข้อเสนอผู้ทรงคุณวุฒิด้านการเขียนแบบ CAD และการประกาศสมรรถนะ System Integration",
     level: "ทุก Track L2 · T1–T2 และโครงงานบูรณาการ L3" },
   { id: "EF2", name: "Mechanics, Materials, Structures & Fabrication", core: true,
     sets: ["AISK02","AISK03"], plo: [1,2,4],
-    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-122","EN-001-128","EN-132-306"],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-123","EN-001-128","EN-132-307"],
     scope: "วิเคราะห์แรง ความเค้น ความล้า เลือกวัสดุและค่าความปลอดภัย แล้วสร้างหรือประกอบโครงสร้างที่ผลิตและบำรุงรักษาได้",
     market: "ฐานวิศวกรรมสำหรับโครงสร้างฟาร์ม เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับตามข้อเสนอผู้ทรงคุณวุฒิ",
     level: "ทุก Track L2 · งานสร้างชิ้นงาน T1–T2 L3" },
   { id: "EF3", name: "Thermal-Fluid, Energy & Process Fundamentals", core: true,
     sets: ["AISK02","AISK03"], plo: [1,2,4,6],
-    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-124","EN-001-230","EN-132-303","EN-132-305"],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-124","EN-001-230","EN-132-303","EN-132-304"],
     scope: "วิเคราะห์การถ่ายเทความร้อน สมดุลมวลและพลังงาน การไหลในท่อ ปั๊ม พัดลม วาล์ว ระบบอบแห้ง ทำความเย็น และตัวชี้วัดพลังงานหรือคาร์บอน",
     market: "ตอบข้อเสนอผู้ทรงคุณวุฒิด้าน heat transfer, process engineering, พลังงาน และความยั่งยืน BCG",
     level: "ทุก Track L2 · T1–T2 L3" },
@@ -310,13 +310,13 @@ export const ENGINEERING_FOUNDATIONS = [
     level: "ทุก Track L2 · T1–T2 L3" },
   { id: "EF5", name: "Actuation, Fluid Power & Control", core: true,
     sets: ["AISK03","AISK04"], plo: [2,4,6],
-    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-129","EN-132-201","EN-132-305"],
+    track: { T1: "●", T2: "●", T3: "○" }, courses: ["EN-001-129","EN-132-201","EN-132-304"],
     scope: "บูรณาการมอเตอร์และระบบขับเคลื่อน นิวแมติกส์ ไฮดรอลิกส์ วาล์ว กระบอกสูบ PLC ลำดับควบคุม อินเตอร์ล็อก และการหยุดฉุกเฉิน",
     market: "ตอบข้อเสนอผู้ทรงคุณวุฒิด้านนิวแมติกส์ ไฮดรอลิกส์ เครื่องจักร และการควบคุมระบบจริง",
     level: "ทุก Track L2 · T2 และระบบอัตโนมัติ T1 L3" },
   { id: "EF6", name: "Safety, Standards, Commissioning & Handover", core: true,
     sets: ["AISK07","AISK08","AISK09"], plo: [2,3,4,5,6],
-    track: { T1: "●", T2: "●", T3: "●" }, courses: ["EN-001-128","EN-001-129","EN-001-230","EN-132-305","EN-134-403","EN-135-402"],
+    track: { T1: "●", T2: "●", T3: "●" }, courses: ["EN-001-128","EN-001-129","EN-001-230","EN-132-304","EN-134-403","EN-135-402"],
     scope: "ชี้บ่งอันตรายและความเสี่ยง ใช้มาตรฐานความปลอดภัย ทดสอบส่วนต่อประสานและการยอมรับ ดำเนิน commissioning จัดทำ traceability และเอกสาร handover",
     market: "ปิดช่องว่างผู้ทรงคุณวุฒิด้าน safety, standards, system integrator และหลักฐานการส่งมอบระบบ",
     level: "ทุก Track L3 · โครงงานและสหกิจศึกษาประเมินระดับปลายทาง" }
@@ -361,7 +361,7 @@ export const SKILL_SETS = [
       { n: "วิศวกรรมข้อมูลและการวิเคราะห์", lv: "L3", tools: "SQL, Airflow, Spark, Power BI" }
     ],
     assess: "โครงงานพัฒนาโมเดล · โครงงาน Data Pipeline/Dashboard · End-to-end Demo · Capstone Defense",
-    courses: ["EN-001-126","EN-001-123","EN-131-101","EN-131-102","EN-131-207","EN-131-203","EN-131-204","EN-131-208","EN-132-304"] },
+    courses: ["EN-001-126","EN-001-122","EN-131-101","EN-131-102","EN-131-207","EN-131-203","EN-131-204","EN-131-208","EN-132-305"] },
 
   { id: "AISK02", g: "G2", type: "Hard",
     name: "วิศวกรรมเกษตรอัจฉริยะ",
@@ -375,7 +375,7 @@ export const SKILL_SETS = [
       { n: "ห่วงโซ่เกษตร–อาหารอัจฉริยะ การพยากรณ์ การตรวจสอบย้อนกลับ และระบบสนับสนุนการตัดสินใจ", lv: "L3", tools: "GIS/UAV Data, Time-Series, Traceability, Farm DSS" }
     ],
     assess: "โครงงานสร้าง/ประกอบระบบฟาร์มอัจฉริยะ · ปฏิบัติการภาคสนาม Workshop 1–3 · สหกิจภาคเกษตร",
-    courses: ["EN-001-124","EN-001-121","EN-001-122","EN-001-128","EN-001-129","EN-001-230","EN-132-202","EN-132-303","EN-132-306","EN-132-201","EN-134-403"] },
+    courses: ["EN-001-124","EN-001-121","EN-001-123","EN-001-128","EN-001-129","EN-001-230","EN-132-202","EN-132-303","EN-132-307","EN-132-201","EN-134-403"] },
 
   { id: "AISK03", g: "G2", type: "Hard",
     name: "วิศวกรรมอุตสาหกรรมอัจฉริยะและระบบอัตโนมัติ",
@@ -389,7 +389,7 @@ export const SKILL_SETS = [
       { n: "การบำรุงรักษา ความน่าเชื่อถือ และการจัดการสินทรัพย์อัจฉริยะ", lv: "L3–L4", tools: "RCA, FMEA/FMECA, CMMS/EAM, Condition Monitoring, RUL" }
     ],
     assess: "โครงงานระบบอัตโนมัติ/สายการผลิต · Industry Case Study · รายงานศึกษาดูงาน · สหกิจในโรงงาน",
-    courses: ["EN-001-127","EN-001-124","EN-001-121","EN-001-122","EN-001-125","EN-001-230","EN-132-202","EN-132-305","EN-132-305","EN-132-201","EN-134-403"] },
+    courses: ["EN-001-127","EN-001-124","EN-001-121","EN-001-123","EN-001-125","EN-001-230","EN-132-202","EN-132-304","EN-132-304","EN-132-201","EN-134-403"] },
 
   { id: "AISK04", g: "G3", type: "Hard",
     name: "ระบบตรวจวัด การประมวลผลที่ขอบเครือข่าย และระบบไซเบอร์กายภาพ",
@@ -402,7 +402,7 @@ export const SKILL_SETS = [
       { n: "ความปลอดภัยและการจัดการอุปกรณ์ Edge–Cloud", lv: "L2", tools: "Device Management, Edge Security" }
     ],
     assess: "System Integration Project (ปฏิบัติการ 3) · สาธิตระบบ IoT–Edge–Cloud · สหกิจศึกษา",
-    courses: ["EN-001-125","EN-001-129","EN-001-230","EN-131-205","EN-131-208","EN-132-303","EN-132-305","EN-132-305","EN-132-201"] },
+    courses: ["EN-001-125","EN-001-129","EN-001-230","EN-131-205","EN-131-208","EN-132-303","EN-132-304","EN-132-304","EN-132-201"] },
 
   { id: "AISK05", g: "G3", type: "Hard",
     name: "การรับรู้ การพยากรณ์ และการตัดสินใจด้วยปัญญาประดิษฐ์",
@@ -417,7 +417,7 @@ export const SKILL_SETS = [
       { n: "การสื่อสารผลการวิเคราะห์เชิงโดเมน", lv: "L2–L3", tools: "Dashboard, รายงานเชิงภาพ" }
     ],
     assess: "โครงงาน CV/พยากรณ์ตามโดเมน · Drone Flight Practical Test · Dashboard เชิงตัดสินใจ",
-    courses: ["EN-131-206","EN-131-204","EN-132-201","EN-132-202","EN-132-303","EN-132-306","EN-132-305","EN-134-403"] },
+    courses: ["EN-131-206","EN-131-204","EN-132-201","EN-132-202","EN-132-303","EN-132-307","EN-132-304","EN-134-403"] },
 
   { id: "AISK06", g: "G4", type: "Hard",
     name: "ปัญญาประดิษฐ์เชิงสร้าง ระบบเอเจนต์ และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์",
@@ -432,7 +432,7 @@ export const SKILL_SETS = [
       { n: "การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้", lv: "L2–L3", tools: "AI Coding Tools, Prompt Log, Human Review" }
     ],
     assess: "โครงงานระบบเอเจนต์ · Demo · รายงานคัดเลือก/ประเมินโมเดล + Baseline Safety Report",
-    courses: ["EN-131-101","EN-132-307"] },
+    courses: ["EN-131-101","EN-132-306"] },
 
   { id: "AISK07", g: "G5", type: "Hybrid",
     name: "ปัญญาประดิษฐ์ที่รับผิดชอบ ความมั่นคงปลอดภัย ธรรมาภิบาล และการรับรองระบบ",
@@ -446,7 +446,7 @@ export const SKILL_SETS = [
       { n: "จรรยาบรรณวิชาชีพในสถานการณ์จริง", lv: "L3", tools: "Case Study, Employer Rubric" }
     ],
     assess: "Case Study · Model Card / Fairness Report / Robustness Log ตามกรอบ AI Verify · Employer Evaluation",
-    courses: ["GE-010-003","EN-131-101","EN-131-205","EN-131-207","EN-131-208","EN-132-306","EN-132-201","EN-134-201","EN-134-302","EN-135-401"] },
+    courses: ["GE-010-003","EN-131-101","EN-131-205","EN-131-207","EN-131-208","EN-132-307","EN-132-201","EN-134-201","EN-134-302","EN-135-401"] },
 
   { id: "AISK08", g: "G6", type: "Soft",
     name: "การสื่อสาร การทำงานเป็นทีม ภาวะผู้นำ และความเป็นผู้ประกอบการ",
@@ -477,7 +477,7 @@ export const SKILL_SETS = [
       { n: "การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง", lv: "L3", tools: "Runbook, Handover Evidence, Incident Review" }
     ],
     assess: "Solution Architecture Portfolio · Requirements/Acceptance Package · BI/DSS Case · Integration/UAT Demo · Service Runbook",
-    courses: ["EN-001-127","EN-001-121","EN-001-230","EN-131-207","EN-131-204","EN-131-208","EN-132-201","EN-132-202","EN-132-304","EN-132-307","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] }
+    courses: ["EN-001-127","EN-001-121","EN-001-230","EN-131-207","EN-131-204","EN-131-208","EN-132-201","EN-132-202","EN-132-305","EN-132-306","EN-134-302","EN-134-403","EN-135-401","EN-135-402"] }
 ];
 
 /* ─── ขั้นที่ 5 · KSA ราย PLO ─── */

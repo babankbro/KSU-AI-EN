@@ -51,8 +51,8 @@
 | EN-001-126 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม | PLO1, PLO6 | PLO3, PLO4 | H1, H11, H14; S1, S4 |
 | EN-001-124 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H15, H17; EF3 |
 | EN-001-121 | การเขียนแบบวิศวกรรมและการวางผังระบบ | PLO2, PLO3 | PLO4, PLO5 | H20; S4, S10; EF1, EF6 |
-| EN-001-122 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | PLO1, PLO2, PLO4 | — | H15; S1, S2; EF2 |
-| EN-001-123 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | PLO1, PLO5 | PLO2, PLO4 | H2, H7; S5, S7, S10 |
+| EN-001-123 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | PLO1, PLO2, PLO4 | — | H15; S1, S2; EF2 |
+| EN-001-122 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ | PLO1, PLO5 | PLO2, PLO4 | H2, H7; S5, S7, S10 |
 | EN-001-125 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ | PLO1, PLO2, PLO6 | PLO4 | H5, H9, H17; EF4 |
 | EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | PLO2, PLO5, PLO6 | PLO4 | H9; S5, S10; EF1, EF2, EF4, EF6 |
 | EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | PLO2, PLO4, PLO6 | PLO5 | H5, H9, H17; S5, S10; EF5, EF6 |
@@ -78,11 +78,11 @@
 | EN-132-201 | AI Business Intelligence and Product Design | PLO1, PLO2, PLO7 | PLO3, PLO4, PLO5, PLO6 | H7, H15, H20; S1, S2, S6, S8, S9, S10 |
 | EN-132-202 | Decision Intelligence and Supply Chain Management | PLO1, PLO2, PLO6 | PLO3 | H3, H11, H13, H19; S1, S2, S4, S8 |
 | EN-132-303 | Smart Agriculture Systems | PLO2, PLO6, PLO7 | PLO4, PLO5 | H9, H11, H15, H16, H19; S5, S9, S10 |
-| EN-132-306 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
-| EN-132-305 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
-| EN-132-305 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
-| EN-132-304 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
-| EN-132-307 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
+| EN-132-307 | Autonomous Systems for Agriculture | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H8, H9, H16; S5, S10 |
+| EN-132-304 | Smart Manufacturing Systems | PLO1, PLO2, PLO6 | PLO4 | H11, H13, H15, H17, H18, H19, H20; EF3 |
+| EN-132-304 | Intelligent Industrial Automation and Robotics Systems | PLO2, PLO4, PLO5 | PLO6 | H5, H7, H8, H9, H17, H20; EF1, EF5, EF6 |
+| EN-132-305 | Software and AI Engineering | PLO2, PLO3, PLO5 | PLO6 | H2, H4, H7, H20; S4, S5, S9, S10 |
+| EN-132-306 | Agentic AI Systems | PLO2, PLO4, PLO7 | PLO5, PLO6 | H6, H7, H10, H20; S3, S5, S7, S10 |
 | EN-132-201 | Intelligent Sensing and Actuation Systems | PLO2, PLO4, PLO6 | PLO5 | H5, H7, H9, H17; EF4, EF5, EF6 |
 
 ### 4.4 กลุ่มโครงงาน สัมมนา และประสบการณ์วิชาชีพ
