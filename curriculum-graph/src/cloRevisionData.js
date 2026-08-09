@@ -1699,7 +1699,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-302": {
+  "EN-132-305": {
     "clos": [
       {
         "n": 1,
@@ -1778,7 +1778,7 @@ export const CLO_REVISION = {
       "AISK04"
     ]
   },
-  "EN-132-303": {
+  "EN-132-306": {
     "clos": [
       {
         "n": 1,
@@ -1861,7 +1861,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-132-303": {
+  "EN-132-306": {
     "clos": [
       {
         "n": 1,
@@ -1943,7 +1943,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-301": {
+  "EN-132-304": {
     "clos": [
       {
         "n": 1,
@@ -2027,7 +2027,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-304": {
+  "EN-132-307": {
     "clos": [
       {
         "n": 1,
