@@ -36,13 +36,13 @@
 **📚 กระจายลงรายวิชา + CLO**
 | รายวิชา | CLO ที่ตอบ PLO1 | ระดับ |
 |---|---|:--:|
-| EN-001-122 สถิติ | CLO1 (ทฤษฎีความน่าจะเป็น) | I |
+| EN-001-129 สถิติ | CLO1 (ทฤษฎีความน่าจะเป็น) | I |
 | EN-131-102 คณิต AI | CLO1, CLO2 (พีชคณิตเชิงเส้น/แคลคูลัส) | I |
-| EN-001-126 โปรแกรมพื้นฐาน | CLO1 (เขียนโปรแกรมแก้ปัญหา) | I |
-| EN-001-123/125/121 (ปี2) | CLO วิเคราะห์ระบบกายภาพ/ต้นทุน | R |
-| EN-131-206 ML/DL | CLO1 (เลือกอัลกอริทึม) | R |
+| EN-001-128 โปรแกรมพื้นฐาน | CLO1 (เขียนโปรแกรมแก้ปัญหา) | I |
+| EN-001-124/125/121 (ปี2) | CLO วิเคราะห์ระบบกายภาพ/ต้นทุน | R |
+| EN-131-204 ML/DL | CLO1 (เลือกอัลกอริทึม) | R |
 | EN-132-307 Automation | CLO1 (วิเคราะห์ระบบควบคุม) | R |
-| EN-134-404 Capstone · EN-135-402 สหกิจ | CLO1 (แก้ปัญหาจริง) | **M** |
+| EN-134-403 Capstone · EN-135-402 สหกิจ | CLO1 (แก้ปัญหาจริง) | **M** |
 
 ---
 
@@ -69,12 +69,12 @@
 **📚 กระจายลงรายวิชา + CLO**
 | รายวิชา | CLO ที่ตอบ PLO2 | ระดับ |
 |---|---|:--:|
-| EN-001-124 เขียนแบบ | CLO2, CLO3 | I |
-| EN-001-126 โปรแกรม | CLO3 | I |
-| EN-131-204 IoT/Edge | CLO2 | R |
-| EN-131-205 Cloud/MLOps · EN-131-207 Data Eng · EN-131-208 HW/Network | CLO ออกแบบ/พัฒนาระบบย่อย | R |
+| EN-001-121 เขียนแบบ | CLO2, CLO3 | I |
+| EN-001-128 โปรแกรม | CLO3 | I |
+| EN-131-206 IoT/Edge | CLO2 | R |
+| EN-131-207 Cloud/MLOps · EN-131-203 Data Eng · EN-131-208 HW/Network | CLO ออกแบบ/พัฒนาระบบย่อย | R |
 | EN-132-304/305/306/307/308/309 (แขนง) | CLO ออกแบบระบบเฉพาะโดเมน | **M** |
-| EN-134-404 Capstone · EN-135-402 สหกิจ | CLO1 | **M** |
+| EN-134-403 Capstone · EN-135-402 สหกิจ | CLO1 | **M** |
 
 ---
 
@@ -95,12 +95,12 @@
 | รายวิชา | CLO ที่ตอบ PLO3 | ระดับ |
 |---|---|:--:|
 | GE-010-001/002 ภาษาอังกฤษ | CLO (สื่อสารพื้นฐาน) | I |
-| EN-131-203 CV · EN-131-207 Data Eng | CLO3 (รายงาน/Dashboard) | R |
-| EN-132-302/303/306 | CLO นำเสนอผล/Dashboard | R |
+| EN-131-205 CV · EN-131-203 Data Eng | CLO3 (รายงาน/Dashboard) | R |
+| EN-132-301/303/306 | CLO นำเสนอผล/Dashboard | R |
 | EN-134-201/302 สัมมนา | CLO1 (นำเสนอ ไทย–อังกฤษ) | R |
-| EN-134-303 เตรียมโครงงาน | CLO2 (ข้อเสนอโครงงาน) | R |
+| EN-134-302 เตรียมโครงงาน | CLO2 (ข้อเสนอโครงงาน) | R |
 | EN-135-401 เตรียมสหกิจ | CLO1 (Resume/สัมภาษณ์) | **M** |
-| EN-134-404 Capstone · EN-135-402 สหกิจ | CLO นำเสนอ/สอบปากเปล่า | **M** |
+| EN-134-403 Capstone · EN-135-402 สหกิจ | CLO นำเสนอ/สอบปากเปล่า | **M** |
 
 ---
 
@@ -121,11 +121,11 @@
 |---|---|:--:|
 | GE-010-004 คุณค่ามหาวิทยาลัย · GE-010-003 ดิจิทัล | CLO (จริยธรรม/พลเมืองดิจิทัล) | I |
 | EN-131-101 Intro AI | CLO2 (Responsible AI) | I |
-| EN-131-204 IoT · EN-131-205 Cloud · EN-131-208 HW | CLO ความปลอดภัย/ความเป็นส่วนตัว | R |
+| EN-131-206 IoT · EN-131-207 Cloud · EN-131-208 HW | CLO ความปลอดภัย/ความเป็นส่วนตัว | R |
 | EN-132-305 UAV | CLO3 (กฎหมาย/ความปลอดภัย) | R |
 | EN-134-201/302 สัมมนา | CLO2 (จริยธรรม/ผลกระทบ) | R |
 | EN-135-401 เตรียมสหกิจ | CLO2 (จรรยาบรรณ) | **M** |
-| EN-134-404 · EN-135-402 | CLO (จริยธรรมในงานจริง) | **M** |
+| EN-134-403 · EN-135-402 | CLO (จริยธรรมในงานจริง) | **M** |
 
 > [!tip] ข้อเสนอเสริมความหนักแน่น (จาก doc 07 หมายเหตุ #2)
 > พิจารณาเปิดวิชาแกน **"AI Ethics & Governance"** เพื่อยก PLO4 ให้มี Mastery ชัดในแกนบังคับ ไม่พึ่งเฉพาะสหกิจ/สัมมนา
@@ -148,11 +148,11 @@
 **📚 กระจายลงรายวิชา + CLO**
 | รายวิชา | CLO ที่ตอบ PLO5 | ระดับ |
 |---|---|:--:|
-| EN-001-128/129/230 ปฏิบัติการ 1–3 | CLO ทำงานเป็นทีม | I → R |
+| EN-001-123/129/230 ปฏิบัติการ 1–3 | CLO ทำงานเป็นทีม | I → R |
 | GE-020-009 ผู้นำศตวรรษที่ 21 | CLO1, CLO2 | R |
-| EN-131-206 ML/DL | CLO3 (โครงงานกลุ่ม) | R |
+| EN-131-204 ML/DL | CLO3 (โครงงานกลุ่ม) | R |
 | EN-132-304/307/308/309 (แขนง) | CLO ปฏิบัติการ/ทีม | **M** |
-| EN-134-404 Capstone | CLO3 (ภาวะผู้นำโครงงาน) | **M** |
+| EN-134-403 Capstone | CLO3 (ภาวะผู้นำโครงงาน) | **M** |
 | EN-135-401/402 สหกิจ | CLO (ทีม/360° feedback) | **M** |
 
 ---
@@ -179,12 +179,12 @@
 **📚 กระจายลงรายวิชา + CLO**
 | รายวิชา | CLO ที่ตอบ PLO6 | ระดับ |
 |---|---|:--:|
-| EN-001-122 สถิติ | CLO2, CLO3 (วิเคราะห์/DOE) | I |
+| EN-001-129 สถิติ | CLO2, CLO3 (วิเคราะห์/DOE) | I |
 | EN-131-102 คณิต AI | CLO3 | I |
-| EN-131-206 ML/DL | CLO2 (ประเมินโมเดล) | R |
-| EN-131-203 CV · EN-131-207 Data Eng | CLO วิเคราะห์/ประมวลผล | R |
-| EN-132-303/304/305/306 (แขนง) | CLO ทดลอง/พยากรณ์จากข้อมูล | **M** |
-| EN-134-404 · EN-135-402 | CLO2/CLO3 (ทดลอง/ประเมินผล) | **M** |
+| EN-131-204 ML/DL | CLO2 (ประเมินโมเดล) | R |
+| EN-131-205 CV · EN-131-203 Data Eng | CLO วิเคราะห์/ประมวลผล | R |
+| EN-132-306/304/305/306 (แขนง) | CLO ทดลอง/พยากรณ์จากข้อมูล | **M** |
+| EN-134-403 · EN-135-402 | CLO2/CLO3 (ทดลอง/ประเมินผล) | **M** |
 
 ---
 
@@ -207,10 +207,10 @@
 |---|---|:--:|
 | GE-010-005 ชีวิตออกแบบได้ · GE-020-008 ธุรกิจดิจิทัล | CLO (วางแผนตนเอง/ผู้ประกอบการ) | I → R |
 | EN-131-101 Intro AI | CLO3 (ติดตามแนวโน้ม) | I |
-| EN-131-205 Cloud/MLOps | CLO3 (เรียนรู้เครื่องมือใหม่) | R |
-| EN-132-302 ผลิตภัณฑ์/ธุรกิจ AI | CLO2 (feasibility/go-to-market) | R |
-| EN-132-303/308/309 | CLO ประเมินคุณค่า/เทคโนโลยีใหม่ | R |
-| EN-134-303 เตรียมโครงงาน | CLO3 (วางแผนเรียนรู้) | R |
+| EN-131-207 Cloud/MLOps | CLO3 (เรียนรู้เครื่องมือใหม่) | R |
+| EN-132-301 ผลิตภัณฑ์/ธุรกิจ AI | CLO2 (feasibility/go-to-market) | R |
+| EN-132-306/308/309 | CLO ประเมินคุณค่า/เทคโนโลยีใหม่ | R |
+| EN-134-302 เตรียมโครงงาน | CLO3 (วางแผนเรียนรู้) | R |
 | EN-135-401/402 สหกิจ | CLO (พัฒนาตนเอง/ผู้ประกอบการ) | **M** |
 
 ---
@@ -243,13 +243,13 @@
 
 | # | ทักษะย่อย (Sub-skill) | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | คณิตศาสตร์ประยุกต์สำหรับ AI (Applied Math) | L3 บูรณาการ | EN-131-102 (CLO1,2,3) · EN-001-122 (CLO1) | Python, NumPy, SymPy |
-| 2 | การพัฒนาและฝึกสอนโมเดล ML/DL — **"AI Teaching"** *(Subsymbolic)* | L4 นำไปใช้/ประเมิน | EN-131-206 (CLO1,2) · EN-134-404 (CLO1) | scikit-learn, PyTorch, TensorFlow |
-| 3 | การให้เหตุผลและการตัดสินใจ *(Symbolic/Neurosymbolic: Search, Planning, KR, Bayesian Reasoning)* | L2–L3 | EN-131-101 (CLO1) · EN-132-309 (CLO1) | Search/Planning, Bayesian Networks, Knowledge Graph |
-| 4 | การประเมินและอธิบายผลโมเดล (Evaluation/XAI) | L3 บูรณาการ | EN-131-206 (CLO2,3) · EN-001-122 (CLO2,3) | MLflow, SHAP |
-| 5 | วิศวกรรมซอฟต์แวร์ AI และ Full-stack AI Solutioning | L3 บูรณาการ | EN-001-126 (CLO1,3) · EN-132-308 (CLO1) · EN-134-404 (CLO1) | Python, Git, FastAPI, pytest, Streamlit/Gradio |
-| 6 | MLOps, Cloud และโครงสร้างพื้นฐาน AI (Container/GPU/Scale) | L2–L3 | EN-131-205 (CLO1,2) · EN-131-208 (CLO1,2) · EN-132-308 (CLO2) | Docker, Kubernetes, AWS/Azure/GCP, CI/CD |
-| 7 | วิศวกรรมข้อมูลและการวิเคราะห์ (Pipeline/Big Data/Analytics/Data-Centric AI) | L3 บูรณาการ | EN-131-207 (CLO1,2,3) · EN-001-122 (CLO2) | SQL, Airflow, Spark, Power BI, Label Studio |
+| 1 | คณิตศาสตร์ประยุกต์สำหรับ AI (Applied Math) | L3 บูรณาการ | EN-131-102 (CLO1,2,3) · EN-001-129 (CLO1) | Python, NumPy, SymPy |
+| 2 | การพัฒนาและฝึกสอนโมเดล ML/DL — **"AI Teaching"** *(Subsymbolic)* | L4 นำไปใช้/ประเมิน | EN-131-204 (CLO1,2) · EN-134-403 (CLO1) | scikit-learn, PyTorch, TensorFlow |
+| 3 | การให้เหตุผลและการตัดสินใจ *(Symbolic/Neurosymbolic: Search, Planning, KR, Bayesian Reasoning)* | L2–L3 | EN-131-101 (CLO1) · EN-132-303 (CLO1) | Search/Planning, Bayesian Networks, Knowledge Graph |
+| 4 | การประเมินและอธิบายผลโมเดล (Evaluation/XAI) | L3 บูรณาการ | EN-131-204 (CLO2,3) · EN-001-129 (CLO2,3) | MLflow, SHAP |
+| 5 | วิศวกรรมซอฟต์แวร์ AI และ Full-stack AI Solutioning | L3 บูรณาการ | EN-001-128 (CLO1,3) · EN-132-302 (CLO1) · EN-134-403 (CLO1) | Python, Git, FastAPI, pytest, Streamlit/Gradio |
+| 6 | MLOps, Cloud และโครงสร้างพื้นฐาน AI (Container/GPU/Scale) | L2–L3 | EN-131-207 (CLO1,2) · EN-131-208 (CLO1,2) · EN-132-302 (CLO2) | Docker, Kubernetes, AWS/Azure/GCP, CI/CD |
+| 7 | วิศวกรรมข้อมูลและการวิเคราะห์ (Pipeline/Big Data/Analytics/Data-Centric AI) | L3 บูรณาการ | EN-131-203 (CLO1,2,3) · EN-001-129 (CLO2) | SQL, Airflow, Spark, Power BI, Label Studio |
 
 **วิธีวัดและประเมินผล:** โครงงานพัฒนาโมเดล (Model Project) · โครงงาน Data Pipeline/Dashboard · การสาธิตการ Deploy แบบเบ็ดเสร็จ (End-to-end Demo) · รายงานผลการทดลอง (Lab Report) · การสอบป้องกันโครงงาน (Capstone Defense)
 
@@ -261,11 +261,11 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | โครงสร้างพื้นฐานและกลไกทางการเกษตร (Farm Structures & Agricultural Mechanics) | L2–L3 | EN-001-125 (CLO1,2,3) · EN-001-124 (CLO1,2) | CAD, Statics/Strength Analysis |
-| 2 | **การสร้างและประกอบชิ้นงาน/ระบบฟาร์ม** (Build & Construct — Workshop Practice) | L3 บูรณาการ | EN-001-128 (CLO1) · EN-001-129 (CLO1) · EN-001-230 (CLO1) | เครื่องมือช่าง, งานเชื่อม/บัดกรี, ไมโครคอนโทรลเลอร์ |
+| 1 | โครงสร้างพื้นฐานและกลไกทางการเกษตร (Farm Structures & Agricultural Mechanics) | L2–L3 | EN-001-122 (CLO1,2,3) · EN-001-121 (CLO1,2) | CAD, Statics/Strength Analysis |
+| 2 | **การสร้างและประกอบชิ้นงาน/ระบบฟาร์ม** (Build & Construct — Workshop Practice) | L3 บูรณาการ | EN-001-123 (CLO1) · EN-001-126 (CLO1) · EN-001-227 (CLO1) | เครื่องมือช่าง, งานเชื่อม/บัดกรี, ไมโครคอนโทรลเลอร์ |
 | 3 | ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ (Smart Farm & Precision Agriculture) | L3–L4 *(T1)* | EN-132-304 (CLO1,2,3) | Sensor Network, Irrigation Control, Farm Dashboard |
-| 4 | ระบบพลังงาน ความร้อน–ของไหล และความยั่งยืนในฟาร์ม (Green/Sustainable) | L2–L3 | EN-001-123 (CLO1,2,3) · EN-132-304 (CLO1) | Thermo-fluid Analysis, Energy Audit |
-| 5 | ห่วงโซ่เกษตร–อาหารอัจฉริยะ: พยากรณ์ผลผลิต/ราคา การตรวจสอบย้อนกลับ และ decision support | L3 *(T1)* | EN-132-303/304 · EN-134-404 | GIS/UAV data, Time-Series, Traceability, Farm DSS |
+| 4 | ระบบพลังงาน ความร้อน–ของไหล และความยั่งยืนในฟาร์ม (Green/Sustainable) | L2–L3 | EN-001-124 (CLO1,2,3) · EN-132-304 (CLO1) | Thermo-fluid Analysis, Energy Audit |
+| 5 | ห่วงโซ่เกษตร–อาหารอัจฉริยะ: พยากรณ์ผลผลิต/ราคา การตรวจสอบย้อนกลับ และ decision support | L3 *(T1)* | EN-132-306/304 · EN-134-403 | GIS/UAV data, Time-Series, Traceability, Farm DSS |
 
 **วิธีวัดและประเมินผล:** โครงงานสร้าง/ประกอบระบบฟาร์มอัจฉริยะ (Build Project) · ปฏิบัติการภาคสนามและ Workshop 1–3 · การประเมินผลสหกิจในสถานประกอบการเกษตร
 
@@ -274,11 +274,11 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | ระบบควบคุมอัตโนมัติ PLC/SCADA และเครือข่ายอุตสาหกรรม | L3–L4 *(T2)* | EN-132-307 (CLO1,2) · EN-001-230 (CLO1) | PLC (Ladder/FBD/ST), SCADA/HMI, Industrial Protocols |
+| 1 | ระบบควบคุมอัตโนมัติ PLC/SCADA และเครือข่ายอุตสาหกรรม | L3–L4 *(T2)* | EN-132-307 (CLO1,2) · EN-001-227 (CLO1) | PLC (Ladder/FBD/ST), SCADA/HMI, Industrial Protocols |
 | 2 | หุ่นยนต์อุตสาหกรรมและหุ่นยนต์ร่วมปฏิบัติงาน (Robotics & Cobots) · **ระบบอัตโนมัติเพื่อทดแทนแรงงานที่ขาดแคลนและการทำงานร่วมมนุษย์–เครื่องจักรอย่างปลอดภัย** *(ตอบ N14)* | L2–L3 | EN-132-307 (CLO2,3) | ROS, Robot Arm, Motion Control, Safety/Ergonomics |
-| 3 | Smart Factory, MES/ERP, Digital Twin และ OT/IT integration | L3 บูรณาการ | EN-132-306 (CLO1,2,3) | MES/ERP, Simulation, Digital Twin Platform |
-| 4 | Process/Production Optimization, Lean, Six Sigma, Quality/SPC และ OEE | L3–L4 *(T2)* | EN-132-303/306/307 · EN-001-121 | SPC, OEE, Optimization Solver, Lean/Six Sigma |
-| 5 | Maintenance, Reliability และ Asset Intelligence | L3–L4 *(T2)* | EN-132-306 · EN-134-404 | RCA, FMEA/FMECA, CMMS/EAM, Condition Monitoring, RUL |
+| 3 | Smart Factory, MES/ERP, Digital Twin และ OT/IT integration | L3 บูรณาการ | EN-132-307 (CLO1,2,3) | MES/ERP, Simulation, Digital Twin Platform |
+| 4 | Process/Production Optimization, Lean, Six Sigma, Quality/SPC และ OEE | L3–L4 *(T2)* | EN-132-306/306/307 · EN-001-130 | SPC, OEE, Optimization Solver, Lean/Six Sigma |
+| 5 | Maintenance, Reliability และ Asset Intelligence | L3–L4 *(T2)* | EN-132-307 · EN-134-403 | RCA, FMEA/FMECA, CMMS/EAM, Condition Monitoring, RUL |
 
 **วิธีวัดและประเมินผล:** โครงงานระบบอัตโนมัติ/สายการผลิต (Automation Project) · การวิเคราะห์กรณีศึกษาอุตสาหกรรม (Industry Case Study) · รายงานศึกษาดูงาน · การประเมินผลสหกิจในโรงงาน
 
@@ -287,10 +287,10 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | IoT เครือข่ายเซนเซอร์ และการรับสัญญาณเรียลไทม์ | L3 บูรณาการ *(T1 → L4)* | EN-131-204 (CLO1,2) · EN-001-127 (CLO2,3) | Arduino/RPi, MQTT, LoRa |
-| 2 | Edge AI / TinyML และการประมวลผลที่ขอบเครือข่าย | L2–L3 | EN-131-204 (CLO2) · EN-131-208 (CLO1) | TinyML, Edge Device, Model Quantization |
-| 3 | **ระบบไซเบอร์-กายภาพและการบูรณาการ OT/IT** (Cyber-Physical Systems) | L3 บูรณาการ | EN-001-230 (CLO1) · EN-132-306 (CLO1) · EN-132-307 (CLO2) | PLC↔Edge AI Integration, SCADA Gateway |
-| 4 | ความปลอดภัยและการจัดการอุปกรณ์ Edge–Cloud | L2 ประยุกต์ | EN-131-204 (CLO3) · EN-131-208 (CLO3) | Device Management, Edge Security |
+| 1 | IoT เครือข่ายเซนเซอร์ และการรับสัญญาณเรียลไทม์ | L3 บูรณาการ *(T1 → L4)* | EN-131-206 (CLO1,2) · EN-001-125 (CLO2,3) | Arduino/RPi, MQTT, LoRa |
+| 2 | Edge AI / TinyML และการประมวลผลที่ขอบเครือข่าย | L2–L3 | EN-131-206 (CLO2) · EN-131-208 (CLO1) | TinyML, Edge Device, Model Quantization |
+| 3 | **ระบบไซเบอร์-กายภาพและการบูรณาการ OT/IT** (Cyber-Physical Systems) | L3 บูรณาการ | EN-001-227 (CLO1) · EN-132-307 (CLO1) · EN-132-307 (CLO2) | PLC↔Edge AI Integration, SCADA Gateway |
+| 4 | ความปลอดภัยและการจัดการอุปกรณ์ Edge–Cloud | L2 ประยุกต์ | EN-131-206 (CLO3) · EN-131-208 (CLO3) | Device Management, Edge Security |
 
 **วิธีวัดและประเมินผล:** โครงงานบูรณาการระบบ (System Integration Project — ปฏิบัติการ 3) · การสาธิตระบบ IoT–Edge–Cloud ในฟาร์ม/โรงงาน · การประเมินผลสหกิจศึกษา
 
@@ -299,12 +299,12 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | **การรับรู้/มองเห็นของเครื่อง**: CV เพื่อการเกษตรและการตรวจสอบคุณภาพ *(โรคพืช/คัดเกรด/Quality Inspection)* | L3 บูรณาการ *(T1,T2 → L4)* | EN-131-203 (CLO1,2) | OpenCV, YOLO, CNN |
+| 1 | **การรับรู้/มองเห็นของเครื่อง**: CV เพื่อการเกษตรและการตรวจสอบคุณภาพ *(โรคพืช/คัดเกรด/Quality Inspection)* | L3 บูรณาการ *(T1,T2 → L4)* | EN-131-205 (CLO1,2) | OpenCV, YOLO, CNN |
 | 2 | UAV, Remote Sensing และ GeoAI | L2–L3 | EN-132-305 (CLO1,2) | QGIS, NDVI/NDWI, Drone SDK |
-| 3 | การพยากรณ์และวิเคราะห์เชิงทำนาย *(ผลผลิต · อุปสงค์ · การบำรุงรักษา)* | L3 บูรณาการ | EN-132-303 (CLO1) · EN-132-304 (CLO2) · EN-132-306 (CLO2) | Time-Series, Forecasting Models |
-| 4 | **AI สำหรับองค์กรและธุรกิจ** *(DSS, Fraud Detection, Customer/Supply Analytics)* | L2–L3 *(T3)* | EN-132-303 (CLO2,3) · EN-132-302 (CLO1) | BI/DSS, Anomaly Detection |
-| 5 | Decision Intelligence สำหรับเกษตร/การผลิต/องค์กร: scenario, simulation, optimization และ explainable recommendation | L2–L3 | EN-132-303/304/306 · EN-134-404 | Power BI, Solver, Simulation, Decision Model |
-| 6 | การสื่อสารผลการวิเคราะห์เชิงโดเมน | L2–L3 | EN-131-203 (CLO3) · EN-132-306 (CLO3) | Dashboard, รายงานเชิงภาพ |
+| 3 | การพยากรณ์และวิเคราะห์เชิงทำนาย *(ผลผลิต · อุปสงค์ · การบำรุงรักษา)* | L3 บูรณาการ | EN-132-306 (CLO1) · EN-132-304 (CLO2) · EN-132-307 (CLO2) | Time-Series, Forecasting Models |
+| 4 | **AI สำหรับองค์กรและธุรกิจ** *(DSS, Fraud Detection, Customer/Supply Analytics)* | L2–L3 *(T3)* | EN-132-306 (CLO2,3) · EN-132-301 (CLO1) | BI/DSS, Anomaly Detection |
+| 5 | Decision Intelligence สำหรับเกษตร/การผลิต/องค์กร: scenario, simulation, optimization และ explainable recommendation | L2–L3 | EN-132-306/304/306 · EN-134-403 | Power BI, Solver, Simulation, Decision Model |
+| 6 | การสื่อสารผลการวิเคราะห์เชิงโดเมน | L2–L3 | EN-131-205 (CLO3) · EN-132-307 (CLO3) | Dashboard, รายงานเชิงภาพ |
 
 **วิธีวัดและประเมินผล:** โครงงาน CV/พยากรณ์ตามโดเมน · การทดสอบภาคปฏิบัติการบินโดรน (Drone Flight Practical Test) · Dashboard และรายงานการวิเคราะห์เชิงตัดสินใจ
 
@@ -313,12 +313,12 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | Prompt/Context Engineering และ RAG *(IMDA TSC#3, #6)* | L2–L3 | EN-131-101 (CLO1) · EN-132-309 (CLO1) | LLM APIs, Vector DB, LangChain |
-| 2 | AI Agents, Agentic & Compound AI Workflows | L3 บูรณาการ | EN-132-309 (CLO1,2) | LangChain/LangGraph, Tool Use, API Orchestration |
-| 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-309 (CLO1,2) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
-| 4 | LLM Red-teaming และการประเมิน Hallucination/Safety *(IMDA TSC#9)* | L3 บูรณาการ | EN-132-309 (CLO2) · EN-134-404 (CLO4) | **Project Moonshot**, Guardrails, Adversarial Prompt Test |
-| 5 | การประมวลผลภาษาไทย (Thai NLP) | L2 ประยุกต์ | EN-132-309 (CLO1) | AI for Thai, HuggingFace |
-| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-126 (CLO2) · EN-132-308 (CLO2) · EN-134-201/302 | AI Coding Tools, Prompt Log, Human Review |
+| 1 | Prompt/Context Engineering และ RAG *(IMDA TSC#3, #6)* | L2–L3 | EN-131-101 (CLO1) · EN-132-303 (CLO1) | LLM APIs, Vector DB, LangChain |
+| 2 | AI Agents, Agentic & Compound AI Workflows | L3 บูรณาการ | EN-132-303 (CLO1,2) | LangChain/LangGraph, Tool Use, API Orchestration |
+| 3 | การคัดเลือกและประเมินโมเดล GenAI เชิงพาณิชย์ *(IMDA TSC#4, #5)* | L2–L3 | EN-132-303 (CLO1,2) | Open-source vs Proprietary (Llama/GPT), BLEU, LLM-as-judge, MLflow |
+| 4 | LLM Red-teaming และการประเมิน Hallucination/Safety *(IMDA TSC#9)* | L3 บูรณาการ | EN-132-303 (CLO2) · EN-134-403 (CLO4) | **Project Moonshot**, Guardrails, Adversarial Prompt Test |
+| 5 | การประมวลผลภาษาไทย (Thai NLP) | L2 ประยุกต์ | EN-132-303 (CLO1) | AI for Thai, HuggingFace |
+| 6 | การใช้เครื่องมือปัญญาประดิษฐ์และการทำงานร่วมระหว่างมนุษย์กับปัญญาประดิษฐ์อย่างตรวจสอบได้ | L2–L3 | EN-001-128 (CLO2) · EN-132-302 (CLO2) · EN-134-201/302 | AI Coding Tools, Prompt Log, Human Review |
 
 **วิธีวัดและประเมินผล:** โครงงานพัฒนาระบบเอเจนต์ (Agent Project) · การสาธิตระบบ (Demo) · **รายงานการคัดเลือก/ประเมินโมเดลและผล LLM Red-teaming (Baseline Safety Report)** · การประเมินผลสหกิจ (T3)
 
@@ -330,10 +330,10 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-204 (CLO3) · EN-131-208 (CLO2) · EN-132-309 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
+| 1 | ความปลอดภัยของ AI และความเป็นส่วนตัว *(AI Security: Data Poisoning, Model Inversion, Adversarial, PDPA)* | L2–L3 | EN-131-206 (CLO3) · EN-131-208 (CLO2) · EN-132-303 (CLO2) | Threat Modeling, PDPA Checklist, Adversarial Test |
 | 2 | Responsible AI / ธรรมาภิบาล *(AI Verify 11 หลักการ + ISO/IEC 42001, NIST AI RMF, EU AI Act)* | L2–L3 | EN-131-101 (CLO2) · EN-134-201 (CLO2) · EN-134-302 (CLO2) · EN-132-305 (CLO3) | **AI Verify Toolkit**, Model Card, ISO 42001/NIST AI RMF |
-| 3 | การจัดทำหลักฐานเชิงประจักษ์ทางธรรมาภิบาล (Audit & Compliance Evidence) | L3 บูรณาการ | EN-134-302 (CLO2) · EN-134-404 (CLO4) | Model Card · Fairness Evaluation Report · Robustness Log *(Outcome/Process/Evidence)* |
-| 4 | การรับรองความปลอดภัย ความน่าเชื่อถือ และความสอดคล้องของระบบ | L3 บูรณาการ | EN-001-230 (CLO2) · EN-134-404 (CLO2) | Risk Register, Assurance Case, Verification Evidence |
+| 3 | การจัดทำหลักฐานเชิงประจักษ์ทางธรรมาภิบาล (Audit & Compliance Evidence) | L3 บูรณาการ | EN-134-302 (CLO2) · EN-134-403 (CLO4) | Model Card · Fairness Evaluation Report · Robustness Log *(Outcome/Process/Evidence)* |
+| 4 | การรับรองความปลอดภัย ความน่าเชื่อถือ และความสอดคล้องของระบบ | L3 บูรณาการ | EN-001-227 (CLO2) · EN-134-403 (CLO2) | Risk Register, Assurance Case, Verification Evidence |
 | 5 | จรรยาบรรณวิชาชีพในสถานการณ์จริง | L3 (Mastery ที่สหกิจ) | EN-135-401 (CLO2) · EN-135-402 (CLO4) | Case Study, Employer Rubric |
 
 **วิธีวัดและประเมินผล:** การวิเคราะห์กรณีศึกษา (Case Study) · **การจัดทำ Model Card / Fairness Evaluation Report / Robustness Log ตามกรอบ AI Verify** · การประเมินจากสถานประกอบการ (Employer Evaluation from Co-op)
@@ -346,12 +346,12 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ |
 |---|---|---|---|---|
-| 1 | การคิดวิเคราะห์เชิงระบบ (Analytical/Systems Thinking) | L3 | EN-134-303 (CLO1) · แทรกทุกโครงงาน | System Map, Root-cause |
-| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-201/302 (CLO1) · EN-135-401 (CLO1) · EN-134-404 (CLO4) | Slides, รายงาน, Technical English |
-| 3 | ทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-404 (CLO3) · EN-135-402 (CLO2) · EN-001-128/129/230 | Git, Team Charter, 360° Feedback |
-| 4 | ผู้ประกอบการและการบริหารโครงการ (Entrepreneurial/PM) | L2–L3 | EN-132-302 (CLO1,2) · EN-135-402 · YLO4.4 | BMC, Lean Canvas, Gantt |
-| 5 | การเรียนรู้ตลอดชีวิตและการปรับตัว | L3 | EN-131-205 (CLO3) · EN-134-303 (CLO3) | Learning Portfolio |
-| 6 | กลยุทธ์การแปลงโฉมดิจิทัลและการคิดเชิง Compound AI *(T3)* · **การออกแบบที่ครอบคลุมและเข้าถึงได้ (Inclusive & Accessible Design)** *(ตอบ N17)* | L2–L3 | EN-132-302 (CLO2) · EN-134-404 (CLO1) | Digital Transformation Canvas, System-of-Systems View, Inclusive Design Checklist |
+| 1 | การคิดวิเคราะห์เชิงระบบ (Analytical/Systems Thinking) | L3 | EN-134-302 (CLO1) · แทรกทุกโครงงาน | System Map, Root-cause |
+| 2 | สื่อสารเชิงวิชาชีพและภาษาอังกฤษเทคนิค | L3–L4 | EN-134-201/302 (CLO1) · EN-135-401 (CLO1) · EN-134-403 (CLO4) | Slides, รายงาน, Technical English |
+| 3 | ทำงานเป็นทีมและภาวะผู้นำ | L4 นำไปใช้ | EN-134-403 (CLO3) · EN-135-402 (CLO2) · EN-001-123/129/230 | Git, Team Charter, 360° Feedback |
+| 4 | ผู้ประกอบการและการบริหารโครงการ (Entrepreneurial/PM) | L2–L3 | EN-132-301 (CLO1,2) · EN-135-402 · YLO4.4 | BMC, Lean Canvas, Gantt |
+| 5 | การเรียนรู้ตลอดชีวิตและการปรับตัว | L3 | EN-131-207 (CLO3) · EN-134-302 (CLO3) | Learning Portfolio |
+| 6 | กลยุทธ์การแปลงโฉมดิจิทัลและการคิดเชิง Compound AI *(T3)* · **การออกแบบที่ครอบคลุมและเข้าถึงได้ (Inclusive & Accessible Design)** *(ตอบ N17)* | L2–L3 | EN-132-301 (CLO2) · EN-134-403 (CLO1) | Digital Transformation Canvas, System-of-Systems View, Inclusive Design Checklist |
 
 **วิธีวัดและประเมินผล:** การประเมินการทำงานกลุ่มในโครงงาน (Group Project Assessment) · การนำเสนอในสัมมนา (Seminar Presentation) · การประเมิน 360° จากสหกิจ · แผนธุรกิจ/Value Proposition · Learning Portfolio
 
@@ -364,12 +364,12 @@
 
 | # | ทักษะย่อย | ระดับเป้าหมาย | CLO ที่เกี่ยวข้อง | เครื่องมือ/หลักฐาน |
 |---|---|---|---|---|
-| 1 | Requirements Engineering, stakeholder mapping และ acceptance criteria | L3 | EN-132-302 · EN-134-303/404 | Interview, Context Map, Backlog, Acceptance Criteria |
-| 2 | Solution Architecture, API และ System Integration | L3–L4 *(T3)* | EN-132-308/309 · EN-134-404 | C4/UML, API Contract, Integration Test |
-| 3 | สถาปัตยกรรมบริการดิจิทัล: Cloud/SaaS, IAM, ITSM, backup/DR และ e-Service | L2–L3 | EN-131-205/208 · EN-132-308 | Cloud Architecture, IAM Matrix, Service Catalog, DR Plan |
-| 4 | การทวนสอบ คุณภาพ ความปลอดภัย ความมั่นคงปลอดภัย และสมรรถนะบริการ | L3 | EN-001-230 · EN-131-205 · EN-134-404 | SLA/SLO, Risk Register, Test Report, Monitoring Dashboard |
-| 5 | การนำระบบไปใช้ การจัดการการเปลี่ยนแปลง และการยอมรับของผู้ใช้ | L3 | EN-132-302 · EN-134-303/404 | Change Plan, User Acceptance Test, Adoption Evidence |
-| 6 | การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง | L3 | EN-135-401/402 · EN-134-404 | Runbook, Handover Evidence, Incident Review |
+| 1 | Requirements Engineering, stakeholder mapping และ acceptance criteria | L3 | EN-132-301 · EN-134-302/404 | Interview, Context Map, Backlog, Acceptance Criteria |
+| 2 | Solution Architecture, API และ System Integration | L3–L4 *(T3)* | EN-132-302/309 · EN-134-403 | C4/UML, API Contract, Integration Test |
+| 3 | สถาปัตยกรรมบริการดิจิทัล: Cloud/SaaS, IAM, ITSM, backup/DR และ e-Service | L2–L3 | EN-131-207/208 · EN-132-302 | Cloud Architecture, IAM Matrix, Service Catalog, DR Plan |
+| 4 | การทวนสอบ คุณภาพ ความปลอดภัย ความมั่นคงปลอดภัย และสมรรถนะบริการ | L3 | EN-001-227 · EN-131-207 · EN-134-403 | SLA/SLO, Risk Register, Test Report, Monitoring Dashboard |
+| 5 | การนำระบบไปใช้ การจัดการการเปลี่ยนแปลง และการยอมรับของผู้ใช้ | L3 | EN-132-301 · EN-134-302/404 | Change Plan, User Acceptance Test, Adoption Evidence |
+| 6 | การส่งมอบเพื่อดำเนินงานและการปรับปรุงบริการอย่างต่อเนื่อง | L3 | EN-135-401/402 · EN-134-403 | Runbook, Handover Evidence, Incident Review |
 
 **วิธีวัดและประเมินผล:** Solution Architecture Portfolio · Requirements/Acceptance Package · Integration/UAT Demo · Service Runbook · Change/Adoption Plan · การประเมินจากสถานประกอบการ
 
