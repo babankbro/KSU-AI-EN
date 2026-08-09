@@ -14,7 +14,7 @@ Dynamic modeling and system identification of industrial processes; control-loop
 
 EN-135-317 การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์ 3(2-2-5)
 AI-Based Predictive and Preventive Maintenance
-หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง อุณหภูมิ และกระแสไฟฟ้า การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ
+หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง และอุณหภูมิ การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ
 Principles and strategies of corrective, preventive, and predictive maintenance for industrial machinery; collection of vibration, acoustic, temperature, and current signals; signal processing and feature extraction for machine diagnosis; machine learning models for anomaly detection and failure prediction; digital twins for simulating machine condition; automatic alerting and maintenance planning; return-on-investment assessment
 
 EN-135-318 การออกแบบและการจัดการคลังสินค้าอัจฉริยะ 3(2-2-5)

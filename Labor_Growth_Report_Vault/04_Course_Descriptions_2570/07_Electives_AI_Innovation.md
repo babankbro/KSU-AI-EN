@@ -9,12 +9,12 @@
 
 EN-135-336 วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล 3(2-2-5)
 Advanced Data Engineering and Data Pipelines
-สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การจัดลำดับงานข้อมูล การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในสภาพแวดล้อมการทำงานจริง
+สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในการทำงานจริง
 Architecture and design of advanced data pipelines for AI systems; stream and distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; construction of real-time pipelines; integration of data from diverse sources; monitoring and management of pipelines in production
 
 EN-135-337 ตัวแบบภาษาขนาดใหญ่ขั้นสูง 3(2-2-5)
 Advanced Large Language Models
-สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมและกำกับคุณภาพชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ
+สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ
 Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; model serving with performance-degradation monitoring
 
 EN-135-338 ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์ 3(2-2-5)

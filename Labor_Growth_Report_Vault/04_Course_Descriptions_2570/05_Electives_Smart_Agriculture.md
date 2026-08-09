@@ -19,7 +19,7 @@ Principles and concepts of precision agriculture; application of AI to crop and 
 
 EN-135-303 ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ทางการเกษตร 3(2-2-5)
 Geographic Information Systems and Spatial Analysis for Agriculture
-หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การสร้างและวิเคราะห์แผนที่ดิจิทัล การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และเครือข่าย และการประยุกต์วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช
+หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และเครือข่าย และการประยุกต์วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช
 Principles and components of geographic information systems; spatial data and reference coordinate systems; management and analysis of vector and raster data; creation and analysis of digital maps; processing of satellite and aerial imagery; spatial analysis with overlay, buffer, and network analysis; integration with machine learning for advanced spatial analysis; applications to agricultural land-use planning and crop-area suitability assessment
 
 EN-135-304 เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว 3(3-0-6)

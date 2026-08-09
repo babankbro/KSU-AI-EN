@@ -18,7 +18,7 @@ Principles and standards of engineering drawing; orthographic, sectional, and pi
 
 EN-001-122 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-6)  
 Foundational Programming for Artificial Intelligence  
-การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน โครงสร้างข้อมูล และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูล และส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นและการทดสอบหน่วย และการใช้เครื่องมือช่วยเขียนโปรแกรมอย่างมีวิจารณญาณ
+การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูล และส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นและการทดสอบหน่วย และการใช้เครื่องมือช่วยเขียนโปรแกรมอย่างมีวิจารณญาณ
 Algorithmic thinking and problem solving through programming; programming with Python, variables, data types, control structures, functions, data structures, and object-oriented programming; file handling, relational databases, and use of application programming interfaces; data and AI libraries; version control with Git; unit testing and documentation; critical use of AI coding assistants with verification of correctness and security
 
 EN-001-123 กลศาสตร์วัสดุและการออกแบบโครงสร้าง 3(3-0-6)  
@@ -28,22 +28,22 @@ Forces and force systems; equilibrium of rigid bodies; analysis of structures an
 
 EN-001-124 วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ 3(3-0-6)  
 Thermal-Fluid Engineering in Smart Systems  
-หลักการพื้นฐานของอุณหพลศาสตร์ สมบัติและสถานะของสาร กฎข้อที่หนึ่งและข้อที่สอง และสมดุลมวลและพลังงาน การนำ การพา และการแผ่รังสีความร้อน เครื่องแลกเปลี่ยนความร้อน ระบบทำความเย็นและการอบแห้ง สมบัติของของไหล สมการความต่อเนื่องและแบร์นูลลี การไหลในท่อ ปั๊มและพัดลม และการประยุกต์ในระบบอบแห้งผลผลิตเกษตร ห้องเย็น และการระบายความร้อนเครื่องแม่ข่าย
+หลักการพื้นฐานของอุณหพลศาสตร์ สมบัติและสถานะของสาร กฎข้อที่หนึ่งและข้อที่สอง และสมดุลมวลและพลังงาน การนำ การพา และการแผ่รังสีความร้อน เครื่องแลกเปลี่ยนความร้อน ระบบทำความเย็นและการอบแห้ง สมบัติของของไหล สมการความต่อเนื่องและแบร์นูลลี การไหลในท่อ ปั๊มและพัดลม และการประยุกต์ในระบบอบแห้งผลผลิตเกษตร ห้องเย็น และการระบายความร้อน
 Fundamental principles of thermodynamics; properties and states of matter; the first and second laws; mass and energy balances; conduction, convection, and thermal radiation; heat exchangers; refrigeration and air-conditioning systems; drying processes; fluid properties; the continuity and Bernoulli equations; pipe flow and head losses; pumps and fans; applications to agricultural drying systems, irrigation, cold rooms, and cooling systems for AI servers
 
 EN-001-125 พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ 3(3-0-6)  
 Electrical and Electronic Fundamentals for Intelligent Systems  
-วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ การปรับสภาพสัญญาณ และการสอบเทียบ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ
+วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ และการปรับสภาพสัญญาณ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ
 Direct- and alternating-current circuits; Kirchhoff laws and circuit analysis; electronic components; digital and logic systems; sensors, transducers, signal conditioning, calibration, and data acquisition; analog-to-digital conversion; actuators, motors, and introductory power electronics; power supplies, grounding, and electrical safety; design of sensing and actuation circuits for IoT systems, robots, and smart farms
 
 EN-001-126 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม 3(3-0-6)  
 Statistics and Data Analysis for Engineering  
-ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การวิเคราะห์ความไม่แน่นอน การประเมินตัวแบบปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล
+ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การประเมินตัวแบบปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล
 Probability, random variables, and probability distributions; descriptive and inferential statistics; sampling, estimation, confidence intervals, and hypothesis testing; analysis of variance, regression, correlation, and time series; design of experiments, measurement-system analysis, and statistical process control; uncertainty and sensitivity analysis; evaluation of AI models; detection of data leakage and bias
 
 EN-001-227 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน 3(3-0-6)  
 Engineering Economics and Cost Analysis  
-หลักเศรษฐศาสตร์วิศวกรรม มูลค่าเงินตามเวลา อัตราดอกเบี้ยและการคิดลด มูลค่าปัจจุบันสุทธิ อัตราผลตอบแทนภายใน และระยะเวลาคืนทุน การประมาณต้นทุนระบบข้อมูล คลาวด์ ระบบอัตโนมัติ และปัญญาประดิษฐ์ ต้นทุนรวมในการเป็นเจ้าของและต้นทุนวงจรชีวิต จุดคุ้มทุนและเศรษฐศาสตร์ต่อหน่วย การวิเคราะห์ความไวและความเสี่ยง และการจัดทำกรณีธุรกิจและข้อเสนอการลงทุน
+หลักเศรษฐศาสตร์วิศวกรรม มูลค่าเงินตามเวลา อัตราดอกเบี้ยและการคิดลด มูลค่าปัจจุบันสุทธิ อัตราผลตอบแทนภายใน และระยะเวลาคืนทุน การประมาณต้นทุนระบบข้อมูล คลาวด์ และปัญญาประดิษฐ์ ต้นทุนรวมในการเป็นเจ้าของและวงจรชีวิต จุดคุ้มทุนและเศรษฐศาสตร์ต่อหน่วย การวิเคราะห์ความไวและความเสี่ยง และการจัดทำกรณีธุรกิจและข้อเสนอการลงทุน
 Principles of engineering economics; time value of money; interest and discounting; net present value, internal rate of return, and payback period; cost estimation for data, cloud, automation, and AI systems; total cost of ownership and life-cycle costing; depreciation, break-even analysis, and unit economics; sensitivity, risk, and uncertainty analysis; preparation of business cases and investment proposals for smart agriculture and smart factories
 
 EN-001-128 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์ 1(0-3-1)  

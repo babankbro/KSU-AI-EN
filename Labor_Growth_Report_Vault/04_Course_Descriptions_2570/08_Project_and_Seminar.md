@@ -5,7 +5,7 @@ Trends and emerging technologies in artificial intelligence at national and inte
 
 ## EN-134-302 การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1(0-2-1)
 Artificial Intelligence Engineering and Intelligent Systems Project Preparation
-การระบุปัญหาจริงจากภาคอุตสาหกรรม เกษตรกรรม องค์กร หรือชุมชน การวิเคราะห์ผู้มีส่วนได้ส่วนเสียและข้อกำหนด การกำหนดขอบเขต วัตถุประสงค์ และเกณฑ์การยอมรับ การทบทวนวรรณกรรมและเทคโนโลยี การออกแบบแนวทางวิศวกรรม วิธีทดลอง และแผนทดสอบ การประเมินความเป็นไปได้ งบประมาณ และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี และการนำเสนอข้อเสนอโครงงานเพื่อขออนุมัติ
+การระบุปัญหาจริงจากภาคอุตสาหกรรม เกษตรกรรม องค์กร หรือชุมชน การวิเคราะห์ผู้มีส่วนได้ส่วนเสียและข้อกำหนด การกำหนดขอบเขต วัตถุประสงค์ และเกณฑ์การยอมรับ การออกแบบแนวทางวิศวกรรม วิธีทดลอง และแผนทดสอบ การประเมินความเป็นไปได้ งบประมาณ และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี และการนำเสนอข้อเสนอโครงงานเพื่อขออนุมัติ
 Identification of real problems from industry, agriculture, enterprise, or community; stakeholder and requirements analysis; definition of scope, objectives, acceptance criteria, and track-specific indicators; literature and technology review; design of engineering approaches, experimental methods, and test plans; assessment of feasibility, budget, and sustainability under the BCG economic model; planning for quality, safety, ethics, and risk; preparation and presentation of the project proposal for approval
 
 ## EN-134-403 โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 3(1-6-4)
@@ -15,7 +15,7 @@ Execution of an approved AI or intelligent-systems project; verification of the 
 
 ## EN-134-404 โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 3(1-6-4)
 Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering
-การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูล เวลา และทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม
+การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหาและเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูลและทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม
 Execution of an AI or intelligent-systems project on a real problem from the host organization; verification of the problem, requirements, and acceptance criteria jointly with the organization; design, development, and integration under the organization's data, time, and resource constraints; design and conduct of experiments to evaluate performance, reliability, and safety; project and risk management with the workplace mentor; preparation of ethics, confidentiality, and data-governance evidence; demonstration and defense before a joint university-industry committee
 
 > [!note] เปิดสอนเฉพาะแผน ข

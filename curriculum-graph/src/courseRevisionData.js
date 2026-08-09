@@ -13,7 +13,7 @@ export const COURSE_REVISION = {
     "t": "การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Foundational Programming for Artificial Intelligence",
     "cr": "3(2-2-6)",
-    "d": "การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน โครงสร้างข้อมูล และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูล และส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นและการทดสอบหน่วย และการใช้เครื่องมือช่วยเขียนโปรแกรมอย่างมีวิจารณญาณ",
+    "d": "การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูล และส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นและการทดสอบหน่วย และการใช้เครื่องมือช่วยเขียนโปรแกรมอย่างมีวิจารณญาณ",
     "dEn": "Algorithmic thinking and problem solving through programming; programming with Python, variables, data types, control structures, functions, data structures, and object-oriented programming; file handling, relational databases, and use of application programming interfaces; data and AI libraries; version control with Git; unit testing and documentation; critical use of AI coding assistants with verification of correctness and security",
     "source": "02_Engineering_Fundamentals.md"
   },
@@ -29,7 +29,7 @@ export const COURSE_REVISION = {
     "t": "วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ",
     "e": "Thermal-Fluid Engineering in Smart Systems",
     "cr": "3(3-0-6)",
-    "d": "หลักการพื้นฐานของอุณหพลศาสตร์ สมบัติและสถานะของสาร กฎข้อที่หนึ่งและข้อที่สอง และสมดุลมวลและพลังงาน การนำ การพา และการแผ่รังสีความร้อน เครื่องแลกเปลี่ยนความร้อน ระบบทำความเย็นและการอบแห้ง สมบัติของของไหล สมการความต่อเนื่องและแบร์นูลลี การไหลในท่อ ปั๊มและพัดลม และการประยุกต์ในระบบอบแห้งผลผลิตเกษตร ห้องเย็น และการระบายความร้อนเครื่องแม่ข่าย",
+    "d": "หลักการพื้นฐานของอุณหพลศาสตร์ สมบัติและสถานะของสาร กฎข้อที่หนึ่งและข้อที่สอง และสมดุลมวลและพลังงาน การนำ การพา และการแผ่รังสีความร้อน เครื่องแลกเปลี่ยนความร้อน ระบบทำความเย็นและการอบแห้ง สมบัติของของไหล สมการความต่อเนื่องและแบร์นูลลี การไหลในท่อ ปั๊มและพัดลม และการประยุกต์ในระบบอบแห้งผลผลิตเกษตร ห้องเย็น และการระบายความร้อน",
     "dEn": "Fundamental principles of thermodynamics; properties and states of matter; the first and second laws; mass and energy balances; conduction, convection, and thermal radiation; heat exchangers; refrigeration and air-conditioning systems; drying processes; fluid properties; the continuity and Bernoulli equations; pipe flow and head losses; pumps and fans; applications to agricultural drying systems, irrigation, cold rooms, and cooling systems for AI servers",
     "source": "02_Engineering_Fundamentals.md"
   },
@@ -37,7 +37,7 @@ export const COURSE_REVISION = {
     "t": "พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ",
     "e": "Electrical and Electronic Fundamentals for Intelligent Systems",
     "cr": "3(3-0-6)",
-    "d": "วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ การปรับสภาพสัญญาณ และการสอบเทียบ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ",
+    "d": "วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ และการปรับสภาพสัญญาณ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ",
     "dEn": "Direct- and alternating-current circuits; Kirchhoff laws and circuit analysis; electronic components; digital and logic systems; sensors, transducers, signal conditioning, calibration, and data acquisition; analog-to-digital conversion; actuators, motors, and introductory power electronics; power supplies, grounding, and electrical safety; design of sensing and actuation circuits for IoT systems, robots, and smart farms",
     "source": "02_Engineering_Fundamentals.md"
   },
@@ -45,7 +45,7 @@ export const COURSE_REVISION = {
     "t": "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม",
     "e": "Statistics and Data Analysis for Engineering",
     "cr": "3(3-0-6)",
-    "d": "ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การวิเคราะห์ความไม่แน่นอน การประเมินตัวแบบปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล",
+    "d": "ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การประเมินตัวแบบปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล",
     "dEn": "Probability, random variables, and probability distributions; descriptive and inferential statistics; sampling, estimation, confidence intervals, and hypothesis testing; analysis of variance, regression, correlation, and time series; design of experiments, measurement-system analysis, and statistical process control; uncertainty and sensitivity analysis; evaluation of AI models; detection of data leakage and bias",
     "source": "02_Engineering_Fundamentals.md"
   },
@@ -53,7 +53,7 @@ export const COURSE_REVISION = {
     "t": "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน",
     "e": "Engineering Economics and Cost Analysis",
     "cr": "3(3-0-6)",
-    "d": "หลักเศรษฐศาสตร์วิศวกรรม มูลค่าเงินตามเวลา อัตราดอกเบี้ยและการคิดลด มูลค่าปัจจุบันสุทธิ อัตราผลตอบแทนภายใน และระยะเวลาคืนทุน การประมาณต้นทุนระบบข้อมูล คลาวด์ ระบบอัตโนมัติ และปัญญาประดิษฐ์ ต้นทุนรวมในการเป็นเจ้าของและต้นทุนวงจรชีวิต จุดคุ้มทุนและเศรษฐศาสตร์ต่อหน่วย การวิเคราะห์ความไวและความเสี่ยง และการจัดทำกรณีธุรกิจและข้อเสนอการลงทุน",
+    "d": "หลักเศรษฐศาสตร์วิศวกรรม มูลค่าเงินตามเวลา อัตราดอกเบี้ยและการคิดลด มูลค่าปัจจุบันสุทธิ อัตราผลตอบแทนภายใน และระยะเวลาคืนทุน การประมาณต้นทุนระบบข้อมูล คลาวด์ และปัญญาประดิษฐ์ ต้นทุนรวมในการเป็นเจ้าของและวงจรชีวิต จุดคุ้มทุนและเศรษฐศาสตร์ต่อหน่วย การวิเคราะห์ความไวและความเสี่ยง และการจัดทำกรณีธุรกิจและข้อเสนอการลงทุน",
     "dEn": "Principles of engineering economics; time value of money; interest and discounting; net present value, internal rate of return, and payback period; cost estimation for data, cloud, automation, and AI systems; total cost of ownership and life-cycle costing; depreciation, break-even analysis, and unit economics; sensitivity, risk, and uncertainty analysis; preparation of business cases and investment proposals for smart agriculture and smart factories",
     "source": "02_Engineering_Fundamentals.md"
   },
@@ -101,7 +101,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก",
     "e": "Machine Learning and Deep Learning",
     "cr": "3(2-2-5)",
-    "d": "กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอน การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความทนทานและความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้",
+    "d": "กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความทนทานและความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้",
     "dEn": "The model-development process for supervised and unsupervised learning; regression, classification, clustering, and dimensionality reduction; neural networks with convolutional and transformer architectures; transfer learning; dataset splitting, metrics, and cross-validation; management of data leakage and class imbalance; evaluation of uncertainty, robustness, and explainability; reproducible experimentation",
     "source": "03_AI_Core.md"
   },
@@ -133,7 +133,7 @@ export const COURSE_REVISION = {
     "t": "โครงสร้างพื้นฐานคลาวด์และการดำเนินการเรียนรู้ของเครื่อง",
     "e": "Cloud Infrastructure and Machine Learning Operations",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมและรูปแบบบริการคลาวด์ คอนเทนเนอร์ และตัวเร่งการประมวลผลปัญญาประดิษฐ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง ความมั่นคงปลอดภัยของโครงสร้างพื้นฐาน การติดตามการทดลองและทะเบียนตัวแบบ การสร้างไปป์ไลน์ฝึก ทดสอบ นำขึ้นใช้ และปรับปรุงตัวแบบ การติดตามสมรรถนะและการเลื่อนของตัวแบบ และการปรับสมดุลความแม่นยำ ต้นทุน และพลังงาน",
+    "d": "สถาปัตยกรรมและรูปแบบบริการคลาวด์ คอนเทนเนอร์ และตัวเร่งการประมวลผลปัญญาประดิษฐ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง ความมั่นคงปลอดภัยของโครงสร้างพื้นฐาน การสร้างไปป์ไลน์ฝึก ทดสอบ นำขึ้นใช้ และปรับปรุงตัวแบบ การติดตามสมรรถนะและการเลื่อนของตัวแบบ และการปรับสมดุลความแม่นยำ ต้นทุน และพลังงาน",
     "dEn": "Cloud architectures and service models, containers, and AI accelerators; design of scalable and highly available systems; infrastructure security; experiment tracking and model registries; construction of training, testing, deployment, and update pipelines; monitoring of performance and model drift; balancing accuracy, cost, and energy",
     "source": "03_AI_Core.md"
   },
@@ -141,7 +141,7 @@ export const COURSE_REVISION = {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Integrated Engineering Workshop 4: Networking and AI Infrastructure",
     "cr": "1(0-3-1)",
-    "d": "การเข้าหัวสายและทดสอบสายสัญญาณ การตั้งค่าสวิตช์และเราเตอร์ การกำหนดหมายเลขไอพี ซับเน็ต และเครือข่ายเสมือน การเชื่อมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่งและบอร์ดเอดจ์เข้าสู่เครือข่าย การติดตั้งคอนเทนเนอร์และการเชื่อมต่อบริการคลาวด์ การวัดปริมาณงานและเวลาแฝง การแก้ปัญหาเครือข่าย การตั้งค่าความมั่นคงปลอดภัยเบื้องต้น และการจัดทำเอกสารการติดตั้ง",
+    "d": "การเข้าหัวสายและทดสอบสายสัญญาณ การตั้งค่าสวิตช์และเราเตอร์ การกำหนดหมายเลขไอพี ซับเน็ต และเครือข่ายเสมือน การเชื่อมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่งและบอร์ดเอดจ์เข้าสู่เครือข่าย การติดตั้งคอนเทนเนอร์และการเชื่อมต่อบริการคลาวด์ การแก้ปัญหาเครือข่าย การตั้งค่าความมั่นคงปลอดภัยเบื้องต้น และการจัดทำเอกสารการติดตั้ง",
     "dEn": "Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation",
     "source": "03_AI_Core.md"
   },
@@ -197,7 +197,7 @@ export const COURSE_REVISION = {
     "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
     "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
-    "d": "ข้อกำกับ กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การสร้างแผนที่ดิจิทัลและการวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม",
+    "d": "กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม",
     "dEn": "Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; field testing with performance evaluation",
     "source": "04_Track_Core.md"
   },
@@ -205,7 +205,7 @@ export const COURSE_REVISION = {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ",
     "e": "Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing",
     "cr": "1(0-3-1)",
-    "d": "การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การวิเคราะห์ประสิทธิผลโดยรวมของเครื่องจักร การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ",
+    "d": "การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ",
     "dEn": "Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog input and output signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; handover documentation",
     "source": "04_Track_Core.md"
   },
@@ -229,7 +229,7 @@ export const COURSE_REVISION = {
     "t": "ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ทางการเกษตร",
     "e": "Geographic Information Systems and Spatial Analysis for Agriculture",
     "cr": "3(2-2-5)",
-    "d": "หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การสร้างและวิเคราะห์แผนที่ดิจิทัล การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และเครือข่าย และการประยุกต์วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช",
+    "d": "หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และเครือข่าย และการประยุกต์วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช",
     "dEn": "Principles and components of geographic information systems; spatial data and reference coordinate systems; management and analysis of vector and raster data; creation and analysis of digital maps; processing of satellite and aerial imagery; spatial analysis with overlay, buffer, and network analysis; integration with machine learning for advanced spatial analysis; applications to agricultural land-use planning and crop-area suitability assessment",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -341,7 +341,7 @@ export const COURSE_REVISION = {
     "t": "การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์",
     "e": "AI-Based Predictive and Preventive Maintenance",
     "cr": "3(2-2-5)",
-    "d": "หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง อุณหภูมิ และกระแสไฟฟ้า การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ",
+    "d": "หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง และอุณหภูมิ การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ",
     "dEn": "Principles and strategies of corrective, preventive, and predictive maintenance for industrial machinery; collection of vibration, acoustic, temperature, and current signals; signal processing and feature extraction for machine diagnosis; machine learning models for anomaly detection and failure prediction; digital twins for simulating machine condition; automatic alerting and maintenance planning; return-on-investment assessment",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -493,7 +493,7 @@ export const COURSE_REVISION = {
     "t": "วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล",
     "e": "Advanced Data Engineering and Data Pipelines",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การจัดลำดับงานข้อมูล การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในสภาพแวดล้อมการทำงานจริง",
+    "d": "สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในการทำงานจริง",
     "dEn": "Architecture and design of advanced data pipelines for AI systems; stream and distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; construction of real-time pipelines; integration of data from diverse sources; monitoring and management of pipelines in production",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -501,7 +501,7 @@ export const COURSE_REVISION = {
     "t": "ตัวแบบภาษาขนาดใหญ่ขั้นสูง",
     "e": "Advanced Large Language Models",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมและกำกับคุณภาพชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ",
+    "d": "สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ",
     "dEn": "Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; model serving with performance-degradation monitoring",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -677,7 +677,7 @@ export const COURSE_REVISION = {
     "t": "การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",
     "e": "Artificial Intelligence Engineering and Intelligent Systems Project Preparation",
     "cr": "1(0-2-1)",
-    "d": "การระบุปัญหาจริงจากภาคอุตสาหกรรม เกษตรกรรม องค์กร หรือชุมชน การวิเคราะห์ผู้มีส่วนได้ส่วนเสียและข้อกำหนด การกำหนดขอบเขต วัตถุประสงค์ และเกณฑ์การยอมรับ การทบทวนวรรณกรรมและเทคโนโลยี การออกแบบแนวทางวิศวกรรม วิธีทดลอง และแผนทดสอบ การประเมินความเป็นไปได้ งบประมาณ และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี และการนำเสนอข้อเสนอโครงงานเพื่อขออนุมัติ",
+    "d": "การระบุปัญหาจริงจากภาคอุตสาหกรรม เกษตรกรรม องค์กร หรือชุมชน การวิเคราะห์ผู้มีส่วนได้ส่วนเสียและข้อกำหนด การกำหนดขอบเขต วัตถุประสงค์ และเกณฑ์การยอมรับ การออกแบบแนวทางวิศวกรรม วิธีทดลอง และแผนทดสอบ การประเมินความเป็นไปได้ งบประมาณ และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี และการนำเสนอข้อเสนอโครงงานเพื่อขออนุมัติ",
     "dEn": "Identification of real problems from industry, agriculture, enterprise, or community; stakeholder and requirements analysis; definition of scope, objectives, acceptance criteria, and track-specific indicators; literature and technology review; design of engineering approaches, experimental methods, and test plans; assessment of feasibility, budget, and sustainability under the BCG economic model; planning for quality, safety, ethics, and risk; preparation and presentation of the project proposal for approval",
     "source": "08_Project_and_Seminar.md"
   },
@@ -693,7 +693,7 @@ export const COURSE_REVISION = {
     "t": "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",
     "e": "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering",
     "cr": "3(1-6-4)",
-    "d": "การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูล เวลา และทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม",
+    "d": "การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหาและเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูลและทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม",
     "dEn": "Execution of an AI or intelligent-systems project on a real problem from the host organization; verification of the problem, requirements, and acceptance criteria jointly with the organization; design, development, and integration under the organization's data, time, and resource constraints; design and conduct of experiments to evaluate performance, reliability, and safety; project and risk management with the workplace mentor; preparation of ethics, confidentiality, and data-governance evidence; demonstration and defense before a joint university-industry committee",
     "source": "08_Project_and_Seminar.md"
   },
@@ -709,7 +709,7 @@ export const COURSE_REVISION = {
     "t": "สหกิจศึกษา",
     "e": "Cooperative Education",
     "cr": "6(0-40-0)",
-    "d": "การปฏิบัติงานจริงในสถานประกอบการที่ได้รับอนุมัติไม่น้อยกว่าสิบหกสัปดาห์ การวิเคราะห์ปัญหา ข้อกำหนด และเกณฑ์การยอมรับของงาน การประยุกต์และบูรณาการความรู้ด้านวิศวกรรม ปัญญาประดิษฐ์ ข้อมูล และซอฟต์แวร์ การเก็บข้อมูล ทดลอง และตีความผล การทำงานร่วมกับทีมสหวิทยาการ การบริหารงานและความเสี่ยง การปฏิบัติตามจรรยาบรรณและธรรมาภิบาล และการจัดทำรายงาน",
+    "d": "การปฏิบัติงานจริงในสถานประกอบการที่ได้รับอนุมัติไม่น้อยกว่าสิบหกสัปดาห์ การวิเคราะห์ปัญหา ข้อกำหนด และเกณฑ์การยอมรับของงาน การประยุกต์และบูรณาการความรู้ด้านวิศวกรรมและปัญญาประดิษฐ์ การเก็บข้อมูล ทดลอง และตีความผล การทำงานร่วมกับทีมสหวิทยาการ การบริหารงานและความเสี่ยง การปฏิบัติตามจรรยาบรรณและธรรมาภิบาล และการจัดทำรายงาน",
     "dEn": "Supervised professional practice in an approved workplace for at least sixteen weeks; analysis of an authentic problem, stakeholders, requirements, and acceptance criteria; application and integration of engineering, AI, data, software, sensing, or control-system knowledge; planning and execution of data collection, experimentation, testing, analysis, and interpretation within the work scope; multidisciplinary teamwork as a leader or member; management of work, risk, quality, and change; compliance with professional ethics, law, confidentiality and intellectual property, AI governance, cybersecurity, standards, and workplace safety; assessment of economic, social, or environmental value and impacts as appropriate; self-directed learning and application of new technologies or standards; preparation of reports, presentations, user acceptance tests, manuals, and handover evidence for the workplace and university",
     "source": "09_Field_Experience.md"
   }
