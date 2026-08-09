@@ -77,28 +77,28 @@
 
 **AI Software and Application Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-305, EN-132-306, EN-135-335, EN-135-336, EN-135-337 และ EN-134-403
+- รายวิชาปลายทาง: EN-132-305, EN-132-306, EN-135-337, EN-135-338, EN-135-339 และ EN-134-403
 - สมรรถนะปลายทาง: AI software, API, GenAI/agentic application, testing, cloud microservices และ production deployment
 
 ### 7. วิศวกรข้อมูล
 
 **Data Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-131-204, EN-131-207, EN-135-334 และ EN-135-337
+- รายวิชาปลายทาง: EN-131-204, EN-131-207, EN-135-336 และ EN-135-339
 - สมรรถนะปลายทาง: database, ETL/ELT, batch/stream pipeline, orchestration, data quality และ data platform
 
 ### 8. นักออกแบบและสร้างนวัตกรรมด้านปัญญาประดิษฐ์
 
 **AI Innovator · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-132-201, EN-132-305, EN-135-338, EN-135-343, EN-135-346 และ EN-134-403
+- รายวิชาปลายทาง: EN-132-201, EN-132-305, EN-135-340, EN-135-345, EN-135-348 และ EN-134-403
 - สมรรถนะปลายทาง: opportunity discovery, UX, product concept, rapid prototype, validation และ AI innovation
 
 ### 9. ผู้ประกอบการด้านธุรกิจเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์
 
 **Technology and AI Entrepreneur · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
-- รายวิชาปลายทาง: EN-001-227, EN-132-201, EN-135-343, EN-135-345, EN-135-346 และ EN-134-403
+- รายวิชาปลายทาง: EN-001-227, EN-132-201, EN-135-345, EN-135-347, EN-135-348 และ EN-134-403
 - สมรรถนะปลายทาง: business model, value proposition, product strategy, digital marketing, feasibility และ venture pitch
 
 ### 10. นักวิจัยด้านปัญญาประดิษฐ์และระบบอัจฉริยะ
@@ -112,14 +112,14 @@
 
 **Government Officer / Digital Technology Specialist · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-132-201, EN-132-202, EN-135-348, EN-134-403, EN-135-401 และ EN-135-402
+- รายวิชาปลายทาง: EN-132-201, EN-132-202, EN-135-350, EN-134-403, EN-135-401 และ EN-135-402
 - สมรรถนะปลายทาง: digital service, project/solution analysis, procurement support, AI governance, PDPA, cybersecurity และ public-sector implementation
 
 ### 12. นักวิทยาศาสตร์ข้อมูลและนักวิเคราะห์ข้อมูล
 
 **Data Scientist / Data Analyst · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-001-126, EN-131-102, EN-131-203, EN-131-204 และ EN-135-334
+- รายวิชาปลายทาง: EN-001-126, EN-131-102, EN-131-203, EN-131-204 และ EN-135-336
 - สมรรถนะปลายทาง: statistics, data preparation, analytics, machine learning, visualization และการสื่อสารข้อค้นพบเพื่อการตัดสินใจ
 
 ## การกระจายอาชีพตามแขนง

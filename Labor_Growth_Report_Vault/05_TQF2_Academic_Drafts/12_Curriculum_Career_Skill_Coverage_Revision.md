@@ -217,24 +217,24 @@
 
 | รหัส | รายวิชาปรับใหม่ | ความซ้ำเดิม | ความลึกและช่องว่างที่ปิด |
 |---|---|---|---|
-| EN-135-335 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-132-306 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
-| EN-135-336 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-132-305 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
-| EN-135-337 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-132-305/EN-131-207 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
-| EN-135-343 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-132-201 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
-| EN-135-346 | AI Product Management | design thinking และ product design ซ้ำ EN-132-201 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
-| EN-135-348 | AI Governance and Risk | จริยธรรมและกฎหมายเบื้องต้นซ้ำแกน AI และ PLO4 | AI inventory, risk tiering, impact assessment, third-party risk, audit evidence, monitoring และ incident governance |
+| EN-135-337 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-132-306 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
+| EN-135-338 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-132-305 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
+| EN-135-339 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-132-305/EN-131-207 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
+| EN-135-345 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-132-201 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
+| EN-135-348 | AI Product Management | design thinking และ product design ซ้ำ EN-132-201 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
+| EN-135-350 | AI Governance and Risk | จริยธรรมและกฎหมายเบื้องต้นซ้ำแกน AI และ PLO4 | AI inventory, risk tiering, impact assessment, third-party risk, audit evidence, monitoring และ incident governance |
 
 รายวิชาที่ยังคงไว้เพราะเป็นความเชี่ยวชาญเฉพาะทางและไม่ซ้ำวิชาแกนโดยตรง:
 
-- EN-135-334 Advanced Data Engineering and Data Pipelines
-- EN-135-338 UX/UI Design for Intelligent Systems
-- EN-135-339/340 Healthcare AI and Medical Image Analysis
-- EN-135-341/342 Financial AI and Predictive Finance
-- EN-135-344 Intelligent Software Project Management
-- EN-135-345 Business Development and Digital Marketing with AI
-- EN-135-347 Virtual Reality Technology and Artificial Intelligence
+- EN-135-336 Advanced Data Engineering and Data Pipelines
+- EN-135-340 UX/UI Design for Intelligent Systems
+- EN-135-341/340 Healthcare AI and Medical Image Analysis
+- EN-135-343/342 Financial AI and Predictive Finance
+- EN-135-346 Intelligent Software Project Management
+- EN-135-347 Business Development and Digital Marketing with AI
+- EN-135-349 Virtual Reality Technology and Artificial Intelligence
 
-ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-135-339/337 เป็น Healthcare AI Studio และ EN-135-341/339 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
+ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-135-341/337 เป็น Healthcare AI Studio และ EN-135-343/339 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
 
 ## 8. Basket Rule สำหรับวิชาเลือก 15 หน่วยกิต
 

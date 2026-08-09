@@ -449,7 +449,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of industrial safety engineering and occupational health; engineering safety laws, regulations, and standards; hazard identification and risk assessment using checklists, job safety analysis, hazard and operability studies, and failure-mode and effects analysis; prevention of accidents and occupational diseases; safety of machinery, electrical systems, chemicals, and pneumatic and hydraulic systems; functional safety, interlocks, emergency-stop systems, and safety standards for robotics and automation; ergonomics; industrial hygiene; contractor management; permit-to-work systems; emergency planning and response; incident reporting and investigation; applications of sensors, computer vision, the Internet of Things, and artificial intelligence to risk monitoring, warning, and analysis, with consideration of privacy, reliability, and human oversight; practical safety surveys and preparation of risk-reduction plans for industrial workplaces",
     "source": "06_Electives_Industrial_AI.md"
   },
-  "EN-135-334": {
+  "EN-135-336": {
     "t": "วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล",
     "e": "Advanced Data Engineering and Data Pipelines",
     "cr": "3(2-2-5)",
@@ -457,7 +457,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and design of advanced data pipelines for AI systems; stream processing; distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; building real-time data pipelines for AI systems; integration of data from diverse sources; monitoring and management of data pipelines in production environments; application of advanced data engineering to building data systems for industrial use",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-335": {
+  "EN-135-337": {
     "t": "ตัวแบบภาษาขนาดใหญ่ขั้นสูง",
     "e": "Advanced Large Language Models",
     "cr": "3(2-2-5)",
@@ -465,7 +465,7 @@ export const COURSE_REVISION = {
     "dEn": "Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning; parameter-efficient fine-tuning and LoRA; model compression and quantization; multimodal model adaptation; evaluation of accuracy, reasoning, factuality, fairness, and robustness; benchmark and comparative-experiment design; inference optimization for latency, memory, cost, and energy; model serving in production; performance-degradation monitoring; and model documentation",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-336": {
+  "EN-135-338": {
     "t": "ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์",
     "e": "AI Reliability and Safety",
     "cr": "3(2-2-5)",
@@ -473,7 +473,7 @@ export const COURSE_REVISION = {
     "dEn": "Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to noise and adversarial attacks; bias and fairness evaluation; hallucination testing for generative models; red teaming and guardrails; hazard analysis and safety cases; data- and model-drift monitoring; incident management; model rollback; and preparation of model cards and assurance evidence",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-337": {
+  "EN-135-339": {
     "t": "สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร",
     "e": "Enterprise AI Architecture",
     "cr": "3(2-2-5)",
@@ -481,7 +481,7 @@ export const COURSE_REVISION = {
     "dEn": "Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, data platforms, and legacy workflows; identity, access, secret management, and zero-trust architecture; multi-tenancy, scalability, high availability, disaster recovery, and business continuity; observability; cloud-cost management; trade-off analysis; and preparation of architecture diagrams and decision records",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-338": {
+  "EN-135-340": {
     "t": "การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ",
     "e": "UX/UI Design for Intelligent Systems",
     "cr": "3(3-0-6)",
@@ -489,7 +489,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for designing transparent and understandable interfaces; usability testing and user-experience evaluation; inclusive design; application of user-experience design to commercial AI applications",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-339": {
+  "EN-135-341": {
     "t": "ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ",
     "e": "Artificial Intelligence in Medical and Healthcare",
     "cr": "3(2-2-5)",
@@ -497,7 +497,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; development of machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment and healthcare recommendation systems; integration of AI with wearable devices to monitor vital signs; management of health big data; application of natural-language processing to extract information from medical documents; ethics and privacy of patient data under international standards",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-340": {
+  "EN-135-342": {
     "t": "การวิเคราะห์ข้อมูลภาพทางการแพทย์",
     "e": "Medical Image Analysis",
     "cr": "3(2-2-5)",
@@ -505,7 +505,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of medical image processing and analysis; working with X-ray, computed-tomography (CT), and magnetic-resonance (MRI) image data; use of deep learning for organ detection and segmentation; analysis of abnormalities and lesions from medical images; building AI models to assist physicians in diagnosis; noise reduction and contrast enhancement of medical images; integration of image-analysis systems with picture archiving and communication systems (PACS); performance evaluation of medical-image-analysis models",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-341": {
+  "EN-135-343": {
     "t": "เทคโนโลยีทางการเงินและปัญญาประดิษฐ์",
     "e": "Financial Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
@@ -513,7 +513,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of financial technology and financial-service innovation; application of AI in the finance and banking industry; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection with AI; automated investment systems and robo-advisory; consumer and individual-customer behavior analysis; development of AI models for asset valuation; regulations and policies on financial technology",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-342": {
+  "EN-135-344": {
     "t": "การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน",
     "e": "Predictive Data Analysis in Finance",
     "cr": "3(2-2-5)",
@@ -521,7 +521,7 @@ export const COURSE_REVISION = {
     "dEn": "Predictive-analytics techniques for financial markets; analysis of financial time-series data; building stock- and financial-asset price-forecasting models with machine learning and deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; application of high-frequency trading algorithms; building and testing automated trading systems; interpretation and visualization of in-depth financial data for business decisions",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-343": {
+  "EN-135-345": {
     "t": "การสร้างธุรกิจปัญญาประดิษฐ์",
     "e": "AI Venture Creation",
     "cr": "3(2-2-5)",
@@ -529,7 +529,7 @@ export const COURSE_REVISION = {
     "dEn": "Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy; business-to-business sales, procurement, and pilot management; intellectual property, licensing, data, and service-level agreements; operations, risk, and scaling plans; financial projections, fundraising, and investor or partner pitching; development and validation of a commercialization plan for an AI product with real users or an enterprise partner",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-344": {
+  "EN-135-346": {
     "t": "การจัดการโครงการซอฟต์แวร์อัจฉริยะ",
     "e": "Intelligent Software Project Management",
     "cr": "3(3-0-6)",
@@ -537,7 +537,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles and methodologies of intelligent software project management; agile and Scrum project management; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system life cycle; stakeholder-expectation management; use of AI to assist in managing and tracking project progress; quality control and continuous system delivery; measuring the success of AI projects",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-345": {
+  "EN-135-347": {
     "t": "การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์",
     "e": "Business Development and Digital Marketing with AI",
     "cr": "3(3-0-6)",
@@ -545,7 +545,7 @@ export const COURSE_REVISION = {
     "dEn": "Concepts of AI-based digital business development; building data-driven digital-marketing strategies; analysis and segmentation of target customers with machine learning; automated advertising-content creation and marketing communication with generative AI; personalized product and service recommendation systems; analysis of digital-marketing campaign effectiveness; application of chatbots for customer service and proactive selling; conversion-rate optimization with smart technology",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-346": {
+  "EN-135-348": {
     "t": "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Product Management",
     "cr": "3(2-2-5)",
@@ -553,7 +553,7 @@ export const COURSE_REVISION = {
     "dEn": "AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps, backlogs, and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human–AI interaction design; A/B testing; analysis of usage, adoption, and impact; management of feedback, model drift, cost, and product change; coordination among users, business, data, engineering, and governance teams; and evidence-based decisions to scale, pivot, or retire AI products",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-347": {
+  "EN-135-349": {
     "t": "เทคโนโลยีโลกเสมือนจริงและปัญญาประดิษฐ์",
     "e": "Virtual Reality Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
@@ -561,7 +561,7 @@ export const COURSE_REVISION = {
     "dEn": "Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with the creation of simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of virtual-world applications for medical simulation, industrial training, and digital marketing; wearable devices for perception and response in virtual worlds; analysis of user behavior in digital environments",
     "source": "07_Electives_AI_Innovation.md"
   },
-  "EN-135-348": {
+  "EN-135-350": {
     "t": "ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์",
     "e": "AI Governance and Risk",
     "cr": "3(2-2-5)",
