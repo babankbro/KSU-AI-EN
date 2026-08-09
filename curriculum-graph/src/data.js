@@ -266,7 +266,7 @@ const RAW = [
   { c: "EN-134-302", s: "Project Prep", t: "การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project Preparation", cr: "1(0-2-1)", g: "proj", y: 3, sem: 6, p: [1, 3, 4, 7], h: ["EN-134-301"],
     d: "การกำหนดหัวข้อและขอบเขตของโครงงานวิศวกรรมปัญญาประดิษฐ์ การทบทวนวรรณกรรมและงานวิจัยที่เกี่ยวข้อง การเขียนเค้าโครงโครงงานและการกำหนดวัตถุประสงค์ วิธีดำเนินการวิจัยและแผนการทำงาน การประเมินความเป็นไปได้ทางเทคนิคและทรัพยากร จริยธรรมการวิจัยและการใช้ปัญญาประดิษฐ์อย่างรับผิดชอบ การนำเสนอเค้าโครงโครงงานต่อคณะกรรมการเพื่อขออนุมัติ การเตรียมความพร้อมด้านเครื่องมือ อุปกรณ์ และซอฟต์แวร์สำหรับดำเนินโครงงาน",
     dEn: "Identification of an authentic industrial or community problem; requirements analysis; literature review; project scoping; engineering design and methodology; data, safety, ethics, budget, and risk planning; proposal preparation and presentation" },
-  { c: "EN-134-404", s: "WIL Capstone", t: "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering", cr: "3(1-6-4)", g: "proj", y: 4, plan: "B", planNote: "เปิดเฉพาะแผน ข การเรียนรู้ร่วมการทำงาน (CWIE) ในภาคการศึกษาที่ 7 แทน EN-134-403",
+  { c: "EN-134-404", s: "WIL Capstone", t: "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering", cr: "3(1-6-4)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-134-302"], plan: "B", planNote: "เปิดเฉพาะแผน ข การเรียนรู้ร่วมการทำงาน (CWIE) ในภาคการศึกษาที่ 7 แทน EN-134-403",
     d: "การดำเนินโครงงานวิศวกรรมปัญญาประดิษฐ์หรือระบบอัจฉริยะจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูล เวลา และทรัพยากรขององค์กร การออกแบบและดำเนินการทดลองเพื่อประเมินสมรรถนะ ความน่าเชื่อถือ และความปลอดภัย การบริหารโครงงานและความเสี่ยงร่วมกับพี่เลี้ยงในสถานประกอบการ การจัดทำหลักฐานด้านจริยธรรม การรักษาความลับ และธรรมาภิบาลข้อมูล และการสาธิตและสอบป้องกันต่อคณะกรรมการร่วมระหว่างมหาวิทยาลัยและสถานประกอบการ",
     dEn: "Execution of an AI or intelligent-systems project on a real problem from the host organization; verification of the problem, requirements, and acceptance criteria jointly with the organization; design, development, and integration under the organization's data, time, and resource constraints; design and conduct of experiments to evaluate performance, reliability, and safety; project and risk management with the workplace mentor; preparation of ethics, confidentiality, and data-governance evidence; demonstration and defense before a joint university-industry committee" },
   { c: "EN-134-403", s: "Capstone", plan: "A", planNote: "แผน ก แผนปกติ ภาคการศึกษาที่ 7", t: "โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project", cr: "3(1-6-4)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-134-302"],
@@ -562,6 +562,15 @@ export const STRUCTURE_TOP = [
   { name: "หมวดวิชาเลือกเสรี", credits: 6, ids: ["free"] }
 ];
 export const TOTAL_CREDITS = 125;
+
+/* แผนการเรียน 2 แบบ — ต่างกันเฉพาะภาคการศึกษาที่ 7 · รายวิชาที่มีฟิลด์ plan จะแสดงเฉพาะแผนนั้น */
+export const PLANS = {
+  A: { key: "A", name: "แผน ก · แผนปกติ", sub: "โครงงานและวิชาชีพเลือกในภาค 7 · สหกิจศึกษาภาค 8",
+       extra7: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 }, { s: "วิชาเลือกชีพ 5", k: 3 }] },
+  B: { key: "B", name: "แผน ข · บูรณาการกับสถานประกอบการ (CWIE)", sub: "การเรียนรู้ร่วมการทำงานและโครงงานบูรณาการในภาค 7 · สหกิจศึกษาภาค 8",
+       extra7: [{ s: "การเรียนรู้ร่วมการทำงาน 1", k: 3 }, { s: "การเรียนรู้ร่วมการทำงาน 2", k: 3 }, { s: "การเรียนรู้ร่วมการทำงาน 3", k: 3 }] }
+};
+export const coursesOfPlan = (plan) => COURSES.filter(c => !c.plan || c.plan === plan);
 export const APPROVED_BASELINE_CREDITS = 130;
 export const PENDING_PLAN_COURSES = COURSES.filter(c => c.pendingSemester);
 

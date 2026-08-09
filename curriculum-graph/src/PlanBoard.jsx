@@ -2,14 +2,14 @@ import { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   COURSES, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR,
-  GROUP_NAME, GROUP_COLOR, YLO_DETAIL, TOTAL_CREDITS, byOrderNo
+  GROUP_NAME, GROUP_COLOR, YLO_DETAIL, TOTAL_CREDITS, byOrderNo, PLANS
 } from "./data.js";
 import "./planboard.css";
 
 const crOf = c => Number(String(c.cr).split("(")[0]) || 0;
 const GROUPS = ["ge", "eng", "ai", "track", "elec", "proj", "field"];
 
-export default function PlanBoard() {
+export default function PlanBoard({ plan = "A" }) {
   const [hl, setHl] = useState(null);   // กลุ่มวิชาที่กรอง
   const [full, setFull] = useState(false);
   const [k, setK] = useState(1);        // อัตราย่อ/ขยายให้พอดีจอในโหมดเต็มจอ
@@ -88,8 +88,8 @@ export default function PlanBoard() {
 
               <div className="pb-sems">
                 {[y * 2 - 1, y * 2].map(s => {
-                  const list = COURSES.filter(c => c.sem === s).sort(byOrderNo);
-                  const extra = SEM_EXTRA[s] || [];
+                  const list = COURSES.filter(c => c.sem === s && (!c.plan || c.plan === plan)).sort(byOrderNo);
+                  const extra = s === 7 ? PLANS[plan].extra7 : (SEM_EXTRA[s] || []);
                   return (
                     <div className="pb-sem" key={s}>
                       <div className="pb-shead">
