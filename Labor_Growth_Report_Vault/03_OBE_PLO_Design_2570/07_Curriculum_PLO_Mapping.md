@@ -1,5 +1,8 @@
 # Curriculum Mapping — รายวิชา ↔ PLO ↔ Skills
 
+> [!warning] เอกสารนี้เป็นฉบับ 133 หน่วยกิตและใช้ชุดรหัสรายวิชาก่อนการปรับโครงสร้าง
+> ฉบับที่ใช้กับเล่มหลักสูตรปัจจุบันอยู่ที่ [[../08_TQF2_Book_Revisions/15_Section4_5_Curriculum_Mapping|หมวดที่ 4 หัวข้อ 4.5 ฉบับ 125 หน่วยกิต]] ซึ่งสร้างจากข้อมูลรายวิชาโดยอัตโนมัติและครอบคลุมวิชาชีพเลือกครบทุกรายวิชา
+
 > ฉบับทวนสอบตาม PLO 7 ข้อ รายวิชาใหม่ 133 หน่วยกิต และ Master Catalog H1–H20/S1–S10/EF1–EF6
 > อ้างอิง CLO ฉบับหลักที่ [[../05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping|Course Learning Outcomes and Constructive Alignment]]
 
