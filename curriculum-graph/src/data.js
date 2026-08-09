@@ -382,9 +382,10 @@ export const COURSES = RAW.map(c => {
 
 export const CORE = COURSES.filter(c => c.sem && c.g !== "ge" && c.g !== "elec");
 
-/* แผนการเรียน 125 นก. ตามแผนปรับโครงสร้าง: ปี 1 = 38 · ปี 2 = 32 · ปี 3 = 34 · ปี 4 = 21 นก.
+/* แผนการเรียน 125 นก.: ปี 1 = 38 · ปี 2 = 38 · ปี 3 = 31 · ปี 4 = 18 นก.
+   ภาค 1-4 ที่ 19 นก. โดยย้ายวิชาเลือกเสรีจากภาค 7 มากระจายในภาค 3 และ 4 · ภาค 7 เหลือ 12 นก. เพื่อให้เป็นภาคโครงงานและวิชาเลือกชีพเข้มข้น
    ภาค 6 = 17 นก. และภาค 7 = 15 นก. หลังย้าย EN-135-401 เตรียมความพร้อมสหกิจศึกษาจากภาค 7 ไปภาค 6 */
-export const SEM_TOTALS = { 1: 19, 2: 19, 3: 16, 4: 16, 5: 16, 6: 18, 7: 15, 8: 6 };
+export const SEM_TOTALS = { 1: 19, 2: 19, 3: 19, 4: 19, 5: 16, 6: 15, 7: 12, 8: 6 };
 export const SEM_TITLE = {
   1: "Engineering, Programming and Data Foundations", 2: "Physical, Electrical and Quantitative Foundations",
   3: "AI, Data and Sensing Foundations", 4: "AI Platforms, Decision Foundations and Academic Seminar",
@@ -393,12 +394,14 @@ export const SEM_TITLE = {
   7: "Capstone and Workplace-aligned Professional Electives", 8: "Cooperative Education"
 };
 export const SEM_EXTRA = {
+  3: [{ s: "วิชาเลือกเสรี 1", k: 3 }],
+  4: [{ s: "วิชาเลือกเสรี 2", k: 3 }],
   5: [{ s: "วิชาเลือกชีพ 1", k: 3 }],
-  6: [{ s: "วิชาเลือกชีพ 2", k: 3 }, { s: "วิชาเลือกชีพ 3", k: 3 }],
-  7: [{ s: "วิชาเลือกชีพ 4", k: 3 }, { s: "วิชาเลือกชีพ 5", k: 3 },
-      { s: "วิชาเลือกเสรี 1", k: 3 }, { s: "วิชาเลือกเสรี 2", k: 3 }]
+  6: [{ s: "วิชาเลือกชีพ 2", k: 3 }],
+  7: [{ s: "วิชาเลือกชีพ 3", k: 3 }, { s: "วิชาเลือกชีพ 4", k: 3 },
+      { s: "วิชาเลือกชีพ 5", k: 3 }]
 };
-export const YEAR_CREDITS = { 1: 38, 2: 32, 3: 34, 4: 21 };
+export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 31, 4: 18 };
 
 /* ---------------- โครงสร้างหลักสูตร 125 หน่วยกิต ---------------- */
 export const STRUCTURE = [
