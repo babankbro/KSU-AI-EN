@@ -27,7 +27,7 @@
    หมวด EN-132 ใช้ชื่อ “บังคับตามแขนง” แต่เอกสารปัจจุบันรวม 8 วิชาเป็น 24 หน่วยกิต จึงไม่ชัดว่านักศึกษาทุกคนเรียนทั้ง 8 วิชา หรือแต่ละ Track เรียนคนละชุด
 
 2. **วิชาเลือกมาก แต่เลือกอย่างไรก็ได้**  
-   มีรายการวิชาเลือก 48 วิชา แต่เรียนเพียง 5 วิชา/15 หน่วยกิต หากไม่มี basket rule ผู้เรียนอาจจบโดยขาด Skill สำคัญของอาชีพที่เลือก
+   มีรายการวิชาเลือก 50 วิชา แต่เรียนเพียง 5 วิชา/15 หน่วยกิต หากไม่มี basket rule ผู้เรียนอาจจบโดยขาด Skill สำคัญของอาชีพที่เลือก
 
 3. **มีความซ้ำระหว่างวิชาแกนกับวิชาเลือก**  
    เช่น Smart Farm/Precision Agriculture, UAV/Remote Sensing, Product Design, GenAI, Software/Cloud และวิชาเกษตรที่วิเคราะห์ข้อมูลคล้ายกันหลายวิชา
@@ -47,7 +47,7 @@
 | Engineering Fundamentals + Workshop | 24 | ฐานกายภาพ โปรแกรม ไฟฟ้า CAD และ hands-on | Programming เพียงวิชาเดียว; SQL/Git/testing ควรเริ่มเร็วขึ้น |
 | AI Core EN-131 | 24 | ครบ ML/DL, CV, IoT, Cloud/MLOps, Data Engineering, Infrastructure | BI/DSS, service reliability, IAM/DR และ enterprise operations ยังไม่ชัด |
 | Track Core EN-132 | 24 | มีเกษตร โรงงาน software และ agentic AI | สถานะ “เรียนร่วม/เลือกตาม Track” ไม่ชัด; ความลึกต่อ Track ไม่สมดุล |
-| Electives | 15 | Pool ใหญ่และมี domain expertise สูง | 48 วิชาแต่เลือก 5; ซ้ำกันมากและไม่มี pathway guarantee |
+| Electives | 15 | Pool ใหญ่และมี domain expertise สูง | 50 วิชาแต่เลือก 5; ซ้ำกันมากและไม่มี pathway guarantee |
 | Project/Seminar | 6 | รองรับ integration และ PLO1–7 | ต้องบังคับ requirement, acceptance, quality และ handover evidence |
 | Co-op | 7 | Mastery จากงานจริง | ต้องกำหนด rubric S9/S10 และ Skill Transcript ตามอาชีพ |
 
@@ -171,7 +171,7 @@
 
 ## 7. วิชาเลือกเสนอใหม่: Active Pool 24 วิชา
 
-ให้เปิด Active Pool 8 วิชาต่อ Track และทบทวนทุกปี แทนการเปิดทั้ง 48 วิชาพร้อมกัน ส่วนวิชาที่พักไว้เก็บเป็น rotating special topics เมื่อมีอาจารย์และทรัพยากรพร้อม
+ให้เปิด Active Pool 8 วิชาต่อ Track และทบทวนทุกปี แทนการเปิดทั้ง 50 วิชาพร้อมกัน ส่วนวิชาที่พักไว้เก็บเป็น rotating special topics เมื่อมีอาจารย์และทรัพยากรพร้อม
 
 ### 7.1 T1 Smart Agriculture — 8 วิชา
 
