@@ -14,7 +14,7 @@
 
 EN-131-101 ความรู้เบื้องต้นสำหรับปัญญาประดิษฐ์ 3(3-0-6)  
 Introduction to Artificial Intelligence  
-ประวัติและพัฒนาการของปัญญาประดิษฐ์ การค้นหา การแทนความรู้ และการให้เหตุผล การเรียนรู้ของเครื่อง คอมพิวเตอร์วิทัศน์ ปัญญาประดิษฐ์เชิงสร้าง และระบบเอเจนต์ปัญญาประดิษฐ์ วงจรชีวิตของระบบตั้งแต่การกำหนดปัญหาถึงการติดตามหลังนำไปใช้ ข้อจำกัด ความเอนเอียง และการกำกับดูแลของมนุษย์ จริยธรรมและธรรมาภิบาลปัญญาประดิษฐ์ และการประยุกต์ใช้ในเกษตรและอุตสาหกรรม  
+ประวัติและพัฒนาการของปัญญาประดิษฐ์ การค้นหา การแทนความรู้ และการให้เหตุผล การเรียนรู้ของเครื่อง คอมพิวเตอร์วิทัศน์ ปัญญาประดิษฐ์เชิงสร้าง และระบบเอเจนต์ วงจรชีวิตของระบบตั้งแต่การกำหนดปัญหาถึงการติดตามหลังนำไปใช้ ข้อจำกัด ความเอนเอียง และการกำกับดูแลของมนุษย์ จริยธรรมและธรรมาภิบาล และการประยุกต์ใช้ในเกษตรและอุตสาหกรรม
 History and evolution of artificial intelligence; search, knowledge representation, and reasoning; machine learning, computer vision, generative AI, and agentic systems; the system lifecycle from problem formulation to post-deployment monitoring; limitations, bias, and human oversight; AI ethics and governance; applications in agriculture, industry, and enterprise
 
 EN-131-102 คณิตศาสตร์วิศวกรรมปัญญาประดิษฐ์ 3(3-0-6)  
@@ -24,7 +24,7 @@ Linear algebra, vectors, matrices, and singular value decomposition; multivariab
 
 EN-131-203 การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก 3(2-2-5)  
 Machine Learning and Deep Learning  
-กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอน การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความไม่แน่นอน ความทนทาน และความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้  
+กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอน การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความทนทานและความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้
 The model-development process for supervised and unsupervised learning; regression, classification, clustering, and dimensionality reduction; neural networks with convolutional and transformer architectures; transfer learning; dataset splitting, metrics, and cross-validation; management of data leakage and class imbalance; evaluation of uncertainty, robustness, and explainability; reproducible experimentation
 
 EN-131-204 วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่ 3(3-0-6)  
@@ -34,7 +34,7 @@ Data lifecycle and architecture; dataset specifications and data contracts; rela
 
 EN-131-205 ระบบตรวจวัด ขับเคลื่อน และไอโอทีอัจฉริยะ 3(2-2-5)  
 Smart Sensing, Actuation and Internet of Things Systems  
-สถาปัตยกรรมระบบกายภาพ–ไซเบอร์และอินเทอร์เน็ตของสรรพสิ่ง การเลือก ติดตั้ง และสอบเทียบเซนเซอร์ การปรับสภาพสัญญาณและการวิเคราะห์ความไม่แน่นอน ตัวกระตุ้นและระบบขับเคลื่อน ไมโครคอนโทรลเลอร์ ระบบฝังตัว และตัวควบคุมแบบโปรแกรมได้ โพรโทคอลอินเทอร์เน็ตของสรรพสิ่งและอุตสาหกรรม การประมวลผลที่ขอบเครือข่าย และการบูรณาการสถานีตรวจวัด–ขับเคลื่อนสำหรับฟาร์มและโรงงาน  
+สถาปัตยกรรมระบบกายภาพ–ไซเบอร์และอินเทอร์เน็ตของสรรพสิ่ง การเลือก ติดตั้ง และสอบเทียบเซนเซอร์ การปรับสภาพสัญญาณและการวิเคราะห์ความไม่แน่นอน ตัวกระตุ้นและระบบขับเคลื่อน ไมโครคอนโทรลเลอร์ ระบบฝังตัว และตัวควบคุมแบบโปรแกรมได้ โพรโทคอลอุตสาหกรรม การประมวลผลที่ขอบเครือข่าย และการบูรณาการสถานีตรวจวัดสำหรับฟาร์มและโรงงาน
 Architecture of cyber-physical and Internet of Things systems; sensor selection, installation, and calibration; signal conditioning and uncertainty analysis; actuators and drive systems; microcontrollers, embedded systems, and programmable logic controllers; IoT and industrial protocols; edge computing; integration of sensing-actuation stations for farms and factories
 
 EN-131-206 คอมพิวเตอร์วิทัศน์และการวิเคราะห์ภาพ 3(2-2-5)  

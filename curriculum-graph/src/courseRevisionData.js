@@ -85,7 +85,7 @@ export const COURSE_REVISION = {
     "t": "ความรู้เบื้องต้นสำหรับปัญญาประดิษฐ์",
     "e": "Introduction to Artificial Intelligence",
     "cr": "3(3-0-6)",
-    "d": "ประวัติและพัฒนาการของปัญญาประดิษฐ์ การค้นหา การแทนความรู้ และการให้เหตุผล การเรียนรู้ของเครื่อง คอมพิวเตอร์วิทัศน์ ปัญญาประดิษฐ์เชิงสร้าง และระบบเอเจนต์ปัญญาประดิษฐ์ วงจรชีวิตของระบบตั้งแต่การกำหนดปัญหาถึงการติดตามหลังนำไปใช้ ข้อจำกัด ความเอนเอียง และการกำกับดูแลของมนุษย์ จริยธรรมและธรรมาภิบาลปัญญาประดิษฐ์ และการประยุกต์ใช้ในเกษตรและอุตสาหกรรม",
+    "d": "ประวัติและพัฒนาการของปัญญาประดิษฐ์ การค้นหา การแทนความรู้ และการให้เหตุผล การเรียนรู้ของเครื่อง คอมพิวเตอร์วิทัศน์ ปัญญาประดิษฐ์เชิงสร้าง และระบบเอเจนต์ วงจรชีวิตของระบบตั้งแต่การกำหนดปัญหาถึงการติดตามหลังนำไปใช้ ข้อจำกัด ความเอนเอียง และการกำกับดูแลของมนุษย์ จริยธรรมและธรรมาภิบาล และการประยุกต์ใช้ในเกษตรและอุตสาหกรรม",
     "dEn": "History and evolution of artificial intelligence; search, knowledge representation, and reasoning; machine learning, computer vision, generative AI, and agentic systems; the system lifecycle from problem formulation to post-deployment monitoring; limitations, bias, and human oversight; AI ethics and governance; applications in agriculture, industry, and enterprise",
     "source": "03_AI_Core.md"
   },
@@ -101,7 +101,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ของเครื่องและการเรียนรู้เชิงลึก",
     "e": "Machine Learning and Deep Learning",
     "cr": "3(2-2-5)",
-    "d": "กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอน การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความไม่แน่นอน ความทนทาน และความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้",
+    "d": "กระบวนการพัฒนาตัวแบบการเรียนรู้ของเครื่องแบบมีผู้สอนและไม่มีผู้สอน การถดถอย การจำแนก การจัดกลุ่ม และการลดมิติ โครงข่ายประสาทเทียม สถาปัตยกรรมคอนโวลูชันและทรานสฟอร์เมอร์ การเรียนรู้แบบถ่ายโอน การแบ่งชุดข้อมูล ตัวชี้วัด และการตรวจสอบข้าม การจัดการข้อมูลรั่วและไม่สมดุล การประเมินความทนทานและความสามารถในการอธิบาย และการทดลองที่ทำซ้ำได้",
     "dEn": "The model-development process for supervised and unsupervised learning; regression, classification, clustering, and dimensionality reduction; neural networks with convolutional and transformer architectures; transfer learning; dataset splitting, metrics, and cross-validation; management of data leakage and class imbalance; evaluation of uncertainty, robustness, and explainability; reproducible experimentation",
     "source": "03_AI_Core.md"
   },
@@ -117,7 +117,7 @@ export const COURSE_REVISION = {
     "t": "ระบบตรวจวัด ขับเคลื่อน และไอโอทีอัจฉริยะ",
     "e": "Smart Sensing, Actuation and Internet of Things Systems",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมระบบกายภาพ–ไซเบอร์และอินเทอร์เน็ตของสรรพสิ่ง การเลือก ติดตั้ง และสอบเทียบเซนเซอร์ การปรับสภาพสัญญาณและการวิเคราะห์ความไม่แน่นอน ตัวกระตุ้นและระบบขับเคลื่อน ไมโครคอนโทรลเลอร์ ระบบฝังตัว และตัวควบคุมแบบโปรแกรมได้ โพรโทคอลอินเทอร์เน็ตของสรรพสิ่งและอุตสาหกรรม การประมวลผลที่ขอบเครือข่าย และการบูรณาการสถานีตรวจวัด–ขับเคลื่อนสำหรับฟาร์มและโรงงาน",
+    "d": "สถาปัตยกรรมระบบกายภาพ–ไซเบอร์และอินเทอร์เน็ตของสรรพสิ่ง การเลือก ติดตั้ง และสอบเทียบเซนเซอร์ การปรับสภาพสัญญาณและการวิเคราะห์ความไม่แน่นอน ตัวกระตุ้นและระบบขับเคลื่อน ไมโครคอนโทรลเลอร์ ระบบฝังตัว และตัวควบคุมแบบโปรแกรมได้ โพรโทคอลอุตสาหกรรม การประมวลผลที่ขอบเครือข่าย และการบูรณาการสถานีตรวจวัดสำหรับฟาร์มและโรงงาน",
     "dEn": "Architecture of cyber-physical and Internet of Things systems; sensor selection, installation, and calibration; signal conditioning and uncertainty analysis; actuators and drive systems; microcontrollers, embedded systems, and programmable logic controllers; IoT and industrial protocols; edge computing; integration of sensing-actuation stations for farms and factories",
     "source": "03_AI_Core.md"
   },
@@ -157,7 +157,7 @@ export const COURSE_REVISION = {
     "t": "ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน",
     "e": "Decision Intelligence and Supply Chain Management",
     "cr": "3(2-2-5)",
-    "d": "หลักการของระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์เพื่อการตัดสินใจ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์ อุปทาน และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน การประเมินความยั่งยืน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ",
+    "d": "หลักการของระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์เพื่อการตัดสินใจ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ",
     "dEn": "Principles of decision-support systems and decision intelligence; operational indicators; predictive and prescriptive analytics; forecasting of demand, supply, and capacity; planning of materials, inventory, and logistics; traceability and risk management; operations-research optimization; sustainability assessment; design of human-in-the-loop recommendation systems",
     "source": "04_Track_Core.md"
   },
@@ -165,7 +165,7 @@ export const COURSE_REVISION = {
     "t": "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ",
     "e": "Smart Farming Systems and Precision Agriculture",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมและองค์ประกอบของระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ การออกแบบระบบตรวจวัดดิน น้ำ อากาศ และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง คลาวด์ และภูมิสารสนเทศ ระบบชลประทานอัตโนมัติ การพยากรณ์ผลผลิต โรค และแมลง ระบบสนับสนุนการตัดสินใจฟาร์ม การบูรณาการหุ่นยนต์และอากาศยานไร้คนขับเข้ากับระบบฟาร์ม และการประเมินประสิทธิภาพการใช้ทรัพยากร",
+    "d": "สถาปัตยกรรมและองค์ประกอบของระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ การออกแบบระบบตรวจวัดดิน น้ำ อากาศ และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง คลาวด์ และภูมิสารสนเทศ ระบบชลประทานอัตโนมัติ การพยากรณ์ผลผลิต โรค และแมลง ระบบสนับสนุนการตัดสินใจฟาร์ม และการบูรณาการหุ่นยนต์และอากาศยานไร้คนขับเข้ากับระบบฟาร์ม",
     "dEn": "Architecture and components of smart farming and precision agriculture; design of systems measuring soil, water, weather, and growth; integration of IoT, cloud, and geospatial data; automated irrigation; forecasting of yields, diseases, and pests; farm decision-support systems; integration of robots and unmanned aerial vehicles with farm systems; assessment of resource-use efficiency",
     "source": "04_Track_Core.md"
   },
@@ -173,7 +173,7 @@ export const COURSE_REVISION = {
     "t": "ระบบการผลิตอัจฉริยะและหุ่นยนต์อุตสาหกรรม",
     "e": "Smart Manufacturing and Industrial Robotics Systems",
     "cr": "3(2-2-5)",
-    "d": "หลักวิศวกรรมกระบวนการผลิต การสร้างแบบจำลองกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับสารสนเทศ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และเครือข่ายอุตสาหกรรม หุ่นยนต์อุตสาหกรรมและการออกแบบเซลล์หุ่นยนต์ ประสิทธิผลโดยรวมของเครื่องจักร การควบคุมกระบวนการเชิงสถิติ และการบำรุงรักษาเชิงพยากรณ์ ความปลอดภัยของเครื่องจักร และการประเมินพลังงานและคาร์บอน",
+    "d": "หลักวิศวกรรมกระบวนการผลิต การสร้างแบบจำลองกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับสารสนเทศ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และเครือข่ายอุตสาหกรรม หุ่นยนต์อุตสาหกรรมและการออกแบบเซลล์หุ่นยนต์ ประสิทธิผลโดยรวมของเครื่องจักรและการบำรุงรักษาเชิงพยากรณ์ และความปลอดภัยของเครื่องจักร",
     "dEn": "Principles of process and production engineering; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; programmable logic controllers, SCADA, and industrial networks; industrial robots and robotic-cell design; overall equipment effectiveness, statistical process control, and predictive maintenance; machine safety; assessment of energy and carbon",
     "source": "04_Track_Core.md"
   },
@@ -181,7 +181,7 @@ export const COURSE_REVISION = {
     "t": "วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์",
     "e": "Software and AI Engineering",
     "cr": "3(2-2-5)",
-    "d": "วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบ การพัฒนาไมโครเซอร์วิสและส่วนต่อประสานโปรแกรมประยุกต์ การออกแบบซอฟต์แวร์ที่บำรุงรักษาได้ การทดสอบซอฟต์แวร์และการประกันคุณภาพตัวแบบ การควบคุมเวอร์ชันและการทำงานเป็นทีม และการนำขึ้นใช้บนคลาวด์ คอนเทนเนอร์ และอุปกรณ์เอดจ์",
+    "d": "วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบ การพัฒนาไมโครเซอร์วิสและส่วนต่อประสานโปรแกรมประยุกต์ การออกแบบซอฟต์แวร์ที่บำรุงรักษาได้ การทดสอบและการประกันคุณภาพตัวแบบ การควบคุมเวอร์ชัน และการนำขึ้นใช้บนคลาวด์ คอนเทนเนอร์ และอุปกรณ์เอดจ์",
     "dEn": "The AI software development lifecycle and modern software-engineering processes; requirements analysis and system architecture design; microservices and application programming interfaces; maintainable software design; software testing and model quality assurance; version control and team collaboration; deployment on cloud, container, and edge platforms",
     "source": "04_Track_Core.md"
   },
@@ -197,7 +197,7 @@ export const COURSE_REVISION = {
     "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
     "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
-    "d": "ข้อกำกับ กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานสำนักงานการบินพลเรือนแห่งประเทศไทย หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การตรวจวัดระยะไกลและการสร้างแผนที่ดิจิทัล การวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชด้วยดัชนีพืชพรรณและการฉีดพ่นแม่นยำ และการทดสอบภาคสนามพร้อมประเมินสมรรถนะ",
+    "d": "ข้อกำกับ กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การสร้างแผนที่ดิจิทัลและการวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม",
     "dEn": "Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; field testing with performance evaluation",
     "source": "04_Track_Core.md"
   },
@@ -213,7 +213,7 @@ export const COURSE_REVISION = {
     "t": "เกษตรกรรมอัจฉริยะและการจัดชลประทาน",
     "e": "Smart Agriculture and Irrigation Management",
     "cr": "3(2-2-5)",
-    "d": "หลักการเกษตรกรรมอัจฉริยะและการเกษตรแม่นยำ การวิเคราะห์และจัดการทรัพยากรดินและน้ำด้วยปัญญาประดิษฐ์ การออกแบบระบบชลประทานอัจฉริยะทั้งระบบน้ำหยดและสปริงเกลอร์ การตรวจวัดความชื้นดินด้วยเซนเซอร์และอินเทอร์เน็ตของสรรพสิ่ง การพยากรณ์ความต้องการน้ำของพืชด้วยการเรียนรู้ของเครื่อง การควบคุมการให้น้ำอัตโนมัติและการประหยัดน้ำ ระบบเตือนภัยแล้งและน้ำท่วม และการจัดการน้ำในระดับแปลงและลุ่มน้ำ",
+    "d": "หลักการเกษตรกรรมอัจฉริยะและการเกษตรแม่นยำ การวิเคราะห์และจัดการทรัพยากรดินและน้ำด้วยปัญญาประดิษฐ์ การออกแบบระบบชลประทานอัจฉริยะทั้งน้ำหยดและสปริงเกลอร์ การตรวจวัดความชื้นดินด้วยเซนเซอร์และไอโอที การพยากรณ์ความต้องการน้ำของพืชด้วยการเรียนรู้ของเครื่อง การควบคุมการให้น้ำอัตโนมัติ และระบบเตือนภัยแล้งและน้ำท่วม",
     "dEn": "Principles of smart and precision agriculture; analysis and management of soil and water resources with AI; design of smart irrigation systems including drip and sprinkler systems; soil-moisture measurement with sensors and IoT; crop water-demand forecasting with machine learning; automatic irrigation control and water conservation; drought and flood warning systems; water management at plot and watershed levels",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -221,7 +221,7 @@ export const COURSE_REVISION = {
     "t": "ปัญญาประดิษฐ์สำหรับเกษตรกรรมแม่นยำ",
     "e": "Artificial Intelligence for Precision Agriculture",
     "cr": "3(3-0-6)",
-    "d": "หลักการและแนวคิดของเกษตรกรรมแม่นยำ การประยุกต์ใช้ปัญญาประดิษฐ์ในการผลิตพืชและปศุสัตว์ การจัดการและวิเคราะห์ข้อมูลจากเซนเซอร์ดิน สภาพอากาศ ดาวเทียม และภาพถ่ายจากอากาศยานไร้คนขับ การแนะนำการจัดการธาตุอาหารพืช การตรวจจับและจำแนกโรคพืชและแมลงศัตรูพืชด้วยคอมพิวเตอร์วิทัศน์และการเรียนรู้เชิงลึก การพยากรณ์ผลผลิตและการวางแผนการผลิต และระบบแนะนำการจัดการฟาร์มที่บูรณาการข้อมูลหลายแหล่ง",
+    "d": "หลักการและแนวคิดของเกษตรกรรมแม่นยำ การประยุกต์ใช้ปัญญาประดิษฐ์ในการผลิตพืชและปศุสัตว์ การจัดการและวิเคราะห์ข้อมูลจากเซนเซอร์ดิน สภาพอากาศ ดาวเทียม และอากาศยานไร้คนขับ การแนะนำการจัดการธาตุอาหารพืช การตรวจจับโรคพืชและแมลงศัตรูพืชด้วยคอมพิวเตอร์วิทัศน์และการเรียนรู้เชิงลึก และการพยากรณ์ผลผลิตและการวางแผนการผลิต",
     "dEn": "Principles and concepts of precision agriculture; application of AI to crop and livestock production; management and analysis of data from soil sensors, weather, satellites, and unmanned aerial imagery; crop-nutrient management recommendations; detection and classification of plant diseases and pests with computer vision and deep learning; yield forecasting and production planning; farm recommendation systems integrating multiple data sources",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -229,7 +229,7 @@ export const COURSE_REVISION = {
     "t": "ระบบสารสนเทศภูมิศาสตร์และการวิเคราะห์พื้นที่ทางการเกษตร",
     "e": "Geographic Information Systems and Spatial Analysis for Agriculture",
     "cr": "3(2-2-5)",
-    "d": "หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การสร้างและวิเคราะห์แผนที่ดิจิทัล การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และการวิเคราะห์เครือข่าย การบูรณาการกับการเรียนรู้ของเครื่องเพื่อการวิเคราะห์เชิงพื้นที่ขั้นสูง และการประยุกต์ใช้วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช",
+    "d": "หลักการและองค์ประกอบของระบบสารสนเทศภูมิศาสตร์ ข้อมูลเชิงพื้นที่และระบบพิกัดอ้างอิง การจัดการและวิเคราะห์ข้อมูลแบบเวกเตอร์และแรสเตอร์ การสร้างและวิเคราะห์แผนที่ดิจิทัล การประมวลผลข้อมูลจากดาวเทียมและภาพถ่ายทางอากาศ การวิเคราะห์พื้นที่ด้วยวิธีซ้อนทับ บัฟเฟอร์ และเครือข่าย และการประยุกต์วางแผนการใช้ที่ดินและประเมินความเหมาะสมของพื้นที่ปลูกพืช",
     "dEn": "Principles and components of geographic information systems; spatial data and reference coordinate systems; management and analysis of vector and raster data; creation and analysis of digital maps; processing of satellite and aerial imagery; spatial analysis with overlay, buffer, and network analysis; integration with machine learning for advanced spatial analysis; applications to agricultural land-use planning and crop-area suitability assessment",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -237,7 +237,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีและนวัตกรรมการจัดการหลังการเก็บเกี่ยว",
     "e": "Postharvest Management Technology and Innovation",
     "cr": "3(3-0-6)",
-    "d": "หลักการและกระบวนการจัดการผลผลิตเกษตรหลังการเก็บเกี่ยว สรีรวิทยาและชีวเคมีของผลผลิตหลังการเก็บเกี่ยว การสูญเสียผลผลิตและแนวทางการลดความสูญเสีย การคัดแยกและคัดเกรดผลผลิตด้วยคอมพิวเตอร์วิทัศน์ ระบบอบแห้งและการเก็บรักษาผลผลิตอัจฉริยะ การควบคุมอุณหภูมิและความชื้นในโรงเก็บด้วยอินเทอร์เน็ตของสรรพสิ่ง การบรรจุภัณฑ์อัจฉริยะและการยืดอายุการเก็บรักษา และระบบตรวจสอบย้อนกลับและการรับรองคุณภาพผลผลิต",
+    "d": "หลักการและกระบวนการจัดการผลผลิตเกษตรหลังการเก็บเกี่ยว สรีรวิทยาของผลผลิตหลังการเก็บเกี่ยว การสูญเสียผลผลิตและแนวทางการลดความสูญเสีย การคัดแยกและคัดเกรดด้วยคอมพิวเตอร์วิทัศน์ ระบบอบแห้งและการเก็บรักษาอัจฉริยะ การควบคุมอุณหภูมิและความชื้นในโรงเก็บด้วยไอโอที และระบบตรวจสอบย้อนกลับและการรับรองคุณภาพผลผลิต",
     "dEn": "Principles and processes of postharvest management; physiology and biochemistry of harvested produce; produce losses and loss-reduction approaches; sorting and grading with computer vision; smart drying and storage systems; temperature and humidity control in storage with IoT; smart packaging and shelf-life extension; traceability and produce-quality certification systems",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -245,7 +245,7 @@ export const COURSE_REVISION = {
     "t": "การพยากรณ์และวิเคราะห์ข้อมูลฟาร์มด้วยปัญญาประดิษฐ์",
     "e": "AI-Based Farm Data Forecasting and Analytics",
     "cr": "3(2-2-5)",
-    "d": "หลักการและวิธีการพยากรณ์ข้อมูลทางการเกษตรด้วยปัญญาประดิษฐ์ การเก็บรวบรวมและจัดการข้อมูลขนาดใหญ่จากเครือข่ายเซนเซอร์ในฟาร์ม การวิเคราะห์อนุกรมเวลาสำหรับข้อมูลผลผลิตและสภาพอากาศ การสร้างตัวแบบพยากรณ์ผลผลิตด้วยการเรียนรู้เชิงลึก การพยากรณ์ราคาสินค้าเกษตรและการวางแผนการผลิต การวิเคราะห์ความเสี่ยงและความไม่แน่นอน การออกแบบแผงควบคุมข้อมูลฟาร์ม และการประเมินความถูกต้องของตัวแบบพยากรณ์",
+    "d": "หลักการและวิธีการพยากรณ์ข้อมูลทางการเกษตรด้วยปัญญาประดิษฐ์ การจัดการข้อมูลขนาดใหญ่จากเครือข่ายเซนเซอร์ในฟาร์ม การวิเคราะห์อนุกรมเวลาสำหรับข้อมูลผลผลิตและสภาพอากาศ การสร้างตัวแบบพยากรณ์ผลผลิตด้วยการเรียนรู้เชิงลึก การพยากรณ์ราคาสินค้าเกษตร การวิเคราะห์ความเสี่ยง และการประเมินความถูกต้องของตัวแบบพยากรณ์",
     "dEn": "Principles and methods of forecasting agricultural data with AI; collection and management of big data from farm sensor networks; time-series analysis of yield and weather data; yield-forecasting models with deep learning; agricultural price forecasting and production planning; risk and uncertainty analysis; design of farm data dashboards; validation of forecasting models",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -253,7 +253,7 @@ export const COURSE_REVISION = {
     "t": "โรงงานผลิตพืชอัจฉริยะและเกษตรกรรมแนวดิ่ง",
     "e": "Smart Plant Factories and Vertical Farming",
     "cr": "3(2-2-5)",
-    "d": "หลักการและแนวคิดของโรงงานผลิตพืชปิดและเกษตรกรรมแนวดิ่ง สถาปัตยกรรมและองค์ประกอบของโรงงานผลิตพืช ระบบแสงเทียมแอลอีดีและการควบคุมสเปกตรัมแสงด้วยปัญญาประดิษฐ์ ระบบปลูกพืชโดยไม่ใช้ดินแบบไฮโดรโปนิกส์ แอโรโปนิกส์ และอควาโปนิกส์ การควบคุมสภาพแวดล้อมในโรงเรือนอัตโนมัติ การตรวจสอบสุขภาพพืชด้วยคอมพิวเตอร์วิทัศน์ การประหยัดพลังงานและการจัดการทรัพยากร และการวิเคราะห์ต้นทุนและผลตอบแทนของการลงทุน",
+    "d": "หลักการและแนวคิดของโรงงานผลิตพืชปิดและเกษตรกรรมแนวดิ่ง สถาปัตยกรรมและองค์ประกอบของโรงงานผลิตพืช ระบบแสงเทียมแอลอีดีและการควบคุมสเปกตรัมแสงด้วยปัญญาประดิษฐ์ ระบบปลูกพืชโดยไม่ใช้ดิน การควบคุมสภาพแวดล้อมในโรงเรือนอัตโนมัติ การตรวจสอบสุขภาพพืชด้วยคอมพิวเตอร์วิทัศน์ และการวิเคราะห์ต้นทุนและผลตอบแทนของการลงทุน",
     "dEn": "Principles and concepts of closed plant factories and vertical farming; architecture and components of plant factories; LED artificial lighting and AI-based light-spectrum control; soilless cultivation with hydroponics, aeroponics, and aquaponics; automated greenhouse environmental control; crop-health monitoring with computer vision; energy conservation and resource management; cost-benefit analysis of investment",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -261,7 +261,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีปัญญาประดิษฐ์เพื่อการปศุสัตว์อัจฉริยะ",
     "e": "Artificial Intelligence Technology for Smart Livestock",
     "cr": "3(2-2-5)",
-    "d": "หลักการและแนวคิดของการปศุสัตว์อัจฉริยะ การติดตามสุขภาพสัตว์ด้วยอินเทอร์เน็ตของสรรพสิ่งและเซนเซอร์สวมใส่ การวิเคราะห์พฤติกรรมสัตว์ด้วยคอมพิวเตอร์วิทัศน์ การพยากรณ์และตรวจจับโรคสัตว์ด้วยการเรียนรู้ของเครื่อง ระบบให้อาหารอัตโนมัติและการจัดการโภชนาการ การจัดการสภาพแวดล้อมในโรงเรือนปศุสัตว์ การติดตามฝูงสัตว์ด้วยระบบจีพีเอส การวิเคราะห์ประสิทธิภาพของฟาร์ม และระบบตรวจสอบย้อนกลับผลิตภัณฑ์ปศุสัตว์",
+    "d": "หลักการและแนวคิดของการปศุสัตว์อัจฉริยะ การติดตามสุขภาพสัตว์ด้วยไอโอทีและเซนเซอร์สวมใส่ การวิเคราะห์พฤติกรรมสัตว์ด้วยคอมพิวเตอร์วิทัศน์ การพยากรณ์และตรวจจับโรคสัตว์ด้วยการเรียนรู้ของเครื่อง ระบบให้อาหารอัตโนมัติและการจัดการโภชนาการ การจัดการสภาพแวดล้อมในโรงเรือน และระบบตรวจสอบย้อนกลับผลิตภัณฑ์ปศุสัตว์",
     "dEn": "Principles and concepts of smart livestock farming; animal-health monitoring with IoT and wearable sensors; animal-behavior analysis with computer vision; disease prediction and detection with machine learning; automatic feeding systems and nutrition management; environmental management of livestock housing; herd tracking with GPS; analysis of farm efficiency; livestock-product traceability systems",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -269,7 +269,7 @@ export const COURSE_REVISION = {
     "t": "วิสัยทัศน์คอมพิวเตอร์สำหรับการจำแนกและคัดเกรดทางการเกษตร",
     "e": "Computer Vision for Agricultural Classification and Grading",
     "cr": "3(2-2-5)",
-    "d": "หลักการของคอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดผลผลิตเกษตร การออกแบบระบบกล้องและแสงสำหรับการตรวจสอบผลผลิต การสร้างและจัดการชุดข้อมูลภาพเพื่อฝึกตัวแบบ การฝึกและปรับแต่งตัวแบบการเรียนรู้เชิงลึกเพื่อจำแนกประเภทและตรวจจับตำหนิ การวัดขนาดและน้ำหนักด้วยการประมวลผลภาพ การใช้ภาพหลายช่วงคลื่นและสเปกโทรสโกปีอินฟราเรดใกล้ประเมินคุณภาพภายในพร้อมสอบเทียบกับค่ามาตรฐาน การพัฒนาโปรแกรมประยุกต์เฉพาะงาน และการบูรณาการกับระบบคัดแยกอัตโนมัติ",
+    "d": "หลักการของคอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดผลผลิตเกษตร การออกแบบระบบกล้องและแสง การสร้างและจัดการชุดข้อมูลภาพเพื่อฝึกตัวแบบ การฝึกและปรับแต่งตัวแบบการเรียนรู้เชิงลึกเพื่อจำแนกประเภทและตรวจจับตำหนิ การวัดขนาดด้วยการประมวลผลภาพ การใช้ภาพหลายช่วงคลื่นประเมินคุณภาพภายใน และการบูรณาการกับระบบคัดแยกอัตโนมัติ",
     "dEn": "Principles of computer vision for classification and grading of agricultural produce; design of camera and lighting systems for produce inspection; creation and management of image datasets for model training; training and fine-tuning of deep learning models for classification and defect detection; size and weight measurement through image processing; multispectral imaging and near-infrared spectroscopy for internal quality assessment with laboratory calibration; development of purpose-built applications; integration with automatic sorting systems",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -277,7 +277,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ของเครื่องและการวิเคราะห์ข้อมูลเซนเซอร์ในฟาร์ม",
     "e": "Machine Learning and Farm Sensor Data Analytics",
     "cr": "3(2-2-5)",
-    "d": "หลักการและสถาปัตยกรรมของเครือข่ายเซนเซอร์ในฟาร์ม การเก็บและส่งข้อมูลจากเซนเซอร์ดิน น้ำ อากาศ และพืช การประมวลผลสัญญาณและการกรองสัญญาณรบกวน การทำความสะอาดและเตรียมข้อมูลเซนเซอร์เพื่อการวิเคราะห์ การวิเคราะห์อนุกรมเวลาและการหารูปแบบในข้อมูลเซนเซอร์ การสร้างตัวแบบการเรียนรู้ของเครื่องเพื่อการพยากรณ์และการตัดสินใจ การตรวจจับความผิดปกติและการแจ้งเตือนอัจฉริยะ และการแสดงผลข้อมูลผ่านแผงควบคุม",
+    "d": "หลักการและสถาปัตยกรรมของเครือข่ายเซนเซอร์ในฟาร์ม การเก็บและส่งข้อมูลจากเซนเซอร์ดิน น้ำ อากาศ และพืช การประมวลผลและกรองสัญญาณรบกวน การเตรียมข้อมูลเซนเซอร์เพื่อการวิเคราะห์ การวิเคราะห์อนุกรมเวลาและการหารูปแบบ การสร้างตัวแบบเพื่อการพยากรณ์และการตัดสินใจ และการตรวจจับความผิดปกติพร้อมแสดงผลผ่านแผงควบคุม",
     "dEn": "Principles and architecture of farm sensor networks; collection and transmission of soil, water, air, and crop sensor data; signal processing and noise filtering; cleaning and preparation of sensor data for analysis; time-series analysis and pattern discovery; machine learning models for forecasting and decision-making; anomaly detection and smart alerting; visualization of sensor data through dashboards",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -285,7 +285,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการการผลิตพืชอัจฉริยะด้วยปัญญาประดิษฐ์",
     "e": "Artificial Intelligence for Smart Crop Production Management",
     "cr": "3(2-2-5)",
-    "d": "หลักการและแนวคิดของการผลิตพืชอัจฉริยะ การวิเคราะห์สมบัติของดินและการประเมินความอุดมสมบูรณ์ การวิเคราะห์ธาตุอาหารพืชและการวางแผนการใช้ปุ๋ยเฉพาะพื้นที่ การจัดการน้ำและการให้น้ำอย่างแม่นยำ การใช้ข้อมูลจากเซนเซอร์ อินเทอร์เน็ตของสรรพสิ่ง และภาพถ่ายจากอากาศยานไร้คนขับติดตามการเจริญเติบโต การวิเคราะห์โรคพืชและแมลงศัตรูพืชด้วยการเรียนรู้เชิงลึก การพยากรณ์ผลผลิตและวิเคราะห์ต้นทุน และการพัฒนาระบบสนับสนุนการตัดสินใจด้วยปัญญาประดิษฐ์เชิงสร้าง",
+    "d": "หลักการและแนวคิดของการผลิตพืชอัจฉริยะ การวิเคราะห์สมบัติของดินและการประเมินความอุดมสมบูรณ์ การวางแผนการใช้ปุ๋ยเฉพาะพื้นที่ การจัดการน้ำและการให้น้ำอย่างแม่นยำ การใช้ข้อมูลจากเซนเซอร์และอากาศยานไร้คนขับติดตามการเจริญเติบโต การวิเคราะห์โรคพืชด้วยการเรียนรู้เชิงลึก และการพัฒนาระบบสนับสนุนการตัดสินใจด้วยปัญญาประดิษฐ์เชิงสร้าง",
     "dEn": "Principles and concepts of smart crop production; soil-property analysis and fertility assessment; crop-nutrient analysis and site-specific fertilizer planning; water management and precision irrigation; use of sensor, IoT, and unmanned aerial imagery to monitor crop growth; analysis of plant diseases and pests with deep learning; yield forecasting and production-cost analysis; development of decision-support systems with generative AI",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -293,7 +293,7 @@ export const COURSE_REVISION = {
     "t": "หุ่นยนต์และระบบอัตโนมัติทางการเกษตร",
     "e": "Agricultural Robotics and Automation",
     "cr": "3(2-2-5)",
-    "d": "หลักการของหุ่นยนต์และระบบอัตโนมัติทางการเกษตร องค์ประกอบของระบบหุ่นยนต์ทั้งเซนเซอร์ ตัวกระตุ้น และระบบควบคุม การประยุกต์ใช้ปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์ในหุ่นยนต์เกษตร การนำทางอัตโนมัติ การระบุตำแหน่ง และการวางแผนเส้นทาง การเก็บข้อมูลภาคสนาม การพ่นสาร การใส่ปุ๋ย การกำจัดวัชพืช และการเก็บเกี่ยว การใช้แขนกลและหุ่นยนต์เคลื่อนที่ และการบูรณาการหุ่นยนต์กับอากาศยานไร้คนขับและระบบฟาร์มอัจฉริยะ",
+    "d": "หลักการของหุ่นยนต์และระบบอัตโนมัติทางการเกษตร องค์ประกอบของระบบหุ่นยนต์ทั้งเซนเซอร์ ตัวกระตุ้น และระบบควบคุม การประยุกต์ใช้ปัญญาประดิษฐ์และคอมพิวเตอร์วิทัศน์ในหุ่นยนต์เกษตร การนำทางอัตโนมัติและการวางแผนเส้นทาง การพ่นสาร การกำจัดวัชพืช และการเก็บเกี่ยว และการบูรณาการหุ่นยนต์เข้ากับระบบฟาร์มอัจฉริยะ",
     "dEn": "Principles of agricultural robotics and automation; components of robotic systems including sensors, actuators, and control systems; application of AI and computer vision in agricultural robots; autonomous navigation, localization, and path planning; field data collection, spraying, fertilizing, weeding, and harvesting; use of robotic arms and mobile robots; integration of robots with unmanned aerial vehicles and smart-farm systems",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -301,7 +301,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีอากาศยานไร้คนขับและการสำรวจระยะไกลเพื่อการเกษตร",
     "e": "UAV Technology and Remote Sensing for Agriculture",
     "cr": "3(2-2-5)",
-    "d": "หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนเส้นทางการบินเพื่อการสำรวจทางการเกษตร การใช้เซนเซอร์ภาพถ่ายหลายช่วงคลื่นและภาพความร้อนติดตามความสมบูรณ์ของพืช การประมวลผลและวิเคราะห์ภาพถ่ายทางอากาศด้วยการเรียนรู้ของเครื่อง การจำแนกสมบัติและความชื้นดินเพื่อจัดทำแผนที่การให้ปัจจัยการผลิตแบบผันแปรตามพื้นที่ การสร้างแผนที่ดัชนีพืชพรรณ การพ่นของเหลวเพื่อการเกษตรแม่นยำ การตรวจสภาพและบำรุงรักษาอากาศยาน และกฎหมาย ใบอนุญาต และความปลอดภัยในการใช้งาน",
+    "d": "หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนเส้นทางการบินเพื่อการสำรวจทางการเกษตร การใช้เซนเซอร์ภาพหลายช่วงคลื่นและภาพความร้อนติดตามความสมบูรณ์ของพืช การวิเคราะห์ภาพถ่ายทางอากาศด้วยการเรียนรู้ของเครื่อง การจัดทำแผนที่ดัชนีพืชพรรณและการให้ปัจจัยการผลิตแบบผันแปร และกฎหมาย ใบอนุญาต และความปลอดภัยในการใช้งาน",
     "dEn": "Working principles and types of unmanned aerial vehicles; flight-path planning for agricultural surveying; multispectral and thermal imaging sensors to monitor crop health; processing and analysis of aerial imagery with machine learning; classification of soil properties and moisture for variable-rate input maps; creation of vegetation-index maps; precision liquid spraying; aircraft inspection and maintenance; laws, licensing, and operational safety",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -309,7 +309,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการห่วงโซ่อุปทานสินค้าเกษตรด้วยเทคโนโลยีอัจฉริยะ",
     "e": "Smart Agricultural Supply Chain Management",
     "cr": "3(3-0-6)",
-    "d": "หลักการจัดการห่วงโซ่อุปทานและโลจิสติกส์สำหรับสินค้าเกษตร การใช้ปัญญาประดิษฐ์วางแผนการจัดหาและการกระจายผลผลิต การจัดการคลังสินค้าเกษตรอัจฉริยะด้วยอินเทอร์เน็ตของสรรพสิ่ง การติดตามและตรวจสอบย้อนกลับผลผลิตด้วยเทคโนโลยีบล็อกเชน การพยากรณ์ความต้องการของตลาดด้วยการเรียนรู้ของเครื่องเพื่อลดความสูญเสียอาหาร การจัดเส้นทางการขนส่งอย่างมีประสิทธิภาพ และการบูรณาการเทคโนโลยีเพื่อเพิ่มความโปร่งใสและความยั่งยืน",
+    "d": "หลักการจัดการห่วงโซ่อุปทานและโลจิสติกส์สำหรับสินค้าเกษตร การใช้ปัญญาประดิษฐ์วางแผนการจัดหาและการกระจายผลผลิต การจัดการคลังสินค้าเกษตรอัจฉริยะด้วยไอโอที การตรวจสอบย้อนกลับด้วยเทคโนโลยีบล็อกเชน การพยากรณ์ความต้องการของตลาดเพื่อลดความสูญเสียอาหาร และการจัดเส้นทางการขนส่งเพื่อความโปร่งใสและความยั่งยืน",
     "dEn": "Principles of supply-chain and logistics management for agricultural goods; use of AI in planning produce sourcing and distribution; smart agricultural warehouse management with IoT; produce tracking and traceability with blockchain; market-demand forecasting with machine learning to reduce food loss; efficient transport routing; technology integration for transparency and sustainability",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -317,7 +317,7 @@ export const COURSE_REVISION = {
     "t": "การประยุกต์ใช้ปัญญาประดิษฐ์ในเทคโนโลยีชีวภาพการเกษตร",
     "e": "AI Applications in Agricultural Biotechnology",
     "cr": "3(2-2-5)",
-    "d": "ความสัมพันธ์ระหว่างปัญญาประดิษฐ์และเทคโนโลยีชีวภาพการเกษตร การใช้การเรียนรู้ของเครื่องวิเคราะห์ข้อมูลพันธุกรรมพืชและสัตว์ การวิเคราะห์ลำดับดีเอ็นเอเพื่อคัดเลือกสายพันธุ์ที่ทนทานต่อโรคและสภาพอากาศ การใช้ปัญญาประดิษฐ์ค้นหาสารออกฤทธิ์ทางชีวภาพเพื่อใช้เป็นชีวภัณฑ์ทางการเกษตร การจำลองและพยากรณ์ปฏิสัมพันธ์ระหว่างสิ่งมีชีวิตและสภาพแวดล้อม และจริยธรรมและความปลอดภัยทางชีวภาพ",
+    "d": "ความสัมพันธ์ระหว่างปัญญาประดิษฐ์และเทคโนโลยีชีวภาพการเกษตร การใช้การเรียนรู้ของเครื่องวิเคราะห์ข้อมูลพันธุกรรมพืชและสัตว์ การวิเคราะห์ลำดับดีเอ็นเอเพื่อคัดเลือกสายพันธุ์ที่ทนทาน การใช้ปัญญาประดิษฐ์ค้นหาสารออกฤทธิ์ทางชีวภาพเพื่อใช้เป็นชีวภัณฑ์ และจริยธรรมและความปลอดภัยทางชีวภาพ",
     "dEn": "The relationship between artificial intelligence and agricultural biotechnology; machine learning for analyzing plant and animal genetic data; DNA-sequence analysis for selecting disease- and climate-resistant varieties; AI-based discovery of bioactive compounds for agricultural bio-products; simulation and prediction of interactions between organisms and their environment; ethics and biosafety",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -325,7 +325,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการความเสี่ยงทางการเกษตรและการเปลี่ยนแปลงสภาพภูมิอากาศด้วยปัญญาประดิษฐ์",
     "e": "Agricultural Risk and Climate Change Management with AI",
     "cr": "3(3-0-6)",
-    "d": "ผลกระทบของการเปลี่ยนแปลงสภาพภูมิอากาศต่อการเกษตร การประยุกต์ใช้ปัญญาประดิษฐ์วิเคราะห์ข้อมูลภูมิอากาศขนาดใหญ่ การพยากรณ์สภาพอากาศสุดขั้ว ภัยแล้ง และอุทกภัย การวิเคราะห์และประเมินความเสี่ยงต่อผลผลิตทางการเกษตรด้วยตัวแบบคอมพิวเตอร์ การออกแบบระบบเตือนภัยล่วงหน้าอัจฉริยะ กลยุทธ์การปรับตัวของภาคการเกษตร การประกันภัยพืชผลโดยอาศัยข้อมูลดาวเทียมและปัญญาประดิษฐ์ และนโยบายและความยั่งยืนทางการเกษตร",
+    "d": "ผลกระทบของการเปลี่ยนแปลงสภาพภูมิอากาศต่อการเกษตร การประยุกต์ใช้ปัญญาประดิษฐ์วิเคราะห์ข้อมูลภูมิอากาศขนาดใหญ่ การพยากรณ์สภาพอากาศสุดขั้ว ภัยแล้ง และอุทกภัย การประเมินความเสี่ยงต่อผลผลิตด้วยตัวแบบคอมพิวเตอร์ การออกแบบระบบเตือนภัยล่วงหน้า กลยุทธ์การปรับตัวของภาคการเกษตร และการประกันภัยพืชผลด้วยข้อมูลดาวเทียม",
     "dEn": "Impacts of climate change on agriculture; application of AI to large-scale climate data analysis; forecasting of extreme weather, drought, and flooding; risk analysis and assessment for agricultural yields with computer models; design of smart early-warning systems; adaptation strategies for the agricultural sector; satellite- and AI-based crop insurance; agricultural policy and sustainability",
     "source": "05_Electives_Smart_Agriculture.md"
   },
@@ -333,7 +333,7 @@ export const COURSE_REVISION = {
     "t": "การควบคุมกระบวนการขั้นสูงและระบบควบคุมแบบกระจาย",
     "e": "Advanced Process Control and Distributed Control Systems",
     "cr": "3(2-2-5)",
-    "d": "การสร้างแบบจำลองพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบป้อนไปข้างหน้าและแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยแบบจำลองและการประยุกต์ปัญญาประดิษฐ์ในการควบคุมกระบวนการ สถาปัตยกรรมระบบควบคุมแบบกระจาย การจัดการสัญญาณเตือน การเชื่อมต่อกับสกาดาและระบบบริหารการผลิต และการนำระบบขึ้นใช้งานพร้อมประเมินสมรรถนะ",
+    "d": "การสร้างแบบจำลองพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบป้อนไปข้างหน้าและแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยแบบจำลอง สถาปัตยกรรมระบบควบคุมแบบกระจายและการจัดการสัญญาณเตือน และการเชื่อมต่อกับสกาดาพร้อมประเมินสมรรถนะ",
     "dEn": "Dynamic modeling and system identification of industrial processes; control-loop stability analysis; advanced PID tuning; feedforward and multivariable control; model-predictive control and AI-assisted process control; distributed control system architecture; alarm management; integration with SCADA and manufacturing execution systems; commissioning and performance evaluation",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -341,7 +341,7 @@ export const COURSE_REVISION = {
     "t": "การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์",
     "e": "AI-Based Predictive and Preventive Maintenance",
     "cr": "3(2-2-5)",
-    "d": "หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรอุตสาหกรรมเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลสัญญาณการสั่นสะเทือน เสียง อุณหภูมิ และกระแสไฟฟ้า การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องสำหรับตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร ระบบแจ้งเตือนและการวางแผนบำรุงรักษาอัตโนมัติ และการประเมินผลตอบแทนการลงทุน",
+    "d": "หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง อุณหภูมิ และกระแสไฟฟ้า การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ",
     "dEn": "Principles and strategies of corrective, preventive, and predictive maintenance for industrial machinery; collection of vibration, acoustic, temperature, and current signals; signal processing and feature extraction for machine diagnosis; machine learning models for anomaly detection and failure prediction; digital twins for simulating machine condition; automatic alerting and maintenance planning; return-on-investment assessment",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -349,7 +349,7 @@ export const COURSE_REVISION = {
     "t": "การออกแบบและการจัดการคลังสินค้าอัจฉริยะ",
     "e": "Smart Warehouse Design and Management",
     "cr": "3(2-2-5)",
-    "d": "หลักการและประเภทของระบบคลังสินค้าอัตโนมัติ การออกแบบและวางผังคลังสินค้าสำหรับโรงงานเกษตรอุตสาหกรรม ระบบจัดเก็บและเรียกคืนสินค้าอัตโนมัติ สายพานลำเลียง และรถลำเลียงอัตโนมัติ การใช้คอมพิวเตอร์วิทัศน์ตรวจสอบและคัดแยกสินค้า การจัดการด้วยระบบการจัดการคลังสินค้า การติดตามสินค้าด้วยอาร์เอฟไอดีและบาร์โค้ด การจัดการสินค้าคงคลังด้วยปัญญาประดิษฐ์ และการเพิ่มประสิทธิภาพการไหลของสินค้าด้วยการจำลอง",
+    "d": "หลักการและประเภทของระบบคลังสินค้าอัตโนมัติ การออกแบบและวางผังคลังสินค้าสำหรับโรงงานเกษตรอุตสาหกรรม ระบบจัดเก็บและเรียกคืนสินค้าอัตโนมัติ สายพานลำเลียง และรถลำเลียงอัตโนมัติ การใช้คอมพิวเตอร์วิทัศน์ตรวจสอบและคัดแยกสินค้า การติดตามสินค้าด้วยอาร์เอฟไอดี และการจัดการสินค้าคงคลังด้วยปัญญาประดิษฐ์",
     "dEn": "Principles and types of automated warehouse systems; warehouse design and layout for agro-industrial plants; automated storage and retrieval systems, conveyors, and automated guided vehicles; computer vision for goods inspection and sorting; warehouse management systems; goods tracking with RFID and barcodes; AI-based inventory management; optimization of goods flow through simulation",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -357,7 +357,7 @@ export const COURSE_REVISION = {
     "t": "การวิจัยดำเนินงานขั้นสูงและการหาค่าเหมาะที่สุดทางอุตสาหกรรม",
     "e": "Advanced Operations Research and Industrial Optimization",
     "cr": "3(2-2-5)",
-    "d": "การสร้างตัวแบบเพื่อการตัดสินใจทางอุตสาหกรรม การโปรแกรมเชิงเส้น จำนวนเต็มผสม ไม่เชิงเส้น และหลายวัตถุประสงค์ ตัวแบบโครงข่ายและการขนส่ง การจัดสรรทรัพยากร การจัดตารางการผลิต และการวางแผนสินค้าคงคลัง ทฤษฎีแถวคอยและการจำลองเหตุการณ์ไม่ต่อเนื่อง การหาค่าเหมาะที่สุดแบบสุ่มและแบบทนทาน วิธีฮิวริสติกและเมตาฮิวริสติก การใช้ภาษาไพทอนและซอฟต์แวร์ตัวแก้ปัญหา และการวิเคราะห์ความไวเพื่อเปรียบเทียบทางเลือก",
+    "d": "การสร้างตัวแบบเพื่อการตัดสินใจทางอุตสาหกรรม การโปรแกรมเชิงเส้น จำนวนเต็มผสม ไม่เชิงเส้น และหลายวัตถุประสงค์ ตัวแบบโครงข่ายและการขนส่ง การจัดสรรทรัพยากร การจัดตารางการผลิต และการวางแผนสินค้าคงคลัง ทฤษฎีแถวคอยและการจำลองเหตุการณ์ไม่ต่อเนื่อง วิธีฮิวริสติกและเมตาฮิวริสติก และการใช้ซอฟต์แวร์ตัวแก้ปัญหาวิเคราะห์ความไว",
     "dEn": "Industrial decision modeling; linear, mixed-integer, nonlinear, and multi-objective programming; network and transportation models; resource allocation, production scheduling, and inventory planning; queueing theory and discrete-event simulation; stochastic and robust optimization; heuristic and metaheuristic methods; Python and optimization solvers; sensitivity analysis for comparing alternatives",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -365,7 +365,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีอุตสาหกรรมเกษตรและการแปรรูป",
     "e": "Agro-Industrial and Processing Technology",
     "cr": "3(3-0-6)",
-    "d": "หลักการและกระบวนการแปรรูปผลผลิตเกษตรในภาคอุตสาหกรรม มาตรฐานคุณภาพและความปลอดภัยอาหารตามจีเอ็มพี เอชเอซีซีพี และไอเอสโอ 22000 เทคโนโลยีการแปรรูปอ้อยและการผลิตน้ำตาล การสกัดและผลิตแป้งมันสำปะหลัง และการสีและแปรรูปข้าว การจัดการของเสียและน้ำเสียในอุตสาหกรรมเกษตรแปรรูป การใช้พลังงานอย่างมีประสิทธิภาพและระบบผลิตพลังงานร่วม และการประยุกต์ใช้ปัญญาประดิษฐ์ในกระบวนการแปรรูปเพื่อเพิ่มประสิทธิภาพและลดต้นทุน",
+    "d": "หลักการและกระบวนการแปรรูปผลผลิตเกษตรในภาคอุตสาหกรรม มาตรฐานคุณภาพและความปลอดภัยอาหารตามจีเอ็มพี เอชเอซีซีพี และไอเอสโอ 22000 เทคโนโลยีการผลิตน้ำตาล แป้งมันสำปะหลัง และการสีข้าว การจัดการของเสียและน้ำเสีย การใช้พลังงานอย่างมีประสิทธิภาพ และการประยุกต์ใช้ปัญญาประดิษฐ์เพื่อเพิ่มประสิทธิภาพและลดต้นทุน",
     "dEn": "Principles and processes of agricultural produce processing in industry; food quality and safety standards under GMP, HACCP, and ISO 22000; technologies for sugarcane and sugar production, cassava starch extraction, and rice milling and processing; management of waste and wastewater in agro-processing industry; energy efficiency and cogeneration systems; application of AI to improve processing efficiency and reduce cost",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -373,7 +373,7 @@ export const COURSE_REVISION = {
     "t": "ปัญญาประดิษฐ์และการจัดการโรงสีข้าวอัจฉริยะ",
     "e": "Artificial Intelligence and Smart Rice Mill Management",
     "cr": "3(2-2-5)",
-    "d": "กระบวนการสีข้าวครบวงจรตั้งแต่การรับซื้อข้าวเปลือก การทำความสะอาด การกะเทาะเปลือก การขัดขาว การคัดแยก และการบรรจุภัณฑ์ ระบบคอมพิวเตอร์วิทัศน์ตรวจสอบคุณภาพข้าวด้านความขาว ความชื้น เมล็ดหัก และสิ่งเจือปน ระบบอบแห้งข้าวเปลือกอัจฉริยะและการควบคุมความชื้นอัตโนมัติ การจัดการไซโลด้วยอินเทอร์เน็ตของสรรพสิ่ง การบำรุงรักษาเชิงพยากรณ์สำหรับเครื่องจักรโรงสี ดิจิทัลทวินและการจำลองสายการผลิต และระบบตรวจสอบย้อนกลับคุณภาพข้าว",
+    "d": "กระบวนการสีข้าวครบวงจรตั้งแต่การรับซื้อข้าวเปลือก การทำความสะอาด การกะเทาะเปลือก การขัดขาว การคัดแยก และการบรรจุ ระบบคอมพิวเตอร์วิทัศน์ตรวจสอบคุณภาพข้าวด้านความขาว ความชื้น และเมล็ดหัก ระบบอบแห้งข้าวเปลือกอัจฉริยะ การจัดการไซโลด้วยไอโอที การบำรุงรักษาเชิงพยากรณ์ และระบบตรวจสอบย้อนกลับคุณภาพข้าว",
     "dEn": "The complete rice-milling process from paddy receiving, cleaning, husking, whitening, and grading to packaging; computer vision for inspecting whiteness, moisture, broken grains, and impurities; smart paddy drying with automatic moisture control; IoT-based silo management; predictive maintenance for mill machinery; digital twins and production-line simulation; rice quality traceability systems",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -381,7 +381,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีอัจฉริยะในกระบวนการผลิตอ้อยและน้ำตาล",
     "e": "Smart Technology in Sugarcane and Sugar Production Processes",
     "cr": "3(2-2-5)",
-    "d": "กระบวนการผลิตน้ำตาลครบวงจรตั้งแต่การรับอ้อย การวิเคราะห์คุณภาพ การหีบอ้อย การทำความสะอาดน้ำอ้อย การต้มเคี่ยว การตกผลึก และการบรรจุ ระบบปัญญาประดิษฐ์วิเคราะห์คุณภาพอ้อยและพยากรณ์ค่าความหวานซีซีเอส ณ จุดรับซื้อ การควบคุมกระบวนการหีบด้วยตัวควบคุมแบบโปรแกรมได้ ระบบผลิตพลังงานร่วมจากชีวมวล การจัดการของเสียและผลพลอยได้ ดิจิทัลทวินสำหรับโรงงานน้ำตาล และระบบตรวจสอบย้อนกลับคุณภาพน้ำตาล",
+    "d": "กระบวนการผลิตน้ำตาลครบวงจรตั้งแต่การรับอ้อย การหีบอ้อย การทำความสะอาดน้ำอ้อย การต้มเคี่ยว การตกผลึก และการบรรจุ ระบบปัญญาประดิษฐ์วิเคราะห์คุณภาพอ้อยและพยากรณ์ค่าความหวานซีซีเอส การควบคุมกระบวนการหีบด้วยตัวควบคุมแบบโปรแกรมได้ ระบบผลิตพลังงานร่วมจากชีวมวล และดิจิทัลทวินสำหรับโรงงานน้ำตาล",
     "dEn": "The complete sugar production process from cane receiving and quality analysis through milling, juice clarification, evaporation, crystallization, and packaging; AI-based cane quality analysis and CCS sweetness forecasting at receiving points; milling control with programmable logic controllers; biomass cogeneration; management of waste and by-products; digital twins for sugar plants; sugar quality traceability systems",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -389,7 +389,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีอัจฉริยะในกระบวนการผลิตมันสำปะหลังและแป้ง",
     "e": "Smart Technology in Cassava and Starch Production Processes",
     "cr": "3(2-2-5)",
-    "d": "กระบวนการผลิตแป้งมันสำปะหลังครบวงจรตั้งแต่การรับวัตถุดิบ การล้างและปอกเปลือก การบดและสกัดแป้ง การแยกกาก การอบแห้ง และการบรรจุ ระบบคอมพิวเตอร์วิทัศน์และปัญญาประดิษฐ์สำหรับตรวจรับและวิเคราะห์คุณภาพมันสำปะหลังและพยากรณ์ปริมาณแป้ง การควบคุมกระบวนการสกัดด้วยตัวควบคุมแบบโปรแกรมได้เพื่อเพิ่มอัตราการสกัด ระบบอบแห้งอัจฉริยะและการประหยัดพลังงาน การจัดการน้ำเสีย ดิจิทัลทวินสำหรับโรงงานแป้ง และการผลิตแป้งดัดแปรและผลิตภัณฑ์มูลค่าสูง",
+    "d": "กระบวนการผลิตแป้งมันสำปะหลังครบวงจรตั้งแต่การรับวัตถุดิบ การล้างและปอกเปลือก การบดและสกัดแป้ง การอบแห้ง และการบรรจุ ระบบคอมพิวเตอร์วิทัศน์สำหรับตรวจรับและพยากรณ์ปริมาณแป้ง การควบคุมกระบวนการสกัดเพื่อเพิ่มอัตราการสกัด ระบบอบแห้งอัจฉริยะและการจัดการน้ำเสีย และการผลิตแป้งดัดแปรมูลค่าสูง",
     "dEn": "The complete cassava-starch production process from raw-material receiving, washing and peeling, grinding and starch extraction, pulp separation, drying, and packaging; computer vision and AI for quality inspection and starch-yield forecasting; extraction control with programmable logic controllers to raise extraction rates; smart drying and energy conservation; wastewater management; digital twins for starch plants; production of modified starch and high-value products",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -397,7 +397,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร",
     "e": "Internet of Things Technology for Agricultural Produce Storage",
     "cr": "3(2-2-5)",
-    "d": "หลักการและเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร การออกแบบและติดตั้งเครือข่ายเซนเซอร์ในโรงเก็บ ไซโล และห้องเย็น เซนเซอร์อุณหภูมิ ความชื้น คาร์บอนไดออกไซด์ ออกซิเจน และเอทิลีน ระบบควบคุมสภาพแวดล้อมอัตโนมัติด้วยปัญญาประดิษฐ์ การวิเคราะห์คุณภาพผลผลิตระหว่างการเก็บรักษา ระบบแจ้งเตือนและการจัดการเหตุฉุกเฉิน การพยากรณ์อายุการเก็บรักษาด้วยการเรียนรู้ของเครื่อง และการบูรณาการกับแพลตฟอร์มคลาวด์เพื่อการติดตามแบบเวลาจริง",
+    "d": "หลักการและเทคโนโลยีไอโอทีสำหรับการเก็บรักษาผลผลิตเกษตร การออกแบบและติดตั้งเครือข่ายเซนเซอร์ในโรงเก็บ ไซโล และห้องเย็น เซนเซอร์อุณหภูมิ ความชื้น คาร์บอนไดออกไซด์ และเอทิลีน ระบบควบคุมสภาพแวดล้อมอัตโนมัติด้วยปัญญาประดิษฐ์ การพยากรณ์อายุการเก็บรักษา และการบูรณาการกับคลาวด์เพื่อการติดตามแบบเวลาจริง",
     "dEn": "Principles and IoT technologies for agricultural produce storage; design and installation of sensor networks in warehouses, silos, and cold rooms; temperature, humidity, carbon dioxide, oxygen, and ethylene sensors; AI-based automatic environmental control; analysis of produce quality during storage; alerting and emergency management; shelf-life forecasting with machine learning; integration with cloud platforms for real-time monitoring",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -405,7 +405,7 @@ export const COURSE_REVISION = {
     "t": "ระบบอบแห้งอัจฉริยะในอุตสาหกรรมเกษตร",
     "e": "Smart Drying Systems in Agro-Industry",
     "cr": "3(2-2-5)",
-    "d": "หลักการถ่ายเทความร้อนและมวลสารในกระบวนการอบแห้ง สมบัติทางอุณหพลศาสตร์และการถ่ายเทความชื้นของผลผลิตเกษตร เทคโนโลยีการอบแห้งด้วยลมร้อน ไมโครเวฟ อินฟราเรด ปั๊มความร้อน และการแช่เยือกแข็ง การออกแบบและคำนวณระบบอบแห้ง การควบคุมกระบวนการอัตโนมัติด้วยตัวควบคุมแบบโปรแกรมได้และปัญญาประดิษฐ์ การตรวจวัดความชื้นแบบเวลาจริง ตัวแบบการเรียนรู้ของเครื่องเพื่อเพิ่มประสิทธิภาพการอบแห้ง และการประหยัดพลังงานร่วมกับระบบผลิตพลังงานร่วม",
+    "d": "หลักการถ่ายเทความร้อนและมวลสารในกระบวนการอบแห้ง สมบัติทางอุณหพลศาสตร์และการถ่ายเทความชื้นของผลผลิตเกษตร เทคโนโลยีการอบแห้งด้วยลมร้อน ไมโครเวฟ อินฟราเรด และปั๊มความร้อน การออกแบบและคำนวณระบบอบแห้ง การควบคุมกระบวนการอัตโนมัติ การตรวจวัดความชื้นแบบเวลาจริง และการเพิ่มประสิทธิภาพและประหยัดพลังงาน",
     "dEn": "Principles of heat and mass transfer in drying; thermodynamic properties and moisture transfer of agricultural produce; hot-air, microwave, infrared, heat-pump, and freeze drying technologies; design and calculation of drying systems; automatic process control with programmable logic controllers and AI; real-time moisture measurement; machine learning models for drying optimization; energy conservation with cogeneration systems",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -413,7 +413,7 @@ export const COURSE_REVISION = {
     "t": "วิศวกรรมระบบขนถ่ายวัสดุและบรรจุภัณฑ์อัตโนมัติ",
     "e": "Automated Material Handling and Packaging Systems Engineering",
     "cr": "3(2-2-5)",
-    "d": "หลักการและการออกแบบระบบขนถ่ายวัสดุและบรรจุภัณฑ์สำหรับโรงงานเกษตรอุตสาหกรรม ประเภทและการเลือกใช้สายพานลำเลียง สกรูลำเลียง ลิฟต์ถัง และระบบลำเลียงด้วยลม การคำนวณความดันสูญเสียและความเร็วลมลำเลียงสำหรับวัสดุผง ความปลอดภัยจากฝุ่นระเบิดและการต่อลงดิน การออกแบบเครื่องจักรบรรจุภัณฑ์อัตโนมัติ การควบคุมด้วยตัวควบคุมแบบโปรแกรมได้และสกาดา การใช้คอมพิวเตอร์วิทัศน์ตรวจสอบการไหลของวัสดุ และการบำรุงรักษาเชิงพยากรณ์",
+    "d": "หลักการและการออกแบบระบบขนถ่ายวัสดุและบรรจุภัณฑ์สำหรับโรงงานเกษตรอุตสาหกรรม การเลือกใช้สายพานลำเลียง สกรูลำเลียง ลิฟต์ถัง และระบบลำเลียงด้วยลม การคำนวณความดันสูญเสียสำหรับวัสดุผง ความปลอดภัยจากฝุ่นระเบิด การออกแบบเครื่องจักรบรรจุภัณฑ์อัตโนมัติและการควบคุมด้วยสกาดา และการบำรุงรักษาเชิงพยากรณ์",
     "dEn": "Principles and design of material-handling and packaging systems for agro-industrial plants; selection of belt conveyors, screw conveyors, bucket elevators, and pneumatic conveying; calculation of pressure loss and conveying air velocity for powdered materials; dust-explosion safety and grounding; design of automatic packaging machinery; control with programmable logic controllers and SCADA; computer vision for material-flow inspection; predictive maintenance",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -421,7 +421,7 @@ export const COURSE_REVISION = {
     "t": "การควบคุมการเคลื่อนที่และวิศวกรรมเซลล์หุ่นยนต์ร่วมปฏิบัติงาน",
     "e": "Motion Control and Collaborative Robot Cell Engineering",
     "cr": "3(2-2-5)",
-    "d": "การเลือกและกำหนดขนาดมอเตอร์ เซอร์โวมอเตอร์ สเต็ปเปอร์มอเตอร์ ตัวขับ และระบบส่งกำลัง การควบคุมตำแหน่ง ความเร็ว แรงบิด และการเคลื่อนที่หลายแกน การสร้างเส้นทางและโปรไฟล์การเคลื่อนที่ การปรับตั้งระบบเซอร์โว การประสานงานกับตัวควบคุมแบบโปรแกรมได้และระบบวิสัยทัศน์ หุ่นยนต์ร่วมปฏิบัติงาน อุปกรณ์ปลายแขน และการออกแบบผังเซลล์หุ่นยนต์ การโปรแกรมและการจำลองเสมือนจริง และการประเมินความเสี่ยง ขีดจำกัดแรง อินเตอร์ล็อก และการทดสอบการยอมรับ",
+    "d": "การเลือกและกำหนดขนาดมอเตอร์ เซอร์โวมอเตอร์ สเต็ปเปอร์มอเตอร์ และระบบส่งกำลัง การควบคุมตำแหน่ง ความเร็ว แรงบิด และการเคลื่อนที่หลายแกน การสร้างเส้นทางและโปรไฟล์การเคลื่อนที่ การประสานงานกับตัวควบคุมแบบโปรแกรมได้และระบบวิสัยทัศน์ หุ่นยนต์ร่วมปฏิบัติงานและการออกแบบผังเซลล์หุ่นยนต์ และการประเมินความเสี่ยงพร้อมทดสอบการยอมรับ",
     "dEn": "Selection and sizing of motors, servo and stepper motors, drives, and transmission systems; position, velocity, torque, and multi-axis motion control; path generation and motion profiles; servo tuning; integration with programmable logic controllers and vision systems; collaborative robots, end effectors, and robot-cell layout design; programming and virtual simulation; risk assessment, force limits, interlocks, and acceptance testing",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -429,7 +429,7 @@ export const COURSE_REVISION = {
     "t": "การปรับปรุงกระบวนการด้วยลีนและปัญญาประดิษฐ์",
     "e": "Lean and AI-Enabled Process Improvement",
     "cr": "3(2-2-5)",
-    "d": "หลักการลีนและซิกซ์ซิกมา การทำแผนที่สายธารคุณค่าและการลดความสูญเปล่า การไหล การดึง และงานมาตรฐาน กระบวนการดีเอ็มเอไอซี การวิเคราะห์ประสิทธิผลโดยรวมของเครื่องจักร เวลารอบงาน คอขวด และของเสีย การควบคุมกระบวนการเชิงสถิติ ความสามารถกระบวนการ การออกแบบการทดลอง และการวิเคราะห์สาเหตุที่แท้จริง การใช้การเรียนรู้ของเครื่องพยากรณ์คุณภาพและจัดลำดับโอกาสปรับปรุง และการประเมินผลก่อน–หลังด้วยตัวชี้วัดคุณภาพ ต้นทุน และพลังงาน",
+    "d": "หลักการลีนและซิกซ์ซิกมา การทำแผนที่สายธารคุณค่าและการลดความสูญเปล่า การไหล การดึง และงานมาตรฐาน กระบวนการดีเอ็มเอไอซี การวิเคราะห์ประสิทธิผลโดยรวมของเครื่องจักร เวลารอบงาน และของเสีย การควบคุมกระบวนการเชิงสถิติและการวิเคราะห์สาเหตุที่แท้จริง และการใช้การเรียนรู้ของเครื่องพยากรณ์คุณภาพและจัดลำดับโอกาสปรับปรุง",
     "dEn": "Lean and Six Sigma principles; value-stream mapping and waste reduction; flow, pull, and standardized work; the DMAIC process; analysis of overall equipment effectiveness, cycle time, bottlenecks, and scrap; statistical process control, process capability, design of experiments, and root-cause analysis; machine learning for quality prediction and improvement prioritization; before-and-after evaluation with quality, cost, and energy indicators",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -437,7 +437,7 @@ export const COURSE_REVISION = {
     "t": "วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม",
     "e": "Computer Vision for Industrial Quality Control",
     "cr": "3(2-2-5)",
-    "d": "หลักการของระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การบูรณาการกับการเรียนรู้เชิงลึกเพื่อจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงานและการตรวจสอบความถูกต้องของการประกอบ การเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ และการวิเคราะห์ข้อมูลภาพเพื่อปรับปรุงกระบวนการผลิต",
+    "d": "หลักการของระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ",
     "dEn": "Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects on conveyors; integration with deep learning for defect classification; workpiece dimension measurement and assembly verification; connection to robots and automatic sorting systems; image-data analysis for process improvement",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -445,7 +445,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการพลังงานอัจฉริยะและระบบพลังงานแสงอาทิตย์",
     "e": "Smart Energy Management and Solar Energy Systems",
     "cr": "3(3-0-6)",
-    "d": "หลักการจัดการและการอนุรักษ์พลังงานในโรงงานอุตสาหกรรม การตรวจสอบและวิเคราะห์การใช้พลังงานของระบบไฟฟ้า เครื่องจักร ระบบปรับอากาศ ระบบอัดอากาศ และหม้อไอน้ำ เทคโนโลยีพลังงานแสงอาทิตย์และการออกแบบระบบผลิตไฟฟ้าด้วยเซลล์แสงอาทิตย์ การบูรณาการเซนเซอร์ มิเตอร์อัจฉริยะ และระบบบริหารจัดการพลังงานแบบเวลาจริง การใช้ปัญญาประดิษฐ์พยากรณ์ความต้องการและตรวจจับความผิดปกติ และการวิเคราะห์ความคุ้มค่าและการลดการปล่อยก๊าซเรือนกระจก",
+    "d": "หลักการจัดการและการอนุรักษ์พลังงานในโรงงานอุตสาหกรรม การตรวจสอบและวิเคราะห์การใช้พลังงานของระบบไฟฟ้า เครื่องจักร ระบบปรับอากาศ และหม้อไอน้ำ เทคโนโลยีพลังงานแสงอาทิตย์และการออกแบบระบบผลิตไฟฟ้าด้วยเซลล์แสงอาทิตย์ ระบบบริหารจัดการพลังงานแบบเวลาจริง และการวิเคราะห์ความคุ้มค่าและการลดก๊าซเรือนกระจก",
     "dEn": "Principles of energy management and conservation in industry; auditing and analysis of energy use in electrical systems, machinery, air-conditioning, compressed-air, and boiler systems; solar energy technology and photovoltaic system design; integration of sensors, smart meters, and real-time energy management systems; AI for demand forecasting and anomaly detection; cost-benefit analysis and greenhouse-gas reduction",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -453,7 +453,7 @@ export const COURSE_REVISION = {
     "t": "ระบบนิวแมติกส์และไฮดรอลิกอัจฉริยะสำหรับวิศวกรรมปัญญาประดิษฐ์",
     "e": "Intelligent Pneumatic and Hydraulic Systems for Artificial Intelligence Engineering",
     "cr": "3(2-2-5)",
-    "d": "หลักการพื้นฐานของระบบนิวแมติกส์และไฮดรอลิก โครงสร้างและการทำงานของแหล่งจ่ายกำลัง วาล์ว และกระบอกสูบ การออกแบบวงจรควบคุมนิวแมติกส์ ไฮดรอลิก และไฟฟ้า–นิวแมติกส์ การเลือกใช้อุปกรณ์ตรวจวัดและตัวกระตุ้นในระบบอัตโนมัติ การเชื่อมต่อกับไมโครคอนโทรลเลอร์ ตัวควบคุมแบบโปรแกรมได้ และอุปกรณ์เอดจ์ การเก็บข้อมูลสัญญาณแบบเวลาจริง การใช้การเรียนรู้ของเครื่องตรวจจับความผิดปกติและบำรุงรักษาเชิงพยากรณ์ และความปลอดภัยและประสิทธิภาพพลังงานของระบบกำลังของไหล",
+    "d": "หลักการพื้นฐานของระบบนิวแมติกส์และไฮดรอลิก โครงสร้างและการทำงานของแหล่งจ่ายกำลัง วาล์ว และกระบอกสูบ การออกแบบวงจรควบคุมนิวแมติกส์ ไฮดรอลิก และไฟฟ้า–นิวแมติกส์ การเชื่อมต่อกับตัวควบคุมแบบโปรแกรมได้และอุปกรณ์เอดจ์ การใช้การเรียนรู้ของเครื่องบำรุงรักษาเชิงพยากรณ์ และความปลอดภัยและประสิทธิภาพพลังงานของระบบกำลังของไหล",
     "dEn": "Fundamental principles of pneumatic and hydraulic systems; structure and operation of power sources, valves, and cylinders; design of pneumatic, hydraulic, and electro-pneumatic control circuits; selection of sensors and actuators in automation systems; integration with microcontrollers, programmable logic controllers, and edge devices; real-time signal acquisition; machine learning for anomaly detection and predictive maintenance; fluid-power safety and energy efficiency",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -461,7 +461,7 @@ export const COURSE_REVISION = {
     "t": "การถ่ายโอนความร้อนและมวลสารสำหรับระบบอัจฉริยะ",
     "e": "Heat and Mass Transfer for Smart Systems",
     "cr": "3(3-0-6)",
-    "d": "หลักการถ่ายโอนความร้อนและมวลสาร การนำ การพา และการแผ่รังสีความร้อน การวิเคราะห์การนำความร้อนสภาวะคงตัวและไม่คงตัว การเลือกฉนวนความร้อน การพาความร้อนแบบธรรมชาติและแบบบังคับ การแพร่และการถ่ายโอนมวลสาร การเลือกและวิเคราะห์อุปกรณ์แลกเปลี่ยนความร้อน การใช้วิธีผลต่างอันตะและการเรียนรู้ของเครื่องพยากรณ์อัตราการถ่ายโอน และการจัดการความร้อนสำหรับฮาร์ดแวร์ปัญญาประดิษฐ์ ระบบอบแห้ง ห้องเย็น และระบบพลังงาน",
+    "d": "หลักการถ่ายโอนความร้อนและมวลสาร การนำ การพา และการแผ่รังสีความร้อน การวิเคราะห์การนำความร้อนสภาวะคงตัวและไม่คงตัว การเลือกฉนวนความร้อน การแพร่และการถ่ายโอนมวลสาร การเลือกและวิเคราะห์อุปกรณ์แลกเปลี่ยนความร้อน และการจัดการความร้อนสำหรับฮาร์ดแวร์ปัญญาประดิษฐ์ ระบบอบแห้ง ห้องเย็น และระบบพลังงาน",
     "dEn": "Principles of heat and mass transfer; conduction, convection, and thermal radiation; steady-state and transient conduction analysis; thermal insulation selection; natural and forced convection; diffusion and mass transfer; selection and analysis of heat exchangers; finite-difference methods and machine learning for predicting transfer rates; thermal management of AI hardware, drying systems, cold rooms, and energy systems",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -469,7 +469,7 @@ export const COURSE_REVISION = {
     "t": "วิศวกรรมความปลอดภัยอัจฉริยะ อาชีวอนามัย และกฎหมายอุตสาหกรรม",
     "e": "Intelligent Safety Engineering, Occupational Health and Industrial Law",
     "cr": "3(2-2-5)",
-    "d": "หลักการวิศวกรรมความปลอดภัยและอาชีวอนามัยในโรงงาน กฎหมาย ข้อบังคับ และมาตรฐานความปลอดภัยทางวิศวกรรม การชี้บ่งอันตรายและการประเมินความเสี่ยงด้วยการวิเคราะห์ความปลอดภัยของงาน การวิเคราะห์อันตรายและความสามารถในการปฏิบัติการ และการวิเคราะห์รูปแบบและผลกระทบของความขัดข้อง ความปลอดภัยของเครื่องจักร ระบบไฟฟ้า และสารเคมี ความปลอดภัยเชิงหน้าที่ อินเตอร์ล็อก และระบบหยุดฉุกเฉิน สรีรศาสตร์และสุขศาสตร์อุตสาหกรรม และการใช้เซนเซอร์และปัญญาประดิษฐ์เพื่อเฝ้าระวังและวิเคราะห์ความเสี่ยง",
+    "d": "หลักการวิศวกรรมความปลอดภัยและอาชีวอนามัยในโรงงาน กฎหมาย ข้อบังคับ และมาตรฐานความปลอดภัยทางวิศวกรรม การชี้บ่งอันตรายและการประเมินความเสี่ยงด้วยการวิเคราะห์ความปลอดภัยของงานและการวิเคราะห์รูปแบบและผลกระทบของความขัดข้อง ความปลอดภัยเชิงหน้าที่ อินเตอร์ล็อก และระบบหยุดฉุกเฉิน สรีรศาสตร์อุตสาหกรรม และการใช้เซนเซอร์เฝ้าระวังความเสี่ยง",
     "dEn": "Principles of industrial safety engineering and occupational health; engineering safety laws, regulations, and standards; hazard identification and risk assessment through job safety analysis, hazard and operability studies, and failure-mode and effects analysis; safety of machinery, electrical systems, and chemicals; functional safety, interlocks, and emergency-stop systems; ergonomics and industrial hygiene; sensors and AI for risk monitoring and analysis",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -477,7 +477,7 @@ export const COURSE_REVISION = {
     "t": "การออกแบบเครื่องจักรกลอัจฉริยะ",
     "e": "Intelligent Machine Design",
     "cr": "3(2-2-5)",
-    "d": "การประยุกต์หลักการทางวิศวกรรมสำหรับการออกแบบเครื่องจักรกล การวิเคราะห์ภาระ ความเค้น ความเมื่อยล้า และความปลอดภัยของชิ้นส่วนเครื่องจักร การเลือกวัสดุและกระบวนการผลิต การออกแบบชิ้นส่วนส่งกำลัง เพลา เฟือง สายพาน และตลับลูกปืน การเขียนแบบและการสร้างแบบจำลองสามมิติด้วยคอมพิวเตอร์ การวิเคราะห์ด้วยระเบียบวิธีไฟไนต์เอลิเมนต์ การบูรณาการเซนเซอร์เข้ากับเครื่องจักร และการใช้ปัญญาประดิษฐ์หาค่าเหมาะที่สุดของการออกแบบและทำนายความเสียหาย",
+    "d": "การประยุกต์หลักการทางวิศวกรรมสำหรับการออกแบบเครื่องจักรกล การวิเคราะห์ภาระ ความเค้น และความเมื่อยล้าของชิ้นส่วนเครื่องจักร การเลือกวัสดุและกระบวนการผลิต การออกแบบชิ้นส่วนส่งกำลัง เพลา เฟือง และตลับลูกปืน การสร้างแบบจำลองสามมิติและการวิเคราะห์ด้วยไฟไนต์เอลิเมนต์ และการใช้ปัญญาประดิษฐ์หาค่าเหมาะที่สุดของการออกแบบ",
     "dEn": "Application of engineering principles to machine design; analysis of loads, stresses, fatigue, and component safety; selection of materials and manufacturing processes; design of power-transmission components, shafts, gears, belts, and bearings; engineering drawing and three-dimensional computer modeling; finite element analysis; integration of sensors into machines; AI for design optimization and failure prediction",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -485,7 +485,7 @@ export const COURSE_REVISION = {
     "t": "การออกแบบเครื่องจักรกลชั้นสูงสำหรับระบบอัตโนมัติและหุ่นยนต์",
     "e": "Advanced Machine Design for Automation and Robotics",
     "cr": "3(2-2-5)",
-    "d": "ประเภทและการทำงานของเครื่องจักรกลในระบบอัตโนมัติและหุ่นยนต์ การออกแบบกลไกและระบบส่งกำลังสำหรับการเคลื่อนที่แม่นยำ จลนศาสตร์และพลศาสตร์ของกลไกและแขนกล การเลือกมอเตอร์ เซอร์โว สเต็ปเปอร์ และชุดขับ การออกแบบโครงสร้างเครื่องจักรเพื่อความแข็งแรงและการสั่นสะเทือนต่ำ การออกแบบอุปกรณ์จับยึดและปลายแขนกล การบูรณาการระบบควบคุม เซนเซอร์ และการมองเห็นของเครื่องจักร และการประเมินความเสี่ยงพร้อมทดสอบการยอมรับ",
+    "d": "ประเภทและการทำงานของเครื่องจักรกลในระบบอัตโนมัติและหุ่นยนต์ การออกแบบกลไกและระบบส่งกำลังสำหรับการเคลื่อนที่แม่นยำ จลนศาสตร์และพลศาสตร์ของกลไกและแขนกล การเลือกมอเตอร์ เซอร์โว และชุดขับ การออกแบบโครงสร้างเพื่อความแข็งแรงและการสั่นสะเทือนต่ำ การบูรณาการระบบควบคุมและการมองเห็นของเครื่องจักร และการประเมินความเสี่ยง",
     "dEn": "Types and operation of machinery in automation and robotic systems; design of mechanisms and transmission systems for precise motion; kinematics and dynamics of mechanisms and manipulators; selection of motors, servo and stepper drives; machine structure design for stiffness and low vibration; design of fixtures and end effectors; integration of control systems, sensors, and machine vision; risk assessment and acceptance testing",
     "source": "06_Electives_Industrial_AI.md"
   },
@@ -501,7 +501,7 @@ export const COURSE_REVISION = {
     "t": "ตัวแบบภาษาขนาดใหญ่ขั้นสูง",
     "e": "Advanced Large Language Models",
     "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมและกำกับคุณภาพชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล ความเที่ยงตรงต่อข้อเท็จจริง และความทนทาน การออกแบบเกณฑ์มาตรฐานและการทดลองเปรียบเทียบ การเพิ่มประสิทธิภาพการอนุมานด้านความเร็ว ต้นทุน และพลังงาน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ",
+    "d": "สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมและกำกับคุณภาพชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ",
     "dEn": "Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; model serving with performance-degradation monitoring",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -509,7 +509,7 @@ export const COURSE_REVISION = {
     "t": "ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์",
     "e": "AI Reliability and Safety",
     "cr": "3(2-2-5)",
-    "d": "วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลปกติ ข้อมูลนอกการแจกแจง และกรณีขอบ การวัดความไม่แน่นอนและการสอบเทียบความเชื่อมั่น ความทนทานต่อการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม การทดสอบเชิงรุกและกลไกป้องกัน การติดตามการเลื่อนของข้อมูลและตัวแบบ และการจัดทำบัตรตัวแบบพร้อมหลักฐานการประกันคุณภาพ",
+    "d": "วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลนอกการแจกแจงและกรณีขอบ การวัดความไม่แน่นอนและการสอบเทียบความเชื่อมั่น ความทนทานต่อการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม และการจัดทำบัตรตัวแบบพร้อมหลักฐานการประกันคุณภาพ",
     "dEn": "Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to adversarial attacks; bias and fairness evaluation; red teaming and guardrails; monitoring of data and model drift; preparation of model cards and assurance evidence",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -517,7 +517,7 @@ export const COURSE_REVISION = {
     "t": "สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร",
     "e": "Enterprise AI Architecture",
     "cr": "3(2-2-5)",
-    "d": "การออกแบบสถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร การแบ่งขอบเขตโดเมนและบริการ สถาปัตยกรรมขับเคลื่อนด้วยเหตุการณ์ ส่วนต่อประสานและการจัดการเอพีไอ การบูรณาการกับระบบวางแผนทรัพยากรองค์กร ระบบบริหารลูกค้าสัมพันธ์ และกระบวนการทำงานเดิม การจัดการอัตลักษณ์ สิทธิ์ และสถาปัตยกรรมแบบไม่ไว้วางใจโดยปริยาย การออกแบบระบบที่ขยายขนาดได้ มีความพร้อมใช้สูง และกู้คืนจากภัยพิบัติได้ และการสังเกตการณ์ระบบพร้อมบริหารต้นทุนคลาวด์",
+    "d": "การออกแบบสถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร การแบ่งขอบเขตโดเมนและบริการ สถาปัตยกรรมขับเคลื่อนด้วยเหตุการณ์ ส่วนต่อประสานและการจัดการเอพีไอ การบูรณาการกับระบบวางแผนทรัพยากรองค์กรและกระบวนการทำงานเดิม การจัดการอัตลักษณ์และสิทธิ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง และการสังเกตการณ์ระบบพร้อมบริหารต้นทุนคลาวด์",
     "dEn": "Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, and legacy workflows; identity, access, and zero-trust architecture; scalable, highly available, and disaster-recoverable system design; observability and cloud-cost management",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -525,7 +525,7 @@ export const COURSE_REVISION = {
     "t": "การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ",
     "e": "UX/UI Design for Intelligent Systems",
     "cr": "3(3-0-6)",
-    "d": "หลักการและกระบวนการออกแบบประสบการณ์ผู้ใช้และส่วนต่อประสานสำหรับระบบปัญญาประดิษฐ์ การวิจัยและวิเคราะห์ความต้องการผู้ใช้ การคิดเชิงออกแบบ การออกแบบโครงร่างและต้นแบบ การออกแบบแผงควบคุมข้อมูลเพื่อการแสดงผล หลักการปัญญาประดิษฐ์ที่อธิบายได้สำหรับส่วนต่อประสานที่โปร่งใส การทดสอบความสามารถในการใช้งานและการประเมินประสบการณ์ผู้ใช้ และการออกแบบที่ครอบคลุมสำหรับแอปพลิเคชันเชิงพาณิชย์",
+    "d": "หลักการและกระบวนการออกแบบประสบการณ์ผู้ใช้และส่วนต่อประสานสำหรับระบบปัญญาประดิษฐ์ การวิจัยและวิเคราะห์ความต้องการผู้ใช้ การคิดเชิงออกแบบ การออกแบบโครงร่างและต้นแบบ การออกแบบแผงควบคุมข้อมูล หลักการปัญญาประดิษฐ์ที่อธิบายได้สำหรับส่วนต่อประสานที่โปร่งใส และการทดสอบความสามารถในการใช้งานและการออกแบบที่ครอบคลุม",
     "dEn": "Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for transparent interfaces; usability testing and user-experience evaluation; inclusive design for commercial applications",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -533,7 +533,7 @@ export const COURSE_REVISION = {
     "t": "ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ",
     "e": "Artificial Intelligence in Medical and Healthcare",
     "cr": "3(2-2-5)",
-    "d": "หลักการประยุกต์ใช้ปัญญาประดิษฐ์ในทางการแพทย์และระบบสาธารณสุข การจัดการฐานข้อมูลเวชระเบียนอิเล็กทรอนิกส์ การพัฒนาตัวแบบการเรียนรู้ของเครื่องเพื่อการวินิจฉัยโรคเบื้องต้น การพยากรณ์ความเสี่ยงทางสุขภาพจากข้อมูลพฤติกรรม ระบบแนะนำการรักษาเฉพาะบุคคล การบูรณาการกับอุปกรณ์สวมใส่เพื่อติดตามสัญญาณชีพ การใช้การประมวลผลภาษาธรรมชาติดึงข้อมูลจากเอกสารทางการแพทย์ และจริยธรรมและความเป็นส่วนตัวของข้อมูลผู้ป่วย",
+    "d": "หลักการประยุกต์ใช้ปัญญาประดิษฐ์ในทางการแพทย์และระบบสาธารณสุข การจัดการฐานข้อมูลเวชระเบียนอิเล็กทรอนิกส์ การพัฒนาตัวแบบเพื่อการวินิจฉัยโรคเบื้องต้น การพยากรณ์ความเสี่ยงทางสุขภาพจากข้อมูลพฤติกรรม ระบบแนะนำการรักษาเฉพาะบุคคล การบูรณาการกับอุปกรณ์สวมใส่เพื่อติดตามสัญญาณชีพ และจริยธรรมและความเป็นส่วนตัวของข้อมูลผู้ป่วย",
     "dEn": "Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment recommendation systems; integration with wearable devices to monitor vital signs; natural-language processing to extract information from medical documents; ethics and privacy of patient data",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -541,7 +541,7 @@ export const COURSE_REVISION = {
     "t": "การวิเคราะห์ข้อมูลภาพทางการแพทย์",
     "e": "Medical Image Analysis",
     "cr": "3(2-2-5)",
-    "d": "หลักการประมวลผลและการวิเคราะห์ภาพทางการแพทย์ การทำงานกับข้อมูลภาพรังสีเอกซ์ ภาพถ่ายรังสีส่วนตัดอาศัยคอมพิวเตอร์ และภาพคลื่นแม่เหล็กไฟฟ้า การใช้การเรียนรู้เชิงลึกเพื่อการตรวจจับและแบ่งส่วนอวัยวะ การวิเคราะห์ความผิดปกติและรอยโรค การสร้างตัวแบบเพื่อช่วยแพทย์วินิจฉัยโรค การลดสัญญาณรบกวนและเพิ่มความคมชัดของภาพ การบูรณาการกับระบบจัดเก็บและสื่อสารข้อมูลภาพทางการแพทย์ และการประเมินประสิทธิภาพตัวแบบ",
+    "d": "หลักการประมวลผลและการวิเคราะห์ภาพทางการแพทย์ การทำงานกับภาพรังสีเอกซ์ ภาพถ่ายรังสีส่วนตัดอาศัยคอมพิวเตอร์ และภาพคลื่นแม่เหล็กไฟฟ้า การใช้การเรียนรู้เชิงลึกเพื่อการตรวจจับและแบ่งส่วนอวัยวะ การวิเคราะห์ความผิดปกติและรอยโรค การลดสัญญาณรบกวนและเพิ่มความคมชัดของภาพ และการบูรณาการกับระบบจัดเก็บภาพทางการแพทย์พร้อมประเมินตัวแบบ",
     "dEn": "Principles of medical image processing and analysis; working with X-ray, computed-tomography, and magnetic-resonance image data; deep learning for organ detection and segmentation; analysis of abnormalities and lesions; building models to assist physicians in diagnosis; noise reduction and contrast enhancement; integration with picture archiving and communication systems; performance evaluation of models",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -549,7 +549,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีทางการเงินและปัญญาประดิษฐ์",
     "e": "Financial Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
-    "d": "หลักการของเทคโนโลยีทางการเงินและนวัตกรรมบริการทางการเงิน การประยุกต์ใช้ปัญญาประดิษฐ์ในอุตสาหกรรมการเงินและการธนาคาร ระบบการชำระเงินอิเล็กทรอนิกส์และเทคโนโลยีบล็อกเชน การวิเคราะห์ความเสี่ยงด้านสินเชื่อด้วยการเรียนรู้ของเครื่อง การตรวจจับการทุจริตทางการเงิน ระบบการลงทุนอัตโนมัติและการให้คำปรึกษาด้วยหุ่นยนต์ การวิเคราะห์พฤติกรรมผู้บริโภค การประเมินมูลค่าสินทรัพย์ และกฎระเบียบด้านเทคโนโลยีทางการเงิน",
+    "d": "หลักการของเทคโนโลยีทางการเงินและนวัตกรรมบริการทางการเงิน การประยุกต์ใช้ปัญญาประดิษฐ์ในอุตสาหกรรมการเงินและการธนาคาร ระบบการชำระเงินอิเล็กทรอนิกส์และเทคโนโลยีบล็อกเชน การวิเคราะห์ความเสี่ยงด้านสินเชื่อ การตรวจจับการทุจริตทางการเงิน ระบบการลงทุนอัตโนมัติ และกฎระเบียบด้านเทคโนโลยีทางการเงิน",
     "dEn": "Principles of financial technology and financial-service innovation; application of AI in finance and banking; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection; automated investment and robo-advisory systems; consumer behavior analysis; asset valuation models; financial-technology regulations and policies",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -557,7 +557,7 @@ export const COURSE_REVISION = {
     "t": "การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน",
     "e": "Predictive Data Analysis in Finance",
     "cr": "3(2-2-5)",
-    "d": "เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างตัวแบบพยากรณ์ราคาหุ้นและสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ที่มีผลต่อตลาด การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ อัลกอริทึมการซื้อขายความถี่สูง การสร้างและทดสอบระบบเทรดอัตโนมัติ และการแปลผลและแสดงภาพข้อมูลทางการเงินเพื่อการตัดสินใจ",
+    "d": "เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างตัวแบบพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล",
     "dEn": "Predictive-analytics techniques for financial markets; analysis of financial time-series data; price-forecasting models for stocks and financial assets with deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; interpretation and visualization of financial data for decisions",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -565,7 +565,7 @@ export const COURSE_REVISION = {
     "t": "การสร้างธุรกิจปัญญาประดิษฐ์",
     "e": "AI Venture Creation",
     "cr": "3(2-2-5)",
-    "d": "การต่อยอดต้นแบบปัญญาประดิษฐ์สู่ธุรกิจ การตรวจสอบตลาดและความพร้อมของเทคโนโลยี การกำหนดรูปแบบรายได้ ราคา เศรษฐศาสตร์ต่อหน่วย และต้นทุนการให้บริการตัวแบบ กลยุทธ์เข้าสู่ตลาด การขายระหว่างธุรกิจ และการบริหารโครงการนำร่อง การจัดการทรัพย์สินทางปัญญา การอนุญาตใช้สิทธิ์ และข้อตกลงระดับบริการ การวางแผนการปฏิบัติการและการขยายธุรกิจ และการจัดทำประมาณการทางการเงินและการนำเสนอแก่นักลงทุน",
+    "d": "การต่อยอดต้นแบบปัญญาประดิษฐ์สู่ธุรกิจ การตรวจสอบตลาดและความพร้อมของเทคโนโลยี การกำหนดรูปแบบรายได้ ราคา และเศรษฐศาสตร์ต่อหน่วย กลยุทธ์เข้าสู่ตลาดและการบริหารโครงการนำร่อง การจัดการทรัพย์สินทางปัญญาและข้อตกลงระดับบริการ และการจัดทำประมาณการทางการเงินและการนำเสนอแก่นักลงทุน",
     "dEn": "Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy, business-to-business sales, and pilot management; intellectual property, licensing, and service-level agreements; operations and scaling plans; financial projections and investor pitching",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -573,7 +573,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการโครงการซอฟต์แวร์อัจฉริยะ",
     "e": "Intelligent Software Project Management",
     "cr": "3(3-0-6)",
-    "d": "หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูลและปัญญาประดิษฐ์ การประเมินความเสี่ยงและระยะเวลาของโครงการพัฒนาตัวแบบ การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง การบริหารความคาดหวังของผู้มีส่วนได้ส่วนเสีย การควบคุมคุณภาพและการส่งมอบอย่างต่อเนื่อง และการวัดผลความสำเร็จของโครงการ",
+    "d": "หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูล การประเมินความเสี่ยงและระยะเวลาของโครงการพัฒนาตัวแบบ การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง และการควบคุมคุณภาพและการวัดผลความสำเร็จของโครงการ",
     "dEn": "Principles and methodologies of intelligent software project management; agile and Scrum; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system lifecycle; stakeholder-expectation management; quality control and continuous delivery; measuring project success",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -581,7 +581,7 @@ export const COURSE_REVISION = {
     "t": "การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์",
     "e": "Business Development and Digital Marketing with AI",
     "cr": "3(3-0-6)",
-    "d": "แนวคิดการพัฒนาธุรกิจดิจิทัลโดยใช้ปัญญาประดิษฐ์เป็นฐาน การสร้างกลยุทธ์การตลาดดิจิทัลที่ขับเคลื่อนด้วยข้อมูล การวิเคราะห์และแบ่งกลุ่มลูกค้าเป้าหมายด้วยการเรียนรู้ของเครื่อง การสร้างเนื้อหาโฆษณาและการสื่อสารการตลาดอัตโนมัติด้วยปัญญาประดิษฐ์เชิงสร้าง ระบบแนะนำสินค้าและบริการแบบเฉพาะบุคคล การวิเคราะห์ประสิทธิผลของแคมเปญ และการประยุกต์ใช้แชตบอตเพื่อการบริการลูกค้าและการขายเชิงรุก",
+    "d": "แนวคิดการพัฒนาธุรกิจดิจิทัลโดยใช้ปัญญาประดิษฐ์เป็นฐาน การสร้างกลยุทธ์การตลาดดิจิทัลที่ขับเคลื่อนด้วยข้อมูล การวิเคราะห์และแบ่งกลุ่มลูกค้าเป้าหมายด้วยการเรียนรู้ของเครื่อง การสร้างเนื้อหาการตลาดอัตโนมัติด้วยปัญญาประดิษฐ์เชิงสร้าง ระบบแนะนำสินค้าแบบเฉพาะบุคคล และการวิเคราะห์ประสิทธิผลของแคมเปญและการใช้แชตบอต",
     "dEn": "Concepts of AI-based digital business development; data-driven digital marketing strategy; customer segmentation with machine learning; automated advertising content and marketing communication with generative AI; personalized product and service recommendation systems; campaign-effectiveness analysis; chatbots for customer service and proactive selling",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -589,7 +589,7 @@ export const COURSE_REVISION = {
     "t": "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Product Management",
     "cr": "3(2-2-5)",
-    "d": "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ตลอดวงจรชีวิต การกำหนดวิสัยทัศน์ กลุ่มผู้ใช้ คุณค่าที่เสนอ และผลลัพธ์ทางธุรกิจ การจัดทำแผนที่เส้นทางผลิตภัณฑ์และเกณฑ์จัดลำดับความสำคัญ การกำหนดตัวชี้วัดผลิตภัณฑ์ ตัวชี้วัดสมรรถนะตัวแบบ และข้อจำกัดด้านความเสี่ยง การออกแบบปฏิสัมพันธ์ระหว่างมนุษย์กับปัญญาประดิษฐ์ การทดลองแบบเอ/บี การจัดการข้อมูลย้อนกลับและการเลื่อนของตัวแบบ และการตัดสินใจขยาย ปรับ หรือยุติผลิตภัณฑ์จากหลักฐาน",
+    "d": "การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ตลอดวงจรชีวิต การกำหนดวิสัยทัศน์ กลุ่มผู้ใช้ และคุณค่าที่เสนอ การจัดทำแผนที่เส้นทางผลิตภัณฑ์และเกณฑ์จัดลำดับความสำคัญ การกำหนดตัวชี้วัดผลิตภัณฑ์และข้อจำกัดด้านความเสี่ยง การออกแบบปฏิสัมพันธ์ระหว่างมนุษย์กับปัญญาประดิษฐ์ การทดลองแบบเอ/บี และการตัดสินใจขยาย ปรับ หรือยุติผลิตภัณฑ์จากหลักฐาน",
     "dEn": "AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human-AI interaction design; A/B testing; management of feedback and model drift; evidence-based decisions to scale, pivot, or retire products",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -597,7 +597,7 @@ export const COURSE_REVISION = {
     "t": "เทคโนโลยีโลกเสมือนจริงและปัญญาประดิษฐ์",
     "e": "Virtual Reality Technology and Artificial Intelligence",
     "cr": "3(2-2-5)",
-    "d": "เทคโนโลยีโลกเสมือนจริง ความเป็นจริงเสริม และความเป็นจริงผสม การบูรณาการปัญญาประดิษฐ์กับการสร้างสภาพแวดล้อมจำลอง การประมวลผลและสร้างเนื้อหาสามมิติด้วยปัญญาประดิษฐ์เชิงสร้าง การโต้ตอบกับวัตถุเสมือนด้วยคอมพิวเตอร์วิทัศน์และการประมวลผลภาษาธรรมชาติ การพัฒนาแอปพลิเคชันสำหรับการจำลองทางการแพทย์ การฝึกอบรมอุตสาหกรรม และการตลาดดิจิทัล และการวิเคราะห์พฤติกรรมผู้ใช้ในสภาพแวดล้อมดิจิทัล",
+    "d": "เทคโนโลยีโลกเสมือนจริง ความเป็นจริงเสริม และความเป็นจริงผสม การบูรณาการปัญญาประดิษฐ์กับการสร้างสภาพแวดล้อมจำลอง การสร้างเนื้อหาสามมิติด้วยปัญญาประดิษฐ์เชิงสร้าง การโต้ตอบกับวัตถุเสมือนด้วยคอมพิวเตอร์วิทัศน์และการประมวลผลภาษาธรรมชาติ การพัฒนาแอปพลิเคชันสำหรับการฝึกอบรมอุตสาหกรรมและการตลาดดิจิทัล และการวิเคราะห์พฤติกรรมผู้ใช้",
     "dEn": "Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of applications for medical simulation, industrial training, and digital marketing; analysis of user behavior in digital environments",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -605,7 +605,7 @@ export const COURSE_REVISION = {
     "t": "ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์",
     "e": "AI Governance and Risk",
     "cr": "3(2-2-5)",
-    "d": "กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว ความเป็นธรรม และความปลอดภัย การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูลและมาตรฐานที่เกี่ยวข้อง การจัดการความเสี่ยงจากตัวแบบภายนอก การจัดทำทะเบียนความเสี่ยง บัตรตัวแบบ และหลักฐานสำหรับการตรวจประเมิน และการติดตามหลังนำใช้พร้อมรายงานเหตุการณ์",
+    "d": "กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว และความเป็นธรรม การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูลและมาตรฐานที่เกี่ยวข้อง และการจัดทำทะเบียนความเสี่ยง บัตรตัวแบบ และหลักฐานสำหรับการตรวจประเมิน",
     "dEn": "AI governance and risk-management frameworks; system inventories and risk classification; impact assessment for rights, privacy, fairness, and safety; roles, accountability, and human oversight; compliance with data-protection laws and relevant standards; third-party and external-model risk; risk registers, model cards, and audit evidence; post-deployment monitoring and incident reporting",
     "source": "07_Electives_AI_Innovation.md"
   },
@@ -613,7 +613,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1",
     "e": "Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 1",
     "cr": "3(2-2-5)",
-    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานและการบริหารเวลาภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลและทรัพยากรของสถานประกอบการอย่างมีจริยธรรมและรักษาความลับ การทดสอบ การส่งมอบ และการถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าและการนำเสนอผลต่ออาจารย์นิเทศและพี่เลี้ยงในสถานประกอบการ และการประเมินผลร่วมระหว่างมหาวิทยาลัยกับสถานประกอบการ",
+    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลขององค์กรอย่างมีจริยธรรมและรักษาความลับ การทดสอบ ส่งมอบ และถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าต่ออาจารย์นิเทศและพี่เลี้ยง และการประเมินผลร่วมกับสถานประกอบการ",
     "dEn": "Analysis of problems and requirements from the host organization; work planning and time management under organizational constraints; design and development of AI or intelligent systems in a real work context; ethical and confidential use of organizational data and resources; testing, delivery, and handover to users; progress reporting and presentation to the academic supervisor and workplace mentor; joint assessment by the university and the host organization",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -621,7 +621,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 2",
     "e": "Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 2",
     "cr": "3(2-2-5)",
-    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานและการบริหารเวลาภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลและทรัพยากรของสถานประกอบการอย่างมีจริยธรรมและรักษาความลับ การทดสอบ การส่งมอบ และการถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าและการนำเสนอผลต่ออาจารย์นิเทศและพี่เลี้ยงในสถานประกอบการ และการประเมินผลร่วมระหว่างมหาวิทยาลัยกับสถานประกอบการ",
+    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลขององค์กรอย่างมีจริยธรรมและรักษาความลับ การทดสอบ ส่งมอบ และถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าต่ออาจารย์นิเทศและพี่เลี้ยง และการประเมินผลร่วมกับสถานประกอบการ",
     "dEn": "Analysis of problems and requirements from the host organization; work planning and time management under organizational constraints; design and development of AI or intelligent systems in a real work context; ethical and confidential use of organizational data and resources; testing, delivery, and handover to users; progress reporting and presentation to the academic supervisor and workplace mentor; joint assessment by the university and the host organization",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -629,7 +629,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 3",
     "e": "Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 3",
     "cr": "3(2-2-5)",
-    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานและการบริหารเวลาภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลและทรัพยากรของสถานประกอบการอย่างมีจริยธรรมและรักษาความลับ การทดสอบ การส่งมอบ และการถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าและการนำเสนอผลต่ออาจารย์นิเทศและพี่เลี้ยงในสถานประกอบการ และการประเมินผลร่วมระหว่างมหาวิทยาลัยกับสถานประกอบการ",
+    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลขององค์กรอย่างมีจริยธรรมและรักษาความลับ การทดสอบ ส่งมอบ และถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าต่ออาจารย์นิเทศและพี่เลี้ยง และการประเมินผลร่วมกับสถานประกอบการ",
     "dEn": "Analysis of problems and requirements from the host organization; work planning and time management under organizational constraints; design and development of AI or intelligent systems in a real work context; ethical and confidential use of organizational data and resources; testing, delivery, and handover to users; progress reporting and presentation to the academic supervisor and workplace mentor; joint assessment by the university and the host organization",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -637,7 +637,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 4",
     "e": "Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 4",
     "cr": "3(2-2-5)",
-    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานและการบริหารเวลาภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลและทรัพยากรของสถานประกอบการอย่างมีจริยธรรมและรักษาความลับ การทดสอบ การส่งมอบ และการถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าและการนำเสนอผลต่ออาจารย์นิเทศและพี่เลี้ยงในสถานประกอบการ และการประเมินผลร่วมระหว่างมหาวิทยาลัยกับสถานประกอบการ",
+    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลขององค์กรอย่างมีจริยธรรมและรักษาความลับ การทดสอบ ส่งมอบ และถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าต่ออาจารย์นิเทศและพี่เลี้ยง และการประเมินผลร่วมกับสถานประกอบการ",
     "dEn": "Analysis of problems and requirements from the host organization; work planning and time management under organizational constraints; design and development of AI or intelligent systems in a real work context; ethical and confidential use of organizational data and resources; testing, delivery, and handover to users; progress reporting and presentation to the academic supervisor and workplace mentor; joint assessment by the university and the host organization",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -645,7 +645,7 @@ export const COURSE_REVISION = {
     "t": "การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 5",
     "e": "Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 5",
     "cr": "3(2-2-5)",
-    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานและการบริหารเวลาภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลและทรัพยากรของสถานประกอบการอย่างมีจริยธรรมและรักษาความลับ การทดสอบ การส่งมอบ และการถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าและการนำเสนอผลต่ออาจารย์นิเทศและพี่เลี้ยงในสถานประกอบการ และการประเมินผลร่วมระหว่างมหาวิทยาลัยกับสถานประกอบการ",
+    "d": "การวิเคราะห์โจทย์และข้อกำหนดจากสถานประกอบการ การวางแผนงานภายใต้เงื่อนไขขององค์กร การออกแบบและพัฒนาระบบปัญญาประดิษฐ์หรือระบบอัจฉริยะตามบริบทงานจริง การใช้ข้อมูลขององค์กรอย่างมีจริยธรรมและรักษาความลับ การทดสอบ ส่งมอบ และถ่ายทอดงานแก่ผู้ใช้ การรายงานความก้าวหน้าต่ออาจารย์นิเทศและพี่เลี้ยง และการประเมินผลร่วมกับสถานประกอบการ",
     "dEn": "Analysis of problems and requirements from the host organization; work planning and time management under organizational constraints; design and development of AI or intelligent systems in a real work context; ethical and confidential use of organizational data and resources; testing, delivery, and handover to users; progress reporting and presentation to the academic supervisor and workplace mentor; joint assessment by the university and the host organization",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -653,7 +653,7 @@ export const COURSE_REVISION = {
     "t": "หัวข้อพิเศษด้านเทคโนโลยีเกิดใหม่ทางปัญญาประดิษฐ์และระบบอัจฉริยะ 1",
     "e": "Special Topics in Emerging Artificial Intelligence and Intelligent System Technologies 1",
     "cr": "3(2-2-5)",
-    "d": "หัวข้อคัดสรรด้านเทคโนโลยีปัญญาประดิษฐ์และระบบอัจฉริยะที่เกิดใหม่ในขณะนั้น หลักการและสถาปัตยกรรมของเทคโนโลยีที่ศึกษา การทดลองใช้เครื่องมือและกรอบงานร่วมสมัย การวิเคราะห์ข้อจำกัด ความเสี่ยง และความเหมาะสมกับบริบทเกษตร อุตสาหกรรม หรือองค์กร การพัฒนาชิ้นงานหรือกรณีศึกษาเชิงประจักษ์ และการประเมินแนวโน้มการนำไปใช้จริง โดยเค้าโครงรายวิชาต้องผ่านความเห็นชอบของคณะกรรมการบริหารหลักสูตรก่อนเปิดสอนในแต่ละภาคการศึกษา",
+    "d": "หัวข้อคัดสรรด้านเทคโนโลยีปัญญาประดิษฐ์และระบบอัจฉริยะที่เกิดใหม่ในขณะนั้น หลักการและสถาปัตยกรรมของเทคโนโลยีที่ศึกษา การทดลองใช้เครื่องมือและกรอบงานร่วมสมัย การวิเคราะห์ข้อจำกัด ความเสี่ยง และความเหมาะสมกับบริบทเกษตร อุตสาหกรรม หรือองค์กร การพัฒนาชิ้นงานหรือกรณีศึกษาเชิงประจักษ์ และการประเมินแนวโน้มการนำไปใช้จริง",
     "dEn": "Selected topics in emerging artificial intelligence and intelligent system technologies; principles and architectures of the technology under study; hands-on experimentation with contemporary tools and frameworks; analysis of limitations, risks, and suitability for agricultural, industrial, or enterprise contexts; development of an artifact or empirical case study; assessment of adoption trends; the course outline must be approved by the curriculum committee before each offering",
     "source": "07B_Electives_Work_Integrated.md"
   },
@@ -661,7 +661,7 @@ export const COURSE_REVISION = {
     "t": "หัวข้อพิเศษด้านเทคโนโลยีเกิดใหม่ทางปัญญาประดิษฐ์และระบบอัจฉริยะ 2",
     "e": "Special Topics in Emerging Artificial Intelligence and Intelligent System Technologies 2",
     "cr": "3(2-2-5)",
-    "d": "หัวข้อคัดสรรด้านเทคโนโลยีปัญญาประดิษฐ์และระบบอัจฉริยะที่เกิดใหม่ในขณะนั้น หลักการและสถาปัตยกรรมของเทคโนโลยีที่ศึกษา การทดลองใช้เครื่องมือและกรอบงานร่วมสมัย การวิเคราะห์ข้อจำกัด ความเสี่ยง และความเหมาะสมกับบริบทเกษตร อุตสาหกรรม หรือองค์กร การพัฒนาชิ้นงานหรือกรณีศึกษาเชิงประจักษ์ และการประเมินแนวโน้มการนำไปใช้จริง โดยเค้าโครงรายวิชาต้องผ่านความเห็นชอบของคณะกรรมการบริหารหลักสูตรก่อนเปิดสอนในแต่ละภาคการศึกษา",
+    "d": "หัวข้อคัดสรรด้านเทคโนโลยีปัญญาประดิษฐ์และระบบอัจฉริยะที่เกิดใหม่ในขณะนั้น หลักการและสถาปัตยกรรมของเทคโนโลยีที่ศึกษา การทดลองใช้เครื่องมือและกรอบงานร่วมสมัย การวิเคราะห์ข้อจำกัด ความเสี่ยง และความเหมาะสมกับบริบทเกษตร อุตสาหกรรม หรือองค์กร การพัฒนาชิ้นงานหรือกรณีศึกษาเชิงประจักษ์ และการประเมินแนวโน้มการนำไปใช้จริง",
     "dEn": "Selected topics in emerging artificial intelligence and intelligent system technologies; principles and architectures of the technology under study; hands-on experimentation with contemporary tools and frameworks; analysis of limitations, risks, and suitability for agricultural, industrial, or enterprise contexts; development of an artifact or empirical case study; assessment of adoption trends; the course outline must be approved by the curriculum committee before each offering",
     "source": "07B_Electives_Work_Integrated.md"
   },

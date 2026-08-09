@@ -23,22 +23,22 @@ Discovery and formulation of problems suitable for artificial intelligence; user
 
 EN-132-202 ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน 3(2-2-5)  
 Decision Intelligence and Supply Chain Management  
-หลักการของระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์เพื่อการตัดสินใจ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์ อุปทาน และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน การประเมินความยั่งยืน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ  
+หลักการของระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์เพื่อการตัดสินใจ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ
 Principles of decision-support systems and decision intelligence; operational indicators; predictive and prescriptive analytics; forecasting of demand, supply, and capacity; planning of materials, inventory, and logistics; traceability and risk management; operations-research optimization; sustainability assessment; design of human-in-the-loop recommendation systems
 
 EN-132-303 ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ 3(2-2-5)  
 Smart Farming Systems and Precision Agriculture  
-สถาปัตยกรรมและองค์ประกอบของระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ การออกแบบระบบตรวจวัดดิน น้ำ อากาศ และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง คลาวด์ และภูมิสารสนเทศ ระบบชลประทานอัตโนมัติ การพยากรณ์ผลผลิต โรค และแมลง ระบบสนับสนุนการตัดสินใจฟาร์ม การบูรณาการหุ่นยนต์และอากาศยานไร้คนขับเข้ากับระบบฟาร์ม และการประเมินประสิทธิภาพการใช้ทรัพยากร  
+สถาปัตยกรรมและองค์ประกอบของระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ การออกแบบระบบตรวจวัดดิน น้ำ อากาศ และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง คลาวด์ และภูมิสารสนเทศ ระบบชลประทานอัตโนมัติ การพยากรณ์ผลผลิต โรค และแมลง ระบบสนับสนุนการตัดสินใจฟาร์ม และการบูรณาการหุ่นยนต์และอากาศยานไร้คนขับเข้ากับระบบฟาร์ม
 Architecture and components of smart farming and precision agriculture; design of systems measuring soil, water, weather, and growth; integration of IoT, cloud, and geospatial data; automated irrigation; forecasting of yields, diseases, and pests; farm decision-support systems; integration of robots and unmanned aerial vehicles with farm systems; assessment of resource-use efficiency
 
 EN-132-304 ระบบการผลิตอัจฉริยะและหุ่นยนต์อุตสาหกรรม 3(2-2-5)  
 Smart Manufacturing and Industrial Robotics Systems  
-หลักวิศวกรรมกระบวนการผลิต การสร้างแบบจำลองกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับสารสนเทศ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และเครือข่ายอุตสาหกรรม หุ่นยนต์อุตสาหกรรมและการออกแบบเซลล์หุ่นยนต์ ประสิทธิผลโดยรวมของเครื่องจักร การควบคุมกระบวนการเชิงสถิติ และการบำรุงรักษาเชิงพยากรณ์ ความปลอดภัยของเครื่องจักร และการประเมินพลังงานและคาร์บอน  
+หลักวิศวกรรมกระบวนการผลิต การสร้างแบบจำลองกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับสารสนเทศ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และเครือข่ายอุตสาหกรรม หุ่นยนต์อุตสาหกรรมและการออกแบบเซลล์หุ่นยนต์ ประสิทธิผลโดยรวมของเครื่องจักรและการบำรุงรักษาเชิงพยากรณ์ และความปลอดภัยของเครื่องจักร
 Principles of process and production engineering; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; programmable logic controllers, SCADA, and industrial networks; industrial robots and robotic-cell design; overall equipment effectiveness, statistical process control, and predictive maintenance; machine safety; assessment of energy and carbon
 
 EN-132-305 วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์ 3(2-2-5)  
 Software and AI Engineering  
-วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบ การพัฒนาไมโครเซอร์วิสและส่วนต่อประสานโปรแกรมประยุกต์ การออกแบบซอฟต์แวร์ที่บำรุงรักษาได้ การทดสอบซอฟต์แวร์และการประกันคุณภาพตัวแบบ การควบคุมเวอร์ชันและการทำงานเป็นทีม และการนำขึ้นใช้บนคลาวด์ คอนเทนเนอร์ และอุปกรณ์เอดจ์  
+วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบ การพัฒนาไมโครเซอร์วิสและส่วนต่อประสานโปรแกรมประยุกต์ การออกแบบซอฟต์แวร์ที่บำรุงรักษาได้ การทดสอบและการประกันคุณภาพตัวแบบ การควบคุมเวอร์ชัน และการนำขึ้นใช้บนคลาวด์ คอนเทนเนอร์ และอุปกรณ์เอดจ์
 The AI software development lifecycle and modern software-engineering processes; requirements analysis and system architecture design; microservices and application programming interfaces; maintainable software design; software testing and model quality assurance; version control and team collaboration; deployment on cloud, container, and edge platforms
 
 EN-132-306 ระบบเอเจนต์ปัญญาประดิษฐ์ 3(2-2-5)  
@@ -48,7 +48,7 @@ Concepts and architectures of AI agents from reactive to deliberative planning; 
 
 EN-132-307 อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ 3(2-2-5)  
 Unmanned Aerial Vehicles for Smart Agricultural Engineering  
-ข้อกำกับ กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานสำนักงานการบินพลเรือนแห่งประเทศไทย หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การตรวจวัดระยะไกลและการสร้างแผนที่ดิจิทัล การวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชด้วยดัชนีพืชพรรณและการฉีดพ่นแม่นยำ และการทดสอบภาคสนามพร้อมประเมินสมรรถนะ  
+ข้อกำกับ กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การสร้างแผนที่ดิจิทัลและการวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม
 Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; field testing with performance evaluation
 
 EN-132-308 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ 1(0-3-1)  
