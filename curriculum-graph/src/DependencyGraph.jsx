@@ -172,7 +172,7 @@ export default function DependencyGraph() {
     <div className="graphwrap">
       <div className="note">
         {scope === "core"
-          ? "กราฟแสดงลำดับรายวิชาแกนในแผนการเรียน 133 หน่วยกิต และตรวจให้วิชา Hard prerequisite อยู่ในภาคก่อนหน้าแล้ว"
+          ? "กราฟแสดงลำดับรายวิชาแกนในแผนการเรียน 125 หน่วยกิต และตรวจให้วิชา Hard prerequisite อยู่ในภาคก่อนหน้าแล้ว"
           : "กราฟแสดงวิชาแกนร่วมกับวิชาเลือก Track 3 เพื่อทวนสอบเส้นทาง Advanced LLM, AI Reliability, Enterprise Architecture, AI Venture, Product Management และ AI Governance"}
       </div>
       <div className="graphbar">

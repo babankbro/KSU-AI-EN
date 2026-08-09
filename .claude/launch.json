@@ -4,8 +4,8 @@
     {
       "name": "curriculum-graph",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "curriculum-graph"],
-      "port": 5173
+      "runtimeArgs": ["run", "dev", "--prefix", "curriculum-graph", "--", "--port", "5180", "--strictPort"],
+      "port": 5180
     }
   ]
 }
