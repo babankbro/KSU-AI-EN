@@ -137,7 +137,7 @@ export const COURSE_REVISION = {
     "dEn": "Data lifecycle and architecture; dataset specifications, data models, and data contracts; relational databases, SQL, NoSQL databases, data warehouses, data lakes, and lakehouse architecture; design of batch and streaming pipelines; extract, transform, and load processes; workflow orchestration and distributed processing; validation of data quality, completeness, and change; data governance, metadata, lineage, versioning, and data protection; design of semantic layers and models for business analytics; integration of sensor, farm, production-process, supply-chain, and enterprise data for AI and decision-support systems",
     "source": "03_AI_Core.md"
   },
-  "EN-132-301": {
+  "EN-132-201": {
     "t": "ธุรกิจอัจฉริยะและการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Business Intelligence and Product Design",
     "cr": "3(2-2-5)",
@@ -145,7 +145,7 @@ export const COURSE_REVISION = {
     "dEn": "Discovery and formulation of problems suitable for artificial intelligence; user, customer, market, and stakeholder research; process and value-chain mapping; analysis of business data to identify product opportunities; definition of functional, data, model, performance, security, and operational requirements; assessment of data, technology, legal, resource, and business readiness and feasibility; conceptual architecture and product prototyping; business-model, value-proposition, total-cost-of-ownership, and return design; responsible and sustainable design; intellectual property; acceptance criteria; user testing; adoption planning; change management; and AI product roadmaps for agriculture, industry, and enterprise",
     "source": "04_Track_Core.md"
   },
-  "EN-132-306": {
+  "EN-132-203": {
     "t": "ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน",
     "e": "Decision Intelligence and Supply Chain Management",
     "cr": "3(2-2-5)",
@@ -153,7 +153,7 @@ export const COURSE_REVISION = {
     "dEn": "Principles of decision-support systems and decision intelligence; operational indicators and data models; descriptive, diagnostic, predictive, and prescriptive analytics; forecasting of demand, supply, prices, yields, and capacity; planning of materials, inventory, production, warehouses, logistics, and transportation; traceability and risk management; scenario and uncertainty analysis, simulation, and operations-research optimization; design of recommendation and human-in-the-loop decision systems; dashboards and communication of recommendations to operators, executives, farmers, and entrepreneurs; case studies in rice, sugarcane, sugar, cassava, industrial production, and enterprise services",
     "source": "04_Track_Core.md"
   },
-  "EN-132-304": {
+  "EN-132-202": {
     "t": "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ",
     "e": "Smart Farming Systems and Precision Agriculture",
     "cr": "3(2-2-5)",
@@ -161,7 +161,7 @@ export const COURSE_REVISION = {
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
-  "EN-132-305": {
+  "EN-132-302": {
     "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
     "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
@@ -169,7 +169,7 @@ export const COURSE_REVISION = {
     "dEn": "Regulation, law, safety, and ethics of autonomous agricultural systems; principles of unmanned aerial vehicles; operating conditions; transportation; and aircraft registration; mission and flight-path planning; high-precision satellite positioning; spatial data acquisition using sensors and RGB, multispectral, and thermal cameras; principles of remote sensing; digital mapping; terrain and three-dimensional modeling; geographic information systems and GeoAI; application of artificial intelligence to the processing and analysis of aerial imagery; principles of agricultural mobile robots and manipulators; perception, localization, navigation, obstacle avoidance, machine vision, and actuator control; crop-health assessment; precision spraying; surveying; and harvesting; integration of UAV and robot data with farm systems; field testing of performance, safety, and environmental responsibility",
     "source": "04_Track_Core.md"
   },
-  "EN-132-302": {
+  "EN-132-301": {
     "t": "วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์",
     "e": "Software and AI Engineering",
     "cr": "3(2-2-5)",
@@ -177,7 +177,7 @@ export const COURSE_REVISION = {
     "dEn": "Processes and lifecycle of AI software engineering; requirements analysis and solution-architecture design; design of data models, databases, application programming interfaces, and system integration; development of back-end, front-end, and full-stack applications connected to AI models; responsible use of AI development assistants; version control; code review; unit, interface, system, and model testing; quality assurance, security, and privacy; continuous integration and delivery pipelines; containerization and deployment to cloud and edge; monitoring of logs, metrics, traces, and service-level objectives; acceptance testing; documentation; operational runbooks; incident management; and system handover",
     "source": "04_Track_Core.md"
   },
-  "EN-132-303": {
+  "EN-132-304": {
     "t": "ระบบเอเจนต์ปัญญาประดิษฐ์",
     "e": "Agentic AI Systems",
     "cr": "3(2-2-5)",

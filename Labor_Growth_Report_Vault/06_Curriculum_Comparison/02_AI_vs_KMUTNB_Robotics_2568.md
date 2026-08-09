@@ -263,9 +263,9 @@
 | ลำดับ | การดำเนินการ | ตำแหน่งที่แนะนำ | หลักฐานความสำเร็จ |
 |---:|---|---|---|
 | 1 | ปิดยอดหน่วยกิต 98/100 และยืนยัน Workshop | โครงสร้างหลักสูตร | ตารางหน่วยกิตทุกส่วนรวมตรง 130 |
-| 2 | เพิ่ม ROS 2, coordinate frame และ sensor/actuator integration | `EN-132-307 ระบบอัตโนมัติและหุ่นยนต์` | mobile/industrial robot demo ที่ส่งข้อมูลและคำสั่งผ่าน ROS 2 |
+| 2 | เพิ่ม ROS 2, coordinate frame และ sensor/actuator integration | `EN-132-303 ระบบอัตโนมัติและหุ่นยนต์` | mobile/industrial robot demo ที่ส่งข้อมูลและคำสั่งผ่าน ROS 2 |
 | 3 | เพิ่ม latency, profiling และ edge deployment | `EN-131-206`, `EN-131-208` | deploy model บน edge พร้อมวัด latency/power/resource |
-| 4 | เพิ่ม MLOps สำหรับ cyber-physical system | `EN-131-207`, `EN-132-307` | versioned model + rollback + monitoring + digital thread |
+| 4 | เพิ่ม MLOps สำหรับ cyber-physical system | `EN-131-207`, `EN-132-303` | versioned model + rollback + monitoring + digital thread |
 | 5 | เพิ่ม safety/calibration/OT security rubric | Workshop 3 และ Capstone | hazard analysis, fail-safe test, calibration record และ security checklist |
 | 6 | ทำ elective pathway “AI Robotics Integration” | แขนง Industrial AI | ROS 2, autonomous systems, machine vision และ predictive maintenance อย่างน้อย 3 วิชาเชื่อมกัน |
 | 7 | ทบทวนขนาด Capstone | `EN-134-302/404` | workload สอดคล้องจำนวนหน่วยกิต หรือแยก Capstone I–II |

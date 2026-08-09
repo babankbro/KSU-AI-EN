@@ -125,10 +125,10 @@
 
 | รหัสเดิม   | ชื่อเดิม                                | ชื่อ/ขอบเขตเสนอใหม่                                                                                                                                 | Skills/Careers                     |
 | ---------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| EN-132-301 | AI Business and Product Design          | **AI Product, Requirements and Solution Design** — problem discovery, requirements, architecture concept, prototype, feasibility, acceptance/change | H20, S6, S8–S10 · C02/C08/C09      |
-| EN-132-306 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | H3, H11, H13, H19 · C12/C15/C17    |
-| EN-132-302 | Software Development and AI Engineering | **AI Software, Solution Architecture and Integration** — backend/API, full-stack, integration, testing, CI/CD, observability, handover              | H2, H4, H20, S10 · C02/C06/C07/C11 |
-| EN-132-303 | Agentic AI Systems                      | **Generative and Agentic AI Systems** — LLM/RAG/agents/tool use, evaluation, security, cost/latency                                                 | H6, H7, H10, H20 · C01/C02/C06     |
+| EN-132-201 | AI Business and Product Design          | **AI Product, Requirements and Solution Design** — problem discovery, requirements, architecture concept, prototype, feasibility, acceptance/change | H20, S6, S8–S10 · C02/C08/C09      |
+| EN-132-203 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | H3, H11, H13, H19 · C12/C15/C17    |
+| EN-132-301 | Software Development and AI Engineering | **AI Software, Solution Architecture and Integration** — backend/API, full-stack, integration, testing, CI/CD, observability, handover              | H2, H4, H20, S10 · C02/C06/C07/C11 |
+| EN-132-304 | Agentic AI Systems                      | **Generative and Agentic AI Systems** — LLM/RAG/agents/tool use, evaluation, security, cost/latency                                                 | H6, H7, H10, H20 · C01/C02/C06     |
 
 ### 5.3 วิชาบังคับเฉพาะ Track 4 วิชา / 12 หน่วยกิต
 
@@ -197,13 +197,13 @@
 
 | วิชาเสนอ | ดำเนินการจากของเดิม |
 |---|---|
-| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-132-307/201 |
+| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-132-303/201 |
 | Smart Warehouse, AGV and Material Handling | รวม 135-318 + 135-326 |
-| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-132-306 |
+| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-132-203 |
 | Agro-industrial Process, Food Quality and Safety | ปรับ 135-320 |
 | Rice–Sugar–Cassava Industrial AI Studio | รวม 135-321/322/323 เป็น rotating case studio |
-| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-132-307 |
-| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-132-307 |
+| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-132-303 |
+| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-132-303 |
 | Industrial Computer Vision and Automated Quality | คง/เพิ่ม SPC integration ใน 135-329 |
 | Smart Energy, Thermal Process and Sustainable Factory | รวม 135-325 + 135-330 |
 
@@ -217,11 +217,11 @@
 
 | รหัส | รายวิชาปรับใหม่ | ความซ้ำเดิม | ความลึกและช่องว่างที่ปิด |
 |---|---|---|---|
-| EN-135-335 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-132-303 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
-| EN-135-336 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-132-302 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
-| EN-135-337 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-132-302/EN-131-207 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
-| EN-135-343 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-132-301 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
-| EN-135-346 | AI Product Management | design thinking และ product design ซ้ำ EN-132-301 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
+| EN-135-335 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-132-304 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
+| EN-135-336 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-132-301 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
+| EN-135-337 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-132-301/EN-131-207 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
+| EN-135-343 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-132-201 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
+| EN-135-346 | AI Product Management | design thinking และ product design ซ้ำ EN-132-201 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
 | EN-135-348 | AI Governance and Risk | จริยธรรมและกฎหมายเบื้องต้นซ้ำแกน AI และ PLO4 | AI inventory, risk tiering, impact assessment, third-party risk, audit evidence, monitoring และ incident governance |
 
 รายวิชาที่ยังคงไว้เพราะเป็นความเชี่ยวชาญเฉพาะทางและไม่ซ้ำวิชาแกนโดยตรง:
