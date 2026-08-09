@@ -14,7 +14,7 @@
 | 2.1 พื้นฐานวิศวกรรม + ปฏิบัติการ | EN-001-1xx (ปี 1) / 201 (ปี 2) | 24 | 10 | [[02_Engineering_Fundamentals]] |
 | 2.2 แกนปัญญาประดิษฐ์และระบบอัจฉริยะ | EN-131-1xx (ปี 1) / 2xx (ปี 2) | 22 | 8 | [[03_AI_Core]] |
 | 2.3 วิชาชีพบังคับ | EN-132-3xx (ปี 3) | 22 | 8 | [[04_Track_Core]] |
-| 2.4 วิชาชีพเลือก (เลือก 5 วิชา) | EN-135-3xx | 15 | pool 50 | [[05_Electives_Smart_Agriculture]] · [[06_Electives_Industrial_AI]] · [[07_Electives_AI_Innovation]] |
+| 2.4 วิชาชีพเลือก (เลือก 5 วิชา) | EN-135-301–350 | 15 | pool 50 | [[05_Electives_Smart_Agriculture]] · [[06_Electives_Industrial_AI]] · [[07_Electives_AI_Innovation]] |
 | 2.5 โครงงานและสัมมนา | EN-134-3xx (ปี 3) / 4xx (ปี 4) | 5 | 3 | [[08_Project_and_Seminar]] |
 | 2.6 ประสบการณ์ภาคสนาม | EN-135-401 (ปี 3 ภาค 6) / 402 (ปี 4 ภาค 8) | 7 | 2 | [[09_Field_Experience]] |
 | 3. เลือกเสรี | — | 6 | 2 | (รายวิชามหาวิทยาลัย) |
