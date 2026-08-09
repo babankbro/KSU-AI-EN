@@ -106,16 +106,16 @@ export const COURSE_REVISION = {
     "source": "03_AI_Core.md"
   },
   "EN-131-206": {
-    "t": "ระบบอินเทอร์เน็ตของสรรพสิ่งอัจฉริยะและการประมวลผลที่ขอบเครือข่าย",
-    "e": "Smart Internet of Things and Edge Computing",
+    "t": "ระบบตรวจวัด ขับเคลื่อน และไอโอทีอัจฉริยะ",
+    "e": "Smart Sensing, Actuation and Internet of Things Systems",
     "cr": "3(2-2-5)",
     "d": "สถาปัตยกรรมระบบกายภาพ–ไซเบอร์และอินเทอร์เน็ตของสรรพสิ่ง เซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และระบบฝังตัว การสื่อสารระยะใกล้ ระยะไกล และพลังงานต่ำ โพรโทคอลอินเทอร์เน็ตของสรรพสิ่งและโพรโทคอลอุตสาหกรรม เกตเวย์ การประมวลผลสตรีมและอนุกรมเวลาที่เอดจ์ การอนุมานปัญญาประดิษฐ์และการจัดการตัวแบบบนอุปกรณ์ การเชื่อมต่อเอดจ์กับแพลตฟอร์มข้อมูลและคลาวด์ การลงทะเบียน การกำหนดค่า การติดตาม และการปรับปรุงอุปกรณ์ ความน่าเชื่อถือ ความทนทานต่อความขัดข้อง ความมั่นคงปลอดภัย และความเป็นส่วนตัว การออกแบบและทดสอบระบบสำหรับฟาร์ม โรงงาน ระบบสาธารณูปโภค และบริการอัจฉริยะ",
     "dEn": "Architecture of cyber-physical and Internet of Things systems; sensors, actuators, microcontrollers, and embedded systems; short-range, long-range, and low-power communication; IoT and industrial protocols; gateways; edge-based stream and time-series processing; AI inference and model management on devices; connection of edge systems to data platforms and cloud services; device registration, configuration, monitoring, and updating; reliability, fault tolerance, security, and privacy; design and testing of systems for farms, factories, utilities, and intelligent services",
     "source": "03_AI_Core.md"
   },
   "EN-131-207": {
-    "t": "ระบบประมวลผลคลาวด์และการดำเนินการเรียนรู้ของเครื่อง",
-    "e": "Cloud Computing and Machine Learning Operations",
+    "t": "โครงสร้างพื้นฐานคลาวด์และการดำเนินการเรียนรู้ของเครื่อง",
+    "e": "Cloud Infrastructure and Machine Learning Operations",
     "cr": "3(2-2-5)",
     "d": "สถาปัตยกรรมและรูปแบบบริการคลาวด์ เครื่องเสมือน คอนเทนเนอร์ และการจัดการทรัพยากรคำนวณสำหรับปัญญาประดิษฐ์ การติดตามการทดลอง การจัดการข้อมูล คุณลักษณะ ตัวแบบ และทะเบียนตัวแบบ การสร้างไปป์ไลน์ฝึก ทดสอบ นำขึ้นใช้ และปรับปรุงตัวแบบ การรวม การส่งมอบ และการฝึกอย่างต่อเนื่อง การตรวจสอบคุณภาพและอนุมัติการนำขึ้นใช้ การติดตามสมรรถนะ การเลื่อนของข้อมูลและตัวแบบ บันทึก เมตริก ร่องรอย และการแจ้งเตือน วัตถุประสงค์ระดับบริการและคู่มือปฏิบัติการ การคืนกลับและตอบสนองเหตุการณ์ การปรับสมดุลความแม่นยำ ความเร็ว ความพร้อมใช้ ต้นทุน พลังงาน และคาร์บอน การประยุกต์ใช้ MLOps กับระบบเกษตร อุตสาหกรรม และบริการดิจิทัล",
     "dEn": "Cloud architectures and service models; virtual machines, containers, and management of AI computing resources; experiment tracking; management of data, features, models, and model registries; construction of model training, testing, deployment, and updating pipelines; continuous integration, delivery, and training; quality gates and deployment approval; monitoring of performance and data or model drift; logs, metrics, traces, and alerts; service-level objectives and operational runbooks; rollback and incident response; balancing accuracy, latency, availability, cost, energy, and carbon; application of MLOps to agricultural, industrial, and digital-service systems",
@@ -137,14 +137,6 @@ export const COURSE_REVISION = {
     "dEn": "Data lifecycle and architecture; dataset specifications, data models, and data contracts; relational databases, SQL, NoSQL databases, data warehouses, data lakes, and lakehouse architecture; design of batch and streaming pipelines; extract, transform, and load processes; workflow orchestration and distributed processing; validation of data quality, completeness, and change; data governance, metadata, lineage, versioning, and data protection; design of semantic layers and models for business analytics; integration of sensor, farm, production-process, supply-chain, and enterprise data for AI and decision-support systems",
     "source": "03_AI_Core.md"
   },
-  "EN-131-208": {
-    "t": "โครงสร้างพื้นฐานฮาร์ดแวร์และระบบเครือข่ายสำหรับการประมวลผลปัญญาประดิษฐ์",
-    "e": "Infrastructure and Network Systems for AI Computing",
-    "cr": "3(3-0-6)",
-    "d": "สถาปัตยกรรมคอมพิวเตอร์และตัวเร่งการประมวลผลปัญญาประดิษฐ์ หน่วยประมวลผลกราฟิกและตัวเร่งเฉพาะทาง การจัดเก็บข้อมูลและการประมวลผลแบบขนาน สถาปัตยกรรมเครือข่าย โพรโทคอล การกำหนดเส้นทาง เครือข่ายไร้สาย และเครือข่ายอุตสาหกรรม การเชื่อมต่อเทคโนโลยีสารสนเทศ เทคโนโลยีปฏิบัติการ เอดจ์ และคลาวด์ การแบ่งส่วนเครือข่าย การจัดการตัวตนและสิทธิ การเข้ารหัส การตั้งค่าระบบอย่างปลอดภัย และการจัดการช่องโหว่ การออกแบบความพร้อมใช้สูง การสำรองและกู้คืนข้อมูล การกู้คืนจากภัยพิบัติ การติดตามทรัพยากรและบริการ การจัดการเหตุการณ์ ปัญหา การเปลี่ยนแปลง และสินทรัพย์เบื้องต้น การออกแบบโครงสร้างพื้นฐานที่ปลอดภัย ยืดหยุ่น ขยายขนาดได้ และส่งมอบเพื่อการปฏิบัติการได้",
-    "dEn": "Computer architecture and AI accelerators; graphics processing units and specialized accelerators; storage and parallel computing; network architectures, protocols, routing, wireless networks, and industrial networks; integration of information technology, operational technology, edge, and cloud; network segmentation; identity and access management; encryption; secure configuration; and vulnerability management; high-availability design; backup and restore; disaster recovery; monitoring of resources and services; introductory incident, problem, change, and asset management; design of infrastructure that is secure, resilient, scalable, and ready for operational handover",
-    "source": "03_AI_Core.md"
-  },
   "EN-132-301": {
     "t": "ธุรกิจอัจฉริยะและการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์",
     "e": "AI Business Intelligence and Product Design",
@@ -162,35 +154,19 @@ export const COURSE_REVISION = {
     "source": "04_Track_Core.md"
   },
   "EN-132-304": {
-    "t": "ระบบเกษตรอัจฉริยะ",
-    "e": "Smart Agriculture Systems",
+    "t": "ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ",
+    "e": "Smart Farming Systems and Precision Agriculture",
     "cr": "3(2-2-5)",
     "d": "สถาปัตยกรรมและองค์ประกอบของระบบเกษตรอัจฉริยะและเกษตรแม่นยำ การวิเคราะห์ข้อกำหนดพื้นที่ พืช ปศุสัตว์ และผู้ใช้ การออกแบบและติดตั้งระบบตรวจวัดดิน น้ำ อากาศ สภาพแวดล้อม และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง เอดจ์ คลาวด์ ภูมิสารสนเทศ และข้อมูลการจัดการฟาร์ม ระบบชลประทานและการให้ปัจจัยการผลิตแบบอัตโนมัติ การพยากรณ์ผลผลิต โรค แมลง และความต้องการทรัพยากร ระบบแนะนำและสนับสนุนการตัดสินใจฟาร์ม การวางแผนการผลิตและการตรวจสอบย้อนกลับ การประเมินความน่าเชื่อถือ ความคุ้มค่า ประสิทธิภาพการใช้น้ำ พลังงาน ปัจจัยการผลิต ของเสีย และคาร์บอน การสร้างและทดสอบต้นแบบระบบเกษตรอัจฉริยะสำหรับข้าว อ้อย มันสำปะหลัง พืชควบคุมสภาพแวดล้อม และปศุสัตว์",
     "dEn": "Architecture and components of smart agriculture and precision farming systems; analysis of site, crop, livestock, and user requirements; design and installation of systems for measuring soil, water, weather, environmental conditions, and growth; integration of IoT, edge, cloud, geospatial, and farm-management data; automated irrigation and input application; forecasting of yields, diseases, pests, and resource demand; farm recommendation and decision-support systems; production planning and traceability; assessment of reliability, economic value, water, energy, input-use, waste, and carbon performance; development and testing of smart-agriculture prototypes for rice, sugarcane, cassava, controlled-environment crops, and livestock",
     "source": "04_Track_Core.md"
   },
   "EN-132-305": {
-    "t": "ระบบอัตโนมัติทางการเกษตร",
-    "e": "Autonomous Systems for Agriculture",
+    "t": "อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ",
+    "e": "Unmanned Aerial Vehicles for Smart Agricultural Engineering",
     "cr": "3(2-2-5)",
     "d": "ข้อกำกับ กฎหมาย ความปลอดภัย และจริยธรรมของระบบอัตโนมัติทางการเกษตร หลักการอากาศยานไร้คนขับ เงื่อนไขการปฏิบัติการ การขนส่ง และการขึ้นทะเบียนอากาศยาน การวางแผนภารกิจและเส้นทางบิน ระบบพิกัดดาวเทียมความแม่นยำสูง การเก็บข้อมูลเชิงพื้นที่ด้วยเซนเซอร์และกล้องอาร์จีบี มัลติสเปกตรัม และเทอร์มอล หลักการตรวจวัดระยะไกล การสร้างแผนที่ดิจิทัล แบบจำลองภูมิประเทศ และแบบจำลองสามมิติ ระบบสารสนเทศภูมิศาสตร์และปัญญาประดิษฐ์เชิงพื้นที่ การประยุกต์ใช้ปัญญาประดิษฐ์ในการประมวลผลและวิเคราะห์ภาพถ่ายทางอากาศ หลักการหุ่นยนต์เคลื่อนที่และแขนกลทางการเกษตร การรับรู้ การระบุตำแหน่ง การนำทาง การหลบหลีกสิ่งกีดขวาง การมองเห็นของเครื่องจักร และการควบคุมตัวกระตุ้น การประเมินสุขภาพพืช การฉีดพ่นแม่นยำ การสำรวจ และการเก็บเกี่ยว การเชื่อมโยงข้อมูลจากอากาศยานและหุ่นยนต์กับระบบฟาร์ม การทดสอบภาคสนาม สมรรถนะ ความปลอดภัย และความรับผิดชอบต่อสิ่งแวดล้อม",
     "dEn": "Regulation, law, safety, and ethics of autonomous agricultural systems; principles of unmanned aerial vehicles; operating conditions; transportation; and aircraft registration; mission and flight-path planning; high-precision satellite positioning; spatial data acquisition using sensors and RGB, multispectral, and thermal cameras; principles of remote sensing; digital mapping; terrain and three-dimensional modeling; geographic information systems and GeoAI; application of artificial intelligence to the processing and analysis of aerial imagery; principles of agricultural mobile robots and manipulators; perception, localization, navigation, obstacle avoidance, machine vision, and actuator control; crop-health assessment; precision spraying; surveying; and harvesting; integration of UAV and robot data with farm systems; field testing of performance, safety, and environmental responsibility",
-    "source": "04_Track_Core.md"
-  },
-  "EN-132-307": {
-    "t": "ระบบการผลิตอัจฉริยะ",
-    "e": "Smart Manufacturing Systems",
-    "cr": "3(2-2-5)",
-    "d": "หลักวิศวกรรมกระบวนการและการผลิต สมดุลมวลและพลังงาน กระบวนการความร้อนและสาธารณูปโภค การสร้างแบบจำลองกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับเทคโนโลยีสารสนเทศ ระบบบริหารการผลิตและการเชื่อมโยงกับระบบวางแผนทรัพยากรองค์กร การวัดประสิทธิผลโดยรวมของเครื่องจักร การควบคุมกระบวนการเชิงสถิติ การตรวจสอบย้อนกลับ การวิเคราะห์และพยากรณ์คุณภาพ การวิเคราะห์ข้อมูลการผลิตแบบเวลาจริงและการส่งผลวิเคราะห์กลับไปยังไลน์ผลิตเพื่อใช้ตัดสินใจ ข้อกำหนดด้านเวลาตอบสนองและความพร้อมใช้ของระบบวิเคราะห์ การผลิตแบบลีน ซิกซ์ซิกมา การจัดตาราง และการหาค่าเหมาะที่สุด ความรู้พื้นฐานด้านการบำรุงรักษาและความน่าเชื่อถือ มาตรฐานคุณภาพ ความปลอดภัย และข้อกำหนดทางการค้า การประเมินต้นทุน พลังงาน ของเสีย คาร์บอน และความยั่งยืนของโรงสีข้าว โรงงานน้ำตาล โรงงานแป้งมันสำปะหลัง และอุตสาหกรรมที่เกี่ยวข้อง",
-    "dEn": "Principles of process and production engineering; mass and energy balances; thermal processes and utilities; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; manufacturing execution systems and integration with enterprise resource planning; overall equipment effectiveness; statistical process control; traceability; quality analysis and prediction; real-time production analytics that feed results back to the production line for decision-making, with latency and availability requirements for the analytics system; Lean production; Six Sigma; scheduling; and optimization; foundations of maintenance and reliability; quality and safety standards and trade requirements; assessment of cost, energy, waste, carbon, and sustainability in rice mills, sugar plants, cassava starch plants, and related industries",
-    "source": "04_Track_Core.md"
-  },
-  "EN-132-307": {
-    "t": "ระบบอัตโนมัติและหุ่นยนต์อุตสาหกรรมอัจฉริยะ",
-    "e": "Intelligent Industrial Automation and Robotics Systems",
-    "cr": "3(2-2-5)",
-    "d": "สถาปัตยกรรมระบบอัตโนมัติและระบบควบคุม ตัวควบคุมแบบโปรแกรมได้และภาษามาตรฐาน ระบบควบคุมแบบกระจาย ระบบสกาดา และส่วนต่อประสานมนุษย์กับเครื่องจักร สัญญาณอินพุตและเอาต์พุต เครือข่ายและโพรโทคอลอุตสาหกรรม หุ่นยนต์และหุ่นยนต์ร่วมปฏิบัติงาน ระบบขับเคลื่อน การควบคุมการเคลื่อนที่ และการมองเห็นของเครื่องจักร การออกแบบเซลล์หุ่นยนต์ ผังระบบ แบบท่อและเครื่องมือวัด และแบบวงจรควบคุม การจำลอง การบูรณาการกับปัญญาประดิษฐ์ อินเทอร์เน็ตของสรรพสิ่ง ดิจิทัลทวิน และระบบการผลิต การทดสอบส่วนต่อประสาน การทดสอบการยอมรับ การวางแผนและปฏิบัติงานติดตั้ง การเดินระบบและปรับตั้งเมื่อเริ่มใช้งาน รายการตรวจการเดินระบบ การทดสอบสัญญาณเข้าและออก แบบสร้างจริงหลังติดตั้ง การทวนสอบ และการส่งมอบ ความปลอดภัยของเครื่องจักรและหุ่นยนต์ อินเตอร์ล็อก การหยุดฉุกเฉิน การประเมินความเสี่ยง การยศาสตร์ และความมั่นคงปลอดภัยของเทคโนโลยีปฏิบัติการ",
-    "dEn": "Architecture of automation and control systems; programmable logic controllers and standard programming languages; distributed control systems; SCADA; and human-machine interfaces; input and output signals; industrial networks and protocols; industrial and collaborative robots; drive systems; motion control; and machine vision; design of robotic cells, system layouts, piping and instrumentation diagrams, and control-circuit drawings; simulation and integration with AI, IoT, digital twins, and manufacturing systems; interface and acceptance testing; installation planning and execution; commissioning with commissioning checklists, input–output loop testing, and as-built drawings; verification; and handover; machine and robot safety; interlocks; emergency stops; risk assessment; ergonomics; and operational-technology cybersecurity",
     "source": "04_Track_Core.md"
   },
   "EN-132-302": {
@@ -207,14 +183,6 @@ export const COURSE_REVISION = {
     "cr": "3(2-2-5)",
     "d": "ตัวแบบพื้นฐานและตัวแบบภาษาขนาดใหญ่ การออกแบบคำสั่งและบริบท การฝังข้อมูลและฐานข้อมูลเวกเตอร์ การสร้างข้อความเสริมด้วยการค้นคืน การใช้เครื่องมือและการเรียกฟังก์ชัน สถาปัตยกรรมเอเจนต์แบบตอบสนอง แบบวางแผน และแบบหลายเอเจนต์ การจัดการหน่วยความจำ สถานะ เวิร์กโฟลว์ และการกำกับโดยมนุษย์ การเชื่อมต่อเอเจนต์กับส่วนต่อประสานโปรแกรมประยุกต์ ฐานความรู้ อุปกรณ์ และกระบวนการทำงาน การสร้างชุดทดสอบและประเมินความถูกต้อง การอ้างอิง ความเสถียร ความปลอดภัย และประโยชน์ใช้สอย การตรวจข้อมูลเท็จ การจำลองการโจมตี กลไกป้องกัน ความเป็นส่วนตัว และการจัดทำบัตรความเสี่ยง การติดตามต้นทุน ความเร็ว และการใช้ทรัพยากร การประยุกต์ใช้กับที่ปรึกษาฟาร์ม ผู้ช่วยปฏิบัติการและบำรุงรักษา และกระบวนการความรู้องค์กร",
     "dEn": "Foundation models and large language models; prompt and context design; embeddings and vector databases; retrieval-augmented generation; tool use and function calling; reactive, planning, and multi-agent architectures; management of memory, state, workflows, and human oversight; integration of agents with application programming interfaces, knowledge bases, devices, and business processes; creation of test sets and evaluation of correctness, citation, robustness, safety, and usefulness; hallucination testing, red teaming, guardrails, privacy, and risk cards; monitoring of cost, latency, and resource use; applications to farm advisory, operations and maintenance assistance, and enterprise knowledge workflows",
-    "source": "04_Track_Core.md"
-  },
-  "EN-132-201": {
-    "t": "ระบบตรวจวัดและขับเคลื่อนอัจฉริยะ",
-    "e": "Intelligent Sensing and Actuation Systems",
-    "cr": "3(2-2-5)",
-    "d": "หลักวิทยาการการวัดและระบบเครื่องมือวัด การเลือก ติดตั้ง และสอบเทียบเซนเซอร์และทรานสมิตเตอร์ การปรับสภาพสัญญาณ การเก็บข้อมูล และการวิเคราะห์ความไม่แน่นอน ตัวกระตุ้น มอเตอร์ และระบบขับเคลื่อน หลักระบบนิวแมติกส์และไฮดรอลิกส์ แหล่งกำลัง วาล์ว กระบอกสูบ และวงจรไฟฟ้า–นิวแมติกส์และไฟฟ้า–ไฮดรอลิกส์ การเชื่อมต่อกับไมโครคอนโทรลเลอร์ ตัวควบคุมแบบโปรแกรมได้ และอุปกรณ์เอดจ์ โพรโทคอลอินเทอร์เน็ตของสรรพสิ่งและโพรโทคอลอุตสาหกรรม เกตเวย์ การประมวลผลและอนุมานที่เอดจ์ การจัดการและติดตามอุปกรณ์ ความน่าเชื่อถือ การวินิจฉัยข้อขัดข้อง อินเตอร์ล็อก และความปลอดภัย การออกแบบ ต่อ ทดสอบ และบูรณาการสถานีตรวจวัดฟาร์มและสถานีตรวจวัด–ขับเคลื่อนอุตสาหกรรมกับคลาวด์ สกาดา และระบบปัญญาประดิษฐ์",
-    "dEn": "Measurement science and instrumentation systems; selection, installation, and calibration of sensors and transmitters; signal conditioning; data acquisition; and uncertainty analysis; actuators, motors, and drive systems; principles of pneumatic and hydraulic systems; power sources, valves, cylinders, and electro-pneumatic and electro-hydraulic circuits; integration with microcontrollers, programmable logic controllers, and edge devices; IoT and industrial protocols; gateways; edge processing and inference; device management and monitoring; reliability; fault diagnosis; interlocks; and safety; design, connection, testing, and integration of a farm sensing station and an industrial sensing-actuation station with cloud, SCADA, and AI systems",
     "source": "04_Track_Core.md"
   },
   "EN-135-301": {
