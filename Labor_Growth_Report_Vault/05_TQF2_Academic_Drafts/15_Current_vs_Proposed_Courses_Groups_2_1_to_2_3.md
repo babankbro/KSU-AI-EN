@@ -34,9 +34,9 @@
 | EN-001-123 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง | เพิ่ม safety factor, fatigue, frame/mount/enclosure, material/lifecycle selection | Mechanical safety/lifecycle |
 | EN-001-122 | การเขียนโปรแกรมพื้นฐานสำหรับ AI | เพิ่ม data structure, Git, testing, SQL, API, debugging และ secure coding | Software engineering foundation |
 | EN-001-125 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์ | เพิ่ม instrumentation, signal conditioning, sensor/actuator, motor/drive, protection และ electrical safety | Instrumentation/drive/safety |
-| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1 | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
-| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2 | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
-| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3 | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
+| EN-001-128 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์ | Prototyping, CAD, sensing, calibration และ data acquisition | Build/construct |
+| EN-001-129 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ | Drive, pneumatic/hydraulic exposure, PLC/embedded control และ safety interlock | Fluid power/control |
+| EN-001-230 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ | sensing → AI → decision/control → dashboard พร้อม cost และ BCG KPI | System integration |
 
 ## 3. กลุ่ม 2.2 วิชาชีพหลักด้าน AI — 24 หน่วยกิต
 
