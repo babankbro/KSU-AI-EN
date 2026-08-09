@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { COURSES, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR, YLO_DETAIL, TOTAL_CREDITS } from "../data.js";
+import { COURSES, byOrderNo, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR, YLO_DETAIL, TOTAL_CREDITS } from "../data.js";
 import { PageHead, Section, PloChip } from "./ui.jsx";
 import PlanBoard from "../PlanBoard.jsx";
 
@@ -50,7 +50,7 @@ export default function Plan() {
           <Section key={y} title={`ชั้นปีที่ ${y}`} sub={`${YEAR_CREDITS[y]} หน่วยกิต · YLO${y} ${YLO_DETAIL[y].title}`}>
             <div className="semgrid2">
               {[y * 2 - 1, y * 2].map(s => {
-                const list = COURSES.filter(c => c.sem === s);
+                const list = COURSES.filter(c => c.sem === s).sort(byOrderNo);
                 const extra = SEM_EXTRA[s] || [];
                 return (
                   <div className={`semcard y${y}`} key={s} style={{ "--yc": YEAR_COLOR[y].fg }}>

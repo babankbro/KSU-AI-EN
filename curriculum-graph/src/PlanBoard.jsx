@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   COURSES, SEM_TOTALS, SEM_TITLE, SEM_EXTRA, YEAR_CREDITS, YEAR_COLOR,
-  GROUP_NAME, GROUP_COLOR, YLO_DETAIL, TOTAL_CREDITS
+  GROUP_NAME, GROUP_COLOR, YLO_DETAIL, TOTAL_CREDITS, byOrderNo
 } from "./data.js";
 import "./planboard.css";
 
@@ -88,7 +88,7 @@ export default function PlanBoard() {
 
               <div className="pb-sems">
                 {[y * 2 - 1, y * 2].map(s => {
-                  const list = COURSES.filter(c => c.sem === s);
+                  const list = COURSES.filter(c => c.sem === s).sort(byOrderNo);
                   const extra = SEM_EXTRA[s] || [];
                   return (
                     <div className="pb-sem" key={s}>
@@ -135,7 +135,7 @@ export default function PlanBoard() {
       </div>
 
       <div className="pb-foot">
-        <span>แผนการเรียนรวม <b>{TOTAL_CREDITS}</b> นก. · ปี 4 = <b>15 + 6</b> นก.</span>
+        <span>แผนการเรียนรวม <b>{TOTAL_CREDITS}</b> นก. · 8 ภาคการศึกษา</span>
         <span className="pb-hint">ความสูงของบล็อก = จำนวนหน่วยกิต · คลิกรายวิชาเพื่อดูรายละเอียด · คลิกสีในคำอธิบายเพื่อกรองกลุ่ม</span>
       </div>
     </div>
