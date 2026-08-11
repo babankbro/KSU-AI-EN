@@ -103,19 +103,19 @@
 
 ### 3.1 ผลทวนสอบ Skills/Sub-skills หลังปรับรายวิชา
 
-เพื่อไม่ให้ฐานวิศวกรรมตามข้อเสนอถูกกลืนอยู่ใน H1–H20 ได้เพิ่มรหัสประกอบ **EF1–EF6** ใน [[../03_OBE_PLO_Design_2570/03_Target_Skills#3.7c ฐานทักษะวิศวกรรมประกอบ (EF1–EF6)|Target Skills]] และเชื่อมกับ CLO ดังนี้:
+เพื่อไม่ให้ฐานวิศวกรรมตามข้อเสนอถูกกลืนอยู่ใน HS1–HS20 ได้เพิ่มรหัสประกอบ **EF1–EF6** ใน [[../03_OBE_PLO_Design_2570/03_Target_Skills#3.7c ฐานทักษะวิศวกรรมประกอบ (EF1–EF6)|Target Skills]] และเชื่อมกับ CLO ดังนี้:
 
 | ข้อเสนอผู้ทรงคุณวุฒิ | Skills/Sub-skills | รายวิชาเจ้าภาพ | PLO | สถานะ |
 |---|---|---|---|:--:|
 | CAD/แบบเฉพาะทาง | EF1 | EN-001-121, EN-132-304 | PLO2, PLO3 | ปิดในแกน |
 | กลศาสตร์ วัสดุ การสร้างและประกอบ | EF2 | EN-001-123/128 | PLO1, PLO2, PLO4 | ปิดในแกน |
-| Heat transfer, fluid, process และ energy | EF3, H15, H17 | EN-001-124, EN-132-304 | PLO1, PLO2, PLO4, PLO6 | ปิดในแกน |
-| ไฟฟ้า เครื่องมือวัด และการสอบเทียบ | EF4, H9 | EN-001-125, EN-132-201 | PLO1, PLO2, PLO6 | ปิดในแกน |
-| Pneumatic, hydraulic และ actuation | EF5, H5 | EN-001-129, EN-132-201, EN-135-331 | PLO2, PLO4, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านการออกแบบ การวินิจฉัย และการควบคุมระบบกำลังของไหล |
-| Heat and mass transfer | EF3, H15, H17 | EN-001-124, EN-135-325, EN-135-332 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านแบบจำลองเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
-| Safety, standards, commissioning และ handover | EF6, H7, S10 | Workshop, EN-132-304/201, EN-135-333, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านความปลอดภัยอุตสาหกรรม |
-| BCG/carbon/value | H15, H19, S6 | EN-001-227/123/230, EN-132-201/304/306 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
-| System integration input–process–output–value | H2/H4/H5/H9/H20, S9/S10, EF6 | EN-001-230, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |
+| Heat transfer, fluid, process และ energy | EF3, HS15, HS17 | EN-001-124, EN-132-304 | PLO1, PLO2, PLO4, PLO6 | ปิดในแกน |
+| ไฟฟ้า เครื่องมือวัด และการสอบเทียบ | EF4, HS9 | EN-001-125, EN-132-201 | PLO1, PLO2, PLO6 | ปิดในแกน |
+| Pneumatic, hydraulic และ actuation | EF5, HS5 | EN-001-129, EN-132-201, EN-135-331 | PLO2, PLO4, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านการออกแบบ การวินิจฉัย และการควบคุมระบบกำลังของไหล |
+| Heat and mass transfer | EF3, HS15, HS17 | EN-001-124, EN-135-325, EN-135-332 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านแบบจำลองเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
+| Safety, standards, commissioning และ handover | EF6, HS7, SS10 | Workshop, EN-132-304/201, EN-135-333, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านความปลอดภัยอุตสาหกรรม |
+| BCG/carbon/value | HS15, HS19, SS6 | EN-001-227/123/230, EN-132-201/304/306 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
+| System integration input–process–output–value | HS2/HS4/HS5/HS9/HS20, SS9/SS10, EF6 | EN-001-230, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |
 
 > **ข้อสรุป:** skill set ตอบ expert gap ครบเชิงสมรรถนะ แต่การปิดสมบูรณ์ยังขึ้นกับ Lab, common rubric, Track PI, กฎหมาย/มาตรฐานที่ทบทวนรายปี และความร่วมมือสถานประกอบการ
 

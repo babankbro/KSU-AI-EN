@@ -1,6 +1,7 @@
+import { KSA_BY_ID } from "./ksaData.js";
 // ทะเบียนคำอธิบายรหัสย่อทั้งหมดของเว็บ — ใช้โดย CodeTip.jsx เพื่อแสดงป๊อปอัปเมื่อชี้ที่รหัส
 // ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–09 · N1–N18 · SH1–SH8 · GA1–GA5
-//            H1–H20 · S1–S10 · EF1–EF6 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
+//            HS1–HS20 · SS1–SS10 · EF1–EF6 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
 // รูปแบบผลลัพธ์: { id, kind, accent, title, en, body, rows:[[label,value]], plo:[], sets:[], to }
 
 import {
@@ -23,7 +24,8 @@ const PATTERN = new RegExp(
   "AISK0[1-9]|EN-AISK0[1-9]|" +
   "N1[0-8]|N[1-9]|" +
   "SH[1-8]|GA[1-5]|" +
-  "H20|H1[0-9]|H[1-9]|S10|S[1-9]|EF[1-6]|L[1-4]|" +
+  "HS20|HS1[0-9]|HS[1-9]|SS10|SS[1-9]|EF[1-6]|L[1-4]|" +
+  "K2[0-6]|K1[0-9]|K[1-9]|S20|S1[0-9]|S[1-9]|A[1-8]|" +
   "C[0-1][0-9]|" +
   "[A-Z]{2}-\\d{3}-\\d{3}|" +
   "[IRM]" +
@@ -89,10 +91,11 @@ export function lookup(raw) {
     return {
       id: `EN-${id}`, kind: "ชุดทักษะ", accent: g ? g.color : "var(--navy)", to: "/obe#set",
       title: s.name, en: s.en,
-      body: "เชื่อมตรงจากทักษะเป้าหมายและฐานวิศวกรรมสู่ CLO และหลักฐานประเมิน",
+      body: "ชุดทักษะผูกกับ KSA เท่านั้น · ทักษะ HS/SS/EF เป็นชั้น alignment ที่อยู่เบื้องหลัง",
       rows: [
         ["ประเภท", `${s.type} Skill`],
-        ["ทักษะแกนที่ผูก", (s.skills || []).join(", ")],
+        ["KSA ที่ผูก", (s.ksa || []).join(", ")],
+        ["ทักษะที่ Alignment ถึง", (s.skills || []).join(", ")],
         ["ทักษะย่อย", s.sub ? `${s.sub.length} ข้อ` : "—"],
         ["รายวิชาที่ป้อนเข้า", `${(s.courses || []).length} วิชา`],
         ["วิธีวัดผล", s.assess]
@@ -149,8 +152,26 @@ export function lookup(raw) {
     };
   }
 
-  /* ── ทักษะเป้าหมาย H/S ── */
-  if (/^[HS]\d{1,2}$/.test(id)) {
+  /* ── KSA รายข้อ (K/S/A) ── */
+  if (/^[KSA]\d{1,2}$/.test(id) && KSA_BY_ID[id]) {
+    const r = KSA_BY_ID[id];
+    const kind = id[0] === "K" ? "ความรู้ (Knowledge)" : id[0] === "S" ? "ทักษะ (Skill)" : "ทัศนคติ (Attitude)";
+    const rows = [];
+    if (r.scope) rows.push(["ขอบเขต", r.scope]);
+    if (r.covers) rows.push(["ครอบคลุมพฤติกรรม", r.covers]);
+    if (r.can?.length) rows.push(["ทำอะไรได้บ้าง", r.can.join(" · ")]);
+    if (r.level) rows.push(["ระดับเป้าหมาย", r.level]);
+    if (r.skills?.length) rows.push(["ทักษะย่อยที่ผูก", r.skills.join(", ")]);
+    if (r.evidence) rows.push(["หลักฐานที่ยอมรับได้", r.evidence]);
+    return {
+      id, kind, accent: "var(--navy)", to: "/obe#clo",
+      title: r.name, en: "", body: "", rows,
+      sets: r.aisk || [], plo: r.plo || []
+    };
+  }
+
+  /* ── ทักษะเป้าหมาย HS/SS ── */
+  if (/^(HS|SS)\d{1,2}$/.test(id)) {
     const s = skillById(id);
     if (!s) return null;
     const st = SKILL_SETS.find(x => x.id === s.set);
@@ -159,7 +180,7 @@ export function lookup(raw) {
       ? Object.entries(s.track).map(([t, m]) => `${t} ${m}`).join(" · ")
       : "";
     return {
-      id, kind: id[0] === "H" ? "ทักษะเชิงเทคนิค (Hard Skill)" : "ทักษะเชิงพฤติกรรม (Soft Skill)",
+      id, kind: id.startsWith("HS") ? "ทักษะเชิงเทคนิค (Hard Skill)" : "ทักษะเชิงพฤติกรรม (Soft Skill)",
       accent: g ? g.color : "var(--navy)", to: "/obe#skill",
       title: s.name, en: "", body: s.scope || "",
       rows: [
@@ -186,7 +207,7 @@ export function lookup(raw) {
       accent: "#b8760f", to: "/obe#skill",
       title: s.name, en: "", body: s.scope,
       rows: [
-        ["บทบาท", "ฐานประกอบจากข้อเสนอผู้ทรงคุณวุฒิ ไม่เพิ่มจำนวน H1–H20"],
+        ["บทบาท", "ฐานประกอบจากข้อเสนอผู้ทรงคุณวุฒิ ไม่เพิ่มจำนวน HS1–HS20"],
         ["แขนงที่ใช้", tr],
         ["ระดับเป้าหมาย", s.level],
         ["ที่มา/เหตุผล", s.market],

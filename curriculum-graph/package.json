@@ -9,7 +9,7 @@
     "build:plan": "node scripts/build-study-plan-md.mjs",
     "sync:curriculum": "node scripts/sync-curriculum-revision.mjs",
     "jobs:build-runtime": "node scripts/build-jobs-runtime-data.mjs",
-    "prebuild": "npm run jobs:build-runtime",
+    "prebuild": "npm run jobs:build-runtime && npm run build:ksa",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -17,7 +17,8 @@
     "jobs:gemini-all": "node scripts/extract-career-job-skills-gemini.mjs",
     "jobs:classify-all": "node scripts/classify-career-matches-gemini.mjs",
     "jobs:gemini": "node scripts/extract-job-skills-gemini.mjs",
-    "jobs:normalize": "node scripts/normalize-job-skills.mjs"
+    "jobs:normalize": "node scripts/normalize-job-skills.mjs",
+    "build:ksa": "node scripts/build-ksa-data.mjs"
   },
   "dependencies": {
     "dagre": "^0.8.5",

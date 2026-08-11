@@ -38,7 +38,7 @@
 - Solution concept, prototype, acceptance criteria, ROI/TCO, lifecycle, safety/standard requirements และ responsible/sustainable design
 - Technical proposal, product roadmap และการสื่อสารกับผู้มีส่วนได้ส่วนเสีย
 - **ผลงานบังคับ:** Problem brief + requirements + architecture concept + prototype + acceptance plan
-- **Skills:** H20, S2, S4, S6, S8–S10
+- **Skills:** HS20, SS2, SS4, SS6, SS8–SS10
 - **อาชีพ:** C02, C08, C09, C11 และใช้สนับสนุนทุก C
 
 ### CC2 ระบบสนับสนุนการตัดสินใจและการวิเคราะห์การดำเนินงาน
@@ -50,7 +50,7 @@
 - Decision model, constraint, uncertainty และ human-in-the-loop decision
 - Dashboard, recommendation และการอธิบายผลเพื่อการตัดสินใจ
 - **ผลงานบังคับ:** Decision model + dashboard + scenario/optimization report
-- **Skills:** H3, H11–H13, H19, S1, S4, S6
+- **Skills:** HS3, HS11–HS13, HS19, SS1, SS4, SS6
 - **อาชีพ:** C03, C12–C17 และงานบริหารผลิตภัณฑ์/การดำเนินงาน
 
 ### CC3 วิศวกรรมซอฟต์แวร์ สถาปัตยกรรม และการบูรณาการระบบ AI
@@ -62,7 +62,7 @@
 - Secure coding, automated testing, CI/CD, observability, SLO และ runbook
 - Deployment, UAT, documentation, handover และ lifecycle management
 - **ผลงานบังคับ:** Deployable integrated AI service + tests + monitoring + runbook
-- **Skills:** H2–H4, H7, H12, H14, H20, S5, S7, S10
+- **Skills:** HS2–HS4, HS7, HS12, HS14, HS20, SS5, SS7, SS10
 - **อาชีพ:** C01, C02, C05–C07, C11 และทุก Track ที่ต้องส่งมอบระบบจริง
 
 ### CC4 ระบบปัญญาประดิษฐ์เชิงสร้างสรรค์และเอเจนต์
@@ -75,17 +75,17 @@
 - Latency, cost, observability และ human approval
 - การประยุกต์กับ knowledge, maintenance, farm advisory และ enterprise workflow
 - **ผลงานบังคับ:** Domain RAG/agent พร้อม evaluation set, risk card และ cost report
-- **Skills:** H6, H7, H10, H14, H20, S1, S10
+- **Skills:** HS6, HS7, HS10, HS14, HS20, SS1, SS10
 - **อาชีพ:** C01, C02, C06, C08–C11 และเป็นเครื่องมือข้ามทุก Track
 
 ## 3. T1 พื้นฐานเกษตรอัจฉริยะ 4 วิชา
 
 | รหัสชั่วคราว | รายวิชา | ขอบเขตแกน | Skills | อาชีพ |
 |---|---|---|---|---|
-| EN-132-201 | **ระบบตรวจวัด IoT และ Edge สำหรับฟาร์มอัจฉริยะ** / *Smart Farming IoT, Edge and Sensing Systems* | sensor/actuator, connectivity, edge gateway, calibration, soil-water-weather data, reliability และ field deployment | H5, H9, H11, H16 | C03, C04 |
-| EN-132-201 | **เกษตรแม่นยำและระบบตัดสินใจฟาร์ม** / *Precision Agriculture and Farm Decision Intelligence* | crop/soil/livestock data, yield/disease forecasting, recommendation, irrigation, traceability และ farm economics | H3, H8, H11, H16, H19 | C03, C12 |
-| EN-132-202 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | H7, H8, H11, H16 | C03, C05, C12 |
-| EN-132-303 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | H5, H8, H9, H16 | C03–C05 |
+| EN-132-201 | **ระบบตรวจวัด IoT และ Edge สำหรับฟาร์มอัจฉริยะ** / *Smart Farming IoT, Edge and Sensing Systems* | sensor/actuator, connectivity, edge gateway, calibration, soil-water-weather data, reliability และ field deployment | HS5, HS9, HS11, HS16 | C03, C04 |
+| EN-132-201 | **เกษตรแม่นยำและระบบตัดสินใจฟาร์ม** / *Precision Agriculture and Farm Decision Intelligence* | crop/soil/livestock data, yield/disease forecasting, recommendation, irrigation, traceability และ farm economics | HS3, HS8, HS11, HS16, HS19 | C03, C12 |
+| EN-132-202 | **ระบบอากาศยานไร้คนขับอัตโนมัติ การสำรวจระยะไกล และ GeoAI เพื่อการเกษตร** / *Autonomous UAV, Remote Sensing and GeoAI for Agriculture* | regulation/safety, RTK/GNSS mission planning, multispectral/thermal acquisition, GIS/raster, edge/spatial AI, fleet data integration และ change monitoring | HS7, HS8, HS11, HS16 | C03, C05, C12 |
+| EN-132-303 | **หุ่นยนต์และระบบอัตโนมัติทางการเกษตรสตูดิโอ** / *Agricultural Robotics and Automation Studio* | mobile/manipulator systems, navigation, machine vision, actuator/control, safety และ system integration ในสภาพแวดล้อมจริง | HS5, HS8, HS9, HS16 | C03–C05 |
 
 **สิ่งที่ควรย้ายไปเป็นวิชาเลือก T1:** โรงงานผลิตพืช/เกษตรแนวดิ่ง, ปศุสัตว์อัจฉริยะ, หลังการเก็บเกี่ยว, biotechnology, climate risk และ agri-supply-chain เชิงลึก
 
@@ -93,10 +93,10 @@
 
 | รหัสชั่วคราว | รายวิชา | ขอบเขตแกน | Skills | อาชีพ |
 |---|---|---|---|---|
-| EN-132-211 | **เครื่องมือวัด ระบบกำลังของไหล การควบคุม และ IIoT อุตสาหกรรม** / *Industrial Instrumentation, Fluid Power, Control and IIoT* | sensor/transmitter, pneumatics, hydraulics, PLC, SCADA/DCS, industrial networks, control loop, interlock และ OT safety/cybersecurity | H5, H9, H17 | C04, C13, C14 |
-| EN-132-212 | **หุ่นยนต์อุตสาหกรรม CAD และการบูรณาการระบบ** / *Industrial Robotics, CAD and Systems Integration* | robot/cobot, motion/drive, machine vision, cell design, layout/assembly/P&ID/circuit drawing, commissioning, safety และ integration test | H5, H8, H9, H17 | C04, C05, C13 |
-| EN-132-213 | **วิศวกรรมกระบวนการ การผลิตอัจฉริยะ และคุณภาพ** / *Process Engineering, Smart Manufacturing and Quality* | material/energy balance, heat transfer, production process, MES/ERP, OEE, SPC, traceability, digital twin, Lean/Six Sigma และมาตรฐาน | H11, H13, H17, H19 | C13, C14, C17 |
-| EN-132-214 | **ความปลอดภัย การบำรุงรักษา ความน่าเชื่อถือ และการเพิ่มประสิทธิภาพด้วย AI** / *Industrial Safety, AI Maintenance, Reliability and Optimization* | machine/process safety, HAZOP/FMEA, CMMS, condition monitoring, anomaly/RUL, scheduling, OR/optimization, energy/carbon และ asset decision | H7, H11, H13, H15, H18, H19 | C15–C17 |
+| EN-132-211 | **เครื่องมือวัด ระบบกำลังของไหล การควบคุม และ IIoT อุตสาหกรรม** / *Industrial Instrumentation, Fluid Power, Control and IIoT* | sensor/transmitter, pneumatics, hydraulics, PLC, SCADA/DCS, industrial networks, control loop, interlock และ OT safety/cybersecurity | HS5, HS9, HS17 | C04, C13, C14 |
+| EN-132-212 | **หุ่นยนต์อุตสาหกรรม CAD และการบูรณาการระบบ** / *Industrial Robotics, CAD and Systems Integration* | robot/cobot, motion/drive, machine vision, cell design, layout/assembly/P&ID/circuit drawing, commissioning, safety และ integration test | HS5, HS8, HS9, HS17 | C04, C05, C13 |
+| EN-132-213 | **วิศวกรรมกระบวนการ การผลิตอัจฉริยะ และคุณภาพ** / *Process Engineering, Smart Manufacturing and Quality* | material/energy balance, heat transfer, production process, MES/ERP, OEE, SPC, traceability, digital twin, Lean/Six Sigma และมาตรฐาน | HS11, HS13, HS17, HS19 | C13, C14, C17 |
+| EN-132-214 | **ความปลอดภัย การบำรุงรักษา ความน่าเชื่อถือ และการเพิ่มประสิทธิภาพด้วย AI** / *Industrial Safety, AI Maintenance, Reliability and Optimization* | machine/process safety, HAZOP/FMEA, CMMS, condition monitoring, anomaly/RUL, scheduling, OR/optimization, energy/carbon และ asset decision | HS7, HS11, HS13, HS15, HS18, HS19 | C15–C17 |
 
 **สิ่งที่ควรย้ายไปเป็นวิชาเลือก T2:** Smart warehouse/AGV, food/agro-industrial process, rice–sugar–cassava studio, thermal/drying, packaging และ smart energy เชิงลึก
 
@@ -106,10 +106,10 @@
 
 | รหัสชั่วคราว | รายวิชา | ขอบเขตแกน | Skills | อาชีพ |
 |---|---|---|---|---|
-| EN-132-221 | **วิศวกรรมข้อมูลขั้นสูงและแพลตฟอร์มการวิเคราะห์** / *Advanced Data Engineering and Analytics Platforms* | batch/stream pipeline, lakehouse/warehouse, orchestration, data modeling, lineage, quality และ semantic/BI layer | H3, H12, H14 | C06, C07, C11, C12 |
-| EN-132-222 | **สถาปัตยกรรมองค์กรแบบ Cloud-native และบริการดิจิทัล** / *Cloud-native Enterprise Architecture and Digital Services* | microservices, API/event integration, IAM, resilience, backup/DR, observability, ITSM, e-Service และ vendor/system handover | H4, H7, H20 | C02, C06, C07, C11 |
-| EN-132-223 | **วิศวกรรมคุณภาพ ความมั่นคงปลอดภัย และธรรมาภิบาล AI** / *AI Quality, Security and Governance Engineering* | test strategy, model/data validation, security/privacy, red teaming, risk, audit, compliance, model card และ incident response | H7, H14, H20, S10 | C01, C02, C06, C10, C11 |
-| EN-132-224 | **การส่งมอบผลิตภัณฑ์ AI ประสบการณ์ผู้ใช้ และการจัดการการเปลี่ยนแปลง** / *AI Product Delivery, UX and Change Management* | UX/service design, agile delivery, backlog, experiment/A-B test, adoption, change, value realization และ portfolio evidence | H20, S3–S9 | C02, C08, C09, C11 |
+| EN-132-221 | **วิศวกรรมข้อมูลขั้นสูงและแพลตฟอร์มการวิเคราะห์** / *Advanced Data Engineering and Analytics Platforms* | batch/stream pipeline, lakehouse/warehouse, orchestration, data modeling, lineage, quality และ semantic/BI layer | HS3, HS12, HS14 | C06, C07, C11, C12 |
+| EN-132-222 | **สถาปัตยกรรมองค์กรแบบ Cloud-native และบริการดิจิทัล** / *Cloud-native Enterprise Architecture and Digital Services* | microservices, API/event integration, IAM, resilience, backup/DR, observability, ITSM, e-Service และ vendor/system handover | HS4, HS7, HS20 | C02, C06, C07, C11 |
+| EN-132-223 | **วิศวกรรมคุณภาพ ความมั่นคงปลอดภัย และธรรมาภิบาล AI** / *AI Quality, Security and Governance Engineering* | test strategy, model/data validation, security/privacy, red teaming, risk, audit, compliance, model card และ incident response | HS7, HS14, HS20, SS10 | C01, C02, C06, C10, C11 |
+| EN-132-224 | **การส่งมอบผลิตภัณฑ์ AI ประสบการณ์ผู้ใช้ และการจัดการการเปลี่ยนแปลง** / *AI Product Delivery, UX and Change Management* | UX/service design, agile delivery, backlog, experiment/A-B test, adoption, change, value realization และ portfolio evidence | HS20, SS3–SS9 | C02, C08, C09, C11 |
 
 **สิ่งที่ควรย้ายไปเป็นวิชาเลือก T3:** Advanced LLM/RAG, Thai NLP, AI Research, Healthcare AI, Financial AI, AI Venture, Digital Marketing และ XR/Multimodal
 
@@ -129,7 +129,7 @@
 3. เรียน Track Foundation 1–2 เพื่อเข้าใจข้อมูลและระบบของโดเมน
 4. เรียน CC3 และ Track Foundation 3–4 เพื่อสร้างและบูรณาการระบบ
 5. เรียน CC4 หลังมีพื้นฐาน ML/Software และใช้ร่วมกับโจทย์ Track
-6. Capstone ต้องรวมอย่างน้อย 1 Common Core outcome + 2 Track outcomes และประเมิน S1–S10
+6. Capstone ต้องรวมอย่างน้อย 1 Common Core outcome + 2 Track outcomes และประเมิน SS1–SS10
 
 ## 8. เกณฑ์ตัดสินว่าชุด 4+4 ใช้งานได้จริง
 

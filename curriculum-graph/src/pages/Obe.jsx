@@ -5,16 +5,18 @@ import { PageHead, Section } from "./ui.jsx";
 import { PLO_DETAIL, YLO_DETAIL, COURSES, PLO_NAME } from "../data.js";
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  ENGINEERING_FOUNDATIONS, LEVELS, GROUPS, SKILL_SETS, KSA, GA, REFS, BENCHMARKS, SKILL_CORE_RULE
+  ENGINEERING_FOUNDATIONS, LEVELS, GROUPS, SKILL_SETS, GA, REFS, BENCHMARKS, SKILL_CORE_RULE
 } from "../obeData.js";
 import Alluvial from "../Alluvial.jsx";
 import { VIEWS } from "../alluvialViews.js";
+import { KNOWLEDGE, SKILLS_KSA, ATTITUDES, SKILL_TO_KSA, KSA_BY_ID } from "../ksaData.js";
+
 
 const STEPS = [
   { n: 1, id: "sh",    label: "ผู้มีส่วนได้ส่วนเสีย", en: "Stakeholders", tag: "SH1–SH8" },
   { n: 2, id: "needs", label: "ความต้องการ",         en: "Needs",        tag: "N1–N18" },
   { n: 3, id: "ga",    label: "ลักษณะบัณฑิต",        en: "Graduate Attributes", tag: "GA1–GA5" },
-  { n: 4, id: "skill", label: "ทักษะเป้าหมายและฐานวิศวกรรม", en: "Target Skills & Engineering Foundations", tag: "H1–H20 · S1–S10 · EF1–EF6" },
+  { n: 4, id: "skill", label: "ทักษะเป้าหมายและฐานวิศวกรรม", en: "Target Skills & Engineering Foundations", tag: "HS1–HS20 · SS1–SS10 · EF1–EF6" },
   { n: 5, id: "set",   label: "ชุดทักษะ",             en: "Skill Sets",   tag: "AISK01–09" },
   { n: 6, id: "plo",   label: "ผลลัพธ์หลักสูตร",       en: "PLO",          tag: "PLO1–7" },
   { n: 7, id: "ylo",   label: "ผลลัพธ์รายชั้นปี",      en: "YLO",          tag: "YLO1–4" },
@@ -96,6 +98,8 @@ export default function Obe() {
   const [openSet, setOpenSet] = useState(null);
   const [openSkill, setOpenSkill] = useState(null);
   const [ksaPlo, setKsaPlo] = useState(1);
+  const [alignFam, setAlignFam] = useState("HS");   // ตระกูลทักษะในตาราง Alignment
+  const [ksaDim, setKsaDim] = useState("K");        // มิติในตารางรายละเอียด KSA
   const [view, setView] = useState(VIEWS[0].id);
 
   const activeSets = need ? NEEDS.find(n => n.id === need)?.sets || [] : [];
@@ -271,7 +275,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 4 · Target Skills ─── */}
-        <Section id="skill" title="④ ทักษะเป้าหมายและฐานวิศวกรรม (H1–H20 · S1–S10 · EF1–EF6)" sub="ทักษะอาชีพ Hard/Soft เชื่อมกับฐานวิศวกรรมที่ผู้ทรงคุณวุฒิกำหนด">
+        <Section id="skill" title="④ ทักษะเป้าหมายและฐานวิศวกรรม (HS1–HS20 · SS1–SS10 · EF1–EF6)" sub="ทักษะอาชีพ Hard/Soft เชื่อมกับฐานวิศวกรรมที่ผู้ทรงคุณวุฒิกำหนด">
           <div className="lvbar">
             {LEVELS.map(l => <span key={l.id}><b>{l.id}</b> {l.th} <i>({l.label})</i></span>)}
           </div>
@@ -306,7 +310,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 5 · Skill Sets ─── */}
-        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–09" sub="เชื่อมตรงกับ H1–H20 · S1–S10 · EF1–EF6 เพื่อใช้จัดทำ Skill Transcript">
+        <Section id="set" title="⑤ ชุดทักษะ EN-AISK01–09" sub="เชื่อมตรงกับ HS1–HS20 · SS1–SS10 · EF1–EF6 เพื่อใช้จัดทำ Skill Transcript">
           <div className="setlist">
             {SKILL_SETS.map(s => {
               const g = GROUPS[s.g];
@@ -404,7 +408,7 @@ export default function Obe() {
         </Section>
 
         {/* ─── 8 · CLO + KSA ─── */}
-        <Section id="clo" title="⑧ ผลลัพธ์รายวิชา (CLO) และ K–S–A" sub="ความรู้ · ทักษะ · ทัศนคติ ที่แต่ละ PLO กำหนดให้รายวิชารับผิดชอบ">
+        <Section id="clo" title="⑧ ผลลัพธ์รายวิชา (CLO) และ KSA รายข้อ" sub="K1–K26 · S1–S20 · A1–A8 — หน่วยที่ประเมินได้จริง ซึ่ง CLO ให้คะแนนโดยตรง">
           <div className="ksa-tabs">
             {[1, 2, 3, 4, 5, 6, 7].map(n => (
               <button key={n} className={`ksa-tab${ksaPlo === n ? " on" : ""}`}
@@ -415,7 +419,6 @@ export default function Obe() {
           </div>
 
           {(() => {
-            const k = KSA[ksaPlo];
             const p = PLO_DETAIL[ksaPlo];
             const rel = COURSES.filter(c => c.p && c.p.includes(ksaPlo));
             return (
@@ -426,29 +429,47 @@ export default function Obe() {
                 </div>
                 <div className="ksa-cols">
                   <div className="ksa-box k">
-                    <h4>🧠 Knowledge — ความรู้ที่ควรมี</h4>
-                    <p>{k.k}</p>
+                    <h4>🧠 Knowledge — ความรู้ (K)</h4>
+                    <ul>
+                      {KNOWLEDGE.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                        <li key={r.id}>
+                          <span className="obe-code sm">{r.id}</span> {r.name}
+                          {r.scope && <span className="ksa-scope">{r.scope}</span>}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   <div className="ksa-box s">
-                    <h4>🛠️ Skill — ทักษะและระดับเป้าหมาย</h4>
+                    <h4>🛠️ Skill — ทักษะที่ทำได้ (S)</h4>
                     <ul>
-                      {k.s.map(([id, lv]) => {
-                        const sk = skillById(id);
-                        const st = sk ? setById(sk.set) : null;
-                        return (
-                          <li key={id}>
-                            <span className="obe-code sm">{id}</span> {sk?.name}
-                            <b className="lv"> {lv}</b>
-                            {st && <span className="setchip sm">{st.id}</span>}
-                          </li>
-                        );
-                      })}
+                      {SKILLS_KSA.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                        <li key={r.id}>
+                          <span className="obe-code sm">{r.id}</span> {r.name}
+                          {r.level && <b className="lv"> {r.level}</b>}
+                          {r.can.length > 0 && (
+                            <details className="ksa-can">
+                              <summary>ทำอะไรได้บ้าง ({r.can.length})</summary>
+                              <ul>{r.can.map((c, i) => <li key={i}>{c}</li>)}</ul>
+                            </details>
+                          )}
+                          <span className="ksa-skills">
+                            {r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}
+                          </span>
+                        </li>
+                      ))}
                     </ul>
-                    {k.sExtra && <p className="ksa-extra">+ {k.sExtra}</p>}
                   </div>
                   <div className="ksa-box a">
-                    <h4>❤️ Attitude — ทัศนคติที่ต้องปลูกฝัง</h4>
-                    <p>{k.a}</p>
+                    <h4>❤️ Attitude — ทัศนคติ (A)</h4>
+                    <ul>
+                      {ATTITUDES.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                        <li key={r.id}>
+                          <span className="obe-code sm">{r.id}</span> {r.name}
+                          {r.covers && <span className="ksa-scope">{r.covers}</span>}
+                          {r.evidence && <span className="ksa-ev">หลักฐาน: {r.evidence}</span>}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
                 <div className="ksa-courses">
@@ -463,6 +484,154 @@ export default function Obe() {
               </div>
             );
           })()}
+
+          <div className="ksadetail-wrap">
+            <div className="align-head">
+              <h3 className="skill-h">
+                รายละเอียด KSA ทั้งชุด
+                <small>นิยามรายข้อ ขอบเขต และหลักฐานที่ยอมรับได้ — ฉบับเดียวกับสมุดรหัสใน vault</small>
+              </h3>
+              <div className="align-tabs">
+                {[
+                  ["K", "🧠 Knowledge", KNOWLEDGE.length],
+                  ["S", "🛠️ Skill", SKILLS_KSA.length],
+                  ["A", "❤️ Attitude", ATTITUDES.length]
+                ].map(([d, label, n]) => (
+                  <button key={d} className={`align-tab dim-${d}${ksaDim === d ? " on" : ""}`}
+                    onClick={() => setKsaDim(d)}>{label} <b>{n}</b></button>
+                ))}
+              </div>
+            </div>
+
+            {ksaDim === "K" && (
+              <div className="obe-tablewrap">
+                <table className="obe-table ksadetail">
+                  <thead><tr><th>รหัส</th><th>ความรู้</th><th>ขอบเขต</th><th>ทักษะย่อย</th><th>AISK</th><th>PLO</th></tr></thead>
+                  <tbody>
+                    {KNOWLEDGE.map(r => (
+                      <tr key={r.id}>
+                        <td><span className="obe-code">{r.id}</span></td>
+                        <td><b>{r.name}</b></td>
+                        <td className="small">{r.scope}</td>
+                        <td>{r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}</td>
+                        <td>{r.aisk.map(a => <span className="setchip sm" key={a}>{a}</span>)}</td>
+                        <td>{r.plo.map(n => <span className="plochip" key={n} style={{ "--pc": `var(--plo${n})` }}>PLO{n}</span>)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {ksaDim === "S" && (
+              <div className="obe-tablewrap">
+                <table className="obe-table ksadetail">
+                  <thead><tr><th>รหัส</th><th>ทักษะที่ต้องทำได้</th><th>ทำอะไรได้บ้าง</th><th>ทักษะย่อย</th><th>ระดับ</th><th>AISK</th><th>PLO</th></tr></thead>
+                  <tbody>
+                    {SKILLS_KSA.map(r => (
+                      <tr key={r.id}>
+                        <td><span className="obe-code">{r.id}</span></td>
+                        <td><b>{r.name}</b><span className="ksa-type">{r.type}</span></td>
+                        <td>
+                          <details className="ksa-can">
+                            <summary>{r.can.length} ข้อ</summary>
+                            <ul>{r.can.map((c, i) => <li key={i}>{c}</li>)}</ul>
+                          </details>
+                        </td>
+                        <td>{r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}</td>
+                        <td className="nowrap"><b className="lv">{r.level}</b></td>
+                        <td>{r.aisk.map(a => <span className="setchip sm" key={a}>{a}</span>)}</td>
+                        <td>{r.plo.map(n => <span className="plochip" key={n} style={{ "--pc": `var(--plo${n})` }}>PLO{n}</span>)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {ksaDim === "A" && (
+              <div className="obe-tablewrap">
+                <table className="obe-table ksadetail">
+                  <thead><tr><th>รหัส</th><th>ทัศนคติ</th><th>ครอบคลุมพฤติกรรม</th><th>ทักษะย่อย</th><th>PLO</th><th>หลักฐานที่ยอมรับได้</th></tr></thead>
+                  <tbody>
+                    {ATTITUDES.map(r => (
+                      <tr key={r.id}>
+                        <td><span className="obe-code">{r.id}</span></td>
+                        <td><b>{r.name}</b></td>
+                        <td className="small">{r.covers}</td>
+                        <td>{r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}</td>
+                        <td>{r.plo.map(n => <span className="plochip" key={n} style={{ "--pc": `var(--plo${n})` }}>PLO{n}</span>)}</td>
+                        <td className="small ev">{r.evidence}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            <p className="obe-note">
+              {ksaDim === "A"
+                ? "ห้ามให้คะแนนทัศนคติจากความประทับใจ — ต้องมีหลักฐานตามคอลัมน์ขวาสุดเท่านั้น"
+                : ksaDim === "S"
+                  ? "กดที่จำนวนข้อในคอลัมน์ “ทำอะไรได้บ้าง” เพื่อดูพฤติกรรมย่อยที่ใช้เป็นเกณฑ์ผ่าน"
+                  : "ขอบเขตคือสิ่งที่ใช้กำหนดหัวข้อข้อสอบและแบบฝึกหัดของรายวิชาที่รับผิดชอบ"}
+            </p>
+          </div>
+
+          <div className="align-wrap">
+            <div className="align-head">
+              <h3 className="skill-h">
+                ตาราง Alignment — ทักษะ → KSA
+                <small>อ่านจากฝั่งทักษะเข้าหาหน่วยที่ประเมินได้ · ทั้ง 36 รายการมี K และ S รองรับครบ</small>
+              </h3>
+              <div className="align-tabs">
+                {[["HS", "Hard Skills", 20], ["SS", "Soft Skills", 10], ["EF", "Engineering Foundations", 6]].map(([f, label, n]) => (
+                  <button key={f} className={`align-tab${alignFam === f ? " on" : ""}`}
+                    onClick={() => setAlignFam(f)}>{label} <b>{n}</b></button>
+                ))}
+              </div>
+            </div>
+            <p className="obe-note">
+              ทักษะ HS/SS/EF เป็น <b>ชั้นหลักฐานตลาดแรงงาน</b> ส่วน K/S/A เป็น <b>ชั้นที่ให้คะแนนได้จริง</b> —
+              CLO อ้าง KSA เท่านั้น ไม่อ้างทักษะโดยตรง เพื่อให้ทุกการอ้างมีเกณฑ์ประเมินรองรับ
+            </p>
+            <div className="obe-tablewrap">
+              <table className="obe-table align-table">
+                <thead>
+                  <tr>
+                    <th>ทักษะ</th><th>ชื่อ</th>
+                    <th>🧠 Knowledge</th><th>🛠️ Skill</th><th>❤️ Attitude</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.keys(SKILL_TO_KSA)
+                    .filter(id => id.startsWith(alignFam))
+                    .sort((a, b) => +a.replace(/\D/g, "") - +b.replace(/\D/g, ""))
+                    .map(id => {
+                      const r = SKILL_TO_KSA[id];
+                      const sk = skillById(id);
+                      const chips = list => list.length
+                        ? list.map(c => (
+                            <span className="obe-code sm ksa-chip" key={c} title={KSA_BY_ID[c]?.name || ""}>{c}</span>
+                          ))
+                        : <span className="align-none">—</span>;
+                      return (
+                        <tr key={id}>
+                          <td><span className="obe-code">{id}</span></td>
+                          <td className="small">{sk?.name || ""}</td>
+                          <td>{chips(r.K)}</td>
+                          <td>{chips(r.S)}</td>
+                          <td>{chips(r.A)}</td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
+            <p className="obe-note align-foot">
+              <b>ทัศนคติไม่ครอบคลุมทุกทักษะโดยตั้งใจ</b> — ผูกเฉพาะทักษะที่มีพฤติกรรมสังเกตได้และมีหลักฐานรองรับ
+              แต่ <b>ชุดทักษะ AISK01–09 ทุกชุดมี Attitude อย่างน้อย 1 ข้อ</b> เพื่อให้ Skill Transcript ทุกใบมีมิติพฤติกรรมให้ประเมิน
+            </p>
+          </div>
         </Section>
 
         {/* ─── มาตรฐานเทียบเคียง ─── */}

@@ -41,16 +41,16 @@
 
 | ระดับ | อาชีพ (ไทย / English) | งานหลัก | ทักษะเด่นจากหลักสูตร | Portfolio ที่ควรมี |
 |---|---|---|---|---|
-| **E** | วิศวกรเกษตรอัจฉริยะ / **Smart Agriculture Engineer** | ออกแบบและติดตั้งระบบเซนเซอร์ ชลประทาน ระบบควบคุม และ Dashboard ระดับฟาร์ม | H2, H3, H9; IoT, control, farm domain | ระบบฟาร์ม IoT ที่วัด–ควบคุม–แจ้งเตือนได้จริง |
-| **E** | นักวิเคราะห์ข้อมูลการเกษตร / **Agricultural Data Analyst** | วิเคราะห์ข้อมูลดิน น้ำ อากาศ ผลผลิต และต้นทุน สร้างรายงานหรือ Dashboard | H1, H3; statistics, SQL, Python, visualization | Dashboard พยากรณ์ผลผลิตหรือวิเคราะห์ประสิทธิภาพฟาร์ม |
-| **E/S** | วิศวกรระบบชลประทานและโรงเรือนอัจฉริยะ / **Smart Irrigation and Greenhouse Control Engineer** | ออกแบบระบบน้ำและควบคุมสภาพแวดล้อมด้วย sensor/AI | H5, H9; electronics, control, edge | ระบบควบคุมความชื้น/อุณหภูมิพร้อมวิเคราะห์การใช้น้ำ |
-| **S** | วิศวกร AI ด้านการเกษตร / **AgTech AI/ML Engineer** | สร้างโมเดลพยากรณ์ผลผลิต โรคพืช คุณภาพ หรือคำแนะนำการจัดการ | H1, H2, H3; ML/DL, domain knowledge | โมเดลที่มี dataset, baseline, evaluation และ deployment |
-| **S** | วิศวกรคอมพิวเตอร์วิทัศน์ด้านเกษตร / **Agricultural Computer Vision Engineer** | ตรวจโรคพืช นับผลผลิต คัดเกรด และตรวจคุณภาพด้วยภาพ | H1, H8; CV, image data, edge deployment | ระบบตรวจโรค/คัดเกรดพร้อม confusion matrix และ demo |
-| **S** | นักวิเคราะห์ภูมิสารสนเทศและการตรวจวัดระยะไกล / **GeoAI and Remote Sensing Analyst** | วิเคราะห์ภาพ UAV/ดาวเทียม ดัชนีพืชพรรณ และแผนที่เชิงพื้นที่ | H3, H8; GIS, remote sensing, spatial analytics | แผนที่ NDVI/NDWI และโมเดลแบ่งพื้นที่เสี่ยง |
-| **S** | วิศวกร IoT และ Edge AI ภาคเกษตร / **Agricultural IoT and Edge AI Engineer** | เชื่อม sensor, gateway, LPWAN, edge inference และ cloud | H4, H7, H9 | ระบบ Edge AI ทำงานในพื้นที่สัญญาณจำกัดและมี security plan |
-| **S** | วิศวกรหุ่นยนต์และระบบอัตโนมัติทางการเกษตร / **Agricultural Robotics and Automation Engineer** | พัฒนาหุ่นยนต์เคลื่อนที่ ระบบให้อาหาร พ่นยา เก็บเกี่ยว หรือคัดแยก | H1, H5, H8, H9 | mobile robot/robot arm ที่ใช้ perception และ control |
-| **E/S** | วิศวกรประยุกต์หรือที่ปรึกษาโซลูชัน AgTech / **AgTech Application Engineer / Solutions Consultant** | สำรวจหน้างาน ออกแบบ solution สาธิต ติดตั้ง อบรม และสนับสนุนผู้ใช้ | H2, H3, H9; PLO3, PLO5 | solution proposal, cost-benefit, prototype และคู่มือผู้ใช้ |
-| **E/S** | นักพัฒนาผลิตภัณฑ์ดิจิทัลเกษตร / **Digital Agriculture Product Associate** | เชื่อมความต้องการเกษตรกรกับทีมข้อมูล ซอฟต์แวร์ และธุรกิจ | H3; UX, product discovery, communication | user research, journey map, prototype และ product metrics |
+| **E** | วิศวกรเกษตรอัจฉริยะ / **Smart Agriculture Engineer** | ออกแบบและติดตั้งระบบเซนเซอร์ ชลประทาน ระบบควบคุม และ Dashboard ระดับฟาร์ม | HS2, HS3, HS9; IoT, control, farm domain | ระบบฟาร์ม IoT ที่วัด–ควบคุม–แจ้งเตือนได้จริง |
+| **E** | นักวิเคราะห์ข้อมูลการเกษตร / **Agricultural Data Analyst** | วิเคราะห์ข้อมูลดิน น้ำ อากาศ ผลผลิต และต้นทุน สร้างรายงานหรือ Dashboard | HS1, HS3; statistics, SQL, Python, visualization | Dashboard พยากรณ์ผลผลิตหรือวิเคราะห์ประสิทธิภาพฟาร์ม |
+| **E/S** | วิศวกรระบบชลประทานและโรงเรือนอัจฉริยะ / **Smart Irrigation and Greenhouse Control Engineer** | ออกแบบระบบน้ำและควบคุมสภาพแวดล้อมด้วย sensor/AI | HS5, HS9; electronics, control, edge | ระบบควบคุมความชื้น/อุณหภูมิพร้อมวิเคราะห์การใช้น้ำ |
+| **S** | วิศวกร AI ด้านการเกษตร / **AgTech AI/ML Engineer** | สร้างโมเดลพยากรณ์ผลผลิต โรคพืช คุณภาพ หรือคำแนะนำการจัดการ | HS1, HS2, HS3; ML/DL, domain knowledge | โมเดลที่มี dataset, baseline, evaluation และ deployment |
+| **S** | วิศวกรคอมพิวเตอร์วิทัศน์ด้านเกษตร / **Agricultural Computer Vision Engineer** | ตรวจโรคพืช นับผลผลิต คัดเกรด และตรวจคุณภาพด้วยภาพ | HS1, HS8; CV, image data, edge deployment | ระบบตรวจโรค/คัดเกรดพร้อม confusion matrix และ demo |
+| **S** | นักวิเคราะห์ภูมิสารสนเทศและการตรวจวัดระยะไกล / **GeoAI and Remote Sensing Analyst** | วิเคราะห์ภาพ UAV/ดาวเทียม ดัชนีพืชพรรณ และแผนที่เชิงพื้นที่ | HS3, HS8; GIS, remote sensing, spatial analytics | แผนที่ NDVI/NDWI และโมเดลแบ่งพื้นที่เสี่ยง |
+| **S** | วิศวกร IoT และ Edge AI ภาคเกษตร / **Agricultural IoT and Edge AI Engineer** | เชื่อม sensor, gateway, LPWAN, edge inference และ cloud | HS4, HS7, HS9 | ระบบ Edge AI ทำงานในพื้นที่สัญญาณจำกัดและมี security plan |
+| **S** | วิศวกรหุ่นยนต์และระบบอัตโนมัติทางการเกษตร / **Agricultural Robotics and Automation Engineer** | พัฒนาหุ่นยนต์เคลื่อนที่ ระบบให้อาหาร พ่นยา เก็บเกี่ยว หรือคัดแยก | HS1, HS5, HS8, HS9 | mobile robot/robot arm ที่ใช้ perception และ control |
+| **E/S** | วิศวกรประยุกต์หรือที่ปรึกษาโซลูชัน AgTech / **AgTech Application Engineer / Solutions Consultant** | สำรวจหน้างาน ออกแบบ solution สาธิต ติดตั้ง อบรม และสนับสนุนผู้ใช้ | HS2, HS3, HS9; PLO3, PLO5 | solution proposal, cost-benefit, prototype และคู่มือผู้ใช้ |
+| **E/S** | นักพัฒนาผลิตภัณฑ์ดิจิทัลเกษตร / **Digital Agriculture Product Associate** | เชื่อมความต้องการเกษตรกรกับทีมข้อมูล ซอฟต์แวร์ และธุรกิจ | HS3; UX, product discovery, communication | user research, journey map, prototype และ product metrics |
 
 ### เส้นทางเติบโตของ Track 1
 
@@ -71,18 +71,18 @@ Junior Engineer / Analyst
 
 | ระดับ | อาชีพ (ไทย / English) | งานหลัก | ทักษะเด่นจากหลักสูตร | Portfolio ที่ควรมี |
 |---|---|---|---|---|
-| **E** | วิศวกรระบบควบคุมและอัตโนมัติ / **Automation and Control Engineer** | ออกแบบ/โปรแกรม PLC, HMI, SCADA และเชื่อม I/O/industrial network | H5, H9; PLC/SCADA, instrumentation | สถานีควบคุมจำลองพร้อม HMI, alarm และ safety logic |
-| **E/S** | วิศวกรบูรณาการระบบ / **Automation System Integration Engineer** | เชื่อมเครื่องจักร sensor robot database และระบบควบคุม | H2, H5, H9 | integrated cell ที่มี requirement, wiring, control และ test report |
-| **S** | วิศวกรปัญญาประดิษฐ์อุตสาหกรรม / **Industrial AI Engineer** | พัฒนา AI สำหรับคุณภาพ การผลิต พลังงาน และการตัดสินใจหน้างาน | H1, H3, H5 | use case โรงงานที่วัด KPI ก่อน–หลังและ deploy ได้ |
-| **S** | วิศวกร Machine Vision / **Machine Vision Engineer** | ตรวจตำหนิ วัดขนาด อ่านรหัส ติดตามวัตถุ และคัดแยกในสายการผลิต | H1, H5, H8 | inspection system พร้อม lighting/camera design และ latency test |
-| **S** | วิศวกรบำรุงรักษาเชิงพยากรณ์ / **Predictive Maintenance Engineer** | วิเคราะห์ vibration, temperature, acoustic และ current เพื่อพยากรณ์ความเสียหาย | H1, H3, H5 | anomaly/failure prediction พร้อม maintenance recommendation |
-| **E/S** | วิศวกร IIoT และ OT Data / **Industrial IoT / OT Data Engineer** | เก็บข้อมูล PLC/SCADA/MES ผ่าน industrial protocols และสร้าง pipeline | H3, H7, H9 | OT-to-cloud pipeline พร้อม architecture และ cybersecurity control |
-| **S** | วิศวกร Digital Twin และการจำลอง / **Digital Twin and Simulation Engineer** | สร้างแบบจำลองสายการผลิต ทดสอบ scenario และเพิ่มประสิทธิภาพ | H3, H5 | digital twin ที่เทียบข้อมูลจริงและแสดงผล optimization |
-| **E/S** | วิศวกรข้อมูลการผลิต / **Manufacturing Data Engineer / Analyst** | จัดการข้อมูลการผลิต สร้าง OEE dashboard วิเคราะห์ bottleneck และคุณภาพ | H2, H3 | production data pipeline + OEE/quality dashboard |
-| **E/S** | วิศวกรปรับปรุงกระบวนการอัจฉริยะ / **AI-enabled Process Improvement Engineer** | ใช้สถิติ AI และ simulation ลดของเสีย เวลา พลังงาน และต้นทุน | H1, H3, H5 | DMAIC/experiment พร้อมผลเชิงต้นทุนและ process capability |
-| **S** | วิศวกรหุ่นยนต์อุตสาหกรรม / **Industrial Robotics Engineer** | โปรแกรมและบูรณาการ robot arm, drive, vision และ safety system | H5, H8, H9 | robotic pick-and-place/inspection cell พร้อม risk assessment |
-| **E/S** | วิศวกรระบบคลังสินค้าและขนถ่ายอัตโนมัติ / **Warehouse Automation and Material Handling Engineer** | ออกแบบ conveyor, AGV/AMR, warehouse control และ material flow | H3, H5, H9 | simulation/layout และ control logic ของคลังสินค้าอัตโนมัติ |
-| **S** | วิศวกร AI กระบวนการเกษตรแปรรูป / **Agro-processing AI Engineer** | เพิ่มประสิทธิภาพโรงสีข้าว น้ำตาล แป้งมัน ระบบอบแห้ง และพลังงาน | H1, H3, H5, H11 | use case เฉพาะโรงงานพร้อม mass/energy/process data |
+| **E** | วิศวกรระบบควบคุมและอัตโนมัติ / **Automation and Control Engineer** | ออกแบบ/โปรแกรม PLC, HMI, SCADA และเชื่อม I/O/industrial network | HS5, HS9; PLC/SCADA, instrumentation | สถานีควบคุมจำลองพร้อม HMI, alarm และ safety logic |
+| **E/S** | วิศวกรบูรณาการระบบ / **Automation System Integration Engineer** | เชื่อมเครื่องจักร sensor robot database และระบบควบคุม | HS2, HS5, HS9 | integrated cell ที่มี requirement, wiring, control และ test report |
+| **S** | วิศวกรปัญญาประดิษฐ์อุตสาหกรรม / **Industrial AI Engineer** | พัฒนา AI สำหรับคุณภาพ การผลิต พลังงาน และการตัดสินใจหน้างาน | HS1, HS3, HS5 | use case โรงงานที่วัด KPI ก่อน–หลังและ deploy ได้ |
+| **S** | วิศวกร Machine Vision / **Machine Vision Engineer** | ตรวจตำหนิ วัดขนาด อ่านรหัส ติดตามวัตถุ และคัดแยกในสายการผลิต | HS1, HS5, HS8 | inspection system พร้อม lighting/camera design และ latency test |
+| **S** | วิศวกรบำรุงรักษาเชิงพยากรณ์ / **Predictive Maintenance Engineer** | วิเคราะห์ vibration, temperature, acoustic และ current เพื่อพยากรณ์ความเสียหาย | HS1, HS3, HS5 | anomaly/failure prediction พร้อม maintenance recommendation |
+| **E/S** | วิศวกร IIoT และ OT Data / **Industrial IoT / OT Data Engineer** | เก็บข้อมูล PLC/SCADA/MES ผ่าน industrial protocols และสร้าง pipeline | HS3, HS7, HS9 | OT-to-cloud pipeline พร้อม architecture และ cybersecurity control |
+| **S** | วิศวกร Digital Twin และการจำลอง / **Digital Twin and Simulation Engineer** | สร้างแบบจำลองสายการผลิต ทดสอบ scenario และเพิ่มประสิทธิภาพ | HS3, HS5 | digital twin ที่เทียบข้อมูลจริงและแสดงผล optimization |
+| **E/S** | วิศวกรข้อมูลการผลิต / **Manufacturing Data Engineer / Analyst** | จัดการข้อมูลการผลิต สร้าง OEE dashboard วิเคราะห์ bottleneck และคุณภาพ | HS2, HS3 | production data pipeline + OEE/quality dashboard |
+| **E/S** | วิศวกรปรับปรุงกระบวนการอัจฉริยะ / **AI-enabled Process Improvement Engineer** | ใช้สถิติ AI และ simulation ลดของเสีย เวลา พลังงาน และต้นทุน | HS1, HS3, HS5 | DMAIC/experiment พร้อมผลเชิงต้นทุนและ process capability |
+| **S** | วิศวกรหุ่นยนต์อุตสาหกรรม / **Industrial Robotics Engineer** | โปรแกรมและบูรณาการ robot arm, drive, vision และ safety system | HS5, HS8, HS9 | robotic pick-and-place/inspection cell พร้อม risk assessment |
+| **E/S** | วิศวกรระบบคลังสินค้าและขนถ่ายอัตโนมัติ / **Warehouse Automation and Material Handling Engineer** | ออกแบบ conveyor, AGV/AMR, warehouse control และ material flow | HS3, HS5, HS9 | simulation/layout และ control logic ของคลังสินค้าอัตโนมัติ |
+| **S** | วิศวกร AI กระบวนการเกษตรแปรรูป / **Agro-processing AI Engineer** | เพิ่มประสิทธิภาพโรงสีข้าว น้ำตาล แป้งมัน ระบบอบแห้ง และพลังงาน | HS1, HS3, HS5, HS11 | use case เฉพาะโรงงานพร้อม mass/energy/process data |
 
 ### เส้นทางเติบโตของ Track 2
 
@@ -103,19 +103,19 @@ Automation / Data / Process Engineer
 
 | ระดับ | อาชีพ (ไทย / English) | งานหลัก | ทักษะเด่นจากหลักสูตร | Portfolio ที่ควรมี |
 |---|---|---|---|---|
-| **E/S** | วิศวกร AI/ML ระดับเริ่มต้น / **Junior AI/ML Engineer** | เตรียมข้อมูล พัฒนา ประเมิน และนำโมเดลไปเชื่อมกับแอปพลิเคชัน | H1, H2, H3, H4 | end-to-end ML project พร้อม API, test และ monitoring เบื้องต้น |
-| **E** | วิศวกรซอฟต์แวร์ AI / **AI Software Engineer** | พัฒนา backend/API/workflow ที่เรียกใช้โมเดลและบริการ AI | H2, H4, H6 | production-style application พร้อม Git, test และ CI/CD |
-| **E** | วิศวกรข้อมูล / **Data Engineer** | สร้าง ETL/ELT, database, batch/streaming pipeline และ data quality | H2, H3 | pipeline จากหลายแหล่งพร้อม orchestration และ data tests |
-| **S** | วิศวกร MLOps / **MLOps / ML Platform Engineer** | จัดการ training/deployment pipeline, registry, monitoring, drift และ infrastructure | H2, H4, H7 | reproducible pipeline พร้อม deployment, observability และ rollback |
-| **E** | นักพัฒนา Cloud Backend และ Microservices / **Cloud Backend / Microservices Developer** | ออกแบบ API, container, microservices, database และ cloud deployment | H2, H4, H7 | cloud-native service พร้อม load/security test |
-| **S** | วิศวกร Generative AI/LLM / **Generative AI / LLM Application Engineer** | พัฒนา LLM application, prompt/context, evaluation, guardrail และ integration | H2, H4, H6, H7 | LLM app ที่มี evaluation set, cost/latency และ safety guardrails |
-| **S** | วิศวกร RAG และระบบความรู้องค์กร / **RAG / Knowledge AI Engineer** | เชื่อม LLM กับเอกสาร ฐานความรู้ search และ access control | H3, H4, H6, H7 | RAG system พร้อม retrieval metrics, citation และ permission model |
-| **S** | นักพัฒนาระบบ Agentic AI / **Agentic AI Developer** | ออกแบบ agent workflow, tool use, planning, memory และ human oversight | H2, H6, H7 | multi-step agent พร้อม trace, failure handling และ human approval |
-| **E/S** | วิศวกรทดสอบและประเมินระบบ AI / **AI QA / Model Evaluation Engineer** | ทดสอบ software/model, robustness, bias, regression และ acceptance criteria | H1, H2, H7 | automated evaluation suite และ model/system test report |
-| **S** | นักวิเคราะห์ความปลอดภัยและ Responsible AI / **AI Security / Responsible AI Analyst** | ประเมินความเสี่ยง privacy, prompt injection, data/model threats และ compliance | H7 | AI risk assessment, threat model, red-team report และ mitigation plan |
-| **E/S** | นักออกแบบประสบการณ์ระบบ AI / **AI UX / Conversational Experience Designer** | วิจัยผู้ใช้ ออกแบบ interaction/dashboard/conversation และอธิบายผล AI | H6; UX, visualization, XAI | user research + prototype + usability test ของ AI product |
-| **E/S** | วิศวกรโซลูชัน AI / **AI Solutions Engineer / Technical Consultant** | วิเคราะห์ requirement สาธิต prototype เชื่อมระบบ และสื่อสารกับลูกค้า | H1–H7 ตามบริบท; PLO3, PLO5 | solution architecture, prototype, business case และ presentation |
-| **E/S** | นักวิเคราะห์ผลิตภัณฑ์ AI / **AI Product Analyst / Associate Product Manager** | วิเคราะห์ผู้ใช้ ตลาด KPI ความเป็นไปได้ และประสานทีมเทคนิค–ธุรกิจ | H3, H6; product/business | product discovery, experiment, roadmap และ responsible-AI checklist |
+| **E/S** | วิศวกร AI/ML ระดับเริ่มต้น / **Junior AI/ML Engineer** | เตรียมข้อมูล พัฒนา ประเมิน และนำโมเดลไปเชื่อมกับแอปพลิเคชัน | HS1, HS2, HS3, HS4 | end-to-end ML project พร้อม API, test และ monitoring เบื้องต้น |
+| **E** | วิศวกรซอฟต์แวร์ AI / **AI Software Engineer** | พัฒนา backend/API/workflow ที่เรียกใช้โมเดลและบริการ AI | HS2, HS4, HS6 | production-style application พร้อม Git, test และ CI/CD |
+| **E** | วิศวกรข้อมูล / **Data Engineer** | สร้าง ETL/ELT, database, batch/streaming pipeline และ data quality | HS2, HS3 | pipeline จากหลายแหล่งพร้อม orchestration และ data tests |
+| **S** | วิศวกร MLOps / **MLOps / ML Platform Engineer** | จัดการ training/deployment pipeline, registry, monitoring, drift และ infrastructure | HS2, HS4, HS7 | reproducible pipeline พร้อม deployment, observability และ rollback |
+| **E** | นักพัฒนา Cloud Backend และ Microservices / **Cloud Backend / Microservices Developer** | ออกแบบ API, container, microservices, database และ cloud deployment | HS2, HS4, HS7 | cloud-native service พร้อม load/security test |
+| **S** | วิศวกร Generative AI/LLM / **Generative AI / LLM Application Engineer** | พัฒนา LLM application, prompt/context, evaluation, guardrail และ integration | HS2, HS4, HS6, HS7 | LLM app ที่มี evaluation set, cost/latency และ safety guardrails |
+| **S** | วิศวกร RAG และระบบความรู้องค์กร / **RAG / Knowledge AI Engineer** | เชื่อม LLM กับเอกสาร ฐานความรู้ search และ access control | HS3, HS4, HS6, HS7 | RAG system พร้อม retrieval metrics, citation และ permission model |
+| **S** | นักพัฒนาระบบ Agentic AI / **Agentic AI Developer** | ออกแบบ agent workflow, tool use, planning, memory และ human oversight | HS2, HS6, HS7 | multi-step agent พร้อม trace, failure handling และ human approval |
+| **E/S** | วิศวกรทดสอบและประเมินระบบ AI / **AI QA / Model Evaluation Engineer** | ทดสอบ software/model, robustness, bias, regression และ acceptance criteria | HS1, HS2, HS7 | automated evaluation suite และ model/system test report |
+| **S** | นักวิเคราะห์ความปลอดภัยและ Responsible AI / **AI Security / Responsible AI Analyst** | ประเมินความเสี่ยง privacy, prompt injection, data/model threats และ compliance | HS7 | AI risk assessment, threat model, red-team report และ mitigation plan |
+| **E/S** | นักออกแบบประสบการณ์ระบบ AI / **AI UX / Conversational Experience Designer** | วิจัยผู้ใช้ ออกแบบ interaction/dashboard/conversation และอธิบายผล AI | HS6; UX, visualization, XAI | user research + prototype + usability test ของ AI product |
+| **E/S** | วิศวกรโซลูชัน AI / **AI Solutions Engineer / Technical Consultant** | วิเคราะห์ requirement สาธิต prototype เชื่อมระบบ และสื่อสารกับลูกค้า | HS1–HS7 ตามบริบท; PLO3, PLO5 | solution architecture, prototype, business case และ presentation |
+| **E/S** | นักวิเคราะห์ผลิตภัณฑ์ AI / **AI Product Analyst / Associate Product Manager** | วิเคราะห์ผู้ใช้ ตลาด KPI ความเป็นไปได้ และประสานทีมเทคนิค–ธุรกิจ | HS3, HS6; product/business | product discovery, experiment, roadmap และ responsible-AI checklist |
 
 ### เส้นทางเติบโตของ Track 3
 

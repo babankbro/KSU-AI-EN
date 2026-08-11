@@ -31,12 +31,12 @@
 
 | GA      | ทักษะที่รองรับ                                                                                 | IEA GAPC v4 (WA)                                                         | กมอ. 2565                       | ABET EAC            |
 | ------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------- | ------------------- |
-| **GA1** | H1 AI/ML & Applied Mathematics, H2 Programming, H3 Data Engineering/Analytics                  | WA1 Engineering Knowledge, WA2 Problem Analysis                          | ความรู้ (Knowledge)             | SO(1)               |
-| **GA2** | H3 Data, H4 MLOps/Cloud, H5 Automation/Robotics, H6 GenAI/Agents, H8 Vision, H9 IoT/Edge       | WA3 Design/Development of Solutions, WA4 Investigation, WA5 Tool Usage   | ทักษะ (Skills)                  | SO(2), SO(6)        |
-| **GA3** | S4 Communication/English, S5 Teamwork/Leadership, H7 AI Security/Responsible AI                | WA8 Ethics, WA9 Individual & Collaborative Team Work, WA10 Communication | จริยธรรม (Ethics) + ทักษะ       | SO(3), SO(4), SO(5) |
-| **GA4** | S1 Analytical/Systems Thinking, S2 Creative Problem-Solving, S3 Adaptability/Lifelong Learning | WA2 Problem Analysis, WA12 Life-long Learning                            | ลักษณะบุคคล (Character) + ทักษะ | SO(7)               |
-| **GA5** | S6 Product/Entrepreneurial/Project Mindset, H3 Analytics, H6 GenAI/Agents                      | WA6 The Engineer and the World, WA11 Project Management & Finance        | ลักษณะบุคคล + ทักษะ             | SO(2), SO(4)        |
+| **GA1** | HS1 AI/ML & Applied Mathematics, HS2 Programming, HS3 Data Engineering/Analytics                  | WA1 Engineering Knowledge, WA2 Problem Analysis                          | ความรู้ (Knowledge)             | SO(1)               |
+| **GA2** | HS3 Data, HS4 MLOps/Cloud, HS5 Automation/Robotics, HS6 GenAI/Agents, HS8 Vision, HS9 IoT/Edge       | WA3 Design/Development of Solutions, WA4 Investigation, WA5 Tool Usage   | ทักษะ (Skills)                  | SO(2), SO(6)        |
+| **GA3** | SS4 Communication/English, SS5 Teamwork/Leadership, HS7 AI Security/Responsible AI                | WA8 Ethics, WA9 Individual & Collaborative Team Work, WA10 Communication | จริยธรรม (Ethics) + ทักษะ       | SO(3), SO(4), SO(5) |
+| **GA4** | SS1 Analytical/Systems Thinking, SS2 Creative Problem-Solving, SS3 Adaptability/Lifelong Learning | WA2 Problem Analysis, WA12 Life-long Learning                            | ลักษณะบุคคล (Character) + ทักษะ | SO(7)               |
+| **GA5** | SS6 Product/Entrepreneurial/Project Mindset, HS3 Analytics, HS6 GenAI/Agents                      | WA6 The Engineer and the World, WA11 Project Management & Finance        | ลักษณะบุคคล + ทักษะ             | SO(2), SO(4)        |
 
-> รหัสทักษะ H1–H9 (Hard) และ S1–S6 (Soft) ดูรายละเอียดใน [[03_Target_Skills]]
+> รหัสทักษะ HS1–HS9 (Hard) และ SS1–SS6 (Soft) ดูรายละเอียดใน [[03_Target_Skills]]
 
 [[01_Stakeholder_Needs|← ก่อนหน้า: ความต้องการ]] | [[00_OBE_Home|หน้าหลัก OBE]] | [[03_Target_Skills|ถัดไป: ทักษะเป้าหมาย →]]

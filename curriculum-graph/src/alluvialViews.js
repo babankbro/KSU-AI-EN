@@ -4,6 +4,7 @@ import {
   ENGINEERING_FOUNDATIONS, GROUPS, SKILL_SETS, KSA
 } from "./obeData.js";
 import { COURSES, GROUP_NAME, GROUP_COLOR, PLO_COLOR, PLO_NAME } from "./data.js";
+import { KNOWLEDGE, SKILLS_KSA, ATTITUDES } from "./ksaData.js";
 
 const setColor = id => GROUPS[SKILL_SETS.find(s => s.id === id)?.g]?.color || "#42618c";
 const allSkills = [...HARD_SKILLS, ...SOFT_SKILLS, ...ENGINEERING_FOUNDATIONS];
@@ -186,15 +187,55 @@ function viewSkillKsa() {
   };
 }
 
+/* ⑥ PLO → มิติ K–S–A → รหัส KSA รายข้อ
+   ใช้ความสัมพันธ์จริงจากสมุดรหัส ไม่ใช่น้ำหนักประมาณ — เส้นหนา = ข้อนั้นถูกใช้ในหลาย PLO */
+function viewPloKsaItems() {
+  const nodes = [], links = [];
+  const DIM = [
+    { k: "K", label: "🧠 Knowledge", sub: "K1–K26 ความรู้", color: "#2f6fb0", list: KNOWLEDGE },
+    { k: "S", label: "🛠️ Skill", sub: "S1–S20 ทักษะที่ทำได้", color: "#2f9e6b", list: SKILLS_KSA },
+    { k: "A", label: "❤️ Attitude", sub: "A1–A8 ทัศนคติ", color: "#c1466b", list: ATTITUDES }
+  ];
+
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => nodes.push({
+    id: `p:${p}`, col: "plo", label: `PLO${p}`, sub: PLO_NAME[p], color: PLO_COLOR[p]
+  }));
+  DIM.forEach(d => nodes.push({ id: `d:${d.k}`, col: "dim", label: d.label, sub: d.sub, color: d.color }));
+  DIM.forEach(d => d.list.forEach(r => {
+    if (r.plo?.length) nodes.push({ id: `i:${r.id}`, col: "item", label: r.id, sub: r.name, color: d.color });
+  }));
+
+  /* PLO → มิติ : จำนวนข้อของมิตินั้นที่ PLO รับผิดชอบ */
+  [1, 2, 3, 4, 5, 6, 7].forEach(p => DIM.forEach(d => {
+    const n = d.list.filter(r => r.plo?.includes(p)).length;
+    if (n) links.push({ s: `p:${p}`, t: `d:${d.k}`, v: n });
+  }));
+
+  /* มิติ → รหัสรายข้อ : จำนวน PLO ที่ข้อนั้นรองรับ */
+  DIM.forEach(d => d.list.forEach(r => {
+    if (r.plo?.length) links.push({ s: `d:${d.k}`, t: `i:${r.id}`, v: r.plo.length });
+  }));
+
+  return {
+    columns: [
+      { key: "plo", label: "① PLO1–7" },
+      { key: "dim", label: "② มิติ K–S–A" },
+      { key: "item", label: "③ รหัส KSA รายข้อ (54)" }
+    ], nodes, links, height: 1500
+  };
+}
+
 export const VIEWS = [
   { id: "v1", name: "ผู้มีส่วนได้ส่วนเสีย → หลักฐาน → Need → ชุดทักษะ",
     desc: "เสียงของใคร ผ่านหลักฐานอะไร กลายเป็นความต้องการข้อไหน และตอบด้วยชุดทักษะใด", build: viewShNeed },
   { id: "v2", name: "Need → ชุดทักษะ → กลุ่มรายวิชา",
     desc: "ความต้องการแต่ละข้อถูกแปลงเป็นชุดทักษะ และลงเรียนที่กลุ่มรายวิชาใด", build: viewNeedSkillCourse },
   { id: "v3", name: "ทักษะเป้าหมาย → ชุดทักษะ → ทักษะย่อย",
-    desc: "H1–H20, S1–S10 และ EF1–EF6 เชื่อมตรงสู่ AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewTargetSetSub },
+    desc: "HS1–HS20, SS1–SS10 และ EF1–EF6 เชื่อมตรงสู่ AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewTargetSetSub },
   { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–A",
     desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–ทัศนคติ", build: viewPloCloKsa },
   { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSA",
-    desc: "ทักษะเป้าหมายและฐานวิศวกรรมแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa }
+    desc: "ทักษะเป้าหมายและฐานวิศวกรรมแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa },
+  { id: "v6", name: "PLO → K–S–A รายข้อ",
+    desc: "ผลลัพธ์แต่ละ PLO แตกเป็นมิติความรู้–ทักษะ–ทัศนคติ แล้วลงถึงรหัส K/S/A รายข้อ · เส้นหนาที่มิติ = จำนวนข้อที่ PLO นั้นรับผิดชอบ · เส้นหนาที่รายข้อ = ข้อนั้นถูกใช้ในกี่ PLO", build: viewPloKsaItems }
 ];

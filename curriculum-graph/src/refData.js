@@ -11,7 +11,7 @@ export const REF_KINDS = [
   {
     kind: "มาตรฐานและกรอบธรรมาภิบาล AI",
     docs: "ISO/IEC 42001:2023, NIST AI RMF 1.0 และ GenAI Profile, แนวทาง ETDA/AIGC, AI Verify",
-    use: "กำหนด Responsible AI ความเสี่ยง ความปลอดภัย ความเป็นส่วนตัว การทวนสอบ และหลักฐานธรรมาภิบาลใน H7/AISK07/PLO4"
+    use: "กำหนด Responsible AI ความเสี่ยง ความปลอดภัย ความเป็นส่วนตัว การทวนสอบ และหลักฐานธรรมาภิบาลใน HS7/AISK07/PLO4"
   },
   {
     kind: "กรอบองค์ความรู้และสมรรถนะวิชาชีพ",
@@ -21,7 +21,7 @@ export const REF_KINDS = [
   {
     kind: "รายงานแนวโน้มและข้อมูลเชิงประจักษ์",
     docs: "WEF, Stanford AI Index/Lightcast, LinkedIn Economic Graph, BLS, NXPO, TDRI, ManpowerGroup, JobsDB และผลสำรวจผู้มีส่วนได้ส่วนเสีย",
-    use: "กำหนด H1–H20, S1–S10, อาชีพ C01–C26, รายวิชา และน้ำหนักความสำคัญของทักษะ"
+    use: "กำหนด HS1–HS20, SS1–SS10, อาชีพ C01–C26, รายวิชา และน้ำหนักความสำคัญของทักษะ"
   }
 ];
 

@@ -46,28 +46,28 @@
 
 | กลุ่มอาชีพ | งาน | ทักษะหลักที่หลักฐานตลาดยืนยัน | รหัสหลักสูตรที่รองรับ |
 |---|---:|---|---|
-| C01 AI/ML Engineer | 192 | Python, ML, Cloud, SQL, Data Pipelines, GenAI/LLM, API, CI/CD | H1–H4, H6 |
-| C02 AI Application / Solutions | 760 | AI Governance, Application, Cloud, Database, API, Prototype, Integration, Architecture | H2, H4, H6, H7, H20 |
-| C03 Smart Agriculture and IoT | 39 | Precision Agriculture, IoT, Sensors, Automation, Cloud IoT, Analytics | H3, H8, H9, H11, **H16** |
-| C04 Automation and Control | 481 | Automation, PLC, CAD, SCADA, Instrumentation, Sensors, MES | H5, H9, **H17** |
-| C05 Robotics and System Integration | 136 | Automation, Mechatronics, Testing, CAD, Robotics, PLC, Integration | H5, H9, H20 |
-| C06 AI Software and Application | 592 | Backend, Cloud, SQL, Security, Python, CI/CD, JavaScript, Docker | H2, H4, H6, H7, H20 |
-| C07 Data Engineer | 497 | SQL, Python, BI, ETL/ELT, Cloud, Data Quality, IaC, Data Modeling | H2–H4, H12, H20 |
-| C08 AI Innovator | 98 | Product Management, AI Product, Analytics, Agile, Market Research, Prototype, UX | H2, H3, H6, H20, S6 |
-| C09 Technology and AI Entrepreneur | 79 | AI/ML, Product Metrics, Cloud/SaaS, Analytics, Business Model, Market Validation | H1, H3, H4, H6, S6 |
-| C10 AI Researcher | 17 | Publication, ML, Python, CV, DL, Experiment, NLP | H1, H3, H8, H10, H14 |
-| C11 Government / Digital Technology | 228 | M365, IT Operations, Cybersecurity, Backup, Cloud, IAM, ITSM, e-Service | H4, H7, **H20** |
-| C12 Data Scientist / Analyst | 552 | BI, Excel, Visualization, SQL, Statistics, Python, Predictive Analytics | H1, H3, H11, **H19** |
-| C13 AI Smart Factory | 162 | Automation, ERP, Analytics, Lean, PLC/SCADA, IIoT, Sensors, Integration | H5, H9, **H17**, H20 |
-| C14 AI Process and Production | 917 | Process Optimization, Automation, Process Engineering, Quality, Lean, MES, Six Sigma | H3, H5, H13, **H17** |
-| C15 Decision Support Systems | 237 | BI, Analytics, Visualization, Forecasting, Optimization, SQL, Scenario Analysis | H3, H11, H13, **H19** |
-| C16 AI Maintenance | 279 | Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA, CMMS | H5, H9, H11, **H18** |
-| C17 AI Industrial Engineer | 111 | Process Optimization, Automation, Industrial Data, Lean, Predictive Analytics, ML | H1, H3, H5, H13, H17–H19 |
+| C01 AI/ML Engineer | 192 | Python, ML, Cloud, SQL, Data Pipelines, GenAI/LLM, API, CI/CD | HS1–HS4, HS6 |
+| C02 AI Application / Solutions | 760 | AI Governance, Application, Cloud, Database, API, Prototype, Integration, Architecture | HS2, HS4, HS6, HS7, HS20 |
+| C03 Smart Agriculture and IoT | 39 | Precision Agriculture, IoT, Sensors, Automation, Cloud IoT, Analytics | HS3, HS8, HS9, HS11, **HS16** |
+| C04 Automation and Control | 481 | Automation, PLC, CAD, SCADA, Instrumentation, Sensors, MES | HS5, HS9, **HS17** |
+| C05 Robotics and System Integration | 136 | Automation, Mechatronics, Testing, CAD, Robotics, PLC, Integration | HS5, HS9, HS20 |
+| C06 AI Software and Application | 592 | Backend, Cloud, SQL, Security, Python, CI/CD, JavaScript, Docker | HS2, HS4, HS6, HS7, HS20 |
+| C07 Data Engineer | 497 | SQL, Python, BI, ETL/ELT, Cloud, Data Quality, IaC, Data Modeling | HS2–HS4, HS12, HS20 |
+| C08 AI Innovator | 98 | Product Management, AI Product, Analytics, Agile, Market Research, Prototype, UX | HS2, HS3, HS6, HS20, SS6 |
+| C09 Technology and AI Entrepreneur | 79 | AI/ML, Product Metrics, Cloud/SaaS, Analytics, Business Model, Market Validation | HS1, HS3, HS4, HS6, SS6 |
+| C10 AI Researcher | 17 | Publication, ML, Python, CV, DL, Experiment, NLP | HS1, HS3, HS8, HS10, HS14 |
+| C11 Government / Digital Technology | 228 | M365, IT Operations, Cybersecurity, Backup, Cloud, IAM, ITSM, e-Service | HS4, HS7, **HS20** |
+| C12 Data Scientist / Analyst | 552 | BI, Excel, Visualization, SQL, Statistics, Python, Predictive Analytics | HS1, HS3, HS11, **HS19** |
+| C13 AI Smart Factory | 162 | Automation, ERP, Analytics, Lean, PLC/SCADA, IIoT, Sensors, Integration | HS5, HS9, **HS17**, HS20 |
+| C14 AI Process and Production | 917 | Process Optimization, Automation, Process Engineering, Quality, Lean, MES, Six Sigma | HS3, HS5, HS13, **HS17** |
+| C15 Decision Support Systems | 237 | BI, Analytics, Visualization, Forecasting, Optimization, SQL, Scenario Analysis | HS3, HS11, HS13, **HS19** |
+| C16 AI Maintenance | 279 | Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA, CMMS | HS5, HS9, HS11, **HS18** |
+| C17 AI Industrial Engineer | 111 | Process Optimization, Automation, Industrial Data, Lean, Predictive Analytics, ML | HS1, HS3, HS5, HS13, HS17–HS19 |
 
 > [!note] สถานะอาชีพ
 > C01–C12 คืออาชีพเป้าหมายเดิมของหลักสูตร ส่วน C13–C17 เป็น role clusters ที่ค้นพบเพิ่มเติมจากตลาดแรงงาน ใช้เพื่อเพิ่มความละเอียดของทักษะ T2 และการประยุกต์ข้าม Track โดยยังไม่ถือว่าเป็นการเพิ่มอาชีพเป้าหมายทางการจนกว่าคณะกรรมการหลักสูตรจะให้ความเห็นชอบ
 
-Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่ Communication, English, Problem Solving, Collaboration, Analytical Thinking, Stakeholder Management, Project Management และ Leadership จึงคง S1–S6 เป็นแกน และเพิ่ม S9–S10 เพื่อทำให้ stakeholder/change และคุณภาพการส่งมอบเชิงวิชาชีพวัดผลได้ชัดเจน
+Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่ Communication, English, Problem Solving, Collaboration, Analytical Thinking, Stakeholder Management, Project Management และ Leadership จึงคง SS1–SS6 เป็นแกน และเพิ่ม SS9–SS10 เพื่อทำให้ stakeholder/change และคุณภาพการส่งมอบเชิงวิชาชีพวัดผลได้ชัดเจน
 
 ## 3.3 ระดับความลึกของทักษะ
 
@@ -82,58 +82,58 @@ Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่
 
 ## 3.4 Hard Skills — แกนบังคับ 9 รายการ (เรียงตามความสำคัญ)
 
-> [!abstract]- **H1 · AI/ML Engineering & Applied Mathematics** — T1 ● T2 ● T3 ●
+> [!abstract]- **HS1 · AI/ML Engineering & Applied Mathematics** — T1 ● T2 ● T3 ●
 > พัฒนา ประเมิน และปรับปรุงโมเดล Machine Learning/Deep Learning โดยใช้คณิตศาสตร์ สถิติ ความน่าจะเป็น พีชคณิตเชิงเส้น และ Optimization อย่างถูกต้อง ครอบคลุม Supervised/Unsupervised Learning, Neural Networks, Model Evaluation, Explainability และการจัดการ Bias/Overfitting
 >
 > **📈 ตลาด** · AI/ML Specialists เป็นกลุ่มงานเติบโตเร็ว; Machine Learning ปรากฏสูงในประกาศงาน AI (Stanford/Lightcast)
 > **🌏 เทียบเคียง** · ACM/IEEE-CS/AAAI **CS2023** (ครบทั้ง Symbolic/Search/Planning/KR และ Subsymbolic ML/DL) · เสาหลัก NUS "Reasoning & Decision Making" — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.4]]
 > **🎯 ระดับ** · ทุก Track L3 · โครงงานพัฒนาโมเดลหลัก L4
 
-> [!abstract]- **H2 · Programming & AI Software Engineering** — T1 ● T2 ● T3 ●
+> [!abstract]- **HS2 · Programming & AI Software Engineering** — T1 ● T2 ● T3 ●
 > พัฒนาซอฟต์แวร์ AI ที่ดูแลรักษาและทดสอบได้ด้วย Python, SQL, API, Git, Data Structures and Algorithms, Software Architecture, Automated Testing, CI/CD, Clean Code และการใช้ AI Coding Tools อย่างมีวิจารณญาณ
 >
 > **📈 ตลาด** · Python พบบ่อยมากในประกาศงาน AI; Software Developers อยู่ในกลุ่มงานเทคโนโลยีที่เติบโตและมีจำนวนงานใหม่สูง
 > **🎯 ระดับ** · ทุก Track L3 · T3 และโครงงานซอฟต์แวร์ L4
 
-> [!abstract]- **H3 · Data Engineering, Analytics & Visualization** — T1 ● T2 ● T3 ●
+> [!abstract]- **HS3 · Data Engineering, Analytics & Visualization** — T1 ● T2 ● T3 ●
 > ออกแบบ Data Pipeline และจัดการข้อมูลตั้งแต่ ingestion, ETL/ELT, SQL/NoSQL, Data Cleaning, Feature Engineering, Data Quality, Data Governance, Streaming/Big Data ไปจนถึงการวิเคราะห์ การพยากรณ์ และการสื่อสารผลผ่าน Visualization และ Dashboard
 >
 > **📈 ตลาด** · Big Data Specialists และ Data Engineers เป็นกลุ่มงานเติบโตสูง; SQL, Data Analysis และ Workflow Management อยู่ในทักษะสำคัญของประกาศงาน AI
 > **🎯 ระดับ** · ทุก Track L3 · T3 ด้าน Data Platform L4
 
-> [!abstract]- **H4 · MLOps, Cloud & AI Infrastructure** — T1 ○ T2 ○ T3 ●
+> [!abstract]- **HS4 · MLOps, Cloud & AI Infrastructure** — T1 ○ T2 ○ T3 ●
 > นำระบบ AI ไปใช้งานจริงด้วย Cloud, Container, Docker, Kubernetes, Model Registry, ML/LLM Pipeline, Monitoring, Drift Detection, Observability, Scalability, Cost/Latency Optimization, GPU/Accelerator และ Edge–Cloud Integration
 >
 > **📈 ตลาด** · AWS, Automation, Workflow Management และ Scalability พบบ่อยในประกาศงาน AI สะท้อนว่าตลาดต้องการผู้ operationalize ระบบ ไม่ใช่เพียงสร้างโมเดล
 > **🎯 ระดับ** · ทุก Track L2–L3 · T3 L4
 
-> [!abstract]- **H5 · Industrial Automation, Robotics & Digital Twin** — T1 ○ T2 ● T3 ○
+> [!abstract]- **HS5 · Industrial Automation, Robotics & Digital Twin** — T1 ○ T2 ● T3 ○
 > ออกแบบและบูรณาการ PLC/SCADA, Industrial Networks, Robotics, Machine Control, Predictive Maintenance, Simulation, Digital Twin, Machine Vision Interface และ OT/IT Integration สำหรับสายการผลิตและระบบโลจิสติกส์อัตโนมัติ
 >
 > **📈 ตลาด** · ไทยต้องการ Smart Electronics & Industrial Robotics 226,423 ตำแหน่ง (2568–2572); การผลิตขั้นสูงคาดใช้ AI 81% และหุ่นยนต์ 69%
 > **🎯 ระดับ** · ทุก Track L2 · T2 L4 · T1 (ระบบอัตโนมัติ) L3
 
-> [!abstract]- **H6 · Generative AI, LLM & Agentic Systems** — T1 ○ T2 ○ T3 ●
+> [!abstract]- **HS6 · Generative AI, LLM & Agentic Systems** — T1 ○ T2 ○ T3 ●
 > พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows, **Model Selection & Evaluation, LLM Red-teaming** และ Guardrails
 >
 > **📈 ตลาด** · LinkedIn ระบุ AI Agents เป็นทักษะ AI ที่เติบโตเร็วที่สุดในปี 2025; Stanford/Lightcast พบการเติบโตสูงของ Generative AI, LLM, RAG และ Context Engineering
 > **🌏 เทียบเคียง** · IMDA GenAI TSC#3–#7, #9 (Model Selection/Evaluation/App Dev/Fine-tuning/Security) · Project Moonshot (LLM Red-teaming) — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C]]
 > **🎯 ระดับ** · ทุก Track L2 · T3 L4
 
-> [!abstract]- **H7 · AI Security, Privacy, Safety & Responsible AI** — T1 ● T2 ● T3 ●
+> [!abstract]- **HS7 · AI Security, Privacy, Safety & Responsible AI** — T1 ● T2 ● T3 ●
 > ออกแบบและตรวจสอบระบบ AI ให้ปลอดภัยและรับผิดชอบ ครอบคลุม Cybersecurity, Data Privacy/PDPA, Threat Modeling, Secure MLOps, Prompt Injection and Data Poisoning Defense, Model/Agent Guardrails, Robustness, Fairness, Explainability, AI Governance และ Regulatory Compliance
 >
 > **📈 ตลาด** · Networks and Cybersecurity เป็นทักษะเติบโตเร็วอันดับต้นตาม WEF; BLS คาดงาน Information Security Analysts โต 29%; ระบบอัตโนมัติและ AI Agents ทำให้ Machine Oversight และ Governance สำคัญขึ้น
 > **🌏 เทียบเคียง** · AI Verify 11 หลักการ (Outcome/Process/Evidence) + **ISO/IEC 42001 · NIST AI RMF · EU AI Act** + IMDA GenAI TSC#8/#9 + ACM/IEEE/IFIP/ABET Cybersecurity (Data Poisoning/Model Inversion/Penetration Testing) · เปลี่ยนจริยธรรม (Attitude) เป็น Hard Skill ที่วัดได้ — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.2/C.4]]
 > **🎯 ระดับ** · ทุก Track L3 · ผู้รับผิดชอบระบบ production L4
 
-> [!abstract]- **H8 · Computer Vision, Remote Sensing & Multimodal AI** — T1 ● T2 ● T3 ○
+> [!abstract]- **HS8 · Computer Vision, Remote Sensing & Multimodal AI** — T1 ● T2 ● T3 ○
 > พัฒนาระบบ Image Processing, Object Detection, Segmentation, Tracking, Quality Inspection, Multispectral/Hyperspectral Analysis, UAV/Remote Sensing, GeoAI และ Multimodal Data Fusion สำหรับภาคสนามและสายการผลิต
 >
 > **📈 ตลาด** · Visual Image Recognition และ Multimodal Models ปรากฏในข้อมูลประกาศงาน AI; เป็นทักษะเชื่อมตรงกับการตรวจโรค/ผลผลิตใน T1 และ Quality Inspection ใน T2
 > **🎯 ระดับ** · ทุก Track L2 · T1–T2 L4
 
-> [!abstract]- **H9 · IoT, Embedded, Edge AI & Sensor Networks** — T1 ● T2 ○ T3 ○
+> [!abstract]- **HS9 · IoT, Embedded, Edge AI & Sensor Networks** — T1 ● T2 ○ T3 ○
 > ออกแบบและบูรณาการ Sensor, Microcontroller, Embedded Linux, MQTT/Industrial Protocols, Wireless/LPWAN, Edge Computing, TinyML/Edge AI, Real-time Acquisition, Device Management และ Edge–Cloud Security สำหรับระบบอัจฉริยะในพื้นที่จริง
 >
 > **📈 ตลาด** · Sensor Networks เป็นหนึ่งในเทคโนโลยีที่ WEF ระบุว่าจะเปลี่ยนงานเกษตรและการผลิต และเป็นโครงสร้างพื้นฐานสำคัญของ Smart Agriculture และ Intelligent Systems
@@ -145,120 +145,120 @@ Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่
 
 | อันดับ | รหัส | Hard Skill                                      | T1 เกษตรอัจฉริยะ | T2 ปัญญาประดิษฐ์ภาคอุตสาหกรรม | T3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร |
 | -----: | ---- | ----------------------------------------------- | :------------------: | :--------------: | :--------------: |
-|      1 | H1   | AI/ML Engineering & Applied Mathematics         |          ●           |        ●         |        ●         |
-|      2 | H2   | Programming & AI Software Engineering           |          ●           |        ●         |        ●         |
-|      3 | H3   | Data Engineering, Analytics & Visualization     |          ●           |        ●         |        ●         |
-|      4 | H4   | MLOps, Cloud & AI Infrastructure                |          ○           |        ○         |        ●         |
-|      5 | H5   | Industrial Automation, Robotics & Digital Twin  |          ○           |        ●         |        ○         |
-|      6 | H6   | Generative AI, LLM & Agentic Systems            |          ○           |        ○         |        ●         |
-|      7 | H7   | AI Security, Privacy, Safety & Responsible AI   |          ●           |        ●         |        ●         |
-|      8 | H8   | Computer Vision, Remote Sensing & Multimodal AI |          ●           |        ●         |        ○         |
-|      9 | H9   | IoT, Embedded, Edge AI & Sensor Networks        |          ●           |        ○         |        ○         |
+|      1 | HS1   | AI/ML Engineering & Applied Mathematics         |          ●           |        ●         |        ●         |
+|      2 | HS2   | Programming & AI Software Engineering           |          ●           |        ●         |        ●         |
+|      3 | HS3   | Data Engineering, Analytics & Visualization     |          ●           |        ●         |        ●         |
+|      4 | HS4   | MLOps, Cloud & AI Infrastructure                |          ○           |        ○         |        ●         |
+|      5 | HS5   | Industrial Automation, Robotics & Digital Twin  |          ○           |        ●         |        ○         |
+|      6 | HS6   | Generative AI, LLM & Agentic Systems            |          ○           |        ○         |        ●         |
+|      7 | HS7   | AI Security, Privacy, Safety & Responsible AI   |          ●           |        ●         |        ●         |
+|      8 | HS8   | Computer Vision, Remote Sensing & Multimodal AI |          ●           |        ●         |        ○         |
+|      9 | HS9   | IoT, Embedded, Edge AI & Sensor Networks        |          ●           |        ○         |        ○         |
 
-## 3.5b Hard Skills — ส่วนขยาย 11 รายการ (H10–H20)
+## 3.5b Hard Skills — ส่วนขยาย 11 รายการ (HS10–HS20)
 
 > [!info] สถานะ "ส่วนขยาย"
-> ทักษะ H10–H20 **ไม่ถูกนับในแกนบังคับ 9 ข้อ** แต่มีหลักฐานตลาดแรงงานรองรับชัดเจน จึงบรรจุเป็น **วิชาเลือก / ความลึกเฉพาะ Track / Micro-credential / Watchlist** ที่ทบทวนทุกปี — ส่วนใหญ่เป็นทักษะที่ "แตกหน่อ" จากทักษะแกน (คอลัมน์ 🔗 ผูกกับ)
+> ทักษะ HS10–HS20 **ไม่ถูกนับในแกนบังคับ 9 ข้อ** แต่มีหลักฐานตลาดแรงงานรองรับชัดเจน จึงบรรจุเป็น **วิชาเลือก / ความลึกเฉพาะ Track / Micro-credential / Watchlist** ที่ทบทวนทุกปี — ส่วนใหญ่เป็นทักษะที่ "แตกหน่อ" จากทักษะแกน (คอลัมน์ 🔗 ผูกกับ)
 
-> [!example]- **H10 · NLP & Thai NLP / Sovereign AI** — T1 ○ T2 ○ T3 ● · ➕
+> [!example]- **HS10 · NLP & Thai NLP / Sovereign AI** — T1 ○ T2 ○ T3 ● · ➕
 > พัฒนาระบบประมวลผลภาษาธรรมชาติ ครอบคลุม Tokenization, Text Classification, NER, Information Extraction, Semantic Search และการต่อยอด **ภาษาไทย (Thai NLP)** บนโครงสร้างพื้นฐาน AI ของประเทศ (AI for Thai, ThaiLLM)
 >
 > **📈 ตลาด** · NLP เป็นทักษะเทคนิคที่ประกาศงานโตเร็วที่สุด **+155% YoY** และเป็นกลุ่มค่าตอบแทนสูง (Second Talent 2026); ตอบ **Need N15** โดยตรง
-> **🎯 ระดับ** · ทุก Track L2 · T3 L4 · **🔗 ผูกกับ** H6
+> **🎯 ระดับ** · ทุก Track L2 · T3 L4 · **🔗 ผูกกับ** HS6
 
-> [!example]- **H11 · Time-Series Forecasting & Predictive Analytics** — T1 ● T2 ● T3 ○ · ➕
+> [!example]- **HS11 · Time-Series Forecasting & Predictive Analytics** — T1 ● T2 ● T3 ○ · ➕
 > วิเคราะห์และพยากรณ์ข้อมูลเชิงเวลา (Seasonality, Trend, Anomaly Detection) เพื่อพยากรณ์ผลผลิต ราคา ความต้องการ และการบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance)
 >
 > **📈 ตลาด** · เป็นแกนของ Precision Farming (พยากรณ์ผลผลิต, T1) และ Predictive Maintenance ในสายการผลิต (T2) ที่ผู้ใช้บัณฑิตระบุเป็นเทคโนโลยีนำรายแทรค
-> **🎯 ระดับ** · T1–T2 L3–L4 · T3 L2 · **🔗 ผูกกับ** H1, H3
+> **🎯 ระดับ** · T1–T2 L3–L4 · T3 L2 · **🔗 ผูกกับ** HS1, HS3
 
-> [!example]- **H12 · Big Data & Distributed / Streaming Systems** — T1 ○ T2 ○ T3 ● · ➕
+> [!example]- **HS12 · Big Data & Distributed / Streaming Systems** — T1 ○ T2 ○ T3 ● · ➕
 > ประมวลผลข้อมูลขนาดใหญ่และแบบสตรีมด้วย Spark, Kafka, Data Lake/Lakehouse, Distributed Storage และ Real-time Pipeline
 >
 > **📈 ตลาด** · Big Data Specialists เป็นกลุ่มงานโตสูง (WEF); ไทยเปิดรับ Data Engineer/Data Scientist สูงสุดในภาค ICT (TDRI)
-> **🎯 ระดับ** · T3 L3–L4 · T1–T2 L2 · **🔗 ผูกกับ** H3, H4
+> **🎯 ระดับ** · T3 L3–L4 · T1–T2 L2 · **🔗 ผูกกับ** HS3, HS4
 
-> [!example]- **H13 · Reinforcement Learning, Optimization & Operations Research** — T1 ○ T2 ● T3 ○ · ➕
+> [!example]- **HS13 · Reinforcement Learning, Optimization & Operations Research** — T1 ○ T2 ● T3 ○ · ➕
 > ประยุกต์ Reinforcement Learning, Mathematical Optimization และ Operations Research กับปัญหาการควบคุม การจัดตาราง การวางแผนทรัพยากร และการควบคุมหุ่นยนต์/กระบวนการ
 >
 > **📈 ตลาด** · RL ปรากฏใน ~9% ของงาน AI (recommendation, robotics, control); เป็นแกนของ Industrial Optimization และ Autonomous Control (T2)
-> **🎯 ระดับ** · T2 L3 · T1/T3 L2 · **🔗 ผูกกับ** H1, H5
+> **🎯 ระดับ** · T2 L3 · T1/T3 L2 · **🔗 ผูกกับ** HS1, HS5
 
-> [!example]- **H14 · Data-Centric AI & Data Annotation / Labeling Operations** — T1 ● T2 ○ T3 ● · ➕
+> [!example]- **HS14 · Data-Centric AI & Data Annotation / Labeling Operations** — T1 ● T2 ○ T3 ● · ➕
 > จัดการคุณภาพข้อมูลแบบ Data-Centric: Labeling Strategy, Annotation Tools, Inter-annotator Agreement, Active Learning, Synthetic Data และ Human-in-the-Loop
 >
 > **📈 ตลาด** · **Data Annotator เป็นตำแหน่ง AI ที่โตเร็วที่สุดในไทย +586% (115→789 ตำแหน่ง/ไตรมาส)** ตาม TDRI; คุณภาพข้อมูลคือ Pain point อันดับต้นของผู้ใช้บัณฑิต (9/27)
-> **🎯 ระดับ** · ทุก Track L2 · ผู้ทำ Data Platform L3 · **🔗 ผูกกับ** H3
+> **🎯 ระดับ** · ทุก Track L2 · ผู้ทำ Data Platform L3 · **🔗 ผูกกับ** HS3
 
-> [!example]- **H15 · Green / Sustainable AI & Model Efficiency** — T1 ● T2 ○ T3 ○ · ➕
+> [!example]- **HS15 · Green / Sustainable AI & Model Efficiency** — T1 ● T2 ○ T3 ○ · ➕
 > ออกแบบ AI ที่ประหยัดพลังงานและทรัพยากร: Model Compression, Quantization, Distillation, Efficient Inference, TinyML Optimization และการวัด Carbon/Energy Footprint
 >
 > **📈 ตลาด** · **Environmental Stewardship ติด 10 ทักษะเติบโตเร็วของ WEF เป็นครั้งแรก**; ตอบ **Need N12** (Green AI/BCG) และเสริมการ deploy บน Edge ที่ทรัพยากรจำกัด (T1)
-> **🎯 ระดับ** · ทุก Track L1–L2 · Edge/MLOps L3 · **🔗 ผูกกับ** H4, H9
+> **🎯 ระดับ** · ทุก Track L1–L2 · Edge/MLOps L3 · **🔗 ผูกกับ** HS4, HS9
 
-> [!example]- **H16 · Smart Agriculture, Precision Agriculture & Agri-food Systems** — T1 ● T2 ○ T3 ○ · ➕
+> [!example]- **HS16 · Smart Agriculture, Precision Agriculture & Agri-food Systems** — T1 ● T2 ○ T3 ○ · ➕
 > บูรณาการ agronomy/food-process context กับ Precision Agriculture, Farm Management, IoT/Sensor, UAV/Remote Sensing, GIS, Variable-rate Control, Yield/Price Forecasting, Traceability และระบบตัดสินใจตลอดห่วงโซ่เกษตร–อาหาร
 >
 > **📈 ตลาด** · C03 ยืนยัน Precision Agriculture, IoT, Sensors, Automation, Cloud IoT และ Analytics เป็นชุดทักษะเฉพาะโดเมน แม้จำนวนชื่อตำแหน่งตรงมีเพียง 39 งาน
-> **🎯 ระดับ** · T1 L3–L4 · T2/T3 L1–L2 · **🔗 ผูกกับ** H3, H8, H9, H11
+> **🎯 ระดับ** · T1 L3–L4 · T2/T3 L1–L2 · **🔗 ผูกกับ** HS3, HS8, HS9, HS11
 
-> [!example]- **H17 · Smart Manufacturing, Process, Production, Quality & MES** — T1 ○ T2 ● T3 ○ · ➕
+> [!example]- **HS17 · Smart Manufacturing, Process, Production, Quality & MES** — T1 ○ T2 ● T3 ○ · ➕
 > วิเคราะห์และปรับปรุงกระบวนการผลิตด้วย Process Engineering, Lean, Six Sigma, Quality Engineering, Statistical Process Control, MES/ERP, Production Planning, OEE, Traceability, Industrial Data และ Smart Factory Integration
 >
 > **📈 ตลาด** · C14 มี 917 งานและ C13 มี 162 งาน โดยพบ Process Optimization, Automation, Quality, Standards, Lean, MES, ERP และ Industrial Data อย่างต่อเนื่อง
-> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** H3, H5, H13
+> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** HS3, HS5, HS13
 
-> [!example]- **H18 · Maintenance, Reliability & Asset Intelligence** — T1 ○ T2 ● T3 ○ · ➕
+> [!example]- **HS18 · Maintenance, Reliability & Asset Intelligence** — T1 ○ T2 ● T3 ○ · ➕
 > บริหารสุขภาพสินทรัพย์และความพร้อมใช้ด้วย Maintenance Planning, Reliability Engineering, Root Cause Analysis, FMEA/FMECA, CMMS/EAM, Condition Monitoring, Sensors, Predictive Maintenance, Remaining Useful Life และ Asset Performance Management
 >
 > **📈 ตลาด** · C16 มี 279 งาน โดย Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA และ CMMS เป็นทักษะเด่น
-> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** H5, H9, H11
+> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** HS5, HS9, HS11
 
-> [!example]- **H19 · Decision Intelligence, BI, DSS & Operations Analytics** — T1 ○ T2 ● T3 ● · ➕
+> [!example]- **HS19 · Decision Intelligence, BI, DSS & Operations Analytics** — T1 ○ T2 ● T3 ● · ➕
 > พัฒนาระบบสนับสนุนการตัดสินใจด้วย BI, Dashboard, Forecasting, Scenario Analysis, Simulation, Optimization, Operations Research, Decision Models, Explainable Recommendations และการวัดผลการตัดสินใจ
 >
 > **📈 ตลาด** · C15 มี 237 งานและ C12 มี 552 งาน โดย BI, Visualization, Forecasting, Optimization, SQL, Statistics และ Scenario Analysis เป็นหลักฐานตรง
-> **🎯 ระดับ** · T2/T3 L3 · T1 L2 · **🔗 ผูกกับ** H1, H3, H11, H13
+> **🎯 ระดับ** · T2/T3 L3 · T1 L2 · **🔗 ผูกกับ** HS1, HS3, HS11, HS13
 
-> [!example]- **H20 · Enterprise Solution Architecture, Integration & Digital Services** — T1 ○ T2 ○ T3 ● · ➕
+> [!example]- **HS20 · Enterprise Solution Architecture, Integration & Digital Services** — T1 ○ T2 ○ T3 ● · ➕
 > ออกแบบและส่งมอบระบบองค์กรผ่าน Requirements Engineering, Solution Architecture, APIs, System Integration, Cloud/SaaS, Identity and Access Management, IT Service Management, Backup/Disaster Recovery, Digital Government/e-Service, Vendor Management และ Technology Operations
 >
 > **📈 ตลาด** · C02, C06, C07 และ C11 ยืนยันความต้องการด้าน Architecture, Integration, Cloud, Security, IT Operations, IAM, ITSM และ digital service delivery
-> **🎯 ระดับ** · T3 L3–L4 · T1/T2 L2 · **🔗 ผูกกับ** H2, H4, H7
+> **🎯 ระดับ** · T3 L3–L4 · T1/T2 L2 · **🔗 ผูกกับ** HS2, HS4, HS7
 
 ## 3.6 Soft Skills — แกนบังคับ 6 รายการ (เรียงตามความสำคัญ)
 
-> [!quote]- **S1 · Analytical, Critical & Systems Thinking** — ทุก Track ●
+> [!quote]- **SS1 · Analytical, Critical & Systems Thinking** — ทุก Track ●
 > วิเคราะห์เหตุและผล มองความสัมพันธ์ขององค์ประกอบทั้งระบบ ตรวจสอบสมมติฐาน ประเมินความน่าเชื่อถือของข้อมูลและผลลัพธ์ AI และตัดสินใจโดยใช้หลักฐาน
 >
 > **📈 ตลาด** · WEF ระบุ Analytical Thinking เป็นทักษะแกนที่นายจ้างต้องการมากที่สุด และ Systems Thinking มีความสำคัญเพิ่มขึ้นจาก AI, Robotics และ Automation
 > **🧭 พฤติกรรม** · สร้าง problem model, causal/system map, เปรียบเทียบทางเลือก และอธิบายเหตุผลได้
 
-> [!quote]- **S2 · Creative Problem-Solving & Engineering Judgment** — ทุก Track ●
+> [!quote]- **SS2 · Creative Problem-Solving & Engineering Judgment** — ทุก Track ●
 > กำหนดปัญหาจริง สร้างทางเลือกที่เป็นไปได้ ทดลองอย่างรวดเร็ว และเลือกแนวทางภายใต้ข้อจำกัดด้านข้อมูล เวลา งบประมาณ ความปลอดภัย และผลกระทบ
 >
 > **📈 ตลาด** · Creative Thinking เป็นทั้งทักษะแกนและทักษะเติบโตสูง; งาน Intelligent Systems ต้องใช้วิจารณญาณและการกำกับเครื่องจักรอัตโนมัติ
 > **🧭 พฤติกรรม** · Problem framing, trade-off analysis, prototype iteration และการตัดสินใจภายใต้ความไม่แน่นอน
 
-> [!quote]- **S3 · Adaptability, Resilience & Lifelong Learning** — ทุก Track ●
+> [!quote]- **SS3 · Adaptability, Resilience & Lifelong Learning** — ทุก Track ●
 > ประเมินช่องว่างความรู้ วางแผนเรียนรู้ด้วยตนเอง ทดลองใช้เทคโนโลยีใหม่ รับและใช้ข้อเสนอแนะ และปรับตัวต่อความล้มเหลวหรือการเปลี่ยนแปลงของเครื่องมือและข้อกำหนด
 >
 > **📈 ตลาด** · WEF จัด Resilience/Flexibility/Agility ไว้ในกลุ่มทักษะแกนสูงสุด และ Curiosity/Lifelong Learning อยู่ในกลุ่มทักษะที่เพิ่มความสำคัญ ขณะที่ 39% ของชุดทักษะแรงงานมีแนวโน้มเปลี่ยนภายในปี 2030
 > **🧭 พฤติกรรม** · Learning plan, technology review, reflective portfolio และหลักฐานการประยุกต์ใช้ความรู้ใหม่
 
-> [!quote]- **S4 · Professional Communication, Technical English & Data Storytelling** — ทุก Track ●
+> [!quote]- **SS4 · Professional Communication, Technical English & Data Storytelling** — ทุก Track ●
 > สื่อสารข้อมูลเทคนิคที่ซับซ้อนด้วยภาษาไทยและอังกฤษผ่านรายงาน การนำเสนอ Visualization, Dashboard และสื่อดิจิทัล โดยปรับสารให้เหมาะกับวิศวกร ผู้บริหาร เกษตรกร และชุมชน
 >
 > **📈 ตลาด** · TDRI พบ **การสื่อสาร + ภาษาอังกฤษ ระบุใน >75% ของประกาศงาน AI** (เป็น "necessity"); งานอุตสาหกรรมอัจฉริยะต้องใช้ Executive Communication และ Storytelling
 > **🧭 พฤติกรรม** · รายงานเทคนิค การนำเสนอ การตอบคำถาม และการอธิบายผล AI ต่อผู้ฟังต่างกลุ่ม
 
-> [!quote]- **S5 · Teamwork, Cross-functional Collaboration & Leadership** — ทุก Track ●
+> [!quote]- **SS5 · Teamwork, Cross-functional Collaboration & Leadership** — ทุก Track ●
 > ทำงานในบทบาทผู้นำและสมาชิกทีม กำหนดเป้าหมาย แบ่งงาน สร้างความปลอดภัยในการแสดงความคิดเห็น จัดการความขัดแย้ง และรับผิดชอบต่อผลลัพธ์ร่วมกัน
 >
 > **📈 ตลาด** · Leadership and Social Influence อยู่ในกลุ่มทักษะแกนและทักษะที่เติบโตสูง; สอวช. เน้น Job-specific Skills ควบคู่ People Management และ Creative Thinking
 > **🧭 พฤติกรรม** · Team charter, project plan, meeting evidence, peer assessment และผลงานตามบทบาท
 
-> [!quote]- **S6 · Product, Entrepreneurial & Project Management Mindset** — ทุก Track ●
+> [!quote]- **SS6 · Product, Entrepreneurial & Project Management Mindset** — ทุก Track ●
 > เปลี่ยนปัญหาและความต้องการของผู้ใช้เป็นคุณค่า ผลิตภัณฑ์ หรือนวัตกรรม ประเมินความเป็นไปได้ด้านเทคนิค ธุรกิจ ต้นทุน ความเสี่ยง และผลกระทบ พร้อมวางแผนและส่งมอบโครงการอย่างเป็นระบบ
 >
 > **📈 ตลาด** · Project Management เป็นหนึ่งในทักษะที่พบมากในประกาศงาน AI ของ Stanford/Lightcast และตลาดต้องการผู้ที่เชื่อม AI กับการดำเนินงานและผลลัพธ์ทางธุรกิจ
@@ -270,37 +270,37 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 
 | อันดับ | รหัส | Soft Skill                                              | T1 เกษตรอัจฉริยะ | T2 ปัญญาประดิษฐ์ภาคอุตสาหกรรม | T3 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร |
 | -----: | ---- | ------------------------------------------------------- | :------------------: | :--------------: | :--------------: |
-|      1 | S1   | Analytical, Critical & Systems Thinking                 |          ●           |        ●         |        ●         |
-|      2 | S2   | Creative Problem-Solving & Engineering Judgment         |          ●           |        ●         |        ●         |
-|      3 | S3   | Adaptability, Resilience & Lifelong Learning            |          ●           |        ●         |        ●         |
-|      4 | S4   | Professional Communication, English & Data Storytelling |          ●           |        ●         |        ●         |
-|      5 | S5   | Teamwork, Cross-functional Collaboration & Leadership   |          ●           |        ●         |        ●         |
-|      6 | S6   | Product, Entrepreneurial & Project Management Mindset   |          ●           |        ●         |        ●         |
+|      1 | SS1   | Analytical, Critical & Systems Thinking                 |          ●           |        ●         |        ●         |
+|      2 | SS2   | Creative Problem-Solving & Engineering Judgment         |          ●           |        ●         |        ●         |
+|      3 | SS3   | Adaptability, Resilience & Lifelong Learning            |          ●           |        ●         |        ●         |
+|      4 | SS4   | Professional Communication, English & Data Storytelling |          ●           |        ●         |        ●         |
+|      5 | SS5   | Teamwork, Cross-functional Collaboration & Leadership   |          ●           |        ●         |        ●         |
+|      6 | SS6   | Product, Entrepreneurial & Project Management Mindset   |          ●           |        ●         |        ●         |
 
-## 3.7b Soft Skills — ส่วนขยาย 4 รายการ (S7–S10)
+## 3.7b Soft Skills — ส่วนขยาย 4 รายการ (SS7–SS10)
 
 > [!info] สถานะ "ส่วนขยาย"
-> S7–S10 **ไม่นับในแกนบังคับ 6 ข้อ** แต่มีหลักฐาน WEF/ตลาดไทยและประกาศงาน C01–C17 รองรับ จึงบรรจุเป็นทักษะที่สอดแทรกในกิจกรรม/Workshop และประเมินเชิงพัฒนาการ
+> SS7–SS10 **ไม่นับในแกนบังคับ 6 ข้อ** แต่มีหลักฐาน WEF/ตลาดไทยและประกาศงาน C01–C17 รองรับ จึงบรรจุเป็นทักษะที่สอดแทรกในกิจกรรม/Workshop และประเมินเชิงพัฒนาการ
 
-> [!example]- **S7 · Curiosity, AI Literacy & Human–AI Teaming** — ทุก Track ● · ➕
+> [!example]- **SS7 · Curiosity, AI Literacy & Human–AI Teaming** — ทุก Track ● · ➕
 > ใช้เครื่องมือ AI เป็น "เพื่อนร่วมงาน" อย่างมีวิจารณญาณ — เข้าใจว่า AI ทำอะไรได้/ไม่ได้ ตั้งคำถามและ Prompt อย่างมีประสิทธิภาพ ตรวจสอบผลลัพธ์ และเรียนรู้เครื่องมือใหม่ด้วยความอยากรู้
 >
 > **📈 ตลาด** · **AI Literacy** เป็นทักษะหายากอันดับ 2 ของโลก (ManpowerGroup 2026) และ **Curiosity & Lifelong Learning** ติด 10 ทักษะเติบโตเร็วของ WEF
 > **🧭 พฤติกรรม** · การใช้ AI tools ในงานอย่างโปร่งใส ตรวจสอบผล และอธิบายข้อจำกัด
 
-> [!example]- **S8 · Empathy, Service Orientation & Stakeholder-Centric Mindset** — ทุก Track ● · ➕
+> [!example]- **SS8 · Empathy, Service Orientation & Stakeholder-Centric Mindset** — ทุก Track ● · ➕
 > เข้าใจบริบทและความต้องการของผู้ใช้จริง โดยเฉพาะ **เกษตรกร/ชุมชนท้องถิ่นภาคอีสาน** ออกแบบโซลูชันที่ผู้ใช้ดูแลเองได้ และคำนึงถึงผลกระทบทางสังคม
 >
 > **📈 ตลาด** · **Empathy & Active Listening / Service Orientation** อยู่ในกลุ่มทักษะแกนของ WEF; ตอบ **Need N11** (ตอบโจทย์ชุมชนท้องถิ่น) และ N17 (Inclusive AI)
 > **🧭 พฤติกรรม** · User/Field discovery, การรับฟังผู้ใช้ และการออกแบบที่ยึดผู้ใช้เป็นศูนย์กลาง
 
-> [!example]- **S9 · Stakeholder, Requirements & Change Facilitation** — ทุก Track ● · ➕
+> [!example]- **SS9 · Stakeholder, Requirements & Change Facilitation** — ทุก Track ● · ➕
 > ระบุและจัดลำดับความต้องการ ประสานผู้มีส่วนได้ส่วนเสีย จัดการ expectation/ความขัดแย้ง สื่อสาร trade-off สร้าง acceptance criteria และสนับสนุนการเปลี่ยนผ่านจากต้นแบบสู่การใช้งานจริง
 >
 > **📈 ตลาด** · Stakeholder Management ติด Top 5 ของ C02, C03, C06, C08, C11, C12 และ C15 และเป็นแกนส่งมอบ AI solution ข้ามหลายบทบาท
 > **🧭 พฤติกรรม** · Stakeholder map, interview, requirements backlog, acceptance criteria, change/rollout plan และ sign-off evidence
 
-> [!example]- **S10 · Agile Delivery, Quality, Safety & Professional Accountability** — ทุก Track ● · ➕
+> [!example]- **SS10 · Agile Delivery, Quality, Safety & Professional Accountability** — ทุก Track ● · ➕
 > วางแผนและส่งมอบงานเป็นรอบสั้น รักษาคุณภาพและความปลอดภัย รับผิดชอบต่อเวลา/หลักฐาน/ผลลัพธ์ ใช้ review, testing, retrospective และ continuous improvement กับงานซอฟต์แวร์ ข้อมูล และระบบกายภาพ
 >
 > **📈 ตลาด** · Project delivery, Agile/Scrum, testing, quality, standards และ safety ปรากฏใน C05, C06, C08, C13, C14, C16 และงานวิศวกรรมที่ต้องส่งมอบระบบจริง
@@ -309,7 +309,7 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 ## 3.7c ฐานทักษะวิศวกรรมประกอบ (EF1–EF6)
 
 > [!important] เหตุผลที่แยกรหัส EF
-> Master Catalog H1–H20 สกัดจากอาชีพ AI และระบบอัจฉริยะ จึงไม่ควรบังคับรวมทักษะวิศวกรรมกายภาพไว้ใน H ใดเพียงข้อเดียว หลักสูตรกำหนด **EF1–EF6** เป็นฐานทักษะประกอบเพื่อให้ข้อเสนอเรื่อง CAD, heat transfer, pneumatic/hydraulic, safety, process engineering และ system integration มีเจ้าภาพและหลักฐานชัดเจน ทั้งนี้ EF **ไม่เพิ่มจำนวน H** และใช้ร่วมกับ AISK02/AISK03/AISK04
+> Master Catalog HS1–HS20 สกัดจากอาชีพ AI และระบบอัจฉริยะ จึงไม่ควรบังคับรวมทักษะวิศวกรรมกายภาพไว้ใน H ใดเพียงข้อเดียว หลักสูตรกำหนด **EF1–EF6** เป็นฐานทักษะประกอบเพื่อให้ข้อเสนอเรื่อง CAD, heat transfer, pneumatic/hydraulic, safety, process engineering และ system integration มีเจ้าภาพและหลักฐานชัดเจน ทั้งนี้ EF **ไม่เพิ่มจำนวน H** และใช้ร่วมกับ AISK02/AISK03/AISK04
 
 | รหัส | ฐานทักษะ | Sub-skills ที่ต้องวัด | AISK | PLO หลัก | PLO สนับสนุน |
 |---|---|---|---|---|---|
@@ -330,11 +330,11 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 
 ## 3.8 การนำชุดทักษะไปใช้
 
-1. ใช้ H1–H4 และ H7 เป็นแกนร่วมของนักศึกษาทุก Track
-2. ใช้ H8–H9 เป็นแกนเชิงระบบกายภาพของแขนงวิชาเกษตรอัจฉริยะ โดยใช้ข้าว อ้อย มันสำปะหลัง และอุตสาหกรรมแปรรูปเป็นบริบท และยกระดับด้วย H16 Precision Agriculture (เสริม H11, H14, H15)
-3. ใช้ H5 และ H8 เป็นแกนระบบอัตโนมัติในแขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม และยกระดับด้วย H17 Smart Manufacturing, H18 Maintenance/Reliability และ H19 Decision Intelligence (เสริม H11, H13)
-4. ใช้ H4 และ H6 เป็นแกน production AI ของแขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร และยกระดับด้วย H19 DSS/BI และ H20 Enterprise Solution Architecture/Digital Services (เสริม H10, H12)
-5. ใช้ S9 วัดการทำ requirements และ stakeholder/change facilitation และใช้ S10 วัดคุณภาพ ความปลอดภัย ความรับผิดชอบ และการส่งมอบแบบ Agile ใน Workshop, Project และสหกิจศึกษา
+1. ใช้ HS1–HS4 และ HS7 เป็นแกนร่วมของนักศึกษาทุก Track
+2. ใช้ HS8–HS9 เป็นแกนเชิงระบบกายภาพของแขนงวิชาเกษตรอัจฉริยะ โดยใช้ข้าว อ้อย มันสำปะหลัง และอุตสาหกรรมแปรรูปเป็นบริบท และยกระดับด้วย HS16 Precision Agriculture (เสริม HS11, HS14, HS15)
+3. ใช้ HS5 และ HS8 เป็นแกนระบบอัตโนมัติในแขนงวิชาปัญญาประดิษฐ์ภาคอุตสาหกรรม และยกระดับด้วย HS17 Smart Manufacturing, HS18 Maintenance/Reliability และ HS19 Decision Intelligence (เสริม HS11, HS13)
+4. ใช้ HS4 และ HS6 เป็นแกน production AI ของแขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร และยกระดับด้วย HS19 DSS/BI และ HS20 Enterprise Solution Architecture/Digital Services (เสริม HS10, HS12)
+5. ใช้ SS9 วัดการทำ requirements และ stakeholder/change facilitation และใช้ SS10 วัดคุณภาพ ความปลอดภัย ความรับผิดชอบ และการส่งมอบแบบ Agile ใน Workshop, Project และสหกิจศึกษา
 6. ใช้ Workshop, Project และสหกิจศึกษาประเมินการบูรณาการ Hard Skills กับ Soft Skills จากโจทย์จริง
 7. ทบทวนอันดับและรายละเอียดอย่างน้อยปีละครั้งจากประกาศงานจริง Advisory Board และข้อมูลศิษย์เก่า/ผู้ใช้บัณฑิต
 
@@ -346,43 +346,43 @@ Soft Skills ทั้ง 6 รายการเป็นทักษะหล�
 
 | อันดับ | รหัส | Hard Skill | สถานะ | T1 | T2 | T3 | หลักฐานตลาดหลัก |
 |---:|---|---|:--:|:--:|:--:|:--:|---|
-| 1 | H1 | AI/ML Engineering & Applied Mathematics | ● Core | ● | ● | ● | WEF AI&Big Data #1; Stanford/Lightcast |
-| 2 | H2 | Programming & AI Software Engineering | ● Core | ● | ● | ● | Python พบบ่อยสุด; TDRI MVS |
-| 3 | H3 | Data Engineering, Analytics & Visualization | ● Core | ● | ● | ● | Data Eng/Scientist สูงสุดภาค ICT (TDRI) |
-| 4 | H4 | MLOps, Cloud & AI Infrastructure | ● Core | ○ | ○ | ● | AWS/Automation/Scalability |
-| 5 | H5 | Industrial Automation, Robotics & Digital Twin | ● Core | ○ | ● | ○ | สอวช. Robotics 226,423 ตำแหน่ง |
-| 6 | H6 | Generative AI, LLM & Agentic Systems | ● Core | ○ | ○ | ● | AI Agents โตเร็วสุด (LinkedIn) |
-| 7 | H7 | AI Security, Privacy, Safety & Responsible AI | ● Core | ● | ● | ● | Cybersecurity #2 (WEF); Responsible AI 15% (TDRI) |
-| 8 | H8 | Computer Vision, Remote Sensing & Multimodal AI | ● Core | ● | ● | ○ | Vision/Multimodal ในประกาศงาน AI |
-| 9 | H9 | IoT, Embedded, Edge AI & Sensor Networks | ● Core | ● | ○ | ○ | Sensor Networks (WEF Jobs of Tomorrow) |
-| 10 | H10 | NLP & Thai NLP / Sovereign AI | ◐ Ext | ○ | ○ | ● | NLP +155% YoY (Second Talent); N15 |
-| 11 | H11 | Time-Series Forecasting & Predictive Analytics | ◐ Ext | ● | ● | ○ | พยากรณ์ผลผลิต/Predictive Maintenance |
-| 12 | H12 | Big Data & Distributed/Streaming Systems | ◐ Ext | ○ | ○ | ● | Big Data Specialists (WEF) |
-| 13 | H13 | Reinforcement Learning, Optimization & OR | ◐ Ext | ○ | ● | ○ | RL ~9% ของงาน AI |
-| 14 | H14 | Data-Centric AI & Data Annotation Ops | ◐ Ext | ● | ○ | ● | Data Annotator +586% (TDRI) |
-| 15 | H15 | Green / Sustainable AI & Model Efficiency | ◐ Ext | ● | ○ | ○ | Environmental Stewardship (WEF top-10); N12 |
-| 16 | H16 | Smart Agriculture, Precision Agriculture & Agri-food Systems | ◐ Ext | ● | ○ | ○ | C03: Precision Ag, IoT, Sensors, Analytics |
-| 17 | H17 | Smart Manufacturing, Process, Production, Quality & MES | ◐ Ext | ○ | ● | ○ | C13–C14: 1,079 relations; Process/Quality/MES |
-| 18 | H18 | Maintenance, Reliability & Asset Intelligence | ◐ Ext | ○ | ● | ○ | C16: 279 relations; RCA/FMEA/CMMS/PdM |
-| 19 | H19 | Decision Intelligence, BI, DSS & Operations Analytics | ◐ Ext | ○ | ● | ● | C12/C15: BI, Forecasting, Optimization |
-| 20 | H20 | Enterprise Solution Architecture, Integration & Digital Services | ◐ Ext | ○ | ○ | ● | C02/C06/C07/C11: Architecture/IT Services |
+| 1 | HS1 | AI/ML Engineering & Applied Mathematics | ● Core | ● | ● | ● | WEF AI&Big Data #1; Stanford/Lightcast |
+| 2 | HS2 | Programming & AI Software Engineering | ● Core | ● | ● | ● | Python พบบ่อยสุด; TDRI MVS |
+| 3 | HS3 | Data Engineering, Analytics & Visualization | ● Core | ● | ● | ● | Data Eng/Scientist สูงสุดภาค ICT (TDRI) |
+| 4 | HS4 | MLOps, Cloud & AI Infrastructure | ● Core | ○ | ○ | ● | AWS/Automation/Scalability |
+| 5 | HS5 | Industrial Automation, Robotics & Digital Twin | ● Core | ○ | ● | ○ | สอวช. Robotics 226,423 ตำแหน่ง |
+| 6 | HS6 | Generative AI, LLM & Agentic Systems | ● Core | ○ | ○ | ● | AI Agents โตเร็วสุด (LinkedIn) |
+| 7 | HS7 | AI Security, Privacy, Safety & Responsible AI | ● Core | ● | ● | ● | Cybersecurity #2 (WEF); Responsible AI 15% (TDRI) |
+| 8 | HS8 | Computer Vision, Remote Sensing & Multimodal AI | ● Core | ● | ● | ○ | Vision/Multimodal ในประกาศงาน AI |
+| 9 | HS9 | IoT, Embedded, Edge AI & Sensor Networks | ● Core | ● | ○ | ○ | Sensor Networks (WEF Jobs of Tomorrow) |
+| 10 | HS10 | NLP & Thai NLP / Sovereign AI | ◐ Ext | ○ | ○ | ● | NLP +155% YoY (Second Talent); N15 |
+| 11 | HS11 | Time-Series Forecasting & Predictive Analytics | ◐ Ext | ● | ● | ○ | พยากรณ์ผลผลิต/Predictive Maintenance |
+| 12 | HS12 | Big Data & Distributed/Streaming Systems | ◐ Ext | ○ | ○ | ● | Big Data Specialists (WEF) |
+| 13 | HS13 | Reinforcement Learning, Optimization & OR | ◐ Ext | ○ | ● | ○ | RL ~9% ของงาน AI |
+| 14 | HS14 | Data-Centric AI & Data Annotation Ops | ◐ Ext | ● | ○ | ● | Data Annotator +586% (TDRI) |
+| 15 | HS15 | Green / Sustainable AI & Model Efficiency | ◐ Ext | ● | ○ | ○ | Environmental Stewardship (WEF top-10); N12 |
+| 16 | HS16 | Smart Agriculture, Precision Agriculture & Agri-food Systems | ◐ Ext | ● | ○ | ○ | C03: Precision Ag, IoT, Sensors, Analytics |
+| 17 | HS17 | Smart Manufacturing, Process, Production, Quality & MES | ◐ Ext | ○ | ● | ○ | C13–C14: 1,079 relations; Process/Quality/MES |
+| 18 | HS18 | Maintenance, Reliability & Asset Intelligence | ◐ Ext | ○ | ● | ○ | C16: 279 relations; RCA/FMEA/CMMS/PdM |
+| 19 | HS19 | Decision Intelligence, BI, DSS & Operations Analytics | ◐ Ext | ○ | ● | ● | C12/C15: BI, Forecasting, Optimization |
+| 20 | HS20 | Enterprise Solution Architecture, Integration & Digital Services | ◐ Ext | ○ | ○ | ● | C02/C06/C07/C11: Architecture/IT Services |
 
 ### Master Catalog — Soft Skills 10 รายการ (● Core 6 · ◐ Extended 4)
 
 | อันดับ | รหัส | Soft Skill | สถานะ | หลักฐานตลาดหลัก |
 |---:|---|---|:--:|---|
-| 1 | S1 | Analytical, Critical & Systems Thinking | ● Core | Analytical Thinking ทักษะแกน #1 (WEF) |
-| 2 | S2 | Creative Problem-Solving & Engineering Judgment | ● Core | Creative Thinking ทักษะแกน+โตสูง (WEF) |
-| 3 | S3 | Adaptability, Resilience & Lifelong Learning | ● Core | Resilience/Flexibility ทักษะแกนสูงสุด (WEF) |
-| 4 | S4 | Professional Communication, English & Data Storytelling | ● Core | สื่อสาร+อังกฤษ >75% ของประกาศ (TDRI) |
-| 5 | S5 | Teamwork, Cross-functional Collaboration & Leadership | ● Core | Leadership & Social Influence (WEF) |
-| 6 | S6 | Product, Entrepreneurial & Project Management Mindset | ● Core | Project Management ในประกาศงาน AI |
-| 7 | S7 | Curiosity, AI Literacy & Human–AI Teaming | ◐ Ext | AI Literacy #2 (ManpowerGroup); Curiosity (WEF) |
-| 8 | S8 | Empathy, Service Orientation & Stakeholder-Centric | ◐ Ext | Empathy/Service Orientation ทักษะแกน (WEF); N11 |
-| 9 | S9 | Stakeholder, Requirements & Change Facilitation | ◐ Ext | Stakeholder Management เป็น Top 5 ใน 7 กลุ่ม C |
-| 10 | S10 | Agile Delivery, Quality, Safety & Professional Accountability | ◐ Ext | Agile/Testing/Quality/Safety ใน software+industrial roles |
+| 1 | SS1 | Analytical, Critical & Systems Thinking | ● Core | Analytical Thinking ทักษะแกน #1 (WEF) |
+| 2 | SS2 | Creative Problem-Solving & Engineering Judgment | ● Core | Creative Thinking ทักษะแกน+โตสูง (WEF) |
+| 3 | SS3 | Adaptability, Resilience & Lifelong Learning | ● Core | Resilience/Flexibility ทักษะแกนสูงสุด (WEF) |
+| 4 | SS4 | Professional Communication, English & Data Storytelling | ● Core | สื่อสาร+อังกฤษ >75% ของประกาศ (TDRI) |
+| 5 | SS5 | Teamwork, Cross-functional Collaboration & Leadership | ● Core | Leadership & Social Influence (WEF) |
+| 6 | SS6 | Product, Entrepreneurial & Project Management Mindset | ● Core | Project Management ในประกาศงาน AI |
+| 7 | SS7 | Curiosity, AI Literacy & Human–AI Teaming | ◐ Ext | AI Literacy #2 (ManpowerGroup); Curiosity (WEF) |
+| 8 | SS8 | Empathy, Service Orientation & Stakeholder-Centric | ◐ Ext | Empathy/Service Orientation ทักษะแกน (WEF); N11 |
+| 9 | SS9 | Stakeholder, Requirements & Change Facilitation | ◐ Ext | Stakeholder Management เป็น Top 5 ใน 7 กลุ่ม C |
+| 10 | SS10 | Agile Delivery, Quality, Safety & Professional Accountability | ◐ Ext | Agile/Testing/Quality/Safety ใน software+industrial roles |
 
 > [!success] สรุปการคัดเลือก
-> **แกนบังคับ = Hard 9 + Soft 6 (15 รายการ)** ใช้เป็นฐานออกแบบ PLO และ Curriculum Mapping · **ส่วนขยาย = Hard 11 + Soft 4 (15 รายการ)** ใช้เป็นวิชาเลือก/ความลึกเฉพาะ Track/Micro-credential และ **Watchlist ทบทวนทุกปี** ทั้งนี้ H16–H20 และ S9–S10 เพิ่มเพื่อปิดช่องว่างจาก C01–C17 โดยผูกกับทักษะแกนเดิมเพื่อไม่ให้หลักสูตรแตกกระจาย
+> **แกนบังคับ = Hard 9 + Soft 6 (15 รายการ)** ใช้เป็นฐานออกแบบ PLO และ Curriculum Mapping · **ส่วนขยาย = Hard 11 + Soft 4 (15 รายการ)** ใช้เป็นวิชาเลือก/ความลึกเฉพาะ Track/Micro-credential และ **Watchlist ทบทวนทุกปี** ทั้งนี้ HS16–HS20 และ SS9–SS10 เพิ่มเพื่อปิดช่องว่างจาก C01–C17 โดยผูกกับทักษะแกนเดิมเพื่อไม่ให้หลักสูตรแตกกระจาย
 
 [[02_Graduate_Attributes|← ก่อนหน้า: ลักษณะบัณฑิต]] | [[00_OBE_Home|หน้าหลัก OBE]] | [[04_PLOs_7_OBE|ถัดไป: PLO 7 ข้อ →]]

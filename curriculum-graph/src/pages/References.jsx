@@ -82,7 +82,7 @@ export default function References() {
           </div>
         </Section>
 
-        <Section title="รายงานและข้อมูลเชิงประจักษ์" sub="ใช้กำหนด H1–H20, S1–S10, อาชีพ C01–C26 และน้ำหนักความสำคัญของทักษะ">
+        <Section title="รายงานและข้อมูลเชิงประจักษ์" sub="ใช้กำหนด HS1–HS20, SS1–SS10, อาชีพ C01–C26 และน้ำหนักความสำคัญของทักษะ">
           <div className="scroll-x">
             <table className="tbl">
               <thead><tr><th>กลุ่มหลักฐาน</th><th>รายงาน/ชุดข้อมูล</th><th>การนำมาใช้</th></tr></thead>

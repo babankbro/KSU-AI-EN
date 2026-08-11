@@ -9,9 +9,9 @@
 | ประเภท | เอกสารหลัก | ใช้ในหลักสูตร |
 |---|---|---|
 | **เกณฑ์รับรองและกรอบผลลัพธ์การศึกษา** | ABET EAC, IEA GAPC, TABEE, AUN-QA | กำหนด PLO, ลักษณะปัญหาวิศวกรรมที่ซับซ้อน, การออกแบบ การทดลอง การทำงานเป็นทีม และระบบประเมิน/ปรับปรุงต่อเนื่อง |
-| **มาตรฐานและกรอบธรรมาภิบาล AI** | ISO/IEC 42001:2023, NIST AI RMF 1.0 และ GenAI Profile, แนวทาง ETDA/AIGC, AI Verify | กำหนด Responsible AI, ความเสี่ยง ความปลอดภัย ความเป็นส่วนตัว การทวนสอบ และหลักฐานธรรมาภิบาลใน H7/AISK07/PLO4 |
+| **มาตรฐานและกรอบธรรมาภิบาล AI** | ISO/IEC 42001:2023, NIST AI RMF 1.0 และ GenAI Profile, แนวทาง ETDA/AIGC, AI Verify | กำหนด Responsible AI, ความเสี่ยง ความปลอดภัย ความเป็นส่วนตัว การทวนสอบ และหลักฐานธรรมาภิบาลใน HS7/AISK07/PLO4 |
 | **กรอบองค์ความรู้และสมรรถนะวิชาชีพ** | ACM/IEEE-CS/AAAI CS2023, IMDA Skills Framework for ICT/GenAI Technical Skills and Competencies | ตรวจความครบถ้วนของ AI/ML, Software, Data, Security, GenAI และสมรรถนะการพัฒนาระบบใช้งานจริง |
-| **รายงานแนวโน้มและข้อมูลเชิงประจักษ์** | WEF, Stanford AI Index/Lightcast, LinkedIn Economic Graph, BLS, NXPO, TDRI, ManpowerGroup, JobsDB และผลสำรวจผู้มีส่วนได้ส่วนเสีย | กำหนด H1–H20, S1–S10, อาชีพ C01–C26, รายวิชา และน้ำหนักความสำคัญของทักษะ |
+| **รายงานแนวโน้มและข้อมูลเชิงประจักษ์** | WEF, Stanford AI Index/Lightcast, LinkedIn Economic Graph, BLS, NXPO, TDRI, ManpowerGroup, JobsDB และผลสำรวจผู้มีส่วนได้ส่วนเสีย | กำหนด HS1–HS20, SS1–SS10, อาชีพ C01–C26, รายวิชา และน้ำหนักความสำคัญของทักษะ |
 
 ## ABET Student Outcomes (SO1–SO7) ที่ใช้เป็นฐาน PLO
 

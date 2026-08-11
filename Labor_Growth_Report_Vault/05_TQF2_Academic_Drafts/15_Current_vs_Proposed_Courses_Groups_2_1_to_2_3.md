@@ -45,13 +45,13 @@
 | รหัส | รายวิชาเดิม | ขอบเขตเสนอปรับ | Gap ที่ปิด |
 |---|---|---|---|
 | EN-131-101 | ความรู้เบื้องต้นสำหรับ AI | เพิ่ม AI lifecycle, research/technology literacy, limitation, responsible AI และ technology watch | Lifelong learning/governance baseline |
-| EN-131-102 | คณิตศาสตร์วิศวกรรม AI | เพิ่ม numerical optimization, constraint และพื้นฐาน OR/control | H13 Optimization/OR |
-| EN-131-206 | Computer Vision | เพิ่ม industrial/agricultural inspection, video/thermal input, multimodal และ edge deployment | H8/domain vision |
-| EN-131-205 | Intelligent IoT and Edge | เพิ่ม cyber-physical system, device management, industrial protocol, reliability และ security | H9/OT–IT integration |
-| EN-131-207 | Cloud and MLOps | เพิ่ม CI/CD/CT, drift, observability, SLO, runbook, cost/latency/carbon | H4 production reliability |
-| EN-131-203 | ML/DL | เพิ่ม data leakage, imbalance, XAI, uncertainty และ reproducible experiment | H1/H14/research quality |
-| EN-131-204 | Data Engineering and Big Data | เพิ่ม batch/stream, quality, lineage, semantic/BI layer และ governance | H3/H12/H14/H19 |
-| EN-131-208 | AI Infrastructure and Networks | เพิ่ม IAM, segmentation, OT/IT, backup/DR, cybersecurity และ IT service concepts | H7/H20 |
+| EN-131-102 | คณิตศาสตร์วิศวกรรม AI | เพิ่ม numerical optimization, constraint และพื้นฐาน OR/control | HS13 Optimization/OR |
+| EN-131-206 | Computer Vision | เพิ่ม industrial/agricultural inspection, video/thermal input, multimodal และ edge deployment | HS8/domain vision |
+| EN-131-205 | Intelligent IoT and Edge | เพิ่ม cyber-physical system, device management, industrial protocol, reliability และ security | HS9/OT–IT integration |
+| EN-131-207 | Cloud and MLOps | เพิ่ม CI/CD/CT, drift, observability, SLO, runbook, cost/latency/carbon | HS4 production reliability |
+| EN-131-203 | ML/DL | เพิ่ม data leakage, imbalance, XAI, uncertainty และ reproducible experiment | HS1/HS14/research quality |
+| EN-131-204 | Data Engineering and Big Data | เพิ่ม batch/stream, quality, lineage, semantic/BI layer และ governance | HS3/HS12/HS14/HS19 |
+| EN-131-208 | AI Infrastructure and Networks | เพิ่ม IAM, segmentation, OT/IT, backup/DR, cybersecurity และ IT service concepts | HS7/HS20 |
 
 ## 4. กลุ่ม 2.3 Core Track ใหม่ — 9 วิชา / 27 หน่วยกิต
 
@@ -65,7 +65,7 @@
 - ROI/TCO, value proposition, lifecycle, sustainability และ risk
 - Acceptance criteria, UAT, adoption/change และ roadmap
 - **หลักฐาน:** problem brief + requirements traceability + architecture concept + prototype + value/acceptance plan
-- **ปิด Gap:** H20; S6/S8/S9; AISK08/AISK09; C02/C08/C09/C11
+- **ปิด Gap:** HS20; SS6/SS8/SS9; AISK08/AISK09; C02/C08/C09/C11
 
 ### CT2 Decision Intelligence and Supply Chain Management
 
@@ -78,7 +78,7 @@
 - Decision communication, dashboard และ human-in-the-loop DSS
 - ครอบคลุมเกษตร อุตสาหกรรม และองค์กรด้วย dataset/case ที่ต่างกัน
 - **หลักฐาน:** supply-chain model + dashboard + scenario/optimization + recommendation
-- **ปิด Gap:** H3/H11/H13/H19; AISK01/AISK05/AISK09; C03/C12/C15/C17
+- **ปิด Gap:** HS3/HS11/HS13/HS19; AISK01/AISK05/AISK09; C03/C12/C15/C17
 
 ### CT3 Software and AI Engineering
 
@@ -91,7 +91,7 @@
 - CI/CD, observability, SLO, security, UAT, documentation และ handover
 - สร้าง application ที่ใช้ AI จริง ไม่ใช่เพียง notebook/model demo
 - **หลักฐาน:** deployable AI application + source/test + pipeline + monitoring + runbook
-- **ปิด Gap:** H2/H4/H20; S9/S10; AISK01/AISK09; C01/C02/C06/C07/C11
+- **ปิด Gap:** HS2/HS4/HS20; SS9/SS10; AISK01/AISK09; C01/C02/C06/C07/C11
 
 ### CT4 Agentic AI Systems
 
@@ -104,7 +104,7 @@
 - Privacy/security, observability, cost และ latency
 - ประยุกต์กับ farm advisory, maintenance copilot และ enterprise workflow
 - **หลักฐาน:** domain RAG/agent + evaluation set + risk/model card + cost report
-- **ปิด Gap:** H6/H7/H10 baseline/H20; AISK06/AISK07; C01/C02/C06/C08–C11
+- **ปิด Gap:** HS6/HS7/HS10 baseline/HS20; AISK06/AISK07; C01/C02/C06/C08–C11
 
 ### CT5 Smart Agriculture Systems
 
@@ -116,7 +116,7 @@
 - Farm DSS, traceability, production planning และ farm economics
 - Water, energy, input, waste และ carbon KPI ตาม BCG
 - **หลักฐาน:** smart-farm prototype + farm decision model + sustainability/value report
-- **ปิด Gap:** H9/H11/H15/H16/H19; AISK02/AISK04/AISK05; C03/C12
+- **ปิด Gap:** HS9/HS11/HS15/HS16/HS19; AISK02/AISK04/AISK05; C03/C12
 
 ### CT6 Autonomous Systems for Agriculture
 
@@ -129,7 +129,7 @@
 - Agricultural mobile/manipulator robotics, navigation, actuator/control และ machine vision
 - เชื่อมข้อมูล UAV/remote sensing/robot เข้ากับ farm platform และ decision system
 - **หลักฐาน:** field mission + GeoAI product + robotic subsystem/integration demo
-- **ปิด Gap:** H5/H7/H8/H9/H16; AISK02/AISK04/AISK05; C03/C05/C12
+- **ปิด Gap:** HS5/HS7/HS8/HS9/HS16; AISK02/AISK04/AISK05; C03/C05/C12
 
 > [!caution] Scope CT6
 > วิชาแกนนี้ครอบคลุม UAV, remote sensing, GeoAI และ Agricultural Robotics ในระดับพื้นฐานและการบูรณาการ ส่วนความลึกให้รับผิดชอบโดยวิชาเลือก EN-135-311/312 เพื่อควบคุมขอบเขตใน 3 หน่วยกิต
@@ -144,7 +144,7 @@
 - Quality prediction, Lean, Six Sigma, process optimization และ scheduling
 - Maintenance/reliability baseline, resource/energy/carbon และ standards
 - **หลักฐาน:** process/digital-twin model + MES/quality dashboard + optimization/BCG report
-- **ปิด Gap:** H11/H13/H15/H17/H18 baseline/H19; AISK03/AISK05/AISK09; C13–C17
+- **ปิด Gap:** HS11/HS13/HS15/HS17/HS18 baseline/HS19; AISK03/AISK05/AISK09; C13–C17
 
 ### CT8 Intelligent Industrial Automation and Robotics Systems
 
@@ -156,7 +156,7 @@
 - CAD/layout/P&ID/control drawing, simulation, commissioning และ integration testing
 - Machine/robot safety, interlock, risk assessment และ OT cybersecurity
 - **หลักฐาน:** drawing + simulation + PLC/robot integrated cell + commissioning/safety test
-- **ปิด Gap:** H5/H7/H8/H9/H17; AISK03/AISK04/AISK07; C04/C05/C13
+- **ปิด Gap:** HS5/HS7/HS8/HS9/HS17; AISK03/AISK04/AISK07; C04/C05/C13
 
 ### CT9 Intelligent Sensing and Actuation Systems
 
@@ -169,7 +169,7 @@
 - Device management, reliability, safety/interlock และ edge–cloud/OT integration
 - Lab สองบริบท: farm sensing station และ industrial fluid-power station
 - **หลักฐาน:** calibrated sensing + pneumatic/hydraulic control + IIoT/edge integrated demo
-- **ปิด Gap:** H5/H9/H17; AISK02/AISK03/AISK04; C03/C04/C13
+- **ปิด Gap:** HS5/HS9/HS17; AISK02/AISK03/AISK04; C03/C04/C13
 
 > [!caution] Scope CT9
 > เป็นวิชาบูรณาการที่มีเนื้อหากว้าง ควรกำหนดผลลัพธ์ระดับ “เลือก ต่อ ทดสอบ และบูรณาการ” ไม่ใช่ออกแบบ fluid-power component เชิงลึก และต้องมีชุด Lab ที่รองรับทั้ง farm/industry
@@ -182,43 +182,43 @@
 
 | รหัส/รายวิชา | Skill/AISK Gap ที่ปิด | Expert Gap ที่ตอบ | หลักฐานยืนยัน/ข้อจำกัด |
 |---|---|---|---|
-| EN-001-227 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | H13/H15; S1/S6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
-| EN-001-126 สถิติและการวิเคราะห์ข้อมูล | H1/H11/H14; S1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
-| EN-001-124 วิศวกรรมความร้อนและของไหล | H15/H17 + ฐานกายภาพ; AISK02/03 | Heat transfer, process engineering, energy และ BCG | heat/fluid/material-energy calculation + efficiency/carbon metric |
-| EN-001-121 การเขียนแบบและวางผังระบบ | H20; S10 + ฐานกายภาพ; AISK02/03/09 | CAD ต่อเนื่อง แบบเฉพาะทาง layout/P&ID และ system integration | drawing package + revision/control; CT8 รับช่วงความลึก |
-| EN-001-123 กลศาสตร์วัสดุและโครงสร้าง | H7/H15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
-| EN-001-122 การเขียนโปรแกรมพื้นฐาน | H2; S2/S10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
-| EN-001-125 ไฟฟ้าและอิเล็กทรอนิกส์ | H5/H9/H17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
-| EN-001-128 Workshop 1 | S2/S5/S10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
-| EN-001-129 Workshop 2 | H5/H9/H17; S5/S10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
-| EN-001-230 Workshop 3 | H2/H4/H5/H9/H20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
+| EN-001-227 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน | HS13/HS15; SS1/SS6; AISK08/09 | คำนวณธุรกิจ เศรษฐศาสตร์ การสร้าง value และ carbon cost | ROI/TCO/unit economics + sensitivity + business/BCG case |
+| EN-001-126 สถิติและการวิเคราะห์ข้อมูล | HS1/HS11/HS14; SS1; AISK01/05 | เพิ่มการคิดวิเคราะห์ ตัดสินใจ คุณภาพ และงานวิจัย | DOE/SPC/uncertainty report; ใช้ต่อใน CT2/CT7/Capstone |
+| EN-001-124 วิศวกรรมความร้อนและของไหล | HS15/HS17 + ฐานกายภาพ; AISK02/03 | Heat transfer, process engineering, energy และ BCG | heat/fluid/material-energy calculation + efficiency/carbon metric |
+| EN-001-121 การเขียนแบบและวางผังระบบ | HS20; SS10 + ฐานกายภาพ; AISK02/03/09 | CAD ต่อเนื่อง แบบเฉพาะทาง layout/P&ID และ system integration | drawing package + revision/control; CT8 รับช่วงความลึก |
+| EN-001-123 กลศาสตร์วัสดุและโครงสร้าง | HS7/HS15 + ฐานกายภาพ; AISK02/03 | Safety factor, ความปลอดภัย และ lifecycle | calculation + safe frame/mount/enclosure design |
+| EN-001-122 การเขียนโปรแกรมพื้นฐาน | HS2; SS2/SS10; AISK01 | Skill เทคนิคยังต้องมี แม้ AI trend เปลี่ยนเร็ว | source code + Git + unit test + SQL/API assignment |
+| EN-001-125 ไฟฟ้าและอิเล็กทรอนิกส์ | HS5/HS9/HS17; AISK03/04 | Sensor/input, actuator/output, instrumentation, drive และ safety | sensor/drive/data-acquisition lab + protection check |
+| EN-001-128 Workshop 1 | SS2/SS5/SS10; AISK02/03 | เด็กต้องสร้างและประกอบของจริง | CAD/fabrication + calibrated sensing prototype |
+| EN-001-129 Workshop 2 | HS5/HS9/HS17; SS5/SS10; AISK03/04 | Pneumatics, Hydraulics, control และ safety interlock | PLC/embedded + fluid-power control lab |
+| EN-001-230 Workshop 3 | HS2/HS4/HS5/HS9/HS20; AISK01/04/09 | ประกาศ System Integration และเชื่อม input–process–output–value | end-to-end demo + architecture + cost/BCG KPI |
 
 ### 5.2 AI Core
 
 | รหัส/รายวิชา | Skill/AISK Gap ที่ปิด | Expert Gap ที่ตอบ | หลักฐานยืนยัน/ข้อจำกัด |
 |---|---|---|---|
-| EN-131-101 พื้นฐาน AI | H1/H6/H7; S3/S7; AISK01/06/07 | Lifelong learning, AI trend อายุสั้น, แนวโน้มโลก/เอเชีย/ประเทศ | technology watch + limitation/governance case |
-| EN-131-102 คณิตศาสตร์ AI | H1/H13; S1; AISK01 | รักษา Core ที่มีอายุยาวและเพิ่มการตัดสินใจเชิงปริมาณ | mathematical model + constrained optimization |
-| EN-131-206 Computer Vision | H8; AISK05 | กล้องและการประมวลผลจาก input ไป process/output | vision pipeline + edge/domain inspection |
-| EN-131-205 IoT and Edge | H4/H9; AISK04 | เชื่อม sensor, edge, network และระบบฟาร์ม/โรงงาน | device-to-edge/cloud demo + reliability/security test |
-| EN-131-207 Cloud and MLOps | H4/H15; AISK01 | ระบบใช้งานจริง การดูแลต่อเนื่อง ต้นทุน/พลังงาน | CI/CD + monitoring/SLO/runbook + cost/carbon report |
-| EN-131-203 ML/DL | H1/H14; AISK01 | ความถูกต้องเชิงวิศวกรรมและการเรียนรู้ตลอดเวลา | reproducible experiment + XAI/uncertainty evaluation |
-| EN-131-204 Data Engineering | H3/H11/H12/H14/H19; AISK01/09 | BI/DSS, data quality และการตัดสินใจ | pipeline + lineage/quality gate + semantic/BI layer |
-| EN-131-208 AI Infrastructure and Networks | H4/H7/H20; AISK01/07/09 | Security, law/standard, OT–IT, IAM และความต่อเนื่องบริการ | secure architecture + IAM/backup/DR exercise |
+| EN-131-101 พื้นฐาน AI | HS1/HS6/HS7; SS3/SS7; AISK01/06/07 | Lifelong learning, AI trend อายุสั้น, แนวโน้มโลก/เอเชีย/ประเทศ | technology watch + limitation/governance case |
+| EN-131-102 คณิตศาสตร์ AI | HS1/HS13; SS1; AISK01 | รักษา Core ที่มีอายุยาวและเพิ่มการตัดสินใจเชิงปริมาณ | mathematical model + constrained optimization |
+| EN-131-206 Computer Vision | HS8; AISK05 | กล้องและการประมวลผลจาก input ไป process/output | vision pipeline + edge/domain inspection |
+| EN-131-205 IoT and Edge | HS4/HS9; AISK04 | เชื่อม sensor, edge, network และระบบฟาร์ม/โรงงาน | device-to-edge/cloud demo + reliability/security test |
+| EN-131-207 Cloud and MLOps | HS4/HS15; AISK01 | ระบบใช้งานจริง การดูแลต่อเนื่อง ต้นทุน/พลังงาน | CI/CD + monitoring/SLO/runbook + cost/carbon report |
+| EN-131-203 ML/DL | HS1/HS14; AISK01 | ความถูกต้องเชิงวิศวกรรมและการเรียนรู้ตลอดเวลา | reproducible experiment + XAI/uncertainty evaluation |
+| EN-131-204 Data Engineering | HS3/HS11/HS12/HS14/HS19; AISK01/09 | BI/DSS, data quality และการตัดสินใจ | pipeline + lineage/quality gate + semantic/BI layer |
+| EN-131-208 AI Infrastructure and Networks | HS4/HS7/HS20; AISK01/07/09 | Security, law/standard, OT–IT, IAM และความต่อเนื่องบริการ | secure architecture + IAM/backup/DR exercise |
 
 ### 5.3 Core Track
 
 | วิชา | Skill/AISK Gap ที่ปิด | Expert Gap ที่ตอบ | หลักฐานยืนยัน/ข้อจำกัด |
 |---|---|---|---|
-| **CT1 AI Business Intelligence and Product Design** | H20; S6/S8/S9; AISK08/09 | Business value, product, requirements, ผู้ประกอบการ และผู้มีส่วนได้ส่วนเสีย | requirements/architecture concept + prototype + ROI/TCO/UAT plan |
-| **CT2 Decision Intelligence and Supply Chain Management** | H3/H11/H13/H19; S1/S4; AISK05/09 | DSS, supply chain, scenario, optimization และการสื่อสารตัดสินใจ | DSS/dashboard + forecast/scenario/optimization report |
-| **CT3 Software and AI Engineering** | H2/H4/H20; S9/S10; AISK01/09 | AI-assisted development, application, system integration และ handover | deployable AI app + test/CI-CD/monitoring/runbook |
-| **CT4 Agentic AI Systems** | H6/H7/H10 baseline; S3/S7; AISK06/07 | เทคโนโลยีใหม่โดยยังรักษา core, human oversight และ safety | RAG/agent + evaluation/risk card + cost/latency |
-| **CT5 Smart Agriculture Systems** | H9/H11/H15/H16/H19; AISK02/04/05 | ปลูก–ดูแล–รักษา–ผลิตด้วย AI, BCG และ farm value | farm system/DSS + water/input/carbon/value KPI |
-| **CT6 Autonomous Systems for Agriculture** | H5/H7/H8/H9/H16; AISK02/04/05 | Drone ใหม่, remote sensing, GeoAI, robotics, regulation และ field integration | UAV/GeoAI mission + robotic subsystem; advanced depth ใช้ EN-135-311/312 |
-| **CT7 Smart Manufacturing Systems** | H11/H13/H15/H17/H18 baseline/H19; AISK03/05/09 | Heat/process, MES, quality, Lean Six Sigma, OEE, standards และ optimization | process/digital twin + MES/SPC/OEE + optimization/BCG report |
-| **CT8 Intelligent Industrial Automation and Robotics Systems** | H5/H7/H8/H9/H17; S10; AISK03/04/07 | PLC/SCADA/DCS, robot, CAD/P&ID, commissioning และ safety | integrated cell + drawing + commissioning/safety test |
-| **CT9 Intelligent Sensing and Actuation Systems** | H5/H9/H17; AISK02/03/04 | Instrumentation, Pneumatics, Hydraulics, IIoT/Edge และ input/output | calibration + fluid-power control + IIoT/edge demo; ต้องมี Lab |
+| **CT1 AI Business Intelligence and Product Design** | HS20; SS6/SS8/SS9; AISK08/09 | Business value, product, requirements, ผู้ประกอบการ และผู้มีส่วนได้ส่วนเสีย | requirements/architecture concept + prototype + ROI/TCO/UAT plan |
+| **CT2 Decision Intelligence and Supply Chain Management** | HS3/HS11/HS13/HS19; SS1/SS4; AISK05/09 | DSS, supply chain, scenario, optimization และการสื่อสารตัดสินใจ | DSS/dashboard + forecast/scenario/optimization report |
+| **CT3 Software and AI Engineering** | HS2/HS4/HS20; SS9/SS10; AISK01/09 | AI-assisted development, application, system integration และ handover | deployable AI app + test/CI-CD/monitoring/runbook |
+| **CT4 Agentic AI Systems** | HS6/HS7/HS10 baseline; SS3/SS7; AISK06/07 | เทคโนโลยีใหม่โดยยังรักษา core, human oversight และ safety | RAG/agent + evaluation/risk card + cost/latency |
+| **CT5 Smart Agriculture Systems** | HS9/HS11/HS15/HS16/HS19; AISK02/04/05 | ปลูก–ดูแล–รักษา–ผลิตด้วย AI, BCG และ farm value | farm system/DSS + water/input/carbon/value KPI |
+| **CT6 Autonomous Systems for Agriculture** | HS5/HS7/HS8/HS9/HS16; AISK02/04/05 | Drone ใหม่, remote sensing, GeoAI, robotics, regulation และ field integration | UAV/GeoAI mission + robotic subsystem; advanced depth ใช้ EN-135-311/312 |
+| **CT7 Smart Manufacturing Systems** | HS11/HS13/HS15/HS17/HS18 baseline/HS19; AISK03/05/09 | Heat/process, MES, quality, Lean Six Sigma, OEE, standards และ optimization | process/digital twin + MES/SPC/OEE + optimization/BCG report |
+| **CT8 Intelligent Industrial Automation and Robotics Systems** | HS5/HS7/HS8/HS9/HS17; SS10; AISK03/04/07 | PLC/SCADA/DCS, robot, CAD/P&ID, commissioning และ safety | integrated cell + drawing + commissioning/safety test |
+| **CT9 Intelligent Sensing and Actuation Systems** | HS5/HS9/HS17; AISK02/03/04 | Instrumentation, Pneumatics, Hydraulics, IIoT/Edge และ input/output | calibration + fluid-power control + IIoT/edge demo; ต้องมี Lab |
 
 ### 5.4 การแบ่งขอบเขต CT1 กับ CT2
 
@@ -283,36 +283,36 @@
 | AISK08 Professional/Entrepreneurial | 001-121; CT1/CT2/CT3; Project/CWIE | **ปิดแบบมีเงื่อนไขด้าน Assessment** |
 | AISK09 Enterprise Solutions/DSS | CT1–CT3; 131-207/208 | **ปิด baseline; Enterprise depth ผ่าน T3 elective** |
 
-## 9. Gap Closure ต่อ H1–H20 และ S1–S10
+## 9. Gap Closure ต่อ HS1–HS20 และ SS1–SS10
 
 ### 9.1 Hard Skills
 
 | Skills | สถานะหลังปรับ | หมายเหตุ |
 |---|:---:|---|
-| H1–H6, H8–H9, H11, H13, H16–H17, H19 | **ปิดในแกนร่วม** | มีรายวิชาเจ้าภาพและชิ้นงานบังคับ |
-| H7 Security/Responsible AI | **ปิดแบบมีเงื่อนไข** | ต้องมี risk/governance evidence ใน CT4/Capstone |
-| H10 Thai NLP | **ปิดบางส่วน** | CT4 ให้ NLP/RAG baseline; Thai NLP ต้องเป็น elective |
-| H12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-207 รองรับ data engineering; distributed/streaming L4 ใช้ Advanced Data elective |
-| H14 Data-Centric AI | **ปิดแบบมีเงื่อนไข** | ต้องเพิ่ม dataset specification, labeling QA และ lineage ใน CLO |
-| H15 Sustainable/Green AI | **ปิดแบบมีเงื่อนไข** | ต้องใช้ business + BCG/carbon KPI ทุก Track |
-| H18 Maintenance/Reliability | **ปิด baseline** | CT7 ให้พื้นฐาน; C16 ต้องมี Advanced Maintenance elective |
-| H20 Enterprise Architecture/Digital Services | **ปิด baseline** | CT1/CT3 รองรับ; ITSM/IAM/DR/e-Service เชิงลึกควรอยู่ T3 elective |
+| HS1–HS6, HS8–HS9, HS11, HS13, HS16–HS17, HS19 | **ปิดในแกนร่วม** | มีรายวิชาเจ้าภาพและชิ้นงานบังคับ |
+| HS7 Security/Responsible AI | **ปิดแบบมีเงื่อนไข** | ต้องมี risk/governance evidence ใน CT4/Capstone |
+| HS10 Thai NLP | **ปิดบางส่วน** | CT4 ให้ NLP/RAG baseline; Thai NLP ต้องเป็น elective |
+| HS12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-207 รองรับ data engineering; distributed/streaming L4 ใช้ Advanced Data elective |
+| HS14 Data-Centric AI | **ปิดแบบมีเงื่อนไข** | ต้องเพิ่ม dataset specification, labeling QA และ lineage ใน CLO |
+| HS15 Sustainable/Green AI | **ปิดแบบมีเงื่อนไข** | ต้องใช้ business + BCG/carbon KPI ทุก Track |
+| HS18 Maintenance/Reliability | **ปิด baseline** | CT7 ให้พื้นฐาน; C16 ต้องมี Advanced Maintenance elective |
+| HS20 Enterprise Architecture/Digital Services | **ปิด baseline** | CT1/CT3 รองรับ; ITSM/IAM/DR/e-Service เชิงลึกควรอยู่ T3 elective |
 
 ### 9.2 Soft Skills
 
 | Skills | กลไกปิด Gap |
 |---|---|
-| S1–S2 Analytical/Problem-solving | CT1/CT2 + ทุก Track project |
-| S3 Lifelong Learning | 131-101 + CT4 + Seminar/technology watch |
-| S4 Communication | CT2 dashboard/decision communication + Seminar/Capstone |
-| S5 Teamwork/Leadership | Workshop + CT6/CT8/CT9 lab + Capstone |
-| S6 Product/Entrepreneurial | 001-121 + CT1/CT2 |
-| S7 AI Literacy/Human–AI | 131-101 + CT4 |
-| S8 Stakeholder/Empathy | CT1 + CWIE |
-| S9 Requirements/Change | CT1/CT3 + Capstone/CWIE |
-| S10 Agile/Quality/Safety/Accountability | CT3/CT7/CT8/CT9 + Capstone |
+| SS1–SS2 Analytical/Problem-solving | CT1/CT2 + ทุก Track project |
+| SS3 Lifelong Learning | 131-101 + CT4 + Seminar/technology watch |
+| SS4 Communication | CT2 dashboard/decision communication + Seminar/Capstone |
+| SS5 Teamwork/Leadership | Workshop + CT6/CT8/CT9 lab + Capstone |
+| SS6 Product/Entrepreneurial | 001-121 + CT1/CT2 |
+| SS7 AI Literacy/Human–AI | 131-101 + CT4 |
+| SS8 Stakeholder/Empathy | CT1 + CWIE |
+| SS9 Requirements/Change | CT1/CT3 + Capstone/CWIE |
+| SS10 Agile/Quality/Safety/Accountability | CT3/CT7/CT8/CT9 + Capstone |
 
-S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่อกำหนด rubric และหลักฐานบังคับ ไม่ใช่เพียงระบุเนื้อหาในคำอธิบายรายวิชา
+SS3/SS7/SS9/SS10 จะถือว่าปิดสมบูรณ์เมื่อกำหนด rubric และหลักฐานบังคับ ไม่ใช่เพียงระบุเนื้อหาในคำอธิบายรายวิชา
 
 ### 9.3 Engineering Foundation EF1–EF6
 
@@ -375,9 +375,9 @@ S3/S7/S9/S10 จะถือว่าปิดสมบูรณ์เมื่�
 | ถ้อยคำ “เพิ่ม Core 2 วิชา” ไม่ตรงกับรายชื่อ 9 วิชา | ยืนยันมติเป็น 9 Core/27 นก.; รายชื่อ 9 คือเพิ่มจากเดิม 1 วิชา |
 | หน่วยกิตรวมเพิ่มเป็น 133 | **ยุติแล้ว** — ใช้โครงสร้าง 133 นก. ไม่ปรับลดกลับสู่ 130 |
 | CT6/CT7/CT9 scope กว้าง | จำกัด CLO ระดับ foundation/integration และย้าย advanced depth ไป elective |
-| H10/C10 | เปิด Thai NLP และ AI Research/Reproducible Experimentation elective |
-| H18/C16 | กำหนด Advanced Maintenance/Reliability เป็น elective สำคัญของ T2 |
-| H20/C11 | รักษา Enterprise Architecture/Governance/Digital Services ใน T3 elective basket |
+| HS10/C10 | เปิด Thai NLP และ AI Research/Reproducible Experimentation elective |
+| HS18/C16 | กำหนด Advanced Maintenance/Reliability เป็น elective สำคัญของ T2 |
+| HS20/C11 | รักษา Enterprise Architecture/Governance/Digital Services ใน T3 elective basket |
 | Safety/BCG/Governance | เขียน common rubric และกำหนดหลักฐานใน Capstone/CWIE |
 | PLO สาม Track | PLO/CLO/Curriculum Mapping ปรับแล้ว; ต้องอนุมัติ Track-specific PI และ rubric |
 | Lab/บุคลากร | จัด fluid power, PLC/SCADA, thermal/process, robot/vision, UAV/GeoAI testbed |

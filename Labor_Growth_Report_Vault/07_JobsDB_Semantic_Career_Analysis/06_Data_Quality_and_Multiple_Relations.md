@@ -17,9 +17,9 @@
 ```mermaid
 flowchart TD
     J["Job ID หนึ่งรายการ"] --> P["Primary: 1 อาชีพ"]
-    J --> S1["Secondary: 0–2 อาชีพ"]
+    J --> SS1["Secondary: 0–2 อาชีพ"]
     P --> G1["1 subgroup"]
-    S1 --> G2["1 subgroup ต่อ career"]
+    SS1 --> G2["1 subgroup ต่อ career"]
 ```
 
 ตัวอย่างเชิงแนวคิด:

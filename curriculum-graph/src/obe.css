@@ -218,3 +218,58 @@
 .obe-table td.nowrap{white-space:nowrap}
 .cellchips{display:flex;flex-wrap:wrap;gap:4px}
 .lvdot{display:inline-block;width:12px;height:12px;border-radius:50%}
+
+/* ── KSA รายข้อ (K1–K26 · S1–S20 · A1–A8) ── */
+.ksa-box ul { margin: 0; padding-left: 0; list-style: none; }
+.ksa-box > ul > li { padding: .5rem 0; border-bottom: 1px solid var(--line, #e6e9f0); font-size: .93rem; line-height: 1.5; }
+.ksa-box > ul > li:last-child { border-bottom: 0; }
+.ksa-scope, .ksa-ev { display: block; font-size: .8rem; opacity: .72; margin-top: .2rem; }
+.ksa-ev { font-style: italic; }
+.ksa-skills { display: inline-flex; flex-wrap: wrap; gap: .25rem; margin-left: .35rem; vertical-align: middle; }
+.ksa-can { margin-top: .3rem; }
+.ksa-can > summary { cursor: pointer; font-size: .8rem; opacity: .8; }
+.ksa-can > summary:hover { opacity: 1; }
+.ksa-can ul { list-style: disc; padding-left: 1.1rem; margin: .3rem 0 0; }
+.ksa-can li { font-size: .84rem; padding: .12rem 0; opacity: .9; }
+
+/* ── ตาราง Alignment: ทักษะ → KSA ── */
+.align-wrap { margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--line, #e6e9f0); }
+.align-head { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: baseline; justify-content: space-between; }
+.align-head .skill-h { margin: 0; }
+.align-head .skill-h small { display: block; font-weight: 400; opacity: .7; margin-top: .2rem; }
+.align-tabs { display: flex; flex-wrap: wrap; gap: .4rem; }
+.align-tab {
+  border: 1px solid var(--line, #d8dde8); background: transparent; color: inherit;
+  border-radius: 999px; padding: .3rem .8rem; font: inherit; font-size: .84rem; cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.align-tab b { opacity: .6; font-weight: 600; margin-left: .15rem; }
+.align-tab:hover { border-color: var(--navy, #1e3a67); }
+.align-tab.on { background: var(--navy, #1e3a67); border-color: var(--navy, #1e3a67); color: #fff; }
+.align-tab.on b { opacity: .8; }
+.align-table td { vertical-align: top; }
+.align-table td:nth-child(n+3) { min-width: 8.5rem; }
+.ksa-chip { margin: .1rem .2rem .1rem 0; display: inline-block; cursor: help; }
+.align-none { opacity: .4; }
+.align-foot { margin-top: .75rem; }
+@media (max-width: 720px) {
+  .align-head { flex-direction: column; align-items: flex-start; }
+}
+
+/* ── ตารางรายละเอียด KSA แบบแท็บ K/S/A ── */
+.ksadetail-wrap { margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--line, #e6e9f0); }
+.align-tab.dim-K.on { background: #2f6fb0; border-color: #2f6fb0; }
+.align-tab.dim-S.on { background: #2f9e6b; border-color: #2f9e6b; }
+.align-tab.dim-A.on { background: #c1466b; border-color: #c1466b; }
+.ksadetail td { vertical-align: top; }
+.ksadetail td b { display: block; }
+.ksadetail .ksa-type { font-size: .74rem; opacity: .6; }
+.ksadetail .ev { font-style: italic; opacity: .85; }
+.ksadetail .nowrap { white-space: nowrap; }
+.ksadetail .lv { color: var(--navy, #1e3a67); font-size: .85rem; }
+.plochip {
+  display: inline-block; margin: .1rem .2rem .1rem 0; padding: .05rem .4rem;
+  border-radius: 999px; font-size: .72rem; white-space: nowrap;
+  background: color-mix(in srgb, var(--pc) 14%, transparent);
+  color: var(--pc); border: 1px solid color-mix(in srgb, var(--pc) 35%, transparent);
+}

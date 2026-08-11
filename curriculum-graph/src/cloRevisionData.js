@@ -20,7 +20,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK05",
-        "skill": "H19, S1; AISK05/08",
+        "skill": "K5, K13 · S1, S10 · A1, A2; AISK05/08",
         "evidence": "แบบคำนวณพร้อมหลักฐานการตรวจสอบสมมติฐาน"
       },
       {
@@ -45,7 +45,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK05",
-        "skill": "H15/H19, S1/S2; AISK05/08",
+        "skill": "K5, K13, K23 · S1, S10, S18 · A1, A2, A4, A5; AISK05/08",
         "evidence": "รายงานการวิเคราะห์ความไว สถานการณ์ ทางเลือกการออกแบบ และ BCG"
       },
       {
@@ -68,7 +68,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK08",
-        "skill": "S4/S6; AISK08",
+        "skill": "K25, K26 · S19, S20 · A2, A6, A8; AISK08",
         "evidence": "เอกสารกรณีธุรกิจและการนำเสนอข้อเสนอ"
       }
     ],
@@ -104,7 +104,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK01",
-        "skill": "H1/H11, S1; AISK01/05",
+        "skill": "K1, K5, K6, K12, K24 · S1, S2, S4, S7 · A1, A2; AISK01/05",
         "evidence": "สมุดบันทึกการออกแบบการทดลองและการวิเคราะห์ทางสถิติ"
       },
       {
@@ -124,7 +124,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK01",
-        "skill": "H14, S2/S10; AISK01/03",
+        "skill": "K5, K11, K26 · S1, S9, S20 · A1, A2, A3, A4, A7; AISK01/03",
         "evidence": "รายงานการวิเคราะห์ระบบการวัด การควบคุมกระบวนการ และการประเมินตัวแบบ"
       },
       {
@@ -148,7 +148,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK08",
-        "skill": "S4/S10; AISK08",
+        "skill": "K25, K26 · S19, S20 · A2, A3, A4, A6, A7; AISK08",
         "evidence": "บันทึกทางเทคนิคและแผงสรุปข้อมูล"
       }
     ],
@@ -182,7 +182,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "H15/H17 และฐานกายภาพ; AISK02/03",
+        "skill": "K21, K23 · S17, S18 · A5; AISK02/03",
         "evidence": "รายงานการคำนวณและแบบจำลอง"
       },
       {
@@ -202,7 +202,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "S2; AISK02/03",
+        "skill": "K5 · S1 · A1, A4; AISK02/03",
         "evidence": "รายงานเปรียบเทียบทางเลือกการออกแบบทางวิศวกรรม"
       },
       {
@@ -227,7 +227,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "H15, S1/S10; AISK02/03",
+        "skill": "K5, K23, K26 · S1, S18, S20 · A1, A2, A3, A4, A5, A7; AISK02/03",
         "evidence": "รายงานการตรวจประเมินพลังงานและคาร์บอน"
       }
     ],
@@ -282,7 +282,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK03",
-        "skill": "H20, S2/S10; AISK03/09",
+        "skill": "K5, K16, K26 · S1, S11, S13, S20 · A1, A3, A4, A7; AISK03/09",
         "evidence": "ชุดแบบระบบที่ผ่านการตรวจสอบความสอดคล้อง"
       },
       {
@@ -307,7 +307,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "S4/S5/S10; AISK08/09",
+        "skill": "K25, K26 · S19, S20 · A2, A3, A4, A6, A7; AISK08/09",
         "evidence": "บันทึกการแก้ไข หลักฐานการมีส่วนร่วม และผลการทบทวนแบบ"
       }
     ],
@@ -342,7 +342,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "ฐานกายภาพ, S1; AISK02/03",
+        "skill": "K5 · S1 · A1, A2; AISK02/03",
         "evidence": "รายงานการคำนวณโครงสร้าง"
       },
       {
@@ -362,7 +362,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "H7, S2/S10; AISK02/03",
+        "skill": "K5, K22, K23, K26 · S1, S18, S20 · A1, A3, A4, A5, A7; AISK02/03",
         "evidence": "ชุดเอกสารการออกแบบที่คำนึงถึงความปลอดภัย"
       },
       {
@@ -382,7 +382,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "H15, S2; AISK02/03",
+        "skill": "K5, K23 · S1, S18 · A1, A4, A5; AISK02/03",
         "evidence": "รายงานประกอบการตัดสินใจเลือกวัสดุและวิเคราะห์วงจรชีวิต"
       }
     ],
@@ -412,7 +412,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H2, S1/S2; AISK01",
+        "skill": "K5, K14, K15 · S1, S11 · A1, A2, A4; AISK01",
         "evidence": "แบบฝึกปฏิบัติการเขียนโปรแกรม"
       },
       {
@@ -437,7 +437,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK06",
-        "skill": "H2/H7, S7/S10; AISK06/01/09",
+        "skill": "K14, K15, K22, K23, K26 · S11, S18, S20 · A3, A4, A5, A7, A8; AISK06/01/09",
         "evidence": "โปรแกรมประยุกต์ขนาดย่อมที่เชื่อมข้อมูลและส่วนต่อประสานโปรแกรมประยุกต์"
       },
       {
@@ -457,7 +457,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK01",
-        "skill": "S5/S10; AISK01/08",
+        "skill": "K26 · S20 · A3, A4, A6, A7; AISK01/08",
         "evidence": "คลังรหัส หลักฐานการมีส่วนร่วม และผลการทดสอบ"
       }
     ],
@@ -494,7 +494,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK04",
-        "skill": "H9 และฐานกายภาพ; AISK04",
+        "skill": "K18 · S16; AISK04",
         "evidence": "รายงานปฏิบัติการวงจรและการวัด"
       },
       {
@@ -514,7 +514,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H9/H17; AISK03/04",
+        "skill": "K18, K19, K21 · S16, S17; AISK03/04",
         "evidence": "แบบระบบตรวจวัดและขับเคลื่อน"
       },
       {
@@ -538,7 +538,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK04",
-        "skill": "EF4/EF6, S10; AISK04/09",
+        "skill": "K4, K23, K24, K26 · S15, S18, S20 · A1, A3, A4, A7; AISK04/09",
         "evidence": "แบบตรวจสอบความปลอดภัยและบันทึกผลการทดสอบ"
       }
     ],
@@ -575,7 +575,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK02",
-        "skill": "S2/S10; AISK02/03",
+        "skill": "K5, K26 · S1, S20 · A1, A3, A4, A7; AISK02/03",
         "evidence": "ต้นแบบและผลการตรวจสอบคุณภาพชิ้นงาน"
       },
       {
@@ -599,7 +599,7 @@ export const CLO_REVISION = {
           "AISK02"
         ],
         "primarySet": "AISK04",
-        "skill": "H9, S5; AISK04/02",
+        "skill": "K18, K26 · S16, S20 · A6, A7; AISK04/02",
         "evidence": "แฟ้มหลักฐานการสร้างและประกอบระบบของทีม"
       }
     ],
@@ -632,7 +632,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H9/H17; AISK03/04",
+        "skill": "K18, K19, K21 · S16, S17; AISK03/04",
         "evidence": "รายงานปฏิบัติการระบบกำลังของไหลและการควบคุม"
       },
       {
@@ -656,7 +656,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK03",
-        "skill": "EF5/EF6, S10; AISK03/09",
+        "skill": "K19, K23, K26 · S15, S18, S20 · A3, A4, A7; AISK03/09",
         "evidence": "โปรแกรมควบคุมและผลการทดสอบความปลอดภัย"
       },
       {
@@ -679,7 +679,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK08",
-        "skill": "S5/S10; AISK08",
+        "skill": "K26 · S20 · A3, A4, A6, A7; AISK08",
         "evidence": "บันทึกการแก้ไขข้อขัดข้องและการประเมินร่วมกัน"
       }
     ],
@@ -714,7 +714,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK09",
-        "skill": "H2/H4/H5/H9/H20; AISK09/01/04",
+        "skill": "K14, K15, K16, K18, K19 · S11, S12, S13, S16; AISK09/01/04",
         "evidence": "การสาธิตระบบครบวงจร"
       },
       {
@@ -739,7 +739,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, S5/S10; AISK07/08",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A6, A7; AISK07/08",
         "evidence": "แฟ้มหลักฐานการทดสอบและความปลอดภัย"
       },
       {
@@ -763,7 +763,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "H15, S4/S6/S10; AISK08/09",
+        "skill": "K23, K25, K26 · S18, S19, S20 · A2, A3, A4, A5, A6, A7, A8; AISK08/09",
         "evidence": "รายงาน BCG คุณค่า และเอกสารส่งมอบ"
       }
     ],
@@ -799,7 +799,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK06",
-        "skill": "H1/H6, S7; AISK06/01",
+        "skill": "K1, K5, K6, K8, K24, K26 · S2, S4, S6, S20 · A1, A8; AISK06/01",
         "evidence": "รายงานวิเคราะห์แนวคิดและลักษณะปัญหา"
       },
       {
@@ -818,7 +818,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, S7/S10; AISK07",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A7, A8; AISK07",
         "evidence": "รายงานกรณีศึกษาปัญญาประดิษฐ์ที่รับผิดชอบ"
       },
       {
@@ -838,7 +838,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK06",
-        "skill": "S3/S4/S7; AISK06/08",
+        "skill": "K25, K26 · S19, S20 · A2, A6, A8; AISK06/08",
         "evidence": "เอกสารเฝ้าติดตามเทคโนโลยี"
       }
     ],
@@ -871,7 +871,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H1; AISK01",
+        "skill": "K1, K5, K6, K24 · S2, S4 · A1; AISK01",
         "evidence": "สมุดบันทึกการคำนวณทางคณิตศาสตร์"
       },
       {
@@ -891,7 +891,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK01",
-        "skill": "H13, S1; AISK01/05",
+        "skill": "K1, K5, K9 · S1, S2 · A1, A2; AISK01/05",
         "evidence": "แบบฝึกปฏิบัติการหาค่าเหมาะที่สุด"
       },
       {
@@ -910,7 +910,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H1, S2/S10; AISK01",
+        "skill": "K1, K5, K6, K24, K26 · S1, S2, S4, S20 · A1, A3, A4, A7; AISK01",
         "evidence": "รายงานการทวนสอบตัวแบบ"
       }
     ],
@@ -940,7 +940,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H8/H14; AISK05",
+        "skill": "K7, K11 · S5, S9 · A2; AISK05",
         "evidence": "ข้อกำหนดชุดข้อมูลและกระบวนการประมวลผล"
       },
       {
@@ -960,7 +960,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H8, S1/S2; AISK05",
+        "skill": "K5, K7 · S1, S5 · A1, A2, A4; AISK05",
         "evidence": "รายงานการพัฒนาและประเมินตัวแบบ"
       },
       {
@@ -986,7 +986,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK04",
-        "skill": "H8/H9, S4/S10; AISK04/05/08",
+        "skill": "K7, K18, K25, K26 · S5, S16, S19, S20 · A2, A3, A4, A6, A7; AISK04/05/08",
         "evidence": "การสาธิตระบบที่นำขึ้นใช้งานและเอกสารกำกับตัวแบบ"
       }
     ],
@@ -1018,7 +1018,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK04",
-        "skill": "H4/H9; AISK04",
+        "skill": "K15, K18 · S12, S16; AISK04",
         "evidence": "ข้อกำหนดสถาปัตยกรรมและส่วนต่อประสาน"
       },
       {
@@ -1042,7 +1042,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK04",
-        "skill": "H9/H11; AISK04/05",
+        "skill": "K12, K18 · S7, S16 · A2; AISK04/05",
         "evidence": "การสาธิตระบบอินเทอร์เน็ตของสรรพสิ่งและการประมวลผลที่ขอบเครือข่าย"
       },
       {
@@ -1061,7 +1061,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, S10; AISK07",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A7; AISK07",
         "evidence": "รายงานการทดสอบภัยคุกคามและความน่าเชื่อถือ"
       }
     ],
@@ -1093,7 +1093,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H4; AISK01",
+        "skill": "K15 · S12; AISK01",
         "evidence": "กระบวนการบูรณาการ ส่งมอบ และฝึกตัวแบบอย่างต่อเนื่อง"
       },
       {
@@ -1113,7 +1113,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK09",
-        "skill": "H4/H14, S10; AISK09/01",
+        "skill": "K11, K15, K26 · S9, S12, S20 · A2, A3, A4, A7; AISK09/01",
         "evidence": "แบบฝึกปฏิบัติการสังเกตการณ์ระบบและจัดการเหตุการณ์"
       },
       {
@@ -1138,7 +1138,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK01",
-        "skill": "H15, S1/S2; AISK01/08",
+        "skill": "K5, K23 · S1, S18 · A1, A2, A4, A5; AISK01/08",
         "evidence": "รายงานเปรียบเทียบทางเลือกและผลกระทบของการนำระบบขึ้นใช้งาน"
       }
     ],
@@ -1174,7 +1174,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H1; AISK01",
+        "skill": "K1, K5, K6, K24 · S2, S4 · A1; AISK01",
         "evidence": "โครงงานพัฒนาตัวแบบ"
       },
       {
@@ -1193,7 +1193,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H14, S1/S10; AISK01",
+        "skill": "K5, K11, K26 · S1, S9, S20 · A1, A2, A3, A4, A7; AISK01",
         "evidence": "ระเบียบวิธีการประเมินตัวแบบ"
       },
       {
@@ -1218,7 +1218,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK01",
-        "skill": "H1/H14, S4/S10; AISK01/07",
+        "skill": "K1, K5, K6, K11, K24, K25, K26 · S2, S4, S9, S19, S20 · A1, A2, A3, A4, A6, A7; AISK01/07",
         "evidence": "ชุดหลักฐานการทำซ้ำผลการทดลอง"
       }
     ],
@@ -1249,7 +1249,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK01",
-        "skill": "H3/H12/H19; AISK01/05",
+        "skill": "K10, K13, K24 · S8, S10 · A2; AISK01/05",
         "evidence": "แบบสถาปัตยกรรมข้อมูล"
       },
       {
@@ -1269,7 +1269,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H3/H14, S10; AISK01",
+        "skill": "K10, K11, K13, K24, K26 · S8, S9, S10, S20 · A2, A3, A4, A7; AISK01",
         "evidence": "แฟ้มหลักฐานกระบวนการและคุณภาพข้อมูล"
       },
       {
@@ -1294,7 +1294,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK05",
-        "skill": "H3/H7/H19, S4; AISK05/07",
+        "skill": "K10, K13, K22, K23, K24, K25 · S8, S10, S18, S19 · A2, A3, A5, A6; AISK05/07",
         "evidence": "แผงสรุปข้อมูลและบันทึกธรรมาภิบาล"
       }
     ],
@@ -1326,7 +1326,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK01",
-        "skill": "H4, S1; AISK01",
+        "skill": "K5, K15 · S1, S12 · A1, A2; AISK01",
         "evidence": "แบบกำหนดขีดความสามารถของระบบ"
       },
       {
@@ -1350,7 +1350,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK09",
-        "skill": "H7/H20; AISK09/07",
+        "skill": "K16, K22, K23 · S11, S13, S18 · A3, A5; AISK09/07",
         "evidence": "แบบสถาปัตยกรรมที่มั่นคงปลอดภัย"
       },
       {
@@ -1375,7 +1375,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK09",
-        "skill": "H4/H20, S10; AISK09/01",
+        "skill": "K15, K16, K26 · S11, S12, S13, S20 · A3, A4, A7; AISK09/01",
         "evidence": "ผลการทดสอบความต่อเนื่องและการกู้คืน พร้อมแผนปฏิบัติการ"
       }
     ],
@@ -1412,7 +1412,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK09",
-        "skill": "H20, S1/S8/S9; AISK09/08",
+        "skill": "K5, K16, K25 · S1, S11, S13, S19 · A1, A2, A6; AISK09/08",
         "evidence": "เอกสารสรุปปัญหา ผู้มีส่วนได้ส่วนเสีย และข้อกำหนด"
       },
       {
@@ -1431,7 +1431,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK09",
-        "skill": "H20, S2; AISK09",
+        "skill": "K5, K16 · S1, S11, S13 · A1, A4; AISK09",
         "evidence": "แบบสถาปัตยกรรมและต้นแบบ"
       },
       {
@@ -1455,7 +1455,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "H15, S1/S6/S8; AISK08/09",
+        "skill": "K5, K23, K25, K26 · S1, S18, S19, S20 · A1, A2, A5, A6, A8; AISK08/09",
         "evidence": "หลักฐานการตรวจสอบสมมติฐานและกรณีศึกษาความเป็นไปได้กับคุณค่า"
       },
       {
@@ -1481,7 +1481,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK09",
-        "skill": "H7, S9/S10; AISK09/07/08",
+        "skill": "K16, K22, K23, K26 · S18, S19, S20 · A3, A4, A5, A7; AISK09/07/08",
         "evidence": "แฟ้มหลักฐานการยอมรับ การเปลี่ยนแปลง และการทำงานร่วมกัน"
       }
     ],
@@ -1517,7 +1517,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H3/H11/H19; AISK05",
+        "skill": "K10, K12, K13, K24 · S7, S8, S10 · A2; AISK05",
         "evidence": "ตัวแบบธุรกิจอัจฉริยะและการพยากรณ์"
       },
       {
@@ -1536,7 +1536,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H11/H13, S1; AISK05",
+        "skill": "K1, K5, K9, K12 · S1, S2, S7 · A1, A2; AISK05",
         "evidence": "รายงานการวิเคราะห์สถานการณ์และการจำลอง"
       },
       {
@@ -1555,7 +1555,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H13/H19, S2; AISK05",
+        "skill": "K1, K5, K9, K13 · S1, S2, S10 · A1, A2, A4; AISK05",
         "evidence": "ต้นแบบระบบสนับสนุนการตัดสินใจและการหาค่าเหมาะที่สุด"
       },
       {
@@ -1575,7 +1575,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK05",
-        "skill": "S4/S8; AISK05/08",
+        "skill": "K25 · S19 · A2, A6; AISK05/08",
         "evidence": "แผงสรุปข้อมูลและเอกสารสรุปเพื่อการตัดสินใจ"
       }
     ],
@@ -1606,7 +1606,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK02",
-        "skill": "H9/H16, S9; AISK02/04",
+        "skill": "K16, K18, K20 · S16, S17, S19; AISK02/04",
         "evidence": "แบบสถาปัตยกรรมระบบฟาร์ม"
       },
       {
@@ -1625,7 +1625,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H11/H16/H19; AISK05",
+        "skill": "K12, K13, K20 · S7, S10, S17 · A2; AISK05",
         "evidence": "ตัวแบบสนับสนุนการตัดสินใจสำหรับฟาร์ม"
       },
       {
@@ -1651,7 +1651,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK04",
-        "skill": "H9/H16, S1/S10; AISK04/02/05",
+        "skill": "K5, K18, K20, K26 · S1, S16, S17, S20 · A1, A2, A3, A4, A7; AISK04/02/05",
         "evidence": "ต้นแบบและรายงานการทดลองกับความน่าเชื่อถือ"
       },
       {
@@ -1682,7 +1682,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK02",
-        "skill": "H15/H16, S5/S6/S10; AISK02/07/08",
+        "skill": "K20, K23, K26 · S17, S18, S20 · A3, A4, A5, A6, A7, A8; AISK02/07/08",
         "evidence": "รายงาน BCG คุณค่า ความปลอดภัย และบันทึกการตัดสินใจของทีม"
       }
     ],
@@ -1718,7 +1718,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK02",
-        "skill": "H7/H16, S10; AISK02/07",
+        "skill": "K20, K22, K23, K26 · S17, S18, S20 · A3, A4, A5, A7; AISK02/07",
         "evidence": "แผนภารกิจและความปลอดภัย"
       },
       {
@@ -1737,7 +1737,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK05",
-        "skill": "H8/H16; AISK05",
+        "skill": "K7, K20 · S5, S17; AISK05",
         "evidence": "ผลิตผลจากการวิเคราะห์ปัญญาประดิษฐ์เชิงพื้นที่"
       },
       {
@@ -1763,7 +1763,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK02",
-        "skill": "H5/H7/H8/H9, S5; AISK02/04/05",
+        "skill": "K7, K18, K19, K22, K23, K26 · S5, S16, S18, S20 · A3, A5, A6, A7; AISK02/04/05",
         "evidence": "การสาธิตระบบอัตโนมัติ ผลิตผลข้อมูล และบันทึกการทำงานของทีม"
       }
     ],
@@ -1802,7 +1802,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK03",
-        "skill": "H11/H17, S1; AISK03/05",
+        "skill": "K5, K12, K21 · S1, S7, S17 · A1, A2; AISK03/05",
         "evidence": "ตัวแบบกระบวนการและสายธารคุณค่า"
       },
       {
@@ -1822,7 +1822,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK03",
-        "skill": "H17/H19/H20; AISK03/09",
+        "skill": "K13, K16, K21 · S10, S11, S13, S17 · A2; AISK03/09",
         "evidence": "ดิจิทัลทวินและแผงสรุปข้อมูลระบบบริหารการผลิต"
       },
       {
@@ -1848,7 +1848,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK03",
-        "skill": "H13/H15/H18/H19, S10; AISK03/05/09",
+        "skill": "K1, K9, K13, K21, K23, K26 · S2, S10, S17, S18, S20 · A2, A3, A4, A5, A7; AISK03/05/09",
         "evidence": "แฟ้มหลักฐานการปรับปรุงและ BCG"
       }
     ],
@@ -1880,7 +1880,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H9/H17; AISK03/04",
+        "skill": "K18, K19, K21 · S16, S17; AISK03/04",
         "evidence": "แบบสถาปัตยกรรมและโปรแกรมควบคุม"
       },
       {
@@ -1901,7 +1901,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK09",
-        "skill": "H5/H8/H20, S2; AISK09/03/04",
+        "skill": "K5, K7, K16, K18, K19 · S1, S5, S11, S13, S16 · A1, A4; AISK09/03/04",
         "evidence": "ชุดแบบ เซลล์บูรณาการ และผลการทดสอบส่วนต่อประสาน"
       },
       {
@@ -1926,7 +1926,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, S5/S10; AISK07/08",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A6, A7; AISK07/08",
         "evidence": "แฟ้มหลักฐานการทดสอบก่อนใช้งาน ความปลอดภัย และการทำงานของทีม"
       }
     ],
@@ -1962,7 +1962,7 @@ export const CLO_REVISION = {
           "AISK01"
         ],
         "primarySet": "AISK09",
-        "skill": "H2/H20, S9; AISK09/01",
+        "skill": "K14, K15, K16 · S11, S13, S19; AISK09/01",
         "evidence": "แบบสถาปัตยกรรมและตารางสอบย้อนกลับข้อกำหนด"
       },
       {
@@ -1988,7 +1988,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK06",
-        "skill": "H2/H4/H7, S7/S10; AISK06/01/09",
+        "skill": "K14, K15, K22, K23, K26 · S11, S12, S18, S20 · A3, A4, A5, A7, A8; AISK06/01/09",
         "evidence": "โปรแกรมประยุกต์ที่นำขึ้นใช้งาน ผลการทดสอบ และกระบวนการส่งมอบ"
       },
       {
@@ -2012,7 +2012,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK09",
-        "skill": "H4/H20, S4/S5/S10; AISK09/08",
+        "skill": "K15, K16, K25, K26 · S11, S12, S13, S19, S20 · A2, A3, A4, A6, A7; AISK09/08",
         "evidence": "ชุดเอกสารการปฏิบัติการ การส่งมอบ และหลักฐานการมีส่วนร่วม"
       }
     ],
@@ -2046,7 +2046,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK06",
-        "skill": "H6/H10/H20; AISK06/09",
+        "skill": "K8, K16 · S6, S11, S13; AISK06/09",
         "evidence": "แบบสถาปัตยกรรมและการสาธิตระบบเอเจนต์"
       },
       {
@@ -2071,7 +2071,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK06",
-        "skill": "H6/H7, S7/S10; AISK06/07",
+        "skill": "K8, K22, K23, K26 · S6, S18, S20 · A3, A4, A5, A7, A8; AISK06/07",
         "evidence": "รายงานการประเมินและบัตรความเสี่ยง"
       },
       {
@@ -2096,7 +2096,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK06",
-        "skill": "S3/S4/S5/S7; AISK06/08",
+        "skill": "K25, K26 · S19, S20 · A2, A6, A7, A8; AISK06/08",
         "evidence": "รายงานทบทวนเทคโนโลยีและบันทึกการปรับปรุงแบบวนซ้ำ"
       }
     ],
@@ -2129,7 +2129,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK04",
-        "skill": "H9/H17; AISK04/03",
+        "skill": "K18, K21 · S16, S17; AISK04/03",
         "evidence": "บันทึกการสอบเทียบและการวิเคราะห์ระบบการวัด"
       },
       {
@@ -2149,7 +2149,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK04",
-        "skill": "H5/H9/H17; AISK04/03",
+        "skill": "K18, K19, K21 · S16, S17; AISK04/03",
         "evidence": "การสาธิตระบบกำลังของไหลและอินเทอร์เน็ตของสรรพสิ่งอุตสาหกรรม"
       },
       {
@@ -2182,7 +2182,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK02",
-        "skill": "H9/H17, EF6, S5/S10; AISK02/03/04/08/09",
+        "skill": "K18, K21, K23, K26 · S16, S17, S18, S20 · A3, A4, A6, A7; AISK02/03/04/08/09",
         "evidence": "แฟ้มหลักฐานการบูรณาการ ความน่าเชื่อถือ ความปลอดภัย และการทำงานของทีม"
       }
     ],
@@ -2222,7 +2222,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK06",
-        "skill": "H6/H10, S3/S7; AISK06/08",
+        "skill": "K8, K26 · S6, S20 · A8; AISK06/08",
         "evidence": "เอกสารเฝ้าติดตามเทคโนโลยีและมาตรฐาน"
       },
       {
@@ -2241,7 +2241,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK07",
-        "skill": "H7/S7; AISK07",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A5, A8; AISK07",
         "evidence": "แฟ้มหลักฐานธรรมาภิบาลและการรับรองระบบ"
       }
     ],
@@ -2278,7 +2278,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK09",
-        "skill": "S1/S2/S9; AISK09/08",
+        "skill": "K5, K16 · S1, S19 · A1, A2, A4; AISK09/08",
         "evidence": "ข้อเสนอโครงงานและข้อกำหนด"
       },
       {
@@ -2304,7 +2304,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK05",
-        "skill": "H7/H15, S10; AISK05/07/09",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A7; AISK05/07/09",
         "evidence": "แผนการประเมินและบริหารความเสี่ยง"
       },
       {
@@ -2332,7 +2332,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "S3/S4/S5/S10; AISK08/09",
+        "skill": "K25, K26 · S19, S20 · A2, A3, A4, A6, A7, A8; AISK08/09",
         "evidence": "แผนโครงงานและแผนการเรียนรู้"
       }
     ],
@@ -2376,7 +2376,7 @@ export const CLO_REVISION = {
           "AISK06"
         ],
         "primarySet": "AISK09",
-        "skill": "H1–H6/H8–H20, S1/S2/S9; AISK09/01/02/03/04/05/06 ตามลักษณะโครงงาน",
+        "skill": "K1, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K18, K19, K20, K21, K23, K24 · S1, S2, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S16, S17, S18, S19 · A1, A2, A4, A5; AISK09/01/02/03/04/05/06",
         "evidence": "ข้อกำหนดและแบบสถาปัตยกรรม"
       },
       {
@@ -2402,7 +2402,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK01",
-        "skill": "H1–H9/H11–H20, S10; AISK01/02/03/04/05/06/07/09 ตามลักษณะโครงงาน",
+        "skill": "K1, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16, K18, K19, K20, K21, K22, K23, K24, K26 · S2, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S16, S17, S18, S20 · A1, A2, A3, A4, A5, A7; AISK01/02/03/04/05/06/07/09",
         "evidence": "ระบบและแฟ้มหลักฐานการทดลองกับการทดสอบ"
       },
       {
@@ -2422,7 +2422,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "S5/S9/S10; AISK08/09",
+        "skill": "K16, K26 · S19, S20 · A3, A4, A6, A7; AISK08/09",
         "evidence": "บันทึกการทำงานของทีม การเปลี่ยนแปลง และความรับผิดชอบ"
       },
       {
@@ -2452,7 +2452,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK09",
-        "skill": "H7/H15, S4/S6/S8/S9/S10; AISK09/07/08",
+        "skill": "K16, K22, K23, K25, K26 · S18, S19, S20 · A2, A3, A4, A5, A6, A7, A8; AISK09/07/08",
         "evidence": "หลักฐานด้านคุณค่า BCG ธรรมาภิบาล การทดสอบการยอมรับ และการส่งมอบ"
       }
     ],
@@ -2491,7 +2491,7 @@ export const CLO_REVISION = {
           "AISK08"
         ],
         "primarySet": "AISK08",
-        "skill": "S4; AISK08",
+        "skill": "K25 · S19 · A2, A6; AISK08",
         "evidence": "ประวัติย่อ การสัมภาษณ์ และแฟ้มสะสมผลงาน"
       },
       {
@@ -2511,7 +2511,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, EF6, S10; AISK07/09",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A7; AISK07/09",
         "evidence": "ผลการประเมินการปฏิบัติตามข้อกำหนดและความปลอดภัย"
       },
       {
@@ -2535,7 +2535,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "S3/S5/S9; AISK08/09",
+        "skill": "K16, K26 · S19, S20 · A6, A7, A8; AISK08/09",
         "evidence": "แผนการเรียนรู้สำหรับสหกิจศึกษา"
       }
     ],
@@ -2577,7 +2577,7 @@ export const CLO_REVISION = {
           "AISK06"
         ],
         "primarySet": "AISK09",
-        "skill": "H/S ตามลักษณะงาน, S9; AISK09/01/02/03/04/05/06 ตามลักษณะงาน",
+        "skill": "K16 · S19; AISK09/01/02/03/04/05/06",
         "evidence": "บันทึกปัญหาและผลการยอมรับจากสถานประกอบการ"
       },
       {
@@ -2597,7 +2597,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK08",
-        "skill": "S5/S10; AISK08/09",
+        "skill": "K26 · S20 · A3, A4, A6, A7; AISK08/09",
         "evidence": "ผลการประเมินจากสถานประกอบการและทีม"
       },
       {
@@ -2623,7 +2623,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK05",
-        "skill": "H3/H11/H19, S4/S9; AISK05/08/09",
+        "skill": "K10, K12, K13, K16, K24, K25 · S7, S8, S10, S19 · A2, A6; AISK05/08/09",
         "evidence": "รายงานข้อมูลและผลการวิเคราะห์ การนำเสนอ และเอกสารส่งมอบ"
       },
       {
@@ -2648,7 +2648,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK07",
-        "skill": "H7, EF6, S3/S7/S10; AISK07/08/09",
+        "skill": "K22, K23, K26 · S18, S20 · A3, A4, A5, A7, A8; AISK07/08/09",
         "evidence": "บันทึกการปฏิบัติวิชาชีพและการสะท้อนผลการเรียนรู้"
       }
     ],
@@ -2694,7 +2694,7 @@ export const CLO_REVISION = {
           "AISK04"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H9, S1/S2, EF5; AISK03/04",
+        "skill": "K5, K18, K19 · S1, S15, S16 · A1, A2, A4; AISK03/04",
         "evidence": "แบบวงจร รายการอุปกรณ์ และผลการตรวจสอบการออกแบบ"
       },
       {
@@ -2719,7 +2719,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H9/H11, EF4/EF5; AISK03/04/05",
+        "skill": "K4, K12, K18, K19, K24 · S7, S15, S16 · A1, A2, A4; AISK03/04/05",
         "evidence": "ระบบต้นแบบและชุดข้อมูลการทดสอบ"
       },
       {
@@ -2749,7 +2749,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H15/H18, S7/S10; AISK03/05/07",
+        "skill": "K18, K19, K21, K23, K26 · S16, S17, S18, S20 · A3, A4, A5, A7, A8; AISK03/05/07",
         "evidence": "รายงานการทดลอง สมรรถนะ ความปลอดภัย และข้อเสนอปรับปรุง"
       }
     ],
@@ -2781,7 +2781,7 @@ export const CLO_REVISION = {
           "AISK03"
         ],
         "primarySet": "AISK03",
-        "skill": "H15/H17, S1, EF3; AISK03",
+        "skill": "K3, K5, K21, K23 · S1, S3, S17, S18 · A1, A2, A5; AISK03",
         "evidence": "รายงานการคำนวณและวิเคราะห์ระบบ"
       },
       {
@@ -2807,7 +2807,7 @@ export const CLO_REVISION = {
           "AISK05"
         ],
         "primarySet": "AISK01",
-        "skill": "H1/H11/H14/H17, EF3; AISK01/03/05",
+        "skill": "K1, K3, K5, K6, K11, K12, K21, K24 · S2, S3, S4, S7, S9, S17 · A1, A2; AISK01/03/05",
         "evidence": "แบบจำลอง ชุดข้อมูล และรายงานการตรวจสอบความถูกต้อง"
       },
       {
@@ -2837,7 +2837,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK03",
-        "skill": "H15/H19, S6/S9; AISK03/08/09",
+        "skill": "K13, K16, K23, K26 · S10, S18, S19, S20 · A2, A5, A8; AISK03/08/09",
         "evidence": "รายงานเปรียบเทียบทางเลือกและตัวชี้วัดพลังงาน–คาร์บอน"
       }
     ],
@@ -2877,7 +2877,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK03",
-        "skill": "H7, S1/S10, EF6; AISK03/07",
+        "skill": "K5, K22, K23, K26 · S1, S18, S20 · A1, A2, A3, A4, A5, A7; AISK03/07",
         "evidence": "ทะเบียนอันตรายและรายงานประเมินความเสี่ยง"
       },
       {
@@ -2902,7 +2902,7 @@ export const CLO_REVISION = {
           "AISK07"
         ],
         "primarySet": "AISK03",
-        "skill": "H5/H7/H9, S2/S10, EF5/EF6; AISK03/04/07",
+        "skill": "K5, K18, K19, K22, K23, K26 · S1, S15, S16, S18, S20 · A1, A3, A4, A5, A7; AISK03/04/07",
         "evidence": "แบบมาตรการป้องกันและผลการทดสอบหน้าที่ความปลอดภัย"
       },
       {
@@ -2932,7 +2932,7 @@ export const CLO_REVISION = {
           "AISK09"
         ],
         "primarySet": "AISK05",
-        "skill": "H11, S4/S5/S9; AISK05/08/09",
+        "skill": "K12, K16, K25, K26 · S7, S19, S20 · A2, A6, A7; AISK05/08/09",
         "evidence": "รายงานสำรวจความปลอดภัย การนำเสนอ และหลักฐานการทำงานเป็นทีม"
       }
     ],
