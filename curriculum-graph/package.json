@@ -18,7 +18,7 @@
     "jobs:classify-all": "node scripts/classify-career-matches-gemini.mjs",
     "jobs:gemini": "node scripts/extract-job-skills-gemini.mjs",
     "jobs:normalize": "node scripts/normalize-job-skills.mjs",
-    "build:ksa": "node scripts/build-ksa-data.mjs"
+    "build:ksa": "node scripts/build-ksa-data.mjs && node scripts/build-course-ksa.mjs && node scripts/build-plo-teaching.mjs && node scripts/build-ksa-pedagogy.mjs"
   },
   "dependencies": {
     "dagre": "^0.8.5",

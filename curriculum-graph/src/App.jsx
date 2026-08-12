@@ -12,27 +12,18 @@ import Clo from "./pages/Clo.jsx";
 import Plan from "./pages/Plan.jsx";
 import Courses from "./pages/Courses.jsx";
 import References from "./pages/References.jsx";
+import Faculty from "./pages/Faculty.jsx";
+import Teaching from "./pages/Teaching.jsx";
+import Assessment from "./pages/Assessment.jsx";
+import KsaPedagogy from "./pages/KsaPedagogy.jsx";
 import CourseDetail from "./pages/CourseDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import CodeTip from "./CodeTip.jsx";
+import SiteNav from "./SiteNav.jsx";
+import Sidebar from "./Sidebar.jsx";
 import DependencyGraph from "./DependencyGraph.jsx";
 import CareerGraph from "./CareerGraph.jsx";
 const AiEngineerJobs = lazy(() => import("./pages/AiEngineerJobs.jsx"));
-
-const NAV = [
-  { to: "/", label: "หน้าแรก", end: true },
-  { to: "/obe", label: "ขั้นตอน OBE" },
-  { to: "/structure", label: "โครงสร้างหลักสูตร" },
-  { to: "/plo", label: "PLO" },
-  { to: "/ylo", label: "YLO" },
-  { to: "/clo", label: "CLO รายวิชา" },
-  { to: "/plan", label: "แผนการเรียน" },
-  { to: "/graph", label: "กราฟรายวิชา" },
-  { to: "/careers", label: "เส้นทางอาชีพ" },
-  { to: "/jobs", label: "Jobs & Skills" },
-  { to: "/courses", label: "รายวิชา" },
-  { to: "/refs", label: "ข้อมูลอ้างอิง" }
-];
 
 /* เลื่อนขึ้นบนสุดทุกครั้งที่เปลี่ยนหน้า — ยกเว้นเมื่อลิงก์ระบุ hash ไว้ (ให้หน้านั้นเลื่อนไปยังหัวข้อเอง) */
 function ScrollTop() {
@@ -63,15 +54,11 @@ export default function App() {
         </div>
       </header>
 
-      <nav className="site-nav">
-        <div className="wrap nav-in">
-          {NAV.map(n => (
-            <NavLink key={n.to} to={n.to} end={n.end}
-              className={({ isActive }) => isActive ? "active" : ""}>{n.label}</NavLink>
-          ))}
-        </div>
-      </nav>
+      <SiteNav />
 
+      <div className="shell">
+        <Sidebar />
+        <div className="shell-main">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/obe" element={<Obe />} />
@@ -97,9 +84,15 @@ export default function App() {
         } />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:code" element={<CourseDetail />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/teaching" element={<Teaching />} />
+        <Route path="/assessment" element={<Assessment />} />
+        <Route path="/ksa-pedagogy" element={<KsaPedagogy />} />
         <Route path="/refs" element={<References />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+        </div>
+      </div>
 
       <footer className="site-foot">
         <div className="wrap">

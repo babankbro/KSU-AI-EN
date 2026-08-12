@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import dagre from "dagre";
 import "./careers.css";
 import {
@@ -98,6 +98,38 @@ export default function CareerGraph() {
   const [focus, setFocus] = useState(false);   // true = วาดกราฟเฉพาะอาชีพที่เลือก
   const [graphOpen, setGraphOpen] = useState(true);
   const [graphExpanded, setGraphExpanded] = useState(false);
+  const [isFull, setIsFull] = useState(false);
+  const [faux, setFaux] = useState(false);   // เต็มหน้าจอสำรองเมื่อ Fullscreen API ถูกปิด
+  const shellRef = useRef(null);
+
+  /* เต็มจอด้วย Fullscreen API — ซิงก์สถานะกับการกด Esc หรือออกจากเต็มจอด้วยวิธีอื่น */
+  useEffect(() => {
+    const sync = () => setIsFull(document.fullscreenElement === shellRef.current);
+    document.addEventListener("fullscreenchange", sync);
+    return () => document.removeEventListener("fullscreenchange", sync);
+  }, []);
+
+  /* บางบริบท (เว็บที่ถูกฝังใน iframe) ปิด Fullscreen API ไว้ — ถอยไปใช้เต็มหน้าจอด้วย CSS แทน
+     เพื่อให้ปุ่มทำงานเสมอ ไม่ใช่กดแล้วเงียบ */
+  const toggleFull = async () => {
+    if (document.fullscreenElement) { await document.exitFullscreen().catch(() => {}); return; }
+    if (faux) { setFaux(false); return; }
+    setGraphOpen(true);                  // เต็มจอต้องเห็นกราฟเสมอ
+    try {
+      await shellRef.current.requestFullscreen();
+    } catch {
+      setFaux(true);                     // API ใช้ไม่ได้ → โหมดเต็มหน้าจอสำรอง
+    }
+  };
+
+  /* ออกจากโหมดสำรองด้วย Esc */
+  useEffect(() => {
+    if (!faux) return;
+    const onKey = e => { if (e.key === "Escape") setFaux(false); };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+  }, [faux]);
 
   const careers = useMemo(() => {
     if (track === 0) return CAREERS.filter(c => c.track === 0);
@@ -185,7 +217,7 @@ export default function CareerGraph() {
   const selCareer = selJob ? careers.find(j => j.id === selJob) : null;
 
   return (
-    <div className="graphwrap">
+    <div className={"graphwrap" + (isFull || faux ? " isfull" : "") + (faux ? " faux" : "")} ref={shellRef}>
       <div className="graphbar">
         {TRACK_TABS.map(t => (
           <button key={t.id} className={`gmode ${track === t.id ? "on" : ""}`}
@@ -203,11 +235,21 @@ export default function CareerGraph() {
         <input type="range" min="0.35" max="1.4" step="0.05" value={zoom} onChange={e => setZoom(+e.target.value)} style={{ width: 100 }} />
         <button className="gtool" aria-label="ขยายกราฟ" onClick={() => setZoom(value => Math.min(1.4, value + 0.1))}>+</button>
         <button className="gtool wide" onClick={() => setZoom(0.75)}>{Math.round(zoom * 100)}% · รีเซ็ต</button>
-        <button className={`gtool wide${graphExpanded ? " on" : ""}`} onClick={() => setGraphExpanded(value => !value)}>
-          {graphExpanded ? "ย่อพื้นที่กราฟ" : "ขยายพื้นที่กราฟ"}
+        <span className="gsep" />
+        <button className={`gtool wide${graphExpanded ? " on" : ""}`}
+          aria-pressed={graphExpanded} disabled={!graphOpen || isFull || faux}
+          onClick={() => setGraphExpanded(value => !value)}>
+          {graphExpanded ? "▤ ย่อพื้นที่" : "▥ ขยายพื้นที่"}
         </button>
-        <button className="gtool wide" onClick={() => setGraphOpen(value => !value)}>
-          {graphOpen ? "ซ่อนกราฟ" : "แสดงกราฟ"}
+        <button className={`gtool wide${!graphOpen ? " on" : ""}`}
+          aria-expanded={graphOpen} disabled={isFull || faux}
+          onClick={() => setGraphOpen(value => !value)}>
+          {graphOpen ? "▾ ย่อ/ซ่อนกราฟ" : "▸ แสดงกราฟ"}
+        </button>
+        <button className={`gtool wide${isFull || faux ? " on" : ""}`}
+          aria-pressed={isFull || faux} onClick={toggleFull}
+          title={faux ? "กด Esc เพื่อออก" : undefined}>
+          {isFull || faux ? "⤡ ออกจากเต็มจอ" : "⤢ เต็มจอ"}
         </button>
         {selJob && <button className="gclear" onClick={() => { setSelJob(null); setFocus(false); }}>✕ กลับสู่ภาพรวม</button>}
       </div>
@@ -254,6 +296,11 @@ export default function CareerGraph() {
         )}
       </div>
 
+      {!graphOpen && (
+        <div className="graph-collapsed">
+          ซ่อนกราฟอยู่ — กด <b>▸ แสดงกราฟ</b> ด้านบนเพื่อเปิดอีกครั้ง
+        </div>
+      )}
       {graphOpen && <div className={`graphcanvas${graphExpanded ? " expanded" : ""}`}>
         <div className="graphscroll">
           <svg width={layout.width * zoom} height={layout.height * zoom}

@@ -1186,6 +1186,13 @@ export function ploLevels(entry) {
   return out;
 }
 
+/** วิชาชีพเลือกนับแยกเสมอ — มี 57 รายวิชาในคลัง แต่ผู้เรียนหนึ่งคนเลือกเพียง 5 วิชา
+    การรวมเข้ากับวิชาบังคับจะทำให้จำนวน CLO และความครอบคลุม PLO สูงเกินจริง */
+export const isElective = entry => entry.g === "elec";
+export const REQUIRED_CLO_LIST = CLO_LIST.filter(e => !isElective(e));
+export const ELECTIVE_CLO_LIST = CLO_LIST.filter(isElective);
+export const ELECTIVE_PICK = 5;                 // จำนวนวิชาที่ผู้เรียนต้องเลือกจริง
+
 /** สรุปราย PLO: รายวิชาที่มี CLO รับผิดชอบ + ระดับสูงสุด — ใช้ทำตารางสรุป 4.7 */
 export const PLO_ROLLUP = [1, 2, 3, 4, 5, 6, 7].map(n => {
   const rows = CLO_LIST
@@ -1198,7 +1205,18 @@ export const PLO_ROLLUP = [1, 2, 3, 4, 5, 6, 7].map(n => {
     })
     .filter(Boolean);
   const top = rows.reduce((a, r) => (LEVEL_ORDER[r.lv] > LEVEL_ORDER[a] ? r.lv : a), "I");
-  return { plo: n, rows, top, cloCount: rows.reduce((s, r) => s + r.clos.length, 0) };
+  const isElec = code => ELECTIVE_CLO_LIST.some(e => e.c === code);
+  const req = rows.filter(r => !isElec(r.c));
+  const elec = rows.filter(r => isElec(r.c));
+  const topOf = rs => rs.reduce((a, r) => (LEVEL_ORDER[r.lv] > LEVEL_ORDER[a] ? r.lv : a), "I");
+  const count = rs => rs.reduce((s, r) => s + r.clos.length, 0);
+  return {
+    plo: n, rows, top, cloCount: count(rows),
+    rowsRequired: req, rowsElective: elec,
+    topRequired: req.length ? topOf(req) : null,
+    cloCountRequired: count(req), cloCountElective: count(elec),
+    courseCountRequired: req.length, courseCountElective: elec.length
+  };
 });
 
 /** สรุปการกระจายรายวิชาสู่ชุดทักษะ (Skill Set Feed) */
@@ -1230,11 +1248,24 @@ export const YLO_ROLLUP = [1, 2, 3, 4].map(y => {
   const map = {};
   CLO_LIST.forEach(e => e.clos.forEach(clo => clo.ylo.forEach(id => {
     if (!id.startsWith(`YLO${y}`)) return;
-    (map[id] = map[id] || []).push({ c: e.c, n: clo.n, plo: clo.plo });
+    (map[id] = map[id] || []).push({ c: e.c, n: clo.n, plo: clo.plo, elec: isElective(e) });
   })));
-  return { y, subs: Object.keys(map).sort().map(id => ({ id, items: map[id] })) };
+  return {
+    y,
+    subs: Object.keys(map).sort().map(id => {
+      const items = map[id];
+      const required = items.filter(i => !i.elec);
+      return { id, items, required, electiveCount: items.length - required.length };
+    })
+  };
 });
 
 export const CLO_TOTAL = CLO_LIST.reduce((s, e) => s + e.clos.length, 0);
+export const CLO_TOTAL_REQUIRED = REQUIRED_CLO_LIST.reduce((s, e) => s + e.clos.length, 0);
+export const CLO_TOTAL_ELECTIVE = ELECTIVE_CLO_LIST.reduce((s, e) => s + e.clos.length, 0);
+/** ค่าเฉลี่ย CLO ต่อวิชาเลือก คูณจำนวนที่เลือกจริง — ใช้ประมาณภาระ CLO ของผู้เรียนหนึ่งคน */
+export const CLO_ELECTIVE_TYPICAL = ELECTIVE_CLO_LIST.length
+  ? Math.round((CLO_TOTAL_ELECTIVE / ELECTIVE_CLO_LIST.length) * ELECTIVE_PICK)
+  : 0;
 export const CORE_CLO_LIST = CLO_LIST.filter(entry => !entry.ge);
 export const CORE_CLO_TOTAL = CORE_CLO_LIST.reduce((sum, entry) => sum + entry.clos.length, 0);

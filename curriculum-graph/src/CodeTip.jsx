@@ -8,7 +8,7 @@ import { PLO_COLOR, PLO_NAME } from "./data.js";
    ใช้การมอบหมายเหตุการณ์ (event delegation) จุดเดียว จึงครอบคลุมทุกหน้าโดยไม่ต้องแก้ทีละจุด */
 const SEL = [
   "[data-tip]", ".plochip", ".plo-mini", ".setchip", ".clo-setchip", ".clo-setid",
-  ".obe-code", ".skchip", ".nchip", ".cchip", ".clo-cchip", ".clo-ylochip",
+  ".obe-code", ".skchip", ".nchip", ".cchip", ".clo-cchip", ".clo-ylochip", ".ksachip",
   ".irm", ".ccode", ".clo-code", ".cc-code", ".jp-id", ".clo-subid", ".gbox b",
   ".gnode-code", ".gnode-plo", ".pc-num", ".plocard-sm .num"
 ].join(",");

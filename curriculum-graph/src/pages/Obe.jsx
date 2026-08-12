@@ -651,8 +651,8 @@ export default function Obe() {
         {/* ─── อ้างอิง ─── */}
         <Section title="เอกสารอ้างอิงใน Vault" sub="ทุกขั้นตอนสอบย้อนกลับไปยังไฟล์ต้นทางได้">
           <ol className="reflist">
-            {REFS.map(r => (
-              <li key={r.step}>
+            {REFS.map((r, i) => (
+              <li key={`${r.step}-${i}`}>
                 <b>{r.title}</b>
                 <code>Labor_Growth_Report_Vault/{r.file}</code>
               </li>

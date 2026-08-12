@@ -6,14 +6,22 @@ import { PLO_NAME, PLO_DETAIL, YLO_DETAIL } from "../data.js";
 import { GROUPS, SKILL_SETS } from "../obeData.js";
 import {
   CLO_LIST, CORE_CLO_LIST, CORE_CLO_TOTAL, CLO_PRINCIPLES, CLO_NOTES, ELECTIVE_NOTES,
-  PLO_ROLLUP, SET_FEED, YLO_ROLLUP, LEVEL_NAME, ploLevels
+  PLO_ROLLUP, SET_FEED, YLO_ROLLUP, LEVEL_NAME, ploLevels,
+  REQUIRED_CLO_LIST, ELECTIVE_CLO_LIST, CLO_TOTAL_REQUIRED, CLO_TOTAL_ELECTIVE,
+  CLO_ELECTIVE_TYPICAL, ELECTIVE_PICK
 } from "../cloData.js";
+import { courseKsa, cloKsa } from "../courseKsaData.js";
 
 const PLOS = [1, 2, 3, 4, 5, 6, 7];
 const SEM_LABEL = s => s === 99
   ? "รายวิชาใหม่ — รอยืนยันภาคการศึกษา"
   : `ชั้นปีที่ ${Math.ceil(s / 2)} · ภาคการศึกษาที่ ${s % 2 === 1 ? 1 : 2}`;
 const setOf = id => SKILL_SETS.find(s => s.id === id);
+
+/* ชิปรหัส KSA — ใช้ทั้งระดับรายวิชาและระดับ CLO */
+const KsaChips = ({ list, kind }) => list?.length
+  ? <span className={`ksachips ${kind}`}>{list.map(c => <span className="ksachip" key={c}>{c}</span>)}</span>
+  : null;
 
 /* จัดรายวิชาเป็นกลุ่มตามภาคการศึกษา */
 function bySemester(list) {
@@ -44,6 +52,7 @@ function YloChip({ id }) {
 }
 
 export default function Clo() {
+  const [yloElec, setYloElec] = useState(false);   // แสดงวิชาชีพเลือกในตาราง Sub-YLO หรือไม่
   const [year, setYear] = useState("all");
   const [plo, setPlo] = useState("all");
   const [q, setQ] = useState("");
@@ -73,10 +82,18 @@ export default function Clo() {
 
       <div className="wrap">
         <div className="clo-stats">
-          <div><b>{CORE_CLO_LIST.length}</b><span>รายวิชาเฉพาะ/กิจกรรมบังคับที่กำหนด CLO</span></div>
-          <div><b>{CORE_CLO_TOTAL}</b><span>ข้อ CLO ตาม Mapping ฉบับใหม่</span></div>
+          <div><b>{REQUIRED_CLO_LIST.length}</b><span>รายวิชาบังคับที่กำหนด CLO</span></div>
+          <div><b>{CLO_TOTAL_REQUIRED}</b><span>ข้อ CLO จากวิชาบังคับ</span></div>
+          <div className="elec"><b>{ELECTIVE_CLO_LIST.length}</b><span>วิชาชีพเลือกในคลัง · เลือกจริง {ELECTIVE_PICK} วิชา</span></div>
+          <div className="elec"><b>~{CLO_ELECTIVE_TYPICAL}</b><span>ข้อ CLO ที่ผู้เรียนได้จากวิชาเลือก</span></div>
           <div><b>{YLO_ROLLUP.reduce((s, y) => s + y.subs.length, 0)}</b><span>Sub-YLO ที่ CLO ป้อนเข้า</span></div>
           <div><b>7</b><span>PLO ที่ทุกเส้นทางสอบย้อนกลับถึง</span></div>
+        </div>
+
+        <div className="note elec-note">
+          <b>วิชาชีพเลือกนับแยกทุกตาราง</b> — คลังมี {ELECTIVE_CLO_LIST.length} รายวิชา รวม {CLO_TOTAL_ELECTIVE} CLO
+          แต่ผู้เรียนหนึ่งคนเลือกเพียง <b>{ELECTIVE_PICK} วิชา</b> การนับรวมกับวิชาบังคับจะทำให้จำนวน CLO
+          และความครอบคลุม PLO สูงเกินจริง ตัวเลขที่ใช้ตัดสินการบรรลุ PLO จึงคิดจาก<b>วิชาบังคับเท่านั้น</b>
         </div>
 
         {/* ─────────── 4.6 Curriculum Mapping ─────────── */}
@@ -147,8 +164,14 @@ export default function Clo() {
             <table className="tbl">
               <thead>
                 <tr>
-                  <th>PLO</th><th>หัวข้อ</th><th className="c">วิชา</th><th className="c">CLO</th>
-                  <th className="c">ระดับสูงสุด</th><th>รายวิชาที่มี CLO รับผิดชอบ</th>
+                  <th rowSpan={2}>PLO</th><th rowSpan={2}>หัวข้อ</th>
+                  <th className="c" colSpan={3}>วิชาบังคับ (ใช้ตัดสินการบรรลุ)</th>
+                  <th className="c" colSpan={2}>วิชาชีพเลือก (เสริม)</th>
+                  <th rowSpan={2}>รายวิชาบังคับที่มี CLO รับผิดชอบ</th>
+                </tr>
+                <tr>
+                  <th className="c">วิชา</th><th className="c">CLO</th><th className="c">ระดับสูงสุด</th>
+                  <th className="c">วิชา</th><th className="c">CLO</th>
                 </tr>
               </thead>
               <tbody>
@@ -157,12 +180,14 @@ export default function Clo() {
                     <td><PloChip n={r.plo} /></td>
                     <td><b>{PLO_DETAIL[r.plo]?.title || PLO_NAME[r.plo]}</b><br />
                       <small className="mut">{PLO_DETAIL[r.plo]?.so}</small></td>
-                    <td className="c">{r.rows.length}</td>
-                    <td className="c">{r.cloCount}</td>
-                    <td className="c"><IRM v={r.top} /></td>
+                    <td className="c"><b>{r.courseCountRequired}</b></td>
+                    <td className="c"><b>{r.cloCountRequired}</b></td>
+                    <td className="c">{r.topRequired ? <IRM v={r.topRequired} /> : <span className="mut">—</span>}</td>
+                    <td className="c elec">{r.courseCountElective}</td>
+                    <td className="c elec">{r.cloCountElective}</td>
                     <td>
                       <div className="clo-chips">
-                        {r.rows.map(x => (
+                        {r.rowsRequired.map(x => (
                           <Link key={x.c} to={`/courses/${x.c}`} className={`clo-cchip lv-${x.lv}`}
                             title={`${x.c} · CLO${x.clos.join(", CLO")} · ${LEVEL_NAME[x.lv]}`}>
                             {x.c}<i>{x.clos.map(n => n).join(",")}</i>
@@ -186,6 +211,21 @@ export default function Clo() {
         {/* ─────────── CLO → Sub-YLO ─────────── */}
         <Section id="ylo" title="CLO ที่ป้อนเข้าแต่ละ Sub-YLO" sub="ตรวจสอบว่า Sub-YLO ทั้ง 16 ข้อมี CLO รองรับครบ">
           <div className="clo-ylogrid">
+            <div className="ylo-filter">
+              <span className="ylo-filter-lab">
+                แสดง {yloElec ? "ทุกรายวิชา" : "เฉพาะวิชาบังคับ"}
+              </span>
+              <button className={`ylo-fbtn${!yloElec ? " on" : ""}`} onClick={() => setYloElec(false)}>
+                วิชาบังคับเท่านั้น
+              </button>
+              <button className={`ylo-fbtn${yloElec ? " on" : ""}`} onClick={() => setYloElec(true)}>
+                รวมวิชาชีพเลือก
+              </button>
+              <em className="ylo-filter-note">
+                คลังวิชาชีพเลือกมี {ELECTIVE_CLO_LIST.length} รายวิชา แต่ผู้เรียนเลือก {ELECTIVE_PICK} วิชา
+                การรวมเข้ามาทำให้จำนวน CLO ต่อ Sub-YLO สูงเกินจริง
+              </em>
+            </div>
             {YLO_ROLLUP.map(y => (
               <div className="clo-ylobox" key={y.y} style={{ "--yc": `var(--y${y.y})` }}>
                 <div className="clo-ylohead">
@@ -193,18 +233,25 @@ export default function Clo() {
                 </div>
                 {y.subs.map(s => {
                   const sub = YLO_DETAIL[y.y].sub.find(x => x[0] === s.id);
+                  const shown = yloElec ? s.items : s.required;
                   return (
                     <div className="clo-subylo" key={s.id}>
                       <div className="clo-subhead">
                         <span className="clo-subid">{s.id}</span>
                         <span className="clo-subtext">{sub ? sub[1] : ""}</span>
-                        <span className="clo-subn">{s.items.length} CLO</span>
+                        <span className="clo-subn">
+                          {shown.length} CLO
+                          {!yloElec && s.electiveCount > 0 &&
+                            <i className="clo-subelec" title="CLO จากวิชาชีพเลือกที่ถูกซ่อน">+{s.electiveCount} เลือก</i>}
+                        </span>
                       </div>
                       <div className="clo-chips">
-                        {s.items.map((it, i) => (
-                          <Link key={i} to={`/courses/${it.c}`} className="clo-cchip"
-                            title={`${it.c} CLO${it.n}`}>{it.c}<i>{it.n}</i></Link>
+                        {shown.map((it, i) => (
+                          <Link key={i} to={`/courses/${it.c}`}
+                            className={"clo-cchip" + (it.elec ? " is-elec" : "")}
+                            title={`${it.c} CLO${it.n}${it.elec ? " · วิชาชีพเลือก" : ""}`}>{it.c}<i>{it.n}</i></Link>
                         ))}
+                        {!shown.length && <span className="mut">— ไม่มี CLO จากวิชาบังคับป้อนเข้า Sub-YLO นี้</span>}
                       </div>
                     </div>
                   );
@@ -317,21 +364,41 @@ export default function Clo() {
                     </div>
                   </header>
 
-                  <div className="clo-ksa">
-                    <div className="clo-kbox k"><h4>🧠 Knowledge — ความรู้ที่ต้องสอน</h4><p>{e.k}</p></div>
-                    <div className="clo-kbox s">
-                      <h4>🛠️ Skill — ทักษะที่ต้องฝึก</h4>
-                      <p>{e.s}</p>
-                      <div className="clo-sets">
-                        {e.sets.map(([id, sub]) => <SetChip key={id} id={id} sub={sub} />)}
-                      </div>
-                    </div>
-                    <div className="clo-kbox a"><h4>❤️ Attitude — ทัศนคติที่ต้องปลูกฝัง</h4><p>{e.a}</p></div>
-                  </div>
+                  {(() => {
+                    const ck = courseKsa(e.c);
+                    return (
+                      <>
+                        {ck && (
+                          <div className={"clo-ksabar" + (ck.derivedFrom ? " derived" : "")}>
+                            <span className="ksabar-lab">รหัส KSA ของรายวิชา</span>
+                            <KsaChips list={ck.K} kind="k" />
+                            <KsaChips list={ck.S} kind="s" />
+                            <KsaChips list={ck.A} kind="a" />
+                            {ck.derivedFrom === "aisk" && (
+                              <em className="ksabar-note" title="วิชาชีพเลือกยังไม่มี KSA ระบุตรงในเอกสาร จึงอนุมานผ่านชุดทักษะที่รายวิชารับผิดชอบ">
+                                อนุมานจากชุดทักษะ
+                              </em>
+                            )}
+                          </div>
+                        )}
+                        <div className="clo-ksa">
+                          <div className="clo-kbox k"><h4>🧠 Knowledge — ความรู้ที่ต้องสอน</h4><p>{e.k}</p></div>
+                          <div className="clo-kbox s">
+                            <h4>🛠️ Skill — ทักษะที่ต้องฝึก</h4>
+                            <p>{e.s}</p>
+                            <div className="clo-sets">
+                              {e.sets.map(([id, sub]) => <SetChip key={id} id={id} sub={sub} />)}
+                            </div>
+                          </div>
+                          <div className="clo-kbox a"><h4>❤️ Attitude — ทัศนคติที่ต้องปลูกฝัง</h4><p>{e.a}</p></div>
+                        </div>
+                      </>
+                    );
+                  })()}
 
                   <table className="tbl clo-clotbl">
                     <thead>
-                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th></tr>
+                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th><th>KSA</th></tr>
                     </thead>
                     <tbody>
                       {e.clos.map(clo => (
@@ -347,6 +414,13 @@ export default function Clo() {
                             <div className="clo-plocell">
                               {clo.plo.map(([n, lv]) => <PloChip key={n} n={n} level={lv} small />)}
                             </div>
+                          </td>
+                          <td className="clo-ksacell">
+                            {(() => {
+                              const kk = cloKsa(e.c, clo.n);
+                              if (!kk) return <span className="mut">—</span>;
+                              return <><KsaChips list={kk.K} kind="k" /><KsaChips list={kk.S} kind="s" /><KsaChips list={kk.A} kind="a" /></>;
+                            })()}
                           </td>
                         </tr>
                       ))}
