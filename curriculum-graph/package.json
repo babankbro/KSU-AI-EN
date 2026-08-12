@@ -18,7 +18,11 @@
     "jobs:classify-all": "node scripts/classify-career-matches-gemini.mjs",
     "jobs:gemini": "node scripts/extract-job-skills-gemini.mjs",
     "jobs:normalize": "node scripts/normalize-job-skills.mjs",
-    "build:ksa": "node scripts/build-ksa-data.mjs && node scripts/build-course-ksa.mjs && node scripts/build-plo-teaching.mjs && node scripts/build-ksa-pedagogy.mjs"
+    "build:ksa": "node scripts/build-ksa-data.mjs && node scripts/build-course-ksa.mjs && node scripts/build-plo-teaching.mjs && node scripts/build-ksa-pedagogy.mjs",
+    "build:db": "node scripts/build-db-seed.mjs",
+    "db:load": "node scripts/db-load.mjs",
+    "db:export": "node scripts/export-db-excel.mjs",
+    "db:docs": "node scripts/build-db-docs.mjs"
   },
   "dependencies": {
     "dagre": "^0.8.5",
@@ -28,6 +32,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "exceljs": "^4.4.0",
     "vite": "^5.4.11"
   }
 }

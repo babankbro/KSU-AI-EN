@@ -212,10 +212,12 @@ export const COURSE_KSA = {
    {
     "n": 1,
     "K": [
+     "K3",
      "K21",
      "K23"
     ],
     "S": [
+     "S3",
      "S17",
      "S18"
     ],
@@ -271,6 +273,7 @@ export const COURSE_KSA = {
    }
   ],
   "K": [
+   "K3",
    "K5",
    "K21",
    "K23",
@@ -278,6 +281,7 @@ export const COURSE_KSA = {
   ],
   "S": [
    "S1",
+   "S3",
    "S17",
    "S18",
    "S20"

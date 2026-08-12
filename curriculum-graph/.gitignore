@@ -11,3 +11,6 @@ dist/
 vite.log
 *.bak
 .vercel/
+
+# ผลลัพธ์ที่สร้างใหม่ได้ด้วย npm run db:export
+data/exports/
