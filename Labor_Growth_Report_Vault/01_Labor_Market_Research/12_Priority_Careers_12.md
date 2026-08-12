@@ -105,7 +105,7 @@
 
 **AI and Intelligent Systems Researcher · ข้ามทุกแขนงวิชา**
 
-- รายวิชาปลายทาง: EN-131-102, EN-131-203, EN-134-201, EN-134-302, EN-134-302 และ EN-134-403
+- รายวิชาปลายทาง: EN-131-102, EN-131-203, EN-134-301, EN-134-302, EN-134-302 และ EN-134-403
 - สมรรถนะปลายทาง: research question, literature review, experimental design, reproducible analysis และ research communication
 
 ### 11. ข้าราชการ/พนักงานหน่วยงานของรัฐด้านเทคโนโลยีดิจิทัล

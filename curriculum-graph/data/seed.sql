@@ -2497,7 +2497,7 @@ INSERT INTO course_plo (course_code, plo_id, role) VALUES
   ('EN-135-350', 4, 'host'),
   ('EN-135-350', 7, 'host');
 
--- clo_ksa (944)
+-- clo_ksa (963)
 INSERT INTO clo_ksa (clo_id, ksa_id, source) VALUES
   (1, 'K17', 'stated'),
   (1, 'S14', 'stated'),
@@ -3098,6 +3098,25 @@ INSERT INTO clo_ksa (clo_id, ksa_id, source) VALUES
   (85, 'A4', 'stated'),
   (85, 'A6', 'stated'),
   (85, 'A7', 'stated'),
+  (86, 'K25', 'stated'),
+  (86, 'K26', 'stated'),
+  (86, 'S19', 'stated'),
+  (86, 'S20', 'stated'),
+  (86, 'A2', 'stated'),
+  (86, 'A6', 'stated'),
+  (86, 'A8', 'stated'),
+  (87, 'K25', 'stated'),
+  (87, 'S19', 'stated'),
+  (87, 'A2', 'stated'),
+  (87, 'A6', 'stated'),
+  (88, 'K22', 'stated'),
+  (88, 'K23', 'stated'),
+  (88, 'K26', 'stated'),
+  (88, 'S18', 'stated'),
+  (88, 'S20', 'stated'),
+  (88, 'A3', 'stated'),
+  (88, 'A5', 'stated'),
+  (88, 'A8', 'stated'),
   (89, 'K25', 'stated'),
   (89, 'S19', 'stated'),
   (89, 'A2', 'stated'),
@@ -3444,7 +3463,7 @@ INSERT INTO clo_ksa (clo_id, ksa_id, source) VALUES
   (216, 'A6', 'stated'),
   (216, 'A7', 'stated');
 
--- course_ksa (2280)
+-- course_ksa (2292)
 INSERT INTO course_ksa (course_code, ksa_id, source) VALUES
   ('EN-001-227', 'K5', 'stated'),
   ('EN-001-227', 'K13', 'stated'),
@@ -3892,6 +3911,18 @@ INSERT INTO course_ksa (course_code, ksa_id, source) VALUES
   ('EN-132-306', 'A6', 'stated'),
   ('EN-132-306', 'A7', 'stated'),
   ('EN-132-306', 'A8', 'stated'),
+  ('EN-134-301', 'K22', 'stated'),
+  ('EN-134-301', 'K23', 'stated'),
+  ('EN-134-301', 'K25', 'stated'),
+  ('EN-134-301', 'K26', 'stated'),
+  ('EN-134-301', 'S18', 'stated'),
+  ('EN-134-301', 'S19', 'stated'),
+  ('EN-134-301', 'S20', 'stated'),
+  ('EN-134-301', 'A2', 'stated'),
+  ('EN-134-301', 'A3', 'stated'),
+  ('EN-134-301', 'A5', 'stated'),
+  ('EN-134-301', 'A6', 'stated'),
+  ('EN-134-301', 'A8', 'stated'),
   ('EN-134-302', 'K5', 'stated'),
   ('EN-134-302', 'K16', 'stated'),
   ('EN-134-302', 'K22', 'stated'),
@@ -5727,7 +5758,7 @@ INSERT INTO course_ksa (course_code, ksa_id, source) VALUES
   ('EN-135-357', 'A7', 'derived'),
   ('EN-135-357', 'A8', 'derived');
 
--- course_skill_set (287)
+-- course_skill_set (290)
 INSERT INTO course_skill_set (course_code, skill_set_id) VALUES
   ('EN-001-227', 'AISK05'),
   ('EN-001-227', 'AISK08'),
@@ -5814,6 +5845,9 @@ INSERT INTO course_skill_set (course_code, skill_set_id) VALUES
   ('EN-132-306', 'AISK07'),
   ('EN-132-306', 'AISK08'),
   ('EN-132-306', 'AISK09'),
+  ('EN-134-301', 'AISK06'),
+  ('EN-134-301', 'AISK07'),
+  ('EN-134-301', 'AISK08'),
   ('EN-134-302', 'AISK05'),
   ('EN-134-302', 'AISK07'),
   ('EN-134-302', 'AISK08'),
@@ -51551,7 +51585,7 @@ INSERT INTO ksa_pedagogy (ksa_id, teaching_strategy, how, assessment_method, art
   ('A7', 'การเรียนรู้ผ่านโครงงานแบบทีม', 'กำหนดบทบาทและข้อตกลงทีมตั้งแต่ต้น · ทบทวนพฤติกรรมทีมทุกรอบส่งงาน', 'การประเมินโดยเพื่อนร่วมทีมและการประเมินแบบ 360 องศา', 'บันทึกการมีส่วนร่วมรายบุคคลและผลประเมินโดยเพื่อน', true, 'authored'),
   ('A8', 'การเรียนรู้ด้วยตนเอง (Independent Study)', 'ให้เลือกเทคโนโลยีใหม่มาศึกษาเองและนำเสนอ · จัดทำแผนพัฒนาตนเอง', 'ประเมินแฟ้มสะสมการเรียนรู้และแผนพัฒนาตนเอง', 'แฟ้มสะท้อนผล แผนการเรียนรู้ และหลักฐานการทดลองเทคโนโลยีใหม่', true, 'authored');
 
--- ksa_anchor_course (93)
+-- ksa_anchor_course (105)
 INSERT INTO ksa_anchor_course (ksa_id, course_code, rank_no, source) VALUES
   ('K1', 'EN-131-102', 1, 'derived'),
   ('K1', 'EN-132-202', 2, 'derived'),
@@ -51593,12 +51627,16 @@ INSERT INTO ksa_anchor_course (ksa_id, course_code, rank_no, source) VALUES
   ('K20', 'EN-132-303', 2, 'derived'),
   ('K21', 'EN-132-201', 1, 'derived'),
   ('K21', 'EN-001-129', 2, 'derived'),
-  ('K22', 'EN-001-123', 1, 'derived'),
-  ('K23', 'EN-132-201', 1, 'derived'),
+  ('K22', 'EN-134-301', 1, 'derived'),
+  ('K22', 'EN-001-123', 2, 'derived'),
+  ('K23', 'EN-134-301', 1, 'derived'),
+  ('K23', 'EN-132-201', 2, 'derived'),
   ('K24', 'EN-131-102', 1, 'derived'),
   ('K24', 'EN-001-125', 2, 'derived'),
-  ('K25', 'EN-001-227', 1, 'derived'),
+  ('K25', 'EN-134-301', 1, 'derived'),
+  ('K25', 'EN-001-227', 2, 'derived'),
   ('K26', 'EN-001-128', 1, 'derived'),
+  ('K26', 'EN-134-301', 2, 'derived'),
   ('S1', 'EN-001-128', 1, 'derived'),
   ('S1', 'EN-001-123', 2, 'derived'),
   ('S2', 'EN-131-102', 1, 'derived'),
@@ -51632,20 +51670,28 @@ INSERT INTO ksa_anchor_course (ksa_id, course_code, rank_no, source) VALUES
   ('S16', 'EN-132-201', 2, 'derived'),
   ('S17', 'EN-132-201', 1, 'derived'),
   ('S17', 'EN-001-129', 2, 'derived'),
-  ('S18', 'EN-132-201', 1, 'derived'),
-  ('S19', 'EN-001-227', 1, 'derived'),
+  ('S18', 'EN-134-301', 1, 'derived'),
+  ('S18', 'EN-132-201', 2, 'derived'),
+  ('S19', 'EN-134-301', 1, 'derived'),
+  ('S19', 'EN-001-227', 2, 'derived'),
   ('S20', 'EN-001-128', 1, 'derived'),
+  ('S20', 'EN-134-301', 2, 'derived'),
   ('A1', 'EN-001-128', 1, 'derived'),
   ('A1', 'EN-001-123', 2, 'derived'),
-  ('A2', 'EN-001-123', 1, 'derived'),
+  ('A2', 'EN-134-301', 1, 'derived'),
+  ('A2', 'EN-001-123', 2, 'derived'),
   ('A3', 'EN-001-128', 1, 'derived'),
+  ('A3', 'EN-134-301', 2, 'derived'),
   ('A4', 'EN-001-128', 1, 'derived'),
   ('A4', 'EN-132-201', 2, 'derived'),
-  ('A5', 'EN-001-123', 1, 'derived'),
+  ('A5', 'EN-134-301', 1, 'derived'),
+  ('A5', 'EN-001-123', 2, 'derived'),
   ('A6', 'EN-001-128', 1, 'derived'),
+  ('A6', 'EN-134-301', 2, 'derived'),
   ('A7', 'EN-001-128', 1, 'derived'),
   ('A7', 'EN-132-201', 2, 'derived'),
-  ('A8', 'EN-001-227', 1, 'derived');
+  ('A8', 'EN-134-301', 1, 'derived'),
+  ('A8', 'EN-001-227', 2, 'derived');
 
 -- reference_doc (30)
 INSERT INTO reference_doc (category, name, organisation, url, used_for) VALUES

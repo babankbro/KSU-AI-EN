@@ -130,8 +130,8 @@ export const PLO_TEACHING = [
   "plo": 1,
   "name": "การแก้ปัญหาทางวิศวกรรม",
   "top": "M",
-  "courses": 16,
-  "clos": 18,
+  "courses": 15,
+  "clos": 17,
   "electiveCourses": 37,
   "strategies": [
    {
@@ -320,13 +320,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     1
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      1
@@ -353,8 +346,8 @@ export const PLO_TEACHING = [
   "plo": 2,
   "name": "การออกแบบระบบปัญญาประดิษฐ์และระบบควบคุม",
   "top": "M",
-  "courses": 31,
-  "clos": 40,
+  "courses": 28,
+  "clos": 36,
   "electiveCourses": 52,
   "strategies": [
    {
@@ -605,13 +598,6 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "EN-132-201",
-    "clos": [
-     2
-    ],
-    "lv": "M"
-   },
-   {
     "c": "EN-132-202",
     "clos": [
      3
@@ -623,14 +609,6 @@ export const PLO_TEACHING = [
     "clos": [
      1,
      3
-    ],
-    "lv": "M"
-   },
-   {
-    "c": "EN-132-304",
-    "clos": [
-     1,
-     2
     ],
     "lv": "M"
    },
@@ -679,13 +657,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     1
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      1
@@ -712,8 +683,8 @@ export const PLO_TEACHING = [
   "plo": 3,
   "name": "การสื่อสารสารสนเทศทางเทคนิค",
   "top": "M",
-  "courses": 17,
-  "clos": 21,
+  "courses": 16,
+  "clos": 20,
   "electiveCourses": 19,
   "strategies": [
    {
@@ -868,13 +839,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     3
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      4
@@ -901,8 +865,8 @@ export const PLO_TEACHING = [
   "plo": 4,
   "name": "จริยธรรมและธรรมาภิบาลปัญญาประดิษฐ์",
   "top": "M",
-  "courses": 34,
-  "clos": 34,
+  "courses": 31,
+  "clos": 31,
   "electiveCourses": 43,
   "strategies": [
    {
@@ -1099,23 +1063,9 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "EN-132-201",
-    "clos": [
-     3
-    ],
-    "lv": "M"
-   },
-   {
     "c": "EN-132-303",
     "clos": [
      4
-    ],
-    "lv": "M"
-   },
-   {
-    "c": "EN-132-304",
-    "clos": [
-     3
     ],
     "lv": "M"
    },
@@ -1169,13 +1119,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     2
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      4
@@ -1202,8 +1145,8 @@ export const PLO_TEACHING = [
   "plo": 5,
   "name": "การทำงานเป็นทีมและการบริหารโครงการ",
   "top": "M",
-  "courses": 22,
-  "clos": 23,
+  "courses": 19,
+  "clos": 20,
   "electiveCourses": 10,
   "strategies": [
    {
@@ -1300,13 +1243,6 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "EN-132-201",
-    "clos": [
-     3
-    ],
-    "lv": "M"
-   },
-   {
     "c": "GE-020-009",
     "clos": [
      1,
@@ -1320,13 +1256,6 @@ export const PLO_TEACHING = [
      4
     ],
     "lv": "R"
-   },
-   {
-    "c": "EN-132-304",
-    "clos": [
-     3
-    ],
-    "lv": "M"
    },
    {
     "c": "EN-132-304",
@@ -1378,13 +1307,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     3
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      3
@@ -1411,8 +1333,8 @@ export const PLO_TEACHING = [
   "plo": 6,
   "name": "การทดลองและประเมินสมรรถนะระบบ",
   "top": "M",
-  "courses": 26,
-  "clos": 33,
+  "courses": 24,
+  "clos": 30,
   "electiveCourses": 55,
   "strategies": [
    {
@@ -1630,14 +1552,6 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "EN-132-201",
-    "clos": [
-     1,
-     3
-    ],
-    "lv": "M"
-   },
-   {
     "c": "EN-132-202",
     "clos": [
      1,
@@ -1689,13 +1603,6 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-134-302",
-    "clos": [
-     2
-    ],
-    "lv": "R"
-   },
-   {
     "c": "EN-134-403",
     "clos": [
      2
@@ -1722,8 +1629,8 @@ export const PLO_TEACHING = [
   "plo": 7,
   "name": "การเรียนรู้ตลอดชีวิตและนวัตกรรมยั่งยืน",
   "top": "M",
-  "courses": 15,
-  "clos": 17,
+  "courses": 14,
+  "clos": 16,
   "electiveCourses": 11,
   "strategies": [
    {
@@ -1844,13 +1751,6 @@ export const PLO_TEACHING = [
      3
     ],
     "lv": "M"
-   },
-   {
-    "c": "EN-134-302",
-    "clos": [
-     3
-    ],
-    "lv": "R"
    },
    {
     "c": "EN-134-302",

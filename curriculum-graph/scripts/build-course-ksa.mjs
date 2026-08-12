@@ -10,6 +10,7 @@ const SRC = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/1
 const COVER = path.join(root, "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/17_Section4_7_Skill_Set_Coverage.md");
 const CODEBOOK = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/18_KSA_Codebook.md");
 const OUT = path.join(root, "curriculum-graph/src/courseKsaData.js");
+const OUT_MD = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/19_Course_and_CLO_KSA_Tables.md");
 
 const md = fs.readFileSync(SRC, "utf8");
 const num = a => +a.slice(1);
@@ -104,3 +105,61 @@ console.log(`courseKsaData.js: ${list.length} courses · ${list.reduce((n, c) =>
 console.log(`  มีรหัส KSA: ${withKsa.length} วิชา · ไม่มี: ${list.length - withKsa.length}`);
 const empty = list.filter(c => !c.K.length && !c.S.length && !c.A.length).map(c => c.code);
 if (empty.length) console.log("  วิชาที่ยังไม่มีรหัส KSA:", empty.join(", "));
+
+/* ── ตารางในวอลต์ ── */
+const direct = list.filter(c => !c.derivedFrom);
+const electiveRows = list.filter(c => c.derivedFrom);
+const nClos = direct.reduce((s, c) => s + c.clos.length, 0);
+const cell = a => a.join(", ") || "—";
+
+const tblCourse = rows => [
+  "| รายวิชา | ชื่อ | Knowledge | Skill | Attitude | AISK |",
+  "|---|---|---|---|---|---|",
+  ...rows.map(c => `| \`${c.code}\` | ${c.name.slice(0, 52)} | ${cell(c.K)} | ${cell(c.S)} | ${cell(c.A)} | ${c.aisk.join("/")} |`)
+].join("\n");
+
+fs.writeFileSync(OUT_MD, `# ตารางรหัส KSA รายวิชาและราย CLO
+
+> ผูก **รายวิชา → KSA** และ **CLO → KSA** ด้วยรหัสจาก [[18_KSA_Codebook|สมุดรหัส KSA]]
+>
+> **สร้างอัตโนมัติ** จาก \`curriculum-graph/scripts/build-course-ksa.mjs\` · สั่งสร้างใหม่ด้วย \`npm run build:ksa\`
+> ห้ามแก้ด้วยมือ — ให้แก้ที่ [[10_Course_Learning_Outcomes_CLO_Mapping|CLO Mapping]] แล้วสร้างใหม่
+
+> [!info] ขอบเขตข้อมูล
+> - **${direct.length} รายวิชาบังคับ** มีรหัส KSA ระบุตรงจาก CLO Mapping รวม **${nClos} CLO**
+> - **${electiveRows.length} วิชาชีพเลือก** ยังไม่มี KSA ระบุตรง จึง **อนุมานผ่านชุดทักษะ AISK** ([[18_KSA_Codebook#ส่วน 6 — AISK ↔ KSA|ส่วน 6]]) — ใช้เป็นค่าตั้งต้น ต้องให้ผู้รับผิดชอบรายวิชายืนยันก่อนลงเล่ม
+
+---
+
+## 1. รายวิชาบังคับ → KSA
+
+รหัสมาจาก CLO ของรายวิชานั้นโดยตรง เป็นสหภาพของ KSA ที่ CLO ทุกข้ออ้างถึง
+
+${tblCourse(direct)}
+
+---
+
+## 2. วิชาชีพเลือก → KSA *(อนุมานจากชุดทักษะ)*
+
+> [!warning] ตัวเลขชุดนี้เป็นค่าตั้งต้น
+> ได้จากการแตกชุดทักษะที่รายวิชารับผิดชอบออกเป็น KSA ไม่ใช่รหัสที่เอกสารระบุตรง จึงกว้างกว่าความเป็นจริง
+> เมื่อกำหนด CLO รายวิชาเลือกครบแล้ว ให้แทนที่ด้วยรหัสจริงและย้ายขึ้นตารางที่ 1
+
+${tblCourse(electiveRows)}
+
+---
+
+## 3. CLO → KSA รายข้อ
+
+ใช้เป็นฐานของหมวดที่ 4 หัวข้อ 4.6 และการออกแบบเกณฑ์ประเมินรายวิชา
+
+| รายวิชา | CLO | Knowledge | Skill | Attitude |
+|---|:--:|---|---|---|
+${direct.flatMap(c => c.clos.map(k =>
+  `| \`${c.code}\` | CLO${k.n} | ${cell(k.K)} | ${cell(k.S)} | ${cell(k.A)} |`)).join("\n")}
+
+---
+
+[[10_Course_Learning_Outcomes_CLO_Mapping|← CLO Mapping]] | [[18_KSA_Codebook|สมุดรหัส KSA]] | [[00_TQF2_Drafts_Home|หน้าหลักร่างวิชาการ]]
+`, "utf8");
+console.log(`  19_Course_and_CLO_KSA_Tables.md: ${direct.length} บังคับ · ${electiveRows.length} เลือก · ${nClos} CLO`);

@@ -381,16 +381,6 @@ const CLO_COURSES_BASE = [
       { n: 3, t: "ปฏิบัติตามกฎหมาย/ใบอนุญาตและประเมินความปลอดภัยในการใช้อากาศยานไร้คนขับได้", ylo: ["YLO3.4"], plo: [[4, "R"]] }
     ] },
 
-  { c: "EN-132-304",
-    k: "Digital Twin · การจำลองกระบวนการผลิต · Predictive Maintenance · การเพิ่มประสิทธิภาพเชิงอุตสาหกรรม",
-    s: "สร้างแบบจำลองกระบวนการผลิตและพยากรณ์การบำรุงรักษา",
-    a: "ตัดสินใจบนข้อมูลจริง · มองระบบแบบองค์รวม",
-    sets: [["AISK03", "G2 ย่อย 3"], ["AISK05", "G3 ย่อย 3"]],
-    clos: [
-      { n: 1, t: "ออกแบบและสร้างแบบจำลอง Digital Twin ของกระบวนการผลิตได้", ylo: ["YLO3.1"], plo: [[2, "M"]] },
-      { n: 2, t: "ดำเนินการทดลองและพัฒนาแบบจำลอง Predictive Maintenance จากข้อมูลได้", ylo: ["YLO3.2"], plo: [[6, "M"]] },
-      { n: 3, t: "นำเสนอผลการจำลองและการเพิ่มประสิทธิภาพเชิงอุตสาหกรรมได้", ylo: ["YLO3.3"], plo: [[3, "R"]] }
-    ] },
 
   { c: "EN-132-306",
     k: "LLM และ Foundation Models · Prompt/Context Engineering · RAG และ Vector Database · Agentic และ Compound AI · การคัดเลือกและประเมินโมเดล · LLM Red-teaming",
@@ -414,15 +404,6 @@ const CLO_COURSES_BASE = [
       { n: 3, t: "ตรวจสอบความปลอดภัยของระบบและจัดทำเอกสารส่งมอบร่วมกับทีมได้", ylo: ["YLO3.4"], plo: [[4, "M"], [5, "M"]] }
     ] },
 
-  { c: "EN-134-302",
-    k: "การประเมินเทคโนโลยี · ผลกระทบทางสังคมและสิ่งแวดล้อม · AI Verify 11 หลักการ · ISO/IEC 42001 และ NIST AI RMF",
-    s: "นำเสนอเชิงลึกและจัดทำหลักฐานธรรมาภิบาล (Model Card/Fairness Report)",
-    a: "ความรับผิดชอบต่อสังคม · กล้ายืนหยัดในสิ่งที่ถูกต้อง",
-    sets: [["AISK07", "G5 ย่อย 2, 3"], ["AISK08", "G6 ย่อย 2"]],
-    clos: [
-      { n: 1, t: "นำเสนอและสื่อสารประเด็นเทคโนโลยี AI เชิงลึกอย่างมืออาชีพได้", ylo: ["YLO3.3"], plo: [[3, "R"]] },
-      { n: 2, t: "ประเมินผลกระทบทางจริยธรรม/สังคม/สิ่งแวดล้อม และจัดทำหลักฐานเชิงประจักษ์ตามกรอบ AI Verify และมาตรฐานสากล (ISO/IEC 42001, NIST AI RMF; Model Card / Fairness Report) ได้", ylo: ["YLO3.4"], plo: [[4, "R"]] }
-    ] },
 
   { c: "EN-134-302",
     k: "การกำหนดหัวข้อและขอบเขต · การทบทวนวรรณกรรม · ระเบียบวิธีวิจัย · จริยธรรมการวิจัย",
@@ -1115,14 +1096,6 @@ const CLO_COURSES_BASE = [
     ] }
 ];
 
-const sensingActuationKsa = {
-  c: "EN-132-201",
-  k: "Metrology · Sensors/Transmitters · Signal Conditioning · Pneumatics/Hydraulics · Motors/Drives · PLC/Edge/IIoT · Interlock and Safety",
-  s: "เลือก ติดตั้ง สอบเทียบ และบูรณาการระบบตรวจวัด–ขับเคลื่อนกับ Edge, Cloud, SCADA และ AI",
-  a: "ยึดความปลอดภัย ความน่าเชื่อถือ ความรับผิดชอบ และการทำงานร่วมกันเป็นทีม",
-  sets: [["AISK02", ""], ["AISK03", ""], ["AISK07", ""]],
-  clos: []
-};
 
 export const CLO_COURSES = [
   ...CLO_COURSES_BASE.map(entry => {
@@ -1133,12 +1106,7 @@ export const CLO_COURSES = [
       sets: revision.sets?.length ? revision.sets.map(id => [id, ""]) : entry.sets,
       clos: revision.clos
     };
-  }),
-  {
-    ...sensingActuationKsa,
-    sets: CLO_REVISION["EN-132-201"].sets.map(id => [id, ""]),
-    clos: CLO_REVISION["EN-132-201"].clos
-  }
+  })
 ];
 
 /* วิชาเลือกชีพ/เลือกเสรี — ยังไม่กำหนด CLO รายข้อ (ขึ้นกับรายวิชาที่นักศึกษาเลือก) */

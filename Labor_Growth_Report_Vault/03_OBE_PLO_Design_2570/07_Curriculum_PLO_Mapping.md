@@ -100,7 +100,7 @@
 
 | รหัส | ชื่อรายวิชา | PLO เจ้าภาพหลัก | PLO สนับสนุน | หลักฐานสำคัญ |
 |---|---|---|---|---|
-| EN-134-201 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1 | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
+| EN-134-301 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1 | PLO3, PLO7 | PLO4 | literature/technology review, seminar |
 | EN-134-302 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 2 | PLO3, PLO4, PLO7 | — | standard watch, governance dossier |
 | EN-134-302 | การเตรียมความพร้อมโครงงาน | PLO1, PLO2, PLO6 | PLO3, PLO4, PLO5, PLO7 | requirements, evaluation/risk/team/learning plan |
 | EN-134-403 | โครงงานวิศวกรรม | PLO1–PLO7 | — | integrated system, test, BCG/value, governance, UAT/handover |
