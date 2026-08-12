@@ -19,9 +19,9 @@
     "jobs:gemini": "node scripts/extract-job-skills-gemini.mjs",
     "jobs:normalize": "node scripts/normalize-job-skills.mjs",
     "build:ksa": "node scripts/build-ksa-data.mjs && node scripts/build-course-ksa.mjs && node scripts/build-plo-teaching.mjs && node scripts/build-ksa-pedagogy.mjs",
-    "build:db": "node scripts/build-db-seed.mjs",
+    "build:db": "node --max-old-space-size=4096 scripts/build-db-seed.mjs",
     "db:load": "node scripts/db-load.mjs",
-    "db:export": "node scripts/export-db-excel.mjs",
+    "db:export": "node --max-old-space-size=4096 scripts/export-db-excel.mjs",
     "db:docs": "node scripts/build-db-docs.mjs"
   },
   "dependencies": {

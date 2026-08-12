@@ -38,7 +38,8 @@ const WORKBOOKS = [
     tables: ["vw_plo_coverage", "vw_skill_ksa_gap", "vw_skill_set_without_attitude", "vw_ksa_orphan"] }
 ];
 
-const psql = args => execFileSync("psql", ["-v", "ON_ERROR_STOP=1", "-d", DB, ...args], { encoding: "utf8" });
+const psql = args => execFileSync("psql", ["-v", "ON_ERROR_STOP=1", "-d", DB, ...args],
+  { encoding: "utf8", maxBuffer: 512 * 1024 * 1024 });   // ตาราง job มีหลักหมื่นแถว เกิน buffer เริ่มต้น
 
 /* ดึงข้อมูลเป็น JSON ทีละตาราง — ปลอดภัยกว่า CSV เพราะข้อความไทยมีคอมมาและขึ้นบรรทัดใหม่ */
 function fetchTable(name) {

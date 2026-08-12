@@ -131,7 +131,8 @@ const COL = {
   "job_skill.skill_label": "ป้ายดิบจากประกาศงาน ยังไม่จับคู่กับรหัสทักษะของหลักสูตร"
 };
 
-const psql = a => execFileSync("psql", ["-v", "ON_ERROR_STOP=1", "-d", DB, ...a], { encoding: "utf8" });
+const psql = a => execFileSync("psql", ["-v", "ON_ERROR_STOP=1", "-d", DB, ...a],
+  { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
 
 const meta = JSON.parse(psql(["-tAc", `
   SELECT coalesce(json_agg(row_to_json(t) ORDER BY t.tbl), '[]'::json)::text FROM (

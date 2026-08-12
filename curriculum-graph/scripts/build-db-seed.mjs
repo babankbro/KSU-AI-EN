@@ -257,6 +257,55 @@ insert("career_course", ["career_id", "course_code"],
   D.CAREERS.flatMap(c =>
     [...new Set((c.courses || []).filter(x => known.has(x)))].map(x => [q(c.id), q(x)])));
 
+/* ── 6b. ประกาศงานจริงจาก JobsDB — src/jobsData.json ── */
+const JOBS_FILE = path.join(root, "src/jobsData.json");
+if (fs.existsSync(JOBS_FILE)) {
+  const jd = JSON.parse(fs.readFileSync(JOBS_FILE, "utf8"));
+  const jobs = jd.jobs || [];
+  const careerIds = new Set(D.CAREERS.map(c => c.id));
+
+  /* กลุ่มย่อยอาชีพ — รวบจากทั้ง searchMatches และ classifiedMatches ของทุกประกาศ */
+  const sub = new Map();
+  jobs.forEach(j => [...(j.searchMatches || []), ...(j.classifiedMatches || [])]
+    .forEach(m => {
+      if (m.subId && careerIds.has(m.careerId) && !sub.has(m.subId)) {
+        sub.set(m.subId, { id: m.subId, career: m.careerId, name: m.subName || null });
+      }
+    }));
+  insert("career_subgroup", ["id", "career_id", "name_th"],
+    [...sub.values()].map(s => [q(s.id), q(s.career), q(s.name)]));
+
+  insert("job_posting", ["id", "external_id", "source", "title", "company", "posted_on"],
+    jobs.map((j, i) => [n(i + 1), q(j.id), q(jd.meta?.source || "JobsDB"),
+      q(j.title), q(j.company), q((j.listingDate || "").slice(0, 10) || null)]));
+
+  /* ใช้เฉพาะ classifiedMatches ที่ผ่านการจำแนกแล้ว ไม่ใช่ searchMatches ที่เป็นผลค้นหาดิบ */
+  const jcm = [];
+  jobs.forEach((j, i) => {
+    const seen = new Set();
+    (j.classifiedMatches || []).forEach(m => {
+      if (!careerIds.has(m.careerId) || seen.has(m.careerId)) return;
+      seen.add(m.careerId);
+      jcm.push([n(i + 1), q(m.careerId), sub.has(m.subId) ? q(m.subId) : "NULL",
+        q(m.role), m.confidence == null ? "NULL" : n(m.confidence)]);
+    });
+  });
+  insert("job_career_match", ["job_id", "career_id", "subgroup_id", "match_role", "confidence"], jcm);
+
+  const js = [];
+  jobs.forEach((j, i) => {
+    const seen = new Set();
+    (j.skills || []).forEach(s => {
+      if (!s.name || seen.has(s.name)) return;
+      seen.add(s.name);
+      js.push([n(i + 1), q(s.name), q(s.category)]);
+    });
+  });
+  insert("job_skill", ["job_id", "skill_label", "category"], js);
+} else {
+  console.log("  !! ไม่พบ src/jobsData.json — ข้ามตารางกลุ่มประกาศงาน");
+}
+
 /* ── 7. การสอนและการประเมิน ── */
 insert("teaching_strategy", ["id", "name_th", "name_en", "how", "tools"],
   T.STRATEGIES.map((s, i) => {
