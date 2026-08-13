@@ -12,7 +12,9 @@ const CODEBOOK = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Dra
 const OUT = path.join(root, "curriculum-graph/src/courseKsaData.js");
 const OUT_MD = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/19_Course_and_CLO_KSA_Tables.md");
 
-const md = fs.readFileSync(SRC, "utf8");
+/* วอลต์บน Windows อาจถูกบันทึกเป็น CRLF — ปรับให้เป็น LF ก่อน
+   ไม่งั้น regex หัวข้อรายวิชาที่ปิดท้ายด้วย $ จะไม่ตรง และจะได้ CLO ของวิชาบังคับเป็น 0 โดยไม่มีข้อความเตือน */
+const md = fs.readFileSync(SRC, "utf8").replaceAll("\r\n", "\n");
 const num = a => +a.slice(1);
 const sortK = arr => [...new Set(arr)].sort((a, b) => num(a) - num(b));
 
@@ -62,25 +64,59 @@ for (const c of Object.values(courses)) {
 }
 
 /* ── วิชาชีพเลือก: ไม่มี KSA ระบุตรงในเอกสาร จึงอนุมานผ่าน AISK -> KSA (ส่วน 6 ของสมุดรหัส) ── */
-const cb = fs.readFileSync(CODEBOOK, "utf8");
+const cb = fs.readFileSync(CODEBOOK, "utf8").replaceAll("\r\n", "\n");
 const aiskKsa = {};
 for (const m of cb.split("# ส่วน 6")[1].split("# ภาคผนวก")[0]
   .matchAll(/^\|\s*\*\*(AISK\d\d)\*\*\s*\|([^|]*)\|([^|]*)\|([^|]*)\|([^|]*)\|/gm)) {
   aiskKsa[m[1]] = { K: sortK(m[3].match(/K\d+/g) || []), S: sortK(m[4].match(/S\d+/g) || []), A: sortK(m[5].match(/A\d+/g) || []) };
 }
 
-const cover = fs.readFileSync(COVER, "utf8");
+/* ชื่อและขอบเขตของรหัส K/S/A — ใช้เทียบกับชื่อวิชาเลือกว่ารหัสไหนเป็นแกนของวิชานั้นจริง */
+const ksaText = {};
+for (const m of cb.matchAll(/^\|\s*\*\*([KSA]\d{1,2})\*\*\s*\|([^|]*)\|([^|]*)\|/gm))
+  ksaText[m[1]] = (ksaText[m[1]] || "") + " " + m[2] + " " + m[3];
+
+const grams = (s, n = 4) => {
+  const t = (s || "").replace(/[\s·\/,()"'’“”—–-]+/g, "");
+  const out = new Set();
+  for (let i = 0; i + n <= t.length; i++) out.add(t.slice(i, i + n));
+  return out;
+};
+const sim = (a, b) => {
+  if (!a.size || !b.size) return 0;
+  let hit = 0;
+  for (const g of a) if (b.has(g)) hit++;
+  return hit / Math.min(a.size, b.size);
+};
+
+const cover = fs.readFileSync(COVER, "utf8").replaceAll("\r\n", "\n");
 let derived = 0;
 for (const m of cover.matchAll(/^\|\s*(EN-\d{3}-\d{3})\s+([^|]*)\|([^|]*)\|/gm)) {
   const [, code, name, setsCell] = m;
   if (courses[code]) continue;                       // มีข้อมูลจาก CLO อยู่แล้ว ใช้ของจริงก่อนเสมอ
   const aisk = [...new Set((setsCell.match(/AISK\d\d/g) || []))];
   if (!aisk.length) continue;
-  const acc = { K: [], S: [], A: [] };
-  aisk.forEach(a => { const r = aiskKsa[a]; if (r) { acc.K.push(...r.K); acc.S.push(...r.S); acc.A.push(...r.A); } });
+  /* รวมทุกชุด AISK แล้วจะได้ ~31 รหัสต่อวิชา ซึ่งมากเกินกว่าที่วิชาเลือกตัวเดียวจะรับผิดชอบจริง
+     จึงคัดเหลือมิติละไม่เกิน 2 ตามเกณฑ์เดียวกับวิชาบังคับ โดยจัดอันดับจาก
+       (1) ชื่อวิชาใกล้กับนิยาม/ขอบเขตของรหัสแค่ไหน — น้ำหนักมากที่สุด ไม่งั้นวิชาควบคุมจะได้รหัสเขียนแบบ
+       (2) รหัสนั้นปรากฏในกี่ชุดทักษะของวิชานี้ — ยิ่งหลายชุด ยิ่งเป็นแกนของวิชา
+       (3) อยู่ในชุดทักษะแรกที่ระบุไว้ ซึ่งเป็นชุดเจ้าภาพของวิชา
+     ผลลัพธ์ยังเป็นค่าอนุมาน (derived) ไม่ใช่รหัสที่เอกสารระบุตรง และไม่ถูกนับเข้าความบรรลุ PLO */
+  const CAP = 2;
+  const host = aiskKsa[aisk[0]] || { K: [], S: [], A: [] };
+  const nameGrams = grams(name);
+  const pickTop = dim => {
+    const freq = {};
+    aisk.forEach(a => (aiskKsa[a]?.[dim] || []).forEach(c => freq[c] = (freq[c] || 0) + 1));
+    const rank = c => 60 * sim(nameGrams, grams(ksaText[c] || "")) +
+                      3 * freq[c] + (host[dim].includes(c) ? 2 : 0);
+    return Object.keys(freq)
+      .sort((x, y) => rank(y) - rank(x) || +x.slice(1) - +y.slice(1))  // เสมอกันเรียงตามเลขรหัส ผลจึงคงที่
+      .slice(0, CAP);
+  };
   courses[code] = {
     code, name: name.trim(), clos: [], aisk,
-    K: sortK(acc.K), S: sortK(acc.S), A: sortK(acc.A),
+    K: sortK(pickTop("K")), S: sortK(pickTop("S")), A: sortK(pickTop("A")),
     derivedFrom: "aisk"                              // ป้ายบอกที่มา — ไม่ใช่รหัสที่เอกสารระบุตรง
   };
   derived++;

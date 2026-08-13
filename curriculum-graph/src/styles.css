@@ -292,7 +292,8 @@ main{flex:1 1 auto}
 a.gcard-h:hover .gttl b{text-decoration:underline;text-underline-offset:2px}
 
 /* กลุ่มย่อยในการ์ดกลุ่มวิชา */
-.subrows{display:grid;gap:5px;margin-top:11px}
+/* minmax(0,1fr) จำเป็น — คอลัมน์ auto จะกว้างตามเนื้อหาที่ยาวที่สุดจนแถวทะลุขอบการ์ด */
+.subrows{display:grid;grid-template-columns:minmax(0,1fr);gap:5px;margin-top:11px}
 .subrow{display:flex;align-items:center;gap:10px;background:var(--soft);border:1px solid transparent;
   border-radius:9px;padding:7px 11px;transition:.12s}
 .subrow:hover{border-color:var(--navy);background:var(--card)}

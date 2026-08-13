@@ -9,7 +9,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", ".
 const SRC = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/18_KSA_Codebook.md");
 const OUT = path.join(root, "curriculum-graph/src/ksaData.js");
 
-const md = fs.readFileSync(SRC, "utf8");
+/* วอลต์บน Windows อาจถูกบันทึกเป็น CRLF — ปรับให้เป็น LF ก่อน ไม่งั้น regex ที่ปิดท้ายด้วย $ จะไม่ตรง */
+const md = fs.readFileSync(SRC, "utf8").replaceAll("\r\n", "\n");
 const between = (a, b) => md.split(a)[1].split(b)[0];
 
 const CODE = /\b(?:HS|SS|EF)\d{1,2}\b/g;

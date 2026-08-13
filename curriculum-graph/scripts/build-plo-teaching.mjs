@@ -22,7 +22,7 @@ const clean = s => s.replace(/<br\s*\/?>/g, " · ").replace(/\*\*/g, "").replace
 const cells = row => row.split("|").map(c => c.trim());
 
 /* ── หมวด 5 ตารางที่ 5.1: กลยุทธ์ -> PLO ที่รับผิดชอบ ── */
-const s5 = fs.readFileSync(S5, "utf8").split("### ตารางที่ 5.1")[1].split("## 5.2")[0];
+const s5 = fs.readFileSync(S5, "utf8").replaceAll("\r\n", "\n").split("### ตารางที่ 5.1")[1].split("## 5.2")[0];
 const strategies = [];
 for (const row of s5.split("\n")) {
   if (!row.startsWith("| **")) continue;
@@ -38,7 +38,7 @@ for (const row of s5.split("\n")) {
 }
 
 /* ── หมวด 6 ตารางที่ 6.1: PLO -> การประเมิน ── */
-const s6 = fs.readFileSync(S6, "utf8").split("## 6.1")[1].split("## 6.2")[0];
+const s6 = fs.readFileSync(S6, "utf8").replaceAll("\r\n", "\n").split("## 6.1")[1].split("## 6.2")[0];
 const assess = {};
 for (const row of s6.split("\n")) {
   const m = row.match(/^\|\s*(?:\*\*)?PLO(\d)/);
