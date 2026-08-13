@@ -7,18 +7,22 @@ export default function SiteNav() {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(null);
   const [pinned, setPinned] = useState(false);   // เปิดค้างเพราะคลิก ไม่ใช่แค่ hover
+  /* ตัวจับเวลาของ hover อ่านค่า pinned ผ่าน ref เสมอ — ถ้าอ่านจาก state ตรง ๆ
+     onMouseLeave จะเห็นค่าเก่าจากรอบ render ก่อนคลิก แล้วสั่งปิดเมนูทันทีที่เมาส์ขยับออก */
+  const pinnedRef = useRef(false);
+  const pin = v => { pinnedRef.current = v; setPinned(v); };
   const [drawer, setDrawer] = useState(false);
   const navRef = useRef(null);
   const active = findNav(pathname);
 
-  useEffect(() => { setOpen(null); setPinned(false); setDrawer(false); }, [pathname]);
+  useEffect(() => { setOpen(null); pin(false); setDrawer(false); }, [pathname]);
 
   useEffect(() => {
     if (open === null && !drawer) return;
     const onDown = e => {
-      if (navRef.current && !navRef.current.contains(e.target)) { setOpen(null); setPinned(false); setDrawer(false); }
+      if (navRef.current && !navRef.current.contains(e.target)) { setOpen(null); pin(false); setDrawer(false); }
     };
-    const onKey = e => { if (e.key === "Escape") { setOpen(null); setPinned(false); setDrawer(false); } };
+    const onKey = e => { if (e.key === "Escape") { setOpen(null); pin(false); setDrawer(false); } };
     document.addEventListener("mousedown", onDown);
     document.addEventListener("keydown", onKey);
     return () => { document.removeEventListener("mousedown", onDown); document.removeEventListener("keydown", onKey); };
@@ -42,14 +46,14 @@ export default function SiteNav() {
             const isActive = active.group?.id === g.id;
             return (
               <div key={g.id} className={`nav-group${isOpen ? " open" : ""}`}
-                onMouseEnter={() => { if (!pinned) setOpen(g.id); }}
-                onMouseLeave={() => { if (!pinned) setOpen(null); }}>
+                onMouseEnter={() => { if (!pinnedRef.current) setOpen(g.id); }}
+                onMouseLeave={() => { if (!pinnedRef.current) setOpen(null); }}>
                 <button className={`nav-top${isActive ? " active" : ""}`}
                   aria-expanded={isOpen} aria-haspopup="true"
                   onClick={() => {
-                    const same = open === g.id && pinned;
+                    const same = open === g.id && pinnedRef.current;
                     setOpen(same ? null : g.id);
-                    setPinned(!same);
+                    pin(!same);
                   }}>
                   {g.label}<i className="caret" aria-hidden="true">▾</i>
                 </button>

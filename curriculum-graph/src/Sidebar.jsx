@@ -10,6 +10,17 @@ export default function Sidebar() {
   const sections = item?.sections || [];
   const [here, setHere] = useState(hash.slice(1) || "");
   const [open, setOpen] = useState(false);
+  /* กลุ่มที่ถูกย่อไว้ — จำไว้ข้ามหน้าใน sessionStorage */
+  const [folded, setFolded] = useState(() => {
+    try { return new Set(JSON.parse(sessionStorage.getItem("sidebarFolded") || "[]")); }
+    catch { return new Set(); }
+  });
+  const toggleGroup = id => setFolded(prev => {
+    const next = new Set(prev);
+    next.has(id) ? next.delete(id) : next.add(id);
+    try { sessionStorage.setItem("sidebarFolded", JSON.stringify([...next])); } catch { /* โหมดส่วนตัว */ }
+    return next;
+  });
 
   useEffect(() => { setOpen(false); setHere(hash.slice(1) || sections[0]?.id || ""); }, [pathname]);
 
@@ -39,10 +50,18 @@ export default function Sidebar() {
       <div className="sidebar-in">
         {NAV_GROUPS.map(g => {
           const links = g.solo ? [{ to: g.to, label: g.label, end: g.end }] : g.items;
-          return (
-            <div key={g.id} className="sidebar-block">
-              {!g.solo && <div className="sidebar-blockhead">{g.label}</div>}
-              <ul className="sidebar-list">
+            const isFold = folded.has(g.id);
+            return (
+            <div key={g.id} className={"sidebar-block" + (isFold ? " folded" : "")}>
+              {!g.solo && (
+                <button className="sidebar-blockhead" aria-expanded={!isFold}
+                  onClick={() => toggleGroup(g.id)}>
+                  <i className="fold-caret" aria-hidden="true">{isFold ? "▸" : "▾"}</i>
+                  {g.label}
+                  <span className="fold-n">{links.length}</span>
+                </button>
+              )}
+              {!isFold && <ul className="sidebar-list">
                 {links.map(it => {
                   const on = it.end ? pathname === it.to : (item?.to === it.to || pathname === it.to);
                   return (
@@ -63,10 +82,10 @@ export default function Sidebar() {
                     </li>
                   );
                 })}
-              </ul>
+              </ul>}
             </div>
-          );
-        })}
+            );
+          })}
       </div>
     </aside>
   );

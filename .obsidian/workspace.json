@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fcd1c1a88392b2e2",
+        "id": "9896261d32c01f0b",
         "type": "tabs",
         "children": [
           {
-            "id": "e893f2a177d643f8",
+            "id": "0503956e1321e79e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/18_KSA_Codebook.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "18_KSA_Codebook"
+              "title": "New tab"
             }
           }
         ]
@@ -183,44 +179,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "e893f2a177d643f8",
+  "active": "0503956e1321e79e",
   "lastOpenFiles": [
-    "curriculum-graph/dist/assets/10-CCzJMxi3.js",
-    "curriculum-graph/dist/index.html",
+    "curriculum-graph/dist/assets/AiEngineerJobs-iOenrpmS.js",
+    "curriculum-graph/dist/assets/index-BfEh8M62.css",
+    "curriculum-graph/dist/assets/index-BlTZWtKd.js",
+    "เล่มหลักสูตร วศบ วิศวกรรมคอมพิวเตอร์ 2566 สภามหาวิทยาลัย UPDATE 06-03-2568.pdf",
+    "หลักสูตรวิศวกรรมศาสตรบัณฑิต AI  ผ่านคณะ.pdf",
     "curriculum-graph/dist/assets/31-B5K0LoVp.js",
+    "curriculum-graph/dist/index.html",
+    "curriculum-graph/dist/assets/25-BO53h60V.js",
     "curriculum-graph/dist/assets/30-ChFqDXB2.js",
     "curriculum-graph/dist/assets/29-Tqv8oomC.js",
     "curriculum-graph/dist/assets/28-j_3fqHLH.js",
-    "curriculum-graph/dist/assets/27-BDoMtF8p.js",
-    "curriculum-graph/dist/assets/26-DpWIVVnv.js",
-    "curriculum-graph/dist/assets/25-BO53h60V.js",
-    "curriculum-graph/dist/assets/24-CzTKVYMB.js",
-    "curriculum-graph/dist/assets/23-DOcth4Eh.js",
-    "Labor_Growth_Report_Vault/03_OBE_PLO_Design_2570/02_Graduate_Attributes.md",
-    "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/18_KSA_Codebook.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/18_Section1_to_3_Audit.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/17_Section4_7_Skill_Set_Coverage.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/16_Section4_6_CLO_Mapping.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/15_Section4_5_Curriculum_Mapping.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/14_Section4_4_Study_Plan.md",
-    "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/17_Stakeholder_Feedback_Round2_and_Action_Plan.md",
-    "Labor_Growth_Report_Vault/04_Course_Descriptions_2570/07B_Electives_Work_Integrated.md",
-    "Labor_Growth_Report_Vault/02_Current_Curriculum_2570/08_CWIE_Integrated_Study_Plan.md",
-    "Labor_Growth_Report_Vault/02_Current_Curriculum_2570/07_Curriculum_Restructure_Plan_125.md",
-    "Labor_Growth_Report_Vault/02_Current_Curriculum_2570/06_Course_Intensity_Ranking_and_Credit_Reduction.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/09_Data_Lineage.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/02_curriculum.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/03_outcomes.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/04_skills_ksa.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/05_obe_sources.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/06_careers.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/07_pedagogy.md",
     "Labor_Growth_Report_Vault/03_OBE_PLO_Design_2570/01_Stakeholder_Needs.md",
     "Labor_Growth_Report_Vault/03_OBE_PLO_Design_2570/04_PLOs_7_OBE.md",
-    "Labor_Growth_Report_Vault/03_OBE_PLO_Design_2570/08_Study_Plan_and_Dependencies.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/13_Section7_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/12_Section6_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/11_Section9_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/10_Section8_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/09_Section5_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/08_Section5_Revision_Log.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/07_Section4_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/06_Section4_Revision_Log.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/05_Section3_Revised.md",
-    "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions/04_Section3_Revision_Log.md",
+    "Labor_Growth_Report_Vault/00_Home.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/01_programme.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/00_Database_Home.md",
+    "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/18_KSA_Codebook.md",
+    "Labor_Growth_Report_Vault/09_Database_Schema/08_checks.md",
+    "curriculum-graph/node_modules/dayjs/README.md",
+    "curriculum-graph/node_modules/dayjs/CHANGELOG.md",
+    "curriculum-graph/node_modules/async/README.md",
+    "curriculum-graph/node_modules/async/CHANGELOG.md",
+    "curriculum-graph/node_modules/uuid/README.md",
+    "curriculum-graph/node_modules/uuid/LICENSE.md",
+    "curriculum-graph/node_modules/uuid/CONTRIBUTING.md",
+    "curriculum-graph/node_modules/uuid/CHANGELOG.md",
+    "curriculum-graph/node_modules/archiver/README.md",
+    "curriculum-graph/node_modules/archiver/CHANGELOG.md",
+    "curriculum-graph/node_modules/saxes/README.md",
+    "curriculum-graph/node_modules/jszip/graph.svg",
     "Labor_Growth_Report_Vault/04_Course_Descriptions_2570/assets/curriculum_ylo_year_framework.png"
   ]
 }
