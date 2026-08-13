@@ -12,5 +12,5 @@ vite.log
 *.bak
 .vercel/
 
-# ผลลัพธ์ที่สร้างใหม่ได้ด้วย npm run db:export
-data/exports/
+# data/exports/ เก็บเข้า repo แม้สร้างใหม่ได้ด้วย npm run db:export
+# เพราะกรรมการและผู้ทบทวนหลักสูตรต้องหยิบไฟล์ไปเปิดโดยไม่ต้องมีฐานข้อมูล
