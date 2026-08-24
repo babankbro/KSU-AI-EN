@@ -130,8 +130,8 @@ export const PLO_TEACHING = [
   "plo": 1,
   "name": "การแก้ปัญหาทางวิศวกรรม",
   "top": "M",
-  "courses": 15,
-  "clos": 17,
+  "courses": 17,
+  "clos": 19,
   "electiveCourses": 37,
   "strategies": [
    {
@@ -242,7 +242,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11002",
     "clos": [
-     1
+     3
     ],
     "lv": "I"
    },
@@ -293,7 +293,7 @@ export const PLO_TEACHING = [
     "c": "EN-714-11009",
     "clos": [
      1,
-     2
+     3
     ],
     "lv": "R"
    },
@@ -312,23 +312,37 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "EN-714-12010",
+    "c": "EN-714-12009",
     "clos": [
      1
     ],
     "lv": "R"
    },
    {
+    "c": "EN-714-12010",
+    "clos": [
+     2
+    ],
+    "lv": "R"
+   },
+   {
+    "c": "EN-714-12012",
+    "clos": [
+     2
+    ],
+    "lv": "M"
+   },
+   {
     "c": "EN-714-12018",
     "clos": [
-     1
+     2
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12019",
     "clos": [
-     1
+     3
     ],
     "lv": "M"
    },
@@ -342,7 +356,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     1
+     4
     ],
     "lv": "M"
    }
@@ -353,7 +367,7 @@ export const PLO_TEACHING = [
   "name": "การออกแบบระบบปัญญาประดิษฐ์และระบบควบคุม",
   "top": "M",
   "courses": 28,
-  "clos": 36,
+  "clos": 37,
   "electiveCourses": 52,
   "strategies": [
    {
@@ -495,14 +509,14 @@ export const PLO_TEACHING = [
     "c": "EN-714-11001",
     "clos": [
      1,
-     2
+     3
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-11002",
     "clos": [
-     2
+     1
     ],
     "lv": "I"
    },
@@ -552,14 +566,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11009",
     "clos": [
-     2
+     3
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-11010",
     "clos": [
-     1
+     2
     ],
     "lv": "R"
    },
@@ -573,22 +587,22 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12004",
     "clos": [
-     1
+     3
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12005",
     "clos": [
-     1,
-     2
+     2,
+     3
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12006",
     "clos": [
-     1
+     3
     ],
     "lv": "R"
    },
@@ -618,14 +632,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12010",
     "clos": [
-     3
+     4
     ],
     "lv": "M"
    },
    {
     "c": "EN-714-12011",
     "clos": [
-     1,
+     2,
      3
     ],
     "lv": "M"
@@ -634,7 +648,7 @@ export const PLO_TEACHING = [
     "c": "EN-714-12012",
     "clos": [
      1,
-     2
+     3
     ],
     "lv": "M"
    },
@@ -649,7 +663,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12014",
     "clos": [
-     1
+     2
     ],
     "lv": "M"
    },
@@ -663,21 +677,22 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12016",
     "clos": [
-     1
+     1,
+     2
     ],
     "lv": "M"
    },
    {
     "c": "EN-714-12018",
     "clos": [
-     1
+     2
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12019",
     "clos": [
-     1
+     3
     ],
     "lv": "M"
    },
@@ -691,7 +706,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     1
+     4
     ],
     "lv": "M"
    }
@@ -701,8 +716,8 @@ export const PLO_TEACHING = [
   "plo": 3,
   "name": "การสื่อสารสารสนเทศทางเทคนิค",
   "top": "M",
-  "courses": 16,
-  "clos": 20,
+  "courses": 17,
+  "clos": 21,
   "electiveCourses": 19,
   "strategies": [
    {
@@ -771,7 +786,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11001",
     "clos": [
-     3
+     2
     ],
     "lv": "I"
    },
@@ -802,7 +817,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11009",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
@@ -816,21 +831,28 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12004",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12006",
     "clos": [
-     3
+     2
+    ],
+    "lv": "R"
+   },
+   {
+    "c": "EN-714-12009",
+    "clos": [
+     1
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12010",
     "clos": [
-     4
+     1
     ],
     "lv": "M"
    },
@@ -845,7 +867,7 @@ export const PLO_TEACHING = [
     "c": "EN-714-12017",
     "clos": [
      1,
-     2
+     3
     ],
     "lv": "R"
    },
@@ -859,7 +881,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12018",
     "clos": [
-     3
+     1
     ],
     "lv": "R"
    },
@@ -880,7 +902,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     3
+     2
     ],
     "lv": "M"
    }
@@ -890,8 +912,8 @@ export const PLO_TEACHING = [
   "plo": 4,
   "name": "จริยธรรมและธรรมาภิบาลปัญญาประดิษฐ์",
   "top": "M",
-  "courses": 31,
-  "clos": 31,
+  "courses": 30,
+  "clos": 30,
   "electiveCourses": 43,
   "strategies": [
    {
@@ -966,14 +988,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11001",
     "clos": [
-     2
+     3
     ],
     "lv": "I"
    },
    {
     "c": "EN-714-11002",
     "clos": [
-     2
+     1
     ],
     "lv": "I"
    },
@@ -994,7 +1016,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12001",
     "clos": [
-     2
+     3
     ],
     "lv": "I"
    },
@@ -1043,7 +1065,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11010",
     "clos": [
-     2
+     1
     ],
     "lv": "R"
    },
@@ -1057,14 +1079,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12004",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12005",
     "clos": [
-     3
+     4
     ],
     "lv": "R"
    },
@@ -1078,7 +1100,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12006",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
@@ -1099,7 +1121,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12009",
     "clos": [
-     3
+     4
     ],
     "lv": "M"
    },
@@ -1113,14 +1135,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12012",
     "clos": [
-     3
+     4
     ],
     "lv": "M"
    },
    {
     "c": "EN-714-12017",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
@@ -1134,7 +1156,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12014",
     "clos": [
-     2
+     1
     ],
     "lv": "M"
    },
@@ -1146,16 +1168,9 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "EN-714-12016",
-    "clos": [
-     3
-    ],
-    "lv": "M"
-   },
-   {
     "c": "EN-714-12018",
     "clos": [
-     2
+     3
     ],
     "lv": "R"
    },
@@ -1176,7 +1191,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     4
+     3
     ],
     "lv": "M"
    }
@@ -1186,8 +1201,8 @@ export const PLO_TEACHING = [
   "plo": 5,
   "name": "การทำงานเป็นทีมและการบริหารโครงการ",
   "top": "M",
-  "courses": 19,
-  "clos": 20,
+  "courses": 20,
+  "clos": 21,
   "electiveCourses": 10,
   "strategies": [
    {
@@ -1243,14 +1258,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11001",
     "clos": [
-     3
+     2
     ],
     "lv": "I"
    },
    {
     "c": "EN-714-11002",
     "clos": [
-     3
+     2
     ],
     "lv": "I"
    },
@@ -1276,6 +1291,13 @@ export const PLO_TEACHING = [
     "lv": "I"
    },
    {
+    "c": "EN-714-12005",
+    "clos": [
+     4
+    ],
+    "lv": "R"
+   },
+   {
     "c": "GE-010-005",
     "clos": [
      2
@@ -1285,9 +1307,9 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12009",
     "clos": [
-     3
+     4
     ],
-    "lv": "M"
+    "lv": "R"
    },
    {
     "c": "GE-020-009",
@@ -1307,7 +1329,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12012",
     "clos": [
-     3
+     4
     ],
     "lv": "M"
    },
@@ -1349,14 +1371,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12018",
     "clos": [
-     3
+     1
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12019",
     "clos": [
-     3
+     2
     ],
     "lv": "M"
    },
@@ -1370,7 +1392,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     2
+     1
     ],
     "lv": "M"
    }
@@ -1380,8 +1402,8 @@ export const PLO_TEACHING = [
   "plo": 6,
   "name": "การทดลองและประเมินสมรรถนะระบบ",
   "top": "M",
-  "courses": 24,
-  "clos": 30,
+  "courses": 25,
+  "clos": 33,
   "electiveCourses": 55,
   "strategies": [
    {
@@ -1550,7 +1572,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-11010",
     "clos": [
-     2
+     1
     ],
     "lv": "R"
    },
@@ -1565,13 +1587,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12004",
     "clos": [
-     2
+     1
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12005",
     "clos": [
+     1,
      2
     ],
     "lv": "R"
@@ -1579,7 +1602,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12006",
     "clos": [
-     2
+     1
     ],
     "lv": "R"
    },
@@ -1600,7 +1623,6 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12009",
     "clos": [
-     1,
      3
     ],
     "lv": "M"
@@ -1608,30 +1630,38 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12010",
     "clos": [
-     1,
-     2
-    ],
-    "lv": "M"
-   },
-   {
-    "c": "EN-714-12011",
-    "clos": [
      2,
      3
     ],
     "lv": "M"
    },
    {
+    "c": "EN-714-12011",
+    "clos": [
+     1,
+     3
+    ],
+    "lv": "M"
+   },
+   {
+    "c": "EN-714-12012",
+    "clos": [
+     2,
+     4
+    ],
+    "lv": "M"
+   },
+   {
     "c": "EN-714-12013",
     "clos": [
-     2
+     1
     ],
     "lv": "M"
    },
    {
     "c": "EN-714-12014",
     "clos": [
-     2
+     1
     ],
     "lv": "M"
    },
@@ -1645,21 +1675,22 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12016",
     "clos": [
-     2
+     2,
+     3
     ],
     "lv": "M"
    },
    {
     "c": "EN-714-12018",
     "clos": [
-     2
+     3
     ],
     "lv": "R"
    },
    {
     "c": "EN-714-12019",
     "clos": [
-     2
+     1
     ],
     "lv": "M"
    },
@@ -1673,7 +1704,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     3
+     2
     ],
     "lv": "M"
    }
@@ -1683,8 +1714,8 @@ export const PLO_TEACHING = [
   "plo": 7,
   "name": "การเรียนรู้ตลอดชีวิตและนวัตกรรมยั่งยืน",
   "top": "M",
-  "courses": 14,
-  "clos": 16,
+  "courses": 15,
+  "clos": 17,
   "electiveCourses": 11,
   "strategies": [
    {
@@ -1743,14 +1774,14 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12001",
     "clos": [
-     3
+     2
     ],
     "lv": "I"
    },
    {
     "c": "EN-714-11009",
     "clos": [
-     3
+     2
     ],
     "lv": "R"
    },
@@ -1772,6 +1803,13 @@ export const PLO_TEACHING = [
     "c": "GE-010-006",
     "clos": [
      2
+    ],
+    "lv": "R"
+   },
+   {
+    "c": "EN-714-12009",
+    "clos": [
+     3
     ],
     "lv": "R"
    },
@@ -1815,7 +1853,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-12018",
     "clos": [
-     3
+     1
     ],
     "lv": "R"
    },
@@ -1836,7 +1874,7 @@ export const PLO_TEACHING = [
    {
     "c": "EN-714-17002",
     "clos": [
-     4
+     3
     ],
     "lv": "M"
    }

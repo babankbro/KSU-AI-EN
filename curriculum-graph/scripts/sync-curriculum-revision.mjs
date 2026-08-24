@@ -109,8 +109,12 @@ for (const line of readFileSync(cloSource, "utf8").split(/\r?\n/)) {
   if (cells.length < 4) continue;
   const cloHead = cells[0].match(/^CLO(\d+)\s+(.+)$/);
   if (!cloHead) continue;
-  const skillCell = cells.length >= 5 ? cells[3] : "";
-  const evidenceCell = cells.length >= 5 ? cells[4] : cells[3];
+  // ตารางปัจจุบันมี 6 คอลัมน์: CLO | YLO | PLO/ระดับ | Bloom | KSEC–AISK | หลักฐาน
+  // รูปแบบเดิมไม่มีคอลัมน์ Bloom จึงต้องรองรับทั้งสองแบบ
+  const wide = cells.length >= 6;
+  const bloom = wide ? cells[3] : "";
+  const skillCell = wide ? cells[4] : (cells.length >= 5 ? cells[3] : "");
+  const evidenceCell = wide ? cells[5] : (cells.length >= 5 ? cells[4] : cells[3]);
 
   const plo = [...cells[2].matchAll(/PLO(\d)\s+\(([IRM](?:–[IRM])?)\)/g)].map(match => {
     const levels = match[2].split("–");
@@ -125,6 +129,7 @@ for (const line of readFileSync(cloSource, "utf8").split(/\r?\n/)) {
     t: cloHead[2],
     ylo: normalizeYlos(cells[1]),
     plo,
+    bloom,
     sets,
     primarySet: sets[0] || null,
     skill: skillCell,
@@ -164,12 +169,19 @@ for (const code of cloRequiredCodes) {
     throw new Error(`No CLO rows found for ${code}`);
   }
 }
-if (Object.keys(cloRevision).length !== 36) {
-  throw new Error(`Expected CLO mapping for 36 courses/activities, found ${Object.keys(cloRevision).length}`);
-}
+// จำนวนรายวิชาและจำนวนแถวเปลี่ยนได้เมื่อควบรวมรายวิชาหรือปรับ CLO
+// จึงตรวจด้วยเงื่อนไขที่เป็นสาระแทนการตรึงตัวเลข
 const cloCount = Object.values(cloRevision).reduce((sum, item) => sum + item.clos.length, 0);
-if (cloCount !== 111) {
-  throw new Error(`Expected 111 CLO rows, found ${cloCount}`);
+const duplicates = Object.entries(cloRevision)
+  .filter(([, item]) => new Set(item.clos.map(c => c.n)).size !== item.clos.length)
+  .map(([code]) => code);
+if (duplicates.length) {
+  throw new Error(`Duplicate CLO numbers in ${duplicates.join(", ")}`);
+}
+if (Object.keys(cloRevision).length < 30 || cloCount < 90) {
+  throw new Error(
+    `CLO master looks truncated: ${Object.keys(cloRevision).length} courses, ${cloCount} rows`,
+  );
 }
 
 const cloOutput = `// Generated from 10_Course_Learning_Outcomes_CLO_Mapping.md.

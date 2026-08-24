@@ -225,7 +225,7 @@ export function lookup(raw) {
     return {
       id, kind: "ระดับตามแนวทาง Bloom", accent: "var(--navy2)",
       title: l.th, en: l.label,
-      body: "ระดับตาม Bloom's Revised Taxonomy — B1 จำ · B2 เข้าใจ · B3 ประยุกต์ใช้ · B4 วิเคราะห์ · B5 ประเมินค่า · B6 สร้างสรรค์ · มิติความรู้ประเมินที่ B1–B2 มิติทักษะประเมินที่ B3–B6"
+      body: "ระดับตาม Bloom's Revised Taxonomy — จำ (Remember) · เข้าใจ (Understand) · ประยุกต์ใช้ (Apply) · วิเคราะห์ (Analyze) · ประเมินค่า (Evaluate) · สร้างสรรค์ (Create) · มิติความรู้ประเมินที่ระดับเข้าใจ มิติทักษะประเมินตั้งแต่ระดับประยุกต์ใช้ขึ้นไป · เพดานชั้นปี ปี 1 ถึงประยุกต์ใช้ · ปี 2 ถึงวิเคราะห์ · ปี 3–4 ถึงประเมินค่า"
     };
   }
 
