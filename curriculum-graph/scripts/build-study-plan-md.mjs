@@ -32,7 +32,7 @@ const sectorOf = c =>
 const placeholder = e => {
   if (e.s.startsWith("วิชาเลือกเสรี")) return { sector: "หมวดวิชาเลือกเสรี", code: "XX-XXX-XXX", cr: "3(X-X-X)" };
   if (e.s.startsWith("การเรียนรู้ร่วมการทำงาน"))
-    return { sector: SECTOR.elec, code: "EN-135-35X", cr: "3(2-2-5)", pre: "EN-714-17001" };
+    return { sector: SECTOR.elec, code: "EN-714-16xxx", cr: "3(2-2-5)", pre: "EN-714-17001" };
   return { sector: SECTOR.elec, code: "EN-714-14xxx", cr: "3(X-X-X)" };
 };
 
