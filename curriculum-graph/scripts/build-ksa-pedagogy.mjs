@@ -19,7 +19,7 @@ const OUT_JS = path.join(root, "curriculum-graph/src/ksaPedagogyData.js");
 
 const LV = { M: 3, R: 2, I: 1 };
 /* วิชาบูรณาการปลายทาง — อ้าง KSA เกือบทุกตัวจึงไม่ใช่ "เจ้าของเนื้อหา" ของรหัสใด */
-const INTEGRATIVE = new Set(["EN-134-403", "EN-134-404", "EN-135-401", "EN-135-402"]);
+const INTEGRATIVE = new Set(["EN-714-12019", "EN-714-12020", "EN-714-17001", "EN-714-17002"]);
 const courseOf = c => COURSES.find(x => x.c === c);
 const titleOf = c => courseOf(c)?.t || COURSE_KSA[c]?.name || c;
 

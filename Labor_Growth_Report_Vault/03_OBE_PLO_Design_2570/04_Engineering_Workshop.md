@@ -5,7 +5,7 @@
 
 ---
 
-### **EN-001-128 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์ (Integrated Engineering Workshop 1: Fabrication and Sensor Installation)**
+### **EN-714-11004 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์ (Integrated Engineering Workshop 1: Fabrication and Sensor Installation)**
 **หน่วยกิต:** 1(0-3-1)
 **เป้าหมายทักษะ:** งานโครงสร้าง, งานช่างกล, งานท่อประปา, และการเดินสายไฟพื้นฐาน
 
@@ -14,7 +14,7 @@
 
 ---
 
-### **EN-001-129 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ (Integrated Engineering Workshop 2: Drive Systems and Automatic Control)**
+### **EN-714-11008 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ (Integrated Engineering Workshop 2: Drive Systems and Automatic Control)**
 **หน่วยกิต:** 1(0-3-1)
 **เป้าหมายทักษะ:** อิเล็กทรอนิกส์, เซนเซอร์, ไมโครคอนโทรลเลอร์, และระบบเครือข่ายฮาร์ดแวร์
 
@@ -23,7 +23,7 @@
 
 ---
 
-### **EN-001-230 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ (Integrated Engineering Workshop 3: System Integration and Handover)**
+### **EN-714-11010 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ (Integrated Engineering Workshop 3: System Integration and Handover)**
 **หน่วยกิต:** 1(0-3-1)
 **เป้าหมายทักษะ:** ระบบอัตโนมัติทางอุตสาหกรรม (PLC), Edge AI, และการทดสอบระบบแบบบูรณาการ (System Integration)
 

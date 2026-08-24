@@ -32,8 +32,8 @@ const sectorOf = c =>
 const placeholder = e => {
   if (e.s.startsWith("วิชาเลือกเสรี")) return { sector: "หมวดวิชาเลือกเสรี", code: "XX-XXX-XXX", cr: "3(X-X-X)" };
   if (e.s.startsWith("การเรียนรู้ร่วมการทำงาน"))
-    return { sector: SECTOR.elec, code: "EN-135-35X", cr: "3(2-2-5)", pre: "EN-135-401" };
-  return { sector: SECTOR.elec, code: "EN-135-3XX", cr: "3(X-X-X)" };
+    return { sector: SECTOR.elec, code: "EN-135-35X", cr: "3(2-2-5)", pre: "EN-714-17001" };
+  return { sector: SECTOR.elec, code: "EN-714-14xxx", cr: "3(X-X-X)" };
 };
 
 const row = (sector, code, name, pre, cr) => `| ${sector} | ${code} | ${name} | ${pre} | ${cr} |`;
@@ -68,7 +68,7 @@ function semesterTable(sem, plan, cumulative) {
     "",
     ...(sem === 7 && plan === "B"
       ? [
-          "> การเรียนรู้ร่วมการทำงาน 1–3 คือรายวิชาสามโมดูลจาก EN-135-351 ถึง EN-135-355 ที่คณะกรรมการหลักสูตรกำหนดร่วมกับสถานประกอบการในแต่ละปีการศึกษา",
+          "> การเรียนรู้ร่วมการทำงาน 1–3 คือรายวิชาสามโมดูลจาก EN-714-16001 ถึง EN-714-16005 ที่คณะกรรมการหลักสูตรกำหนดร่วมกับสถานประกอบการในแต่ละปีการศึกษา",
           "> เมื่อรวมกับวิชาชีพเลือกในภาคการศึกษาที่ 5 และ 6 ครบ 5 รายวิชา 15 หน่วยกิตตามโครงสร้างข้อ 2.4 และผู้เรียนอยู่กับสถานประกอบการต่อเนื่องถึงภาคการศึกษาที่ 8",
           "",
         ]

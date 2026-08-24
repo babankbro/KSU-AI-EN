@@ -1,7 +1,7 @@
 // Generated from 10_Course_Learning_Outcomes_CLO_Mapping.md.
 // Do not edit manually; run npm run sync:curriculum after updating the Vault.
 export const CLO_REVISION = {
-  "EN-001-227": {
+  "EN-714-11009": {
     "clos": [
       {
         "n": 1,
@@ -81,7 +81,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-126": {
+  "EN-714-11007": {
     "clos": [
       {
         "n": 1,
@@ -163,7 +163,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-124": {
+  "EN-714-11005": {
     "clos": [
       {
         "n": 1,
@@ -239,7 +239,7 @@ export const CLO_REVISION = {
       "AISK03"
     ]
   },
-  "EN-001-121": {
+  "EN-714-11001": {
     "clos": [
       {
         "n": 1,
@@ -323,7 +323,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-123": {
+  "EN-714-11003": {
     "clos": [
       {
         "n": 1,
@@ -394,7 +394,7 @@ export const CLO_REVISION = {
       "AISK03"
     ]
   },
-  "EN-001-122": {
+  "EN-714-11002": {
     "clos": [
       {
         "n": 1,
@@ -472,7 +472,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-125": {
+  "EN-714-11006": {
     "clos": [
       {
         "n": 1,
@@ -552,7 +552,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-001-128": {
+  "EN-714-11004": {
     "clos": [
       {
         "n": 1,
@@ -613,7 +613,7 @@ export const CLO_REVISION = {
       "AISK04"
     ]
   },
-  "EN-001-129": {
+  "EN-714-11008": {
     "clos": [
       {
         "n": 1,
@@ -694,7 +694,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-001-230": {
+  "EN-714-11010": {
     "clos": [
       {
         "n": 1,
@@ -780,7 +780,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-101": {
+  "EN-714-12001": {
     "clos": [
       {
         "n": 1,
@@ -853,7 +853,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-102": {
+  "EN-714-12002": {
     "clos": [
       {
         "n": 1,
@@ -922,7 +922,7 @@ export const CLO_REVISION = {
       "AISK05"
     ]
   },
-  "EN-131-206": {
+  "EN-714-12006": {
     "clos": [
       {
         "n": 1,
@@ -1000,7 +1000,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-205": {
+  "EN-714-12005": {
     "clos": [
       {
         "n": 1,
@@ -1075,7 +1075,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-131-207": {
+  "EN-714-12007": {
     "clos": [
       {
         "n": 1,
@@ -1152,7 +1152,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-131-203": {
+  "EN-714-12003": {
     "clos": [
       {
         "n": 1,
@@ -1230,7 +1230,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-131-204": {
+  "EN-714-12004": {
     "clos": [
       {
         "n": 1,
@@ -1308,7 +1308,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-131-208": {
+  "EN-714-12008": {
     "clos": [
       {
         "n": 1,
@@ -1389,7 +1389,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-132-201": {
+  "EN-714-12009": {
     "clos": [
       {
         "n": 1,
@@ -1495,7 +1495,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-132-202": {
+  "EN-714-12010": {
     "clos": [
       {
         "n": 1,
@@ -1587,7 +1587,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-303": {
+  "EN-714-12011": {
     "clos": [
       {
         "n": 1,
@@ -1699,7 +1699,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-307": {
+  "EN-714-12015": {
     "clos": [
       {
         "n": 1,
@@ -1778,7 +1778,7 @@ export const CLO_REVISION = {
       "AISK04"
     ]
   },
-  "EN-132-304": {
+  "EN-714-12012": {
     "clos": [
       {
         "n": 1,
@@ -1861,7 +1861,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-132-304": {
+  "EN-714-12012": {
     "clos": [
       {
         "n": 1,
@@ -1943,7 +1943,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-305": {
+  "EN-714-12013": {
     "clos": [
       {
         "n": 1,
@@ -2027,7 +2027,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-306": {
+  "EN-714-12014": {
     "clos": [
       {
         "n": 1,
@@ -2110,7 +2110,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-132-201": {
+  "EN-714-12009": {
     "clos": [
       {
         "n": 1,
@@ -2198,7 +2198,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-134-302": {
+  "EN-714-12018": {
     "clos": [
       {
         "n": 1,
@@ -2255,7 +2255,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-134-302": {
+  "EN-714-12018": {
     "clos": [
       {
         "n": 1,
@@ -2348,7 +2348,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-134-403": {
+  "EN-714-12019": {
     "clos": [
       {
         "n": 1,
@@ -2473,7 +2473,7 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
-  "EN-135-401": {
+  "EN-714-17001": {
     "clos": [
       {
         "n": 1,
@@ -2549,7 +2549,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-135-402": {
+  "EN-714-17002": {
     "clos": [
       {
         "n": 1,
@@ -2670,7 +2670,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-135-331": {
+  "EN-714-14031": {
     "clos": [
       {
         "n": 1,
@@ -2763,7 +2763,7 @@ export const CLO_REVISION = {
       "AISK07"
     ]
   },
-  "EN-135-332": {
+  "EN-714-14032": {
     "clos": [
       {
         "n": 1,
@@ -2853,7 +2853,7 @@ export const CLO_REVISION = {
       "AISK09"
     ]
   },
-  "EN-135-333": {
+  "EN-714-14033": {
     "clos": [
       {
         "n": 1,

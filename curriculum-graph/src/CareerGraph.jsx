@@ -24,7 +24,7 @@ const CAREER_PATH_STAGES = [
   { id: "experience", label: "5 · โครงงานและประสบการณ์วิชาชีพ", groups: ["proj", "field"] },
 ];
 
-const careerEndpoints = career => [...new Set([...career.courses, "EN-135-402"])];
+const careerEndpoints = career => [...new Set([...career.courses, "EN-714-17002"])];
 
 function careerPath(career) {
   const need = new Set();

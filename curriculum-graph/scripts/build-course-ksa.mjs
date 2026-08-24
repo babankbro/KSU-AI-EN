@@ -32,7 +32,7 @@ const courses = {};
 let cur = null;
 
 for (const raw of md.split("\n")) {
-  const head = raw.match(/^###\s+(EN-\d{3}-\d{3})\s*(.*)$/);
+  const head = raw.match(/^###\s+(EN-\d{3}-\d{5})\s*(.*)$/);
   if (head) {
     cur = head[1];
     courses[cur] = { code: cur, name: head[2].trim(), clos: [], K: [], S: [], A: [], aisk: [] };
@@ -91,7 +91,7 @@ const sim = (a, b) => {
 
 const cover = fs.readFileSync(COVER, "utf8").replaceAll("\r\n", "\n");
 let derived = 0;
-for (const m of cover.matchAll(/^\|\s*(EN-\d{3}-\d{3})\s+([^|]*)\|([^|]*)\|/gm)) {
+for (const m of cover.matchAll(/^\|\s*(EN-\d{3}-\d{5})\s+([^|]*)\|([^|]*)\|/gm)) {
   const [, code, name, setsCell] = m;
   if (courses[code]) continue;                       // มีข้อมูลจาก CLO อยู่แล้ว ใช้ของจริงก่อนเสมอ
   const aisk = [...new Set((setsCell.match(/AISK\d\d/g) || []))];

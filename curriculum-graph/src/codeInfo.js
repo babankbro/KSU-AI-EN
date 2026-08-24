@@ -27,7 +27,7 @@ const PATTERN = new RegExp(
   "HS20|HS1[0-9]|HS[1-9]|SS10|SS[1-9]|EF[1-6]|L[1-4]|" +
   "K2[0-6]|K1[0-9]|K[1-9]|S20|S1[0-9]|S[1-9]|A[1-8]|" +
   "C[0-1][0-9]|" +
-  "[A-Z]{2}-\\d{3}-\\d{3}|" +
+  "[A-Z]{2}-\\d{3}-\\d{5}|" +
   "[IRM]" +
   ")$"
 );
@@ -257,7 +257,7 @@ export function lookup(raw) {
   }
 
   /* ── รหัสรายวิชา ── */
-  if (/^[A-Z]{2}-\d{3}-\d{3}$/.test(id)) {
+  if (/^[A-Z]{2}-\d{3}-\d{5}$/.test(id)) {
     const c = COURSES.find(x => x.c === id);
     if (!c) return null;
     const d = c.d || "";

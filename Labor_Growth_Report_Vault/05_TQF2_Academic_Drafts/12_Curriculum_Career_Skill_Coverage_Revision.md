@@ -125,10 +125,10 @@
 
 | รหัสเดิม   | ชื่อเดิม                                | ชื่อ/ขอบเขตเสนอใหม่                                                                                                                                 | Skills/Careers                     |
 | ---------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| EN-132-201 | AI Business and Product Design          | **AI Product, Requirements and Solution Design** — problem discovery, requirements, architecture concept, prototype, feasibility, acceptance/change | HS20, SS6, SS8–SS10 · C02/C08/C09      |
-| EN-132-202 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | HS3, HS11, HS13, HS19 · C12/C15/C17    |
-| EN-132-305 | Software Development and AI Engineering | **AI Software, Solution Architecture and Integration** — backend/API, full-stack, integration, testing, CI/CD, observability, handover              | HS2, HS4, HS20, SS10 · C02/C06/C07/C11 |
-| EN-132-306 | Agentic AI Systems                      | **Generative and Agentic AI Systems** — LLM/RAG/agents/tool use, evaluation, security, cost/latency                                                 | HS6, HS7, HS10, HS20 · C01/C02/C06     |
+| EN-714-12009 | AI Business and Product Design          | **AI Product, Requirements and Solution Design** — problem discovery, requirements, architecture concept, prototype, feasibility, acceptance/change | HS20, SS6, SS8–SS10 · C02/C08/C09      |
+| EN-714-12010 | AI for Production and Supply Chain      | **Decision Intelligence and Operations Analytics** — BI/DSS, forecasting, scenario, simulation, optimization/OR, decision communication             | HS3, HS11, HS13, HS19 · C12/C15/C17    |
+| EN-714-12013 | Software Development and AI Engineering | **AI Software, Solution Architecture and Integration** — backend/API, full-stack, integration, testing, CI/CD, observability, handover              | HS2, HS4, HS20, SS10 · C02/C06/C07/C11 |
+| EN-714-12014 | Agentic AI Systems                      | **Generative and Agentic AI Systems** — LLM/RAG/agents/tool use, evaluation, security, cost/latency                                                 | HS6, HS7, HS10, HS20 · C01/C02/C06     |
 
 ### 5.3 วิชาบังคับเฉพาะ Track 4 วิชา / 12 หน่วยกิต
 
@@ -163,11 +163,11 @@
 
 | รายวิชาเดิม | ปรับเนื้อหาที่เสนอ | เหตุผลจากตลาด |
 |---|---|---|
-| EN-001-122 Programming Fundamentals | เพิ่ม data structures, Git, testing, SQL/API basics | Python/SQL/API/testing เป็นฐาน C01/C06/C07 |
-| EN-131-101 Introduction to AI | เพิ่ม research literacy, AI limitations, governance baseline | รองรับ C10 และ Responsible AI |
-| EN-131-207 Cloud and MLOps | เพิ่ม observability, SLO, service reliability, cost, runbook | Cloud/CI-CD/operations เด่นใน C01/C06/C07 |
-| EN-131-204 Data Engineering | เพิ่ม data modeling, BI semantic layer, data quality/lineage | C07/C12/C15 |
-| EN-131-208 AI Infrastructure and Networks | เพิ่ม IAM, backup/DR, enterprise security และ IT service concepts | ปิด gap C11/HS20 |
+| EN-714-11002 Programming Fundamentals | เพิ่ม data structures, Git, testing, SQL/API basics | Python/SQL/API/testing เป็นฐาน C01/C06/C07 |
+| EN-714-12001 Introduction to AI | เพิ่ม research literacy, AI limitations, governance baseline | รองรับ C10 และ Responsible AI |
+| EN-714-12007 Cloud and MLOps | เพิ่ม observability, SLO, service reliability, cost, runbook | Cloud/CI-CD/operations เด่นใน C01/C06/C07 |
+| EN-714-12004 Data Engineering | เพิ่ม data modeling, BI semantic layer, data quality/lineage | C07/C12/C15 |
+| EN-714-12008 AI Infrastructure and Networks | เพิ่ม IAM, backup/DR, enterprise security และ IT service concepts | ปิด gap C11/HS20 |
 
 ## 7. วิชาเลือกเสนอใหม่: Active Pool 24 วิชา
 
@@ -197,13 +197,13 @@
 
 | วิชาเสนอ | ดำเนินการจากของเดิม |
 |---|---|
-| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-132-304/201 |
+| Advanced Process Control and Distributed Control Systems | ยกระดับ 135-316 ต่อจาก EN-714-12012/201 |
 | Smart Warehouse, AGV and Material Handling | รวม 135-318 + 135-326 |
-| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-132-202 |
+| Advanced Operations Research and Industrial Optimization | เปลี่ยน 135-319 เพื่อลดความซ้ำกับ EN-714-12010 |
 | Agro-industrial Process, Food Quality and Safety | ปรับ 135-320 |
 | Rice–Sugar–Cassava Industrial AI Studio | รวม 135-321/322/323 เป็น rotating case studio |
-| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-132-304 |
-| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-132-304 |
+| Motion Control and Collaborative Robot Cell Engineering | ยกระดับ 135-327 ต่อจาก EN-714-12012 |
+| Lean and AI-Enabled Process Improvement | เปลี่ยน 135-328 ต่อจาก EN-714-12012 |
 | Industrial Computer Vision and Automated Quality | คง/เพิ่ม SPC integration ใน 135-329 |
 | Smart Energy, Thermal Process and Sustainable Factory | รวม 135-325 + 135-330 |
 
@@ -217,24 +217,24 @@
 
 | รหัส | รายวิชาปรับใหม่ | ความซ้ำเดิม | ความลึกและช่องว่างที่ปิด |
 |---|---|---|---|
-| EN-135-337 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-132-306 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
-| EN-135-338 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-132-305 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
-| EN-135-339 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-132-305/EN-131-207 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
-| EN-135-345 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-132-201 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
-| EN-135-348 | AI Product Management | design thinking และ product design ซ้ำ EN-132-201 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
-| EN-135-350 | AI Governance and Risk | จริยธรรมและกฎหมายเบื้องต้นซ้ำแกน AI และ PLO4 | AI inventory, risk tiering, impact assessment, third-party risk, audit evidence, monitoring และ incident governance |
+| EN-714-14037 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-714-12014 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
+| EN-714-14038 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-714-12013 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
+| EN-714-14039 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-714-12013/EN-714-12007 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
+| EN-714-14045 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-714-12009 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |
+| EN-714-14048 | AI Product Management | design thinking และ product design ซ้ำ EN-714-12009 | roadmap, backlog, product/model metrics, A/B testing, adoption, lifecycle และ evidence-based product decisions |
+| EN-714-14050 | AI Governance and Risk | จริยธรรมและกฎหมายเบื้องต้นซ้ำแกน AI และ PLO4 | AI inventory, risk tiering, impact assessment, third-party risk, audit evidence, monitoring และ incident governance |
 
 รายวิชาที่ยังคงไว้เพราะเป็นความเชี่ยวชาญเฉพาะทางและไม่ซ้ำวิชาแกนโดยตรง:
 
-- EN-135-336 Advanced Data Engineering and Data Pipelines
-- EN-135-340 UX/UI Design for Intelligent Systems
-- EN-135-341/340 Healthcare AI and Medical Image Analysis
-- EN-135-343/342 Financial AI and Predictive Finance
-- EN-135-346 Intelligent Software Project Management
-- EN-135-347 Business Development and Digital Marketing with AI
-- EN-135-349 Virtual Reality Technology and Artificial Intelligence
+- EN-714-14036 Advanced Data Engineering and Data Pipelines
+- EN-714-14040 UX/UI Design for Intelligent Systems
+- EN-714-14041/340 Healthcare AI and Medical Image Analysis
+- EN-714-14043/342 Financial AI and Predictive Finance
+- EN-714-14046 Intelligent Software Project Management
+- EN-714-14047 Business Development and Digital Marketing with AI
+- EN-714-14049 Virtual Reality Technology and Artificial Intelligence
 
-ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-135-341/337 เป็น Healthcare AI Studio และ EN-135-343/339 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
+ข้อเสนอระยะถัดไป: หากต้องลดจำนวนวิชาเลือก ให้รวม EN-714-14041/337 เป็น Healthcare AI Studio และ EN-714-14043/339 เป็น Financial Decision AI Studio โดยไม่ลดความลึกของผลงานปฏิบัติ
 
 ## 8. Basket Rule สำหรับวิชาเลือก 15 หน่วยกิต
 
@@ -276,8 +276,8 @@
 
 1. ยืนยันว่า EN-132 จะใช้โครงสร้าง **4 common + 4 track-required**
 2. ยืนยัน active elective pool และ basket rule
-3. กำหนดรหัสวิชาใหม่ โดยแยก prefix elective ออกจาก EN-135-401/402
-4. แก้ Course Index ให้ตรงกับไฟล์คำอธิบาย โดยเฉพาะ EN-135-312–315
+3. กำหนดรหัสวิชาใหม่ โดยแยก prefix elective ออกจาก EN-714-17001/402
+4. แก้ Course Index ให้ตรงกับไฟล์คำอธิบาย โดยเฉพาะ EN-714-14012–14015
 5. จัดทำคำอธิบายไทย–อังกฤษและ CLO ใหม่สำหรับวิชาที่ควบรวม/เลื่อน
 6. จัดทำ prerequisite map และตรวจภาระหน่วยกิตรายภาค
 7. กำหนดอาจารย์/ห้องปฏิบัติการเจ้าภาพของ Track-required ทุกวิชา

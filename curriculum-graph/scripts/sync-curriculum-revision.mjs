@@ -22,7 +22,7 @@ const cloSource = resolve(
 );
 
 const courses = {};
-const courseLine = /^#*\s*\**(EN-\d{3}-\d{3})\s+(.+?)\s+(\d+\(\d+-\d+-\d+\))\**\s*$/;
+const courseLine = /^#*\s*\**(EN-\d{3}-\d{5})\s+(.+?)\s+(\d+\(\d+-\d+-\d+\))\**\s*$/;
 
 for (const filename of sources) {
   const lines = readFileSync(resolve(sourceDir, filename), "utf8")
@@ -97,7 +97,7 @@ const normalizeYlos = cell => {
 const cloRevision = {};
 let currentCode = null;
 for (const line of readFileSync(cloSource, "utf8").split(/\r?\n/)) {
-  const heading = line.match(/^###\s+(EN-\d{3}-\d{3})\b/);
+  const heading = line.match(/^###\s+(EN-\d{3}-\d{5})\b/);
   if (heading) {
     currentCode = heading[1];
     cloRevision[currentCode] = { clos: [] };

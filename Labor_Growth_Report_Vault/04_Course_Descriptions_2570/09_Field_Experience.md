@@ -1,9 +1,9 @@
-## EN-135-401 เตรียมความพร้อมสหกิจศึกษา 1(0-2-1)
+## EN-714-17001 เตรียมความพร้อมสหกิจศึกษา 1(0-2-1)
 Cooperative Education Preparation
 ปรัชญา เป้าประสงค์ ระเบียบ และขั้นตอนของสหกิจศึกษา การค้นหาและเลือกสถานประกอบการที่เหมาะสม การจัดทำประวัติย่อ แฟ้มสะสมทักษะ และการสัมภาษณ์ทั้งภาษาไทยและภาษาอังกฤษ จรรยาบรรณวิชาชีพ กฎหมายแรงงาน ทรัพย์สินทางปัญญา ธรรมาภิบาลปัญญาประดิษฐ์ และความปลอดภัยในการทำงาน และการจัดทำแผนปฏิบัติงานและรูปแบบรายงานสหกิจศึกษา
 Philosophy, objectives, regulations, and procedures of cooperative education; identifying and selecting workplaces in AI engineering, agriculture, industry, or enterprise; preparation of resumes, skill portfolios, and interviews in Thai and English; professional ethics, labor law, intellectual property, AI governance, and workplace safety; communication and teamwork; preparation of the work plan and cooperative-education report format
 
-## EN-135-402 สหกิจศึกษา 6(0-40-0)
+## EN-714-17002 สหกิจศึกษา 6(0-40-0)
 Cooperative Education
 การปฏิบัติงานจริงในสถานประกอบการที่ได้รับอนุมัติไม่น้อยกว่าสิบหกสัปดาห์ การวิเคราะห์ปัญหา ข้อกำหนด และเกณฑ์การยอมรับของงาน การประยุกต์และบูรณาการความรู้ด้านวิศวกรรมและปัญญาประดิษฐ์ การเก็บข้อมูล ทดลอง และตีความผล การทำงานร่วมกับทีมสหวิทยาการ การบริหารงานและความเสี่ยง การปฏิบัติตามจรรยาบรรณและธรรมาภิบาล และการจัดทำรายงาน
 Supervised professional practice in an approved workplace for at least sixteen weeks; analysis of an authentic problem, stakeholders, requirements, and acceptance criteria; application and integration of engineering, AI, data, software, sensing, or control-system knowledge; planning and execution of data collection, experimentation, testing, analysis, and interpretation within the work scope; multidisciplinary teamwork as a leader or member; management of work, risk, quality, and change; compliance with professional ethics, law, confidentiality and intellectual property, AI governance, cybersecurity, standards, and workplace safety; assessment of economic, social, or environmental value and impacts as appropriate; self-directed learning and application of new technologies or standards; preparation of reports, presentations, user acceptance tests, manuals, and handover evidence for the workplace and university

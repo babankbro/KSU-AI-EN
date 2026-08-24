@@ -3,7 +3,7 @@
 -- PostgreSQL 14+
 --
 -- หลักการออกแบบ
---   1. รหัสในเอกสาร (PLO1, K1, HS1, AISK01, EN-131-102) เป็น natural key ที่นิ่งและมีความหมาย
+--   1. รหัสในเอกสาร (PLO1, K1, HS1, AISK01, EN-714-12002) เป็น natural key ที่นิ่งและมีความหมาย
 --      จึงใช้เป็น primary key ตรง ๆ ไม่สร้าง surrogate id ให้ต้องแปลกลับไปมา
 --   2. ทุกตารางเชื่อมที่เป็นข้อเสนอหรืออนุมานมา ต้องมีคอลัมน์ provenance เสมอ
 --      เพราะวอลต์มีทั้งข้อมูลที่เอกสารระบุตรงและข้อมูลที่คำนวณ/ออกแบบขึ้น
@@ -87,7 +87,7 @@ CREATE TABLE track (
 );
 
 CREATE TABLE course (
-  code                text PRIMARY KEY,        -- EN-131-102
+  code                text PRIMARY KEY,        -- EN-714-12002
   programme_id        text NOT NULL REFERENCES programme,
   group_id            text NOT NULL REFERENCES course_group,
   short_name          text,
@@ -126,7 +126,7 @@ CREATE TABLE study_plan_course (
   PRIMARY KEY (plan_id, course_code)
 );
 COMMENT ON TABLE study_plan_course IS
-  'แผน ก และ ข ใช้รายวิชาต่างกันบางตัว เช่น EN-134-403 กับ EN-134-404 จึงต้องแยกตาราง';
+  'แผน ก และ ข ใช้รายวิชาต่างกันบางตัว เช่น EN-714-12019 กับ EN-714-12020 จึงต้องแยกตาราง';
 
 -- ═══════════════════════ 3. ผลลัพธ์การเรียนรู้ ═══════════════════════
 
