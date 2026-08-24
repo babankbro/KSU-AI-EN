@@ -34,9 +34,9 @@
 | `s_count` | bigint |  |  |
 | `a_count` | bigint |  |  |
 
-### `vw_skill_set_without_attitude`
+### `vw_skill_set_without_behaviour`
 
-ชุดทักษะที่ไม่มีมิติทัศนคติเลย
+ชุดทักษะที่ไม่มีมิติจริยธรรมหรือลักษณะบุคคลเลย
 
 **0 แถว**
 
