@@ -1,47 +1,48 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { PageHead, Section, PloChip } from "./ui.jsx";
-import { KSA_PEDAGOGY } from "../ksaPedagogyData.js";
+import { KSEC_PEDAGOGY } from "../ksecPedagogyData.js";
 
 const DIMS = [
   { id: "K", label: "🧠 Knowledge", cls: "k" },
   { id: "S", label: "🛠️ Skill", cls: "s" },
-  { id: "A", label: "❤️ Attitude", cls: "a" }
+  { id: "E", label: "⚖️ Ethics", cls: "a" },
+  { id: "C", label: "❤️ Character", cls: "c" }
 ];
 
-export default function KsaPedagogy() {
+export default function KsecPedagogy() {
   const [dim, setDim] = useState("K");
   const [q, setQ] = useState("");
 
   const rows = useMemo(() => {
     const t = q.trim().toLowerCase();
-    return KSA_PEDAGOGY.filter(r => r.dim === dim)
+    return KSEC_PEDAGOGY.filter(r => r.dim === dim)
       .filter(r => !t || r.id.toLowerCase().includes(t) || r.name.toLowerCase().includes(t)
         || r.anchors.some(a => a.c.toLowerCase().includes(t) || a.t.toLowerCase().includes(t)));
   }, [dim, q]);
 
   const anchorTop = useMemo(() => {
     const m = {};
-    KSA_PEDAGOGY.forEach(r => r.anchors.forEach(a => {
+    KSEC_PEDAGOGY.forEach(r => r.anchors.forEach(a => {
       (m[a.c] = m[a.c] || { c: a.c, t: a.t, ids: [] }).ids.push(r.id);
     }));
     return Object.values(m).sort((a, b) => b.ids.length - a.ids.length).slice(0, 8);
   }, []);
 
-  const tailored = KSA_PEDAGOGY.filter(r => r.tailored).length;
+  const tailored = KSEC_PEDAGOGY.filter(r => r.tailored).length;
 
   return (
     <main>
       <PageHead
-        eyebrow="กลยุทธ์การสอนรายข้อ KSA · KSA Pedagogy"
-        title="กลยุทธ์การสอนและวิธีประเมินรายข้อ KSA"
-        lead="กำหนดวิธีสอน วิธีประเมิน หลักฐาน และรายวิชาแกนให้ครบทั้ง 54 รหัส เพื่อให้ผู้รับผิดชอบรายวิชานำไปเขียน มคอ.3 ได้ทันที"
-        crumbs={[{ label: "กลยุทธ์การสอนรายข้อ KSA" }]} />
+        eyebrow="กลยุทธ์การสอนรายข้อ KSEC · KSEC Pedagogy"
+        title="กลยุทธ์การสอนและวิธีประเมินรายข้อ KSEC"
+        lead="กำหนดวิธีสอน วิธีประเมิน หลักฐาน และรายวิชาแกนให้ครบทั้ง 61 รหัส (K26 · S20 · E7 · C8) เพื่อให้ผู้รับผิดชอบรายวิชานำไปเขียน มคอ.3 ได้ทันที"
+        crumbs={[{ label: "กลยุทธ์การสอนรายข้อ KSEC" }]} />
 
       <div className="wrap">
         <div className="note kp-warn">
           <b>แยกให้ชัดว่าส่วนใดมาจากข้อมูล ส่วนใดเป็นข้อเสนอ</b> — คอลัมน์ <b>รายวิชาแกน</b> คำนวณจาก CLO
-          ที่อ้างรหัสนั้นจริง โดยตัดวิชาโครงงานและสหกิจออกเพราะอ้าง KSA เกือบทุกตัว ส่วน <b>กลยุทธ์การสอนและวิธีประเมิน</b>
+          ที่อ้างรหัสนั้นจริง โดยตัดวิชาโครงงานและสหกิจออกเพราะอ้างรหัสเกือบทุกตัว ส่วน <b>กลยุทธ์การสอนและวิธีประเมิน</b>
           เป็นข้อเสนอที่ผู้จัดทำออกแบบขึ้น <b>ยังไม่ผ่านการรับรองจากคณะกรรมการหลักสูตร</b> — ปรับเฉพาะราย {tailored} รหัส
           ที่เหลือใช้รูปแบบตามมิติ
         </div>
@@ -49,7 +50,7 @@ export default function KsaPedagogy() {
         <Section id="table" title="ตารางกลยุทธ์และการประเมิน">
           <div className="kp-bar">
             {DIMS.map(d => {
-              const n = KSA_PEDAGOGY.filter(r => r.dim === d.id).length;
+              const n = KSEC_PEDAGOGY.filter(r => r.dim === d.id).length;
               return (
                 <button key={d.id} className={`kp-tab ${d.cls}${dim === d.id ? " on" : ""}`}
                   onClick={() => setDim(d.id)}>{d.label} <b>{n}</b></button>

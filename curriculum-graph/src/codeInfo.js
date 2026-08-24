@@ -1,7 +1,7 @@
-import { KSA_BY_ID } from "./ksaData.js";
+import { KSEC_BY_ID } from "./ksecData.js";
 // ทะเบียนคำอธิบายรหัสย่อทั้งหมดของเว็บ — ใช้โดย CodeTip.jsx เพื่อแสดงป๊อปอัปเมื่อชี้ที่รหัส
 // ครอบคลุม: PLO1–7 · YLO1–4 และ Sub-YLO · AISK01–09 · N1–N18 · SH1–SH8 · GA1–GA5
-//            HS1–HS20 · SS1–SS10 · EF1–EF6 · L1–L4 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
+//            HS1–HS20 · SS1–SS10 · EF1–EF6 · B1–B6 · ระดับ I/R/M · รหัสรายวิชา · อาชีพ C01–C26
 // รูปแบบผลลัพธ์: { id, kind, accent, title, en, body, rows:[[label,value]], plo:[], sets:[], to }
 
 import {
@@ -24,8 +24,8 @@ const PATTERN = new RegExp(
   "AISK0[1-9]|EN-AISK0[1-9]|" +
   "N1[0-8]|N[1-9]|" +
   "SH[1-8]|GA[1-5]|" +
-  "HS20|HS1[0-9]|HS[1-9]|SS10|SS[1-9]|EF[1-6]|L[1-4]|" +
-  "K2[0-6]|K1[0-9]|K[1-9]|S20|S1[0-9]|S[1-9]|A[1-8]|" +
+  "HS20|HS1[0-9]|HS[1-9]|SS10|SS[1-9]|EF[1-6]|B[1-6]|" +
+  "K2[0-6]|K1[0-9]|K[1-9]|S20|S1[0-9]|S[1-9]|E[1-7]|C[1-8]|" +
   "C[0-1][0-9]|" +
   "[A-Z]{2}-\\d{3}-\\d{5}|" +
   "[IRM]" +
@@ -91,10 +91,10 @@ export function lookup(raw) {
     return {
       id: `EN-${id}`, kind: "ชุดทักษะ", accent: g ? g.color : "var(--navy)", to: "/obe#set",
       title: s.name, en: s.en,
-      body: "ชุดทักษะผูกกับ KSA เท่านั้น · ทักษะ HS/SS/EF เป็นชั้น alignment ที่อยู่เบื้องหลัง",
+      body: "ชุดทักษะผูกกับ KSEC เท่านั้น · ทักษะ HS/SS/EF เป็นชั้น alignment ที่อยู่เบื้องหลัง",
       rows: [
         ["ประเภท", `${s.type} Skill`],
-        ["KSA ที่ผูก", (s.ksa || []).join(", ")],
+        ["KSEC ที่ผูก", (s.ksa || []).join(", ")],
         ["ทักษะที่ Alignment ถึง", (s.skills || []).join(", ")],
         ["ทักษะย่อย", s.sub ? `${s.sub.length} ข้อ` : "—"],
         ["รายวิชาที่ป้อนเข้า", `${(s.courses || []).length} วิชา`],
@@ -152,10 +152,11 @@ export function lookup(raw) {
     };
   }
 
-  /* ── KSA รายข้อ (K/S/A) ── */
-  if (/^[KSA]\d{1,2}$/.test(id) && KSA_BY_ID[id]) {
-    const r = KSA_BY_ID[id];
-    const kind = id[0] === "K" ? "ความรู้ (Knowledge)" : id[0] === "S" ? "ทักษะ (Skill)" : "ทัศนคติ (Attitude)";
+  /* ── KSEC รายข้อ (K/S/E/C) ── */
+  if (/^[KSEC][1-9]\d?$/.test(id) && KSEC_BY_ID[id]) {
+    const r = KSEC_BY_ID[id];
+    const KIND = { K: "ความรู้ (Knowledge)", S: "ทักษะ (Skill)", E: "จริยธรรม (Ethics)", C: "ลักษณะบุคคล (Character)" };
+    const kind = KIND[id[0]];
     const rows = [];
     if (r.scope) rows.push(["ขอบเขต", r.scope]);
     if (r.covers) rows.push(["ครอบคลุมพฤติกรรม", r.covers]);
@@ -217,14 +218,14 @@ export function lookup(raw) {
     };
   }
 
-  /* ── ระดับความลึก L1–L4 ── */
-  if (/^L[1-4]$/.test(id)) {
+  /* ── ระดับตามแนวทาง Bloom B1–B6 ── */
+  if (/^B[1-6]$/.test(id)) {
     const l = LEVELS.find(x => x.id === id);
     if (!l) return null;
     return {
-      id, kind: "ระดับความลึกของทักษะ", accent: "var(--navy2)",
+      id, kind: "ระดับตามแนวทาง Bloom", accent: "var(--navy2)",
       title: l.th, en: l.label,
-      body: "ระดับเป้าหมายของทักษะย่อยในชุดทักษะ — L1 เข้าใจ · L2 ประยุกต์ · L3 บูรณาการ · L4 นำไปใช้และประเมิน"
+      body: "ระดับตาม Bloom's Revised Taxonomy — B1 จำ · B2 เข้าใจ · B3 ประยุกต์ใช้ · B4 วิเคราะห์ · B5 ประเมินค่า · B6 สร้างสรรค์ · มิติความรู้ประเมินที่ B1–B2 มิติทักษะประเมินที่ B3–B6"
     };
   }
 

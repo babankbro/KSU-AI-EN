@@ -29,7 +29,15 @@ export default function CourseDetail() {
       <div className="wrap">
         <div className="deflist">
           <div><span>รหัสวิชา</span><b className="mono">{c.c}</b></div>
-          <div><span>หน่วยกิต</span><b>{c.cr}</b></div>
+          <div>
+            <span>หน่วยกิต</span>
+            <b>{c.cr}{(() => {
+              const m = /^(\d+)\((\d+)-(\d+)-(\d+)\)$/.exec(c.cr || "");
+              if (!m) return null;
+              const [, , lec, lab, self] = m.map(Number);
+              return <small className="cr-hours">บรรยาย {lec} · ปฏิบัติการ {lab} · ศึกษาด้วยตนเอง {self} ชั่วโมงต่อสัปดาห์</small>;
+            })()}</b>
+          </div>
           <div><span>กลุ่มวิชา</span><b>{GROUP_NAME[c.g]}</b></div>
           <div>
             <span>ภาคการศึกษาที่แนะนำ</span>

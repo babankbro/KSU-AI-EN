@@ -54,4 +54,4 @@ flowchart LR
 
 ---
 
-[[15_KSA_Codebook|⬅ หน้า 15]] · [[00_Presentation_Home|สารบัญ]] · [[17_Careers_and_Pathways|หน้า 17 ➡]]
+[[15_KSEC_Codebook|⬅ หน้า 15]] · [[00_Presentation_Home|สารบัญ]] · [[17_Careers_and_Pathways|หน้า 17 ➡]]

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PageHead, Section, PloChip, IRM } from "./ui.jsx";
 import { PLO_TEACHING } from "../teachingData.js";
 
-const KsaChips = ({ list, kind }) => list.length
+const KsecChips = ({ list, kind }) => list.length
   ? <span className={`ksachips ${kind}`}>{list.map(r => <span className="ksachip" key={r.id}>{r.id}</span>)}</span>
   : <span className="mut">—</span>;
 
@@ -15,7 +15,7 @@ export default function Assessment() {
       <PageHead
         eyebrow="การวัดและประเมินผล · Assessment"
         title="การวัดและประเมินผลรายข้อ PLO"
-        lead="วิธีประเมิน หลักฐานที่ยอมรับได้ จุดประเมินขั้นบรรลุผล และผู้ประเมินของแต่ละ PLO พร้อมรหัส KSA และรายวิชาบังคับที่รับผิดชอบ"
+        lead="วิธีประเมิน หลักฐานที่ยอมรับได้ จุดประเมินขั้นบรรลุผล และผู้ประเมินของแต่ละ PLO พร้อมรหัส KSEC และรายวิชาบังคับที่รับผิดชอบ"
         crumbs={[{ label: "การวัดและประเมินผล" }]} />
 
       <div className="wrap">
@@ -47,7 +47,7 @@ export default function Assessment() {
         </Section>
 
         <Section id="perplo" title="รายละเอียดรายข้อ PLO"
-          sub="กดที่หัวข้อเพื่อขยาย — แสดงการประเมิน รหัส KSA และรายวิชาบังคับที่ป้อนเข้า">
+          sub="กดที่หัวข้อเพื่อขยาย — แสดงการประเมิน รหัส KSEC และรายวิชาบังคับที่ป้อนเข้า">
           <div className="asm-list">
             {PLO_TEACHING.map(p => {
               const on = open === p.plo;
@@ -83,20 +83,21 @@ export default function Assessment() {
                         ))}
                       </div>
 
-                      <h4 className="asm-h">รหัส KSA ที่ PLO นี้แบกรับ</h4>
+                      <h4 className="asm-h">รหัส KSEC ที่ PLO นี้แบกรับ</h4>
                       <table className="tbl asm-ksa">
                         <tbody>
-                          <tr><td className="asm-dim">🧠 Knowledge</td><td><KsaChips list={p.K} kind="k" /></td></tr>
-                          <tr><td className="asm-dim">🛠️ Skill</td><td><KsaChips list={p.S} kind="s" /></td></tr>
-                          <tr><td className="asm-dim">❤️ Attitude</td><td><KsaChips list={p.A} kind="a" /></td></tr>
+                          <tr><td className="asm-dim">🧠 Knowledge</td><td><KsecChips list={p.K} kind="k" /></td></tr>
+                          <tr><td className="asm-dim">🛠️ Skill</td><td><KsecChips list={p.S} kind="s" /></td></tr>
+                          <tr><td className="asm-dim">⚖️ Ethics</td><td><KsecChips list={p.E} kind="a" /></td></tr>
+                          <tr><td className="asm-dim">❤️ Character</td><td><KsecChips list={p.C} kind="c" /></td></tr>
                         </tbody>
                       </table>
 
-                      {p.A.length > 0 && (
+                      {[...p.E, ...p.C].length > 0 && (
                         <>
-                          <h4 className="asm-h">หลักฐานที่ยอมรับได้ของทัศนคติ</h4>
+                          <h4 className="asm-h">หลักฐานที่ยอมรับได้ของจริยธรรมและลักษณะบุคคล</h4>
                           <ul className="asm-evid">
-                            {p.A.map(a => (
+                            {[...p.E, ...p.C].map(a => (
                               <li key={a.id}><span className="ksachip">{a.id}</span> {a.evidence}</li>
                             ))}
                           </ul>

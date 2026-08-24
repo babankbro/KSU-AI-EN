@@ -43,10 +43,10 @@ flowchart TD
 
 | ลำดับใน | สคริปต์ | อ่านจากวอลต์ | เขียนไปที่ |
 |--:|---|---|---|
-| 9.1 | `build-ksa-data` | `05_TQF2/18_KSA_Codebook` | `src/ksaData.js` |
-| 9.2 | `build-course-ksa` | `05_TQF2/10_CLO_Mapping` · `18_KSA_Codebook` · **`08/17_Section4_7`** | `src/courseKsaData.js` + วอลต์ `05_TQF2/19_Course_and_CLO_KSA_Tables` |
+| 9.1 | `build-ksa-data` | `05_TQF2/18_KSEC_Codebook` | `src/ksaData.js` |
+| 9.2 | `build-course-ksa` | `05_TQF2/10_CLO_Mapping` · `18_KSEC_Codebook` · **`08/17_Section4_7`** | `src/courseKsaData.js` + วอลต์ `05_TQF2/19_Course_and_CLO_KSEC_Tables` |
 | 9.3 | `build-plo-teaching` | `08/09_Section5_Revised` · `08/12_Section6_Revised` | `src/teachingData.js` + วอลต์ `08/20_Teaching_and_Assessment_by_PLO` |
-| 9.4 | `build-ksa-pedagogy` | ข้อมูล KSA | `src/ksaPedagogyData.js` + วอลต์ `05_TQF2/20_KSA_Teaching_and_Assessment` |
+| 9.4 | `build-ksa-pedagogy` | ข้อมูล KSA | `src/ksaPedagogyData.js` + วอลต์ `05_TQF2/20_KSEC_Teaching_and_Assessment` |
 
 > [!warning] จุดที่พลาดบ่อยที่สุด
 > ขั้นที่ **9.2 อ่านไฟล์ `17_Section4_7_Skill_Set_Coverage.md` ที่ขั้นที่ 7 เป็นคนเขียน**

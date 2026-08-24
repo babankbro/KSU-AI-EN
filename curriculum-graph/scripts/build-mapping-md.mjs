@@ -7,6 +7,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { COURSES, TRACK_NAME, byOrderNo } from "../src/data.js";
 import { CLO_COURSES } from "../src/cloData.js";
+import { cloKsec } from "../src/courseKsecData.js";
 
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const OUT = resolve(repo, "Labor_Growth_Report_Vault/08_TQF2_Book_Revisions");
@@ -48,16 +49,54 @@ const bySector = (a, b) => SECTOR_ORDER[a.g] - SECTOR_ORDER[b.g] || byOrderNo(a,
 const ploCell = c =>
   c.plo.map(([p, lv]) => `PLO${p} (${lv})`).join(", ");
 
+/* ---------- ระดับ Bloom ----------
+   ใช้ค่าที่ระบุไว้ในตาราง CLO ของวอลต์ก่อน ถ้าไม่มี (GE และวิชาชีพเลือก)
+   จึงกำหนดจากคำกริยานำและส่วนขยาย ด้วยกฎเดียวกับที่ใช้ในวอลต์
+   เพดานชั้นปี: ปี 1–2 = B4 · ปี 3–4 = B5 · โครงงานและสหกิจศึกษา = B6 */
+const VERB_LEVEL = [
+  ["อธิบาย",2],["ยกตัวอย่าง",2],["สรุป",2],["บอก",2],["ฟัง",2],["อ่าน",2],
+  ["สืบค้น",3],["ระบุ",3],["ใช้",3],["เขียน",3],["คำนวณ",3],["จัดทำ",3],["ติดตั้ง",3],
+  ["เชื่อมต่อ",3],["ต่อ",3],["ปฏิบัติ",3],["ดำเนินการ",3],["สื่อสาร",3],["นำเสนอ",3],
+  ["จัดการ",3],["ควบคุม",3],["วางแผน",3],["นำ",3],["ประยุกต์",3],["สร้าง",3],["พัฒนา",3],
+  ["ทำงาน",3],["เก็บ",3],["แสดง",3],["ทดสอบ",4],["ตีความ",4],["ประมวลผล",4],["วิเคราะห์",4],
+  ["วินิจฉัย",4],["จำแนก",4],["เลือก",4],["ตรวจสอบ",4],["แปลง",4],["บูรณาการ",4],
+  ["พยากรณ์",4],["ติดตาม",4],["กำหนด",4],["เปรียบเทียบ",4],["ออกแบบ",4],["ชี้บ่ง",4],
+  ["รายงาน",3],["สาธิต",3],["ทดลอง",3],["ตั้งค่า",3],["ฝึก",3],["ปรับ",3],["ทำแผนที่",3],
+  ["ตระหนัก",2],["วัด",3],["แบ่ง",3],["วิจัย",4],["ทวนสอบ",4],["เสนอ",4],["วางกลยุทธ์",4],["บริหาร",4],
+  ["ประเมิน",5],["ตัดสิน",5],["รับรอง",5],["สอบทาน",5],["นิยาม",5],["สังเคราะห์",6],
+];
+const UP5 = ["เกณฑ์การยอมรับ", "ตัดสิน", "เปรียบเทียบทางเลือก", "รับรอง"];
+const UP6 = ["นิยามข้อกำหนดเอง", "โจทย์เปิด", "ยังไม่มีคำตอบ"];
+const CAPSTONE = new Set(["EN-714-12019", "EN-714-12020", "EN-714-17002"]);
+
+function bloomOf(code, n, text) {
+  const stated = cloKsec(code, n)?.bloom;
+  if (stated) return stated;
+  const hit = VERB_LEVEL.find(([v]) => (text || "").startsWith(v));
+  if (!hit) return "—";
+  let lvl = hit[1];
+  if (["ออกแบบ", "พัฒนา", "สร้าง"].includes(hit[0])) {
+    if (UP6.some(k => text.includes(k))) lvl = 6;
+    else if (UP5.some(k => text.includes(k))) lvl = 5;
+  }
+  const year = COURSES.find(c => c.c === code)?.y;
+  const ceiling = CAPSTONE.has(code) ? 6 : (year && year <= 2 ? 4 : 5);
+  return "B" + Math.min(lvl, ceiling);
+}
+
 function cloBlock(code) {
   const x = clo(code);
-  if (!x) return [`| **${title(code)}** | | |`];
+  if (!x) return [`| **${title(code)}** | | | |`];
   return [
-    `| **${title(code)}** | | |`,
-    ...x.clos.map(c => `| CLO${c.n}: ${c.t} | ${c.ylo.join(", ")} | ${ploCell(c)} |`),
+    `| **${title(code)}** | | | |`,
+    ...x.clos.map(c => {
+      const bloom = bloomOf(code, c.n, c.t);
+      return `| CLO${c.n}: ${c.t} | ${c.ylo.join(", ")} | ${ploCell(c)} | ${bloom} |`;
+    }),
   ];
 }
 
-const CLO_HEAD = ["| รายวิชา / CLOs | YLOs ที่รับผิดชอบ | PLOs ที่รับผิดชอบ |", "|---|---|---|"];
+const CLO_HEAD = ["| รายวิชา / CLOs | YLOs ที่รับผิดชอบ | PLOs ที่รับผิดชอบ | ระดับ Bloom |", "|---|---|---|:--:|"];
 
 /* ---------- จัดกลุ่มรายวิชา ---------- */
 const required = COURSES.filter(c => c.sem && c.g !== "elec" && (!c.plan || c.plan === "A"));
@@ -137,6 +176,7 @@ const doc46 = `# หมวดที่ 4 หัวข้อ 4.6 ตาราง�
 - หนึ่ง CLO ผูกกับหลักฐานการประเมินที่ตรวจสอบได้ และรับผิดชอบ PLO ไม่เกินสองข้อ
 - รายวิชาทั่วไปกำหนด CLO ไม่เกิน 3 ข้อ ส่วนรายวิชาโครงงานและสหกิจศึกษาที่บูรณาการหลายด้านกำหนดได้ถึง 4 ข้อ
 - ระดับในวงเล็บใช้ I ขั้นเริ่มต้น R ขั้นเสริมสร้าง และ M ขั้นบรรลุผล ให้สอดคล้องกับ [[15_Section4_5_Curriculum_Mapping|ตารางหัวข้อ 4.5]]
+- คอลัมน์ **ระดับ Bloom** ใช้ Bloom's Revised Taxonomy โดย B2 เข้าใจ · B3 ประยุกต์ใช้ · B4 วิเคราะห์ · B5 ประเมินค่า · B6 สร้างสรรค์ · กำหนดจากคำกริยาและส่วนขยายของ CLO ภายใต้เพดานชั้นปี (ปี 1–2 ไม่เกิน B4 · ปี 3–4 ไม่เกิน B5 · โครงงานและสหกิจศึกษาถึง B6) · ดู[หมายเหตุสำหรับผู้สอนเรื่องคำว่าออกแบบ](../03_OBE_PLO_Design_2570/03_Target_Skills)
 
 ---
 

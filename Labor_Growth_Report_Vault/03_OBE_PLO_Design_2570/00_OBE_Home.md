@@ -34,8 +34,9 @@ Mapping: Needs ↔ GA ↔ PLO ครบทุกข้อ
 5. [[05_Mapping_Tables|⑤ ตารางเชื่อมโยง (Mapping): Needs ↔ GA ↔ PLO]]
 6. [[06_OBE_References|⑥ เอกสารอ้างอิง]]
 7. [[07_Curriculum_PLO_Mapping|⑦ Curriculum Mapping — รายวิชา ↔ PLO ↔ Skills]]
-8. [[../04_Course_Descriptions_2570/11_Year_Level_Course_Sequence_and_YLO|⑧ กรอบชั้นปีและ YLO1–YLO4]]
 8. [[08_Study_Plan_and_Dependencies|⑧ Dependencies · YLO · แผนการเรียน 4 ชั้นปี]]
+9. [[09_PLO_Generic_Specific_Analysis|⑨ การวิเคราะห์ผลลัพธ์เชิงสาขาและเชิงสากล (AUN-QA Criterion 1)]]
+   · เอกสารประกอบ: [[../04_Course_Descriptions_2570/11_Year_Level_Course_Sequence_and_YLO|กรอบชั้นปีและ YLO1–YLO4]]
 
 ## ข้อสรุปสำคัญ
 

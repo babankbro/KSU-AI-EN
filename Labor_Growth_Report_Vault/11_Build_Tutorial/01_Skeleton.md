@@ -38,7 +38,7 @@ Labor_Growth_Report_Vault/ โดยสร้างเฉพาะ "โครง
                             11_Year_Level_Course_Sequence_and_YLO
 05_Benchmark_AI_Programs_TH/ 00_Benchmark_Home, 06_Comparison_Analysis, 08_Sources
 05_TQF2_Academic_Drafts/    10_Course_Learning_Outcomes_CLO_Mapping,
-                            11_Skill_Set_Matrix_and_KSA, 18_KSA_Codebook
+                            11_Skill_Set_Matrix_and_KSA, 18_KSEC_Codebook
 06_Curriculum_Comparison/   00_Curriculum_Comparison_Home
 07_JobsDB_Semantic_Career_Analysis/ 02_Data_and_Methodology, 03_Classification_Policy_C01_C17
 08_TQF2_Book_Revisions/     01_Academic_Writing_Style_Guide

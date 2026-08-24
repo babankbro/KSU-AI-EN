@@ -15,7 +15,7 @@ import References from "./pages/References.jsx";
 import Faculty from "./pages/Faculty.jsx";
 import Teaching from "./pages/Teaching.jsx";
 import Assessment from "./pages/Assessment.jsx";
-import KsaPedagogy from "./pages/KsaPedagogy.jsx";
+import KsecPedagogy from "./pages/KsecPedagogy.jsx";
 import CourseDetail from "./pages/CourseDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import CodeTip from "./CodeTip.jsx";
@@ -87,7 +87,7 @@ export default function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/teaching" element={<Teaching />} />
         <Route path="/assessment" element={<Assessment />} />
-        <Route path="/ksa-pedagogy" element={<KsaPedagogy />} />
+        <Route path="/ksec-pedagogy" element={<KsecPedagogy />} />
         <Route path="/refs" element={<References />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

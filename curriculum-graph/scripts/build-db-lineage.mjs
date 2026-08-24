@@ -13,17 +13,17 @@ const OUT = path.join(root, VAULT, "09_Database_Schema/09_Data_Lineage.md");
 
 /* ── ไฟล์ข้อมูลของเว็บ: สร้างอัตโนมัติ หรือ ซิงก์ด้วยมือ ── */
 const MODULES = {
-  "ksaData.js": { kind: "generated", by: "build-ksa-data.mjs",
-    docs: ["05_TQF2_Academic_Drafts/18_KSA_Codebook.md"] },
-  "courseKsaData.js": { kind: "generated", by: "build-course-ksa.mjs",
+  "ksecData.js": { kind: "generated", by: "build-ksec-data.mjs",
+    docs: ["05_TQF2_Academic_Drafts/18_KSEC_Codebook.md"] },
+  "courseKsecData.js": { kind: "generated", by: "build-course-ksec.mjs",
     docs: ["05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md",
            "08_TQF2_Book_Revisions/17_Section4_7_Skill_Set_Coverage.md",
-           "05_TQF2_Academic_Drafts/18_KSA_Codebook.md"] },
+           "05_TQF2_Academic_Drafts/18_KSEC_Codebook.md"] },
   "teachingData.js": { kind: "generated", by: "build-plo-teaching.mjs",
     docs: ["08_TQF2_Book_Revisions/09_Section5_Revised.md",
            "08_TQF2_Book_Revisions/12_Section6_Revised.md"] },
-  "ksaPedagogyData.js": { kind: "generated", by: "build-ksa-pedagogy.mjs",
-    docs: ["05_TQF2_Academic_Drafts/20_KSA_Teaching_and_Assessment.md"] },
+  "ksecPedagogyData.js": { kind: "generated", by: "build-ksec-pedagogy.mjs",
+    docs: ["05_TQF2_Academic_Drafts/20_KSEC_Teaching_and_Assessment.md"] },
   "cloRevisionData.js": { kind: "generated", by: "sync-curriculum-revision.mjs",
     docs: ["05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md"] },
   "data.js": { kind: "synced",
@@ -74,14 +74,14 @@ const TABLES = {
   skill:              ["obeData.js", "HARD_SKILLS, SOFT_SKILLS, ENGINEERING_FOUNDATIONS"],
   skill_set_skill:    ["obeData.js", "SKILL_SETS[].skills + SKILL[].set"],
   skill_track:        ["obeData.js", "SKILL[].track"],
-  ksa_item:           ["ksaData.js", "KNOWLEDGE, SKILLS_KSA, ATTITUDES"],
-  ksa_can_do:         ["ksaData.js", "SKILLS_KSA[].can"],
-  ksa_skill:          ["ksaData.js", "KSA[].skills"],
-  ksa_plo:            ["ksaData.js", "KSA[].plo"],
-  clo_ksa:            ["courseKsaData.js", "COURSE_KSA[].clos"],
+  ksa_item:           ["ksecData.js", "KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER"],
+  ksa_can_do:         ["ksecData.js", "SKILLS_KSEC[].can"],
+  ksa_skill:          ["ksecData.js", "KSA[].skills"],
+  ksa_plo:            ["ksecData.js", "KSA[].plo"],
+  clo_ksa:            ["courseKsecData.js", "COURSE_KSEC[].clos"],
   clo_skill_set:      ["cloData.js", "CLO_LIST[].clos[].sets"],
-  course_ksa:         ["courseKsaData.js", "COURSE_KSA"],
-  course_skill_set:   ["courseKsaData.js", "COURSE_KSA[].aisk"],
+  course_ksa:         ["courseKsecData.js", "COURSE_KSEC"],
+  course_skill_set:   ["courseKsecData.js", "COURSE_KSEC[].aisk"],
   stakeholder:        ["obeData.js", "STAKEHOLDERS"],
   need:               ["obeData.js", "NEEDS"],
   stakeholder_need:   ["obeData.js", "STAKEHOLDERS[].needs"],
@@ -97,8 +97,8 @@ const TABLES = {
   teaching_strategy:  ["teachingData.js", "STRATEGIES"],
   strategy_plo:       ["teachingData.js", "STRATEGIES[].plos"],
   plo_assessment:     ["teachingData.js", "ASSESSMENT"],
-  ksa_pedagogy:       ["ksaPedagogyData.js", "KSA_PEDAGOGY"],
-  ksa_anchor_course:  ["ksaPedagogyData.js", "KSA_PEDAGOGY[].anchors"]
+  ksa_pedagogy:       ["ksecPedagogyData.js", "KSEC_PEDAGOGY"],
+  ksa_anchor_course:  ["ksecPedagogyData.js", "KSEC_PEDAGOGY[].anchors"]
 };
 
 const KIND = {
@@ -149,7 +149,7 @@ const doc = `# ดัชนีสายที่มาของข้อมู�
 
 \`\`\`mermaid
 flowchart LR
-    V["เอกสารในวอลต์<br/>(.md)"] -->|"สคริปต์ build-*"| G["ไฟล์ที่สร้างอัตโนมัติ<br/>ksaData · courseKsaData<br/>teachingData · ksaPedagogyData"]
+    V["เอกสารในวอลต์<br/>(.md)"] -->|"สคริปต์ build-*"| G["ไฟล์ที่สร้างอัตโนมัติ<br/>ksecData · courseKsecData<br/>teachingData · ksecPedagogyData"]
     V -.->|"ซิงก์ด้วยมือ"| S["ไฟล์ที่ดูแลเอง<br/>data · obeData · cloData<br/>facultyData · refData"]
     J["JobsDB<br/>(ข้อมูลดิบภายนอก)"] --> R["jobsData.json"]
     G --> DB[("ฐานข้อมูล<br/>47 ตาราง")]

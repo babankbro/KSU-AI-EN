@@ -10,7 +10,7 @@
 > - 🃏 **การ์ดทักษะพับเก็บได้** — คลิกหัวข้อการ์ดเพื่อขยาย/ย่อรายละเอียด (ขอบเขต · ตลาด · ระดับ)
 > - 🎯 **แขนงวิชา:** `●` ทักษะหลัก · `○` ทักษะสนับสนุน — เรียงลำดับ **T1** เกษตรอัจฉริยะ · **T2** ปัญญาประดิษฐ์ภาคอุตสาหกรรม · **T3** นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร
 > - 🏷️ **สถานะ:** ไม่มีสัญลักษณ์ = แกนบังคับ (Core) · `➕` = ทักษะส่วนขยาย (Extended นอกแกน)
-> - 📶 **ระดับความลึก:** L1 เข้าใจ → L2 ประยุกต์ → L3 บูรณาการ → L4 นำไปใช้และประเมิน (ดู §3.3)
+> - 📶 **ระดับตามแนวทาง Bloom:** B3 ประยุกต์ใช้ → B4 วิเคราะห์ → B5 ประเมินค่า → B6 สร้างสรรค์ สำหรับมิติทักษะ · B1–B2 สำหรับมิติความรู้ (ดู §3.3)
 > - 🗺️ ต้องการภาพรวมทั้งหมดในตารางเดียว → ไป [[#3.9 การคัดเลือกเข้าแกน (Core) กับส่วนขยาย (Extended)|§3.9 Master Catalog]]
 
 ## 3.1 หลักเกณฑ์การจัดอันดับ
@@ -69,16 +69,56 @@
 
 Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่ Communication, English, Problem Solving, Collaboration, Analytical Thinking, Stakeholder Management, Project Management และ Leadership จึงคง SS1–SS6 เป็นแกน และเพิ่ม SS9–SS10 เพื่อทำให้ stakeholder/change และคุณภาพการส่งมอบเชิงวิชาชีพวัดผลได้ชัดเจน
 
-## 3.3 ระดับความลึกของทักษะ
+## 3.3 ระดับตามแนวทาง Bloom (Bloom's Revised Taxonomy)
 
-| ระดับ | ความหมาย | พฤติกรรมที่คาดหวัง |
-|---|---|---|
-| **L1 — Understand** | เข้าใจ | อธิบายหลักการ แนวคิด และข้อจำกัดได้ |
-| **L2 — Apply** | ประยุกต์ใช้ | เลือกและใช้เครื่องมือกับโจทย์ที่กำหนดได้ |
-| **L3 — Integrate** | บูรณาการ | เชื่อมข้อมูล โมเดล ซอฟต์แวร์ ฮาร์ดแวร์ หรือกระบวนการเป็นระบบได้ |
-| **L4 — Deploy & Evaluate** | นำไปใช้และประเมิน | สร้างระบบใช้งานจริง ทดสอบ เฝ้าระวัง ประเมินผล และปรับปรุงได้ |
+> [!important] เปลี่ยนจากบันได B2–B5 เป็นระดับ Bloom ฉบับปรับปรุง
+> เดิมหลักสูตรใช้บันไดความลึกที่นิยามขึ้นเอง (B2 เข้าใจ · B3 ประยุกต์ · B4 วิเคราะห์ · B5 ประเมินค่า) ซึ่งไม่เทียบกับมาตรฐานสากลใด
+> ฉบับนี้ใช้ **Bloom's Revised Taxonomy (Anderson & Krathwohl, 2001)** เพื่อให้เทียบกับเกณฑ์ประเมินและหลักสูตรอื่นได้โดยตรง
 
-นักศึกษาทุกคนต้องมีทักษะแกนอย่างน้อยระดับ L2–L3 และต้องพัฒนาทักษะเฉพาะ Track ที่เลือกถึงระดับ L4 ผ่าน Workshop, Project และสหกิจศึกษา
+| ระดับ | ความหมาย | พฤติกรรมที่คาดหวัง | ใช้กับมิติ |
+|---|---|---|---|
+| **B1 — Remember** | จำ | ระบุนิยาม สัญลักษณ์ และองค์ประกอบได้ | K |
+| **B2 — Understand** | เข้าใจ | อธิบายหลักการ แนวคิด และข้อจำกัดได้ | K |
+| **B3 — Apply** | ประยุกต์ใช้ | เลือกและใช้เครื่องมือ วิธีการ หรือมาตรฐานกับโจทย์ที่กำหนดได้ | S |
+| **B4 — Analyze** | วิเคราะห์ | แยกองค์ประกอบ หาความสัมพันธ์ และวินิจฉัยสาเหตุจากข้อมูลได้ | S |
+| **B5 — Evaluate** | ประเมินค่า | ตัดสินคุณภาพ ความเสี่ยง หรือทางเลือกด้วยเกณฑ์และหลักฐานได้ | S |
+| **B6 — Create** | สร้างสรรค์ | ออกแบบ บูรณาการ และส่งมอบระบบที่ใช้งานได้จริง | S |
+
+> [!note] เหตุผลที่ทักษะไม่ใช้ B1–B2 และความรู้ไม่ใช้ B3–B6
+> **มิติความรู้ (K)** ประเมินที่ระดับ **B1–B2** ด้วยข้อสอบและการอธิบาย ส่วน **มิติทักษะ (S)** ประเมินที่ระดับ **B3–B6** ด้วยชิ้นงานที่ทำได้จริง — การแบ่งนี้ทำให้บันไดมีความหมายและตรงกับหลักการเดิมของสมุดรหัสที่ว่า "K ใช้ข้อสอบ · S ใช้ชิ้นงาน"
+>
+> **มิติจริยธรรม (E) และลักษณะบุคคล (C)** ไม่ใช้บันไดพุทธิพิสัยนี้ เพราะอยู่ในจิตพิสัย (Affective Domain) ตามแนวทาง Krathwohl — ประเมินจากความสม่ำเสมอของพฤติกรรมและหลักฐานที่กำหนดไว้ในสมุดรหัส ไม่ใช่จากระดับความคิด
+
+> [!important] หมายเหตุสำหรับผู้สอน — คำว่า "ออกแบบ" และ "พัฒนาระบบ" ใน CLO อยู่ระดับใด
+> ในบริบทวิศวกรรม คำว่า **ออกแบบ** และ **พัฒนาระบบ** ไม่ได้อยู่ระดับ B6 เสมอไป งานออกแบบส่วนใหญ่ของวิศวกรคือการเดินตามมาตรฐาน สูตร แบบอ้างอิง และกระบวนการที่กำหนดไว้แล้ว ซึ่งจัดเป็น **การประยุกต์ใช้ (B3)** ไม่ใช่การสร้างสรรค์
+>
+> **ระดับตัดสินจากบริบทของโจทย์ ไม่ใช่จากตัวคำกริยา** — ให้ดู *ส่วนขยาย* ที่ตามหลังคำกริยาว่าผู้เรียนต้องตัดสินใจเองมากแค่ไหน
+>
+> | ระดับ | ลักษณะงานออกแบบ | ตัวบ่งชี้ในถ้อยคำ CLO |
+> |:--:|---|---|
+> | **B3** | ออกแบบตามมาตรฐาน แบบอ้างอิง หรือกระบวนการที่กำหนด · ข้อกำหนดครบ · มีวิธีที่ถูกต้องชัดเจน | "ตามมาตรฐาน…" · "ตามข้อกำหนดที่กำหนดให้" · "ตามกระบวนการ…" · "ด้วยเครื่องมือ…" |
+> | **B4** | ออกแบบโดยต้องเลือกองค์ประกอบให้เหมาะกับเงื่อนไขและอธิบายเหตุผล · มีหลายทางเลือกที่ใช้ได้ | "เลือก…ให้เหมาะกับ…" · "โดยวิเคราะห์ผลได้ผลเสีย" · "ภายใต้ข้อจำกัดด้าน…" |
+> | **B5** | ออกแบบพร้อมกำหนดเกณฑ์และตัดสินว่าทางเลือกใดดีที่สุด · ข้อจำกัดขัดแย้งกันเอง | "พร้อมกำหนดเกณฑ์การยอมรับ" · "เปรียบเทียบทางเลือกด้วยเกณฑ์…แล้วตัดสิน" |
+> | **B6** | ออกแบบจากโจทย์เปิดที่ยังไม่มีแบบอ้างอิง · ต้องนิยามข้อกำหนดเอง | "นิยามข้อกำหนดและออกแบบ…" · "จากปัญหาจริงที่ยังไม่มีคำตอบสำเร็จรูป" |
+>
+> **แม่แบบการเขียน CLO ระดับ B3 ที่ใช้คำว่าออกแบบ**
+> *ออกแบบ ⟨สิ่งที่ออกแบบ⟩ **ตาม** ⟨มาตรฐาน / แบบอ้างอิง / กระบวนการ⟩ **สำหรับ** ⟨โจทย์ที่กำหนด⟩ ได้*
+>
+> **ตัวอย่างคำว่า "ออกแบบ" ที่ปรากฏครบทั้ง 4 ระดับในหลักสูตรนี้**
+>
+> | ระดับ | รายวิชา | ถ้อยคำที่ทำให้เป็นระดับนั้น |
+> |:--:|---|---|
+> | B3 | `EN-714-11001` เขียนแบบวิศวกรรม *(ปี 1)* | ออกแบบผังระบบ **ตามมาตรฐาน** การเขียนแบบ |
+> | B3 | `EN-714-11002` การเขียนโปรแกรมพื้นฐาน *(ปี 1)* | ออกแบบขั้นตอนวิธี **ด้วยโครงสร้างข้อมูลและฟังก์ชันมาตรฐาน** |
+> | B4 | `EN-714-12005` ระบบตรวจวัดและไอโอที *(ปี 2)* | ออกแบบระบบตรวจวัด **โดยเลือกเซนเซอร์ให้เหมาะกับช่วงการวัดและสภาพแวดล้อม** |
+> | B5 | `EN-714-12013` วิศวกรรมซอฟต์แวร์และ AI *(ปี 3)* | ออกแบบสถาปัตยกรรม **พร้อมกำหนดเกณฑ์การยอมรับ** |
+> | B6 | `EN-714-12019` โครงงาน (Capstone) *(ปี 4)* | **นิยามข้อกำหนดเองจากปัญหาจริง** แล้วออกแบบและส่งมอบระบบ |
+>
+> **ข้อควรระวัง** — อย่าเลี่ยงคำว่า "ออกแบบ" เพียงเพราะกลัวว่าระดับจะสูงเกินชั้นปี ให้คงคำที่ตรงกับงานจริงไว้ แล้วเติมส่วนขยายที่บอกระดับแทน · การเปลี่ยนไปใช้คำที่อ่อนกว่าอย่าง "เขียน" หรือ "จัดทำ" ทั้งที่งานจริงคือการออกแบบ จะทำให้ผู้ประเมินอ่านหลักสูตรได้ต่ำกว่าความเป็นจริง
+>
+> หลักเดียวกันนี้ใช้กับคำว่า **พัฒนาระบบ · บูรณาการ · จัดทำ** ซึ่งล้วนกินความหลายระดับตามบริบทของโจทย์
+
+นักศึกษาทุกคนต้องมีทักษะแกนอย่างน้อยระดับ **B3–B4** และต้องพัฒนาทักษะเฉพาะแขนงที่เลือกถึงระดับ **B5** ผ่านปฏิบัติการ โครงงาน และสหกิจศึกษา
 
 ## 3.4 Hard Skills — แกนบังคับ 9 รายการ (เรียงตามความสำคัญ)
 
@@ -87,57 +127,57 @@ Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่
 >
 > **📈 ตลาด** · AI/ML Specialists เป็นกลุ่มงานเติบโตเร็ว; Machine Learning ปรากฏสูงในประกาศงาน AI (Stanford/Lightcast)
 > **🌏 เทียบเคียง** · ACM/IEEE-CS/AAAI **CS2023** (ครบทั้ง Symbolic/Search/Planning/KR และ Subsymbolic ML/DL) · เสาหลัก NUS "Reasoning & Decision Making" — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.4]]
-> **🎯 ระดับ** · ทุก Track L3 · โครงงานพัฒนาโมเดลหลัก L4
+> **🎯 ระดับ** · ทุก Track B4 · โครงงานพัฒนาโมเดลหลัก B5
 
 > [!abstract]- **HS2 · Programming & AI Software Engineering** — T1 ● T2 ● T3 ●
 > พัฒนาซอฟต์แวร์ AI ที่ดูแลรักษาและทดสอบได้ด้วย Python, SQL, API, Git, Data Structures and Algorithms, Software Architecture, Automated Testing, CI/CD, Clean Code และการใช้ AI Coding Tools อย่างมีวิจารณญาณ
 >
 > **📈 ตลาด** · Python พบบ่อยมากในประกาศงาน AI; Software Developers อยู่ในกลุ่มงานเทคโนโลยีที่เติบโตและมีจำนวนงานใหม่สูง
-> **🎯 ระดับ** · ทุก Track L3 · T3 และโครงงานซอฟต์แวร์ L4
+> **🎯 ระดับ** · ทุก Track B4 · T3 และโครงงานซอฟต์แวร์ B5
 
 > [!abstract]- **HS3 · Data Engineering, Analytics & Visualization** — T1 ● T2 ● T3 ●
 > ออกแบบ Data Pipeline และจัดการข้อมูลตั้งแต่ ingestion, ETL/ELT, SQL/NoSQL, Data Cleaning, Feature Engineering, Data Quality, Data Governance, Streaming/Big Data ไปจนถึงการวิเคราะห์ การพยากรณ์ และการสื่อสารผลผ่าน Visualization และ Dashboard
 >
 > **📈 ตลาด** · Big Data Specialists และ Data Engineers เป็นกลุ่มงานเติบโตสูง; SQL, Data Analysis และ Workflow Management อยู่ในทักษะสำคัญของประกาศงาน AI
-> **🎯 ระดับ** · ทุก Track L3 · T3 ด้าน Data Platform L4
+> **🎯 ระดับ** · ทุก Track B4 · T3 ด้าน Data Platform B5
 
 > [!abstract]- **HS4 · MLOps, Cloud & AI Infrastructure** — T1 ○ T2 ○ T3 ●
 > นำระบบ AI ไปใช้งานจริงด้วย Cloud, Container, Docker, Kubernetes, Model Registry, ML/LLM Pipeline, Monitoring, Drift Detection, Observability, Scalability, Cost/Latency Optimization, GPU/Accelerator และ Edge–Cloud Integration
 >
 > **📈 ตลาด** · AWS, Automation, Workflow Management และ Scalability พบบ่อยในประกาศงาน AI สะท้อนว่าตลาดต้องการผู้ operationalize ระบบ ไม่ใช่เพียงสร้างโมเดล
-> **🎯 ระดับ** · ทุก Track L2–L3 · T3 L4
+> **🎯 ระดับ** · ทุก Track B3–B4 · T3 B5
 
 > [!abstract]- **HS5 · Industrial Automation, Robotics & Digital Twin** — T1 ○ T2 ● T3 ○
 > ออกแบบและบูรณาการ PLC/SCADA, Industrial Networks, Robotics, Machine Control, Predictive Maintenance, Simulation, Digital Twin, Machine Vision Interface และ OT/IT Integration สำหรับสายการผลิตและระบบโลจิสติกส์อัตโนมัติ
 >
 > **📈 ตลาด** · ไทยต้องการ Smart Electronics & Industrial Robotics 226,423 ตำแหน่ง (2568–2572); การผลิตขั้นสูงคาดใช้ AI 81% และหุ่นยนต์ 69%
-> **🎯 ระดับ** · ทุก Track L2 · T2 L4 · T1 (ระบบอัตโนมัติ) L3
+> **🎯 ระดับ** · ทุก Track B3 · T2 B5 · T1 (ระบบอัตโนมัติ) B4
 
 > [!abstract]- **HS6 · Generative AI, LLM & Agentic Systems** — T1 ○ T2 ○ T3 ●
 > พัฒนาและประเมินระบบ Generative AI/LLM ด้วย Prompt and Context Engineering, RAG, Embeddings, Vector Database, Fine-tuning, Multimodal Models, Tool Use, AI Agents, Agentic Workflows, **Model Selection & Evaluation, LLM Red-teaming** และ Guardrails
 >
 > **📈 ตลาด** · LinkedIn ระบุ AI Agents เป็นทักษะ AI ที่เติบโตเร็วที่สุดในปี 2025; Stanford/Lightcast พบการเติบโตสูงของ Generative AI, LLM, RAG และ Context Engineering
 > **🌏 เทียบเคียง** · IMDA GenAI TSC#3–#7, #9 (Model Selection/Evaluation/App Dev/Fine-tuning/Security) · Project Moonshot (LLM Red-teaming) — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C]]
-> **🎯 ระดับ** · ทุก Track L2 · T3 L4
+> **🎯 ระดับ** · ทุก Track B3 · T3 B5
 
 > [!abstract]- **HS7 · AI Security, Privacy, Safety & Responsible AI** — T1 ● T2 ● T3 ●
 > ออกแบบและตรวจสอบระบบ AI ให้ปลอดภัยและรับผิดชอบ ครอบคลุม Cybersecurity, Data Privacy/PDPA, Threat Modeling, Secure MLOps, Prompt Injection and Data Poisoning Defense, Model/Agent Guardrails, Robustness, Fairness, Explainability, AI Governance และ Regulatory Compliance
 >
 > **📈 ตลาด** · Networks and Cybersecurity เป็นทักษะเติบโตเร็วอันดับต้นตาม WEF; BLS คาดงาน Information Security Analysts โต 29%; ระบบอัตโนมัติและ AI Agents ทำให้ Machine Oversight และ Governance สำคัญขึ้น
 > **🌏 เทียบเคียง** · AI Verify 11 หลักการ (Outcome/Process/Evidence) + **ISO/IEC 42001 · NIST AI RMF · EU AI Act** + IMDA GenAI TSC#8/#9 + ACM/IEEE/IFIP/ABET Cybersecurity (Data Poisoning/Model Inversion/Penetration Testing) · เปลี่ยนจริยธรรม (Attitude) เป็น Hard Skill ที่วัดได้ — ดู [[../05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA|Skill Matrix ส่วน C.2/C.4]]
-> **🎯 ระดับ** · ทุก Track L3 · ผู้รับผิดชอบระบบ production L4
+> **🎯 ระดับ** · ทุก Track B4 · ผู้รับผิดชอบระบบ production B5
 
 > [!abstract]- **HS8 · Computer Vision, Remote Sensing & Multimodal AI** — T1 ● T2 ● T3 ○
 > พัฒนาระบบ Image Processing, Object Detection, Segmentation, Tracking, Quality Inspection, Multispectral/Hyperspectral Analysis, UAV/Remote Sensing, GeoAI และ Multimodal Data Fusion สำหรับภาคสนามและสายการผลิต
 >
 > **📈 ตลาด** · Visual Image Recognition และ Multimodal Models ปรากฏในข้อมูลประกาศงาน AI; เป็นทักษะเชื่อมตรงกับการตรวจโรค/ผลผลิตใน T1 และ Quality Inspection ใน T2
-> **🎯 ระดับ** · ทุก Track L2 · T1–T2 L4
+> **🎯 ระดับ** · ทุก Track B3 · T1–T2 B5
 
 > [!abstract]- **HS9 · IoT, Embedded, Edge AI & Sensor Networks** — T1 ● T2 ○ T3 ○
 > ออกแบบและบูรณาการ Sensor, Microcontroller, Embedded Linux, MQTT/Industrial Protocols, Wireless/LPWAN, Edge Computing, TinyML/Edge AI, Real-time Acquisition, Device Management และ Edge–Cloud Security สำหรับระบบอัจฉริยะในพื้นที่จริง
 >
 > **📈 ตลาด** · Sensor Networks เป็นหนึ่งในเทคโนโลยีที่ WEF ระบุว่าจะเปลี่ยนงานเกษตรและการผลิต และเป็นโครงสร้างพื้นฐานสำคัญของ Smart Agriculture และ Intelligent Systems
-> **🎯 ระดับ** · ทุก Track L2 · T1 L4 · T2 L3
+> **🎯 ระดับ** · ทุก Track B3 · T1 B5 · T2 B4
 
 ## 3.5 สรุป Hard Skills แกน ↔ 3 Tracks
 
@@ -164,67 +204,67 @@ Soft Skills ที่พบซ้ำสูงใน C01–C17 ได้แก่
 > พัฒนาระบบประมวลผลภาษาธรรมชาติ ครอบคลุม Tokenization, Text Classification, NER, Information Extraction, Semantic Search และการต่อยอด **ภาษาไทย (Thai NLP)** บนโครงสร้างพื้นฐาน AI ของประเทศ (AI for Thai, ThaiLLM)
 >
 > **📈 ตลาด** · NLP เป็นทักษะเทคนิคที่ประกาศงานโตเร็วที่สุด **+155% YoY** และเป็นกลุ่มค่าตอบแทนสูง (Second Talent 2026); ตอบ **Need N15** โดยตรง
-> **🎯 ระดับ** · ทุก Track L2 · T3 L4 · **🔗 ผูกกับ** HS6
+> **🎯 ระดับ** · ทุก Track B3 · T3 B5 · **🔗 ผูกกับ** HS6
 
 > [!example]- **HS11 · Time-Series Forecasting & Predictive Analytics** — T1 ● T2 ● T3 ○ · ➕
 > วิเคราะห์และพยากรณ์ข้อมูลเชิงเวลา (Seasonality, Trend, Anomaly Detection) เพื่อพยากรณ์ผลผลิต ราคา ความต้องการ และการบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance)
 >
 > **📈 ตลาด** · เป็นแกนของ Precision Farming (พยากรณ์ผลผลิต, T1) และ Predictive Maintenance ในสายการผลิต (T2) ที่ผู้ใช้บัณฑิตระบุเป็นเทคโนโลยีนำรายแทรค
-> **🎯 ระดับ** · T1–T2 L3–L4 · T3 L2 · **🔗 ผูกกับ** HS1, HS3
+> **🎯 ระดับ** · T1–T2 B4–B5 · T3 B3 · **🔗 ผูกกับ** HS1, HS3
 
 > [!example]- **HS12 · Big Data & Distributed / Streaming Systems** — T1 ○ T2 ○ T3 ● · ➕
 > ประมวลผลข้อมูลขนาดใหญ่และแบบสตรีมด้วย Spark, Kafka, Data Lake/Lakehouse, Distributed Storage และ Real-time Pipeline
 >
 > **📈 ตลาด** · Big Data Specialists เป็นกลุ่มงานโตสูง (WEF); ไทยเปิดรับ Data Engineer/Data Scientist สูงสุดในภาค ICT (TDRI)
-> **🎯 ระดับ** · T3 L3–L4 · T1–T2 L2 · **🔗 ผูกกับ** HS3, HS4
+> **🎯 ระดับ** · T3 B4–B5 · T1–T2 B3 · **🔗 ผูกกับ** HS3, HS4
 
 > [!example]- **HS13 · Reinforcement Learning, Optimization & Operations Research** — T1 ○ T2 ● T3 ○ · ➕
 > ประยุกต์ Reinforcement Learning, Mathematical Optimization และ Operations Research กับปัญหาการควบคุม การจัดตาราง การวางแผนทรัพยากร และการควบคุมหุ่นยนต์/กระบวนการ
 >
 > **📈 ตลาด** · RL ปรากฏใน ~9% ของงาน AI (recommendation, robotics, control); เป็นแกนของ Industrial Optimization และ Autonomous Control (T2)
-> **🎯 ระดับ** · T2 L3 · T1/T3 L2 · **🔗 ผูกกับ** HS1, HS5
+> **🎯 ระดับ** · T2 B4 · T1/T3 B3 · **🔗 ผูกกับ** HS1, HS5
 
 > [!example]- **HS14 · Data-Centric AI & Data Annotation / Labeling Operations** — T1 ● T2 ○ T3 ● · ➕
 > จัดการคุณภาพข้อมูลแบบ Data-Centric: Labeling Strategy, Annotation Tools, Inter-annotator Agreement, Active Learning, Synthetic Data และ Human-in-the-Loop
 >
 > **📈 ตลาด** · **Data Annotator เป็นตำแหน่ง AI ที่โตเร็วที่สุดในไทย +586% (115→789 ตำแหน่ง/ไตรมาส)** ตาม TDRI; คุณภาพข้อมูลคือ Pain point อันดับต้นของผู้ใช้บัณฑิต (9/27)
-> **🎯 ระดับ** · ทุก Track L2 · ผู้ทำ Data Platform L3 · **🔗 ผูกกับ** HS3
+> **🎯 ระดับ** · ทุก Track B3 · ผู้ทำ Data Platform B4 · **🔗 ผูกกับ** HS3
 
 > [!example]- **HS15 · Green / Sustainable AI & Model Efficiency** — T1 ● T2 ○ T3 ○ · ➕
 > ออกแบบ AI ที่ประหยัดพลังงานและทรัพยากร: Model Compression, Quantization, Distillation, Efficient Inference, TinyML Optimization และการวัด Carbon/Energy Footprint
 >
 > **📈 ตลาด** · **Environmental Stewardship ติด 10 ทักษะเติบโตเร็วของ WEF เป็นครั้งแรก**; ตอบ **Need N12** (Green AI/BCG) และเสริมการ deploy บน Edge ที่ทรัพยากรจำกัด (T1)
-> **🎯 ระดับ** · ทุก Track L1–L2 · Edge/MLOps L3 · **🔗 ผูกกับ** HS4, HS9
+> **🎯 ระดับ** · ทุก Track B2–B3 · Edge/MLOps B4 · **🔗 ผูกกับ** HS4, HS9
 
 > [!example]- **HS16 · Smart Agriculture, Precision Agriculture & Agri-food Systems** — T1 ● T2 ○ T3 ○ · ➕
 > บูรณาการ agronomy/food-process context กับ Precision Agriculture, Farm Management, IoT/Sensor, UAV/Remote Sensing, GIS, Variable-rate Control, Yield/Price Forecasting, Traceability และระบบตัดสินใจตลอดห่วงโซ่เกษตร–อาหาร
 >
 > **📈 ตลาด** · C03 ยืนยัน Precision Agriculture, IoT, Sensors, Automation, Cloud IoT และ Analytics เป็นชุดทักษะเฉพาะโดเมน แม้จำนวนชื่อตำแหน่งตรงมีเพียง 39 งาน
-> **🎯 ระดับ** · T1 L3–L4 · T2/T3 L1–L2 · **🔗 ผูกกับ** HS3, HS8, HS9, HS11
+> **🎯 ระดับ** · T1 B4–B5 · T2/T3 B2–B3 · **🔗 ผูกกับ** HS3, HS8, HS9, HS11
 
 > [!example]- **HS17 · Smart Manufacturing, Process, Production, Quality & MES** — T1 ○ T2 ● T3 ○ · ➕
 > วิเคราะห์และปรับปรุงกระบวนการผลิตด้วย Process Engineering, Lean, Six Sigma, Quality Engineering, Statistical Process Control, MES/ERP, Production Planning, OEE, Traceability, Industrial Data และ Smart Factory Integration
 >
 > **📈 ตลาด** · C14 มี 917 งานและ C13 มี 162 งาน โดยพบ Process Optimization, Automation, Quality, Standards, Lean, MES, ERP และ Industrial Data อย่างต่อเนื่อง
-> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** HS3, HS5, HS13
+> **🎯 ระดับ** · T2 B4–B5 · T1/T3 B2–B3 · **🔗 ผูกกับ** HS3, HS5, HS13
 
 > [!example]- **HS18 · Maintenance, Reliability & Asset Intelligence** — T1 ○ T2 ● T3 ○ · ➕
 > บริหารสุขภาพสินทรัพย์และความพร้อมใช้ด้วย Maintenance Planning, Reliability Engineering, Root Cause Analysis, FMEA/FMECA, CMMS/EAM, Condition Monitoring, Sensors, Predictive Maintenance, Remaining Useful Life และ Asset Performance Management
 >
 > **📈 ตลาด** · C16 มี 279 งาน โดย Maintenance Planning, RCA, PLC/SCADA, Predictive Maintenance, FMEA และ CMMS เป็นทักษะเด่น
-> **🎯 ระดับ** · T2 L3–L4 · T1/T3 L1–L2 · **🔗 ผูกกับ** HS5, HS9, HS11
+> **🎯 ระดับ** · T2 B4–B5 · T1/T3 B2–B3 · **🔗 ผูกกับ** HS5, HS9, HS11
 
 > [!example]- **HS19 · Decision Intelligence, BI, DSS & Operations Analytics** — T1 ○ T2 ● T3 ● · ➕
 > พัฒนาระบบสนับสนุนการตัดสินใจด้วย BI, Dashboard, Forecasting, Scenario Analysis, Simulation, Optimization, Operations Research, Decision Models, Explainable Recommendations และการวัดผลการตัดสินใจ
 >
 > **📈 ตลาด** · C15 มี 237 งานและ C12 มี 552 งาน โดย BI, Visualization, Forecasting, Optimization, SQL, Statistics และ Scenario Analysis เป็นหลักฐานตรง
-> **🎯 ระดับ** · T2/T3 L3 · T1 L2 · **🔗 ผูกกับ** HS1, HS3, HS11, HS13
+> **🎯 ระดับ** · T2/T3 B4 · T1 B3 · **🔗 ผูกกับ** HS1, HS3, HS11, HS13
 
 > [!example]- **HS20 · Enterprise Solution Architecture, Integration & Digital Services** — T1 ○ T2 ○ T3 ● · ➕
 > ออกแบบและส่งมอบระบบองค์กรผ่าน Requirements Engineering, Solution Architecture, APIs, System Integration, Cloud/SaaS, Identity and Access Management, IT Service Management, Backup/Disaster Recovery, Digital Government/e-Service, Vendor Management และ Technology Operations
 >
 > **📈 ตลาด** · C02, C06, C07 และ C11 ยืนยันความต้องการด้าน Architecture, Integration, Cloud, Security, IT Operations, IAM, ITSM และ digital service delivery
-> **🎯 ระดับ** · T3 L3–L4 · T1/T2 L2 · **🔗 ผูกกับ** HS2, HS4, HS7
+> **🎯 ระดับ** · T3 B4–B5 · T1/T2 B3 · **🔗 ผูกกับ** HS2, HS4, HS7
 
 ## 3.6 Soft Skills — แกนบังคับ 6 รายการ (เรียงตามความสำคัญ)
 

@@ -55,13 +55,13 @@
 | EN-714-11009 | เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน<br>*Engineering Economics and Cost Analysis* | 3(3-0-6) |
 | EN-714-11007 | สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม<br>*Statistics and Data Analysis for Engineering* | 3(3-0-6) |
 | EN-714-11005 | วิศวกรรมความร้อนและของไหลในระบบอัจฉริยะ<br>*Thermal-Fluid Engineering in Smart Systems* | 3(3-0-6) |
-| EN-714-11001 | การเขียนแบบวิศวกรรมและการวางผังระบบ<br>*Engineering Drawing and System Layout Design* | 3(2-2-6) |
+| EN-714-11001 | การเขียนแบบวิศวกรรมและการวางผังระบบ<br>*Engineering Drawing and System Layout Design* | 3(2-2-5) |
 | EN-714-11003 | กลศาสตร์วัสดุและการออกแบบโครงสร้าง<br>*Mechanics of Materials and Structural Design* | 3(3-0-6) |
-| EN-714-11002 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์<br>*Foundational Programming for Artificial Intelligence* | 3(2-2-6) |
+| EN-714-11002 | การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์<br>*Foundational Programming for Artificial Intelligence* | 3(2-2-5) |
 | EN-714-11006 | พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ<br>*Electrical and Electronic Fundamentals for Intelligent Systems* | 3(3-0-6) |
-| EN-714-11004 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์<br>*Integrated Engineering Workshop 1: Fabrication and Sensor Installation* | 1(0-3-1) |
-| EN-714-11008 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ<br>*Integrated Engineering Workshop 2: Drive Systems and Automatic Control* | 1(0-3-1) |
-| EN-714-11010 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ<br>*Integrated Engineering Workshop 3: System Integration and Handover* | 1(0-3-1) |
+| EN-714-11004 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์<br>*Integrated Engineering Workshop 1: Fabrication and Sensor Installation* | 1(0-3-2) |
+| EN-714-11008 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ<br>*Integrated Engineering Workshop 2: Drive Systems and Automatic Control* | 1(0-3-2) |
+| EN-714-11010 | ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ<br>*Integrated Engineering Workshop 3: System Integration and Handover* | 1(0-3-2) |
 
 ### ✎ 2.2 กลุ่มวิชาแกนปัญญาประดิษฐ์และระบบอัจฉริยะ 24 หน่วยกิต
 
@@ -111,7 +111,7 @@
 | EN-714-12017 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 1<br>*Seminar in Artificial Intelligence Engineering and Intelligent Systems 1* | 1(0-2-1) |
 | EN-714-12018 | สัมมนาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 2<br>*Seminar in Artificial Intelligence Engineering and Intelligent Systems 2* | 1(0-2-1) |
 | EN-714-12018 | การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ<br>*Artificial Intelligence Engineering and Intelligent Systems Project Preparation* | 1(0-2-1) |
-| EN-714-12019 | โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ<br>*Artificial Intelligence Engineering and Intelligent Systems Project* | 3(1-6-4) |
+| EN-714-12019 | โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ<br>*Artificial Intelligence Engineering and Intelligent Systems Project* | 3(1-6-5) |
 
 ### ✎ 2.6 กลุ่มวิชาประสบการณ์ภาคสนาม 7 หน่วยกิต
 

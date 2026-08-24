@@ -46,7 +46,7 @@ flowchart LR
 | [[05_Careers_and_JobsDB\|5]] | อาชีพเป้าหมาย C01–C26 · ดึงและจำแนกประกาศงานจริง | `/careers` · `/jobs` |
 | [[06_Target_Skills\|6]] | ทักษะเป้าหมาย HS/SS/EF จากหลักฐานตลาด | `/obe` ④ |
 | [[07_Skill_Sets\|7]] | ชุดทักษะ AISK01–09 สำหรับ Skill Transcript | `/obe` ⑤ |
-| [[08_KSA_Codebook\|8]] | รหัส K1–K26 · S1–S20 · A1–A8 | `/obe` ⑧ (ส่วนรหัส) |
+| [[08_KSEC_Codebook\|8]] | รหัส K1–K26 · S1–S20 · E1–E7 · C1–C8 | `/obe` ⑧ (ส่วนรหัส) |
 
 ### ส่วนที่ 4 · ออกแบบโครงสร้างมารองรับ
 
@@ -62,7 +62,7 @@ flowchart LR
 | ขั้น | สร้างอะไร | เมนูที่ใช้ได้ |
 |---|---|---|
 | [[13_YLO\|13]] | ผลลัพธ์รายชั้นปีและระดับ I–R–M | `/ylo` · `/ylo/:id` |
-| [[14_CLO_and_Mapping\|14]] | CLO · Curriculum Mapping · รหัส KSA ราย CLO | `/clo` |
+| [[14_CLO_and_Mapping\|14]] | CLO · Curriculum Mapping · รหัส KSEC ราย CLO | `/clo` |
 | [[15_Teaching_and_Assessment\|15]] | กลยุทธ์การสอน · การประเมิน · กลยุทธ์ราย KSA | `/teaching` · `/assessment` · `/ksa-pedagogy` · `/refs` |
 
 ### ส่วนขยาย — งานที่ยากกว่าปกติ

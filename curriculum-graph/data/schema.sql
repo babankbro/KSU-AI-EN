@@ -3,16 +3,16 @@
 -- PostgreSQL 14+
 --
 -- หลักการออกแบบ
---   1. รหัสในเอกสาร (PLO1, K1, HS1, AISK01, EN-714-12002) เป็น natural key ที่นิ่งและมีความหมาย
+--   1. รหัสในเอกสาร (PLO1, K1, E1, C1, HS1, AISK01, EN-714-12002) เป็น natural key ที่นิ่งและมีความหมาย
 --      จึงใช้เป็น primary key ตรง ๆ ไม่สร้าง surrogate id ให้ต้องแปลกลับไปมา
 --   2. ทุกตารางเชื่อมที่เป็นข้อเสนอหรืออนุมานมา ต้องมีคอลัมน์ provenance เสมอ
 --      เพราะวอลต์มีทั้งข้อมูลที่เอกสารระบุตรงและข้อมูลที่คำนวณ/ออกแบบขึ้น
---   3. ระดับพัฒนาการ (I/R/M) และระดับความลึก (L1–L4) เก็บเป็น enum ไม่ใช่ text อิสระ
+--   3. ระดับพัฒนาการ (I/R/M) และระดับตามแนวทาง Bloom (B1–B6) เก็บเป็น enum ไม่ใช่ text อิสระ
 -- ─────────────────────────────────────────────────────────────────────────────
 
 CREATE TYPE irm_level        AS ENUM ('I', 'R', 'M');
-CREATE TYPE depth_level      AS ENUM ('L1', 'L2', 'L3', 'L4');
-CREATE TYPE ksa_dimension    AS ENUM ('K', 'S', 'A');
+CREATE TYPE depth_level      AS ENUM ('B1', 'B2', 'B3', 'B4', 'B5', 'B6');  -- Bloom's Revised Taxonomy
+CREATE TYPE ksa_dimension    AS ENUM ('K', 'S', 'E', 'C');   -- ความรู้ · ทักษะ · จริยธรรม · ลักษณะบุคคล (กมอ. 2565)
 CREATE TYPE skill_family     AS ENUM ('HS', 'SS', 'EF');
 CREATE TYPE plo_role         AS ENUM ('host', 'support');       -- เจ้าภาพหลัก / สนับสนุน
 CREATE TYPE track_role       AS ENUM ('core', 'support');       -- ● ทักษะหลัก / ○ ทักษะสนับสนุน
@@ -459,7 +459,8 @@ CREATE VIEW vw_skill_ksa_gap AS
 SELECT s.id AS skill_id, s.family,
        count(*) FILTER (WHERE k.dimension = 'K') AS k_count,
        count(*) FILTER (WHERE k.dimension = 'S') AS s_count,
-       count(*) FILTER (WHERE k.dimension = 'A') AS a_count
+       count(*) FILTER (WHERE k.dimension = 'E') AS e_count,
+       count(*) FILTER (WHERE k.dimension = 'C') AS c_count
 FROM skill s
 LEFT JOIN ksa_skill ks ON ks.skill_id = s.id
 LEFT JOIN ksa_item  k  ON k.id = ks.ksa_id
@@ -468,13 +469,13 @@ HAVING count(*) FILTER (WHERE k.dimension = 'K') = 0
     OR count(*) FILTER (WHERE k.dimension = 'S') = 0;
 
 -- ชุดทักษะที่ไม่มีมิติทัศนคติเลย — Skill Transcript จะไม่มีอะไรให้ประเมินเชิงพฤติกรรม
-CREATE VIEW vw_skill_set_without_attitude AS
+CREATE VIEW vw_skill_set_without_behaviour AS
 SELECT ss.id, ss.name_th
 FROM skill_set ss
 WHERE NOT EXISTS (
   SELECT 1 FROM skill_set_skill sss
   JOIN ksa_skill ks ON ks.skill_id = sss.skill_id
-  JOIN ksa_item  k  ON k.id = ks.ksa_id AND k.dimension = 'A'
+  JOIN ksa_item  k  ON k.id = ks.ksa_id AND k.dimension IN ('E', 'C')
   WHERE sss.skill_set_id = ss.id
 );
 

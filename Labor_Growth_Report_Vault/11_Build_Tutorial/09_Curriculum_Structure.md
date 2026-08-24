@@ -121,4 +121,4 @@ step: 9/15
 
 ---
 
-[[08_KSA_Codebook|⬅ ขั้นที่ 8]] · [[00_Tutorial_Home|สารบัญ]] · [[10_Courses|ขั้นที่ 10 ➡]]
+[[08_KSEC_Codebook|⬅ ขั้นที่ 8]] · [[00_Tutorial_Home|สารบัญ]] · [[10_Courses|ขั้นที่ 10 ➡]]

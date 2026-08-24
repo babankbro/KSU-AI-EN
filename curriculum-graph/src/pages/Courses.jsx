@@ -126,6 +126,13 @@ export default function Courses() {
         crumbs={[{ label: "รายวิชา" }]} />
 
       <div className="wrap">
+        <div className="note cr-note">
+          <b>การอ่านหน่วยกิต</b> — รูปแบบ <code>X(บรรยาย–ปฏิบัติการ–ศึกษาด้วยตนเอง)</code> ตามที่ สป.อว. กำหนด
+          โดยคิดชั่วโมงศึกษาค้นคว้าด้วยตนเองจาก <b>บรรยาย 1 ชั่วโมง = 2 ชั่วโมง</b> และ <b>ปฏิบัติการ 1 ชั่วโมง = 0.5 ชั่วโมง</b>{" "}
+          แล้วปัดเศษ .5 ขึ้นเป็นจำนวนเต็ม · ตัวอย่าง <code>3(2-2-5)</code> มาจาก 2×2 + 2×0.5 = 5
+          และ <code>1(0-3-2)</code> มาจาก 3×0.5 = 1.5 ปัดขึ้นเป็น 2
+        </div>
+
         <div className="toolbar">
           <input placeholder="🔍 ค้นหา รหัส / ชื่อวิชา / คำในคำอธิบายไทย–อังกฤษ…" value={q} onChange={e => setQ(e.target.value)} />
           {FILTERS.map(([id, l]) => (

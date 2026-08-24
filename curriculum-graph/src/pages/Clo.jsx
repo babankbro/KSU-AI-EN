@@ -10,7 +10,7 @@ import {
   REQUIRED_CLO_LIST, ELECTIVE_CLO_LIST, CLO_TOTAL_REQUIRED, CLO_TOTAL_ELECTIVE,
   CLO_ELECTIVE_TYPICAL, ELECTIVE_PICK
 } from "../cloData.js";
-import { courseKsa, cloKsa } from "../courseKsaData.js";
+import { courseKsec, cloKsec } from "../courseKsecData.js";
 
 const PLOS = [1, 2, 3, 4, 5, 6, 7];
 const SEM_LABEL = s => s === 99
@@ -18,8 +18,8 @@ const SEM_LABEL = s => s === 99
   : `ชั้นปีที่ ${Math.ceil(s / 2)} · ภาคการศึกษาที่ ${s % 2 === 1 ? 1 : 2}`;
 const setOf = id => SKILL_SETS.find(s => s.id === id);
 
-/* ชิปรหัส KSA — ใช้ทั้งระดับรายวิชาและระดับ CLO */
-const KsaChips = ({ list, kind }) => list?.length
+/* ชิปรหัส KSEC — ใช้ทั้งระดับรายวิชาและระดับ CLO */
+const KsecChips = ({ list, kind }) => list?.length
   ? <span className={`ksachips ${kind}`}>{list.map(c => <span className="ksachip" key={c}>{c}</span>)}</span>
   : null;
 
@@ -76,7 +76,7 @@ export default function Clo() {
       <PageHead
         eyebrow="หมวด 4.6 – 4.7 · เอกสารหลักสูตร"
         title="ผลลัพธ์การเรียนรู้รายวิชา (CLO) และแผนที่ความเชื่อมโยง"
-        lead="สรุป CLO ของรายวิชาแกน พร้อม K–S–A ชุดทักษะ EN-AISK01–09 หลักฐานประเมิน และเส้นทาง CLO → Sub-YLO → PLO ตามระดับ I–R–M"
+        lead="สรุป CLO ของรายวิชาแกน พร้อม K–S–E–C ชุดทักษะ EN-AISK01–09 หลักฐานประเมิน และเส้นทาง CLO → Sub-YLO → PLO ตามระดับ I–R–M"
         crumbs={[{ label: "CLO และ Curriculum Mapping" }]}
       />
 
@@ -311,13 +311,13 @@ export default function Clo() {
           <p className="hint">
             รหัส AISK ตัวแรกใน CLO คือ <b>เจ้าภาพหลัก</b>; รหัสถัดไปเป็นชุดทักษะสนับสนุน และหลักฐานรายบุคคลต้องบันทึกตามบทบาทหรือบริบทจริง
             {" "}·{" "}
-            รายละเอียดทักษะย่อย ระดับ L1–L4 และวิธีวัดผลของแต่ละชุดทักษะอยู่ที่ <Link to="/obe#set">ขั้นตอน OBE ⑤ ชุดทักษะ</Link>
+            รายละเอียดทักษะย่อย ระดับ B1–B6 และวิธีวัดผลของแต่ละชุดทักษะอยู่ที่ <Link to="/obe#set">ขั้นตอน OBE ⑤ ชุดทักษะ</Link>
           </p>
         </Section>
 
         {/* ─────────── CLO รายวิชา ─────────── */}
-        <Section id="courses" title="CLO และ K–S–A รายวิชา"
-          sub="กล่อง KSA คือสิ่งที่รายวิชาต้องรับผิดชอบพัฒนา ส่วน CLO คือข้อความที่วัดผลได้ซึ่งกลั่นมาจาก KSA เหล่านั้น">
+        <Section id="courses" title="CLO และ K–S–E–C รายวิชา"
+          sub="กล่อง KSEC คือสิ่งที่รายวิชาต้องรับผิดชอบพัฒนา ส่วน CLO คือข้อความที่วัดผลได้ซึ่งกลั่นมาจากรหัสเหล่านั้น">
           <div className="clo-filters">
             <div className="clo-fgroup">
               <span className="clo-flab">ชั้นปี</span>
@@ -365,17 +365,18 @@ export default function Clo() {
                   </header>
 
                   {(() => {
-                    const ck = courseKsa(e.c);
+                    const ck = courseKsec(e.c);
                     return (
                       <>
                         {ck && (
                           <div className={"clo-ksabar" + (ck.derivedFrom ? " derived" : "")}>
-                            <span className="ksabar-lab">รหัส KSA ของรายวิชา</span>
-                            <KsaChips list={ck.K} kind="k" />
-                            <KsaChips list={ck.S} kind="s" />
-                            <KsaChips list={ck.A} kind="a" />
+                            <span className="ksabar-lab">รหัส KSEC ของรายวิชา</span>
+                            <KsecChips list={ck.K} kind="k" />
+                            <KsecChips list={ck.S} kind="s" />
+                            <KsecChips list={ck.E} kind="a" />
+                            <KsecChips list={ck.C} kind="c" />
                             {ck.derivedFrom === "aisk" && (
-                              <em className="ksabar-note" title="วิชาชีพเลือกยังไม่มี KSA ระบุตรงในเอกสาร จึงอนุมานผ่านชุดทักษะที่รายวิชารับผิดชอบ">
+                              <em className="ksabar-note" title="วิชาชีพเลือกยังไม่มี KSEC ระบุตรงในเอกสาร จึงอนุมานผ่านชุดทักษะที่รายวิชารับผิดชอบ">
                                 อนุมานจากชุดทักษะ
                               </em>
                             )}
@@ -390,7 +391,7 @@ export default function Clo() {
                               {e.sets.map(([id, sub]) => <SetChip key={id} id={id} sub={sub} />)}
                             </div>
                           </div>
-                          <div className="clo-kbox a"><h4>❤️ Attitude — ทัศนคติที่ต้องปลูกฝัง</h4><p>{e.a}</p></div>
+                          <div className="clo-kbox a"><h4>⚖️❤️ Ethics + Character — จริยธรรมและลักษณะบุคคลที่ต้องปลูกฝัง</h4><p>{e.a}</p></div>
                         </div>
                       </>
                     );
@@ -398,7 +399,7 @@ export default function Clo() {
 
                   <table className="tbl clo-clotbl">
                     <thead>
-                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th><th>KSA</th></tr>
+                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th><th>KSEC</th></tr>
                     </thead>
                     <tbody>
                       {e.clos.map(clo => (
@@ -417,9 +418,9 @@ export default function Clo() {
                           </td>
                           <td className="clo-ksacell">
                             {(() => {
-                              const kk = cloKsa(e.c, clo.n);
+                              const kk = cloKsec(e.c, clo.n);
                               if (!kk) return <span className="mut">—</span>;
-                              return <><KsaChips list={kk.K} kind="k" /><KsaChips list={kk.S} kind="s" /><KsaChips list={kk.A} kind="a" /></>;
+                              return <><KsecChips list={kk.K} kind="k" /><KsecChips list={kk.S} kind="s" /><KsecChips list={kk.E} kind="a" /><KsecChips list={kk.C} kind="c" /></>;
                             })()}
                           </td>
                         </tr>

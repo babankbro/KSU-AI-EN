@@ -94,7 +94,7 @@ const TBL = {
   ksa_anchor_course: "รายวิชาแกนของแต่ละ KSA สูงสุด 2 รายวิชา",
   vw_plo_coverage: "ความครอบคลุม PLO แยกวิชาบังคับออกจากคลังวิชาชีพเลือก",
   vw_skill_ksa_gap: "ทักษะที่ยังไม่มี K หรือ S รองรับ",
-  vw_skill_set_without_attitude: "ชุดทักษะที่ไม่มีมิติทัศนคติเลย",
+  vw_skill_set_without_behaviour: "ชุดทักษะที่ไม่มีมิติจริยธรรมหรือลักษณะบุคคลเลย",
   vw_ksa_orphan: "KSA ที่ไม่มีรายวิชาบังคับใดอ้างถึง"
 };
 
@@ -120,8 +120,8 @@ const COL = {
   "course_plo.role": "host เจ้าภาพหลัก · support สนับสนุน",
   "skill_track.role": "core ทักษะหลัก (●) · support ทักษะสนับสนุน (○)",
   "course_prereq.kind": "hard บังคับก่อน · weak แนะนำก่อน · coreq เรียนคู่",
-  "ksa_item.dimension": "K ความรู้ · S ทักษะ · A ทัศนคติ",
-  "ksa_item.evidence": "หลักฐานที่ยอมรับได้ ใช้กับมิติทัศนคติ ห้ามให้คะแนนจากความประทับใจ",
+  "ksa_item.dimension": "K ความรู้ · S ทักษะ · E จริยธรรม · C ลักษณะบุคคล",
+  "ksa_item.evidence": "หลักฐานที่ยอมรับได้ ใช้กับมิติจริยธรรมและลักษณะบุคคล ห้ามให้คะแนนจากความประทับใจ",
   "ksa_item.target_depth": "L1 เข้าใจ · L2 ประยุกต์ · L3 บูรณาการ · L4 นำไปใช้และประเมิน",
   "skill.family": "HS ทักษะเทคนิค · SS ทักษะพฤติกรรม · EF ฐานวิศวกรรม",
   "skill.is_core": "อยู่ในแกนบังคับหรือเป็นส่วนขยาย",

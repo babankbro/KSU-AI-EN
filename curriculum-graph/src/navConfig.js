@@ -36,12 +36,12 @@ export const NAV_GROUPS = [
           { id: "set",   label: "⑤ ชุดทักษะ AISK" },
           { id: "plo",   label: "⑥ ผลลัพธ์หลักสูตร" },
           { id: "ylo",   label: "⑦ ผลลัพธ์รายชั้นปี" },
-          { id: "clo",   label: "⑧ ผลลัพธ์รายวิชา + KSA" }
+          { id: "clo",   label: "⑧ ผลลัพธ์รายวิชา + KSEC" }
         ]
       },
       { to: "/plo", label: "PLO",        desc: "ผลลัพธ์ระดับหลักสูตร 7 ข้อ · เทียบ ABET SO" },
       { to: "/ylo", label: "YLO",        desc: "ผลลัพธ์รายชั้นปี 4 ระดับ" },
-      { to: "/clo", label: "CLO รายวิชา", desc: "ผลลัพธ์รายวิชาและการเชื่อมสู่ KSA" }
+      { to: "/clo", label: "CLO รายวิชา", desc: "ผลลัพธ์รายวิชาและการเชื่อมสู่ KSEC" }
     ]
   },
   {
@@ -65,7 +65,7 @@ export const NAV_GROUPS = [
         ]
       },
       {
-        to: "/ksa-pedagogy", label: "กลยุทธ์รายข้อ KSA", desc: "วิธีสอน วิธีประเมิน และรายวิชาแกนครบ 54 รหัส",
+        to: "/ksec-pedagogy", label: "กลยุทธ์รายข้อ KSEC", desc: "วิธีสอน วิธีประเมิน และรายวิชาแกนครบ 61 รหัส",
         sections: [
           { id: "table",   label: "ตารางกลยุทธ์และการประเมิน" },
           { id: "anchors", label: "รายวิชาแกนที่ถูกอ้างมากสุด" }

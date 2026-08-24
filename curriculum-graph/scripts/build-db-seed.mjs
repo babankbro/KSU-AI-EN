@@ -7,9 +7,9 @@ import { fileURLToPath } from "node:url";
 import * as D from "../src/data.js";
 import * as O from "../src/obeData.js";
 import * as C from "../src/cloData.js";
-import * as K from "../src/ksaData.js";
-import * as CK from "../src/courseKsaData.js";
-import * as P from "../src/ksaPedagogyData.js";
+import * as K from "../src/ksecData.js";
+import * as CK from "../src/courseKsecData.js";
+import * as P from "../src/ksecPedagogyData.js";
 import * as T from "../src/teachingData.js";
 import * as F from "../src/facultyData.js";
 import * as R from "../src/refData.js";
@@ -162,29 +162,30 @@ insert("skill_track", ["skill_id", "track_id", "role"],
     .filter(([, mark]) => mark === "●" || mark === "○")
     .map(([t, mark]) => [q(s.id), q(t), q(mark === "●" ? "core" : "support")])));
 
-const ksaAll = [
+const ksecAll = [
   ...K.KNOWLEDGE.map(r => ({ ...r, dim: "K" })),
-  ...K.SKILLS_KSA.map(r => ({ ...r, dim: "S" })),
-  ...K.ATTITUDES.map(r => ({ ...r, dim: "A" }))
+  ...K.SKILLS_KSEC.map(r => ({ ...r, dim: "S" })),
+  ...K.ETHICS.map(r => ({ ...r, dim: "E" })),
+  ...K.CHARACTER.map(r => ({ ...r, dim: "C" }))
 ];
 insert("ksa_item",
   ["id", "dimension", "seq", "name_th", "scope", "covers", "evidence", "target_depth", "skill_kind"],
-  ksaAll.map(r => [q(r.id), q(r.dim), n(+r.id.slice(1)), q(r.name), q(r.scope), q(r.covers),
-    q(r.evidence), q((r.level || "").match(/L[1-4]/)?.[0]), q(r.type)]));
+  ksecAll.map(r => [q(r.id), q(r.dim), n(+r.id.slice(1)), q(r.name), q(r.scope), q(r.covers),
+    q(r.evidence), q((r.level || "").match(/B[1-6]/)?.[0]), q(r.type)]));
 
 insert("ksa_can_do", ["ksa_id", "seq", "statement"],
-  ksaAll.flatMap(r => (r.can || []).map((c, i) => [q(r.id), n(i + 1), q(c)])));
+  ksecAll.flatMap(r => (r.can || []).map((c, i) => [q(r.id), n(i + 1), q(c)])));
 
 insert("ksa_skill", ["ksa_id", "skill_id"],
-  ksaAll.flatMap(r => [...new Set((r.skills || []))].map(s => [q(r.id), q(s)])));
+  ksecAll.flatMap(r => [...new Set((r.skills || []))].map(s => [q(r.id), q(s)])));
 
 insert("ksa_plo", ["ksa_id", "plo_id"],
-  ksaAll.flatMap(r => [...new Set((r.plo || []))].map(p => [q(r.id), n(p)])));
+  ksecAll.flatMap(r => [...new Set((r.plo || []))].map(p => [q(r.id), n(p)])));
 
 /* CLO — ใช้เลขลำดับที่กำหนดเองเพื่อให้ตารางเชื่อมอ้างได้ */
 const cloId = new Map();
 let seq = 0;
-const cloRows = [], cloPlo = [], cloYlo = [], cloSet = [], cloKsa = [];
+const cloRows = [], cloPlo = [], cloYlo = [], cloSet = [], cloKsec = [];
 
 /* รหัสวิชาบางตัวถูกใช้กับสองรายวิชาที่ต่างกัน (ข้อบกพร่องในข้อมูลต้นทาง)
    ฐานข้อมูลบังคับ UNIQUE(course_code, no) จึงต้องเก็บรายการแรกและเตือนไว้ */
@@ -207,8 +208,8 @@ C.CLO_LIST.filter(e => known.has(e.c)).forEach(e => {
     (clo.ylo || []).forEach(y => cloYlo.push([n(id), q(y)]));
     [...new Set(clo.sets || [])].forEach(s =>
       cloSet.push([n(id), q(s), b(s === clo.primarySet)]));
-    const k = CK.cloKsa(e.c, clo.n);
-    if (k) [...k.K, ...k.S, ...k.A].forEach(code => cloKsa.push([n(id), q(code), q("stated")]));
+    const k = CK.cloKsec(e.c, clo.n);
+    if (k) [...k.K, ...k.S, ...k.E, ...k.C].forEach(code => cloKsec.push([n(id), q(code), q("stated")]));
   });
 });
 insert("clo", ["id", "course_code", "no", "statement", "evidence", "primary_skill_set"], cloRows);
@@ -219,14 +220,14 @@ insert("clo_skill_set", ["clo_id", "skill_set_id", "is_primary"], cloSet);
 insert("course_plo", ["course_code", "plo_id", "role"],
   courses.flatMap(c => (c.p || []).map(p => [q(c.c), n(p), q("host")])));
 
-insert("clo_ksa", ["clo_id", "ksa_id", "source"], cloKsa);
+insert("clo_ksa", ["clo_id", "ksa_id", "source"], cloKsec);
 
 insert("course_ksa", ["course_code", "ksa_id", "source"],
-  Object.values(CK.COURSE_KSA).filter(c => known.has(c.code)).flatMap(c =>
-    [...c.K, ...c.S, ...c.A].map(k => [q(c.code), q(k), q(c.derivedFrom ? "derived" : "stated")])));
+  Object.values(CK.COURSE_KSEC).filter(c => known.has(c.code)).flatMap(c =>
+    [...c.K, ...c.S, ...c.E, ...c.C].map(k => [q(c.code), q(k), q(c.derivedFrom ? "derived" : "stated")])));
 
 insert("course_skill_set", ["course_code", "skill_set_id"],
-  Object.values(CK.COURSE_KSA).filter(c => known.has(c.code))
+  Object.values(CK.COURSE_KSEC).filter(c => known.has(c.code))
     .flatMap(c => [...new Set((c.aisk || []))].map(a => [q(c.code), q(a)])));
 
 /* ── 5. ที่มาของหลักสูตร ── */
@@ -333,11 +334,11 @@ insert("plo_assessment", ["plo_id", "method", "evidence", "mastery_point", "asse
 
 insert("ksa_pedagogy",
   ["ksa_id", "teaching_strategy", "how", "assessment_method", "artifact", "is_tailored", "source"],
-  P.KSA_PEDAGOGY.map(r => [q(r.id), q(r.teach), q(r.how), q(r.assess), q(r.artifact),
+  P.KSEC_PEDAGOGY.map(r => [q(r.id), q(r.teach), q(r.how), q(r.assess), q(r.artifact),
     b(r.tailored), q("authored")]));
 
 insert("ksa_anchor_course", ["ksa_id", "course_code", "rank_no", "source"],
-  P.KSA_PEDAGOGY.flatMap(r => r.anchors
+  P.KSEC_PEDAGOGY.flatMap(r => r.anchors
     .filter(a => known.has(a.c))
     .map((a, i) => [q(r.id), q(a.c), n(i + 1), q("derived")])));
 
@@ -349,4 +350,4 @@ insert("reference_doc", ["category", "name", "organisation", "url", "used_for"],
 
 out.push("COMMIT;");
 fs.writeFileSync(OUT, out.join("\n"), "utf8");
-console.log(`seed.sql: ${rowCount} แถว · ${courses.length} รายวิชา · ${cloRows.length} CLO · ${ksaAll.length} KSA`);
+console.log(`seed.sql: ${rowCount} แถว · ${courses.length} รายวิชา · ${cloRows.length} CLO · ${ksecAll.length} KSA`);

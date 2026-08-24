@@ -9,7 +9,7 @@ import {
 } from "../obeData.js";
 import Alluvial from "../Alluvial.jsx";
 import { VIEWS } from "../alluvialViews.js";
-import { KNOWLEDGE, SKILLS_KSA, ATTITUDES, SKILL_TO_KSA, KSA_BY_ID } from "../ksaData.js";
+import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER, BEHAVIOUR, SKILL_TO_KSEC, KSEC_BY_ID } from "../ksecData.js";
 
 
 const STEPS = [
@@ -20,7 +20,7 @@ const STEPS = [
   { n: 5, id: "set",   label: "ชุดทักษะ",             en: "Skill Sets",   tag: "AISK01–09" },
   { n: 6, id: "plo",   label: "ผลลัพธ์หลักสูตร",       en: "PLO",          tag: "PLO1–7" },
   { n: 7, id: "ylo",   label: "ผลลัพธ์รายชั้นปี",      en: "YLO",          tag: "YLO1–4" },
-  { n: 8, id: "clo",   label: "ผลลัพธ์รายวิชา + KSA", en: "CLO · KSA",    tag: "K–S–A" }
+  { n: 8, id: "clo",   label: "ผลลัพธ์รายวิชา + KSEC", en: "CLO · KSEC",  tag: "K–S–E–C" }
 ];
 
 const jump = id => e => {
@@ -97,9 +97,9 @@ export default function Obe() {
   const [need, setNeed] = useState(null);   // N id ที่เลือก
   const [openSet, setOpenSet] = useState(null);
   const [openSkill, setOpenSkill] = useState(null);
-  const [ksaPlo, setKsaPlo] = useState(1);
+  const [ksecPlo, setKsaPlo] = useState(1);
   const [alignFam, setAlignFam] = useState("HS");   // ตระกูลทักษะในตาราง Alignment
-  const [ksaDim, setKsaDim] = useState("K");        // มิติในตารางรายละเอียด KSA
+  const [ksecDim, setKsecDim] = useState("K");        // มิติในตารางรายละเอียด KSEC
   const [view, setView] = useState(VIEWS[0].id);
 
   const activeSets = need ? NEEDS.find(n => n.id === need)?.sets || [] : [];
@@ -407,11 +407,11 @@ export default function Obe() {
           </div>
         </Section>
 
-        {/* ─── 8 · CLO + KSA ─── */}
-        <Section id="clo" title="⑧ ผลลัพธ์รายวิชา (CLO) และ KSA รายข้อ" sub="K1–K26 · S1–S20 · A1–A8 — หน่วยที่ประเมินได้จริง ซึ่ง CLO ให้คะแนนโดยตรง">
+        {/* ─── 8 · CLO + KSEC ─── */}
+        <Section id="clo" title="⑧ ผลลัพธ์รายวิชา (CLO) และ KSEC รายข้อ" sub="K1–K26 · S1–S20 · E1–E7 · C1–C8 — หน่วยที่ประเมินได้จริง ซึ่ง CLO ให้คะแนนโดยตรง">
           <div className="ksa-tabs">
             {[1, 2, 3, 4, 5, 6, 7].map(n => (
-              <button key={n} className={`ksa-tab${ksaPlo === n ? " on" : ""}`}
+              <button key={n} className={`ksa-tab${ksecPlo === n ? " on" : ""}`}
                 style={{ "--pc": `var(--plo${n})` }} onClick={() => setKsaPlo(n)}>
                 PLO{n}
               </button>
@@ -419,19 +419,19 @@ export default function Obe() {
           </div>
 
           {(() => {
-            const p = PLO_DETAIL[ksaPlo];
-            const rel = COURSES.filter(c => c.p && c.p.includes(ksaPlo));
+            const p = PLO_DETAIL[ksecPlo];
+            const rel = COURSES.filter(c => c.p && c.p.includes(ksecPlo));
             return (
-              <div className="ksa-panel" style={{ "--pc": `var(--plo${ksaPlo})` }}>
+              <div className="ksa-panel" style={{ "--pc": `var(--plo${ksecPlo})` }}>
                 <div className="ksa-head">
-                  <b>PLO{ksaPlo} · {p?.title || PLO_NAME[ksaPlo]}</b>
-                  <Link to={`/plo/${ksaPlo}`} className="ksa-link">ดูรายละเอียด PLO →</Link>
+                  <b>PLO{ksecPlo} · {p?.title || PLO_NAME[ksecPlo]}</b>
+                  <Link to={`/plo/${ksecPlo}`} className="ksa-link">ดูรายละเอียด PLO →</Link>
                 </div>
                 <div className="ksa-cols">
                   <div className="ksa-box k">
                     <h4>🧠 Knowledge — ความรู้ (K)</h4>
                     <ul>
-                      {KNOWLEDGE.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                      {KNOWLEDGE.filter(r => r.plo.includes(ksecPlo)).map(r => (
                         <li key={r.id}>
                           <span className="obe-code sm">{r.id}</span> {r.name}
                           {r.scope && <span className="ksa-scope">{r.scope}</span>}
@@ -442,7 +442,7 @@ export default function Obe() {
                   <div className="ksa-box s">
                     <h4>🛠️ Skill — ทักษะที่ทำได้ (S)</h4>
                     <ul>
-                      {SKILLS_KSA.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                      {SKILLS_KSEC.filter(r => r.plo.includes(ksecPlo)).map(r => (
                         <li key={r.id}>
                           <span className="obe-code sm">{r.id}</span> {r.name}
                           {r.level && <b className="lv"> {r.level}</b>}
@@ -460,9 +460,9 @@ export default function Obe() {
                     </ul>
                   </div>
                   <div className="ksa-box a">
-                    <h4>❤️ Attitude — ทัศนคติ (A)</h4>
+                    <h4>⚖️❤️ Ethics + Character — จริยธรรมและลักษณะบุคคล (E · C)</h4>
                     <ul>
-                      {ATTITUDES.filter(r => r.plo.includes(ksaPlo)).map(r => (
+                      {BEHAVIOUR.filter(r => r.plo.includes(ksecPlo)).map(r => (
                         <li key={r.id}>
                           <span className="obe-code sm">{r.id}</span> {r.name}
                           {r.covers && <span className="ksa-scope">{r.covers}</span>}
@@ -473,7 +473,7 @@ export default function Obe() {
                   </div>
                 </div>
                 <div className="ksa-courses">
-                  <span className="lab">รายวิชาที่รับผิดชอบ PLO{ksaPlo} ({rel.length} วิชา):</span>
+                  <span className="lab">รายวิชาที่รับผิดชอบ PLO{ksecPlo} ({rel.length} วิชา):</span>
                   <div className="cwrap">
                     {rel.slice(0, 40).map(c => (
                       <Link to={`/courses/${c.c}`} className="cchip" key={c.c} title={c.t}>{c.c}</Link>
@@ -488,22 +488,23 @@ export default function Obe() {
           <div className="ksadetail-wrap">
             <div className="align-head">
               <h3 className="skill-h">
-                รายละเอียด KSA ทั้งชุด
+                รายละเอียด KSEC ทั้งชุด
                 <small>นิยามรายข้อ ขอบเขต และหลักฐานที่ยอมรับได้ — ฉบับเดียวกับสมุดรหัสใน vault</small>
               </h3>
               <div className="align-tabs">
                 {[
                   ["K", "🧠 Knowledge", KNOWLEDGE.length],
-                  ["S", "🛠️ Skill", SKILLS_KSA.length],
-                  ["A", "❤️ Attitude", ATTITUDES.length]
+                  ["S", "🛠️ Skill", SKILLS_KSEC.length],
+                  ["E", "⚖️ Ethics", ETHICS.length],
+                  ["C", "❤️ Character", CHARACTER.length]
                 ].map(([d, label, n]) => (
-                  <button key={d} className={`align-tab dim-${d}${ksaDim === d ? " on" : ""}`}
-                    onClick={() => setKsaDim(d)}>{label} <b>{n}</b></button>
+                  <button key={d} className={`align-tab dim-${d}${ksecDim === d ? " on" : ""}`}
+                    onClick={() => setKsecDim(d)}>{label} <b>{n}</b></button>
                 ))}
               </div>
             </div>
 
-            {ksaDim === "K" && (
+            {ksecDim === "K" && (
               <div className="obe-tablewrap">
                 <table className="obe-table ksadetail">
                   <thead><tr><th>รหัส</th><th>ความรู้</th><th>ขอบเขต</th><th>ทักษะย่อย</th><th>AISK</th><th>PLO</th></tr></thead>
@@ -523,12 +524,12 @@ export default function Obe() {
               </div>
             )}
 
-            {ksaDim === "S" && (
+            {ksecDim === "S" && (
               <div className="obe-tablewrap">
                 <table className="obe-table ksadetail">
                   <thead><tr><th>รหัส</th><th>ทักษะที่ต้องทำได้</th><th>ทำอะไรได้บ้าง</th><th>ทักษะย่อย</th><th>ระดับ</th><th>AISK</th><th>PLO</th></tr></thead>
                   <tbody>
-                    {SKILLS_KSA.map(r => (
+                    {SKILLS_KSEC.map(r => (
                       <tr key={r.id}>
                         <td><span className="obe-code">{r.id}</span></td>
                         <td><b>{r.name}</b><span className="ksa-type">{r.type}</span></td>
@@ -549,12 +550,12 @@ export default function Obe() {
               </div>
             )}
 
-            {ksaDim === "A" && (
+            {ksecDim === "A" && (
               <div className="obe-tablewrap">
                 <table className="obe-table ksadetail">
-                  <thead><tr><th>รหัส</th><th>ทัศนคติ</th><th>ครอบคลุมพฤติกรรม</th><th>ทักษะย่อย</th><th>PLO</th><th>หลักฐานที่ยอมรับได้</th></tr></thead>
+                  <thead><tr><th>รหัส</th><th>จริยธรรม / ลักษณะบุคคล</th><th>ครอบคลุมพฤติกรรม</th><th>ทักษะย่อย</th><th>PLO</th><th>หลักฐานที่ยอมรับได้</th></tr></thead>
                   <tbody>
-                    {ATTITUDES.map(r => (
+                    {BEHAVIOUR.map(r => (
                       <tr key={r.id}>
                         <td><span className="obe-code">{r.id}</span></td>
                         <td><b>{r.name}</b></td>
@@ -569,9 +570,9 @@ export default function Obe() {
               </div>
             )}
             <p className="obe-note">
-              {ksaDim === "A"
-                ? "ห้ามให้คะแนนทัศนคติจากความประทับใจ — ต้องมีหลักฐานตามคอลัมน์ขวาสุดเท่านั้น"
-                : ksaDim === "S"
+              {ksecDim === "A"
+                ? "ห้ามให้คะแนนจริยธรรมหรือลักษณะบุคคลจากความประทับใจ — ต้องมีหลักฐานตามคอลัมน์ขวาสุดเท่านั้น"
+                : ksecDim === "S"
                   ? "กดที่จำนวนข้อในคอลัมน์ “ทำอะไรได้บ้าง” เพื่อดูพฤติกรรมย่อยที่ใช้เป็นเกณฑ์ผ่าน"
                   : "ขอบเขตคือสิ่งที่ใช้กำหนดหัวข้อข้อสอบและแบบฝึกหัดของรายวิชาที่รับผิดชอบ"}
             </p>
@@ -580,7 +581,7 @@ export default function Obe() {
           <div className="align-wrap">
             <div className="align-head">
               <h3 className="skill-h">
-                ตาราง Alignment — ทักษะ → KSA
+                ตาราง Alignment — ทักษะ → KSEC
                 <small>อ่านจากฝั่งทักษะเข้าหาหน่วยที่ประเมินได้ · ทั้ง 36 รายการมี K และ S รองรับครบ</small>
               </h3>
               <div className="align-tabs">
@@ -592,26 +593,26 @@ export default function Obe() {
             </div>
             <p className="obe-note">
               ทักษะ HS/SS/EF เป็น <b>ชั้นหลักฐานตลาดแรงงาน</b> ส่วน K/S/A เป็น <b>ชั้นที่ให้คะแนนได้จริง</b> —
-              CLO อ้าง KSA เท่านั้น ไม่อ้างทักษะโดยตรง เพื่อให้ทุกการอ้างมีเกณฑ์ประเมินรองรับ
+              CLO อ้าง KSEC เท่านั้น ไม่อ้างทักษะโดยตรง เพื่อให้ทุกการอ้างมีเกณฑ์ประเมินรองรับ
             </p>
             <div className="obe-tablewrap">
               <table className="obe-table align-table">
                 <thead>
                   <tr>
                     <th>ทักษะ</th><th>ชื่อ</th>
-                    <th>🧠 Knowledge</th><th>🛠️ Skill</th><th>❤️ Attitude</th>
+                    <th>🧠 Knowledge</th><th>🛠️ Skill</th><th>⚖️ Ethics</th><th>❤️ Character</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.keys(SKILL_TO_KSA)
+                  {Object.keys(SKILL_TO_KSEC)
                     .filter(id => id.startsWith(alignFam))
                     .sort((a, b) => +a.replace(/\D/g, "") - +b.replace(/\D/g, ""))
                     .map(id => {
-                      const r = SKILL_TO_KSA[id];
+                      const r = SKILL_TO_KSEC[id];
                       const sk = skillById(id);
                       const chips = list => list.length
                         ? list.map(c => (
-                            <span className="obe-code sm ksa-chip" key={c} title={KSA_BY_ID[c]?.name || ""}>{c}</span>
+                            <span className="obe-code sm ksa-chip" key={c} title={KSEC_BY_ID[c]?.name || ""}>{c}</span>
                           ))
                         : <span className="align-none">—</span>;
                       return (
@@ -620,7 +621,8 @@ export default function Obe() {
                           <td className="small">{sk?.name || ""}</td>
                           <td>{chips(r.K)}</td>
                           <td>{chips(r.S)}</td>
-                          <td>{chips(r.A)}</td>
+                          <td>{chips(r.E)}</td>
+                          <td>{chips(r.C)}</td>
                         </tr>
                       );
                     })}
@@ -629,7 +631,7 @@ export default function Obe() {
             </div>
             <p className="obe-note align-foot">
               <b>ทัศนคติไม่ครอบคลุมทุกทักษะโดยตั้งใจ</b> — ผูกเฉพาะทักษะที่มีพฤติกรรมสังเกตได้และมีหลักฐานรองรับ
-              แต่ <b>ชุดทักษะ AISK01–09 ทุกชุดมี Attitude อย่างน้อย 1 ข้อ</b> เพื่อให้ Skill Transcript ทุกใบมีมิติพฤติกรรมให้ประเมิน
+              แต่ <b>ชุดทักษะ AISK01–09 ทุกชุดมีจริยธรรมหรือลักษณะบุคคลอย่างน้อย 1 ข้อ</b> เพื่อให้ Skill Transcript ทุกใบมีมิติพฤติกรรมให้ประเมิน
             </p>
           </div>
         </Section>

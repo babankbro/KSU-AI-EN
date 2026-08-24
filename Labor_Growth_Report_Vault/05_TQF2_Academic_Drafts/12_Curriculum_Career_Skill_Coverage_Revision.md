@@ -242,7 +242,7 @@
 
 | Basket | จำนวน | วัตถุประสงค์ |
 |---|---:|---|
-| A: Career Depth ใน Track ตนเอง | 3 วิชา | ทำให้ถึง L4 ในอาชีพเป้าหมาย |
+| A: Career Depth ใน Track ตนเอง | 3 วิชา | ทำให้ถึง B6 ในอาชีพเป้าหมาย |
 | B: Cross-track/System Integration | 1 วิชา | ป้องกันความเชี่ยวชาญแยกส่วน |
 | C: Emerging/Research/Venture/Governance | 1 วิชา | รองรับ C09/C10 และเทคโนโลยีใหม่ |
 
@@ -282,7 +282,7 @@
 6. จัดทำ prerequisite map และตรวจภาระหน่วยกิตรายภาค
 7. กำหนดอาจารย์/ห้องปฏิบัติการเจ้าภาพของ Track-required ทุกวิชา
 8. ทำ Curriculum Mapping ใหม่หลังคณะกรรมการอนุมัติรายชื่อวิชา
-9. กำหนด Skill Transcript rubric โดย HS16–HS20 ถึง L4 ตาม Track และ SS9/SS10 เป็นหลักฐานบังคับทุกคน
+9. กำหนด Skill Transcript rubric โดย HS16–HS20 ถึง B6 ตาม Track และ SS9/SS10 เป็นหลักฐานบังคับทุกคน
 
 ## 11. ลำดับการดำเนินงานที่แนะนำ
 

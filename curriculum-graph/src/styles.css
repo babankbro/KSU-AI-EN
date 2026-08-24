@@ -737,6 +737,7 @@ a.gcard-h:hover .gttl b{text-decoration:underline;text-underline-offset:2px}
 .kp-tab.k.on{background:#2f6fb0;border-color:#2f6fb0;color:#fff}
 .kp-tab.s.on{background:#2f9e6b;border-color:#2f9e6b;color:#fff}
 .kp-tab.a.on{background:#c1466b;border-color:#c1466b;color:#fff}
+.kp-tab.c.on{background:#8a5cd1;border-color:#8a5cd1;color:#fff}
 .kp-tab.on b{opacity:.85}
 .kp-search{margin-left:auto;min-width:15rem;flex:0 1 20rem;border:1px solid var(--line);
   border-radius:8px;padding:.35rem .65rem;font:inherit;font-size:.85rem;background:var(--card);color:inherit}
@@ -760,3 +761,8 @@ a.gcard-h:hover .gttl b{text-decoration:underline;text-underline-offset:2px}
 .kp-anchort{font-size:.8rem;opacity:.75;margin:.2rem 0 .45rem;line-height:1.35}
 .kp-anchorids{display:flex;flex-wrap:wrap;gap:.2rem}
 @media (max-width:900px){ .kp-search{margin-left:0;flex-basis:100%} }
+
+/* หน่วยกิต — คำอธิบายรูปแบบ X(บรรยาย-ปฏิบัติการ-ศึกษาด้วยตนเอง) */
+.cr-hours{display:block;font-weight:400;font-size:.78rem;color:var(--mut);margin-top:.15rem;line-height:1.5}
+.cr-note{margin-bottom:.9rem}
+.cr-note code{font-size:.85em}

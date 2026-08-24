@@ -51,7 +51,7 @@ Unmanned Aerial Vehicles for Smart Agricultural Engineering
 กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม
 Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; field testing with performance evaluation
 
-EN-714-12016 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ 1(0-3-1)  
+EN-714-12016 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ 1(0-3-2)  
 Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing  
 การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ
 Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog input and output signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; handover documentation

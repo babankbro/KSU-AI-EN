@@ -305,4 +305,4 @@
 
 ---
 
-[[00_Revision_Home|← หน้าหลักการปรับปรุงเล่ม]] | [[18_Section1_to_3_Audit|ผลตรวจสอบหมวดที่ 1–3]] | [[15_Section4_5_Curriculum_Mapping|Curriculum Mapping ฉบับใช้งาน]] | [[../05_TQF2_Academic_Drafts/18_KSA_Codebook|สมุดรหัส KSA]]
+[[00_Revision_Home|← หน้าหลักการปรับปรุงเล่ม]] | [[18_Section1_to_3_Audit|ผลตรวจสอบหมวดที่ 1–3]] | [[15_Section4_5_Curriculum_Mapping|Curriculum Mapping ฉบับใช้งาน]] | [[../05_TQF2_Academic_Drafts/18_KSEC_Codebook|สมุดรหัส KSA]]

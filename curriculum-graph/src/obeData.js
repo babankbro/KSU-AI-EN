@@ -1,4 +1,4 @@
-// ห่วงโซ่การวิเคราะห์ OBE — Stakeholder → Needs → Skills → Skill Set → PLO → YLO → CLO → KSA
+// ห่วงโซ่การวิเคราะห์ OBE — Stakeholder → Needs → Skills → Skill Set → PLO → YLO → CLO → KSEC
 // ซิงก์จาก Vault: 03_OBE_PLO_Design_2570/{01_Stakeholder_Needs, 02_Graduate_Attributes, 03_Target_Skills, 04_PLOs_7_OBE}
 //                05_TQF2_Academic_Drafts/{09_Yearly_Learning_Outcomes, 10_CLO_Mapping, 11_Skill_Set_Matrix_and_KSA}
 // และเล่มหลักสูตรฉบับ OBE v4 (พันธกิจ/ปรัชญา/GA↔WA↔ABET)
@@ -327,11 +327,15 @@ export const SKILL_CORE_RULE =
   "เกณฑ์เข้าแกนบังคับ: ทักษะต้องผ่าน 3 ใน 4 เงื่อนไข — (ก) ใช้กว้างข้ามหลาย Track/อาชีพ (ข) จำเป็นต่อการสร้างระบบใช้งานจริงตั้งแต่ข้อมูลถึง deployment " +
   "(ค) มีอุปสงค์ตลาดสูงต่อเนื่อง (ง) รองรับ PLO/ABET SO โดยตรง · ทักษะที่หลักฐานแรงแต่ขอบเขตแคบ แตกหน่อจากทักษะแกน หรือเพิ่งอุบัติ จัดเป็นส่วนขยาย";
 
+/* ระดับตาม Bloom's Revised Taxonomy (Anderson & Krathwohl 2001)
+   K ประเมินที่ B1–B2 · S ประเมินที่ B3–B6 · E และ C อยู่ในจิตพิสัย จึงไม่ใช้บันไดนี้ */
 export const LEVELS = [
-  { id: "L1", label: "Understand", th: "เข้าใจ" },
-  { id: "L2", label: "Apply", th: "ประยุกต์ใช้" },
-  { id: "L3", label: "Integrate", th: "บูรณาการ" },
-  { id: "L4", label: "Deploy & Evaluate", th: "นำไปใช้และประเมิน" }
+  { id: "B1", label: "Remember", th: "จำ" },
+  { id: "B2", label: "Understand", th: "เข้าใจ" },
+  { id: "B3", label: "Apply", th: "ประยุกต์ใช้" },
+  { id: "B4", label: "Analyze", th: "วิเคราะห์" },
+  { id: "B5", label: "Evaluate", th: "ประเมินค่า" },
+  { id: "B6", label: "Create", th: "สร้างสรรค์" }
 ];
 
 /* ─── ขั้นที่ 4 · ชุดทักษะ EN-AISK01–09 ───
@@ -489,8 +493,8 @@ export const SKILL_SETS = [
     courses: ["EN-714-11009","EN-714-11001","EN-714-11010","EN-714-12007","EN-714-12004","EN-714-12008","EN-714-12009","EN-714-12010","EN-714-12013","EN-714-12014","EN-714-12018","EN-714-12019","EN-714-17001","EN-714-17002"] }
 ];
 
-/* ─── ขั้นที่ 5 · KSA ราย PLO ─── */
-export const KSA = {
+/* ─── ขั้นที่ 5 · ทักษะที่แต่ละ PLO กำหนด ─── */
+export const PLO_SKILLS = {
   1: { k: "คณิตศาสตร์วิศวกรรม (พีชคณิตเชิงเส้น · แคลคูลัส · ความน่าจะเป็น) · สถิติและการอนุมาน · Optimization/Gradient Descent · ฟิสิกส์วิศวกรรม (กลศาสตร์ · เทอร์โมฟลูอิด · วัสดุ) · การนิยามปัญหา · Engineering Modeling · Trade-off Analysis",
        s: [["HS1","L3"],["HS13","L2–L3"],["HS16","L3"],["HS17","L3"],["HS18","L2–L3"],["HS19","L3"],["SS1","L3"],["SS2","L2–L3"]], sExtra: "ฐานวิศวกรรม EF2–EF4 → AISK02/AISK03",
        a: "ยึดหลักฐานและเหตุผลเชิงปริมาณ · ความละเอียดรอบคอบเชิงวิศวกรรม (rigor) · ไม่ด่วนสรุป ตรวจสอบสมมติฐานก่อนตัดสินใจ" },
@@ -532,8 +536,8 @@ export const REFS = [
   { step: 5, title: "ชุดทักษะและ KSA (EN-AISK01–09)", file: "05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md" },
   { step: 6, title: "ผลลัพธ์ระดับหลักสูตร (PLO1–7)", file: "03_OBE_PLO_Design_2570/04_PLOs_7_OBE.md" },
   { step: 7, title: "ผลลัพธ์รายชั้นปี (YLO1–4 · Sub-YLO 16 ข้อ)", file: "05_TQF2_Academic_Drafts/09_Yearly_Learning_Outcomes.md" },
-  { step: 8, title: "ผลลัพธ์รายวิชา (CLO) + KSA รายวิชา", file: "05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md" },
-  { step: 8, title: "สมุดรหัส KSA (K1–K26 · S1–S20 · A1–A8) และตาราง Alignment", file: "05_TQF2_Academic_Drafts/18_KSA_Codebook.md" },
+  { step: 8, title: "ผลลัพธ์รายวิชา (CLO) + KSEC รายวิชา", file: "05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md" },
+  { step: 8, title: "สมุดรหัส KSEC (K1–K26 · S1–S20 · E1–E7 · C1–C8) และตาราง Alignment", file: "05_TQF2_Academic_Drafts/18_KSEC_Codebook.md" },
   { step: 9, title: "Curriculum Mapping รายวิชา × PLO", file: "03_OBE_PLO_Design_2570/07_Curriculum_PLO_Mapping.md" },
   { step: 10, title: "คำอธิบายรายวิชา (ไทย–อังกฤษ)", file: "04_Course_Descriptions_2570/" }
 ];

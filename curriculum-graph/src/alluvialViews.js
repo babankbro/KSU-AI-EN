@@ -1,10 +1,10 @@
 // สร้างชุดข้อมูล alluvial 5 มุมมองจาก obeData + data
 import {
   STAKEHOLDERS, PRIO_INFO, NEEDS, NEED_LEVEL, HARD_SKILLS, SOFT_SKILLS,
-  ENGINEERING_FOUNDATIONS, GROUPS, SKILL_SETS, KSA
+  ENGINEERING_FOUNDATIONS, GROUPS, SKILL_SETS, PLO_SKILLS
 } from "./obeData.js";
 import { COURSES, GROUP_NAME, GROUP_COLOR, PLO_COLOR, PLO_NAME } from "./data.js";
-import { KNOWLEDGE, SKILLS_KSA, ATTITUDES } from "./ksaData.js";
+import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER } from "./ksecData.js";
 
 const setColor = id => GROUPS[SKILL_SETS.find(s => s.id === id)?.g]?.color || "#42618c";
 const allSkills = [...HARD_SKILLS, ...SOFT_SKILLS, ...ENGINEERING_FOUNDATIONS];
@@ -109,13 +109,14 @@ function viewTargetSetSub() {
   };
 }
 
-/* ④ PLO → กลุ่มรายวิชา (CLO) → มิติ KSA */
+/* ④ PLO → กลุ่มรายวิชา (CLO) → มิติ KSEC */
 function viewPloCloKsa() {
   const nodes = [], links = [];
   const KDIM = [
     { k: "K", label: "🧠 Knowledge — ความรู้", color: "#2f6fb0" },
     { k: "S", label: "🛠️ Skill — ทักษะ", color: "#2f9e6b" },
-    { k: "A", label: "❤️ Attitude — ทัศนคติ", color: "#c1466b" }
+    { k: "E", label: "⚖️ Ethics — จริยธรรม", color: "#c1466b" },
+    { k: "C", label: "❤️ Character — ลักษณะบุคคล", color: "#8a5cd1" }
   ];
   [1, 2, 3, 4, 5, 6, 7].forEach(p => nodes.push({
     id: `p:${p}`, col: "plo", label: `PLO${p}`, sub: PLO_NAME[p], color: PLO_COLOR[p]
@@ -131,7 +132,7 @@ function viewPloCloKsa() {
     COURSES.filter(c => c.p?.includes(p)).forEach(c => { cnt[c.g] = (cnt[c.g] || 0) + 1; });
     Object.entries(cnt).forEach(([g, v]) => links.push({ s: `p:${p}`, t: `g:${g}`, v }));
   });
-  // แต่ละกลุ่มรายวิชากระจายสู่ K/S/A ตามน้ำหนักที่ระบุใน KSA ของ PLO ที่เกี่ยวข้อง
+  // แต่ละกลุ่มรายวิชากระจายสู่ K/S/E/C ตามน้ำหนักที่ระบุใน KSEC ของ PLO ที่เกี่ยวข้อง
   grps.forEach(g => {
     const n = COURSES.filter(c => c.g === g && c.p?.length).length || 1;
     links.push({ s: `g:${g}`, t: "k:K", v: n });
@@ -143,12 +144,12 @@ function viewPloCloKsa() {
     columns: [
       { key: "plo", label: "① PLO1–7" },
       { key: "cg", label: "② กลุ่มรายวิชา (CLO)" },
-      { key: "ksa", label: "③ มิติ K–S–A" }
+      { key: "ksa", label: "③ มิติ K–S–E–C" }
     ], nodes, links, height: 640
   };
 }
 
-/* ⑤ ทักษะแกน → ชุดทักษะ → PLO → มิติ KSA */
+/* ⑤ ทักษะแกน → ชุดทักษะ → PLO → ทักษะที่ PLO กำหนด */
 function viewSkillKsa() {
   const nodes = [], links = [];
   allSkills.forEach(s => nodes.push({
@@ -167,14 +168,14 @@ function viewSkillKsa() {
   }));
   SKILL_SETS.forEach(s => s.plo.forEach(p => links.push({ s: `set:${s.id}`, t: `p:${p}`, v: 1 })));
 
-  // PLO → ทักษะที่ KSA ระบุ (ปลายทางแสดงจำนวนทักษะที่ PLO นั้นกำหนด)
+  // PLO → ทักษะที่ตาราง PLO ระบุ (ปลายทางแสดงจำนวนทักษะที่ PLO นั้นกำหนด)
   [1, 2, 3, 4, 5, 6, 7].forEach(p => {
     const id = `ks:${p}`;
     nodes.push({
-      id, col: "ksa", label: `KSA ของ PLO${p}`,
-      sub: `${KSA[p].s.length} ทักษะ`, color: PLO_COLOR[p]
+      id, col: "ksa", label: `ทักษะของ PLO${p}`,
+      sub: `${PLO_SKILLS[p].s.length} ทักษะ`, color: PLO_COLOR[p]
     });
-    links.push({ s: `p:${p}`, t: id, v: KSA[p].s.length });
+    links.push({ s: `p:${p}`, t: id, v: PLO_SKILLS[p].s.length });
   });
 
   return {
@@ -182,19 +183,20 @@ function viewSkillKsa() {
       { key: "sk", label: "① ทักษะเป้าหมาย/ฐานวิศวกรรม (H/S/EF)" },
       { key: "set", label: "② ชุดทักษะ" },
       { key: "plo", label: "③ PLO" },
-      { key: "ksa", label: "④ KSA รายละเอียด" }
+      { key: "ksa", label: "④ ทักษะรายละเอียด" }
     ], nodes, links, height: 900
   };
 }
 
-/* ⑥ PLO → มิติ K–S–A → รหัส KSA รายข้อ
+/* ⑥ PLO → มิติ K–S–E–C → รหัส KSEC รายข้อ
    ใช้ความสัมพันธ์จริงจากสมุดรหัส ไม่ใช่น้ำหนักประมาณ — เส้นหนา = ข้อนั้นถูกใช้ในหลาย PLO */
 function viewPloKsaItems() {
   const nodes = [], links = [];
   const DIM = [
     { k: "K", label: "🧠 Knowledge", sub: "K1–K26 ความรู้", color: "#2f6fb0", list: KNOWLEDGE },
-    { k: "S", label: "🛠️ Skill", sub: "S1–S20 ทักษะที่ทำได้", color: "#2f9e6b", list: SKILLS_KSA },
-    { k: "A", label: "❤️ Attitude", sub: "A1–A8 ทัศนคติ", color: "#c1466b", list: ATTITUDES }
+    { k: "S", label: "🛠️ Skill", sub: "S1–S20 ทักษะที่ทำได้", color: "#2f9e6b", list: SKILLS_KSEC },
+    { k: "E", label: "⚖️ Ethics", sub: "E1–E7 จริยธรรม", color: "#c1466b", list: ETHICS },
+    { k: "C", label: "❤️ Character", sub: "C1–C8 ลักษณะบุคคล", color: "#8a5cd1", list: CHARACTER }
   ];
 
   [1, 2, 3, 4, 5, 6, 7].forEach(p => nodes.push({
@@ -219,8 +221,8 @@ function viewPloKsaItems() {
   return {
     columns: [
       { key: "plo", label: "① PLO1–7" },
-      { key: "dim", label: "② มิติ K–S–A" },
-      { key: "item", label: "③ รหัส KSA รายข้อ (54)" }
+      { key: "dim", label: "② มิติ K–S–E–C" },
+      { key: "item", label: "③ รหัส KSEC รายข้อ (61)" }
     ], nodes, links, height: 1500
   };
 }
@@ -231,11 +233,11 @@ export const VIEWS = [
   { id: "v2", name: "Need → ชุดทักษะ → กลุ่มรายวิชา",
     desc: "ความต้องการแต่ละข้อถูกแปลงเป็นชุดทักษะ และลงเรียนที่กลุ่มรายวิชาใด", build: viewNeedSkillCourse },
   { id: "v3", name: "ทักษะเป้าหมาย → ชุดทักษะ → ทักษะย่อย",
-    desc: "HS1–HS20, SS1–SS10 และ EF1–EF6 เชื่อมตรงสู่ AISK01–09 และทักษะย่อยพร้อมระดับเป้าหมาย L1–L4", build: viewTargetSetSub },
-  { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–A",
-    desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–ทัศนคติ", build: viewPloCloKsa },
-  { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSA",
-    desc: "ทักษะเป้าหมายและฐานวิศวกรรมแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏใน KSA ของ PLO นั้น", build: viewSkillKsa },
-  { id: "v6", name: "PLO → K–S–A รายข้อ",
-    desc: "ผลลัพธ์แต่ละ PLO แตกเป็นมิติความรู้–ทักษะ–ทัศนคติ แล้วลงถึงรหัส K/S/A รายข้อ · เส้นหนาที่มิติ = จำนวนข้อที่ PLO นั้นรับผิดชอบ · เส้นหนาที่รายข้อ = ข้อนั้นถูกใช้ในกี่ PLO", build: viewPloKsaItems }
+    desc: "HS1–HS20, SS1–SS10 และ EF1–EF6 เชื่อมตรงสู่ AISK01–09 และทักษะย่อยพร้อมระดับตามแนวทาง Bloom B1–B6", build: viewTargetSetSub },
+  { id: "v4", name: "PLO → CLO (กลุ่มรายวิชา) → K–S–E–C",
+    desc: "ผลลัพธ์ระดับหลักสูตรกระจายสู่รายวิชา และแตกเป็นมิติความรู้–ทักษะ–จริยธรรม–ลักษณะบุคคล", build: viewPloCloKsa },
+  { id: "v5", name: "ทักษะ → ชุดทักษะ → PLO → KSEC",
+    desc: "ทักษะเป้าหมายและฐานวิศวกรรมแต่ละตัวไหลเข้าชุดทักษะ รองรับ PLO ใด และปรากฏในทักษะที่ PLO นั้นกำหนด", build: viewSkillKsa },
+  { id: "v6", name: "PLO → K–S–E–C รายข้อ",
+    desc: "ผลลัพธ์แต่ละ PLO แตกเป็นมิติความรู้–ทักษะ–จริยธรรม–ลักษณะบุคคล แล้วลงถึงรหัส K/S/E/C รายข้อ · เส้นหนาที่มิติ = จำนวนข้อที่ PLO นั้นรับผิดชอบ · เส้นหนาที่รายข้อ = ข้อนั้นถูกใช้ในกี่ PLO", build: viewPloKsaItems }
 ];

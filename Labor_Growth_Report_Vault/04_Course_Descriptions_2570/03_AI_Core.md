@@ -47,7 +47,7 @@ Cloud Infrastructure and Machine Learning Operations
 สถาปัตยกรรมและรูปแบบบริการคลาวด์ คอนเทนเนอร์ และตัวเร่งการประมวลผลปัญญาประดิษฐ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง ความมั่นคงปลอดภัยของโครงสร้างพื้นฐาน การสร้างไปป์ไลน์ฝึก ทดสอบ นำขึ้นใช้ และปรับปรุงตัวแบบ การติดตามสมรรถนะและการเลื่อนของตัวแบบ และการปรับสมดุลความแม่นยำ ต้นทุน และพลังงาน
 Cloud architectures and service models, containers, and AI accelerators; design of scalable and highly available systems; infrastructure security; experiment tracking and model registries; construction of training, testing, deployment, and update pipelines; monitoring of performance and model drift; balancing accuracy, cost, and energy
 
-EN-714-12008 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์ 1(0-3-1)  
+EN-714-12008 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์ 1(0-3-2)  
 Integrated Engineering Workshop 4: Networking and AI Infrastructure  
 การเข้าหัวสายและทดสอบสายสัญญาณ การตั้งค่าสวิตช์และเราเตอร์ การกำหนดหมายเลขไอพี ซับเน็ต และเครือข่ายเสมือน การเชื่อมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่งและบอร์ดเอดจ์เข้าสู่เครือข่าย การติดตั้งคอนเทนเนอร์และการเชื่อมต่อบริการคลาวด์ การแก้ปัญหาเครือข่าย การตั้งค่าความมั่นคงปลอดภัยเบื้องต้น และการจัดทำเอกสารการติดตั้ง
 Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation

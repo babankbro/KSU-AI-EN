@@ -15,16 +15,16 @@
 9. [[09_Yearly_Learning_Outcomes|ผลลัพธ์การเรียนรู้ระดับหลักสูตรรายปี (YLO)]]
 9. [[09_Program_Philosophy_and_Objectives|หมวดที่ 3 · ปรัชญา ความสำคัญ และวัตถุประสงค์ของหลักสูตร]] 🆕
 10. [[10_Course_Learning_Outcomes_CLO_Mapping|Course Learning Outcomes และ Constructive Alignment]]
-11. [[11_Skill_Set_Matrix_and_KSA|Skill Set Matrix และ KSA]]
+11. [[11_Skill_Set_Matrix_and_KSA|Skill Set Matrix และ KSEC]]
 12. [[12_Curriculum_Career_Skill_Coverage_Revision|วิเคราะห์ Coverage C01–C17 และข้อเสนอปรับรายวิชาเดิมเทียบใหม่]] 🆕
 13. [[13_Common_Core_and_Track_Foundation_4plus4|ทางเลือกเดิม: แกนร่วม 4 วิชา + พื้นฐานเฉพาะ Track 4 วิชา]]
 14. [[14_External_Expert_Feedback_Analysis|สังเคราะห์ข้อเสนอกรรมการผู้ทรงคุณวุฒิและแนวทางปรับหลักสูตร]] 🆕
 15. [[15_Current_vs_Proposed_Courses_Groups_2_1_to_2_3|แนวทางล่าสุด: Core Track 9 วิชา + เลือกชีพ 5 วิชา และ Gap Closure]] 🆕
 16. [[16_Teaching_Learning_Process_Section5|หมวดที่ 5 · กระบวนการจัดการเรียนการสอน (กลยุทธ์การสอน 5 รูปแบบ, Growth Mindset, Lifelong Learning, การพัฒนาคณาจารย์)]] 🆕
 17. [[17_Stakeholder_Feedback_Round2_and_Action_Plan|ข้อเสนอแนะผู้มีส่วนได้ส่วนเสีย รอบที่ 2 และแผนปรับหลักสูตร (โดรน · อุตสาหกรรมแป้ง · เส้นทางการมีงานทำ)]] 🆕
-18. [[18_KSA_Codebook|สมุดรหัส KSA — ความรู้ ทักษะ ทัศนคติ รายข้อ (K1–K26 · S1–S20 · A1–A8) พร้อมรายการ "ทำอะไรได้บ้าง" และตารางเทียบรหัส HS/SS]] 🆕
-19. [[19_Course_and_CLO_KSA_Tables|ตารางรหัส KSA รายวิชาและราย CLO]] — สร้างอัตโนมัติจาก CLO Mapping · แยกวิชาบังคับกับวิชาชีพเลือกที่อนุมานมา 🆕
-20. [[20_KSA_Teaching_and_Assessment|กลยุทธ์การสอนและวิธีประเมินรายข้อ KSA]] — วิธีสอน วิธีประเมิน หลักฐาน และรายวิชาแกนครบ 54 รหัส 🆕
+18. [[18_KSEC_Codebook|สมุดรหัส KSEC — ความรู้ ทักษะ จริยธรรม ลักษณะบุคคล รายข้อ (K1–K26 · S1–S20 · E1–E7 · C1–C8) พร้อมรายการ "ทำอะไรได้บ้าง" และตารางเทียบรหัส HS/SS]] 🆕
+19. [[19_Course_and_CLO_KSEC_Tables|ตารางรหัส KSEC รายวิชาและราย CLO]] — สร้างอัตโนมัติจาก CLO Mapping · แยกวิชาบังคับกับวิชาชีพเลือกที่อนุมานมา 🆕
+20. [[20_KSEC_Teaching_and_Assessment|กลยุทธ์การสอนและวิธีประเมินรายข้อ KSEC]] — วิธีสอน วิธีประเมิน หลักฐาน และรายวิชาแกนครบ 54 รหัส 🆕
 21. [[21_Curriculum_Database_Design|แบบฐานข้อมูลหลักสูตรและความสัมพันธ์]] — 46 ตาราง พร้อมมุมมองตรวจความสอดคล้อง · สคริปต์ที่ `curriculum-graph/data/schema.sql` 🆕
 
 ### เอกสารประกอบการวิเคราะห์และสังเคราะห์

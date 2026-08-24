@@ -292,7 +292,7 @@
 | HS1–HS6, HS8–HS9, HS11, HS13, HS16–HS17, HS19 | **ปิดในแกนร่วม** | มีรายวิชาเจ้าภาพและชิ้นงานบังคับ |
 | HS7 Security/Responsible AI | **ปิดแบบมีเงื่อนไข** | ต้องมี risk/governance evidence ใน CT4/Capstone |
 | HS10 Thai NLP | **ปิดบางส่วน** | CT4 ให้ NLP/RAG baseline; Thai NLP ต้องเป็น elective |
-| HS12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-207 รองรับ data engineering; distributed/streaming L4 ใช้ Advanced Data elective |
+| HS12 Big Data/Distributed/Streaming | **ปิด baseline** | 131-207 รองรับ data engineering; distributed/streaming B6 ใช้ Advanced Data elective |
 | HS14 Data-Centric AI | **ปิดแบบมีเงื่อนไข** | ต้องเพิ่ม dataset specification, labeling QA และ lineage ใน CLO |
 | HS15 Sustainable/Green AI | **ปิดแบบมีเงื่อนไข** | ต้องใช้ business + BCG/carbon KPI ทุก Track |
 | HS18 Maintenance/Reliability | **ปิด baseline** | CT7 ให้พื้นฐาน; C16 ต้องมี Advanced Maintenance elective |

@@ -8,32 +8,32 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { KNOWLEDGE, SKILLS_KSA, ATTITUDES } from "../src/ksaData.js";
-import { COURSE_KSA } from "../src/courseKsaData.js";
+import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER } from "../src/ksecData.js";
+import { COURSE_KSEC } from "../src/courseKsecData.js";
 import { CLO_LIST } from "../src/cloData.js";
 import { COURSES } from "../src/data.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
-const OUT_MD = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/20_KSA_Teaching_and_Assessment.md");
-const OUT_JS = path.join(root, "curriculum-graph/src/ksaPedagogyData.js");
+const OUT_MD = path.join(root, "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/20_KSEC_Teaching_and_Assessment.md");
+const OUT_JS = path.join(root, "curriculum-graph/src/ksecPedagogyData.js");
 
 const LV = { M: 3, R: 2, I: 1 };
 /* วิชาบูรณาการปลายทาง — อ้าง KSA เกือบทุกตัวจึงไม่ใช่ "เจ้าของเนื้อหา" ของรหัสใด */
 const INTEGRATIVE = new Set(["EN-714-12019", "EN-714-12020", "EN-714-17001", "EN-714-17002"]);
 const courseOf = c => COURSES.find(x => x.c === c);
-const titleOf = c => courseOf(c)?.t || COURSE_KSA[c]?.name || c;
+const titleOf = c => courseOf(c)?.t || COURSE_KSEC[c]?.name || c;
 
 /* ── DERIVED: รายวิชาแกนของแต่ละรหัส ──
    เกณฑ์ตามลำดับ: ไม่ใช่วิชาบูรณาการปลายทาง → วิชาที่อ้าง KSA น้อยกว่า (เจาะจงกว่า)
    → เปิดสอนก่อน (เป็นผู้แนะนำเนื้อหา) → ระดับ CLO สูงกว่า                              */
 const usage = {};
-Object.values(COURSE_KSA).filter(c => !c.derivedFrom).forEach(c => {
+Object.values(COURSE_KSEC).filter(c => !c.derivedFrom).forEach(c => {
   const entry = CLO_LIST.find(e => e.c === c.code);
-  const breadth = c.K.length + c.S.length + c.A.length;
+  const breadth = c.K.length + c.S.length + c.E.length + c.C.length;
   c.clos.forEach(k => {
     const clo = entry?.clos.find(x => x.n === k.n);
     const lv = clo ? Math.max(...clo.plo.map(([, l]) => LV[l] || 1)) : 1;
-    [...k.K, ...k.S, ...k.A].forEach(code => {
+    [...k.K, ...k.S, ...k.E, ...k.C].forEach(code => {
       const g = (usage[code] = usage[code] || {});
       const row = (g[c.code] = g[c.code] || { c: c.code, breadth, lv: 0, clos: [], sem: courseOf(c.code)?.sem ?? 99 });
       row.lv = Math.max(row.lv, lv);
@@ -64,10 +64,14 @@ const BASE = {
        how: "สาธิตแล้วให้ลงมือทำในห้องปฏิบัติการ · มอบหมายชิ้นงานที่ต้องส่งมอบใช้งานได้ · ตรวจงานพร้อมให้ข้อมูลป้อนกลับเป็นรอบ",
        assess: "ประเมินชิ้นงานตามเกณฑ์การให้คะแนนเชิงสมรรถนะ (Performance Rubric)",
        artifact: "ชิ้นงานหรือระบบที่ทำงานได้จริง พร้อมบันทึกกระบวนการ" },
-  A: { teach: "การสอนเชิงปฏิสัมพันธ์ (Interactive Instruction)",
+  E: { teach: "การสอนเชิงปฏิสัมพันธ์ (Interactive Instruction)",
        how: "อภิปรายกรณีศึกษา · สะท้อนคิดหลังปฏิบัติงาน · ผู้สอนทำตัวแบบพฤติกรรมที่คาดหวัง",
        assess: "เกณฑ์ให้คะแนนเชิงพฤติกรรม ประกอบการประเมินตนเองและโดยเพื่อนร่วมทีม",
-       artifact: "หลักฐานเชิงพฤติกรรมตามที่กำหนดในสมุดรหัส KSA" }
+       artifact: "หลักฐานเชิงพฤติกรรมตามที่กำหนดในสมุดรหัส KSEC" },
+  C: { teach: "การเรียนรู้ผ่านการสะท้อนผล (Reflective Learning)",
+       how: "กำหนดข้อตกลงพฤติกรรมตั้งแต่ต้นภาค · ให้ข้อมูลป้อนกลับเชิงพฤติกรรมทุกรอบส่งงาน · ให้ผู้เรียนสะท้อนผลตนเองเทียบกับหลักฐาน",
+       assess: "เกณฑ์เชิงพฤติกรรมที่วัดความสม่ำเสมอตลอดภาค ร่วมกับการประเมินตนเองและการประเมินโดยเพื่อน",
+       artifact: "แฟ้มสะท้อนผลและบันทึกพฤติกรรมที่สังเกตได้ตลอดภาคการศึกษา" }
 };
 
 const OVERRIDE = {
@@ -89,18 +93,19 @@ const OVERRIDE = {
   S19: { teach: "การสอนเชิงปฏิสัมพันธ์ (Interactive Instruction)", how: "ฝึกนำเสนอต่อผู้ฟังต่างกลุ่ม · สัมภาษณ์ผู้ใช้จริงเพื่อเก็บข้อกำหนด", assess: "ประเมินการนำเสนอและเอกสารข้อกำหนดที่มีเกณฑ์การยอมรับ", artifact: "เอกสารข้อกำหนดพร้อมเกณฑ์การยอมรับ และบันทึกการนำเสนอ" },
   S20: { teach: "การเรียนรู้ผ่านโครงงานแบบทีม", how: "ทำงานเป็นรอบสั้นพร้อมทบทวนย้อนหลัง · หมุนเวียนบทบาทในทีม", assess: "ประเมินการมีส่วนร่วมรายบุคคลร่วมกับการประเมินโดยเพื่อนร่วมทีม", artifact: "บันทึกการมีส่วนร่วม ผลการทบทวนย้อนหลัง และแฟ้มสะท้อนผล" },
 
-  /* ทัศนคติที่ต้องใช้วิธีเฉพาะ */
-  A2:  { teach: "การสอนทางอ้อมผ่านการตรวจงานซ้ำ", how: "กำหนดให้ส่งข้อมูลดิบและโค้ดที่รันซ้ำได้ · ให้รายงานผลที่ล้มเหลวด้วย", assess: "ตรวจความสามารถในการทำซ้ำผลโดยผู้อื่น และตรวจการรายงานผลเชิงลบ", artifact: "ที่เก็บโค้ดและข้อมูลที่ผู้อื่นรันซ้ำได้ พร้อมบันทึกเวอร์ชัน" },
-  A3:  { teach: "การสอนเชิงปฏิสัมพันธ์ผ่านกรณีศึกษาจริยธรรม", how: "อภิปรายสถานการณ์ที่ต้องเลือกระหว่างผลประโยชน์กับความถูกต้อง · ผู้สอนแสดงจุดยืนเป็นตัวแบบ", assess: "เกณฑ์พฤติกรรมด้านความซื่อสัตย์ ร่วมกับผลประเมินจากอาจารย์นิเทศหรือสถานประกอบการ", artifact: "การอ้างอิงครบถ้วน การเปิดเผยการใช้เครื่องมือ AI และบันทึกการทักท้วง" },
-  A7:  { teach: "การเรียนรู้ผ่านโครงงานแบบทีม", how: "กำหนดบทบาทและข้อตกลงทีมตั้งแต่ต้น · ทบทวนพฤติกรรมทีมทุกรอบส่งงาน", assess: "การประเมินโดยเพื่อนร่วมทีมและการประเมินแบบ 360 องศา", artifact: "บันทึกการมีส่วนร่วมรายบุคคลและผลประเมินโดยเพื่อน" },
-  A8:  { teach: "การเรียนรู้ด้วยตนเอง (Independent Study)", how: "ให้เลือกเทคโนโลยีใหม่มาศึกษาเองและนำเสนอ · จัดทำแผนพัฒนาตนเอง", assess: "ประเมินแฟ้มสะสมการเรียนรู้และแผนพัฒนาตนเอง", artifact: "แฟ้มสะท้อนผล แผนการเรียนรู้ และหลักฐานการทดลองเทคโนโลยีใหม่" }
+  /* จริยธรรมและลักษณะบุคคลที่ต้องใช้วิธีเฉพาะ */
+  E2:  { teach: "การสอนทางอ้อมผ่านการตรวจงานซ้ำ", how: "กำหนดให้ส่งข้อมูลดิบและโค้ดที่รันซ้ำได้ · ให้รายงานผลที่ล้มเหลวด้วย", assess: "ตรวจความสามารถในการทำซ้ำผลโดยผู้อื่น และตรวจการรายงานผลเชิงลบ", artifact: "ที่เก็บโค้ดและข้อมูลที่ผู้อื่นรันซ้ำได้ พร้อมบันทึกเวอร์ชัน" },
+  E1:  { teach: "การสอนเชิงปฏิสัมพันธ์ผ่านกรณีศึกษาจริยธรรม", how: "อภิปรายสถานการณ์ที่ต้องเลือกระหว่างผลประโยชน์กับความถูกต้อง · ผู้สอนแสดงจุดยืนเป็นตัวแบบ", assess: "เกณฑ์พฤติกรรมด้านความซื่อสัตย์ ร่วมกับผลประเมินจากอาจารย์นิเทศหรือสถานประกอบการ", artifact: "การอ้างอิงครบถ้วน การเปิดเผยการใช้เครื่องมือ AI และบันทึกการทักท้วง" },
+  C5:  { teach: "การเรียนรู้ผ่านโครงงานแบบทีม", how: "กำหนดบทบาทและข้อตกลงทีมตั้งแต่ต้น · ทบทวนพฤติกรรมทีมทุกรอบส่งงาน", assess: "การประเมินโดยเพื่อนร่วมทีมและการประเมินแบบ 360 องศา", artifact: "บันทึกการมีส่วนร่วมรายบุคคลและผลประเมินโดยเพื่อน" },
+  C7:  { teach: "การเรียนรู้ด้วยตนเอง (Independent Study)", how: "ให้เลือกเทคโนโลยีใหม่มาศึกษาเองและนำเสนอ · จัดทำแผนพัฒนาตนเอง", assess: "ประเมินแฟ้มสะสมการเรียนรู้และแผนพัฒนาตนเอง", artifact: "แฟ้มสะท้อนผล แผนการเรียนรู้ และหลักฐานการทดลองเทคโนโลยีใหม่" }
 };
 
-const DIM = { K: "Knowledge", S: "Skill", A: "Attitude" };
+const DIM = { K: "Knowledge", S: "Skill", E: "Ethics", C: "Character" };
 const all = [
   ...KNOWLEDGE.map(r => ({ ...r, dim: "K" })),
-  ...SKILLS_KSA.map(r => ({ ...r, dim: "S" })),
-  ...ATTITUDES.map(r => ({ ...r, dim: "A" }))
+  ...SKILLS_KSEC.map(r => ({ ...r, dim: "S" })),
+  ...ETHICS.map(r => ({ ...r, dim: "E" })),
+  ...CHARACTER.map(r => ({ ...r, dim: "C" }))
 ];
 
 const rows = all.map(r => {
@@ -130,10 +135,10 @@ const table = list => [
 
 const doc = `# กลยุทธ์การสอนและวิธีประเมินรายข้อ KSA
 
-> กำหนด **วิธีสอน · วิธีประเมิน · หลักฐาน · รายวิชาแกน** ให้ครบทั้ง ${rows.length} รหัสจาก [[18_KSA_Codebook|สมุดรหัส KSA]]
+> กำหนด **วิธีสอน · วิธีประเมิน · หลักฐาน · รายวิชาแกน** ให้ครบทั้ง ${rows.length} รหัสจาก [[18_KSEC_Codebook|สมุดรหัส KSA]]
 > เพื่อให้ผู้รับผิดชอบรายวิชานำไปเขียน มคอ.3 และออกแบบเกณฑ์ประเมินได้ทันที
 >
-> **สร้างอัตโนมัติ** จาก \`curriculum-graph/scripts/build-ksa-pedagogy.mjs\` · สั่งสร้างใหม่ด้วย \`npm run build:ksa\`
+> **สร้างอัตโนมัติ** จาก \`curriculum-graph/scripts/build-ksec-pedagogy.mjs\` · สั่งสร้างใหม่ด้วย \`npm run build:ksa\`
 
 > [!warning] แยกให้ชัดว่าส่วนใดมาจากข้อมูล ส่วนใดเป็นข้อเสนอ
 > | คอลัมน์ | สถานะ |
@@ -153,7 +158,7 @@ ${table(rows.filter(r => r.dim === "K"))}
 
 ---
 
-## 2. ทักษะ (Skill · S1–S${SKILLS_KSA.length})
+## 2. ทักษะ (Skill · S1–S${SKILLS_KSEC.length})
 
 รูปแบบตั้งต้น: **${BASE.S.teach}** — ประเมินจากชิ้นงานที่ทำได้จริง ไม่ใช่ข้อสอบ
 
@@ -161,11 +166,19 @@ ${table(rows.filter(r => r.dim === "S"))}
 
 ---
 
-## 3. ทัศนคติ (Attitude · A1–A${ATTITUDES.length})
+## 3. จริยธรรม (Ethics · E1–E${ETHICS.length})
 
-รูปแบบตั้งต้น: **${BASE.A.teach}** — ประเมินด้วยเกณฑ์เชิงพฤติกรรมและหลักฐานที่กำหนดไว้ในสมุดรหัส **ห้ามให้คะแนนจากความประทับใจ**
+รูปแบบตั้งต้น: **${BASE.E.teach}** — ประเมินด้วยเกณฑ์เชิงพฤติกรรมและหลักฐานที่กำหนดไว้ในสมุดรหัส **ห้ามให้คะแนนจากความประทับใจ**
 
-${table(rows.filter(r => r.dim === "A"))}
+${table(rows.filter(r => r.dim === "E"))}
+
+---
+
+## 3ก. ลักษณะบุคคล (Character · C1–C${CHARACTER.length})
+
+รูปแบบตั้งต้น: **${BASE.C.teach}** — ประเมินจาก **ความสม่ำเสมอตลอดภาคการศึกษา** ไม่ใช่จากชิ้นงานเดียว
+
+${table(rows.filter(r => r.dim === "C"))}
 
 ---
 
@@ -183,16 +196,16 @@ ${Object.entries(rows.flatMap(r => r.anchors.map(a => [a.c, r.id]))
 
 ---
 
-[[18_KSA_Codebook|← สมุดรหัส KSA]] | [[19_Course_and_CLO_KSA_Tables|ตารางรหัส KSA รายวิชาและราย CLO]] | [[../08_TQF2_Book_Revisions/20_Teaching_and_Assessment_by_PLO|กระบวนการเรียนการสอนรายข้อ PLO]]
+[[18_KSEC_Codebook|← สมุดรหัส KSA]] | [[19_Course_and_CLO_KSEC_Tables|ตารางรหัส KSA รายวิชาและราย CLO]] | [[../08_TQF2_Book_Revisions/20_Teaching_and_Assessment_by_PLO|กระบวนการเรียนการสอนรายข้อ PLO]]
 `;
 
 fs.writeFileSync(OUT_MD, doc, "utf8");
 fs.writeFileSync(OUT_JS,
-  `/* AUTO-GENERATED by scripts/build-ksa-pedagogy.mjs — do not edit by hand.
+  `/* AUTO-GENERATED by scripts/build-ksec-pedagogy.mjs — do not edit by hand.
    anchors = derived from CLO data · teach/assess = authored proposal, pending committee approval
    Regenerate with: npm run build:ksa */\n\n` +
-  `export const KSA_PEDAGOGY = ${JSON.stringify(rows, null, 1)};\n\n` +
-  `export const KSA_PEDAGOGY_BY_ID = Object.fromEntries(KSA_PEDAGOGY.map(r => [r.id, r]));\n`,
+  `export const KSEC_PEDAGOGY = ${JSON.stringify(rows, null, 1)};\n\n` +
+  `export const KSEC_PEDAGOGY_BY_ID = Object.fromEntries(KSEC_PEDAGOGY.map(r => [r.id, r]));\n`,
   "utf8");
 
-console.log(`20_KSA_Teaching_and_Assessment.md + ksaPedagogyData.js: ${rows.length} รหัส · ปรับเฉพาะราย ${rows.filter(r => r.tailored).length} · มีแกนครบ ${rows.filter(r => r.anchors.length).length}/${rows.length}`);
+console.log(`20_KSEC_Teaching_and_Assessment.md + ksecPedagogyData.js: ${rows.length} รหัส · ปรับเฉพาะราย ${rows.filter(r => r.tailored).length} · มีแกนครบ ${rows.filter(r => r.anchors.length).length}/${rows.length}`);

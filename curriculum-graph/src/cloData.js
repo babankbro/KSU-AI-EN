@@ -1,9 +1,9 @@
-// ผลลัพธ์การเรียนรู้รายวิชา (CLO) + K–S–A + ชุดทักษะที่รายวิชาป้อนเข้า
+// ผลลัพธ์การเรียนรู้รายวิชา (CLO) + K–S–E–C + ชุดทักษะที่รายวิชาป้อนเข้า
 // ซิงก์จาก Vault:
-//   05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md  (CLO → YLO → PLO + กล่อง KSA)
+//   05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md  (CLO → YLO → PLO + กล่อง KSEC)
 //   05_TQF2_Academic_Drafts/11_Skill_Set_Matrix_and_KSA.md              (Skill Set EN-AISK01–09)
 // ลำดับชั้นปี/ภาคเรียนของรายวิชาอ่านจาก COURSES ใน data.js (แหล่งข้อมูลเดียวของเว็บ)
-// โครงสร้าง: c=รหัสวิชา · k/s/a=ความรู้/ทักษะ/ทัศนคติ · sets=[รหัสชุดทักษะ, ทักษะย่อยที่ป้อนเข้า]
+// โครงสร้าง: c=รหัสวิชา · k/s/a=ความรู้/ทักษะ/จริยธรรมและลักษณะบุคคล · sets=[รหัสชุดทักษะ, ทักษะย่อยที่ป้อนเข้า]
 //            clos=[{ n, t=ข้อความ CLO, ylo=[Sub-YLO], plo=[[เลข PLO, ระดับ I/R/M]] }]
 
 import { COURSES } from "./data.js";
@@ -18,7 +18,7 @@ export const CLO_PRINCIPLES = [
   "CLO วัดได้ (Measurable): ขึ้นต้นด้วยคำกริยาเชิงพฤติกรรมตาม Bloom's Taxonomy (อธิบาย/คำนวณ/วิเคราะห์/ออกแบบ/พัฒนา/ประเมิน/สร้าง) และสอดคล้องกับวิธีวัดผลของรายวิชา",
   "ระดับพัฒนาการ: I (Introduce) โดยหลักอยู่ชั้นปีที่ 1 · R (Reinforce) ชั้นปีที่ 2–3 · M (Mastery) โครงงานและสหกิจปีที่ 3–4",
   "การกำหนดระดับอ้างตาราง YLO ↔ PLO: ปี 1 = I · ปี 2 = R · ปี 3 = PLO2/5/6 เป็น M ที่เหลือ R · ปี 4 = M",
-  "KSA ผูกกับ Skill Set: ทักษะ (S) ของทุกรายวิชาชี้ไปยังชุดทักษะ EN-AISK01–09 เพื่อให้ออก Skill Transcript ได้จากผลการเรียนรายวิชาโดยตรง"
+  "KSEC ผูกกับ Skill Set: ทักษะ (S) ของทุกรายวิชาชี้ไปยังชุดทักษะ EN-AISK01–09 เพื่อให้ออก Skill Transcript ได้จากผลการเรียนรายวิชาโดยตรง"
 ];
 
 const CLO_COURSES_BASE = [

@@ -25,7 +25,7 @@
 
 ### 1.3 ระดับต่าง ๆ เก็บเป็นชนิดข้อมูลจำกัดค่า ไม่ใช่ข้อความอิสระ
 
-`irm_level` (I/R/M) · `depth_level` (L1–L4) · `ksa_dimension` (K/S/A) · `skill_family` (HS/SS/EF) · `prereq_kind` (hard/weak/coreq) — ฐานข้อมูลจะปฏิเสธค่าที่พิมพ์ผิดตั้งแต่ตอนบันทึก
+`irm_level` (I/R/M) · `depth_level` (B1–B6) · `ksa_dimension` (K/S/E/C) · `skill_family` (HS/SS/EF) · `prereq_kind` (hard/weak/coreq) — ฐานข้อมูลจะปฏิเสธค่าที่พิมพ์ผิดตั้งแต่ตอนบันทึก
 
 ---
 
@@ -137,7 +137,7 @@ CHECK (NOT is_elective_pool OR pick_count IS NOT NULL)
 | มุมมอง | ตรวจอะไร | ค่าที่ถูกต้อง |
 |---|---|---|
 | `vw_skill_ksa_gap` | ทักษะที่ยังไม่มี K หรือ S รองรับ | ต้องว่าง |
-| `vw_skill_set_without_attitude` | ชุดทักษะที่ไม่มีมิติทัศนคติเลย | ต้องว่าง — ไม่งั้น Skill Transcript ไม่มีอะไรให้ประเมินเชิงพฤติกรรม |
+| `vw_skill_set_without_behaviour` | ชุดทักษะที่ไม่มีมิติจริยธรรมหรือลักษณะบุคคลเลย | ต้องว่าง — ไม่งั้น Skill Transcript ไม่มีอะไรให้ประเมินเชิงพฤติกรรม |
 | `vw_ksa_orphan` | KSA ที่ไม่มีวิชาบังคับใดอ้างถึง | ต้องว่าง |
 | `vw_plo_coverage` | ความครอบคลุม PLO แยกบังคับ/เลือก | ทุก PLO ต้องมี `required_top_level = M` |
 
@@ -189,4 +189,4 @@ CHECK (NOT is_elective_pool OR pick_count IS NOT NULL)
 
 ---
 
-[[18_KSA_Codebook|สมุดรหัส KSA]] | [[19_Course_and_CLO_KSA_Tables|ตารางรหัส KSA รายวิชาและราย CLO]] | [[20_KSA_Teaching_and_Assessment|กลยุทธ์การสอนรายข้อ KSA]] | [[00_TQF2_Drafts_Home|หน้าหลักร่างวิชาการ]]
+[[18_KSEC_Codebook|สมุดรหัส KSA]] | [[19_Course_and_CLO_KSEC_Tables|ตารางรหัส KSA รายวิชาและราย CLO]] | [[20_KSEC_Teaching_and_Assessment|กลยุทธ์การสอนรายข้อ KSA]] | [[00_TQF2_Drafts_Home|หน้าหลักร่างวิชาการ]]

@@ -2,13 +2,13 @@
    Pulls four existing sources and joins them per PLO — nothing is invented here:
      · หมวด 5 ตารางที่ 5.1  -> teaching strategies that claim each PLO
      · หมวด 6 ตารางที่ 6.1  -> assessment method, evidence, mastery point, assessor
-     · ksaData.js           -> K/S/A codes carried by each PLO
+     · ksecData.js           -> K/S/A codes carried by each PLO
      · cloData.js           -> required-course CLOs feeding each PLO (electives excluded)
    Run: npm run build:ksa (chained)                                                     */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { KNOWLEDGE, SKILLS_KSA, ATTITUDES } from "../src/ksaData.js";
+import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER, BEHAVIOUR } from "../src/ksecData.js";
 import { PLO_ROLLUP } from "../src/cloData.js";
 import { PLO_NAME } from "../src/data.js";
 
@@ -54,8 +54,8 @@ if (Object.keys(assess).length !== 7) throw new Error(`expected 7 PLO assessment
 const sec = [];
 for (let p = 1; p <= 7; p++) {
   const K = KNOWLEDGE.filter(r => r.plo.includes(p));
-  const S = SKILLS_KSA.filter(r => r.plo.includes(p));
-  const A = ATTITUDES.filter(r => r.plo.includes(p));
+  const S = SKILLS_KSEC.filter(r => r.plo.includes(p));
+  const A = BEHAVIOUR.filter(r => r.plo.includes(p));
   const roll = PLO_ROLLUP.find(r => r.plo === p);
   const strat = strategies.filter(s => s.plos.includes(p));
   const a = assess[p];
@@ -88,7 +88,7 @@ ${strat.map(s => `| **${s.name}** | ${s.levelOf[p] || "—"} | ${s.how} | ${s.to
 | 🛠️ Skill | ${S.map(r => r.id).join(", ") || "—"} | ${S.map(r => r.name).join(" · ") || "—"} |
 | ❤️ Attitude | ${A.map(r => r.id).join(", ") || "—"} | ${A.map(r => r.name).join(" · ") || "—"} |
 
-**หลักฐานที่ยอมรับได้สำหรับทัศนคติ** — ${A.map(r => `\`${r.id}\` ${r.evidence}`).join(" · ") || "—"}
+**หลักฐานที่ยอมรับได้สำหรับจริยธรรมและลักษณะบุคคล** — ${A.map(r => `\`${r.id}\` ${r.evidence}`).join(" · ") || "—"}
 
 ### CLO จากวิชาบังคับที่ป้อนเข้า PLO นี้
 
@@ -100,8 +100,8 @@ ${roll.rowsRequired.map(r => `| \`${r.c}\` | ${r.clos.map(n => "CLO" + n).join("
 
 const totalK = new Set(), totalS = new Set(), totalA = new Set();
 KNOWLEDGE.forEach(r => r.plo.length && totalK.add(r.id));
-SKILLS_KSA.forEach(r => r.plo.length && totalS.add(r.id));
-ATTITUDES.forEach(r => r.plo.length && totalA.add(r.id));
+SKILLS_KSEC.forEach(r => r.plo.length && totalS.add(r.id));
+BEHAVIOUR.forEach(r => r.plo.length && totalA.add(r.id));
 
 const doc = `# กระบวนการจัดการเรียนการสอนและการประเมิน รายข้อ PLO
 
@@ -116,7 +116,7 @@ const doc = `# กระบวนการจัดการเรียนก�
 > |---|---|
 > | กลยุทธ์การสอน | [[09_Section5_Revised|หมวดที่ 5 ตารางที่ 5.1]] — กลยุทธ์ ${strategies.length} รูปแบบ |
 > | การวัดและประเมิน | [[12_Section6_Revised|หมวดที่ 6 ตารางที่ 6.1]] |
-> | รหัส KSA | [[../05_TQF2_Academic_Drafts/18_KSA_Codebook|สมุดรหัส KSA]] — K${totalK.size} · S${totalS.size} · A${totalA.size} |
+> | รหัส KSA | [[../05_TQF2_Academic_Drafts/18_KSEC_Codebook|สมุดรหัส KSA]] — K${totalK.size} · S${totalS.size} · A${totalA.size} |
 > | CLO รายวิชา | [[../05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping|CLO Mapping]] |
 
 > [!warning] วิชาชีพเลือกไม่นับในการตัดสินการบรรลุ
@@ -132,7 +132,7 @@ const doc = `# กระบวนการจัดการเรียนก�
 ${[1, 2, 3, 4, 5, 6, 7].map(p => {
   const roll = PLO_ROLLUP.find(r => r.plo === p);
   const n = x => x.filter(r => r.plo.includes(p)).length;
-  return `| **PLO${p}** | ${PLO_NAME[p]} | ${strategies.filter(s => s.plos.includes(p)).length} | ${roll.courseCountRequired} | ${roll.cloCountRequired} | ${n(KNOWLEDGE)} | ${n(SKILLS_KSA)} | ${n(ATTITUDES)} | ${roll.topRequired || "—"} |`;
+  return `| **PLO${p}** | ${PLO_NAME[p]} | ${strategies.filter(s => s.plos.includes(p)).length} | ${roll.courseCountRequired} | ${roll.cloCountRequired} | ${n(KNOWLEDGE)} | ${n(SKILLS_KSEC)} | ${n(BEHAVIOUR)} | ${roll.topRequired || "—"} |`;
 }).join("\n")}
 
 ---
@@ -140,7 +140,7 @@ ${[1, 2, 3, 4, 5, 6, 7].map(p => {
 ${sec.join("\n---\n\n")}
 ---
 
-[[00_Revision_Home|← หน้าหลักการปรับปรุงเล่ม]] | [[09_Section5_Revised|หมวดที่ 5]] | [[12_Section6_Revised|หมวดที่ 6]] | [[../05_TQF2_Academic_Drafts/18_KSA_Codebook|สมุดรหัส KSA]]
+[[00_Revision_Home|← หน้าหลักการปรับปรุงเล่ม]] | [[09_Section5_Revised|หมวดที่ 5]] | [[12_Section6_Revised|หมวดที่ 6]] | [[../05_TQF2_Academic_Drafts/18_KSEC_Codebook|สมุดรหัส KSA]]
 `;
 
 fs.writeFileSync(OUT, doc, "utf8");
@@ -155,14 +155,14 @@ const perPlo = [1, 2, 3, 4, 5, 6, 7].map(p => {
     electiveCourses: roll.courseCountElective,
     strategies: strategies.filter(s => s.plos.includes(p)).map(s => ({ name: s.name, level: s.levelOf[p] || null })),
     assess: assess[p],
-    K: pick(KNOWLEDGE), S: pick(SKILLS_KSA), A: pick(ATTITUDES),
+    K: pick(KNOWLEDGE), S: pick(SKILLS_KSEC), E: pick(ETHICS), C: pick(CHARACTER),
     rows: roll.rowsRequired.map(r => ({ c: r.c, clos: r.clos, lv: r.lv }))
   };
 });
 
 fs.writeFileSync(OUT_JS,
   `/* AUTO-GENERATED by scripts/build-plo-teaching.mjs — do not edit by hand.
-   Sources: หมวด 5 ตารางที่ 5.1 · หมวด 6 ตารางที่ 6.1 · ksaData.js · cloData.js
+   Sources: หมวด 5 ตารางที่ 5.1 · หมวด 6 ตารางที่ 6.1 · ksecData.js · cloData.js
    Regenerate with: npm run build:ksa */\n\n` +
   `export const STRATEGIES = ${JSON.stringify(strategies, null, 1)};\n\n` +
   `export const ASSESSMENT = ${JSON.stringify(assess, null, 1)};\n\n` +
