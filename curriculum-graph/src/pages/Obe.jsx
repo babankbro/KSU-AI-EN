@@ -9,7 +9,7 @@ import {
 } from "../obeData.js";
 import Alluvial from "../Alluvial.jsx";
 import { VIEWS } from "../alluvialViews.js";
-import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER, BEHAVIOUR, SKILL_TO_KSEC, KSEC_BY_ID } from "../ksecData.js";
+import { KNOWLEDGE, SKILLS_KSEC, ETHICS, CHARACTER, SKILL_TO_KSEC, KSEC_BY_ID } from "../ksecData.js";
 
 
 const STEPS = [
@@ -92,6 +92,77 @@ function SkillRow({ s, open, onToggle }) {
     </div>
   );
 }
+
+/* คำสำคัญภาษาอังกฤษของ KSEC ทุกมิติ — สมุดรหัสใน vault มีเฉพาะชื่อภาษาไทย
+   ชุดคำนี้จึงเขียนขึ้นให้ตรงกับความหมาย และใช้ศัพท์ชุดเดียวกับชื่อทักษะ HS/SS/EF
+   ที่สมุดรหัสมีภาษาอังกฤษอยู่แล้ว เพื่อให้เทียบข้ามตารางได้ */
+const KSEC_EN = {
+  K1: "Mathematics & Statistics for AI",
+  K2: "Mechanics, Materials & Structures",
+  K3: "Thermal-Fluid, Energy & Process Balance",
+  K4: "Electrical, Electronics, Instrumentation & Calibration",
+  K5: "Problem Framing, Modelling & Trade-off Analysis",
+  K6: "Machine Learning, Deep Learning & Reasoning",
+  K7: "Computer Vision, Remote Sensing & Multimodal Data",
+  K8: "NLP, Generative AI & Agentic Systems",
+  K9: "Reinforcement Learning & Operations Research",
+  K10: "Databases, Data Pipelines & Big Data Processing",
+  K11: "Data Quality, Governance & Lineage",
+  K12: "Time-Series, Forecasting & Anomaly Detection",
+  K13: "Data Visualization, Dashboards & Decision Support",
+  K14: "Programming, Data Structures & Software Engineering",
+  K15: "Software Architecture, API, Cloud & MLOps",
+  K16: "Requirements Engineering, Solution Architecture & Digital Service Integration",
+  K17: "Engineering Drawing & System Layout",
+  K18: "Embedded Systems, Edge Computing & Industrial Networks",
+  K19: "Control Systems, Robotics, Digital Twin & Fluid Power",
+  K20: "Precision Agriculture & Agri-Food Systems",
+  K21: "Smart Manufacturing, Quality, Maintenance & Reliability",
+  K22: "Cybersecurity & Data Privacy",
+  K23: "Responsible AI, Governance, Standards, Law & Impact",
+  K24: "Design of Experiments, Performance Evaluation & Uncertainty Analysis",
+  K25: "Technical Communication, Data Storytelling & Professional English",
+  K26: "Teamwork, Project Management, Entrepreneurship & Lifelong Learning",
+
+  S1: "Systems Problem Analysis & Constrained Decision-Making",
+  S2: "Applying Mathematics, Statistics & Optimization",
+  S3: "Analysing & Building Physical Farm and Plant Systems",
+  S4: "Developing & Evaluating Machine Learning Models",
+  S5: "Building Computer Vision & Remote Sensing Systems",
+  S6: "Building NLP, Generative AI & Agentic Systems",
+  S7: "Time-Series Forecasting & Predictive Analytics",
+  S8: "Designing Data Pipelines & Big Data Processing",
+  S9: "Managing Data Quality & Governance",
+  S10: "Data Analysis & Decision Support Development",
+  S11: "AI Software Development & Architecture Design",
+  S12: "Deploying Systems to Production & Performance Monitoring",
+  S13: "Enterprise Solution Architecture & System Integration",
+  S14: "Engineering Drawing & System Layout",
+  S15: "Sensor Installation, Calibration & Actuation Design",
+  S16: "Integrating Automation, IoT & Edge AI",
+  S17: "Applying Smart Agriculture, Manufacturing & Maintenance Domains",
+  S18: "Risk Assessment, Safety Design & Governance Evidence",
+  S19: "Technical Communication & Stakeholder Requirements Alignment",
+  S20: "Teamwork, Agile Delivery & Self-Development",
+
+  E1: "Academic & Professional Integrity",
+  E2: "Honesty in Data, Results & Reporting",
+  E3: "Accountability for Quality & Safety of Delivered Systems",
+  E4: "Respect for Privacy & Data Governance",
+  E5: "Social & Environmental Responsibility (BCG)",
+  E6: "Awareness of AI's Impact on People",
+  E7: "Standards Compliance & Speaking Up on Violations",
+
+
+  C1: "Evidence-based Rigour",
+  C2: "Engineering Diligence & Respect for Uncertainty",
+  C3: "User Empathy & Human-Centredness",
+  C4: "Openness to Critique & Responsiveness to Feedback",
+  C5: "Team Accountability & Dependability",
+  C6: "Servant Leadership & Stakeholder Facilitation",
+  C7: "Curiosity & Critical Use of AI",
+  C8: "Entrepreneurial Initiative & Lifelong Learning"
+};
 
 export default function Obe() {
   const [need, setNeed] = useState(null);   // N id ที่เลือก
@@ -460,16 +531,32 @@ export default function Obe() {
                       ))}
                     </ul>
                   </div>
-                  <div className="ksa-box a">
-                    <h4>⚖️❤️ Ethics + Character — จริยธรรมและลักษณะบุคคล (E · C)</h4>
+                  <div className="ksa-box e">
+                    <h4>⚖️ Ethics — จริยธรรมที่ต้องแสดงออก (E)</h4>
                     <ul>
-                      {BEHAVIOUR.filter(r => r.plo.includes(ksecPlo)).map(r => (
+                      {ETHICS.filter(r => r.plo.includes(ksecPlo)).map(r => (
                         <li key={r.id}>
                           <span className="obe-code sm">{r.id}</span> {r.name}
                           {r.covers && <span className="ksa-scope">{r.covers}</span>}
                           {r.evidence && <span className="ksa-ev">หลักฐาน: {r.evidence}</span>}
                         </li>
                       ))}
+                      {!ETHICS.some(r => r.plo.includes(ksecPlo)) &&
+                        <li className="ksa-none">ไม่มีข้อ E ที่ผูกกับ PLO{ksecPlo} โดยตรง</li>}
+                    </ul>
+                  </div>
+                  <div className="ksa-box c">
+                    <h4>❤️ Character — ลักษณะบุคคลที่ต้องปลูกฝัง (C)</h4>
+                    <ul>
+                      {CHARACTER.filter(r => r.plo.includes(ksecPlo)).map(r => (
+                        <li key={r.id}>
+                          <span className="obe-code sm">{r.id}</span> {r.name}
+                          {r.covers && <span className="ksa-scope">{r.covers}</span>}
+                          {r.evidence && <span className="ksa-ev">หลักฐาน: {r.evidence}</span>}
+                        </li>
+                      ))}
+                      {!CHARACTER.some(r => r.plo.includes(ksecPlo)) &&
+                        <li className="ksa-none">ไม่มีข้อ C ที่ผูกกับ PLO{ksecPlo} โดยตรง</li>}
                     </ul>
                   </div>
                 </div>
@@ -481,6 +568,65 @@ export default function Obe() {
                     ))}
                     {rel.length > 40 && <span className="cchip off">+{rel.length - 40}</span>}
                   </div>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* สรุปว่าแต่ละมิติของ KSEC กระจายไปรับผิดชอบ PLO ใดบ้าง และมีกี่ข้อ */}
+          {(() => {
+            const DIMS = [
+              { k: "K", icon: "🧠", name: "Knowledge — ความรู้",              rows: KNOWLEDGE,    ev: "ข้อสอบและการอธิบาย" },
+              { k: "S", icon: "🛠️", name: "Skill — ทักษะที่ทำได้",            rows: SKILLS_KSEC,  ev: "ชิ้นงานที่ทำได้จริง" },
+              { k: "E", icon: "⚖️", name: "Ethics — จริยธรรมที่ต้องแสดงออก",  rows: ETHICS,       ev: "พฤติกรรมที่สังเกตได้และร่องรอยการอ้างอิง" },
+              { k: "C", icon: "❤️", name: "Character — ลักษณะบุคคล",          rows: CHARACTER,    ev: "การสะท้อนคิดและบันทึกการทำงานเป็นทีม" }
+            ];
+            const range = rows => rows.length ? `${rows[0].id}–${rows[rows.length - 1].id}` : "—";
+            const cnt = (rows, n) => rows.filter(r => r.plo.includes(n)).length;
+            const total = DIMS.reduce((a, d) => a + d.rows.length, 0);
+            return (
+              <div className="ksec-summary">
+                <h3 className="skill-h">
+                  ตารางสรุป KSEC
+                  <small>จำนวนข้อในแต่ละมิติ และการกระจายไปรับผิดชอบ PLO แต่ละข้อ · หนึ่งข้อผูกได้หลาย PLO ผลรวมแนวนอนจึงมากกว่าจำนวนข้อได้</small>
+                </h3>
+                <div className="scroll-x">
+                  <table className="tbl ksec-sumtbl">
+                    <thead>
+                      <tr>
+                        <th>มิติ</th>
+                        <th className="c">ช่วงรหัส</th>
+                        <th className="c">จำนวนข้อ</th>
+                        {[1, 2, 3, 4, 5, 6, 7].map(n => (
+                          <th key={n} className="c" style={{ "--pc": `var(--plo${n})` }}>PLO{n}</th>
+                        ))}
+                        <th>ประเมินด้วย</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {DIMS.map(d => (
+                        <tr key={d.k} className={`ks-${d.k.toLowerCase()}`}>
+                          <td><b>{d.icon} {d.k}</b> <span className="mut">{d.name}</span></td>
+                          <td className="c mono">{range(d.rows)}</td>
+                          <td className="c"><b>{d.rows.length}</b></td>
+                          {[1, 2, 3, 4, 5, 6, 7].map(n => {
+                            const v = cnt(d.rows, n);
+                            return <td key={n} className={"c" + (v ? "" : " zero")}>{v || "—"}</td>;
+                          })}
+                          <td className="mut sm">{d.ev}</td>
+                        </tr>
+                      ))}
+                      <tr className="total">
+                        <td>รวมทั้งชุด</td>
+                        <td className="c mono">K1–C{CHARACTER.length}</td>
+                        <td className="c">{total}</td>
+                        {[1, 2, 3, 4, 5, 6, 7].map(n => (
+                          <td key={n} className="c">{DIMS.reduce((a, d) => a + cnt(d.rows, n), 0)}</td>
+                        ))}
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             );
@@ -507,13 +653,16 @@ export default function Obe() {
 
             {ksecDim === "K" && (
               <div className="obe-tablewrap">
-                <table className="obe-table ksadetail">
+                <table className="obe-table ksadetail dim-K">
                   <thead><tr><th>รหัส</th><th>ความรู้</th><th>ขอบเขต</th><th>ทักษะย่อย</th><th>AISK</th><th>PLO</th></tr></thead>
                   <tbody>
                     {KNOWLEDGE.map(r => (
                       <tr key={r.id}>
                         <td><span className="obe-code">{r.id}</span></td>
-                        <td><b>{r.name}</b></td>
+                        <td>
+                          <b>{r.name}</b>
+                          {KSEC_EN[r.id] && <span className="ksec-en">{KSEC_EN[r.id]}</span>}
+                        </td>
                         <td className="small">{r.scope}</td>
                         <td>{r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}</td>
                         <td>{r.aisk.map(a => <span className="setchip sm" key={a}>{a}</span>)}</td>
@@ -527,13 +676,17 @@ export default function Obe() {
 
             {ksecDim === "S" && (
               <div className="obe-tablewrap">
-                <table className="obe-table ksadetail">
+                <table className="obe-table ksadetail dim-S">
                   <thead><tr><th>รหัส</th><th>ทักษะที่ต้องทำได้</th><th>ทำอะไรได้บ้าง</th><th>ทักษะย่อย</th><th>ระดับ</th><th>AISK</th><th>PLO</th></tr></thead>
                   <tbody>
                     {SKILLS_KSEC.map(r => (
                       <tr key={r.id}>
                         <td><span className="obe-code">{r.id}</span></td>
-                        <td><b>{r.name}</b><span className="ksa-type">{r.type}</span></td>
+                        <td>
+                          <b>{r.name}</b>
+                          {KSEC_EN[r.id] && <span className="ksec-en">{KSEC_EN[r.id]}</span>}
+                          <span className="ksa-type">{r.type}</span>
+                        </td>
                         <td>
                           <details className="ksa-can">
                             <summary>{r.can.length} ข้อ</summary>
@@ -551,27 +704,37 @@ export default function Obe() {
               </div>
             )}
 
-            {ksecDim === "A" && (
-              <div className="obe-tablewrap">
-                <table className="obe-table ksadetail">
-                  <thead><tr><th>รหัส</th><th>จริยธรรม / ลักษณะบุคคล</th><th>ครอบคลุมพฤติกรรม</th><th>ทักษะย่อย</th><th>PLO</th><th>หลักฐานที่ยอมรับได้</th></tr></thead>
-                  <tbody>
-                    {BEHAVIOUR.map(r => (
-                      <tr key={r.id}>
-                        <td><span className="obe-code">{r.id}</span></td>
-                        <td><b>{r.name}</b></td>
-                        <td className="small">{r.covers}</td>
-                        <td>{r.skills.map(s => <span className="setchip sm" key={s}>{s}</span>)}</td>
-                        <td>{r.plo.map(n => <span className="plochip" key={n} style={{ "--pc": `var(--plo${n})` }}>PLO{n}</span>)}</td>
-                        <td className="small ev">{r.evidence}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
+            {(ksecDim === "E" || ksecDim === "C") && (() => {
+              /* E และ C ใช้โครงตารางเดียวกัน ต่างกันที่ชุดข้อมูลและหัวคอลัมน์
+                 (เดิมสองมิตินี้รวมเป็นมิติ "A" ทำให้แท็บ E/C ไม่ตรงกับเงื่อนไข ตารางจึงไม่ขึ้น) */
+              const dim = ksecDim === "E"
+                ? { rows: ETHICS, head: "จริยธรรมที่ต้องแสดงออก" }
+                : { rows: CHARACTER, head: "ลักษณะบุคคลที่ต้องปลูกฝัง" };
+              return (
+                <div className="obe-tablewrap">
+                  <table className={`obe-table ksadetail dim-${ksecDim}`}>
+                    <thead><tr><th>รหัส</th><th>{dim.head}</th><th>ครอบคลุมพฤติกรรม</th><th>ทักษะย่อย</th><th>PLO</th><th>หลักฐานที่ยอมรับได้</th></tr></thead>
+                    <tbody>
+                      {dim.rows.map(r => (
+                        <tr key={r.id}>
+                          <td><span className="obe-code">{r.id}</span></td>
+                          <td>
+                            <b>{r.name}</b>
+                            {KSEC_EN[r.id] && <span className="ksec-en">{KSEC_EN[r.id]}</span>}
+                          </td>
+                          <td className="small">{r.covers}</td>
+                          <td>{r.skills.map(sk => <span className="setchip sm" key={sk}>{sk}</span>)}</td>
+                          <td>{r.plo.map(n => <span className="plochip" key={n} style={{ "--pc": `var(--plo${n})` }}>PLO{n}</span>)}</td>
+                          <td className="small ev">{r.evidence}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            })()}
             <p className="obe-note">
-              {ksecDim === "A"
+              {ksecDim === "E" || ksecDim === "C"
                 ? "ห้ามให้คะแนนจริยธรรมหรือลักษณะบุคคลจากความประทับใจ — ต้องมีหลักฐานตามคอลัมน์ขวาสุดเท่านั้น"
                 : ksecDim === "S"
                   ? "กดที่จำนวนข้อในคอลัมน์ “ทำอะไรได้บ้าง” เพื่อดูพฤติกรรมย่อยที่ใช้เป็นเกณฑ์ผ่าน"

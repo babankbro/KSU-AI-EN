@@ -158,8 +158,10 @@
 .ksa-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:13px}
 .ksa-head b{font-size:.98rem}
 .ksa-link{font-size:.8rem;color:var(--pc);text-decoration:none;font-weight:700}
-.ksa-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media(max-width:900px){.ksa-cols{grid-template-columns:1fr}}
+/* K · S · E · C แยกคนละคอลัมน์ — จอกลางยุบเป็น 2 คอลัมน์ จอแคบเรียงเดี่ยว */
+.ksa-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:1200px){.ksa-cols{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.ksa-cols{grid-template-columns:1fr}}
 .ksa-box{background:var(--soft);border-radius:11px;padding:12px 13px}
 .ksa-box h4{margin:0 0 8px;font-size:.85rem}
 .ksa-box p{margin:0;font-size:.82rem;line-height:1.8;color:var(--ink)}
@@ -171,6 +173,9 @@
 .ksa-box.k{border-left:3px solid var(--y1)}
 .ksa-box.s{border-left:3px solid var(--y2)}
 .ksa-box.a{border-left:3px solid var(--y4)}
+.ksa-box.e{border-left:3px solid var(--y3)}
+.ksa-box.c{border-left:3px solid var(--y4)}
+.ksa-none{color:var(--muted);font-style:italic}
 .ksa-courses{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
 .ksa-courses .cwrap{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
 
@@ -273,3 +278,24 @@
   background: color-mix(in srgb, var(--pc) 14%, transparent);
   color: var(--pc); border: 1px solid color-mix(in srgb, var(--pc) 35%, transparent);
 }
+
+
+/* ── ตารางสรุป KSEC ─────────────────────────────────────────── */
+.ksec-summary{margin-top:1.6rem}
+.ksec-sumtbl{min-width:56rem}
+.ksec-sumtbl thead th[style*="--pc"]{color:var(--pc);border-bottom:2px solid var(--pc)}
+.ksec-sumtbl td.zero{color:var(--muted);opacity:.5}
+.ksec-sumtbl .mono{font-family:var(--font-mono);font-size:.8rem}
+.ksec-sumtbl td.sm{font-size:.78rem}
+.ksec-sumtbl tr.ks-k td:first-child{border-left:3px solid var(--y1)}
+.ksec-sumtbl tr.ks-s td:first-child{border-left:3px solid var(--y2)}
+.ksec-sumtbl tr.ks-e td:first-child{border-left:3px solid var(--y3)}
+.ksec-sumtbl tr.ks-c td:first-child{border-left:3px solid var(--y4)}
+
+/* คำสำคัญภาษาอังกฤษใต้ชื่อภาษาไทยในตารางรายละเอียด KSEC — สีตามมิติ */
+.ksec-en{display:block;margin-top:.15rem;font-size:.76rem;font-weight:600;
+  color:var(--ken,var(--muted));letter-spacing:.01em;line-height:1.4}
+.ksadetail.dim-K{--ken:var(--y1)}
+.ksadetail.dim-S{--ken:var(--y2)}
+.ksadetail.dim-E{--ken:var(--y3)}
+.ksadetail.dim-C{--ken:var(--y4)}
