@@ -69,7 +69,7 @@ function SkillRow({ s, open, onToggle }) {
               <dt>🧩 ชุดทักษะ</dt>
               <dd>
                 {setIds.map(id => <span className="setchip sm" key={id}>{id}</span>)}{" "}
-                {st ? st.name : ""}
+                {setIds.map(id => setById(id)?.name).filter(Boolean).join(" · ")}
               </dd>
             </div>
           </dl>
@@ -80,7 +80,9 @@ function SkillRow({ s, open, onToggle }) {
               <Link key={p} to={`/plo/${p}`} className="plo-mini" style={{ "--pc": `var(--plo${p})` }}>PLO{p}</Link>
             ))}
             <span className="lab">รายวิชาหลัก</span>
-            {s.courses.map(c => {
+            {/* ตัดรหัสซ้ำออก — ข้อมูลบางทักษะระบุรายวิชาเดียวกันสองครั้งจากการแปลงรหัส
+               ทำให้ชิปซ้ำและ React เตือนเรื่อง key ไม่ซ้ำกัน */}
+            {[...new Set(s.courses)].map(c => {
               const co = COURSES.find(x => x.c === c);
               return co
                 ? <Link key={c} to={`/courses/${c}`} className="cchip" title={co.t}>{c}</Link>
