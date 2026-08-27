@@ -18,6 +18,28 @@ const SEM_LABEL = s => s === 99
   : `ชั้นปีที่ ${Math.ceil(s / 2)} · ภาคการศึกษาที่ ${s % 2 === 1 ? 1 : 2}`;
 const setOf = id => SKILL_SETS.find(s => s.id === id);
 
+/* ระดับ Bloom ฉบับปรับปรุง — ตาราง §3.3 ใน 03_Target_Skills.md ของ Vault
+   B1–B2 ใช้กับมิติความรู้ (K) ประเมินด้วยข้อสอบ · B3–B6 ใช้กับมิติทักษะ (S) ประเมินด้วยชิ้นงาน */
+const BLOOM = {
+  B1: { en: "Remember", th: "จำ",         d: "ระบุนิยาม สัญลักษณ์ และองค์ประกอบได้", dim: "K" },
+  B2: { en: "Understand", th: "เข้าใจ",     d: "อธิบายหลักการ แนวคิด และข้อจำกัดได้", dim: "K" },
+  B3: { en: "Apply", th: "ประยุกต์ใช้",     d: "เลือกและใช้เครื่องมือ วิธีการ หรือมาตรฐานกับโจทย์ที่กำหนดได้", dim: "S" },
+  B4: { en: "Analyze", th: "วิเคราะห์",     d: "แยกองค์ประกอบ หาความสัมพันธ์ และวินิจฉัยสาเหตุจากข้อมูลได้", dim: "S" },
+  B5: { en: "Evaluate", th: "ประเมินค่า",   d: "ตัดสินคุณภาพ ความเสี่ยง หรือทางเลือกด้วยเกณฑ์และหลักฐานได้", dim: "S" },
+  B6: { en: "Create", th: "สร้างสรรค์",     d: "ออกแบบ บูรณาการ และส่งมอบระบบที่ใช้งานได้จริง", dim: "S" }
+};
+
+const BloomChip = ({ level }) => {
+  const b = BLOOM[level];
+  if (!b) return <span className="mut" title="เอกสาร CLO ใน Vault ยังไม่ระบุระดับ Bloom ของรายวิชานี้">—</span>;
+  return (
+    <span className={`bloomchip b${level.slice(1)} dim-${b.dim}`}
+      title={`${level} — ${b.en} (${b.th}) · ${b.d} · มิติ ${b.dim}`}>
+      <b>{level}</b><small>{b.th}</small>
+    </span>
+  );
+};
+
 /* ชิปรหัส KSEC — ใช้ทั้งระดับรายวิชาและระดับ CLO */
 const KsecChips = ({ list, kind }) => list?.length
   ? <span className={`ksachips ${kind}`}>{list.map(c => <span className="ksachip" key={c}>{c}</span>)}</span>
@@ -399,7 +421,7 @@ export default function Clo() {
 
                   <table className="tbl clo-clotbl">
                     <thead>
-                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th><th>KSEC</th></tr>
+                      <tr><th>CLO</th><th className="c">Sub-YLO</th><th className="c">PLO (ระดับ)</th><th>KSEC</th><th className="c">Bloom</th></tr>
                     </thead>
                     <tbody>
                       {e.clos.map(clo => (
@@ -422,6 +444,9 @@ export default function Clo() {
                               if (!kk) return <span className="mut">—</span>;
                               return <><KsecChips list={kk.K} kind="k" /><KsecChips list={kk.S} kind="s" /><KsecChips list={kk.E} kind="a" /><KsecChips list={kk.C} kind="c" /></>;
                             })()}
+                          </td>
+                          <td className="c">
+                            <BloomChip level={clo.bloom || cloKsec(e.c, clo.n)?.bloom} />
                           </td>
                         </tr>
                       ))}

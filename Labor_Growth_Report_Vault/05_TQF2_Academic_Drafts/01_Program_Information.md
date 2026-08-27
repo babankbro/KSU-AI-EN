@@ -26,14 +26,17 @@
 - **5.4) ความร่วมมือกับสถาบันอื่น:** เป็นหลักสูตรเฉพาะของมหาวิทยาลัยกาฬสินธุ์ที่จัดการเรียนการสอนโดยตรง
 - **5.5) การให้ปริญญาแก่ผู้สำเร็จการศึกษา:** ให้ปริญญาวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ เพียงสาขาเดียว
 
-**5.6) มาตรฐานสากลของกลุ่มวิชาทางการศึกษา (ISCED)**
+**5.6) มาตรฐานสากลของกลุ่มวิชาทางการศึกษา (International Standard Classification of Education, ISCED)**
 
-*ทางเลือกที่ 1 (เน้นอัตลักษณ์วิศวกรรม/ระบบอัตโนมัติ/อุตสาหกรรม/IoT)*
-| Broad field | Narrow field | Detailed field |
+| ระดับการจำแนก | รหัส | ชื่อกลุ่มวิชา |
 | :--- | :--- | :--- |
-| 07 Engineering, manufacturing and construction | 071 Engineering and engineering trades | 0714 Electronics and automation |
+| 1) Broad field | **07** | Engineering, manufacturing and construction |
+| 2) Narrow field | **071** | Engineering and engineering trades |
+| 3) Detailed field | **0714** | Electronics and automation |
 
-*ทางเลือกที่ 2 (หากคณะต้องการเน้นซอฟต์แวร์/วิทยาการข้อมูลเป็นหลัก)*
-| Broad field | Narrow field | Detailed field |
-| :--- | :--- | :--- |
-| 06 Information and Communication Technologies (ICTs) | 061 Information and Communication Technologies (ICTs) | 0613 Software and applications development and analysis |
+การจำแนกนี้เน้นอัตลักษณ์ทางวิศวกรรม ระบบอัตโนมัติ อุตสาหกรรม และ IoT ของหลักสูตร
+และสอดคล้องกับรหัสรายวิชา `714` ตามระบบรหัสของมหาวิทยาลัย (ดู [[12_Course_Code_Migration_KSU_Standard]])
+
+> ทางเลือกที่เคยพิจารณาแล้วไม่เลือก — 06 Information and Communication Technologies (ICTs) ·
+> 061 ICTs · 0613 Software and applications development and analysis
+> เนื่องจากทำให้ความเป็นหลักสูตรวิศวกรรมศาสตรบัณฑิตไม่ชัดเจนในการขอรับรอง

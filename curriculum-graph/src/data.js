@@ -563,6 +563,35 @@ export const STRUCTURE_TOP = [
 ];
 export const TOTAL_CREDITS = 125;
 
+/* ตารางสรุปหน่วยกิต 4.1 โครงสร้างหลักสูตร ตามรูปแบบเล่ม มคอ.2
+   แผน ก และ แผน ข มีหน่วยกิตเท่ากันทุกหมวด — ต่างกันเฉพาะชุดรายวิชาในภาคการศึกษาที่ 7
+   (แผน ก วิชาชีพเลือก 3 วิชา · แผน ข การเรียนรู้ร่วมการทำงาน CWIE) ดู PLANS
+   ตัวเลขอ้างอิงกลุ่มใน STRUCTURE เพื่อไม่ให้หลุดจากกันเวลาปรับโครงสร้าง */
+const creditOfGroup = id => (STRUCTURE.find(x => x.id === id) || {}).credits || 0;
+
+export const CREDIT_OUTLINE = [
+  { no: "1", name: "หมวดวิชาศึกษาทั่วไป", top: true, get credits() { return creditOfGroup("ge"); } },
+  { no: "1.1", name: "กลุ่มวิชาบังคับ", credits: 18 },
+  { no: "1.2", name: "กลุ่มวิชาเลือก", credits: 6 },
+  { no: "2", name: "หมวดวิชาเฉพาะ", top: true,
+    get credits() { return ["eng", "ai", "track", "elec", "proj", "field"].reduce((a, id) => a + creditOfGroup(id), 0); } },
+  { no: "2.1", name: "กลุ่มวิชาพื้นฐานวิศวกรรม", gid: "eng", get credits() { return creditOfGroup("eng"); } },
+  { no: "2.2", name: "กลุ่มวิชาแกนปัญญาประดิษฐ์และระบบอัจฉริยะ", gid: "ai", get credits() { return creditOfGroup("ai"); } },
+  { no: "2.3", name: "กลุ่มวิชาชีพบังคับ", gid: "track", get credits() { return creditOfGroup("track"); } },
+  { no: "2.4", name: "กลุ่มวิชาชีพเลือก", gid: "elec", get credits() { return creditOfGroup("elec"); } },
+  { no: "2.5", name: "กลุ่มวิชาโครงงานและสัมมนา", gid: "proj", get credits() { return creditOfGroup("proj"); } },
+  { no: "2.6", name: "กลุ่มวิชาประสบการณ์ภาคสนาม", gid: "field", get credits() { return creditOfGroup("field"); } },
+  { no: "3", name: "หมวดวิชาเลือกเสรี", top: true, gid: "free", get credits() { return creditOfGroup("free"); } }
+];
+
+/* มาตรฐานสากลของกลุ่มวิชาทางการศึกษา (ISCED) — ตาม TQF2 หมวดที่ 1 ข้อ 5.6
+   ตรงกับรหัสรายวิชา EN-714 ที่หลักสูตรใช้ตามประกาศระบบรหัสวิชาของมหาวิทยาลัย */
+export const ISCED = [
+  { level: "Broad field",    th: "กลุ่มสาขาระดับภาพกว้าง", code: "07",   name: "Engineering, manufacturing and construction" },
+  { level: "Narrow field",   th: "กลุ่มสาขาระดับกลาง",     code: "071",  name: "Engineering and engineering trades" },
+  { level: "Detailed field", th: "กลุ่มสาขาระดับย่อย",     code: "0714", name: "Electronics and automation" }
+];
+
 /* แผนการเรียน 2 แบบ — ต่างกันเฉพาะภาคการศึกษาที่ 7 · รายวิชาที่มีฟิลด์ plan จะแสดงเฉพาะแผนนั้น */
 export const PLANS = {
   A: { key: "A", name: "แผน ก · แผนปกติ", sub: "โครงงานและวิชาชีพเลือกในภาค 7 · สหกิจศึกษาภาค 8",

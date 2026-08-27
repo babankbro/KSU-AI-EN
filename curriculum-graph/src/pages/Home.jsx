@@ -19,31 +19,40 @@ export default function Home() {
   return (
     <main>
       <div className="hero">
+        {/* แบนเนอร์หลักของหลักสูตร — ชื่อหลักสูตรและคำโปรยอยู่ในภาพแล้ว
+            จึงเก็บ h1 ไว้แบบซ่อนสายตาเพื่อโครงสร้างหน้าและ screen reader */}
+        <img className="hero-banner" src="/hero-banner.jpg" width="1672" height="941"
+          alt="หลักสูตรใหม่ พ.ศ. 2570 · หลักสูตรวิศวกรรมศาสตรบัณฑิต วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ
+               มหาวิทยาลัยกาฬสินธุ์ — เรียน AI อย่างลึกซึ้ง สร้างนวัตกรรมอัจฉริยะ เพื่ออุตสาหกรรม เกษตร และสังคมไทยอย่างยั่งยืน" />
+
         <div className="wrap">
-          <div className="eyebrow">Bachelor of Engineering · Artificial Intelligence and Intelligent Systems</div>
-          <h1>หลักสูตรวิศวกรรมศาสตรบัณฑิต<br />วิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ</h1>
-          <p className="lead">
-            หลักสูตรใหม่ พ.ศ. 2570 ออกแบบด้วยกระบวนการ Outcome-Based Education เชื่อมความต้องการของ
-            ผู้มีส่วนได้ส่วนเสียและข้อมูลตลาดแรงงานจริง เข้าสู่ผลลัพธ์การเรียนรู้ระดับหลักสูตร รายชั้นปี และรายวิชา
-            ในบริบทเกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมปัญญาประดิษฐ์ระดับองค์กรของภาคอีสาน
-          </p>
-          <div className="hero-stats">
-            <div><b>{TOTAL_CREDITS}</b><span>หน่วยกิตรวม</span></div>
-            <div><b>7</b><span>PLO · ABET SO(1)–(7)</span></div>
-            <div><b>4</b><span>YLO รายชั้นปี</span></div>
-            <div><b>33</b><span>รายวิชาแกนบังคับ</span></div>
-            <div><b>{nElec}</b><span>วิชาเลือกชีพใน pool</span></div>
-            <div><b>3</b><span>แขนงวิชา (Track)</span></div>
-          </div>
-          <div className="note">
-            <b>โครงสร้างหลักสูตร:</b> Core Track 9 วิชา / 27 หน่วยกิต และวิชาเลือกชีพ 5 วิชา / 15 หน่วยกิต
-            รวม 125 หน่วยกิต แผน 8 ภาคกระจายเป็น 19–19–19–19–16–15–12–6 หน่วยกิต
-            โดยเตรียมความพร้อมสหกิจศึกษาอยู่ภาค 6 เพื่อให้ผู้เรียนได้สถานประกอบการก่อนเลือกวิชาชีพเลือกสองวิชาสุดท้าย
-          </div>
-          <div className="hero-cta">
-            <Link className="btn primary" to="/structure">ดูโครงสร้างหลักสูตร</Link>
-            <Link className="btn" to="/obe">ขั้นตอนการวิเคราะห์ OBE</Link>
-            <Link className="btn" to="/plo">ผลลัพธ์การเรียนรู้ PLO</Link>
+          <div className="hero-copy">
+            <h1 className="sr-only">
+              หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ (หลักสูตรใหม่ พ.ศ. 2570)
+            </h1>
+            <p className="lead">
+              ออกแบบด้วยกระบวนการ Outcome-Based Education เชื่อมความต้องการของ
+              ผู้มีส่วนได้ส่วนเสียและข้อมูลตลาดแรงงานจริง เข้าสู่ผลลัพธ์การเรียนรู้ระดับหลักสูตร รายชั้นปี และรายวิชา
+              ในบริบทเกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมปัญญาประดิษฐ์ระดับองค์กรของภาคอีสาน
+            </p>
+            <div className="hero-stats">
+              <div><b>{TOTAL_CREDITS}</b><span>หน่วยกิตรวม</span></div>
+              <div><b>7</b><span>PLO · ABET SO(1)–(7)</span></div>
+              <div><b>4</b><span>YLO รายชั้นปี</span></div>
+              <div><b>33</b><span>รายวิชาแกนบังคับ</span></div>
+              <div><b>{nElec}</b><span>วิชาเลือกชีพใน pool</span></div>
+              <div><b>3</b><span>แขนงวิชา (Track)</span></div>
+            </div>
+            <div className="note">
+              <b>โครงสร้างหลักสูตร:</b> Core Track 9 วิชา / 27 หน่วยกิต และวิชาเลือกชีพ 5 วิชา / 15 หน่วยกิต
+              รวม 125 หน่วยกิต แผน 8 ภาคกระจายเป็น 19–19–19–19–16–15–12–6 หน่วยกิต
+              โดยเตรียมความพร้อมสหกิจศึกษาอยู่ภาค 6 เพื่อให้ผู้เรียนได้สถานประกอบการก่อนเลือกวิชาชีพเลือกสองวิชาสุดท้าย
+            </div>
+            <div className="hero-cta">
+              <Link className="btn primary" to="/structure">ดูโครงสร้างหลักสูตร</Link>
+              <Link className="btn" to="/obe">ขั้นตอนการวิเคราะห์ OBE</Link>
+              <Link className="btn" to="/plo">ผลลัพธ์การเรียนรู้ PLO</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -60,6 +69,21 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </Section>
+
+        <Section title="3 แขนงความเชี่ยวชาญ" sub="Smart Agriculture · Industrial AI · Enterprise AI">
+          <figure className="figure-banner">
+            <img src="/tracks-banner.jpg" width="1672" height="941" loading="lazy"
+              alt="3 แขนงความเชี่ยวชาญสู่อนาคตที่แตกต่าง —
+                   Track 01 วิศวกรรมเกษตรอัจฉริยะ (Smart Agriculture Engineering) เทคโนโลยีเด่น Precision Farming และ Agri IoT & Sensors อาชีพเด่น Smart Farming Engineer และ AgTech Data Analyst ·
+                   Track 02 วิศวกรรมปัญญาประดิษฐ์เพื่ออุตสาหกรรม (Industrial AI Engineering) เทคโนโลยีเด่น Industrial Automation และ Digital Twin อาชีพเด่น Automation & AI Engineer และ Smart Factory Engineer ·
+                   Track 03 นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร (Enterprise AI Innovation) เทคโนโลยีเด่น Deep Learning และ Generative AI อาชีพเด่น AI / ML Engineer และ Enterprise AI Solution Developer" />
+            <figcaption>
+              ผู้เรียนเลือก 1 แขนง เรียน Core Track 9 วิชา / 27 หน่วยกิต และวิชาเลือกชีพอีก 5 วิชา / 15 หน่วยกิต
+              — ดูรายวิชาแต่ละแขนงได้ที่ <Link to="/structure">โครงสร้างหลักสูตร</Link>
+              และเส้นทางอาชีพที่ <Link to="/careers">เส้นทางอาชีพ</Link>
+            </figcaption>
+          </figure>
         </Section>
 
         <Section title="เส้นทางการเรียนรู้ 4 ชั้นปี" sub="Curriculum Scaffolding">

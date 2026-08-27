@@ -147,3 +147,20 @@
   color:#8a5a00;background:color-mix(in srgb,var(--gold) 20%,transparent);
   border-radius:999px;padding:.02rem .4rem}
 .clo-cchip.is-elec{border-style:dashed;opacity:.85}
+
+/* ── ระดับ Bloom ของ CLO (คอลัมน์ต่อจาก KSEC) ───────────────────── */
+.bloomchip{display:inline-flex;flex-direction:column;align-items:center;gap:.05rem;
+  min-width:3.4rem;padding:.2rem .4rem;border-radius:8px;line-height:1.2;
+  border:1px solid var(--bc,var(--line));background:var(--bbg,var(--soft));color:var(--bc,var(--ink))}
+.bloomchip b{font-family:var(--font-mono);font-size:.78rem;font-weight:800}
+.bloomchip small{font-size:.66rem;opacity:.85;white-space:nowrap}
+/* K = ความรู้ (ข้อสอบ) · S = ทักษะ (ชิ้นงาน) — ไล่เฉดตามความลึก */
+.bloomchip.b1{--bc:#7a8595;--bbg:#eef0f4}
+.bloomchip.b2{--bc:#5b7fa8;--bbg:#e9f0f7}
+.bloomchip.b3{--bc:#2f9e6b;--bbg:#e6f5ee}
+.bloomchip.b4{--bc:#dd8a1e;--bbg:#fdf1df}
+.bloomchip.b5{--bc:#c9971b;--bbg:#fbf2dc}
+.bloomchip.b6{--bc:#c1466b;--bbg:#fce7ee}
+@media (prefers-color-scheme:dark){
+  .bloomchip{background:color-mix(in srgb,var(--bc) 16%,transparent)}
+}

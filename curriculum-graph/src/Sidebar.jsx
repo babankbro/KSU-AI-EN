@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { NAV_GROUPS, findNav } from "./navConfig.js";
 
+/* สัญลักษณ์ประจำกลุ่ม — ใช้บนรางแคบตอนแถบข้างถูกย่อ */
+const GROUP_ICON = { home:"⌂", curriculum:"▦", outcomes:"◎", teaching:"✎", market:"▥", refs:"☰" };
+
 /* แถบข้าง — โครงเดียวกันทุกหน้า: สารบัญทุกกลุ่ม ไฮไลต์หน้าปัจจุบัน
    และกางหัวข้อภายในหน้าที่เปิดอยู่พร้อมไฮไลต์ตามตำแหน่งที่เลื่อน */
 export default function Sidebar() {
@@ -10,6 +13,16 @@ export default function Sidebar() {
   const sections = item?.sections || [];
   const [here, setHere] = useState(hash.slice(1) || "");
   const [open, setOpen] = useState(false);
+  /* ย่อแถบข้างเหลือรางแคบ — จำค่าไว้ข้ามหน้าใน localStorage
+     ตอนย่อแล้วเอาเมาส์ไปชี้ที่ราง เมนูเต็มจะกางออกเองแบบลอยทับเนื้อหา (ดู .sidebar.mini ใน styles.css) */
+  const [mini, setMini] = useState(() => {
+    try { return localStorage.getItem("sidebarMini") === "1"; } catch { return false; }
+  });
+  const toggleMini = () => setMini(v => {
+    const next = !v;
+    try { localStorage.setItem("sidebarMini", next ? "1" : "0"); } catch { /* โหมดส่วนตัว */ }
+    return next;
+  });
   /* กลุ่มที่ถูกย่อไว้ — จำไว้ข้ามหน้าใน sessionStorage */
   const [folded, setFolded] = useState(() => {
     try { return new Set(JSON.parse(sessionStorage.getItem("sidebarFolded") || "[]")); }
@@ -42,10 +55,25 @@ export default function Sidebar() {
   }, [pathname, sections.length]);
 
   return (
-    <aside className={`sidebar${open ? " open" : ""}`} aria-label="สารบัญเว็บไซต์">
+    <aside className={`sidebar${open ? " open" : ""}${mini ? " mini" : ""}`} aria-label="สารบัญเว็บไซต์">
       <button className="sidebar-toggle" aria-expanded={open} onClick={() => setOpen(v => !v)}>
         สารบัญ <i aria-hidden="true">{open ? "▴" : "▾"}</i>
       </button>
+
+      <button className="sidebar-mini-btn" onClick={toggleMini} aria-pressed={mini}
+        title={mini ? "ตรึงแถบข้างให้กางค้าง" : "ย่อแถบข้าง (ชี้เมาส์เพื่อกางชั่วคราว)"}>
+        <i aria-hidden="true">{mini ? "»" : "«"}</i>
+        <span>{mini ? "" : "ย่อแถบข้าง"}</span>
+      </button>
+
+      {mini && (
+        <div className="sidebar-rail" aria-hidden="true">
+          {NAV_GROUPS.map(g => {
+            const on = g.solo ? pathname === g.to : g.items.some(it => it.to === item?.to);
+            return <span key={g.id} className={"rail-ic" + (on ? " on" : "")}>{GROUP_ICON[g.id] || "•"}</span>;
+          })}
+        </div>
+      )}
 
       <div className="sidebar-in">
         {NAV_GROUPS.map(g => {
