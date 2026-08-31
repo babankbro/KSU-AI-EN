@@ -9,8 +9,8 @@
 
 EN-714-14036 วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล 3(2-2-5)
 Advanced Data Engineering and Data Pipelines
-สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพข้อมูลและธรรมาภิบาลข้อมูลในองค์กร การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในการทำงานจริง
-Architecture and design of advanced data pipelines for AI systems; stream and distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; construction of real-time pipelines; integration of data from diverse sources; monitoring and management of pipelines in production
+สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพและธรรมาภิบาลข้อมูลในองค์กร การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในการทำงานจริง
+Architecture and design of advanced data pipelines for AI systems; stream and distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; construction of real-time pipelines; integration of data from diverse sources; and monitoring and management of pipelines in production
 
 EN-714-14037 ตัวแบบภาษาขนาดใหญ่ขั้นสูง 3(2-2-5)
 Advanced Large Language Models
@@ -30,12 +30,12 @@ Enterprise AI architecture design; domain and service boundaries; event-driven a
 EN-714-14040 การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ 3(3-0-6)
 UX/UI Design for Intelligent Systems
 หลักการและกระบวนการออกแบบประสบการณ์ผู้ใช้และส่วนต่อประสานสำหรับระบบปัญญาประดิษฐ์ การวิจัยและวิเคราะห์ความต้องการผู้ใช้ การคิดเชิงออกแบบ การออกแบบโครงร่างและต้นแบบ การออกแบบแผงควบคุมข้อมูล หลักการปัญญาประดิษฐ์ที่อธิบายได้สำหรับส่วนต่อประสานที่โปร่งใส และการทดสอบความสามารถในการใช้งานและการออกแบบที่ครอบคลุม
-Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for transparent interfaces; usability testing and user-experience evaluation; inclusive design for commercial applications
+Principles and processes of user-experience and user-interface design for AI systems; user research and needs analysis; design thinking; wireframe and prototype design; dashboard design for data visualization; explainable-AI principles for transparent interfaces; usability testing and user-experience evaluation; and inclusive design for commercial applications
 
 EN-714-14041 ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ 3(2-2-5)
 Artificial Intelligence in Medical and Healthcare
 หลักการประยุกต์ใช้ปัญญาประดิษฐ์ในทางการแพทย์และระบบสาธารณสุข การจัดการฐานข้อมูลเวชระเบียนอิเล็กทรอนิกส์ การพัฒนาตัวแบบเพื่อการวินิจฉัยโรคเบื้องต้น การพยากรณ์ความเสี่ยงทางสุขภาพจากข้อมูลพฤติกรรม ระบบแนะนำการรักษาเฉพาะบุคคล การบูรณาการกับอุปกรณ์สวมใส่เพื่อติดตามสัญญาณชีพ และจริยธรรมและความเป็นส่วนตัวของข้อมูลผู้ป่วย
-Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment recommendation systems; integration with wearable devices to monitor vital signs; natural-language processing to extract information from medical documents; ethics and privacy of patient data
+Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment recommendation systems; integration with wearable devices to monitor vital signs; natural-language processing to extract information from medical documents; and ethics and privacy of patient data
 
 EN-714-14042 การวิเคราะห์ข้อมูลภาพทางการแพทย์ 3(2-2-5)
 Medical Image Analysis
@@ -44,13 +44,13 @@ Principles of medical image processing and analysis; working with X-ray, compute
 
 EN-714-14043 เทคโนโลยีทางการเงินและปัญญาประดิษฐ์ 3(2-2-5)
 Financial Technology and Artificial Intelligence
-หลักการของเทคโนโลยีทางการเงินและนวัตกรรมบริการทางการเงิน การประยุกต์ใช้ปัญญาประดิษฐ์ในอุตสาหกรรมการเงินและการธนาคาร ระบบการชำระเงินอิเล็กทรอนิกส์และเทคโนโลยีบล็อกเชน การวิเคราะห์ความเสี่ยงด้านสินเชื่อ การตรวจจับการทุจริตทางการเงิน ระบบการลงทุนอัตโนมัติ และกฎระเบียบด้านเทคโนโลยีทางการเงิน
-Principles of financial technology and financial-service innovation; application of AI in finance and banking; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection; automated investment and robo-advisory systems; consumer behavior analysis; asset valuation models; financial-technology regulations and policies
+เทคโนโลยีทางการเงินและนวัตกรรมบริการทางการเงิน การประยุกต์ใช้ปัญญาประดิษฐ์ในอุตสาหกรรมการเงินและการธนาคาร ระบบการชำระเงินอิเล็กทรอนิกส์และเทคโนโลยีบล็อกเชน การวิเคราะห์ความเสี่ยงด้านสินเชื่อ การตรวจจับการทุจริตทางการเงิน ระบบการลงทุนอัตโนมัติ และกฎระเบียบด้านเทคโนโลยีทางการเงิน
+Principles of financial technology and financial-service innovation; application of AI in finance and banking; electronic payment systems and blockchain technology; credit-risk analysis with machine learning; financial-fraud detection; automated investment and robo-advisory systems; consumer behavior analysis; asset valuation models; and financial-technology regulations and policies
 
 EN-714-14044 การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน 3(2-2-5)
 Predictive Data Analysis in Finance
 เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างตัวแบบพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล
-Predictive-analytics techniques for financial markets; analysis of financial time-series data; price-forecasting models for stocks and financial assets with deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; interpretation and visualization of financial data for decisions
+Predictive-analytics techniques for financial markets; analysis of financial time-series data; price-forecasting models for stocks and financial assets with deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; and interpretation and visualization of financial data for decisions
 
 EN-714-14045 การสร้างธุรกิจปัญญาประดิษฐ์ 3(2-2-5)
 AI Venture Creation
@@ -60,12 +60,12 @@ Commercialization of AI prototypes; market validation and technology readiness; 
 EN-714-14046 การจัดการโครงการซอฟต์แวร์อัจฉริยะ 3(3-0-6)
 Intelligent Software Project Management
 หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูล การประเมินความเสี่ยงและระยะเวลาของโครงการพัฒนาตัวแบบ การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง และการควบคุมคุณภาพและการวัดผลความสำเร็จของโครงการ
-Principles and methodologies of intelligent software project management; agile and Scrum; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system lifecycle; stakeholder-expectation management; quality control and continuous delivery; measuring project success
+Principles and methodologies of intelligent software project management; agile and Scrum; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system lifecycle; stakeholder-expectation management; quality control and continuous delivery; and measuring project success
 
 EN-714-14047 การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์ 3(3-0-6)
 Business Development and Digital Marketing with AI
 แนวคิดการพัฒนาธุรกิจดิจิทัลโดยใช้ปัญญาประดิษฐ์เป็นฐาน การสร้างกลยุทธ์การตลาดดิจิทัลที่ขับเคลื่อนด้วยข้อมูล การวิเคราะห์และแบ่งกลุ่มลูกค้าเป้าหมายด้วยการเรียนรู้ของเครื่อง การสร้างเนื้อหาการตลาดอัตโนมัติด้วยปัญญาประดิษฐ์เชิงสร้าง ระบบแนะนำสินค้าแบบเฉพาะบุคคล และการวิเคราะห์ประสิทธิผลของแคมเปญและการใช้แชตบอต
-Concepts of AI-based digital business development; data-driven digital marketing strategy; customer segmentation with machine learning; automated advertising content and marketing communication with generative AI; personalized product and service recommendation systems; campaign-effectiveness analysis; chatbots for customer service and proactive selling
+Concepts of AI-based digital business development; data-driven digital marketing strategy; customer segmentation with machine learning; automated advertising content and marketing communication with generative AI; personalized product and service recommendation systems; campaign-effectiveness analysis; and chatbots for customer service and proactive selling
 
 EN-714-14048 การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ 3(2-2-5)
 AI Product Management

@@ -23,7 +23,7 @@ Discovery and formulation of problems suitable for artificial intelligence; user
 
 EN-714-12010 ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน 3(2-2-5)  
 Decision Intelligence and Supply Chain Management  
-หลักการของระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์เพื่อการตัดสินใจ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ
+ระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ
 Principles of decision-support systems and decision intelligence; operational indicators; predictive and prescriptive analytics; forecasting of demand, supply, and capacity; planning of materials, inventory, and logistics; traceability and risk management; operations-research optimization; sustainability assessment; design of human-in-the-loop recommendation systems
 
 EN-714-12011 ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ 3(2-2-5)  
@@ -44,7 +44,7 @@ The AI software development lifecycle and modern software-engineering processes;
 EN-714-12014 ระบบเอเจนต์ปัญญาประดิษฐ์ 3(2-2-5)  
 Agentic AI Systems  
 แนวคิดและสถาปัตยกรรมของระบบเอเจนต์ปัญญาประดิษฐ์ตั้งแต่แบบตอบสนองถึงแบบวางแผน ระบบหลายเอเจนต์และกลไกประสานงาน การเสริมความสามารถตัวแบบภาษาขนาดใหญ่ด้วยเอเจนต์ การเรียกใช้เครื่องมือและฟังก์ชันภายนอก การออกแบบระบบเอเจนต์เพื่อการตัดสินใจอัตโนมัติ การสร้างข้อความเสริมด้วยการสืบค้น และความมั่นคงปลอดภัยและจริยธรรมของเอเจนต์  
-Concepts and architectures of AI agents from reactive to deliberative planning; multi-agent architectures and coordination; augmenting large language models with agents; tool use and external function calling; design of agentic systems for planning and autonomous decision-making; retrieval-augmented generation; security and ethics of agents
+Concepts and architectures of AI agents from reactive to deliberative planning; multi-agent architectures and coordination; augmenting large language models with agents; tool use and external function calling; design of agentic systems for planning and autonomous decision-making; retrieval-augmented generation; and security and ethics of agents
 
 EN-714-12015 อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ 3(2-2-5)  
 Unmanned Aerial Vehicles for Smart Agricultural Engineering  
@@ -54,6 +54,6 @@ Working principles and types of unmanned aerial vehicles; law, safety, and regis
 EN-714-12016 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ 1(0-2-1)  
 Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing  
 การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ
-Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog input and output signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; handover documentation
+Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog input and output signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; and handover documentation
 
 [[00_Course_Descriptions_Home|← หน้าหลักคำอธิบายรายวิชา]]

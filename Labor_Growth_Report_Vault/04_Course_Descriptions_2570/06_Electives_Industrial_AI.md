@@ -10,7 +10,7 @@
 EN-714-14016 การควบคุมกระบวนการขั้นสูงและระบบควบคุมแบบกระจาย 3(2-2-5)
 Advanced Process Control and Distributed Control Systems
 การสร้างแบบจำลองพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบป้อนไปข้างหน้าและแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยแบบจำลอง สถาปัตยกรรมระบบควบคุมแบบกระจายและการจัดการสัญญาณเตือน และการเชื่อมต่อกับสกาดาพร้อมประเมินสมรรถนะ
-Dynamic modeling and system identification of industrial processes; control-loop stability analysis; advanced PID tuning; feedforward and multivariable control; model-predictive control and AI-assisted process control; distributed control system architecture; alarm management; integration with SCADA and manufacturing execution systems; commissioning and performance evaluation
+Dynamic modeling and system identification of industrial processes; control-loop stability analysis; advanced PID tuning; feedforward and multivariable control; model-predictive control and AI-assisted process control; distributed control system architecture; alarm management; integration with SCADA and manufacturing execution systems; and commissioning and performance evaluation
 
 EN-714-14017 การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์ 3(2-2-5)
 AI-Based Predictive and Preventive Maintenance
@@ -74,7 +74,7 @@ Lean and Six Sigma principles; value-stream mapping and waste reduction; flow, p
 
 EN-714-14029 วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม 3(2-2-5)
 Computer Vision for Industrial Quality Control
-หลักการของระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ
+ระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ
 Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects on conveyors; integration with deep learning for defect classification; workpiece dimension measurement and assembly verification; connection to robots and automatic sorting systems; image-data analysis for process improvement
 
 EN-714-14030 การจัดการพลังงานอัจฉริยะและระบบพลังงานแสงอาทิตย์ 3(3-0-6)

@@ -29,7 +29,7 @@ The model-development process for supervised and unsupervised learning; regressi
 
 EN-714-12004 วิศวกรรมข้อมูลและข้อมูลขนาดใหญ่ 3(3-0-6)  
 Data Engineering and Big Data  
-วงจรชีวิตและสถาปัตยกรรมข้อมูล ข้อกำหนดชุดข้อมูลและสัญญาข้อมูล ฐานข้อมูลเชิงสัมพันธ์และโนเอสคิวแอล คลังข้อมูล ทะเลข้อมูล และเลกเฮาส์ การออกแบบไปป์ไลน์แบบแบตช์และสตรีม กระบวนการสกัด แปลง และโหลดข้อมูล การตรวจสอบคุณภาพข้อมูล การกำกับข้อมูลและสายธารที่มา และการเชื่อมข้อมูลเซนเซอร์ ฟาร์ม การผลิต และองค์กร  
+วงจรชีวิตและสถาปัตยกรรมข้อมูล ข้อกำหนดและสัญญาของชุดข้อมูล ฐานข้อมูลเชิงสัมพันธ์และโนเอสคิวแอล คลังข้อมูล ทะเลข้อมูล และเลกเฮาส์ การออกแบบไปป์ไลน์แบบแบตช์และสตรีม กระบวนการสกัด แปลง และโหลดข้อมูล การตรวจสอบคุณภาพข้อมูล การกำกับข้อมูลและสายธารที่มา และการเชื่อมข้อมูลเซนเซอร์ ฟาร์ม การผลิต และองค์กร  
 Data lifecycle and architecture; dataset specifications and data contracts; relational and NoSQL databases, data warehouses, data lakes, and lakehouse architecture; batch and streaming pipeline design; extract, transform, and load processes; data-quality validation; data governance and lineage; integration of sensor, farm, production, and enterprise data for AI systems
 
 EN-714-12005 ระบบตรวจวัด ขับเคลื่อน และไอโอทีอัจฉริยะ 3(2-2-5)  

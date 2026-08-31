@@ -53,7 +53,7 @@ Safety in the use of tools and workshop spaces; interpretation of drawings and b
 
 EN-714-11008 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ 1(0-2-1)  
 Integrated Engineering Workshop 2: Drive Systems and Automatic Control  
-หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว และกระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมเบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน และการทดสอบการทำงานและแก้ไขข้อขัดข้องเป็นทีม
+หลักปฏิบัติระบบขับเคลื่อนและกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว และกระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมเบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน และการทดสอบการทำงานและแก้ไขข้อขัดข้องเป็นทีม
 Practice with drive systems and fluid power; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic circuits; connection of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and user interfaces; design of interlocks and emergency stops; functional and safety testing and team troubleshooting
 
 EN-714-11010 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ 1(0-2-1)  
