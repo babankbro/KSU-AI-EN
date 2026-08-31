@@ -340,14 +340,16 @@ export const LEVELS = [
 
 /* ─── ขั้นที่ 4 · ชุดทักษะ EN-AISK01–09 ───
    g คงไว้เป็น metadata สีเดิมเท่านั้น; หน้าเว็บเชื่อม AISK ตรงกับ H/S/EF */
+/* กลุ่มทักษะ 7 กลุ่ม — ชื่อสั้นสำหรับใช้เป็นป้ายบน Skill Transcript และหน้าเว็บ
+   รายละเอียดเต็มของแต่ละกลุ่มอยู่ในคอลัมน์ "สาระแกน" ของตารางในวอลต์ */
 export const GROUPS = {
-  G1: { name: "แกนวิศวกรรมปัญญาประดิษฐ์", en: "AI Core Engineering", color: "#2f6fb0" },
-  G2: { name: "วิศวกรรมโดเมนอัจฉริยะ: สร้างและประกอบโครงสร้างพื้นฐาน กลไก เครื่องจักร", en: "Smart Domain Engineering", color: "#2f9e6b" },
-  G3: { name: "ระบบตรวจวัด การรับรู้ และการตัดสินใจอัจฉริยะ", en: "Sensing, Perception & Decision Intelligence", color: "#dd8a1e" },
-  G4: { name: "ปัญญาประดิษฐ์เชิงสร้าง ระบบเอเจนต์ และการทำงานร่วมกับ AI", en: "Generative, Agentic & Human–AI Systems", color: "#7b57c9" },
-  G5: { name: "ธรรมาภิบาล ความมั่นคงปลอดภัย และการรับรองระบบ", en: "Responsible AI, Security & Assurance", color: "#c0392b" },
-  G6: { name: "การสื่อสาร ทีม ภาวะผู้นำ และผู้ประกอบการ", en: "Communication, Teamwork & Entrepreneurship", color: "#0e9aa7" },
-  G7: { name: "ข้อกำหนด สถาปัตยกรรม การบูรณาการ และการส่งมอบ", en: "Requirements, Architecture, Integration & Delivery", color: "#536d9a" }
+  G1: { name: "แกนวิศวกรรม AI", en: "AI Core Engineering", color: "#2f6fb0" },
+  G2: { name: "วิศวกรรมโดเมนอัจฉริยะ", en: "Smart Domain Engineering", color: "#2f9e6b" },
+  G3: { name: "การตรวจวัดและตัดสินใจอัจฉริยะ", en: "Sensing & Decision Intelligence", color: "#dd8a1e" },
+  G4: { name: "AI เชิงสร้างและเอเจนต์", en: "Generative & Agentic AI", color: "#7b57c9" },
+  G5: { name: "AI ที่รับผิดชอบและมั่นคงปลอดภัย", en: "Responsible & Secure AI", color: "#c0392b" },
+  G6: { name: "การทำงานร่วมกันและผู้ประกอบการ", en: "Collaboration & Entrepreneurship", color: "#0e9aa7" },
+  G7: { name: "สถาปัตยกรรมและการส่งมอบระบบ", en: "Architecture & System Delivery", color: "#536d9a" }
 };
 
 export const SKILL_SETS = [
@@ -457,7 +459,7 @@ export const SKILL_SETS = [
       { n: "จรรยาบรรณวิชาชีพในสถานการณ์จริง", lv: "L3", tools: "Case Study, Employer Rubric" }
     ],
     assess: "Case Study · Model Card / Fairness Report / Robustness Log ตามกรอบ AI Verify · Employer Evaluation",
-    courses: ["GE-010-003","EN-714-12001","EN-714-12005","EN-714-12007","EN-714-12008","EN-714-12015","EN-714-12009","EN-714-12017","EN-714-12018","EN-714-17001"] },
+    courses: ["GE-001-13001","EN-714-12001","EN-714-12005","EN-714-12007","EN-714-12008","EN-714-12015","EN-714-12009","EN-714-12017","EN-714-12018","EN-714-17001"] },
 
   { id: "AISK08", g: "G6", type: "Soft",
     name: "การสื่อสาร การทำงานเป็นทีม ภาวะผู้นำ และความเป็นผู้ประกอบการ",

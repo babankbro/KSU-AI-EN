@@ -150,30 +150,32 @@ const DEN = {
 
 const RAW = [
   /* ================= 1. หมวดวิชาศึกษาทั่วไป (คำอธิบายอังกฤษเฉพาะวิชา) ================= */
-  { c: "GE-010-001", s: "อังกฤษ 1", t: "ภาษาอังกฤษง่ายนิดเดียว", e: "English is Easy", cr: "3(2-2-5)", g: "ge", y: 1, sem: 1, p: [],
-    d: "คำศัพท์ วลีและโครงสร้างประโยคภาษาอังกฤษเพื่อการสื่อสารในชีวิตประจำวัน ทักษะการฟังและสนทนาประโยคภาษาอังกฤษในสถานการณ์ต่าง ๆ การอ่านข้อความหรือเนื้อหาสั้น ๆ ที่น่าสนใจ",
-    dEn: "English vocabulary, phrases, and sentence structures for everyday communication; listening and speaking practice in common situations; reading short, engaging texts" },
-  { c: "GE-010-004", s: "คุณค่า มกส.", t: "คุณค่ามหาวิทยาลัยกาฬสินธุ์", e: "Value of Kalasin University", cr: "3(2-2-5)", g: "ge", y: 1, sem: 1, p: [],
-    d: "ความสำคัญของค่านิยมและวัฒนธรรมองค์กรในระดับหน่วยงาน สังคม และประเทศ เอกลักษณ์ของมหาวิทยาลัย องค์ประกอบการเรียนรู้ทางสังคม จิตตปัญญาศึกษาเพื่อการพัฒนาความเป็นมนุษย์สำหรับสังคมคุณภาพ จิตสาธารณะ ผู้ประกอบการเพื่อการพัฒนาท้องถิ่น",
-    dEn: "The importance of organizational and social values and culture at institutional, social, and national levels; university identity; components of social learning; contemplative education for human development; public-mindedness; entrepreneurship for local development" },
-  { c: "GE-010-003", s: "ดิจิทัล", t: "ดิจิทัลกับชีวิตวิถีใหม่", e: "Digital Technology of New Normal", cr: "3(2-2-5)", g: "ge", y: 1, sem: 2, p: [],
-    d: "ความเข้าใจในการใช้เทคโนโลยีดิจิทัลขั้นพื้นฐาน การประยุกต์ใช้เทคโนโลยีและนวัตกรรมดิจิทัล ความมั่นคงและปลอดภัยทางไซเบอร์ การพัฒนาแพลตฟอร์มออนไลน์ การรู้ดิจิทัล การพัฒนาทักษะดิจิทัล การใช้เทคโนโลยีดิจิทัล ความเป็นพลเมืองดิจิทัล การเป็นผู้ใช้ดิจิทัลอย่างชาญฉลาด",
-    dEn: "Fundamental digital technology literacy; applications of digital technology and innovation; cybersecurity and online safety; online platform development; digital skills for learning, work, and responsible participation in contemporary society" },
-  { c: "GE-010-005", s: "ชีวิตออกแบบได้", t: "ชีวิตออกแบบได้", e: "Ideal Life", cr: "3(2-2-5)", g: "ge", y: 2, sem: 3, p: [],
-    d: "ปัจจัยและความสำคัญของแรงบันดาลใจในการใช้ชีวิต เทคนิคและวิธีคิดของผู้ประสบความสำเร็จ การเรียนรู้สถานการณ์ต่าง ๆ ด้วยตนเอง การวิเคราะห์และวางแผนเป้าหมายชีวิต การสร้างความสัมพันธ์ระหว่างบุคคล การแสดงลักษณะท่าทาง การวางตัว การมีมนุษยสัมพันธ์",
-    dEn: "Sources and roles of inspiration in life; mindsets and techniques of successful people; self-directed learning from life situations; life-goal analysis and planning; interpersonal relationships; personal conduct and human relations" },
-  { c: "GE-010-002", s: "อังกฤษ 2", t: "ภาษาอังกฤษฟุดฟิดฟอฟัน", e: "English is Fun", cr: "3(2-2-5)", g: "ge", y: 2, sem: 2, p: [],
-    d: "การสื่อสารและใช้ภาษาอังกฤษในบริบทต่าง ๆ คำศัพท์ ประโยค ไวยากรณ์และสำนวนภาษาอังกฤษในสังคมพหุวัฒนธรรม การฟัง การเขียนและโต้ตอบในบริบทการท่องเที่ยว การเดินทาง และเพื่อนต่างวัฒนธรรม",
-    dEn: "English communication in a range of contexts; vocabulary, sentence patterns, grammar, and idiomatic expressions in multicultural society; listening, writing, and interaction in the contexts of tourism, travel, and cross-cultural friendship" },
-  { c: "GE-010-006", s: "ปรัชญา/เศรษฐฯ", t: "ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์", e: "Human Philosophy; Society; and Economics", cr: "3(2-2-5)", g: "ge", y: 2, sem: 3, p: [],
-    d: "สภาพแวดล้อมทางสังคม เศรษฐกิจ และการเมือง การปกครองทั้งภายในและภายนอกประเทศ หลักการบริหาร หลักกฎหมายเบื้องต้น การวิเคราะห์ปัญหาด้านจริยธรรมทางเศรษฐกิจระดับบุคคล ระดับองค์กร ระดับประเทศและระดับโลกที่เกิดขึ้นในสังคมปัจจุบัน อุปสงค์ อุปทาน ทฤษฎีพฤติกรรมผู้บริโภค การบริโภค การออมและการลงทุน ปัญหาเงินเฟ้อ เงินฝืด การว่างงาน ปรัชญาเศรษฐกิจพอเพียง",
-    dEn: "Philosophical inquiry concerning humanity, society, and economics; social, economic, and political environments; principles of administration and introductory law; analysis of economic-ethical problems at individual, organizational, national, and global levels; supply and demand; consumer behavior; saving and investment; inflation, deflation, unemployment; the philosophy of sufficiency economy" },
-  { c: "GE-020-008", s: "ธุรกิจดิจิทัล", t: "การพัฒนาธุรกิจในสังคมดิจิทัล", e: "Business Development in the Digital Era", cr: "3(3-0-6)", g: "ge", y: 2, sem: 5, p: [],
-    d: "หลักการเป็นผู้ประกอบการ การบริหารทรัพยากร เวลา การเงิน การบัญชีและระบบการขนส่งเบื้องต้น การตลาดดิจิทัล การสร้างเนื้อหาที่น่าสนใจเพื่อการตลาด การวางแผนการเงิน",
-    dEn: "Principles of entrepreneurship; management of resources, time, and finance; introductory accounting and logistics systems; digital marketing; creation of engaging marketing content; financial planning for business development in a digital society" },
-  { c: "GE-020-009", s: "ผู้นำ 21", t: "ผู้นำแห่งศตวรรษที่ 21", e: "Leadership of the 21st Century", cr: "3(3-0-6)", g: "ge", y: 2, sem: 4, p: [],
-    d: "ผู้นำและผู้ตามที่ดี บุคลิกภาพ การทำงานเป็นทีม บริบทความเปลี่ยนแปลงของสังคมโลก การแก้ปัญหา การคิดวิเคราะห์ การสื่อสาร คุณธรรม จริยธรรม หลักธรรมาภิบาลสำหรับผู้นำ การวางแผนการเงินอย่างเป็นระบบ การเป็นนวัตกรสังคม",
-    dEn: "Effective leadership and followership; personality and teamwork; the changing global context; problem solving, analytical thinking, and communication; morality, ethics, and good governance for leaders; systematic financial planning; becoming a social innovator" },
+  /* หมวดศึกษาทั่วไป ฉบับ พ.ศ. 2570 — บังคับ 5 วิชา 15 นก. (GE-001) + เลือก 3 วิชา 9 นก. (GE-002) รวม 24 นก.
+     ที่มา: ร่างเล่ม GE 2570 (V9 ฉบับกลั่นกรอง) · แทนชุด GE-010/GE-020 เดิมแบบหนึ่งต่อหนึ่งในภาคเดิม */
+  { c: "GE-001-13002", s: "อังกฤษโลกสมัยใหม่", t: "ภาษาอังกฤษสำหรับโลกสมัยใหม่", e: "English for Modern World", cr: "3(3-0-6)", g: "ge", y: 1, sem: 1, p: [],
+    d: "คำศัพท์ สำนวน และโครงสร้างภาษาอังกฤษสำหรับการสื่อสารในโลกสมัยใหม่ ทักษะการฟัง พูด อ่าน เขียนในบริบทชีวิตประจำวันและสื่อดิจิทัล การสื่อสารข้ามวัฒนธรรม",
+    dEn: "English vocabulary, expressions, and structures for communication in the modern world; listening, speaking, reading, and writing in everyday and digital-media contexts; cross-cultural communication" },
+  { c: "GE-001-13005", s: "มรดกวัฒนธรรม", t: "มรดกภูมิปัญญาทางวัฒนธรรมเพื่อการพัฒนา", e: "Intangible Cultural Heritage for Development", cr: "3(3-0-6)", g: "ge", y: 1, sem: 1, p: [],
+    d: "ความหมายและคุณค่าของมรดกภูมิปัญญาทางวัฒนธรรม การสืบทอดและการจัดการมรดกวัฒนธรรมในบริบทท้องถิ่น การต่อยอดภูมิปัญญาสู่การพัฒนาชุมชนและเศรษฐกิจสร้างสรรค์",
+    dEn: "Meaning and value of intangible cultural heritage; transmission and management of cultural heritage in local contexts; building on local wisdom for community development and the creative economy" },
+  { c: "GE-001-13001", s: "ดิจิทัลและ AI", t: "เทคโนโลยีดิจิทัลและปัญญาประดิษฐ์เบื้องต้น", e: "Fundamentals of Digital Technology and Artificial Intelligence", cr: "3(2-2-5)", g: "ge", y: 1, sem: 2, p: [],
+    d: "เทคโนโลยีดิจิทัลพื้นฐานและการรู้เท่าทันดิจิทัล แนวคิดพื้นฐานของปัญญาประดิษฐ์และการประยุกต์ใช้ในชีวิตประจำวัน ความมั่นคงปลอดภัยไซเบอร์และความเป็นส่วนตัว การใช้เครื่องมือปัญญาประดิษฐ์อย่างมีวิจารณญาณและมีจริยธรรม ความเป็นพลเมืองดิจิทัล",
+    dEn: "Fundamental digital technology and digital literacy; basic concepts of artificial intelligence and its everyday applications; cybersecurity and privacy; critical and ethical use of AI tools; digital citizenship" },
+  { c: "GE-002-14005", s: "อังกฤษวิชาชีพ", t: "ภาษาอังกฤษเพื่อการสื่อสารระดับสากลและวิชาชีพ", e: "English for Global and Professional Communication", cr: "3(3-0-6)", g: "ge", y: 2, sem: 2, p: [],
+    d: "ภาษาอังกฤษเพื่อการสื่อสารในบริบทสากลและวิชาชีพ การนำเสนอ การเขียนจดหมายและเอกสารเชิงวิชาชีพ การสัมภาษณ์งาน การประชุมและการเจรจา การสื่อสารข้ามวัฒนธรรมในที่ทำงาน",
+    dEn: "English for communication in global and professional contexts; presentations, professional correspondence and documents; job interviews, meetings, and negotiation; cross-cultural communication in the workplace" },
+  { c: "GE-001-13004", s: "สุขภาพและตนเอง", t: "สุขภาพและการจัดการตนเอง", e: "Health and Self-Management", cr: "3(3-0-6)", g: "ge", y: 2, sem: 3, p: [],
+    d: "หลักการดูแลสุขภาพกายและสุขภาพจิต โภชนาการและการออกกำลังกาย การจัดการความเครียดและอารมณ์ การบริหารเวลาและการตั้งเป้าหมาย การวางแผนชีวิตและการพัฒนาตนเองอย่างต่อเนื่อง",
+    dEn: "Principles of physical and mental health care; nutrition and exercise; stress and emotional management; time management and goal setting; life planning and continuous self-development" },
+  { c: "GE-002-14015", s: "สิ่งแวดล้อม/BCG", t: "สิ่งแวดล้อมชุมชน ธุรกิจสีเขียว และการปรับตัวต่อภูมิอากาศ", e: "Community Environment, Green Business, and Climate Adaptation", cr: "3(3-0-6)", g: "ge", y: 2, sem: 3, p: [],
+    d: "การจัดการสิ่งแวดล้อมชุมชนและผลกระทบจากการเปลี่ยนแปลงสภาพภูมิอากาศในบริบทท้องถิ่น แนวคิดเศรษฐกิจสีเขียวและเศรษฐกิจหมุนเวียน การวางแผนธุรกิจสีเขียว การตลาดสีเขียวและการดำเนินงานที่ยั่งยืน จริยธรรมสิ่งแวดล้อมและการมีส่วนร่วมของชุมชน",
+    dEn: "Community environmental management and local impacts of climate change; green and circular economy concepts; green business planning; green marketing and sustainable operations; environmental ethics and community engagement" },
+  { c: "GE-002-14011", s: "การลงทุน", t: "การลงทุนอย่างชาญฉลาด", e: "Smart Investment", cr: "3(3-0-6)", g: "ge", y: 2, sem: 4, p: [],
+    d: "หลักการวางแผนการเงินส่วนบุคคล การออมและการลงทุน ประเภทของสินทรัพย์ลงทุนและระดับความเสี่ยง ผลตอบแทนและการกระจายความเสี่ยง ภาษีและการวางแผนเกษียณ การรู้เท่าทันการหลอกลวงทางการเงินและการลงทุนอย่างมีวิจารณญาณ",
+    dEn: "Principles of personal financial planning; saving and investment; asset classes and risk levels; return and diversification; taxation and retirement planning; awareness of financial fraud and disciplined, informed investing" },
+  { c: "GE-001-13003", s: "ผู้ประกอบการดิจิทัล", t: "การเป็นผู้ประกอบการในยุคดิจิทัล", e: "Entrepreneurship in Digital Era", cr: "3(2-2-5)", g: "ge", y: 2, sem: 5, p: [],
+    d: "แนวคิดและคุณลักษณะของผู้ประกอบการในยุคดิจิทัล การค้นหาโอกาสทางธุรกิจและการวิเคราะห์ลูกค้า แบบจำลองธุรกิจและการทดสอบแนวคิด การตลาดดิจิทัลและการสร้างเนื้อหา การบริหารการเงินและทรัพยากรของธุรกิจเริ่มต้น",
+    dEn: "Concepts and characteristics of entrepreneurs in the digital era; opportunity identification and customer analysis; business models and idea validation; digital marketing and content creation; financial and resource management for startups" },
 
   /* ================= 2.1 กลุ่มวิชาพื้นฐานและปฏิบัติการทางวิศวกรรม ================= */
   { c: "EN-714-11007", s: "สถิติ", t: "สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม", e: "Statistics and Data Analysis for Engineering", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 6], ctx: "eng",
@@ -182,7 +184,7 @@ const RAW = [
     d: "หลักการและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพ ภาพตัด ภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ การเขียนแบบชิ้นส่วนและแบบประกอบ การสร้างแบบจำลองสองมิติและสามมิติด้วยคอมพิวเตอร์ช่วยออกแบบ การออกแบบผังฟาร์ม โรงเรือน สถานีตรวจวัด และสายการผลิต แบบท่อ แบบไฟฟ้า และวงจรควบคุม และการส่งมอบข้อมูลแบบสู่การจำลองและดิจิทัลทวิน" },
   { c: "EN-714-11002", s: "Programming", t: "การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์", e: "Foundational Programming for Artificial Intelligence", cr: "3(2-2-5)", g: "eng", y: 1, sem: 1, p: [1, 2, 6], ctx: "eng",
     d: "การคิดเชิงขั้นตอนวิธีและการแก้ปัญหาด้วยโปรแกรม การเขียนโปรแกรมภาษาไพทอน ตัวแปร ชนิดข้อมูล โครงสร้างควบคุม ฟังก์ชัน และการเขียนโปรแกรมเชิงวัตถุ การจัดการแฟ้มข้อมูล ฐานข้อมูล และส่วนต่อประสานโปรแกรมประยุกต์ การใช้ไลบรารีข้อมูลและปัญญาประดิษฐ์ การควบคุมรุ่นและการทดสอบหน่วย และการใช้เครื่องมือช่วยเขียนโปรแกรมอย่างมีวิจารณญาณ" },
-  { c: "EN-714-11004", s: "Workshop 1", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์", e: "Integrated Engineering Workshop 1: Fabrication and Sensor Installation", cr: "1(0-3-2)", g: "eng", y: 1, sem: 1, p: [1, 2, 5],
+  { c: "EN-714-11004", s: "Workshop 1", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์", e: "Integrated Engineering Workshop 1: Fabrication and Sensor Installation", cr: "1(0-2-1)", g: "eng", y: 1, sem: 1, p: [1, 2, 5],
     d: "ความปลอดภัยในการใช้เครื่องมือและพื้นที่ปฏิบัติงาน การอ่านแบบและการวางแผนการสร้าง การวัด ตัด เจาะ ยึด และประกอบโครงสร้าง การเดินท่อและสายไฟ การบัดกรีและติดตั้งอุปกรณ์ การติดตั้งและสอบเทียบเซนเซอร์ การสร้างต้นแบบสถานีตรวจวัด การตรวจสอบคุณภาพชิ้นงาน และการบันทึกแบบ รายการวัสดุ และผลการสอบเทียบจากการปฏิบัติงานเป็นทีม",
     dEn: "Safe use of engineering hand tools; assembly of aluminium-profile structures; installation of water piping and plumbing systems for greenhouses; electrical wiring; assembly of a robot chassis" },
   { c: "EN-714-11009", s: "เศรษฐศาสตร์วิศวฯ", t: "เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน", e: "Engineering Economics and Cost Analysis", cr: "3(3-0-6)", g: "eng", y: 2, sem: 3, p: [1, 6, 7], ctx: "eng",
@@ -193,10 +195,10 @@ const RAW = [
     d: "แรงและระบบแรง สมดุลของวัตถุแข็งเกร็ง การวิเคราะห์โครงสร้างและโครง ความเค้นและความเครียดในแนวแกน แรงเฉือน การดัด การบิด และการโก่งตัว ความล้าและรูปแบบความเสียหาย สมบัติวัสดุและการเลือกวัสดุ ค่าความปลอดภัยและเกณฑ์การออกแบบ และการออกแบบโครง เครื่องยึด ฐานติดตั้ง และกล่องหุ้มสำหรับเซนเซอร์ เครื่องจักร หุ่นยนต์ และอากาศยานไร้คนขับ" },
   { c: "EN-714-11006", s: "ไฟฟ้า-อิเล็ก", t: "พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ", e: "Electrical and Electronic Fundamentals for Intelligent Systems", cr: "3(3-0-6)", g: "eng", y: 1, sem: 2, p: [1, 2], ctx: "eng",
     d: "วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ และการปรับสภาพสัญญาณ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ" },
-  { c: "EN-714-11008", s: "Workshop 2", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ", e: "Integrated Engineering Workshop 2: Drive Systems and Automatic Control", cr: "1(0-3-2)", g: "eng", y: 1, sem: 2, p: [2, 5], h: ["EN-714-11004"], co: ["EN-714-11006"],
+  { c: "EN-714-11008", s: "Workshop 2", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ", e: "Integrated Engineering Workshop 2: Drive Systems and Automatic Control", cr: "1(0-2-1)", g: "eng", y: 1, sem: 2, p: [2, 5], h: ["EN-714-11004"], co: ["EN-714-11006"],
     d: "หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว และกระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมเบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน และการทดสอบการทำงานและแก้ไขข้อขัดข้องเป็นทีม",
     dEn: "Soldering; sensor installation; microcontroller-board interfacing; hardware-network cabling and integration into the structure built in Integrated Engineering Workshop 1: Fabrication and Sensor Installation" },
-  { c: "EN-714-11010", s: "Workshop 3", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ", e: "Integrated Engineering Workshop 3: System Integration and Handover", cr: "1(0-3-2)", g: "eng", y: 2, sem: 3, p: [1, 2, 5], h: ["EN-714-11008"], w: ["EN-714-11006"],
+  { c: "EN-714-11010", s: "Workshop 3", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ", e: "Integrated Engineering Workshop 3: System Integration and Handover", cr: "1(0-2-1)", g: "eng", y: 2, sem: 3, p: [1, 2, 5], h: ["EN-714-11008"], w: ["EN-714-11006"],
     d: "การวิเคราะห์ข้อกำหนดและออกแบบสถาปัตยกรรมระบบบูรณาการ การประกอบตู้ควบคุมและเชื่อมต่อเซนเซอร์ เอดจ์ปัญญาประดิษฐ์ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และตัวกระตุ้น การเชื่อมลำดับการทำงานตั้งแต่การตรวจวัด การประมวลผล การตัดสินใจ ไปจนถึงแผงควบคุม การทดสอบส่วนต่อประสาน สมรรถนะ และความปลอดภัย และการสาธิตระบบแบบครบวงจรพร้อมเอกสารส่งมอบ",
     dEn: "Industrial control-panel wiring; integration of sensors with Edge AI boards; full integrated system testing, for example an autonomous greenhouse or an operational mobile robot" },
 
@@ -216,7 +218,7 @@ const RAW = [
   { c: "EN-714-12007", s: "Cloud/MLOps", t: "โครงสร้างพื้นฐานคลาวด์และการดำเนินการเรียนรู้ของเครื่อง", e: "Cloud Infrastructure and Machine Learning Operations", cr: "3(2-2-5)", g: "ai", y: 2, sem: 4, p: [1, 2, 4, 7], ctx: "ai", h: ["EN-714-12003"], w: ["EN-714-12005", "EN-714-12004"],
     d: "สถาปัตยกรรมและรูปแบบบริการคลาวด์ คอนเทนเนอร์ และตัวเร่งการประมวลผลปัญญาประดิษฐ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง ความมั่นคงปลอดภัยของโครงสร้างพื้นฐาน การสร้างไปป์ไลน์ฝึก ทดสอบ นำขึ้นใช้ และปรับปรุงตัวแบบ การติดตามสมรรถนะและการเลื่อนของตัวแบบ และการปรับสมดุลความแม่นยำ ต้นทุน และพลังงาน" },
 
-  { c: "EN-714-12008", s: "Workshop 4", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์", e: "Integrated Engineering Workshop 4: Networking and AI Infrastructure", cr: "1(0-3-2)", g: "ai", y: 2, sem: 4, p: [2, 4, 5], co: ["EN-714-12007"],
+  { c: "EN-714-12008", s: "Workshop 4", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์", e: "Integrated Engineering Workshop 4: Networking and AI Infrastructure", cr: "1(0-2-1)", g: "ai", y: 2, sem: 4, p: [2, 4, 5], co: ["EN-714-12007"],
     d: "การเข้าหัวสายและทดสอบสายสัญญาณ การตั้งค่าสวิตช์และเราเตอร์ การกำหนดหมายเลขไอพี ซับเน็ต และเครือข่ายเสมือน การเชื่อมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่งและบอร์ดเอดจ์เข้าสู่เครือข่าย การติดตั้งคอนเทนเนอร์และการเชื่อมต่อบริการคลาวด์ การแก้ปัญหาเครือข่าย การตั้งค่าความมั่นคงปลอดภัยเบื้องต้น และการจัดทำเอกสารการติดตั้ง",
     dEn: "Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation" },
 
@@ -266,10 +268,10 @@ const RAW = [
   { c: "EN-714-12018", s: "Project Prep", t: "การเตรียมความพร้อมโครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project Preparation", cr: "1(0-2-1)", g: "proj", y: 3, sem: 6, p: [1, 3, 4, 7], h: ["EN-714-12017"],
     d: "การระบุปัญหาจริงจากภาคอุตสาหกรรม เกษตรกรรม องค์กร หรือชุมชน การวิเคราะห์ผู้มีส่วนได้ส่วนเสียและข้อกำหนด การกำหนดขอบเขต วัตถุประสงค์ และเกณฑ์การยอมรับ การออกแบบแนวทางวิศวกรรม วิธีทดลอง และแผนทดสอบ การประเมินความเป็นไปได้ งบประมาณ และความยั่งยืนตามโมเดลเศรษฐกิจบีซีจี และการนำเสนอข้อเสนอโครงงานเพื่อขออนุมัติ",
     dEn: "Identification of an authentic industrial or community problem; requirements analysis; literature review; project scoping; engineering design and methodology; data, safety, ethics, budget, and risk planning; proposal preparation and presentation" },
-  { c: "EN-714-12020", s: "WIL Capstone", t: "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering", cr: "3(1-6-5)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-714-12018"], plan: "B", planNote: "เปิดเฉพาะแผน ข การเรียนรู้ร่วมการทำงาน (CWIE) ในภาคการศึกษาที่ 7 แทน EN-714-12019",
+  { c: "EN-714-12020", s: "WIL Capstone", t: "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering", cr: "3(1-4-4)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-714-12018"], plan: "B", planNote: "เปิดเฉพาะแผน ข การเรียนรู้ร่วมการทำงาน (CWIE) ในภาคการศึกษาที่ 7 แทน EN-714-12019",
     d: "การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหาและเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูลและทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม",
     dEn: "Execution of an AI or intelligent-systems project on a real problem from the host organization; verification of the problem, requirements, and acceptance criteria jointly with the organization; design, development, and integration under the organization's data, time, and resource constraints; design and conduct of experiments to evaluate performance, reliability, and safety; project and risk management with the workplace mentor; preparation of ethics, confidentiality, and data-governance evidence; demonstration and defense before a joint university-industry committee" },
-  { c: "EN-714-12019", s: "Capstone", plan: "A", planNote: "แผน ก แผนปกติ ภาคการศึกษาที่ 7", t: "โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project", cr: "3(1-6-5)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-714-12018"],
+  { c: "EN-714-12019", s: "Capstone", plan: "A", planNote: "แผน ก แผนปกติ ภาคการศึกษาที่ 7", t: "โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ", e: "Artificial Intelligence Engineering and Intelligent Systems Project", cr: "3(1-4-4)", g: "proj", y: 4, sem: 7, p: [1, 2, 3, 4, 5, 6, 7], h: ["EN-714-12018"],
     d: "การดำเนินโครงงานวิศวกรรมปัญญาประดิษฐ์หรือระบบอัจฉริยะที่ได้รับอนุมัติ การทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับ การออกแบบ พัฒนา และบูรณาการข้อมูล ปัญญาประดิษฐ์ ซอฟต์แวร์ อุปกรณ์ตรวจวัด หรือระบบควบคุม การทดลองเพื่อประเมินสมรรถนะ ความน่าเชื่อถือ และความปลอดภัย การบริหารโครงงานและความเสี่ยง และการสาธิตและสอบป้องกันต่อคณะกรรมการ",
     dEn: "Execution of an approved artificial intelligence engineering or intelligent systems project; iterative design and development; experimentation and validation; project and risk management; responsible teamwork; documentation; demonstration and oral defense of results" },
 
@@ -282,7 +284,7 @@ const RAW = [
     dEn: "Supervised professional practice in an approved workplace for at least sixteen weeks; analysis of the assigned problem, requirements, and acceptance criteria; application and integration of engineering and AI knowledge; data collection, experimentation, and interpretation of results; collaboration in a multidisciplinary team; management of work and risk; compliance with professional ethics and governance; preparation of the cooperative-education report" },
 
   /* ========= 2.4 วิชาชีพเลือก — แขนงที่ 1 เกษตรอัจฉริยะ (EN-714-14001..315) ========= */
-  { c: "EN-714-12016", s: "Workshop 5", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ", e: "Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing", cr: "1(0-3-2)", g: "track", y: 3, sem: 6, p: [2, 5, 6], w: ["EN-714-12012"],
+  { c: "EN-714-12016", s: "Workshop 5", t: "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ", e: "Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing", cr: "1(0-2-1)", g: "track", y: 3, sem: 6, p: [2, 5, 6], w: ["EN-714-12012"],
     d: "การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ",
     dEn: "Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; handover documentation" },
 
@@ -438,8 +440,8 @@ export const YEAR_CREDITS = { 1: 38, 2: 38, 3: 31, 4: 18 };
 /* ---------------- โครงสร้างหลักสูตร 125 หน่วยกิต ---------------- */
 export const STRUCTURE = [
   { id: "ge", no: "1", name: "หมวดวิชาศึกษาทั่วไป", code: "GE-010 / GE-020", credits: 24, n: 8, g: "ge",
-    note: "บังคับ 6 วิชา 18 นก. · เลือก 2 วิชา 6 นก.",
-    sub: [{ name: "กลุ่มวิชาบังคับ", credits: 18 }, { name: "กลุ่มวิชาเลือก", credits: 6 }] },
+    note: "บังคับ 5 วิชา 15 นก. · เลือก 3 วิชา 9 นก. (ฉบับ พ.ศ. 2570)",
+    sub: [{ name: "กลุ่มวิชาบังคับ", credits: 15 }, { name: "กลุ่มวิชาเลือก", credits: 9 }] },
   { id: "eng", no: "2.1", name: "กลุ่มวิชาพื้นฐานและปฏิบัติการทางวิศวกรรม", code: "EN-714-11001–11010", credits: 24, n: 10, g: "eng",
     note: "หมวด 1 วิชาแกนหรือวิชาพื้นฐาน · วิชาบรรยาย 7 วิชา 21 นก. + ปฏิบัติการบูรณาการ I–III 3 นก.",
     sub: [{ name: "พื้นฐานทางวิศวกรรม", credits: 21 }, { name: "ปฏิบัติการเชิงบูรณาการ I–III", credits: 3 }] },
@@ -462,10 +464,12 @@ export const SUBGROUPS = {
   ge: {
     note: "แบ่งตามข้อกำหนดของหมวดวิชาศึกษาทั่วไป",
     items: [
-      { name: "กลุ่มวิชาบังคับ", sub: "ภาษาอังกฤษ · ทักษะดิจิทัล · คุณค่ามหาวิทยาลัย · การออกแบบชีวิต · ปรัชญามนุษย์ สังคมและเศรษฐศาสตร์",
-        codes: ["GE-010-001", "GE-010-002", "GE-010-003", "GE-010-004", "GE-010-005", "GE-010-006"] },
-      { name: "กลุ่มวิชาเลือก", sub: "เลือกจากรายวิชาศึกษาทั่วไปที่มหาวิทยาลัยเปิดสอน",
-        codes: ["GE-020-008", "GE-020-009"] }
+      { name: "กลุ่มวิชาบังคับ", sub: "ภาษาอังกฤษ · ดิจิทัลและปัญญาประดิษฐ์ · ผู้ประกอบการดิจิทัล · สุขภาพและการจัดการตนเอง · มรดกภูมิปัญญาทางวัฒนธรรม",
+        credits: 15,
+        codes: ["GE-001-13001", "GE-001-13002", "GE-001-13003", "GE-001-13004", "GE-001-13005"] },
+      { name: "กลุ่มวิชาเลือก", sub: "เลือก 3 วิชาจากรายวิชาศึกษาทั่วไปกลุ่มเลือก 23 วิชาที่มหาวิทยาลัยเปิดสอน",
+        credits: 9,
+        codes: ["GE-002-14005", "GE-002-14011", "GE-002-14015"] }
     ]
   },
   eng: {

@@ -557,7 +557,7 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-010-003",
+    "c": "GE-001-13001",
     "clos": [
      1
     ],
@@ -791,7 +791,7 @@ export const PLO_TEACHING = [
     "lv": "I"
    },
    {
-    "c": "GE-010-001",
+    "c": "GE-001-13002",
     "clos": [
      1,
      2,
@@ -807,7 +807,7 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-010-002",
+    "c": "GE-002-14005",
     "clos": [
      1,
      2
@@ -1021,7 +1021,7 @@ export const PLO_TEACHING = [
     "lv": "I"
    },
    {
-    "c": "GE-010-004",
+    "c": "GE-001-13005",
     "clos": [
      1
     ],
@@ -1056,7 +1056,7 @@ export const PLO_TEACHING = [
     "lv": "I"
    },
    {
-    "c": "GE-010-003",
+    "c": "GE-001-13001",
     "clos": [
      2
     ],
@@ -1091,7 +1091,7 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-010-006",
+    "c": "GE-002-14015",
     "clos": [
      1
     ],
@@ -1277,7 +1277,7 @@ export const PLO_TEACHING = [
     "lv": "I"
    },
    {
-    "c": "GE-010-004",
+    "c": "GE-001-13005",
     "clos": [
      2
     ],
@@ -1298,7 +1298,7 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-010-005",
+    "c": "GE-001-13004",
     "clos": [
      2
     ],
@@ -1312,7 +1312,7 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-020-009",
+    "c": "GE-002-14011",
     "clos": [
      1,
      2
@@ -1793,14 +1793,14 @@ export const PLO_TEACHING = [
     "lv": "R"
    },
    {
-    "c": "GE-010-005",
+    "c": "GE-001-13004",
     "clos": [
      1
     ],
     "lv": "I"
    },
    {
-    "c": "GE-010-006",
+    "c": "GE-002-14015",
     "clos": [
      2
     ],
@@ -1836,7 +1836,7 @@ export const PLO_TEACHING = [
     "lv": "M"
    },
    {
-    "c": "GE-020-008",
+    "c": "GE-001-13003",
     "clos": [
      1,
      2

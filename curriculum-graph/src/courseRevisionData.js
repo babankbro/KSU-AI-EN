@@ -60,7 +60,7 @@ export const COURSE_REVISION = {
   "EN-714-11004": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 1: การสร้างชิ้นงานและการติดตั้งเซนเซอร์",
     "e": "Integrated Engineering Workshop 1: Fabrication and Sensor Installation",
-    "cr": "1(0-3-2)",
+    "cr": "1(0-2-1)",
     "d": "ความปลอดภัยในการใช้เครื่องมือและพื้นที่ปฏิบัติงาน การอ่านแบบและการวางแผนการสร้าง การวัด ตัด เจาะ ยึด และประกอบโครงสร้าง การเดินท่อและสายไฟ การบัดกรีและติดตั้งอุปกรณ์ การติดตั้งและสอบเทียบเซนเซอร์ การสร้างต้นแบบสถานีตรวจวัด การตรวจสอบคุณภาพชิ้นงาน และการบันทึกแบบ รายการวัสดุ และผลการสอบเทียบจากการปฏิบัติงานเป็นทีม",
     "dEn": "Safety in the use of tools and workshop spaces; interpretation of drawings and build planning; measurement, cutting, drilling, fastening, and structural assembly; piping and electrical wiring; soldering and equipment installation; sensor installation and calibration; prototyping of a sensing station or intelligent-system structure; workmanship quality inspection; documentation of drawings, bills of materials, calibration results, and lessons learned from teamwork",
     "source": "02_Engineering_Fundamentals.md"
@@ -68,7 +68,7 @@ export const COURSE_REVISION = {
   "EN-714-11008": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 2: ระบบขับเคลื่อนและการควบคุมอัตโนมัติ",
     "e": "Integrated Engineering Workshop 2: Drive Systems and Automatic Control",
-    "cr": "1(0-3-2)",
+    "cr": "1(0-2-1)",
     "d": "หลักปฏิบัติระบบขับเคลื่อนและระบบกำลังของไหล การเลือกและต่อมอเตอร์ ชุดขับ วาล์ว และกระบอกสูบนิวแมติกส์และไฮดรอลิกส์ การต่อวงจรไฟฟ้าและวงจรลม การเชื่อมต่อเซนเซอร์ ตัวกระตุ้น ไมโครคอนโทรลเลอร์ และตัวควบคุมแบบโปรแกรมได้ การเขียนโปรแกรมควบคุมเบื้องต้น การออกแบบอินเตอร์ล็อกและการหยุดฉุกเฉิน และการทดสอบการทำงานและแก้ไขข้อขัดข้องเป็นทีม",
     "dEn": "Practice with drive systems and fluid power; selection and connection of motors, drives, valves, and pneumatic and hydraulic cylinders; wiring of electrical and pneumatic circuits; connection of sensors, actuators, microcontrollers, and programmable logic controllers; introductory control programming and user interfaces; design of interlocks and emergency stops; functional and safety testing and team troubleshooting",
     "source": "02_Engineering_Fundamentals.md"
@@ -76,7 +76,7 @@ export const COURSE_REVISION = {
   "EN-714-11010": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 3: การบูรณาการระบบและการส่งมอบ",
     "e": "Integrated Engineering Workshop 3: System Integration and Handover",
-    "cr": "1(0-3-2)",
+    "cr": "1(0-2-1)",
     "d": "การวิเคราะห์ข้อกำหนดและออกแบบสถาปัตยกรรมระบบบูรณาการ การประกอบตู้ควบคุมและเชื่อมต่อเซนเซอร์ เอดจ์ปัญญาประดิษฐ์ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และตัวกระตุ้น การเชื่อมลำดับการทำงานตั้งแต่การตรวจวัด การประมวลผล การตัดสินใจ ไปจนถึงแผงควบคุม การทดสอบส่วนต่อประสาน สมรรถนะ และความปลอดภัย และการสาธิตระบบแบบครบวงจรพร้อมเอกสารส่งมอบ",
     "dEn": "Requirements analysis and architecture design of integrated systems; assembly of control panels and connection of sensors, AI edge devices, programmable logic controllers, SCADA, and actuators; linking the chain from sensing and processing to decision-making, control, and dashboards; interface, performance, and safety testing; preparation of architecture documentation and operating manuals; end-to-end system demonstration with handover documentation",
     "source": "02_Engineering_Fundamentals.md"
@@ -140,7 +140,7 @@ export const COURSE_REVISION = {
   "EN-714-12008": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 4: เครือข่ายและโครงสร้างพื้นฐานสำหรับปัญญาประดิษฐ์",
     "e": "Integrated Engineering Workshop 4: Networking and AI Infrastructure",
-    "cr": "1(0-3-2)",
+    "cr": "1(0-2-1)",
     "d": "การเข้าหัวสายและทดสอบสายสัญญาณ การตั้งค่าสวิตช์และเราเตอร์ การกำหนดหมายเลขไอพี ซับเน็ต และเครือข่ายเสมือน การเชื่อมอุปกรณ์อินเทอร์เน็ตของสรรพสิ่งและบอร์ดเอดจ์เข้าสู่เครือข่าย การติดตั้งคอนเทนเนอร์และการเชื่อมต่อบริการคลาวด์ การแก้ปัญหาเครือข่าย การตั้งค่าความมั่นคงปลอดภัยเบื้องต้น และการจัดทำเอกสารการติดตั้ง",
     "dEn": "Cable termination and signal testing; switch and router configuration; IP addressing, subnetting, and virtual LANs; connecting IoT devices and edge boards to the network; container deployment and cloud connectivity; throughput and latency measurement; network troubleshooting; introductory security configuration; installation documentation",
     "source": "03_AI_Core.md"
@@ -204,7 +204,7 @@ export const COURSE_REVISION = {
   "EN-714-12016": {
     "t": "ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ",
     "e": "Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing",
-    "cr": "1(0-3-2)",
+    "cr": "1(0-2-1)",
     "d": "การเขียนโปรแกรมตัวควบคุมแบบโปรแกรมได้ด้วยภาษาแลดเดอร์และฟังก์ชันบล็อก การต่อสัญญาณอินพุตและเอาต์พุตแบบดิจิทัลและแอนะล็อก การตั้งค่าส่วนต่อประสานมนุษย์กับเครื่องจักรและระบบสกาดา การเชื่อมต่อเซนเซอร์และอุปกรณ์ภาคสนามเข้ากับระบบควบคุม การทดสอบเซลล์หุ่นยนต์ การตรวจสอบความปลอดภัย และการจัดทำเอกสารส่งมอบ",
     "dEn": "Programming of programmable logic controllers with ladder and function block languages; wiring of digital and analog input and output signals; configuration of human-machine interfaces and SCADA; connection of sensors and field devices to control systems; robotic-cell testing; analysis of overall equipment effectiveness; safety verification; handover documentation",
     "source": "04_Track_Core.md"
@@ -684,7 +684,7 @@ export const COURSE_REVISION = {
   "EN-714-12019": {
     "t": "โครงงานวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",
     "e": "Artificial Intelligence Engineering and Intelligent Systems Project",
-    "cr": "3(1-6-5)",
+    "cr": "3(1-4-4)",
     "d": "การดำเนินโครงงานวิศวกรรมปัญญาประดิษฐ์หรือระบบอัจฉริยะที่ได้รับอนุมัติ การทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับ การออกแบบ พัฒนา และบูรณาการข้อมูล ปัญญาประดิษฐ์ ซอฟต์แวร์ อุปกรณ์ตรวจวัด หรือระบบควบคุม การทดลองเพื่อประเมินสมรรถนะ ความน่าเชื่อถือ และความปลอดภัย การบริหารโครงงานและความเสี่ยง และการสาธิตและสอบป้องกันต่อคณะกรรมการ",
     "dEn": "Execution of an approved AI or intelligent-systems project; verification of the problem, requirements, and acceptance criteria; design, development, and integration of data, AI, software, sensing devices, or control systems as appropriate; design and conduct of experiments to evaluate performance, reliability, and safety; iterative system improvement; project and risk management; preparation of ethics and governance evidence; demonstration and defense before the committee",
     "source": "08_Project_and_Seminar.md"
@@ -692,7 +692,7 @@ export const COURSE_REVISION = {
   "EN-714-12020": {
     "t": "โครงงานบูรณาการกับสถานประกอบการทางวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ",
     "e": "Workplace-Integrated Capstone Project in Artificial Intelligence and Intelligent System Engineering",
-    "cr": "3(1-6-5)",
+    "cr": "3(1-4-4)",
     "d": "การดำเนินโครงงานจากโจทย์จริงของสถานประกอบการ การทวนสอบปัญหาและเกณฑ์การยอมรับร่วมกับสถานประกอบการ การออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูลและทรัพยากรขององค์กร การทดลองเพื่อประเมินสมรรถนะและความปลอดภัย การบริหารความเสี่ยงร่วมกับพี่เลี้ยง การรักษาความลับและธรรมาภิบาลข้อมูล และการสอบป้องกันต่อคณะกรรมการร่วม",
     "dEn": "Execution of an AI or intelligent-systems project on a real problem from the host organization; verification of the problem, requirements, and acceptance criteria jointly with the organization; design, development, and integration under the organization's data, time, and resource constraints; design and conduct of experiments to evaluate performance, reliability, and safety; project and risk management with the workplace mentor; preparation of ethics, confidentiality, and data-governance evidence; demonstration and defense before a joint university-industry committee",
     "source": "08_Project_and_Seminar.md"
