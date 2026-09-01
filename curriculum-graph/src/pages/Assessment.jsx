@@ -7,15 +7,6 @@ const KsecChips = ({ list, kind }) => list.length
   ? <span className={`ksachips ${kind}`}>{list.map(r => <span className="ksachip" key={r.id}>{r.id}</span>)}</span>
   : <span className="mut">—</span>;
 
-/* คอลัมน์วิธีการประเมินและน้ำหนักในหมวด 6 เก็บเป็นรายการเลข "1) … · 2) …"
-   แตกกลับเป็นบรรทัดเพื่อให้อ่านคู่กันได้ระหว่างสองคอลัมน์ */
-const numbered = txt => (txt || "").split(/\s·\s(?=\d\))/).map(x => x.trim()).filter(Boolean);
-const NumList = ({ txt }) => {
-  const items = numbered(txt);
-  if (items.length < 2) return <>{txt}</>;
-  return <ol className="asmt-list">{items.map((x, i) => <li key={i}>{x.replace(/^\d\)\s*/, "")}</li>)}</ol>;
-};
-
 export default function Assessment() {
   const [open, setOpen] = useState(1);
 
@@ -34,21 +25,39 @@ export default function Assessment() {
               <thead>
                 <tr>
                   <th>PLO</th><th>วิธีการประเมิน</th><th>รูปแบบการประเมิน</th>
-                  <th>น้ำหนักคะแนน</th><th>ระยะเวลาประเมิน</th><th>ผู้ประเมิน</th><th>เกณฑ์ผ่าน</th>
+                  <th className="c">น้ำหนัก<br />(ร้อยละ)</th><th>ระยะเวลาประเมิน</th><th>ผู้ประเมิน</th><th>เกณฑ์ผ่าน</th>
                 </tr>
               </thead>
               <tbody>
-                {PLO_TEACHING.map(p => (
-                  <tr key={p.plo}>
-                    <td><PloChip n={p.plo} /><br /><small className="mut">{p.name}</small></td>
-                    <td className="small"><NumList txt={p.assess.method} /></td>
-                    <td className="small">{p.assess.form}</td>
-                    <td className="small nowrap"><NumList txt={p.assess.weight} /></td>
-                    <td className="small">{p.assess.mastery}</td>
-                    <td className="small">{p.assess.assessor}</td>
-                    <td className="small">{p.assess.pass}</td>
-                  </tr>
-                ))}
+                {PLO_TEACHING.flatMap(p => {
+                  const ms = p.assess.methods || [];
+                  const sum = ms.reduce((a, m) => a + (parseInt(m.weight, 10) || 0), 0);
+                  return [
+                    ...ms.map((m, i) => (
+                      <tr key={`${p.plo}-${i}`} className={i === 0 ? "asmt-first" : ""}>
+                        {i === 0 && (
+                          <td rowSpan={ms.length + 1}>
+                            <PloChip n={p.plo} /><br /><small className="mut">{p.name}</small>
+                          </td>
+                        )}
+                        <td className="small">{m.method}</td>
+                        <td className="small">{m.form}</td>
+                        <td className="small c nowrap">{m.weight}</td>
+                        <td className="small">{m.mastery}</td>
+                        <td className="small">{m.assessor}</td>
+                        <td className="small">{m.pass}</td>
+                      </tr>
+                    )),
+                    <tr key={`${p.plo}-sum`} className="asmt-sum">
+                      <td className="small mut"><i>รวมทุกวิธีของ PLO{p.plo}</i></td>
+                      <td />
+                      <td className="small c nowrap"><b>{sum}</b></td>
+                      <td colSpan={3} className="small">
+                        ผู้เรียนผ่านเกณฑ์ทุกวิธีไม่น้อยกว่าร้อยละ 70 จึงถือว่าบรรลุ PLO{p.plo}
+                      </td>
+                    </tr>,
+                  ];
+                })}
               </tbody>
             </table>
           </div>

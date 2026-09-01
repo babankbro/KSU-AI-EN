@@ -41,18 +41,42 @@ for (const row of s5.split("\n")) {
 const s6 = fs.readFileSync(S6, "utf8").replaceAll("\r\n", "\n").split("## 6.1")[1].split("## 6.2")[0];
 /* ตารางที่ 6.1 เป็นเจ็ดคอลัมน์: PLO | วิธีการประเมิน | รูปแบบ | น้ำหนัก | ระยะเวลา | ผู้ประเมิน | เกณฑ์ผ่าน
    ส่วนหลักฐานการประเมินอยู่ตารางที่ 6.1ก ซึ่งมีสองคอลัมน์ จึงอ่านแยกกันแล้วรวมเข้าด้วยกัน */
+/* ตารางที่ 6.1 แยกหนึ่งแถวต่อหนึ่งวิธีการประเมิน แถวแรกของแต่ละ PLO เท่านั้นที่มีรหัสในคอลัมน์แรก
+   แถวถัดไปเว้นว่างไว้ จึงต้องจำ PLO ปัจจุบันไว้แล้วสะสมวิธีการประเมินเข้าไปเรื่อย ๆ
+   แถวสรุปท้ายแต่ละ PLO มีคำว่า 'รวมทุกวิธีของ' และไม่นับเป็นวิธีการประเมิน
+   ส่วนตารางที่ 6.1ก มีสองคอลัมน์ เก็บหลักฐานการประเมินแยกต่างหาก */
 const assess = {};
+let curPlo = null;
 for (const row of s6.split("\n")) {
-  const m = row.match(/^\|\s*(?:\*\*)?PLO(\d)/);
-  if (!m) continue;
+  if (!row.trim().startsWith("|")) continue;
   const c = cells(row);
-  const p = +m[1];
+  const head = (c[1] || "").match(/PLO(\d)/);
   if (c.length >= 8) {
-    assess[p] = { ...(assess[p] || {}), method: clean(c[2]), form: clean(c[3]),
-      weight: clean(c[4]), mastery: clean(c[5]), assessor: clean(c[6]), pass: clean(c[7]) };
-  } else if (c.length >= 3) {
-    assess[p] = { ...(assess[p] || {}), evidence: clean(c[2]) };
+    if (head) curPlo = +head[1];
+    if (!curPlo) continue;
+    const method = clean(c[2]);
+    if (!method || method.includes("รวมทุกวิธีของ")) continue;
+    const a = (assess[curPlo] = assess[curPlo] || { methods: [] });
+    a.methods = a.methods || [];
+    a.methods.push({
+      method, form: clean(c[3]), weight: clean(c[4]),
+      mastery: clean(c[5]), assessor: clean(c[6]), pass: clean(c[7]),
+    });
+  } else if (head && c.length >= 3) {
+    const p = +head[1];
+    assess[p] = assess[p] || { methods: [] };
+    assess[p].evidence = clean(c[2]);
   }
+}
+/* ฟิลด์สรุประดับ PLO เพื่อให้ผู้ใช้เดิมที่อ่าน assess.method ยังทำงานได้ */
+for (const a of Object.values(assess)) {
+  const ms = a.methods || [];
+  a.method = ms.map((x, k) => `${k + 1}) ${x.method}`).join(" · ");
+  a.weight = ms.map((x, k) => `${k + 1}) ${x.weight}`).join(" · ");
+  a.form = [...new Set(ms.map(x => x.form))].join(" · ");
+  a.mastery = [...new Set(ms.map(x => x.mastery))].join(" · ");
+  a.assessor = [...new Set(ms.flatMap(x => x.assessor.split(" · ")))].join(" · ");
+  a.pass = ms.map((x, k) => `${k + 1}) ${x.pass}`).join(" · ");
 }
 
 if (strategies.length !== 5) throw new Error(`expected 5 teaching strategies, parsed ${strategies.length}`);
