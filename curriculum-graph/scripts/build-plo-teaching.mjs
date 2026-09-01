@@ -39,12 +39,20 @@ for (const row of s5.split("\n")) {
 
 /* ── หมวด 6 ตารางที่ 6.1: PLO -> การประเมิน ── */
 const s6 = fs.readFileSync(S6, "utf8").replaceAll("\r\n", "\n").split("## 6.1")[1].split("## 6.2")[0];
+/* ตารางที่ 6.1 เป็นเจ็ดคอลัมน์: PLO | วิธีการประเมิน | รูปแบบ | น้ำหนัก | ระยะเวลา | ผู้ประเมิน | เกณฑ์ผ่าน
+   ส่วนหลักฐานการประเมินอยู่ตารางที่ 6.1ก ซึ่งมีสองคอลัมน์ จึงอ่านแยกกันแล้วรวมเข้าด้วยกัน */
 const assess = {};
 for (const row of s6.split("\n")) {
   const m = row.match(/^\|\s*(?:\*\*)?PLO(\d)/);
   if (!m) continue;
   const c = cells(row);
-  assess[+m[1]] = { method: clean(c[3]), evidence: clean(c[4]), mastery: clean(c[5]), assessor: clean(c[6]) };
+  const p = +m[1];
+  if (c.length >= 8) {
+    assess[p] = { ...(assess[p] || {}), method: clean(c[2]), form: clean(c[3]),
+      weight: clean(c[4]), mastery: clean(c[5]), assessor: clean(c[6]), pass: clean(c[7]) };
+  } else if (c.length >= 3) {
+    assess[p] = { ...(assess[p] || {}), evidence: clean(c[2]) };
+  }
 }
 
 if (strategies.length !== 5) throw new Error(`expected 5 teaching strategies, parsed ${strategies.length}`);

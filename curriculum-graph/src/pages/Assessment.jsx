@@ -24,8 +24,8 @@ export default function Assessment() {
             <table className="tbl">
               <thead>
                 <tr>
-                  <th>PLO</th><th>วิธีการประเมินหลัก</th><th>หลักฐานการประเมิน</th>
-                  <th>จุดประเมินขั้นบรรลุผล</th><th>ผู้ประเมิน</th>
+                  <th>PLO</th><th>วิธีการประเมิน</th><th>รูปแบบการประเมิน</th>
+                  <th>น้ำหนักคะแนน</th><th>ระยะเวลาประเมิน</th><th>ผู้ประเมิน</th><th>เกณฑ์ผ่าน</th>
                 </tr>
               </thead>
               <tbody>
@@ -33,17 +33,34 @@ export default function Assessment() {
                   <tr key={p.plo}>
                     <td><PloChip n={p.plo} /><br /><small className="mut">{p.name}</small></td>
                     <td className="small">{p.assess.method}</td>
-                    <td className="small">{p.assess.evidence}</td>
+                    <td className="small">{p.assess.form}</td>
+                    <td className="small">{p.assess.weight}</td>
                     <td className="small">{p.assess.mastery}</td>
                     <td className="small">{p.assess.assessor}</td>
+                    <td className="small">{p.assess.pass}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
           <p className="obe-note">
-            จุดประเมินขั้นบรรลุผลคือรายวิชาที่ใช้ตัดสินว่าผู้เรียนถึงระดับ Mastery — ทุก PLO ไปจบที่โครงงานและสหกิจศึกษา
+            ระยะเวลาประเมินคือภาคการศึกษาที่ใช้ตัดสินว่าผู้เรียนถึงระดับ Mastery — ทุก PLO ไปจบที่โครงงานและสหกิจศึกษา ·
+            น้ำหนักคะแนนเป็นสัดส่วนของหลักฐานแต่ละกลุ่มที่ใช้ตัดสิน PLO นั้น รวมร้อยละ 100 ต่อหนึ่ง PLO ไม่ใช่สัดส่วนคะแนนในรายวิชา
           </p>
+          <h3 className="skill-h">หลักฐานการประเมินที่ยอมรับได้</h3>
+          <div className="obe-tablewrap">
+            <table className="tbl">
+              <thead><tr><th>PLO</th><th>หลักฐานการประเมินที่ยอมรับได้</th></tr></thead>
+              <tbody>
+                {PLO_TEACHING.map(p => (
+                  <tr key={p.plo}>
+                    <td><PloChip n={p.plo} /></td>
+                    <td className="small">{p.assess.evidence}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </Section>
 
         <Section id="perplo" title="รายละเอียดรายข้อ PLO"
