@@ -299,3 +299,7 @@
 .ksadetail.dim-S{--ken:var(--y2)}
 .ksadetail.dim-E{--ken:var(--y3)}
 .ksadetail.dim-C{--ken:var(--y4)}
+
+/* รายการวิธีการประเมินและน้ำหนักในตาราง 6.1 บนหน้า /assessment */
+.asmt-list{margin:0;padding-left:1.15rem}
+.asmt-list li{margin:.15rem 0;line-height:1.5}

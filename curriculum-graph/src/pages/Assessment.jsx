@@ -7,6 +7,15 @@ const KsecChips = ({ list, kind }) => list.length
   ? <span className={`ksachips ${kind}`}>{list.map(r => <span className="ksachip" key={r.id}>{r.id}</span>)}</span>
   : <span className="mut">—</span>;
 
+/* คอลัมน์วิธีการประเมินและน้ำหนักในหมวด 6 เก็บเป็นรายการเลข "1) … · 2) …"
+   แตกกลับเป็นบรรทัดเพื่อให้อ่านคู่กันได้ระหว่างสองคอลัมน์ */
+const numbered = txt => (txt || "").split(/\s·\s(?=\d\))/).map(x => x.trim()).filter(Boolean);
+const NumList = ({ txt }) => {
+  const items = numbered(txt);
+  if (items.length < 2) return <>{txt}</>;
+  return <ol className="asmt-list">{items.map((x, i) => <li key={i}>{x.replace(/^\d\)\s*/, "")}</li>)}</ol>;
+};
+
 export default function Assessment() {
   const [open, setOpen] = useState(1);
 
@@ -32,9 +41,9 @@ export default function Assessment() {
                 {PLO_TEACHING.map(p => (
                   <tr key={p.plo}>
                     <td><PloChip n={p.plo} /><br /><small className="mut">{p.name}</small></td>
-                    <td className="small">{p.assess.method}</td>
+                    <td className="small"><NumList txt={p.assess.method} /></td>
                     <td className="small">{p.assess.form}</td>
-                    <td className="small">{p.assess.weight}</td>
+                    <td className="small nowrap"><NumList txt={p.assess.weight} /></td>
                     <td className="small">{p.assess.mastery}</td>
                     <td className="small">{p.assess.assessor}</td>
                     <td className="small">{p.assess.pass}</td>
