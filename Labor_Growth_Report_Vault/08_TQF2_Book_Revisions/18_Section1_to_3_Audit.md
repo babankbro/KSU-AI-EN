@@ -70,7 +70,7 @@
 
 | ลำดับเดิม | อาชีพ | รหัส |
 |--:|---|---|
-| 3 | วิศวกรเกษตรอัจฉริยะและไอโอที (Smart Agriculture and IoT Engineer) | C03 |
+| 3 | วิศวกรเกษตรอัจฉริยะและอินเทอร์เน็ตของสรรพสิ่ง (Smart Agriculture and IoT Engineer) | C03 |
 
 **ค. แขนงที่ 2 ปัญญาประดิษฐ์ภาคอุตสาหกรรม (2 อาชีพ)**
 
@@ -109,7 +109,7 @@
 
 | กลุ่มงาน | อาชีพ |
 |---|---|
-| พัฒนาตัวแบบและข้อมูล | AI/ML Engineer (1) · Data Engineer (7) · Data Scientist / Data Analyst (12) |
+| พัฒนาโมเดลและข้อมูล | AI/ML Engineer (1) · Data Engineer (7) · Data Scientist / Data Analyst (12) |
 | ระบบฝังตัว ควบคุม และหุ่นยนต์ | Smart Agriculture and IoT Engineer (3) · Automation and Control Engineer (4) · Robotics and System Integration Engineer (5) |
 | ซอฟต์แวร์และการส่งมอบโซลูชัน | AI Application / Solutions Engineer (2) · AI Software and Application Engineer (6) |
 | ธุรกิจและนวัตกรรม | AI Innovator (8) · Technology and AI Entrepreneur (9) |

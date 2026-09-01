@@ -37,7 +37,7 @@
 
 | รหัสและอาชีพ | พื้นฐานวิศวกรรม | แกน AI | แกนบูรณาการ/เฉพาะบริบท | วิชาเลือกแนะนำ | หลักฐานปลายทาง |
 |---|---|---|---|---|---|
-| **C03 วิศวกรเกษตรอัจฉริยะและไอโอที** | EN-714-11002 Programming; EN-714-11006 ไฟฟ้าและอิเล็กทรอนิกส์ | EN-714-12005 IoT/Edge; EN-714-12004 Data Engineering | EN-714-12011 Smart Agriculture; EN-714-12009 Sensing & Actuation | EN-714-14001 ชลประทาน; EN-714-14009 ML เซนเซอร์ฟาร์ม | EN-714-12019 ระบบ sensor–edge–cloud–control และ EN-714-17002 |
+| **C03 วิศวกรเกษตรอัจฉริยะและอินเทอร์เน็ตของสรรพสิ่ง** | EN-714-11002 Programming; EN-714-11006 ไฟฟ้าและอิเล็กทรอนิกส์ | EN-714-12005 IoT/Edge; EN-714-12004 Data Engineering | EN-714-12011 Smart Agriculture; EN-714-12009 Sensing & Actuation | EN-714-14001 ชลประทาน; EN-714-14009 ML เซนเซอร์ฟาร์ม | EN-714-12019 ระบบ sensor–edge–cloud–control และ EN-714-17002 |
 | **C18 วิศวกรระบบตรวจวัดและควบคุมฟาร์มอัจฉริยะ** | EN-714-11006; EN-714-11008 Workshop 2 | EN-714-12005 IoT/Edge | EN-714-12009 Sensing & Actuation; EN-714-12011 Smart Agriculture | EN-714-14001 ชลประทาน; EN-714-14009 ML เซนเซอร์ฟาร์ม | ระบบตรวจวัดและควบคุมน้ำ/สภาพแวดล้อมที่ทดสอบหน้างาน |
 | **C19 วิศวกรระบบอัตโนมัติและหุ่นยนต์เพื่อการเกษตร** | EN-714-11001 CAD; EN-714-11006; EN-714-11010 Workshop 3 | EN-714-12006 Computer Vision; EN-714-12005 IoT/Edge | EN-714-12009 Sensing & Actuation; EN-714-12015 Autonomous Agriculture | EN-714-14011 หุ่นยนต์เกษตร | หุ่นยนต์หรือระบบอัตโนมัติที่มี perception, control และ safety test |
 | **C20 วิศวกรอากาศยานไร้คนขับและภูมิสารสนเทศเพื่อการเกษตร** | EN-714-11007 สถิติ; EN-714-11002 Programming | EN-714-12006 Computer Vision | EN-714-12015 Autonomous Agriculture | EN-714-14003 GIS เกษตร; EN-714-14012 UAV/Remote Sensing | แผนการบิน ชุดข้อมูลภาพ แผนที่/GeoAI และการประเมินความถูกต้อง |

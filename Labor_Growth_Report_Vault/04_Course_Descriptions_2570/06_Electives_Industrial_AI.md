@@ -9,12 +9,12 @@
 
 EN-714-14016 การควบคุมกระบวนการขั้นสูงและระบบควบคุมแบบกระจาย 3(2-2-5)
 Advanced Process Control and Distributed Control Systems
-การสร้างแบบจำลองพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบป้อนไปข้างหน้าและแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยแบบจำลอง สถาปัตยกรรมระบบควบคุมแบบกระจายและการจัดการสัญญาณเตือน และการเชื่อมต่อกับสกาดาพร้อมประเมินสมรรถนะ
+การสร้างโมเดลพลวัตและการระบุระบบของกระบวนการอุตสาหกรรม การวิเคราะห์เสถียรภาพของวงควบคุม การปรับตั้งตัวควบคุมพีไอดีขั้นสูง การควบคุมแบบป้อนไปข้างหน้าและแบบหลายตัวแปร การควบคุมเชิงทำนายด้วยโมเดล สถาปัตยกรรมระบบควบคุมแบบกระจายและการจัดการสัญญาณเตือน และการเชื่อมต่อกับสกาดาพร้อมประเมินสมรรถนะ
 Dynamic modeling and system identification of industrial processes; control-loop stability analysis; advanced PID tuning; feedforward and multivariable control; model-predictive control and AI-assisted process control; distributed control system architecture; alarm management; integration with SCADA and manufacturing execution systems; and commissioning and performance evaluation
 
 EN-714-14017 การบำรุงรักษาเชิงพยากรณ์และป้องกันด้วยปัญญาประดิษฐ์ 3(2-2-5)
 AI-Based Predictive and Preventive Maintenance
-หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง และอุณหภูมิ การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร ตัวแบบการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ
+หลักการและกลยุทธ์การบำรุงรักษาเครื่องจักรเชิงแก้ไข เชิงป้องกัน และเชิงพยากรณ์ การเก็บข้อมูลการสั่นสะเทือน เสียง และอุณหภูมิ การประมวลผลสัญญาณและการสกัดคุณลักษณะเพื่อวินิจฉัยเครื่องจักร โมเดลการเรียนรู้ของเครื่องเพื่อตรวจจับความผิดปกติและพยากรณ์ความเสียหาย ดิจิทัลทวินสำหรับจำลองสภาพเครื่องจักร และการวางแผนบำรุงรักษาอัตโนมัติ
 Principles and strategies of corrective, preventive, and predictive maintenance for industrial machinery; collection of vibration, acoustic, temperature, and current signals; signal processing and feature extraction for machine diagnosis; machine learning models for anomaly detection and failure prediction; digital twins for simulating machine condition; automatic alerting and maintenance planning; return-on-investment assessment
 
 EN-714-14018 การออกแบบและการจัดการคลังสินค้าอัจฉริยะ 3(2-2-5)
@@ -24,7 +24,7 @@ Principles and types of automated warehouse systems; warehouse design and layout
 
 EN-714-14019 การวิจัยดำเนินงานขั้นสูงและการหาค่าเหมาะที่สุดทางอุตสาหกรรม 3(2-2-5)
 Advanced Operations Research and Industrial Optimization
-การสร้างตัวแบบเพื่อการตัดสินใจทางอุตสาหกรรม การโปรแกรมเชิงเส้น จำนวนเต็มผสม ไม่เชิงเส้น และหลายวัตถุประสงค์ ตัวแบบโครงข่ายและการขนส่ง การจัดสรรทรัพยากร การจัดตารางการผลิต และการวางแผนสินค้าคงคลัง ทฤษฎีแถวคอยและการจำลองเหตุการณ์ไม่ต่อเนื่อง วิธีฮิวริสติกและเมตาฮิวริสติก และการใช้ซอฟต์แวร์ตัวแก้ปัญหาวิเคราะห์ความไว
+การสร้างโมเดลเพื่อการตัดสินใจทางอุตสาหกรรม การโปรแกรมเชิงเส้น จำนวนเต็มผสม ไม่เชิงเส้น และหลายวัตถุประสงค์ โมเดลโครงข่ายและการขนส่ง การจัดสรรทรัพยากร การจัดตารางการผลิต และการวางแผนสินค้าคงคลัง ทฤษฎีแถวคอยและการจำลองเหตุการณ์ไม่ต่อเนื่อง วิธีฮิวริสติกและเมตาฮิวริสติก และการใช้ซอฟต์แวร์ตัวแก้ปัญหาวิเคราะห์ความไว
 Industrial decision modeling; linear, mixed-integer, nonlinear, and multi-objective programming; network and transportation models; resource allocation, production scheduling, and inventory planning; queueing theory and discrete-event simulation; stochastic and robust optimization; heuristic and metaheuristic methods; Python and optimization solvers; sensitivity analysis for comparing alternatives
 
 EN-714-14020 เทคโนโลยีอุตสาหกรรมเกษตรและการแปรรูป 3(3-0-6)
@@ -34,7 +34,7 @@ Principles and processes of agricultural produce processing in industry; food qu
 
 EN-714-14021 ปัญญาประดิษฐ์และการจัดการโรงสีข้าวอัจฉริยะ 3(2-2-5)
 Artificial Intelligence and Smart Rice Mill Management
-กระบวนการสีข้าวครบวงจรตั้งแต่การรับซื้อข้าวเปลือก การทำความสะอาด การกะเทาะเปลือก การขัดขาว การคัดแยก และการบรรจุ ระบบคอมพิวเตอร์วิทัศน์ตรวจสอบคุณภาพข้าวด้านความขาว ความชื้น และเมล็ดหัก ระบบอบแห้งข้าวเปลือกอัจฉริยะ การจัดการไซโลด้วยไอโอที การบำรุงรักษาเชิงพยากรณ์ และระบบตรวจสอบย้อนกลับคุณภาพข้าว
+กระบวนการสีข้าวครบวงจรตั้งแต่การรับซื้อข้าวเปลือก การทำความสะอาด การกะเทาะเปลือก การขัดขาว การคัดแยก และการบรรจุ ระบบคอมพิวเตอร์วิทัศน์ตรวจสอบคุณภาพข้าวด้านความขาว ความชื้น และเมล็ดหัก ระบบอบแห้งข้าวเปลือกอัจฉริยะ การจัดการไซโลด้วยอินเทอร์เน็ตของสรรพสิ่ง การบำรุงรักษาเชิงพยากรณ์ และระบบตรวจสอบย้อนกลับคุณภาพข้าว
 The complete rice-milling process from paddy receiving, cleaning, husking, whitening, and grading to packaging; computer vision for inspecting whiteness, moisture, broken grains, and impurities; smart paddy drying with automatic moisture control; IoT-based silo management; predictive maintenance for mill machinery; digital twins and production-line simulation; rice quality traceability systems
 
 EN-714-14022 เทคโนโลยีอัจฉริยะในกระบวนการผลิตอ้อยและน้ำตาล 3(2-2-5)
@@ -49,7 +49,7 @@ The complete cassava-starch production process from raw-material receiving, wash
 
 EN-714-14024 เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร 3(2-2-5)
 Internet of Things Technology for Agricultural Produce Storage
-หลักการและเทคโนโลยีไอโอทีสำหรับการเก็บรักษาผลผลิตเกษตร การออกแบบและติดตั้งเครือข่ายเซนเซอร์ในโรงเก็บ ไซโล และห้องเย็น เซนเซอร์อุณหภูมิ ความชื้น คาร์บอนไดออกไซด์ และเอทิลีน ระบบควบคุมสภาพแวดล้อมอัตโนมัติด้วยปัญญาประดิษฐ์ การพยากรณ์อายุการเก็บรักษา และการบูรณาการกับคลาวด์เพื่อการติดตามแบบเวลาจริง
+หลักการและเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่งสำหรับการเก็บรักษาผลผลิตเกษตร การออกแบบและติดตั้งเครือข่ายเซนเซอร์ในโรงเก็บ ไซโล และห้องเย็น เซนเซอร์อุณหภูมิ ความชื้น คาร์บอนไดออกไซด์ และเอทิลีน ระบบควบคุมสภาพแวดล้อมอัตโนมัติด้วยปัญญาประดิษฐ์ การพยากรณ์อายุการเก็บรักษา และการบูรณาการกับคลาวด์เพื่อการติดตามแบบเวลาจริง
 Principles and IoT technologies for agricultural produce storage; design and installation of sensor networks in warehouses, silos, and cold rooms; temperature, humidity, carbon dioxide, oxygen, and ethylene sensors; AI-based automatic environmental control; analysis of produce quality during storage; alerting and emergency management; shelf-life forecasting with machine learning; integration with cloud platforms for real-time monitoring
 
 EN-714-14025 ระบบอบแห้งอัจฉริยะในอุตสาหกรรมเกษตร 3(2-2-5)
@@ -99,7 +99,7 @@ Principles of industrial safety engineering and occupational health; engineering
 
 EN-714-14034 การออกแบบเครื่องจักรกลอัจฉริยะ 3(2-2-5)
 Intelligent Machine Design
-การประยุกต์หลักการทางวิศวกรรมสำหรับการออกแบบเครื่องจักรกล การวิเคราะห์ภาระ ความเค้น และความเมื่อยล้าของชิ้นส่วนเครื่องจักร การเลือกวัสดุและกระบวนการผลิต การออกแบบชิ้นส่วนส่งกำลัง เพลา เฟือง และตลับลูกปืน การสร้างแบบจำลองสามมิติและการวิเคราะห์ด้วยไฟไนต์เอลิเมนต์ และการใช้ปัญญาประดิษฐ์หาค่าเหมาะที่สุดของการออกแบบ
+การประยุกต์หลักการทางวิศวกรรมสำหรับการออกแบบเครื่องจักรกล การวิเคราะห์ภาระ ความเค้น และความเมื่อยล้าของชิ้นส่วนเครื่องจักร การเลือกวัสดุและกระบวนการผลิต การออกแบบชิ้นส่วนส่งกำลัง เพลา เฟือง และตลับลูกปืน การสร้างโมเดลสามมิติและการวิเคราะห์ด้วยไฟไนต์เอลิเมนต์ และการใช้ปัญญาประดิษฐ์หาค่าเหมาะที่สุดของการออกแบบ
 Application of engineering principles to machine design; analysis of loads, stresses, fatigue, and component safety; selection of materials and manufacturing processes; design of power-transmission components, shafts, gears, belts, and bearings; engineering drawing and three-dimensional computer modeling; finite element analysis; integration of sensors into machines; AI for design optimization and failure prediction
 
 EN-714-14035 การออกแบบเครื่องจักรกลชั้นสูงสำหรับระบบอัตโนมัติและหุ่นยนต์ 3(2-2-5)

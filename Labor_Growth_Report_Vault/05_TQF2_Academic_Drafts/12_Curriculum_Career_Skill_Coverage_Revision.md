@@ -217,7 +217,7 @@
 
 | รหัส | รายวิชาปรับใหม่ | ความซ้ำเดิม | ความลึกและช่องว่างที่ปิด |
 |---|---|---|---|
-| EN-714-14037 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-714-12014 | การปรับตัวแบบแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
+| EN-714-14037 | Advanced Large Language Models | Generative AI, RAG และผู้ช่วยเสมือนซ้ำ EN-714-12014 | การปรับโมเดลแบบประหยัดพารามิเตอร์ การบีบอัด การประเมิน และการเพิ่มประสิทธิภาพการอนุมาน |
 | EN-714-14038 | AI Reliability and Safety | การทดสอบหน่วย/ระบบและ QA ซ้ำ EN-714-12013 | uncertainty, calibration, OOD, adversarial robustness, red teaming, safety case และ model drift |
 | EN-714-14039 | Enterprise AI Architecture | microservices, container และ cloud deployment ซ้ำ EN-714-12013/EN-714-12007 | การบูรณาการ ERP/CRM/legacy, event-driven architecture, zero trust, HA/DR, FinOps และ architecture decisions |
 | EN-714-14045 | AI Venture Creation | discovery, business model และ MVP ซ้ำ EN-714-12009 | commercialization, pricing, unit economics, B2B sales, procurement, licensing, fundraising และ scaling |

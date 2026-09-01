@@ -195,7 +195,7 @@ export const HARD_SKILLS = [
 
   { id: "HS19", name: "Decision Intelligence, BI, DSS & Operations Analytics", core: false, set: "AISK05", rank: 19,
     track: { T1: "●", T2: "●", T3: "●" }, plo: [2,3,6], courses: ["EN-714-12004","EN-714-12010"],
-    scope: "พัฒนาระบบ BI/DSS และแบบจำลองตัดสินใจด้วย forecasting, scenario, simulation, optimization, uncertainty analysis, dashboard และ decision communication",
+    scope: "พัฒนาระบบ BI/DSS และโมเดลตัดสินใจด้วย forecasting, scenario, simulation, optimization, uncertainty analysis, dashboard และ decision communication",
     market: "รองรับ C02, C06, C07, C11, C12 และ C15 ที่ต้องใช้ข้อมูลเพื่อการตัดสินใจและการดำเนินงาน",
     level: "ทุก Track L3 · โครงงาน DSS L4" },
 

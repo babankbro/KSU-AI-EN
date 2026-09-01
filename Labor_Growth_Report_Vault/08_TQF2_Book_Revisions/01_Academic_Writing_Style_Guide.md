@@ -37,7 +37,7 @@
 | Computer Vision | คอมพิวเตอร์วิทัศน์ |
 | Generative AI | ปัญญาประดิษฐ์เชิงสร้าง / เชิงรู้สร้าง |
 | Agentic AI | ระบบเอเจนต์ปัญญาประดิษฐ์ |
-| Digital Twin | ดิจิทัลทวิน / ฝาแฝดดิจิทัล |
+| Digital Twin | ดิจิทัลทวิน / ดิจิทัลทวิน |
 | Stakeholders | ผู้มีส่วนได้ส่วนเสีย |
 | Graduate Attributes | ลักษณะบัณฑิต |
 | Curriculum Mapping | แผนที่แสดงความเชื่อมโยง |

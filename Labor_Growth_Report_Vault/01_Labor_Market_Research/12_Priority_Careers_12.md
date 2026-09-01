@@ -23,7 +23,7 @@
 |---:|---|---|---|:---:|
 | 1 | นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร | วิศวกรปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง | AI/ML Engineer | M |
 | 2 | ข้ามทุกแขนง | วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์ | AI Application / Solutions Engineer | M |
-| 3 | เกษตรอัจฉริยะ | วิศวกรเกษตรอัจฉริยะและไอโอที | Smart Agriculture and IoT Engineer | S |
+| 3 | เกษตรอัจฉริยะ | วิศวกรเกษตรอัจฉริยะและอินเทอร์เน็ตของสรรพสิ่ง | Smart Agriculture and IoT Engineer | S |
 | 4 | ปัญญาประดิษฐ์ภาคอุตสาหกรรม | วิศวกรระบบควบคุมและอัตโนมัติ | Automation and Control Engineer | M |
 | 5 | ปัญญาประดิษฐ์ภาคอุตสาหกรรม | วิศวกรหุ่นยนต์และบูรณาการระบบ | Robotics and System Integration Engineer | M |
 | 6 | นวัตกรรมปัญญาประดิษฐ์ระดับองค์กร | วิศวกรซอฟต์แวร์และแอปพลิเคชันปัญญาประดิษฐ์ | AI Software and Application Engineer | M |
@@ -43,7 +43,7 @@
 **AI/ML Engineer · แขนงวิชานวัตกรรมปัญญาประดิษฐ์ระดับองค์กร**
 
 - รายวิชาปลายทาง: EN-714-12002, EN-714-12003, EN-714-12004, EN-714-12007, EN-714-12013 และ EN-714-12019
-- สมรรถนะปลายทาง: แบบจำลอง AI/ML, data pipeline, deployment, monitoring และ end-to-end AI system
+- สมรรถนะปลายทาง: โมเดล AI/ML, data pipeline, deployment, monitoring และ end-to-end AI system
 
 ### 2. วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์
 
@@ -52,7 +52,7 @@
 - รายวิชาปลายทาง: EN-714-12009, EN-714-12013, EN-714-12014, EN-714-12019 และ EN-714-17002
 - สมรรถนะปลายทาง: requirements, solution architecture, system integration, prototype และ implementation ในบริบทจริง
 
-### 3. วิศวกรเกษตรอัจฉริยะและไอโอที
+### 3. วิศวกรเกษตรอัจฉริยะและอินเทอร์เน็ตของสรรพสิ่ง
 
 **Smart Agriculture and IoT Engineer · แขนงวิชาเกษตรอัจฉริยะ**
 

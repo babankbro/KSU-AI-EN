@@ -7,19 +7,19 @@
 
 ---
 
-EN-714-14036 วิศวกรรมข้อมูลขั้นสูงและการวางท่อข้อมูล 3(2-2-5)
+EN-714-14036 วิศวกรรมข้อมูลขั้นสูงและการวางไปป์ไลน์ข้อมูล 3(2-2-5)
 Advanced Data Engineering and Data Pipelines
-สถาปัตยกรรมและการออกแบบท่อข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพและธรรมาภิบาลข้อมูลในองค์กร การสร้างท่อข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการท่อข้อมูลในการทำงานจริง
+สถาปัตยกรรมและการออกแบบไปป์ไลน์ข้อมูลขั้นสูงสำหรับระบบปัญญาประดิษฐ์ การประมวลผลข้อมูลแบบกระแสและแบบกระจาย การออกแบบสถาปัตยกรรมที่เก็บข้อมูลขนาดใหญ่ การจัดการคุณภาพและธรรมาภิบาลข้อมูลในองค์กร การสร้างไปป์ไลน์ข้อมูลแบบเวลาจริง การบูรณาการข้อมูลจากหลายแหล่ง และการติดตามและบริหารจัดการไปป์ไลน์ข้อมูลในการทำงานจริง
 Architecture and design of advanced data pipelines for AI systems; stream and distributed processing; design of big-data storage architectures; data-quality management and enterprise data governance; data orchestration; construction of real-time pipelines; integration of data from diverse sources; and monitoring and management of pipelines in production
 
-EN-714-14037 ตัวแบบภาษาขนาดใหญ่ขั้นสูง 3(2-2-5)
+EN-714-14037 โมเดลภาษาขนาดใหญ่ขั้นสูง 3(2-2-5)
 Advanced Large Language Models
-สถาปัตยกรรมและกระบวนการทำงานของตัวแบบภาษาขนาดใหญ่ การจัดเตรียมชุดข้อมูลเฉพาะโดเมน การปรับตัวแบบตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดตัวแบบ การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการตัวแบบพร้อมติดตามการเสื่อมของสมรรถนะ
+สถาปัตยกรรมและกระบวนการทำงานของโมเดลภาษาขนาดใหญ่ การจัดเตรียมชุดข้อมูลเฉพาะโดเมน การปรับโมเดลตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดโมเดล การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการโมเดลพร้อมติดตามการเสื่อมของสมรรถนะ
 Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; model serving with performance-degradation monitoring
 
 EN-714-14038 ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์ 3(2-2-5)
 AI Reliability and Safety
-วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลนอกการแจกแจงและกรณีขอบ การวัดความไม่แน่นอนและการสอบเทียบความเชื่อมั่น ความทนทานต่อการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม และการจัดทำบัตรตัวแบบพร้อมหลักฐานการประกันคุณภาพ
+วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลนอกการแจกแจงและกรณีขอบ การวัดความไม่แน่นอนและการสอบเทียบความเชื่อมั่น ความทนทานต่อการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม และการจัดทำบัตรโมเดลพร้อมหลักฐานการประกันคุณภาพ
 Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to adversarial attacks; bias and fairness evaluation; red teaming and guardrails; monitoring of data and model drift; preparation of model cards and assurance evidence
 
 EN-714-14039 สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร 3(2-2-5)
@@ -34,12 +34,12 @@ Principles and processes of user-experience and user-interface design for AI sys
 
 EN-714-14041 ปัญญาประดิษฐ์ทางการแพทย์และสุขภาพ 3(2-2-5)
 Artificial Intelligence in Medical and Healthcare
-หลักการประยุกต์ใช้ปัญญาประดิษฐ์ในทางการแพทย์และระบบสาธารณสุข การจัดการฐานข้อมูลเวชระเบียนอิเล็กทรอนิกส์ การพัฒนาตัวแบบเพื่อการวินิจฉัยโรคเบื้องต้น การพยากรณ์ความเสี่ยงทางสุขภาพจากข้อมูลพฤติกรรม ระบบแนะนำการรักษาเฉพาะบุคคล การบูรณาการกับอุปกรณ์สวมใส่เพื่อติดตามสัญญาณชีพ และจริยธรรมและความเป็นส่วนตัวของข้อมูลผู้ป่วย
+หลักการประยุกต์ใช้ปัญญาประดิษฐ์ในทางการแพทย์และระบบสาธารณสุข การจัดการฐานข้อมูลเวชระเบียนอิเล็กทรอนิกส์ การพัฒนาโมเดลเพื่อการวินิจฉัยโรคเบื้องต้น การพยากรณ์ความเสี่ยงทางสุขภาพจากข้อมูลพฤติกรรม ระบบแนะนำการรักษาเฉพาะบุคคล การบูรณาการกับอุปกรณ์สวมใส่เพื่อติดตามสัญญาณชีพ และจริยธรรมและความเป็นส่วนตัวของข้อมูลผู้ป่วย
 Principles of applying AI in medicine and public-health systems; management of electronic health-record databases; machine learning models for preliminary diagnosis; health-risk forecasting from behavioral data; personalized treatment recommendation systems; integration with wearable devices to monitor vital signs; natural-language processing to extract information from medical documents; and ethics and privacy of patient data
 
 EN-714-14042 การวิเคราะห์ข้อมูลภาพทางการแพทย์ 3(2-2-5)
 Medical Image Analysis
-หลักการประมวลผลและการวิเคราะห์ภาพทางการแพทย์ การทำงานกับภาพรังสีเอกซ์ ภาพถ่ายรังสีส่วนตัดอาศัยคอมพิวเตอร์ และภาพคลื่นแม่เหล็กไฟฟ้า การใช้การเรียนรู้เชิงลึกเพื่อการตรวจจับและแบ่งส่วนอวัยวะ การวิเคราะห์ความผิดปกติและรอยโรค การลดสัญญาณรบกวนและเพิ่มความคมชัดของภาพ และการบูรณาการกับระบบจัดเก็บภาพทางการแพทย์พร้อมประเมินตัวแบบ
+หลักการประมวลผลและการวิเคราะห์ภาพทางการแพทย์ การทำงานกับภาพรังสีเอกซ์ ภาพถ่ายรังสีส่วนตัดอาศัยคอมพิวเตอร์ และภาพคลื่นแม่เหล็กไฟฟ้า การใช้การเรียนรู้เชิงลึกเพื่อการตรวจจับและแบ่งส่วนอวัยวะ การวิเคราะห์ความผิดปกติและรอยโรค การลดสัญญาณรบกวนและเพิ่มความคมชัดของภาพ และการบูรณาการกับระบบจัดเก็บภาพทางการแพทย์พร้อมประเมินโมเดล
 Principles of medical image processing and analysis; working with X-ray, computed-tomography, and magnetic-resonance image data; deep learning for organ detection and segmentation; analysis of abnormalities and lesions; building models to assist physicians in diagnosis; noise reduction and contrast enhancement; integration with picture archiving and communication systems; performance evaluation of models
 
 EN-714-14043 เทคโนโลยีทางการเงินและปัญญาประดิษฐ์ 3(2-2-5)
@@ -49,7 +49,7 @@ Principles of financial technology and financial-service innovation; application
 
 EN-714-14044 การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน 3(2-2-5)
 Predictive Data Analysis in Finance
-เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างตัวแบบพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล
+เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างโมเดลพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล
 Predictive-analytics techniques for financial markets; analysis of financial time-series data; price-forecasting models for stocks and financial assets with deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; and interpretation and visualization of financial data for decisions
 
 EN-714-14045 การสร้างธุรกิจปัญญาประดิษฐ์ 3(2-2-5)
@@ -59,7 +59,7 @@ Commercialization of AI prototypes; market validation and technology readiness; 
 
 EN-714-14046 การจัดการโครงการซอฟต์แวร์อัจฉริยะ 3(3-0-6)
 Intelligent Software Project Management
-หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูล การประเมินความเสี่ยงและระยะเวลาของโครงการพัฒนาตัวแบบ การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง และการควบคุมคุณภาพและการวัดผลความสำเร็จของโครงการ
+หลักการและระเบียบวิธีบริหารโครงการซอฟต์แวร์อัจฉริยะ การบริหารโครงการแบบอไจล์และสครัม การวางแผนและจัดการทรัพยากรสำหรับโครงการที่ขับเคลื่อนด้วยข้อมูล การประเมินความเสี่ยงและระยะเวลาของโครงการพัฒนาโมเดล การจัดการวงจรชีวิตของระบบการเรียนรู้ของเครื่อง และการควบคุมคุณภาพและการวัดผลความสำเร็จของโครงการ
 Principles and methodologies of intelligent software project management; agile and Scrum; planning and resource management for data- and AI-driven projects; risk and timeline assessment of model-development projects; management of the machine learning system lifecycle; stakeholder-expectation management; quality control and continuous delivery; and measuring project success
 
 EN-714-14047 การพัฒนาธุรกิจและการตลาดดิจิทัลด้วยปัญญาประดิษฐ์ 3(3-0-6)
@@ -79,7 +79,7 @@ Virtual-reality, augmented-reality, and mixed-reality technologies; integration 
 
 EN-714-14050 ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์ 3(2-2-5)
 AI Governance and Risk
-กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว และความเป็นธรรม การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูลและมาตรฐานที่เกี่ยวข้อง และการจัดทำทะเบียนความเสี่ยง บัตรตัวแบบ และหลักฐานสำหรับการตรวจประเมิน
+กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว และความเป็นธรรม การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูลและมาตรฐานที่เกี่ยวข้อง และการจัดทำทะเบียนความเสี่ยง บัตรโมเดล และหลักฐานสำหรับการตรวจประเมิน
 AI governance and risk-management frameworks; system inventories and risk classification; impact assessment for rights, privacy, fairness, and safety; roles, accountability, and human oversight; compliance with data-protection laws and relevant standards; third-party and external-model risk; risk registers, model cards, and audit evidence; post-deployment monitoring and incident reporting
 
 [[00_Course_Descriptions_Home|← หน้าหลักคำอธิบายรายวิชา]]

@@ -5,7 +5,7 @@
 3) วิศวกรข้อมูล (Data Engineer)
 4) วิศวกรระบบควบคุมและอัตโนมัติ (Automation and Control Engineer)
 5) วิศวกรหุ่นยนต์และบูรณาการระบบ (Robotics and System Integration Engineer)
-6) วิศวกรเกษตรอัจฉริยะและไอโอที (Smart Agriculture and IoT Engineer)
+6) วิศวกรเกษตรอัจฉริยะและอินเทอร์เน็ตของสรรพสิ่ง (Smart Agriculture and IoT Engineer)
 7) วิศวกรประยุกต์และโซลูชันปัญญาประดิษฐ์ (AI Application / Solutions Engineer)
 8) วิศวกรซอฟต์แวร์และแอปพลิเคชันปัญญาประดิษฐ์ (AI Software and Application Engineer)
 9) นักออกแบบและสร้างนวัตกรรมด้านปัญญาประดิษฐ์ (AI Innovator)

@@ -39,7 +39,7 @@ Deployment of the system in the organizational environment; integration with exi
 
 EN-714-16005 การเรียนรู้ร่วมการทำงานด้านวิศวกรรมปัญญาประดิษฐ์และระบบอัจฉริยะ 5 3(2-2-5)
 Work-Integrated Learning in Artificial Intelligence and Intelligent System Engineering 5
-การติดตามและดูแลระบบที่ส่งมอบแล้วในการปฏิบัติงานจริง การเฝ้าระวังสมรรถนะและการเสื่อมของตัวแบบ การบำรุงรักษาและปรับปรุงระบบอย่างต่อเนื่อง การประเมินคุณค่าที่ระบบสร้างให้องค์กร การสรุปบทเรียนและข้อเสนอแนะเชิงพัฒนา และการประเมินผลร่วมกับสถานประกอบการ
+การติดตามและดูแลระบบที่ส่งมอบแล้วในการปฏิบัติงานจริง การเฝ้าระวังสมรรถนะและการเสื่อมของโมเดล การบำรุงรักษาและปรับปรุงระบบอย่างต่อเนื่อง การประเมินคุณค่าที่ระบบสร้างให้องค์กร การสรุปบทเรียนและข้อเสนอแนะเชิงพัฒนา และการประเมินผลร่วมกับสถานประกอบการ
 Monitoring and maintenance of the delivered system in actual operation; surveillance of performance and model degradation; continuous maintenance and system improvement; assessment of the value the system delivers to the organization; synthesis of lessons learned and development recommendations; and joint evaluation with the host organization
 
 ## หัวข้อพิเศษด้านเทคโนโลยีเกิดใหม่

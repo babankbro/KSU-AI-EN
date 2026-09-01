@@ -112,7 +112,7 @@
 | Heat transfer, fluid, process และ energy | EF3, HS15, HS17 | EN-714-11005, EN-714-12012 | PLO1, PLO2, PLO4, PLO6 | ปิดในแกน |
 | ไฟฟ้า เครื่องมือวัด และการสอบเทียบ | EF4, HS9 | EN-714-11006, EN-714-12009 | PLO1, PLO2, PLO6 | ปิดในแกน |
 | Pneumatic, hydraulic และ actuation | EF5, HS5 | EN-714-11008, EN-714-12009, EN-714-14031 | PLO2, PLO4, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านการออกแบบ การวินิจฉัย และการควบคุมระบบกำลังของไหล |
-| Heat and mass transfer | EF3, HS15, HS17 | EN-714-11005, EN-714-14025, EN-714-14032 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านแบบจำลองเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
+| Heat and mass transfer | EF3, HS15, HS17 | EN-714-11005, EN-714-14025, EN-714-14032 | PLO1, PLO2, PLO6 | ปิดพื้นฐานในแกนและเพิ่มความลึกด้านโมเดลเชิงตัวเลข ระบบความร้อน และการเรียนรู้ของเครื่อง |
 | Safety, standards, commissioning และ handover | EF6, HS7, SS10 | Workshop, EN-714-12012/201, EN-714-14033, Capstone/CWIE | PLO2, PLO4, PLO5, PLO6 | ปิดพื้นฐานในแกนและเพิ่มวิชาเลือกเชิงลึกด้านความปลอดภัยอุตสาหกรรม |
 | BCG/carbon/value | HS15, HS19, SS6 | EN-714-11009/123/230, EN-714-12009/304/306 | PLO2, PLO4, PLO7 | ปิดแบบมีเงื่อนไขด้าน KPI |
 | System integration input–process–output–value | HS2/HS4/HS5/HS9/HS20, SS9/SS10, EF6 | EN-714-11010, Core Track 9, Capstone/CWIE | PLO2–PLO7 ตามหลักฐาน | ปิดเชิงโครงสร้าง |

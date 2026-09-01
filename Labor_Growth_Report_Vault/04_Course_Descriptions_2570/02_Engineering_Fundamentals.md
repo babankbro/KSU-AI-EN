@@ -13,7 +13,7 @@
 
 EN-714-11001 การเขียนแบบวิศวกรรมและการวางผังระบบ 3(2-2-5)  
 Engineering Drawing and System Layout Design  
-หลักการและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพ ภาพตัด ภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ การเขียนแบบชิ้นส่วนและแบบประกอบ การสร้างแบบจำลองสองมิติและสามมิติด้วยคอมพิวเตอร์ช่วยออกแบบ การออกแบบผังฟาร์ม โรงเรือน สถานีตรวจวัด และสายการผลิต แบบท่อ แบบไฟฟ้า และวงจรควบคุม และการส่งมอบข้อมูลแบบสู่การจำลองและดิจิทัลทวิน
+หลักการและมาตรฐานการเขียนแบบวิศวกรรม การฉายภาพ ภาพตัด ภาพสามมิติ การกำหนดขนาดและพิกัดความเผื่อ การเขียนแบบชิ้นส่วนและแบบประกอบ การสร้างโมเดลสองมิติและสามมิติด้วยคอมพิวเตอร์ช่วยออกแบบ การออกแบบผังฟาร์ม โรงเรือน สถานีตรวจวัด และสายการผลิต แบบท่อ แบบไฟฟ้า และวงจรควบคุม และการส่งมอบข้อมูลแบบสู่การจำลองและดิจิทัลทวิน
 Principles and standards of engineering drawing; orthographic, sectional, and pictorial projection; dimensioning and tolerancing; part and assembly drawings; two- and three-dimensional computer-aided modeling; layout design for farms, greenhouses, sensing stations, and production lines; piping and instrumentation diagrams; electrical and control-circuit drawings; equipment layout for safety and maintenance; handover of drawing data to simulation and digital twins
 
 EN-714-11002 การเขียนโปรแกรมพื้นฐานสำหรับปัญญาประดิษฐ์ 3(2-2-5)  
@@ -33,12 +33,12 @@ Fundamental principles of thermodynamics; properties and states of matter; the f
 
 EN-714-11006 พื้นฐานไฟฟ้าและอิเล็กทรอนิกส์สำหรับระบบอัจฉริยะ 3(3-0-6)  
 Electrical and Electronic Fundamentals for Intelligent Systems  
-วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ และการปรับสภาพสัญญาณ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับไอโอที หุ่นยนต์ และฟาร์มอัจฉริยะ
+วงจรไฟฟ้ากระแสตรงและกระแสสลับ กฎของเคอร์ชอฟฟ์และการวิเคราะห์วงจร อุปกรณ์อิเล็กทรอนิกส์ ระบบดิจิทัลและตรรกะ เซนเซอร์ ทรานสดิวเซอร์ และการปรับสภาพสัญญาณ การแปลงสัญญาณแอนะล็อกและดิจิทัล ตัวกระตุ้น มอเตอร์ และอิเล็กทรอนิกส์กำลังเบื้องต้น ความปลอดภัยทางไฟฟ้า และการออกแบบวงจรตรวจวัดและขับเคลื่อนสำหรับอินเทอร์เน็ตของสรรพสิ่ง หุ่นยนต์ และฟาร์มอัจฉริยะ
 Direct- and alternating-current circuits; Kirchhoff laws and circuit analysis; electronic components; digital and logic systems; sensors, transducers, signal conditioning, calibration, and data acquisition; analog-to-digital conversion; actuators, motors, and introductory power electronics; power supplies, grounding, and electrical safety; design of sensing and actuation circuits for IoT systems, robots, and smart farms
 
 EN-714-11007 สถิติและการวิเคราะห์ข้อมูลสำหรับวิศวกรรม 3(3-0-6)  
 Statistics and Data Analysis for Engineering  
-ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การประเมินตัวแบบปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล
+ความน่าจะเป็น ตัวแปรสุ่ม และการแจกแจงความน่าจะเป็น สถิติเชิงพรรณนาและเชิงอนุมาน การสุ่มตัวอย่าง การประมาณค่า และการทดสอบสมมติฐาน การวิเคราะห์ความแปรปรวน การถดถอย สหสัมพันธ์ และอนุกรมเวลา การออกแบบการทดลองและการควบคุมกระบวนการเชิงสถิติ การประเมินโมเดลปัญญาประดิษฐ์ และการตรวจสอบการรั่วไหลและความเอนเอียงของข้อมูล
 Probability, random variables, and probability distributions; descriptive and inferential statistics; sampling, estimation, confidence intervals, and hypothesis testing; analysis of variance, regression, correlation, and time series; design of experiments, measurement-system analysis, and statistical process control; uncertainty and sensitivity analysis; evaluation of AI models; detection of data leakage and bias
 
 EN-714-11009 เศรษฐศาสตร์วิศวกรรมและการวิเคราะห์ต้นทุน 3(3-0-6)  
