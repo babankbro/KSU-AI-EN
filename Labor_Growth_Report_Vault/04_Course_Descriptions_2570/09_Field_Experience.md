@@ -1,12 +1,12 @@
 ## EN-714-17001 เตรียมความพร้อมสหกิจศึกษา 1(0-2-1)
 Cooperative Education Preparation
 ปรัชญา เป้าประสงค์ ระเบียบ และขั้นตอนของสหกิจศึกษา การค้นหาและเลือกสถานประกอบการที่เหมาะสม การจัดทำประวัติย่อ แฟ้มสะสมทักษะ และการสัมภาษณ์ทั้งภาษาไทยและภาษาอังกฤษ จรรยาบรรณวิชาชีพ กฎหมายแรงงาน ทรัพย์สินทางปัญญา ธรรมาภิบาลปัญญาประดิษฐ์ และความปลอดภัยในการทำงาน และการจัดทำแผนปฏิบัติงานและรูปแบบรายงานสหกิจศึกษา
-Philosophy, objectives, regulations, and procedures of cooperative education; identifying and selecting workplaces in AI engineering, agriculture, industry, or enterprise; preparation of resumes, skill portfolios, and interviews in Thai and English; professional ethics, labor law, intellectual property, AI governance, and workplace safety; communication and teamwork; preparation of the work plan and cooperative-education report format
+Philosophy, objectives, regulations, and procedures of cooperative education; identifying and selecting workplaces in AI engineering, agriculture, industry, or enterprise; preparation of resumes, skill portfolios, and interviews in Thai and English; professional ethics, labor law, intellectual property, AI governance, and workplace safety; communication and teamwork; and preparation of the work plan and cooperative-education report format
 
 ## EN-714-17002 สหกิจศึกษา 6(0-40-0)
 Cooperative Education
 การปฏิบัติงานจริงในสถานประกอบการที่ได้รับอนุมัติไม่น้อยกว่าสิบหกสัปดาห์ การวิเคราะห์ปัญหา ข้อกำหนด และเกณฑ์การยอมรับของงาน การประยุกต์และบูรณาการความรู้ด้านวิศวกรรมและปัญญาประดิษฐ์ การเก็บข้อมูล ทดลอง และตีความผล การทำงานร่วมกับทีมสหวิทยาการ การบริหารงานและความเสี่ยง การปฏิบัติตามจรรยาบรรณและธรรมาภิบาล และการจัดทำรายงาน
-Supervised professional practice in an approved workplace for at least sixteen weeks; analysis of the assigned problem, requirements, and acceptance criteria; application and integration of engineering and AI knowledge; data collection, experimentation, and interpretation of results; collaboration in a multidisciplinary team; management of work and risk; compliance with professional ethics and governance; preparation of the cooperative-education report
+Supervised professional practice in an approved workplace for at least sixteen weeks; analysis of the assigned problem, requirements, and acceptance criteria; application and integration of engineering and AI knowledge; data collection, experimentation, and interpretation of results; collaboration in a multidisciplinary team; management of work and risk; compliance with professional ethics and governance; and preparation of the cooperative-education report
 
 > [!warning] ข้อยกเว้นการคำนวณชั่วโมงของสหกิจศึกษา — ต้องให้คณะกรรมการยืนยัน
 > `EN-714-17002` เขียนเป็น **6(0-40-0)** ซึ่งไม่เป็นไปตามหลักการคำนวณของ สป.อว. ที่ให้ปฏิบัติการ 1 ชั่วโมงต่อสัปดาห์ เท่ากับศึกษาด้วยตนเอง 0.5 ชั่วโมง หากคำนวณตรงตัวจะได้ 6(0-40-20) คือภาระรวม 60 ชั่วโมงต่อสัปดาห์ ซึ่งไม่สอดคล้องกับการปฏิบัติงานจริง

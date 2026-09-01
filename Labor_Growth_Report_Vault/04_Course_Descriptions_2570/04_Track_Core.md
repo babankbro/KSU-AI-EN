@@ -19,27 +19,27 @@
 EN-714-12009 ธุรกิจอัจฉริยะและการออกแบบผลิตภัณฑ์ปัญญาประดิษฐ์ 3(2-2-5)  
 AI Business Intelligence and Product Design  
 การค้นหาและกำหนดปัญหาที่เหมาะสมกับปัญญาประดิษฐ์ การวิจัยผู้ใช้และผู้มีส่วนได้ส่วนเสีย การทำแผนที่ห่วงโซ่คุณค่า การกำหนดข้อกำหนดด้านหน้าที่ ข้อมูล โมเดล และการปฏิบัติการ การประเมินความเป็นไปได้ด้านเทคโนโลยี กฎหมาย และธุรกิจ การออกแบบสถาปัตยกรรมและต้นแบบผลิตภัณฑ์ การออกแบบโมเดลธุรกิจและผลตอบแทน และการออกแบบที่รับผิดชอบและยั่งยืน  
-Discovery and formulation of problems suitable for artificial intelligence; user and stakeholder research; process and value-chain mapping; definition of functional, data, model, and operational requirements; assessment of technology, legal, and business feasibility; architecture and product prototyping; business-model and return design; responsible and sustainable design
+Discovery and formulation of problems suitable for artificial intelligence; user and stakeholder research; process and value-chain mapping; definition of functional, data, model, and operational requirements; assessment of technology, legal, and business feasibility; architecture and product prototyping; business-model and return design; and responsible and sustainable design
 
 EN-714-12010 ระบบตัดสินใจอัจฉริยะและการจัดการห่วงโซ่อุปทาน 3(2-2-5)  
 Decision Intelligence and Supply Chain Management  
-ระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ
-Principles of decision-support systems and decision intelligence; operational indicators; predictive and prescriptive analytics; forecasting of demand, supply, and capacity; planning of materials, inventory, and logistics; traceability and risk management; operations-research optimization; sustainability assessment; design of human-in-the-loop recommendation systems
+ระบบสนับสนุนการตัดสินใจและปัญญาประดิษฐ์ ตัวชี้วัดสำหรับการดำเนินงาน การวิเคราะห์เชิงพยากรณ์และเชิงกำหนด การพยากรณ์อุปสงค์และกำลังการผลิต การวางแผนวัตถุดิบ สินค้าคงคลัง และโลจิสติกส์ การตรวจสอบย้อนกลับและการบริหารความเสี่ยง การหาค่าเหมาะที่สุดด้วยการวิจัยดำเนินงาน การประเมินความยั่งยืน และการออกแบบระบบแนะนำที่มีมนุษย์กำกับ
+Principles of decision-support systems and decision intelligence; operational indicators; predictive and prescriptive analytics; forecasting of demand, supply, and capacity; planning of materials, inventory, and logistics; traceability and risk management; operations-research optimization; sustainability assessment; and design of human-in-the-loop recommendation systems
 
 EN-714-12011 ระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ 3(2-2-5)  
 Smart Farming Systems and Precision Agriculture  
 สถาปัตยกรรมและองค์ประกอบของระบบฟาร์มอัจฉริยะและเกษตรแม่นยำ การออกแบบระบบตรวจวัดดิน น้ำ อากาศ และการเจริญเติบโต การบูรณาการข้อมูลอินเทอร์เน็ตของสรรพสิ่ง คลาวด์ และภูมิสารสนเทศ ระบบชลประทานอัตโนมัติ การพยากรณ์ผลผลิต โรค และแมลง ระบบสนับสนุนการตัดสินใจฟาร์ม และการบูรณาการหุ่นยนต์และอากาศยานไร้คนขับเข้ากับระบบฟาร์ม
-Architecture and components of smart farming and precision agriculture; design of systems measuring soil, water, weather, and growth; integration of IoT, cloud, and geospatial data; automated irrigation; forecasting of yields, diseases, and pests; farm decision-support systems; integration of robots and unmanned aerial vehicles with farm systems; assessment of resource-use efficiency
+Architecture and components of smart farming and precision agriculture; design of systems measuring soil, water, weather, and growth; integration of IoT, cloud, and geospatial data; automated irrigation; forecasting of yields, diseases, and pests; farm decision-support systems; integration of robots and unmanned aerial vehicles with farm systems; and assessment of resource-use efficiency
 
 EN-714-12012 ระบบการผลิตอัจฉริยะและหุ่นยนต์อุตสาหกรรม 3(2-2-5)  
 Smart Manufacturing and Industrial Robotics Systems  
 หลักวิศวกรรมกระบวนการผลิต การสร้างโมเดลกระบวนการและดิจิทัลทวิน สถาปัตยกรรมโรงงานอัจฉริยะและการบูรณาการเทคโนโลยีปฏิบัติการกับสารสนเทศ ตัวควบคุมแบบโปรแกรมได้ ระบบสกาดา และเครือข่ายอุตสาหกรรม หุ่นยนต์อุตสาหกรรมและการออกแบบเซลล์หุ่นยนต์ ประสิทธิผลโดยรวมของเครื่องจักรและการบำรุงรักษาเชิงพยากรณ์ และความปลอดภัยของเครื่องจักร
-Principles of process and production engineering; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; programmable logic controllers, SCADA, and industrial networks; industrial robots and robotic-cell design; overall equipment effectiveness, statistical process control, and predictive maintenance; machine safety; assessment of energy and carbon
+Principles of process and production engineering; process modeling and digital twins; smart-factory architecture and integration of operational and information technology; programmable logic controllers, SCADA, and industrial networks; industrial robots and robotic-cell design; overall equipment effectiveness, statistical process control, and predictive maintenance; machine safety; and assessment of energy and carbon
 
 EN-714-12013 วิศวกรรมซอฟต์แวร์และปัญญาประดิษฐ์ 3(2-2-5)  
 Software and AI Engineering  
 วงจรชีวิตการพัฒนาซอฟต์แวร์ปัญญาประดิษฐ์และกระบวนการวิศวกรรมซอฟต์แวร์สมัยใหม่ การวิเคราะห์ความต้องการและการออกแบบสถาปัตยกรรมระบบ การพัฒนาไมโครเซอร์วิสและส่วนต่อประสานโปรแกรมประยุกต์ การออกแบบซอฟต์แวร์ที่บำรุงรักษาได้ การทดสอบและการประกันคุณภาพโมเดล การควบคุมเวอร์ชัน และการนำขึ้นใช้บนคลาวด์ คอนเทนเนอร์ และอุปกรณ์เอดจ์
-The AI software development lifecycle and modern software-engineering processes; requirements analysis and system architecture design; microservices and application programming interfaces; maintainable software design; software testing and model quality assurance; version control and team collaboration; deployment on cloud, container, and edge platforms
+The AI software development lifecycle and modern software-engineering processes; requirements analysis and system architecture design; microservices and application programming interfaces; maintainable software design; software testing and model quality assurance; version control and team collaboration; and deployment on cloud, container, and edge platforms
 
 EN-714-12014 ระบบเอเจนต์ปัญญาประดิษฐ์ 3(2-2-5)  
 Agentic AI Systems  
@@ -49,7 +49,7 @@ Concepts and architectures of AI agents from reactive to deliberative planning; 
 EN-714-12015 อากาศยานไร้คนขับสำหรับวิศวกรรมเกษตรอัจฉริยะ 3(2-2-5)  
 Unmanned Aerial Vehicles for Smart Agricultural Engineering  
 กฎหมาย ความปลอดภัย และการขึ้นทะเบียนอากาศยานไร้คนขับตามมาตรฐานของสำนักงานการบินพลเรือน หลักการทำงานและประเภทของอากาศยานไร้คนขับ การวางแผนภารกิจและเส้นทางบิน การเก็บข้อมูลด้วยกล้องมัลติสเปกตรัมและเทอร์มอล การวิเคราะห์ภาพถ่ายทางอากาศด้วยปัญญาประดิษฐ์ การประเมินสุขภาพพืชและการฉีดพ่นแม่นยำ และการทดสอบภาคสนาม
-Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; field testing with performance evaluation
+Working principles and types of unmanned aerial vehicles; law, safety, and registration under Civil Aviation Authority of Thailand standards; mission and flight-path planning; data acquisition with multispectral and thermal cameras; remote sensing and digital mapping; AI-based aerial image analysis; crop-health assessment with vegetation indices and precision spraying; and field testing with performance evaluation
 
 EN-714-12016 ปฏิบัติการวิศวกรรมเชิงบูรณาการ 5: ระบบอัตโนมัติและการผลิตอัจฉริยะ 1(0-2-1)  
 Integrated Engineering Workshop 5: Industrial Automation and Smart Manufacturing  

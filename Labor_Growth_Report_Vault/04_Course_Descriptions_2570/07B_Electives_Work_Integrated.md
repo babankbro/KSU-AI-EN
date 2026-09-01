@@ -47,7 +47,7 @@ Monitoring and maintenance of the delivered system in actual operation; surveill
 EN-714-14051 หัวข้อพิเศษด้านเทคโนโลยีเกิดใหม่ทางปัญญาประดิษฐ์และระบบอัจฉริยะ 1 3(2-2-5)
 Special Topics in Emerging Artificial Intelligence and Intelligent System Technologies 1
 หัวข้อคัดสรรด้านเทคโนโลยีปัญญาประดิษฐ์และระบบอัจฉริยะที่เกิดใหม่ในขณะนั้น หลักการและสถาปัตยกรรมของเทคโนโลยีที่ศึกษา การทดลองใช้เครื่องมือและกรอบงานร่วมสมัย การวิเคราะห์ข้อจำกัด ความเสี่ยง และความเหมาะสมกับบริบทเกษตร อุตสาหกรรม หรือองค์กร การพัฒนาชิ้นงานหรือกรณีศึกษาเชิงประจักษ์ และการประเมินแนวโน้มการนำไปใช้จริง
-Selected topics in emerging artificial intelligence and intelligent system technologies; principles and architectures of the technology under study; hands-on experimentation with contemporary tools and frameworks; analysis of limitations, risks, and suitability for agricultural, industrial, or enterprise contexts; development of an artifact or empirical case study; assessment of adoption trends; the course outline must be approved by the curriculum committee before each offering
+Selected topics in emerging artificial intelligence and intelligent system technologies; principles and architectures of the technology under study; hands-on experimentation with contemporary tools and frameworks; analysis of limitations, risks, and suitability for agricultural, industrial, or enterprise contexts; development of an artifact or empirical case study; assessment of adoption trends; and the course outline must be approved by the curriculum committee before each offering
 
 EN-714-14052 หัวข้อพิเศษด้านเทคโนโลยีเกิดใหม่ทางปัญญาประดิษฐ์และระบบอัจฉริยะ 2 3(2-2-5)
 Special Topics in Emerging Artificial Intelligence and Intelligent System Technologies 2

@@ -15,17 +15,17 @@ Architecture and design of advanced data pipelines for AI systems; stream and di
 EN-714-14037 โมเดลภาษาขนาดใหญ่ขั้นสูง 3(2-2-5)
 Advanced Large Language Models
 สถาปัตยกรรมและกระบวนการทำงานของโมเดลภาษาขนาดใหญ่ การจัดเตรียมชุดข้อมูลเฉพาะโดเมน การปรับโมเดลตามคำสั่งและการปรับแบบประหยัดพารามิเตอร์ การบีบอัดและลดความละเอียดโมเดล การประเมินความถูกต้อง การให้เหตุผล และความทนทาน การเพิ่มประสิทธิภาพการอนุมานด้านความเร็วและต้นทุน และการให้บริการโมเดลพร้อมติดตามการเสื่อมของสมรรถนะ
-Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; model serving with performance-degradation monitoring
+Architectures and operation of large language models; preparation and governance of domain datasets; instruction tuning and parameter-efficient fine-tuning; model compression and quantization; evaluation of accuracy, reasoning, factuality, and robustness; benchmark and comparative-experiment design; inference optimization for latency, cost, and energy; and model serving with performance-degradation monitoring
 
 EN-714-14038 ความน่าเชื่อถือและความปลอดภัยของปัญญาประดิษฐ์ 3(2-2-5)
 AI Reliability and Safety
 วิศวกรรมความน่าเชื่อถือและความปลอดภัยของระบบปัญญาประดิษฐ์ การกำหนดข้อกำหนดและเกณฑ์ยอมรับสมรรถนะ การสร้างชุดทดสอบสำหรับข้อมูลนอกการแจกแจงและกรณีขอบ การวัดความไม่แน่นอนและการสอบเทียบความเชื่อมั่น ความทนทานต่อการโจมตีแบบปรปักษ์ การประเมินความลำเอียงและความเป็นธรรม และการจัดทำบัตรโมเดลพร้อมหลักฐานการประกันคุณภาพ
-Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to adversarial attacks; bias and fairness evaluation; red teaming and guardrails; monitoring of data and model drift; preparation of model cards and assurance evidence
+Reliability and safety engineering for AI systems; performance requirements and acceptance criteria; test sets for normal, out-of-distribution, and edge cases; uncertainty measurement and confidence calibration; robustness to adversarial attacks; bias and fairness evaluation; red teaming and guardrails; monitoring of data and model drift; and preparation of model cards and assurance evidence
 
 EN-714-14039 สถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร 3(2-2-5)
 Enterprise AI Architecture
 การออกแบบสถาปัตยกรรมปัญญาประดิษฐ์ระดับองค์กร การแบ่งขอบเขตโดเมนและบริการ สถาปัตยกรรมขับเคลื่อนด้วยเหตุการณ์ ส่วนต่อประสานและการจัดการเอพีไอ การบูรณาการกับระบบวางแผนทรัพยากรองค์กรและกระบวนการทำงานเดิม การจัดการอัตลักษณ์และสิทธิ์ การออกแบบระบบที่ขยายขนาดได้และมีความพร้อมใช้สูง และการสังเกตการณ์ระบบพร้อมบริหารต้นทุนคลาวด์
-Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, and legacy workflows; identity, access, and zero-trust architecture; scalable, highly available, and disaster-recoverable system design; observability and cloud-cost management
+Enterprise AI architecture design; domain and service boundaries; event-driven architecture; application programming interfaces and API management; integration with enterprise resource planning, customer-relationship management, and legacy workflows; identity, access, and zero-trust architecture; scalable, highly available, and disaster-recoverable system design; and observability and cloud-cost management
 
 EN-714-14040 การออกแบบประสบการณ์ผู้ใช้สำหรับระบบอัจฉริยะ 3(3-0-6)
 UX/UI Design for Intelligent Systems
@@ -40,7 +40,7 @@ Principles of applying AI in medicine and public-health systems; management of e
 EN-714-14042 การวิเคราะห์ข้อมูลภาพทางการแพทย์ 3(2-2-5)
 Medical Image Analysis
 หลักการประมวลผลและการวิเคราะห์ภาพทางการแพทย์ การทำงานกับภาพรังสีเอกซ์ ภาพถ่ายรังสีส่วนตัดอาศัยคอมพิวเตอร์ และภาพคลื่นแม่เหล็กไฟฟ้า การใช้การเรียนรู้เชิงลึกเพื่อการตรวจจับและแบ่งส่วนอวัยวะ การวิเคราะห์ความผิดปกติและรอยโรค การลดสัญญาณรบกวนและเพิ่มความคมชัดของภาพ และการบูรณาการกับระบบจัดเก็บภาพทางการแพทย์พร้อมประเมินโมเดล
-Principles of medical image processing and analysis; working with X-ray, computed-tomography, and magnetic-resonance image data; deep learning for organ detection and segmentation; analysis of abnormalities and lesions; building models to assist physicians in diagnosis; noise reduction and contrast enhancement; integration with picture archiving and communication systems; performance evaluation of models
+Principles of medical image processing and analysis; working with X-ray, computed-tomography, and magnetic-resonance image data; deep learning for organ detection and segmentation; analysis of abnormalities and lesions; building models to assist physicians in diagnosis; noise reduction and contrast enhancement; integration with picture archiving and communication systems; and performance evaluation of models
 
 EN-714-14043 เทคโนโลยีทางการเงินและปัญญาประดิษฐ์ 3(2-2-5)
 Financial Technology and Artificial Intelligence
@@ -49,13 +49,13 @@ Principles of financial technology and financial-service innovation; application
 
 EN-714-14044 การวิเคราะห์ข้อมูลเชิงคาดการณ์ทางการเงิน 3(2-2-5)
 Predictive Data Analysis in Finance
-เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างโมเดลพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล
+เทคนิคการวิเคราะห์ข้อมูลเชิงคาดการณ์สำหรับตลาดการเงิน การวิเคราะห์ข้อมูลอนุกรมเวลาทางการเงิน การสร้างโมเดลพยากรณ์ราคาสินทรัพย์ด้วยการเรียนรู้เชิงลึก การวิเคราะห์ความรู้สึกจากข่าวสารและสื่อสังคมออนไลน์ การบริหารความเสี่ยงและพอร์ตการลงทุนด้วยปัญญาประดิษฐ์ ขั้นตอนวิธีการซื้อขายความถี่สูง และการสร้างและทดสอบระบบเทรดอัตโนมัติพร้อมแสดงภาพข้อมูล
 Predictive-analytics techniques for financial markets; analysis of financial time-series data; price-forecasting models for stocks and financial assets with deep learning; sentiment analysis of news and social media affecting markets; risk and portfolio management with AI; high-frequency trading algorithms; building and testing automated trading systems; and interpretation and visualization of financial data for decisions
 
 EN-714-14045 การสร้างธุรกิจปัญญาประดิษฐ์ 3(2-2-5)
 AI Venture Creation
 การต่อยอดต้นแบบปัญญาประดิษฐ์สู่ธุรกิจ การตรวจสอบตลาดและความพร้อมของเทคโนโลยี การกำหนดรูปแบบรายได้ ราคา และเศรษฐศาสตร์ต่อหน่วย กลยุทธ์เข้าสู่ตลาดและการบริหารโครงการนำร่อง การจัดการทรัพย์สินทางปัญญาและข้อตกลงระดับบริการ และการจัดทำประมาณการทางการเงินและการนำเสนอแก่นักลงทุน
-Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy, business-to-business sales, and pilot management; intellectual property, licensing, and service-level agreements; operations and scaling plans; financial projections and investor pitching
+Commercialization of AI prototypes; market validation and technology readiness; revenue models, pricing, unit economics, and model-serving costs; go-to-market strategy, business-to-business sales, and pilot management; intellectual property, licensing, and service-level agreements; operations and scaling plans; and financial projections and investor pitching
 
 EN-714-14046 การจัดการโครงการซอฟต์แวร์อัจฉริยะ 3(3-0-6)
 Intelligent Software Project Management
@@ -70,16 +70,16 @@ Concepts of AI-based digital business development; data-driven digital marketing
 EN-714-14048 การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ 3(2-2-5)
 AI Product Management
 การจัดการผลิตภัณฑ์ปัญญาประดิษฐ์ตลอดวงจรชีวิต การกำหนดวิสัยทัศน์ กลุ่มผู้ใช้ และคุณค่าที่เสนอ การจัดทำแผนที่เส้นทางผลิตภัณฑ์และเกณฑ์จัดลำดับความสำคัญ การกำหนดตัวชี้วัดผลิตภัณฑ์และข้อจำกัดด้านความเสี่ยง การออกแบบปฏิสัมพันธ์ระหว่างมนุษย์กับปัญญาประดิษฐ์ การทดลองแบบเอ/บี และการตัดสินใจขยาย ปรับ หรือยุติผลิตภัณฑ์จากหลักฐาน
-AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human-AI interaction design; A/B testing; management of feedback and model drift; evidence-based decisions to scale, pivot, or retire products
+AI product management throughout the lifecycle; definition of vision, user segments, value proposition, and business outcomes; product roadmaps and prioritization criteria; product metrics, model-performance indicators, and risk constraints; human-AI interaction design; A/B testing; management of feedback and model drift; and evidence-based decisions to scale, pivot, or retire products
 
 EN-714-14049 เทคโนโลยีโลกเสมือนจริงและปัญญาประดิษฐ์ 3(2-2-5)
 Virtual Reality Technology and Artificial Intelligence
 เทคโนโลยีโลกเสมือนจริง ความเป็นจริงเสริม และความเป็นจริงผสม การบูรณาการปัญญาประดิษฐ์กับการสร้างสภาพแวดล้อมจำลอง การสร้างเนื้อหาสามมิติด้วยปัญญาประดิษฐ์เชิงสร้าง การโต้ตอบกับวัตถุเสมือนด้วยคอมพิวเตอร์วิทัศน์และการประมวลผลภาษาธรรมชาติ การพัฒนาแอปพลิเคชันสำหรับการฝึกอบรมอุตสาหกรรมและการตลาดดิจิทัล และการวิเคราะห์พฤติกรรมผู้ใช้
-Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of applications for medical simulation, industrial training, and digital marketing; analysis of user behavior in digital environments
+Virtual-reality, augmented-reality, and mixed-reality technologies; integration of AI with simulated environments; processing and generation of 3D content with generative AI; interaction with virtual objects through computer vision and natural-language processing; development of applications for medical simulation, industrial training, and digital marketing; and analysis of user behavior in digital environments
 
 EN-714-14050 ธรรมาภิบาลและความเสี่ยงของปัญญาประดิษฐ์ 3(2-2-5)
 AI Governance and Risk
 กรอบธรรมาภิบาลและการบริหารความเสี่ยงของปัญญาประดิษฐ์ การจัดทำบัญชีระบบและจำแนกระดับความเสี่ยง การประเมินผลกระทบด้านสิทธิ ความเป็นส่วนตัว และความเป็นธรรม การกำหนดบทบาท ความรับผิดชอบ และการกำกับโดยมนุษย์ การปฏิบัติตามกฎหมายคุ้มครองข้อมูลและมาตรฐานที่เกี่ยวข้อง และการจัดทำทะเบียนความเสี่ยง บัตรโมเดล และหลักฐานสำหรับการตรวจประเมิน
-AI governance and risk-management frameworks; system inventories and risk classification; impact assessment for rights, privacy, fairness, and safety; roles, accountability, and human oversight; compliance with data-protection laws and relevant standards; third-party and external-model risk; risk registers, model cards, and audit evidence; post-deployment monitoring and incident reporting
+AI governance and risk-management frameworks; system inventories and risk classification; impact assessment for rights, privacy, fairness, and safety; roles, accountability, and human oversight; compliance with data-protection laws and relevant standards; third-party and external-model risk; risk registers, model cards, and audit evidence; and post-deployment monitoring and incident reporting
 
 [[00_Course_Descriptions_Home|← หน้าหลักคำอธิบายรายวิชา]]
