@@ -1,0 +1,564 @@
+{"kind":"deck","id":"pr/91s6b0","name":"Deck"}
+{"kind":"layout","layoutId":"ec11dc70-8bd5-4c29-b9f8-bdc6651d9a5f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"6d8ddf9d-d7ca-4111-9422-f472088a6340","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/0v3fzm","slide":1,"title":"01","textShapes":16}
+{"kind":"shape","id":"sh/o7up8z2d","slide":1,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/n6loful8","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/25c76pkn","slide":1,"text":"ระบบหนึ่งชุด สร้างได้ทั้งเล่ม เว็บ และฐานข้อมูล","textPreview":"ระบบหนึ่งชุด สร้างได้ทั้งเล่ม เว็บ และฐานข้อมูล","textChars":47,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/xwnql43a","slide":1,"text":"เอกสารคือความจริงชั้นแรก สคริปต์คือกลไก และผลลัพธ์ทุกชนิดถูกสร้างจากข้อมูลชุดเดียวกัน","textPreview":"เอกสารคือความจริงชั้นแรก สคริปต์คือกลไก และผลลัพธ์ทุกชนิดถูกสร้างจากข้อมูลชุดเดียวกัน","textChars":85,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/cvepcj2p","slide":1,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/bul8jel4","slide":1,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/a9c7a9kj","slide":1,"text":"1 / 20","textPreview":"1 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/l0nqpo36","slide":1,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/kzepgj2l","slide":1,"text":"โฟลเดอร์วอลต์","textPreview":"โฟลเดอร์วอลต์","textChars":13,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/6tknipsr","slide":1,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/7udobu9c","slide":1,"text":"สคริปต์","textPreview":"สคริปต์","textChars":7,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/svm5kzax","slide":1,"text":"47","textPreview":"47","textChars":2,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/twv6d4ri","slide":1,"text":"ตาราง","textPreview":"ตาราง","textChars":5,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/ux4nm983","slide":1,"text":"51,583","textPreview":"51,583","textChars":6,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/fydofe9o","slide":1,"text":"แถวข้อมูล","textPreview":"แถวข้อมูล","textChars":9,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/gzmpozqt","slide":1,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/10v6h4re","slide":1,"text":"Vault .md — แก้เนื้อหาที่นี่","textPreview":"Vault .md — แก้เนื้อหาที่นี่","textChars":28,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/a10na5sj","slide":1,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/v2to3a94","slide":1,"text":"Node.js — แปลงและตรวจตรรกะ","textPreview":"Node.js — แปลงและตรวจตรรกะ","textChars":26,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/z6pkb6pw","slide":1,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/y5g3i18b","slide":1,"text":"React · PostgreSQL · Excel — ผลลัพธ์พร้อมใช้","textPreview":"React · PostgreSQL · Excel — ผลลัพธ์พร้อมใช้","textChars":44,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/07ylkbqh","slide":1,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/614nyl0b","slide":1,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 1","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/0v3fzm","slide":1,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\01_System_Overview.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/pt08bz","slide":2,"title":"02","textShapes":14}
+{"kind":"shape","id":"sh/ip4fyxgf","slide":2,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/5sfetcf6","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/4r6x07yl","slide":2,"text":"แก้ที่ต้นทางครั้งเดียว และรู้ที่มาของทุกความสัมพันธ์","textPreview":"แก้ที่ต้นทางครั้งเดียว และรู้ที่มาของทุกความสัมพันธ์","textChars":52,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/ruxwvmxw","slide":2,"text":"ทิศทางข้อมูลเดินทางเดียว พร้อม provenance ที่แยกข้อเท็จจริง การคำนวณ และข้อเสนอออกจากกัน","textPreview":"ทิศทางข้อมูลเดินทางเดียว พร้อม provenance ที่แยกข้อเท็จจริง การคำนวณ และข้อเสนอออกจากกัน","textChars":88,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/qtof2hwr","slide":2,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/dwfyxwf2","slide":2,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/sv6x4reh","slide":2,"text":"2 / 20","textPreview":"2 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/7ytwjixs","slide":2,"text":"stated","textPreview":"stated","textChars":6,"textLines":1,"bbox":[108,168,214.67,50]}
+{"kind":"textbox","id":"sh/6xkfqdg7","slide":2,"text":"เอกสารระบุ","textPreview":"เอกสารระบุ","textChars":10,"textLines":1,"bbox":[108,218,214.67,40]}
+{"kind":"textbox","id":"sh/4nytgz65","slide":2,"text":"derived","textPreview":"derived","textChars":7,"textLines":1,"bbox":[340.67,168,214.67,50]}
+{"kind":"textbox","id":"sh/po7u94nq","slide":2,"text":"คำนวณได้","textPreview":"คำนวณได้","textChars":8,"textLines":1,"bbox":[340.67,218,214.67,40]}
+{"kind":"textbox","id":"sh/2lwbepoz","slide":2,"text":"authored","textPreview":"authored","textChars":8,"textLines":1,"bbox":[573.33,168,214.67,50]}
+{"kind":"textbox","id":"sh/3m5c7u5k","slide":2,"text":"ข้อเสนอ","textPreview":"ข้อเสนอ","textChars":7,"textLines":1,"bbox":[573.33,218,214.67,40]}
+{"kind":"shape","id":"sh/crytkj61","slide":2,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/ds7ud4nm","slide":2,"text":"สร้างอัตโนมัติ — ห้ามแก้ไฟล์ปลายทาง","textPreview":"สร้างอัตโนมัติ — ห้ามแก้ไฟล์ปลายทาง","textChars":35,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/qpgbi9ob","slide":2,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/rqpcbe5w","slide":2,"text":"ซิงก์ด้วยมือ — แก้เอกสารและไฟล์ข้อมูล","textPreview":"ซิงก์ด้วยมือ — แก้เอกสารและไฟล์ข้อมูล","textChars":37,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/svet8f6x","slide":2,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/twna1kni","slide":2,"text":"ข้อมูลดิบ — ดึงใหม่จากแหล่งภายนอก","textPreview":"ข้อมูลดิบ — ดึงใหม่จากแหล่งภายนอก","textChars":33,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/8fm1g7up","slide":2,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/2ho7qx4z","slide":2,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 2","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/pt08bz","slide":2,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\02_Single_Source_of_Truth.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/7akha8","slide":3,"title":"03","textShapes":16}
+{"kind":"shape","id":"sh/gbulg36x","slide":3,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/falk7y5c","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/e9cjetor","slide":3,"text":"วอลต์แบ่งตามบทบาท ไม่ได้แบ่งแค่ตามหัวข้อ","textPreview":"วอลต์แบ่งตามบทบาท ไม่ได้แบ่งแค่ตามหัวข้อ","textChars":40,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/pgn2d8ne","slide":3,"text":"หลักฐาน ข้อมูลตั้งต้น การออกแบบ ร่างวิชาการ ผลตรวจ และพจนานุกรม ถูกแยกเพื่อควบคุมสถานะของเนื้อหา","textPreview":"หลักฐาน ข้อมูลตั้งต้น การออกแบบ ร่างวิชาการ ผลตรวจ และพจนานุกรม ถูกแยกเพื่อควบคุมสถานะของเนื้อหา","textChars":96,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/ofulkn6t","slide":3,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/3elkbi58","slide":3,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/2dc3idon","slide":3,"text":"3 / 20","textPreview":"3 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/5kj2hona","slide":3,"text":"01–02","textPreview":"01–02","textChars":5,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/4ja18j6p","slide":3,"text":"หลักฐาน + ฐานเดิม","textPreview":"หลักฐาน + ฐานเดิม","textChars":17,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/2pk361s3","slide":3,"text":"03–06","textPreview":"03–06","textChars":5,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/3qt4f69o","slide":3,"text":"ออกแบบ + เปรียบเทียบ","textPreview":"ออกแบบ + เปรียบเทียบ","textChars":20,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/4rml8bqt","slide":3,"text":"07–09","textPreview":"07–09","textChars":5,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/psvmhgre","slide":3,"text":"ตลาดงาน + ตรวจสอบ","textPreview":"ตลาดงาน + ตรวจสอบ","textChars":17,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/qt43a18z","slide":3,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/rud4j69k","slide":3,"text":"การนำเสนอ","textPreview":"การนำเสนอ","textChars":9,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/cvmlcbq5","slide":3,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/dwvmlgrq","slide":3,"text":"ค้นต้นเหตุของตัวเลขได้ทันที","textPreview":"ค้นต้นเหตุของตัวเลขได้ทันที","textChars":27,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/ex4nel8b","slide":3,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/zyd4nq9g","slide":3,"text":"แยกฉบับประวัติออกจากฉบับปัจจุบัน","textPreview":"แยกฉบับประวัติออกจากฉบับปัจจุบัน","textChars":32,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/bmxkbqpo","slide":3,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/a1o32lo3","slide":3,"text":"เอกสารที่สร้างอัตโนมัติมีตำแหน่งชัดเจน","textPreview":"เอกสารที่สร้างอัตโนมัติมีตำแหน่งชัดเจน","textChars":38,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/wn6l4v69","slide":3,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/ehonih4v","slide":3,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 3","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/7akha8","slide":3,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\03_Vault_Map.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/lul8hf","slide":4,"title":"04","textShapes":16}
+{"kind":"shape","id":"sh/9kzyp4zi","slide":4,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/mh8zepgr","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/nihgnuhc","slide":4,"text":"หลักสูตร 125 หน่วยกิต วาง AI บนสามโดเมนจริง","textPreview":"หลักสูตร 125 หน่วยกิต วาง AI บนสามโดเมนจริง","textChars":43,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/0f6hcfy1","slide":4,"text":"ทุกคนเรียนแกน AI เดียวกัน ก่อนต่อยอดสู่เกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมองค์กร","textPreview":"ทุกคนเรียนแกน AI เดียวกัน ก่อนต่อยอดสู่เกษตรอัจฉริยะ อุตสาหกรรม และนวัตกรรมองค์กร","textChars":81,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/1gfylkz6","slide":4,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/edofapgv","slide":4,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/zexgjuhg","slide":4,"text":"4 / 20","textPreview":"4 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/cr6x8fyp","slide":4,"text":"4 ปี","textPreview":"4 ปี","textChars":4,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/dcfyhkza","slide":4,"text":"8 ภาค","textPreview":"8 ภาค","textChars":5,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/1c3a1wni","slide":4,"text":"97","textPreview":"97","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/0but8r6x","slide":4,"text":"รายวิชา","textPreview":"รายวิชา","textChars":7,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/zqlszm5c","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/epcb6hor","slide":4,"text":"แขนง","textPreview":"แขนง","textChars":4,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/do3axcn6","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/cnut476l","slide":4,"text":"แผนเรียน","textPreview":"แผนเรียน","textChars":8,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/rm1sv250","slide":4,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/qlsb2hov","slide":4,"text":"T1 เกษตรอัจฉริยะ — IoT เซนเซอร์ โดรน","textPreview":"T1 เกษตรอัจฉริยะ — IoT เซนเซอร์ โดรน","textChars":36,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/5kjatcna","slide":4,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/4jat076p","slide":4,"text":"T2 AI ภาคอุตสาหกรรม — ควบคุม หุ่นยนต์ คุณภาพ","textPreview":"T2 AI ภาคอุตสาหกรรม — ควบคุม หุ่นยนต์ คุณภาพ","textChars":44,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/w3etg7el","slide":4,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/h4nupcf6","slide":4,"text":"T3 นวัตกรรม AI องค์กร — GenAI ผลิตภัณฑ์ ธุรกิจ","textPreview":"T3 นวัตกรรม AI องค์กร — GenAI ผลิตภัณฑ์ ธุรกิจ","textChars":46,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/v25sn2x0","slide":4,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/5gba5czm","slide":4,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 4","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/lul8hf","slide":4,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\04_Programme_Identity.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/pmlpbp","slide":5,"title":"05","textShapes":16}
+{"kind":"shape","id":"sh/h8jm5szy","slide":5,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/u5snuxg7","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/v61432hs","slide":5,"text":"โครงสร้าง 125 หน่วยกิต ให้น้ำหนักกับวิชาเฉพาะ","textPreview":"โครงสร้าง 125 หน่วยกิต ให้น้ำหนักกับวิชาเฉพาะ","textChars":45,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/83a5snyh","slide":5,"text":"วิชาเฉพาะคิดเป็น 76% ของหลักสูตร และมีแกน AI กับวิชาชีพบังคับที่ทุกแขนงต้องผ่านเหมือนกัน","textPreview":"วิชาเฉพาะคิดเป็น 76% ของหลักสูตร และมีแกน AI กับวิชาชีพบังคับที่ทุกแขนงต้องผ่านเหมือนกัน","textChars":88,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/t4jm1szm","slide":5,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/618nqdgb","slide":5,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/72h4zihw","slide":5,"text":"5 / 20","textPreview":"5 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/kzq5o3i5","slide":5,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/l0zmx8zq","slide":5,"text":"ศึกษาทั่วไป","textPreview":"ศึกษาทั่วไป","textChars":11,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/l0bqhgjy","slide":5,"text":"95","textPreview":"95","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/kzi98bid","slide":5,"text":"วิชาเฉพาะ","textPreview":"วิชาเฉพาะ","textChars":9,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/zy98f618","slide":5,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/yx0r610n","slide":5,"text":"เลือกเสรี","textPreview":"เลือกเสรี","textChars":9,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/xwrqdgj2","slide":5,"text":"125","textPreview":"125","textChars":3,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/cvip4bih","slide":5,"text":"รวม","textPreview":"รวม","textChars":3,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/ba98b61w","slide":5,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/a907210b","slide":5,"text":"พื้นฐานวิศวกรรม 24 นก.","textPreview":"พื้นฐานวิศวกรรม 24 นก.","textChars":22,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/p87q9wjq","slide":5,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/o7yp0ril","slide":5,"text":"แกน AI 22 นก. + วิชาชีพบังคับ 22 นก.","textPreview":"แกน AI 22 นก. + วิชาชีพบังคับ 22 นก.","textChars":36,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/gb29wrq1","slide":5,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/hcbqpwrm","slide":5,"text":"วิชาชีพเลือก 15 นก. จากคลัง 57 วิชา","textPreview":"วิชาชีพเลือก 15 นก. จากคลัง 57 วิชา","textChars":35,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/fat8n69w","slide":5,"bbox":[840,182,6,434]}
+{"kind":"shape","id":"sh/sn2psrq5","slide":5,"bbox":[108,575,130.56,22]}
+{"kind":"shape","id":"sh/tobqlwrq","slide":5,"bbox":[238.56,575,516.8,22]}
+{"kind":"shape","id":"sh/6l07qh8z","slide":5,"bbox":[755.36,575,32.64,22]}
+{"kind":"image","id":"im/pg3m9gbe","slide":5,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 5","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/pmlpbp","slide":5,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\05_Curriculum_Structure.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/r0he00","slide":6,"title":"06","textShapes":16}
+{"kind":"shape","id":"sh/t4n6loba","slide":6,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/61wnqtsj","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/725ojyt4","slide":6,"text":"รหัสรายวิชาทำหน้าที่เป็นภาษาของระบบ","textPreview":"รหัสรายวิชาทำหน้าที่เป็นภาษาของระบบ","textChars":35,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/kze5ojad","slide":6,"text":"คำนำหน้าและช่วงเลขบอกกลุ่ม ระดับ และแขนง ทำให้คนและสคริปต์อ่านความหมายชุดเดียวกัน","textPreview":"คำนำหน้าและช่วงเลขบอกกลุ่ม ระดับ และแขนง ทำให้คนและสคริปต์อ่านความหมายชุดเดียวกัน","textChars":81,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/l0n6hoby","slide":6,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/yxcnm9sn","slide":6,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/jy5ofets","slide":6,"text":"6 / 20","textPreview":"6 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/4vyp03ax","slide":6,"text":"97","textPreview":"97","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/pw76t8r2","slide":6,"text":"รายวิชา","textPreview":"รายวิชา","textChars":7,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/xkrad87y","slide":6,"text":"70","textPreview":"70","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/wji9k36d","slide":6,"text":"ก่อน–หลัง","textPreview":"ก่อน–หลัง","textChars":9,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/vi9sbips","slide":6,"text":"293","textPreview":"293","textChars":3,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/ahgrido7","slide":6,"text":"วิชา ↔ PLO","textPreview":"วิชา ↔ PLO","textChars":10,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/9g7a987m","slide":6,"text":"2,292","textPreview":"2,292","textChars":5,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/8fy9g36h","slide":6,"text":"วิชา ↔ KSA","textPreview":"วิชา ↔ KSA","textChars":10,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/nup87ypw","slide":6,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/mtgretob","slide":6,"text":"EN-001 พื้นฐานวิศวกรรม","textPreview":"EN-001 พื้นฐานวิศวกรรม","textChars":22,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/tcbals76","slide":6,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/sb29cn6l","slide":6,"text":"EN-131 แกน AI · EN-132 วิชาชีพบังคับ","textPreview":"EN-131 แกน AI · EN-132 วิชาชีพบังคับ","textChars":36,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/svatobex","slide":6,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/dwjuhgv2","slide":6,"text":"EN-135 วิชาชีพเลือกและประสบการณ์ภาคสนาม","textPreview":"EN-135 วิชาชีพเลือกและประสบการณ์ภาคสนาม","textChars":39,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/ru1cf6dc","slide":6,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/9kry54ze","slide":6,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 6","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/r0he00","slide":6,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\06_Courses_and_Codes.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/k4dryl","slide":7,"title":"07","textShapes":14}
+{"kind":"shape","id":"sh/a5k7ehwb","slide":7,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/xsv6pwvm","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/crmpgreh","slide":7,"text":"กราฟวิชาก่อน–หลังถูกตรวจด้วยเครื่องทุกครั้ง","textPreview":"กราฟวิชาก่อน–หลังถูกตรวจด้วยเครื่องทุกครั้ง","textChars":43,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/n2tojmdk","slide":7,"text":"ความสัมพันธ์ hard, weak และ corequisite ถูกตรวจเทียบภาคเรียน จึงไม่ต้องไล่เช็กด้วยสายตาหลังปรับแผน","textPreview":"ความสัมพันธ์ hard, weak และ corequisite ถูกตรวจเทียบภาคเรียน จึงไม่ต้องไล่เช็กด้วยสายตาหลังปรับแผน","textChars":98,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/21k7ahwz","slide":7,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/p4b6lcvq","slide":7,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/o32pc7e5","slide":7,"text":"7 / 20","textPreview":"7 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/fy9of2do","slide":7,"text":"hard","textPreview":"hard","textChars":4,"textLines":1,"bbox":[108,168,214.67,50]}
+{"kind":"textbox","id":"sh/ex0n6xw3","slide":7,"text":"ต้องผ่านก่อน","textPreview":"ต้องผ่านก่อน","textChars":12,"textLines":1,"bbox":[108,218,214.67,40]}
+{"kind":"textbox","id":"sh/0zq9obqx","slide":7,"text":"weak","textPreview":"weak","textChars":4,"textLines":1,"bbox":[340.67,168,214.67,50]}
+{"kind":"textbox","id":"sh/10zaxwri","slide":7,"text":"แนะนำก่อน","textPreview":"แนะนำก่อน","textChars":9,"textLines":1,"bbox":[340.67,218,214.67,40]}
+{"kind":"textbox","id":"sh/exorm187","slide":7,"text":"coreq","textPreview":"coreq","textChars":5,"textLines":1,"bbox":[573.33,168,214.67,50]}
+{"kind":"textbox","id":"sh/zyhsv69s","slide":7,"text":"เรียนคู่","textPreview":"เรียนคู่","textChars":8,"textLines":1,"bbox":[573.33,218,214.67,40]}
+{"kind":"shape","id":"sh/cv69krq1","slide":7,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/dwfatwrm","slide":7,"text":"Dagre จัดลำดับโหนดและลดเส้นไขว้","textPreview":"Dagre จัดลำดับโหนดและลดเส้นไขว้","textChars":31,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/q9orih8v","slide":7,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/ruxsrm9g","slide":7,"text":"แสดงได้ตาม dependency กลุ่มวิชา หรือ PLO","textPreview":"แสดงได้ตาม dependency กลุ่มวิชา หรือ PLO","textChars":40,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/wratwvq5","slide":7,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/xsja5grq","slide":7,"text":"เปลี่ยนภาคเรียนแล้วสร้างฐานข้อมูลเพื่อตรวจใหม่","textPreview":"เปลี่ยนภาคเรียนแล้วสร้างฐานข้อมูลเพื่อตรวจใหม่","textChars":46,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/kn69gbi9","slide":7,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/e50ji50n","slide":7,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 7","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/k4dryl","slide":7,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\07_Prerequisites_Graph.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/umqsr5","slide":8,"title":"08","textShapes":14}
+{"kind":"shape","id":"sh/v2psrep0","slide":8,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/g3yt0j6l","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/h47ato76","slide":8,"text":"สองแผนเรียนต่างกันเฉพาะจุดเชื่อมสู่งานจริง","textPreview":"สองแผนเรียนต่างกันเฉพาะจุดเชื่อมสู่งานจริง","textChars":42,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/i5gb29or","slide":8,"text":"ปี 1–3 เรียนร่วมกันทั้งหมด ก่อนแยกในภาค 7 และกลับมารวมที่สหกิจศึกษาในภาค 8","textPreview":"ปี 1–3 เรียนร่วมกันทั้งหมด ก่อนแยกในภาค 7 และกลับมารวมที่สหกิจศึกษาในภาค 8","textChars":74,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/36pcvepc","slide":8,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/47yt4j6h","slide":8,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/587uxo72","slide":8,"text":"8 / 20","textPreview":"8 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/y9cbqpo7","slide":8,"text":"ก","textPreview":"ก","textChars":1,"textLines":1,"bbox":[108,168,214.67,50]}
+{"kind":"textbox","id":"sh/ja5sjups","slide":8,"text":"โครงงาน + วิชาเลือก","textPreview":"โครงงาน + วิชาเลือก","textChars":19,"textLines":1,"bbox":[108,218,214.67,40]}
+{"kind":"textbox","id":"sh/zid8va94","slide":8,"text":"ข","textPreview":"ข","textChars":1,"textLines":1,"bbox":[340.67,168,214.67,50]}
+{"kind":"textbox","id":"sh/yh47m58j","slide":8,"text":"Work-integrated learning","textPreview":"Work-integrated learning","textChars":24,"textLines":1,"bbox":[340.67,218,214.67,40]}
+{"kind":"textbox","id":"sh/l4vqxkra","slide":8,"text":"78","textPreview":"78","textChars":2,"textLines":1,"bbox":[573.33,168,214.67,50]}
+{"kind":"textbox","id":"sh/kjmpofqp","slide":8,"text":"วิชาที่ระบุภาคแล้ว","textPreview":"วิชาที่ระบุภาคแล้ว","textChars":18,"textLines":1,"bbox":[573.33,218,214.67,40]}
+{"kind":"shape","id":"sh/betorq98","slide":8,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/adk7il8n","slide":8,"text":"เลือกแผนก่อนขึ้นภาค 7","textPreview":"เลือกแผนก่อนขึ้นภาค 7","textChars":21,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/xgvqt0ry","slide":8,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/cf2pkvqd","slide":8,"text":"เตรียมสหกิจก่อนภาคสุดท้าย","textPreview":"เตรียมสหกิจก่อนภาคสุดท้าย","textChars":25,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/natonq9w","slide":8,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/29k7el8b","slide":8,"text":"สหกิจศึกษาไม่น้อยกว่า 16 สัปดาห์","textPreview":"สหกิจศึกษาไม่น้อยกว่า 16 สัปดาห์","textChars":32,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/rm98zqto","slide":8,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/907epszm","slide":8,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 8","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/umqsr5","slide":8,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\08_Study_Plans.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/4lib4x","slide":9,"title":"09","textShapes":22}
+{"kind":"shape","id":"sh/b6t0nepg","slide":9,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/w7mhgzq1","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/x8vip47m","slide":9,"text":"OBE ทำให้คะแนนหนึ่งข้อย้อนถึงเสียงผู้ประกอบการได้","textPreview":"OBE ทำให้คะแนนหนึ่งข้อย้อนถึงเสียงผู้ประกอบการได้","textChars":49,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/yt4ji98r","slide":9,"text":"สายธาร 8 ขั้นเชื่อมความต้องการสู่ผลลัพธ์รายวิชาและหลักฐานประเมิน โดยทุกช่วงมีความสัมพันธ์จริงในฐานข้อมูล","textPreview":"สายธาร 8 ขั้นเชื่อมความต้องการสู่ผลลัพธ์รายวิชาและหลักฐานประเมิน โดยทุกช่วงมีความสัมพันธ์จริงในฐานข้อมูล","textChars":104,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/jud0repc","slide":9,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/kvm1kjqx","slide":9,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/5wvito7i","slide":9,"text":"9 / 20","textPreview":"9 / 20","textChars":6,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"shape","id":"sh/zy90fup8","slide":9,"bbox":[965,193,6,404]}
+{"kind":"shape","id":"sh/7ypsjuts","slide":9,"bbox":[297.5,225,14,6]}
+{"kind":"shape","id":"sh/6xgbqpsn","slide":9,"bbox":[108,190,189.5,76]}
+{"kind":"textbox","id":"sh/t07ul4by","slide":9,"text":"SH","textPreview":"SH","textChars":2,"textLines":1,"bbox":[116,198,173.5,60]}
+{"kind":"shape","id":"sh/8zytszad","slide":9,"bbox":[501,225,14,6]}
+{"kind":"shape","id":"sh/jupsfatw","slide":9,"bbox":[311.5,190,189.5,76]}
+{"kind":"textbox","id":"sh/ytwbm5sb","slide":9,"text":"Need","textPreview":"Need","textChars":4,"textLines":1,"bbox":[319.5,198,173.5,60]}
+{"kind":"shape","id":"sh/lw7ahkb2","slide":9,"bbox":[704.5,225,14,6]}
+{"kind":"shape","id":"sh/kvytofah","slide":9,"bbox":[515,190,189.5,76]}
+{"kind":"textbox","id":"sh/b65sbat0","slide":9,"text":"GA","textPreview":"GA","textChars":2,"textLines":1,"bbox":[523,198,173.5,60]}
+{"kind":"shape","id":"sh/a5wbi5sf","slide":9,"bbox":[718.5,190,189.5,76]}
+{"kind":"textbox","id":"sh/e1cbu5w7","slide":9,"text":"Skills","textPreview":"Skills","textChars":6,"textLines":1,"bbox":[726.5,198,173.5,60]}
+{"kind":"shape","id":"sh/z2lcnads","slide":9,"bbox":[297.5,330,14,6]}
+{"kind":"shape","id":"sh/03etwfed","slide":9,"bbox":[108,295,189.5,76]}
+{"kind":"textbox","id":"sh/14nup0vy","slide":9,"text":"Skill Set","textPreview":"Skill Set","textChars":9,"textLines":1,"bbox":[116,303,173.5,60]}
+{"kind":"shape","id":"sh/m5wby5w3","slide":9,"bbox":[501,330,14,6]}
+{"kind":"shape","id":"sh/n65crado","slide":9,"bbox":[311.5,295,189.5,76]}
+{"kind":"textbox","id":"sh/ored0fe9","slide":9,"text":"PLO","textPreview":"PLO","textChars":3,"textLines":1,"bbox":[319.5,303,173.5,60]}
+{"kind":"shape","id":"sh/9snutkvu","slide":9,"bbox":[704.5,330,14,6]}
+{"kind":"shape","id":"sh/atwv2pwf","slide":9,"bbox":[515,295,189.5,76]}
+{"kind":"textbox","id":"sh/bu5cvud0","slide":9,"text":"YLO","textPreview":"YLO","textChars":3,"textLines":1,"bbox":[523,303,173.5,60]}
+{"kind":"shape","id":"sh/50b6h8je","slide":9,"bbox":[718.5,295,189.5,76]}
+{"kind":"textbox","id":"sh/kzi5832t","slide":9,"text":"CLO + KSA","textPreview":"CLO + KSA","textChars":9,"textLines":1,"bbox":[726.5,303,173.5,60]}
+{"kind":"textbox","id":"sh/jy9ofi18","slide":9,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[108,435,186.5,50]}
+{"kind":"textbox","id":"sh/ix0n6dkn","slide":9,"text":"กลุ่มผู้มีส่วนได้ส่วนเสีย","textPreview":"กลุ่มผู้มีส่วนได้ส่วนเสีย","textChars":25,"textLines":1,"bbox":[108,485,186.5,40]}
+{"kind":"textbox","id":"sh/t4b6lsja","slide":9,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[312.5,435,186.5,50]}
+{"kind":"textbox","id":"sh/s325cn2p","slide":9,"text":"ความต้องการ","textPreview":"ความต้องการ","textChars":11,"textLines":1,"bbox":[312.5,485,186.5,40]}
+{"kind":"textbox","id":"sh/72toji14","slide":9,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[517,435,186.5,50]}
+{"kind":"textbox","id":"sh/61knadkz","slide":9,"text":"PLO","textPreview":"PLO","textChars":3,"textLines":1,"bbox":[517,485,186.5,40]}
+{"kind":"textbox","id":"sh/hsv6psjm","slide":9,"text":"288","textPreview":"288","textChars":3,"textLines":1,"bbox":[721.5,435,186.5,50]}
+{"kind":"textbox","id":"sh/g7mpgn21","slide":9,"text":"CLO","textPreview":"CLO","textChars":3,"textLines":1,"bbox":[721.5,485,186.5,40]}
+{"kind":"textbox","id":"sh/cn69orm9","slide":9,"text":"สอบย้อนกลับได้ตั้งแต่คะแนนในห้องเรียนถึงความต้องการของผู้ประกอบการ","textPreview":"สอบย้อนกลับได้ตั้งแต่คะแนนในห้องเรียนถึงความต้องการของผู้ประกอบการ","textChars":66,"textLines":1,"bbox":[108,565,800,54]}
+{"kind":"image","id":"im/va18zads","slide":9,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 9","bbox":[975,175,225,440]}
+{"kind":"notes","id":"nt/4lib4x","slide":9,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\09_OBE_Chain.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/ogqoua","slide":10,"title":"10","textShapes":16}
+{"kind":"shape","id":"sh/ux4nel07","slide":10,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/hkvmp0jy","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/gjm5gvid","slide":10,"text":"ความต้องการ 18 ข้อมีผู้ให้ข้อมูลรองรับ","textPreview":"ความต้องการ 18 ข้อมีผู้ให้ข้อมูลรองรับ","textChars":38,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/3mx4rq14","slide":10,"text":"ระบบเก็บทั้งข้อความ ที่มา ขนาดกลุ่มตัวอย่าง และความเชื่อมโยงไปยังชุดทักษะ","textPreview":"ระบบเก็บทั้งข้อความ ที่มา ขนาดกลุ่มตัวอย่าง และความเชื่อมโยงไปยังชุดทักษะ","textChars":73,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/il4nil0j","slide":10,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/5ofmt0zu","slide":10,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/4n65kvi9","slide":10,"text":"10 / 20","textPreview":"10 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/rqx4vah0","slide":10,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/qponm50f","slide":10,"text":"กลุ่ม SH","textPreview":"กลุ่ม SH","textChars":8,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/0jedw3md","slide":10,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/1k7up83i","slide":10,"text":"Need","textPreview":"Need","textChars":4,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/ehwvut47","slide":10,"text":"62","textPreview":"62","textChars":2,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/zi5cnyls","slide":10,"text":"SH ↔ Need","textPreview":"SH ↔ Need","textChars":9,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/onyd0n29","slide":10,"text":"43","textPreview":"43","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/9o7et83u","slide":10,"text":"Need ↔ Skill Set","textPreview":"Need ↔ Skill Set","textChars":16,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/mlgvydk3","slide":10,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/nmpwrilo","slide":10,"text":"รอบแรกใช้สร้าง GA และ PLO","textPreview":"รอบแรกใช้สร้าง GA และ PLO","textChars":25,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/wbid4n25","slide":10,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/xcrexs3q","slide":10,"text":"รอบสองตอบข้อเสนอแนะทีละข้อ","textPreview":"รอบสองตอบข้อเสนอแนะทีละข้อ","textChars":26,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/5w3m1ory","slide":10,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/kvulsjqd","slide":10,"text":"ตรวจช่องว่างได้จาก need_skill_set","textPreview":"ตรวจช่องว่างได้จาก need_skill_set","textChars":33,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/ytc3qt87","slide":10,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/kz29cn6d","slide":10,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 10","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/ogqoua","slide":10,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\10_Stakeholders_and_Needs.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/2ndf1l","slide":11,"title":"11","textShapes":16}
+{"kind":"shape","id":"sh/rup03mts","slide":11,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/svihwrud","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/tgri5wby","slide":11,"text":"PLO 7 ข้อเชื่อมมาตรฐานสากลและการประเมิน","textPreview":"PLO 7 ข้อเชื่อมมาตรฐานสากลและการประเมิน","textChars":39,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/ipgzqxcb","slide":11,"text":"Graduate Attributes อธิบายว่าบัณฑิตเป็นคนแบบใด ส่วน PLO ระบุว่าเขาทำอะไรได้อย่างวัดผลได้","textPreview":"Graduate Attributes อธิบายว่าบัณฑิตเป็นคนแบบใด ส่วน PLO ระบุว่าเขาทำอะไรได้อย่างวัดผลได้","textChars":88,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/jqpgz2dw","slide":11,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/4ryhs7u1","slide":11,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/5s7y1cbm","slide":11,"text":"11 / 20","textPreview":"11 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/2l0z21cf","slide":11,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/3mt0b6t0","slide":11,"text":"GA","textPreview":"GA","textChars":2,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/vaxs7etc","slide":11,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/aporetsr","slide":11,"text":"PLO / ABET SO","textPreview":"PLO / ABET SO","textChars":13,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/xcfa9obi","slide":11,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/wb69gjax","slide":11,"text":"GA ↔ PLO","textPreview":"GA ↔ PLO","textChars":8,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/jehsbyto","slide":11,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/idorits3","slide":11,"text":"แผนประเมิน","textPreview":"แผนประเมิน","textChars":10,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/5gzad8be","slide":11,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/kfq9k3a9","slide":11,"text":"ถ้อยคำ PLO ขึ้นต้นด้วยคำกริยา","textPreview":"ถ้อยคำ PLO ขึ้นต้นด้วยคำกริยา","textChars":29,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/7ihsfitk","slide":11,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/6h8rmdsz","slide":11,"text":"แยกเจ้าภาพหลัก host และผู้สนับสนุน","textPreview":"แยกเจ้าภาพหลัก host และผู้สนับสนุน","textChars":34,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/2pc3u1gj","slide":11,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/3q5436h4","slide":11,"text":"ทุก PLO ต้องมีหลักฐานระดับ Mastery","textPreview":"ทุก PLO ต้องมีหลักฐานระดับ Mastery","textChars":34,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/pcnm5gza","slide":11,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/vip0j6h8","slide":11,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 11","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/2ndf1l","slide":11,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\11_GA_and_PLO.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/2r2qgz","slide":12,"title":"12","textShapes":20}
+{"kind":"shape","id":"sh/6dgbih43","slide":12,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/tg7utw3u","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/sfytkrm9","slide":12,"text":"I–R–M ทำให้เห็นพัฒนาการตลอดสี่ปี","textPreview":"I–R–M ทำให้เห็นพัฒนาการตลอดสี่ปี","textChars":32,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/fi9cv6lk","slide":12,"text":"PLO ไม่ได้เกิดในวิชาเดียว แต่ถูกแนะนำ ใช้ซ้ำ และประเมินความเชี่ยวชาญผ่าน Year Gate","textPreview":"PLO ไม่ได้เกิดในวิชาเดียว แต่ถูกแนะนำ ใช้ซ้ำ และประเมินความเชี่ยวชาญผ่าน Year Gate","textChars":82,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/eh0bm14f","slide":12,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/1kruxg3q","slide":12,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/gjitobm5","slide":12,"text":"12 / 20","textPreview":"12 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/vm5sj2lg","slide":12,"text":"I","textPreview":"I","textChars":1,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/ulwbax4v","slide":12,"text":"Introduce","textPreview":"Introduce","textChars":9,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/0vepw7uh","slide":12,"text":"R","textPreview":"R","textChars":1,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/lwnqpcvm","slide":12,"text":"Reinforce","textPreview":"Reinforce","textChars":9,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/ytw7uxcb","slide":12,"text":"M","textPreview":"M","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/zu58n2dw","slide":12,"text":"Master","textPreview":"Master","textChars":6,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/8ze907ud","slide":12,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/9k7qtcvy","slide":12,"text":"Sub-YLO","textPreview":"Sub-YLO","textChars":7,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/mxw7yhc7","slide":12,"bbox":[267.5,340,14,6]}
+{"kind":"shape","id":"sh/ny58r2ds","slide":12,"bbox":[108,305,159.5,76]}
+{"kind":"textbox","id":"sh/o3upone9","slide":12,"text":"ปี 1 · I","textPreview":"ปี 1 · I","textChars":8,"textLines":1,"bbox":[116,313,143.5,60]}
+{"kind":"shape","id":"sh/po3qhsvu","slide":12,"bbox":[441,340,14,6]}
+{"kind":"shape","id":"sh/58be5kj6","slide":12,"bbox":[281.5,305,159.5,76]}
+{"kind":"textbox","id":"sh/k72xwf2l","slide":12,"text":"ปี 2 · I→R","textPreview":"ปี 2 · I→R","textChars":10,"textLines":1,"bbox":[289.5,313,143.5,60]}
+{"kind":"shape","id":"sh/j6tw3a10","slide":12,"bbox":[614.5,340,14,6]}
+{"kind":"shape","id":"sh/ilkfu5kv","slide":12,"bbox":[455,305,159.5,76]}
+{"kind":"textbox","id":"sh/tcve9kji","slide":12,"text":"ปี 3 · R","textPreview":"ปี 3 · R","textChars":8,"textLines":1,"bbox":[463,313,143.5,60]}
+{"kind":"shape","id":"sh/sbmx0f2x","slide":12,"bbox":[628.5,305,159.5,76]}
+{"kind":"textbox","id":"sh/7atw7u1c","slide":12,"text":"ปี 4 · M","textPreview":"ปี 4 · M","textChars":8,"textLines":1,"bbox":[636.5,313,143.5,60]}
+{"kind":"shape","id":"sh/69kfypkr","slide":12,"bbox":[108,430,8,46]}
+{"kind":"textbox","id":"sh/hgvyd4je","slide":12,"text":"YLO1 พื้นฐานและเครื่องมือ","textPreview":"YLO1 พื้นฐานและเครื่องมือ","textChars":25,"textLines":1,"bbox":[134,426,624,58]}
+{"kind":"shape","id":"sh/gfmx4z2t","slide":12,"bbox":[108,512,8,46]}
+{"kind":"textbox","id":"sh/ylgby10b","slide":12,"text":"YLO2–3 แกน AI และประยุกต์ตามแขนง","textPreview":"YLO2–3 แกน AI และประยุกต์ตามแขนง","textChars":32,"textLines":1,"bbox":[134,508,624,58]}
+{"kind":"shape","id":"sh/zmpc76hw","slide":12,"bbox":[108,594,8,46]}
+{"kind":"textbox","id":"sh/0nyt0bih","slide":12,"text":"YLO4 โครงงานและงานจริง","textPreview":"YLO4 โครงงานและงานจริง","textChars":22,"textLines":1,"bbox":[134,590,624,58]}
+{"kind":"shape","id":"sh/mpgb210n","slide":12,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/ahg7qhkr","slide":12,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 12","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/2r2qgz","slide":12,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\12_YLO_and_IRM.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/ywe7fx","slide":13,"title":"13","textShapes":16}
+{"kind":"shape","id":"sh/07qtgfi1","slide":13,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/z6hcnu1g","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/e58bep0v","slide":13,"text":"CLO คือจุดที่คำสัญญาของหลักสูตรกลายเป็นคะแนน","textPreview":"CLO คือจุดที่คำสัญญาของหลักสูตรกลายเป็นคะแนน","textChars":44,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/dkzulkja","slide":13,"text":"Curriculum Mapping ระดับรายวิชาใช้ดูภาพรวม แต่ CLO Mapping คือชั้นที่ตรวจและให้คะแนนได้จริง","textPreview":"Curriculum Mapping ระดับรายวิชาใช้ดูภาพรวม แต่ CLO Mapping คือชั้นที่ตรวจและให้คะแนนได้จริง","textChars":91,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/cjqtcfip","slide":13,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/rihcja14","slide":13,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/qhoba50j","slide":13,"text":"13 / 20","textPreview":"13 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/pgfuh0je","slide":13,"text":"288","textPreview":"288","textChars":3,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/4f6t8vit","slide":13,"text":"CLO","textPreview":"CLO","textChars":3,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/e1o7m5wr","slide":13,"text":"426","textPreview":"426","textChars":3,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/f2xofaxc","slide":13,"text":"CLO ↔ PLO","textPreview":"CLO ↔ PLO","textChars":9,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/g36pofex","slide":13,"text":"319","textPreview":"319","textChars":3,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/14f6hkfi","slide":13,"text":"CLO ↔ Sub-YLO","textPreview":"CLO ↔ Sub-YLO","textChars":13,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/6d4nilwv","slide":13,"text":"963","textPreview":"963","textChars":3,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/redobqx0","slide":13,"text":"CLO ↔ KSA","textPreview":"CLO ↔ KSA","textChars":9,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/szm5kvel","slide":13,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/t0f6d0f6","slide":13,"text":"4.5 รายวิชา × PLO พร้อม I–R–M","textPreview":"4.5 รายวิชา × PLO พร้อม I–R–M","textChars":29,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/i94nelwj","slide":13,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/jado7qx4","slide":13,"text":"4.6 CLO × PLO รายข้อ","textPreview":"4.6 CLO × PLO รายข้อ","textChars":20,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/ne94fmdw","slide":13,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/md03mhcb","slide":13,"text":"4.7 รายวิชา × AISK01–09","textPreview":"4.7 รายวิชา × AISK01–09","textChars":23,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/8filoruh","slide":13,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/ql8rihk7","slide":13,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 13","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/ywe7fx","slide":13,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\13_CLO_and_Mapping.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/1j7x16","slide":14,"title":"14","textShapes":16}
+{"kind":"shape","id":"sh/zi90bux0","slide":14,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/0jihkzel","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/lkrid4f6","slide":14,"text":"Skill Set แปลภาษาหลักสูตรให้เป็นภาษาการทำงาน","textPreview":"Skill Set แปลภาษาหลักสูตรให้เป็นภาษาการทำงาน","textChars":44,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/qtgzepwj","slide":14,"text":"AISK01–09 รวมทักษะ ระดับความลึก เครื่องมือ PLO และ KSA เป็นหน่วยที่พร้อมออก Skill Transcript","textPreview":"AISK01–09 รวมทักษะ ระดับความลึก เครื่องมือ PLO และ KSA เป็นหน่วยที่พร้อมออก Skill Transcript","textChars":92,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/bupg7ax4","slide":14,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/cvyhgfe9","slide":14,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/dw7y9kfu","slide":14,"text":"14 / 20","textPreview":"14 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/apkzq9wn","slide":14,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/vqt0jex8","slide":14,"text":"Hard Skills","textPreview":"Hard Skills","textChars":11,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/buhojaxw","slide":14,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/qt8na5wb","slide":14,"text":"Soft Skills","textPreview":"Soft Skills","textChars":11,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/dwz6lkf2","slide":14,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/cvq5cfeh","slide":14,"text":"ฐานวิศวกรรม","textPreview":"ฐานวิศวกรรม","textChars":11,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/zy1onaxs","slide":14,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/yxsnepw7","slide":14,"text":"Skill Sets","textPreview":"Skill Sets","textChars":10,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/l0j6pkfy","slide":14,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/0za5gfed","slide":14,"text":"เครื่องมือจริง: Python · PyTorch · TensorFlow","textPreview":"เครื่องมือจริง: Python · PyTorch · TensorFlow","textChars":45,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/n21orux4","slide":14,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/m1snipwj","slide":14,"text":"ระดับ L1–L4 แยกการรู้จักจนถึงทำงานซับซ้อน","textPreview":"ระดับ L1–L4 แยกการรู้จักจนถึงทำงานซับซ้อน","textChars":41,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/itgz6dk3","slide":14,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/3up0zil8","slide":14,"text":"หนึ่งทักษะอยู่ได้หลายชุดตามบริบทงาน","textPreview":"หนึ่งทักษะอยู่ได้หลายชุดตามบริบทงาน","textChars":35,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/5w7i1s3e","slide":14,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/fa90bm1s","slide":14,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 14","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/1j7x16","slide":14,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\14_Skills_and_Skill_Sets.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/734wm4","slide":15,"title":"15","textShapes":16}
+{"kind":"shape","id":"sh/ofmh4ra9","slide":15,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/3ed0vm9o","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/2t4z2hs3","slide":15,"text":"KSA 54 ข้อคือหน่วยเล็กที่สุดที่ประเมินได้","textPreview":"KSA 54 ข้อคือหน่วยเล็กที่สุดที่ประเมินได้","textChars":41,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/dkfi1wrq","slide":15,"text":"Knowledge, Skills และ Attitudes ถูกผูกกับพฤติกรรม หลักฐาน รายวิชาแกน และวิธีประเมินโดยตรง","textPreview":"Knowledge, Skills และ Attitudes ถูกผูกกับพฤติกรรม หลักฐาน รายวิชาแกน และวิธีประเมินโดยตรง","textChars":89,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/cj6h8ral","slide":15,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/bix0z690","slide":15,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/qhoz61sf","slide":15,"text":"15 / 20","textPreview":"15 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/lofi5gr2","slide":15,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/0n61cbah","slide":15,"text":"Knowledge","textPreview":"Knowledge","textChars":9,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/apsnu5sn","slide":15,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/bq1o3at8","slide":15,"text":"Skills","textPreview":"Skills","textChars":6,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/wra5wvat","slide":15,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/xsj6p0be","slide":15,"text":"Attitudes","textPreview":"Attitudes","textChars":9,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/yts7y5sz","slide":15,"text":"98","textPreview":"98","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/ju1oratk","slide":15,"text":"พฤติกรรมสังเกตได้","textPreview":"พฤติกรรมสังเกตได้","textChars":17,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/kvap0fap","slide":15,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/lg36tkba","slide":15,"text":"K — รู้อะไร","textPreview":"K — รู้อะไร","textChars":11,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/ex8nmlcf","slide":15,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/zyhov6t0","slide":15,"text":"S — ทำอะไรได้","textPreview":"S — ทำอะไรได้","textChars":13,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/32dknm9s","slide":15,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/i143uhs7","slide":15,"text":"A — ทำงานด้วยท่าทีแบบใด","textPreview":"A — ทำงานด้วยท่าทีแบบใด","textChars":23,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/43mlw7ad","slide":15,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/ahsfulor","slide":15,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 15","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/734wm4","slide":15,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\15_KSA_Codebook.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/ijgd6e","slide":16,"title":"16","textShapes":20}
+{"kind":"shape","id":"sh/pkzaxoz2","slide":16,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/ihor2t0b","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/3ixsvyhw","slide":16,"text":"ตลาดแรงงานถูกสร้างเป็นหลักฐานที่ทำซ้ำได้","textPreview":"ตลาดแรงงานถูกสร้างเป็นหลักฐานที่ทำซ้ำได้","textChars":40,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/c7q983id","slide":16,"text":"ประกาศงานถูกดึง เก็บฉบับเต็ม สกัดทักษะ จำแนกอาชีพ และแยก runtime data สำหรับหน้าเว็บ","textPreview":"ประกาศงานถูกดึง เก็บฉบับเต็ม สกัดทักษะ จำแนกอาชีพ และแยก runtime data สำหรับหน้าเว็บ","textChars":84,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/d8za18zy","slide":16,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/ql8r6t07","slide":16,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/r6hszyhs","slide":16,"text":"16 / 20","textPreview":"16 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/8b69wzi9","slide":16,"text":"7,424","textPreview":"7,424","textChars":5,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/tcfqp4ju","slide":16,"text":"ประกาศงาน","textPreview":"ประกาศงาน","textChars":9,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/9w3ap4ne","slide":16,"text":"5,377","textPreview":"5,377","textChars":5,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/8vu9gz6t","slide":16,"text":"ผลจำแนก","textPreview":"ผลจำแนก","textChars":7,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/nulsnu58","slide":16,"text":"32,214","textPreview":"32,214","textChars":6,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/mtsre9on","slide":16,"text":"ป้ายทักษะ","textPreview":"ป้ายทักษะ","textChars":9,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/xk3atona","slide":16,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/wju9kj6p","slide":16,"text":"กลุ่มที่จำแนก","textPreview":"กลุ่มที่จำแนก","textChars":13,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/vylsre54","slide":16,"bbox":[232.8,337,14,6]}
+{"kind":"shape","id":"sh/axcri9oj","slide":16,"bbox":[108,302,124.8,76]}
+{"kind":"textbox","id":"sh/5onaxon6","slide":16,"text":"scrape","textPreview":"scrape","textChars":6,"textLines":1,"bbox":[116,310,108.8,60]}
+{"kind":"shape","id":"sh/knetoj61","slide":16,"bbox":[371.6,337,14,6]}
+{"kind":"shape","id":"sh/o36lgry9","slide":16,"bbox":[246.8,302,124.8,76]}
+{"kind":"textbox","id":"sh/p4f29wzu","slide":16,"text":"extract","textPreview":"extract","textChars":7,"textLines":1,"bbox":[254.8,310,108.8,60]}
+{"kind":"shape","id":"sh/2143ehg3","slide":16,"bbox":[510.4,337,14,6]}
+{"kind":"shape","id":"sh/32dk7mho","slide":16,"bbox":[385.6,302,124.8,76]}
+{"kind":"textbox","id":"sh/c76lkby5","slide":16,"text":"classify","textPreview":"classify","textChars":8,"textLines":1,"bbox":[393.6,310,108.8,60]}
+{"kind":"shape","id":"sh/d8fmdgzq","slide":16,"bbox":[649.2,337,14,6]}
+{"kind":"shape","id":"sh/q5o3i1gf","slide":16,"bbox":[524.4,302,124.8,76]}
+{"kind":"textbox","id":"sh/b6x4b6h0","slide":16,"text":"normalize","textPreview":"normalize","textChars":9,"textLines":1,"bbox":[532.4,310,108.8,60]}
+{"kind":"shape","id":"sh/sb2l87i1","slide":16,"bbox":[663.2,302,124.8,76]}
+{"kind":"textbox","id":"sh/tcv21czm","slide":16,"text":"runtime","textPreview":"runtime","textChars":7,"textLines":1,"bbox":[671.2,310,108.8,60]}
+{"kind":"textbox","id":"sh/v61o7a14","slide":16,"text":"เครื่องมือ","textPreview":"เครื่องมือ","textChars":10,"textLines":1,"bbox":[108,430,170,34]}
+{"kind":"textbox","id":"sh/a5sne50j","slide":16,"text":"JobsDB · Node.js · Gemini structured output · JSON shards","textPreview":"JobsDB · Node.js · Gemini structured output · JSON shards","textChars":57,"textLines":1,"bbox":[108,474,665,80]}
+{"kind":"shape","id":"sh/wra5gfip","slide":16,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/uxcvel43","slide":16,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 16","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/ijgd6e","slide":16,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\16_Labor_Market_Evidence.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/y4kyqa","slide":17,"title":"17","textShapes":16}
+{"kind":"shape","id":"sh/7e5sf25w","slide":17,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/8fet87mh","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/9gnahcn2","slide":17,"text":"อาชีพทุกสายมีเส้นทางรายวิชาที่ตรวจกลับได้","textPreview":"อาชีพทุกสายมีเส้นทางรายวิชาที่ตรวจกลับได้","textChars":41,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/y9cr2x4f","slide":17,"text":"C01–C26 ไม่ใช่รายชื่อปลายเล่ม แต่เป็นเครือข่ายจากวิชาแกน วิชาเลือก และประสบการณ์จริง","textPreview":"C01–C26 ไม่ใช่รายชื่อปลายเล่ม แต่เป็นเครือข่ายจากวิชาแกน วิชาเลือก และประสบการณ์จริง","textChars":84,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/zalsbi50","slide":17,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/kbu94nml","slide":17,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/lc3adsn6","slide":17,"text":"17 / 20","textPreview":"17 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/i5gbeh4j","slide":17,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/j6psnml4","slide":17,"text":"อาชีพเป้าหมาย","textPreview":"อาชีพเป้าหมาย","textChars":13,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/7mlobi14","slide":17,"text":"68","textPreview":"68","textChars":2,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/61cn2d0j","slide":17,"text":"กลุ่มย่อย","textPreview":"กลุ่มย่อย","textChars":9,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/to36dsju","slide":17,"text":"148","textPreview":"148","textChars":3,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/8nu54ni9","slide":17,"text":"Career ↔ Course","textPreview":"Career ↔ Course","textChars":15,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/vqlofi10","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/upcn6x0f","slide":17,"text":"มีข้อมูลตลาด","textPreview":"มีข้อมูลตลาด","textChars":12,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/hsn6hsj6","slide":17,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/gru58nil","slide":17,"text":"Mainstream · Sector Critical · Future","textPreview":"Mainstream · Sector Critical · Future","textChars":37,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/3u5oj21c","slide":17,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/itwnax0r","slide":17,"text":"วิชาบังคับเป็นแกน วิชาเลือกเป็นตัวเสริม","textPreview":"วิชาบังคับเป็นแกน วิชาเลือกเป็นตัวเสริม","textChars":39,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/epgri1kz","slide":17,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/zqp8b6lk","slide":17,"text":"ตรวจได้ว่าเส้นทางใดพึ่งวิชาเลือกมากเกินไป","textPreview":"ตรวจได้ว่าเส้นทางใดพึ่งวิชาเลือกมากเกินไป","textChars":41,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/1crqdg3a","slide":17,"bbox":[840,182,6,434]}
+{"kind":"image","id":"im/jup0vadc","slide":17,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 17","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/y4kyqa","slide":17,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\17_Careers_and_Pathways.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/qbygzr","slide":18,"title":"18","textShapes":20}
+{"kind":"shape","id":"sh/zy54vql0","slide":18,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/kze54v2l","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/l0nmxg36","slide":18,"text":"ฐานข้อมูลทำหน้าที่เป็นเครื่องตรวจคุณภาพ","textPreview":"ฐานข้อมูลทำหน้าที่เป็นเครื่องตรวจคุณภาพ","textChars":39,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/a9c3y1kj","slide":18,"text":"47 ตารางรวมข้อความและความสัมพันธ์ แล้วใช้ 4 views ตรวจช่องว่างที่เอกสารยาวหลายร้อยหน้ามองไม่เห็น","textPreview":"47 ตารางรวมข้อความและความสัมพันธ์ แล้วใช้ 4 views ตรวจช่องว่างที่เอกสารยาวหลายร้อยหน้ามองไม่เห็น","textChars":96,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/bu54r6lo","slide":18,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/cvel0b29","slide":18,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/xwnmtg3u","slide":18,"text":"18 / 20","textPreview":"18 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/upgna5kn","slide":18,"text":"47","textPreview":"47","textChars":2,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/vqp43al8","slide":18,"text":"ตาราง","textPreview":"ตาราง","textChars":5,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/7i1w3ux8","slide":18,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/6hsvupgn","slide":18,"text":"ตรวจความสอดคล้อง","textPreview":"ตรวจความสอดคล้อง","textChars":16,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/t4je5kfy","slide":18,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/83adwzyt","slide":18,"text":"Excel exports","textPreview":"Excel exports","textChars":13,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/v6lw7ux4","slide":18,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/u5svypgj","slide":18,"text":"ช่องว่างปัจจุบัน","textPreview":"ช่องว่างปัจจุบัน","textChars":16,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/h83e94fa","slide":18,"bbox":[108,300,8,46]}
+{"kind":"textbox","id":"sh/g7ud0zyp","slide":18,"text":"vw_ksa_orphan — KSA ต้องมีวิชาบังคับรองรับ","textPreview":"vw_ksa_orphan — KSA ต้องมีวิชาบังคับรองรับ","textChars":42,"textLines":1,"bbox":[134,296,624,58]}
+{"kind":"shape","id":"sh/3alwbexg","slide":18,"bbox":[108,382,8,46]}
+{"kind":"textbox","id":"sh/i9cv29gv","slide":18,"text":"vw_plo_coverage — ทุก PLO ต้องถึง M","textPreview":"vw_plo_coverage — ทุก PLO ต้องถึง M","textChars":35,"textLines":1,"bbox":[134,378,624,58]}
+{"kind":"shape","id":"sh/e5wzud03","slide":18,"bbox":[108,464,8,46]}
+{"kind":"textbox","id":"sh/f6pg3iho","slide":18,"text":"vw_skill_ksa_gap และ attitude coverage ต้องว่าง","textPreview":"vw_skill_ksa_gap และ attitude coverage ต้องว่าง","textChars":47,"textLines":1,"bbox":[134,460,624,58]}
+{"kind":"shape","id":"sh/1s7y58ze","slide":18,"bbox":[840,182,6,434]}
+{"kind":"shape","id":"sh/q1wzqt0r","slide":18,"bbox":[780,190,52,52]}
+{"kind":"textbox","id":"sh/r25gzyhc","slide":18,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[780,188,52,52]}
+{"kind":"shape","id":"sh/s3ehs3ix","slide":18,"bbox":[780,276,52,52]}
+{"kind":"textbox","id":"sh/d4ny18zi","slide":18,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[780,274,52,52]}
+{"kind":"shape","id":"sh/ax0z2x0b","slide":18,"bbox":[780,362,52,52]}
+{"kind":"textbox","id":"sh/by90b2hw","slide":18,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[780,360,52,52]}
+{"kind":"shape","id":"sh/l4vahgna","slide":18,"bbox":[780,448,52,52]}
+{"kind":"textbox","id":"sh/k3mtob6p","slide":18,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[780,446,52,52]}
+{"kind":"image","id":"im/3u1kva5k","slide":18,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 18","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/qbygzr","slide":18,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\18_Database_Design.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/57sc3w","slide":19,"title":"19","textShapes":21}
+{"kind":"shape","id":"sh/e1sjqdsn","slide":19,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/14321sre","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/03a1snat","slide":19,"text":"ลำดับ build คือส่วนหนึ่งของความถูกต้อง","textPreview":"ลำดับ build คือส่วนหนึ่งของความถูกต้อง","textChars":38,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/nqlk3i9k","slide":19,"text":"กระบวนการมี 4 เฟส และมี dependency สำคัญ: build:mapping ต้องมาก่อน build:ksa เสมอ","textPreview":"กระบวนการมี 4 เฟส และมี dependency สำคัญ: build:mapping ต้องมาก่อน build:ksa เสมอ","textChars":81,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/m5cjudsz","slide":19,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/9s325sra","slide":19,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/orulwnap","slide":19,"text":"19 / 20","textPreview":"19 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"shape","id":"sh/298jitsf","slide":19,"bbox":[32,183,6,434]}
+{"kind":"shape","id":"sh/wbyhkfm9","slide":19,"bbox":[547,205,14,6]}
+{"kind":"shape","id":"sh/xc7itknu","slide":19,"bbox":[340,170,207,76]}
+{"kind":"textbox","id":"sh/a9wzip43","slide":19,"text":"เฟส 0\nJobsDB","textPreview":"เฟส 0 | JobsDB","textChars":12,"textLines":2,"bbox":[348,178,191,60]}
+{"kind":"shape","id":"sh/vap0ra5o","slide":19,"bbox":[768,205,14,6]}
+{"kind":"shape","id":"sh/kfyhozm5","slide":19,"bbox":[561,170,207,76]}
+{"kind":"textbox","id":"sh/5g7ix4nq","slide":19,"text":"เฟส 1\nVault .md","textPreview":"เฟส 1 | Vault .md","textChars":15,"textLines":2,"bbox":[569,178,191,60]}
+{"kind":"shape","id":"sh/idgzmp4z","slide":19,"bbox":[989,205,14,6]}
+{"kind":"shape","id":"sh/jep0vu5k","slide":19,"bbox":[782,170,207,76]}
+{"kind":"textbox","id":"sh/0jehcv61","slide":19,"text":"เฟส 2\nNode scripts","textPreview":"เฟส 2 | Node scripts","textChars":18,"textLines":2,"bbox":[790,178,191,60]}
+{"kind":"shape","id":"sh/lknyl0nm","slide":19,"bbox":[1003,170,207,76]}
+{"kind":"textbox","id":"sh/hov6tsby","slide":19,"text":"เฟส 3\nDB · Web · Excel","textPreview":"เฟส 3 | DB · Web · Excel","textChars":22,"textLines":2,"bbox":[1011,178,191,60]}
+{"kind":"textbox","id":"sh/gnm50nud","slide":19,"text":"คำสั่งหลัก","textPreview":"คำสั่งหลัก","textChars":10,"textLines":1,"bbox":[340,280,180,34]}
+{"kind":"shape","id":"sh/f2dor2ts","slide":19,"bbox":[340,334,18,18]}
+{"kind":"textbox","id":"sh/u14nyxcn","slide":19,"text":"sync:curriculum","textPreview":"sync:curriculum","textChars":15,"textLines":1,"bbox":[372,326,360,34]}
+{"kind":"shape","id":"sh/psv6xcba","slide":19,"bbox":[340,376,18,18]}
+{"kind":"textbox","id":"sh/4rmp47up","slide":19,"text":"build:mapping","textPreview":"build:mapping","textChars":13,"textLines":1,"bbox":[372,368,360,34]}
+{"kind":"textbox","id":"sh/3qdov2t4","slide":19,"text":"ต้องมาก่อน","textPreview":"ต้องมาก่อน","textChars":10,"textLines":1,"bbox":[735,368,150,34]}
+{"kind":"shape","id":"sh/2p4n2xcj","slide":19,"bbox":[340,418,18,18]}
+{"kind":"textbox","id":"sh/dwf61cb6","slide":19,"text":"build:plan","textPreview":"build:plan","textChars":10,"textLines":1,"bbox":[372,410,360,34]}
+{"kind":"shape","id":"sh/cv6p87ul","slide":19,"bbox":[340,460,18,18]}
+{"kind":"textbox","id":"sh/a1g329s3","slide":19,"text":"build:ksa","textPreview":"build:ksa","textChars":9,"textLines":1,"bbox":[372,452,360,34]}
+{"kind":"textbox","id":"sh/v294ve9o","slide":19,"text":"อ่านผลจาก mapping","textPreview":"อ่านผลจาก mapping","textChars":17,"textLines":1,"bbox":[735,452,210,34]}
+{"kind":"shape","id":"sh/w3il4ja9","slide":19,"bbox":[340,502,18,18]}
+{"kind":"textbox","id":"sh/x4rmxoru","slide":19,"text":"build:db","textPreview":"build:db","textChars":8,"textLines":1,"bbox":[372,494,360,34]}
+{"kind":"shape","id":"sh/i5036tsf","slide":19,"bbox":[340,544,18,18]}
+{"kind":"textbox","id":"sh/j694zy9k","slide":19,"text":"db:load","textPreview":"db:load","textChars":7,"textLines":1,"bbox":[372,536,360,34]}
+{"kind":"shape","id":"sh/k7il83a5","slide":19,"bbox":[340,586,18,18]}
+{"kind":"textbox","id":"sh/58rm1orq","slide":19,"text":"db:export · db:docs · db:lineage","textPreview":"db:export · db:docs · db:lineage","textChars":32,"textLines":1,"bbox":[372,578,360,34]}
+{"kind":"shape","id":"sh/6t03atsb","slide":19,"bbox":[950,326,260,242]}
+{"kind":"textbox","id":"sh/7ut43y9w","slide":19,"text":"กฎสำคัญที่สุด","textPreview":"กฎสำคัญที่สุด","textChars":13,"textLines":1,"bbox":[972,346,214,38]}
+{"kind":"textbox","id":"sh/fqpkny10","slide":19,"text":"mapping\nมาก่อน\nKSA เสมอ","textPreview":"mapping | มาก่อน | KSA เสมอ","textChars":23,"textLines":3,"bbox":[972,396,214,142]}
+{"kind":"image","id":"im/6lofylsf","slide":19,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 19","bbox":[42,165,260,470]}
+{"kind":"notes","id":"nt/57sc3w","slide":19,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\19_Build_Order.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}
+{"kind":"slide","id":"sl/62kd6b","slide":20,"title":"20","textShapes":17}
+{"kind":"shape","id":"sh/re5gfydg","slide":20,"bbox":[0,0,14,720]}
+{"kind":"textbox","id":"sh/sfexo3u1","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[42,28,64,34]}
+{"kind":"textbox","id":"sh/dgnyh8vm","slide":20,"text":"AI ถูกจำกัดให้อยู่ในจุดที่ตรวจสอบได้","textPreview":"AI ถูกจำกัดให้อยู่ในจุดที่ตรวจสอบได้","textChars":36,"textLines":1,"bbox":[108,24,1070,62]}
+{"kind":"textbox","id":"sh/ipwfitcz","slide":20,"text":"โมเดลภาษาถูกใช้เพียงสองงาน พร้อม JSON Schema, temperature ต่ำ, retry และเหตุผลรายประกาศ","textPreview":"โมเดลภาษาถูกใช้เพียงสองงาน พร้อม JSON Schema, temperature ต่ำ, retry และเหตุผลรายประกาศ","textChars":87,"textLines":1,"bbox":[108,88,1050,54]}
+{"kind":"shape","id":"sh/3q5gbed4","slide":20,"bbox":[42,678,1196,1]}
+{"kind":"textbox","id":"sh/4bexkjup","slide":20,"text":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textPreview":"AI ENGINEERING CURRICULUM SYSTEM · KSU 2570","textChars":43,"textLines":1,"bbox":[42,686,600,20]}
+{"kind":"textbox","id":"sh/5cnydova","slide":20,"text":"20 / 20","textPreview":"20 / 20","textChars":7,"textLines":1,"bbox":[1130,686,108,20]}
+{"kind":"textbox","id":"sh/ulcfe9wn","slide":20,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[108,168,156.5,50]}
+{"kind":"textbox","id":"sh/vmlg7ed8","slide":20,"text":"จุดที่ใช้ AI","textPreview":"จุดที่ใช้ AI","textChars":12,"textLines":1,"bbox":[108,218,156.5,40]}
+{"kind":"textbox","id":"sh/z6pszyxo","slide":20,"text":"0.1","textPreview":"0.1","textChars":3,"textLines":1,"bbox":[282.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/e5gr6twj","slide":20,"text":"extract temperature","textPreview":"extract temperature","textChars":19,"textLines":1,"bbox":[282.5,218,156.5,40]}
+{"kind":"textbox","id":"sh/18ra18fu","slide":20,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[457,168,156.5,50]}
+{"kind":"textbox","id":"sh/07i983e9","slide":20,"text":"classify temperature","textPreview":"classify temperature","textChars":20,"textLines":1,"bbox":[457,218,156.5,40]}
+{"kind":"textbox","id":"sh/na9s3yx0","slide":20,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[631.5,168,156.5,50]}
+{"kind":"textbox","id":"sh/m90radwf","slide":20,"text":"retry สูงสุด","textPreview":"retry สูงสุด","textChars":12,"textLines":1,"bbox":[631.5,218,156.5,40]}
+{"kind":"shape","id":"sh/9cra58f6","slide":20,"bbox":[108,310,8,46]}
+{"kind":"textbox","id":"sh/obi9c3el","slide":20,"text":"โครงสร้างหลักสูตรและผลลัพธ์ทั้งหมดคนเขียน","textPreview":"โครงสร้างหลักสูตรและผลลัพธ์ทั้งหมดคนเขียน","textChars":41,"textLines":1,"bbox":[134,306,624,58]}
+{"kind":"shape","id":"sh/3e58rexw","slide":20,"bbox":[108,392,8,46]}
+{"kind":"textbox","id":"sh/2dwry9wb","slide":20,"text":"ผลโมเดลต้องผ่าน schema ที่กำหนด","textPreview":"ผลโมเดลต้องผ่าน schema ที่กำหนด","textChars":31,"textLines":1,"bbox":[134,388,624,58]}
+{"kind":"shape","id":"sh/694v6hgz","slide":20,"bbox":[108,474,8,46]}
+{"kind":"textbox","id":"sh/7adczmh4","slide":20,"text":"รันใหม่ได้ สุ่มตรวจได้ และย้อนเหตุผลได้","textPreview":"รันใหม่ได้ สุ่มตรวจได้ และย้อนเหตุผลได้","textChars":39,"textLines":1,"bbox":[134,470,624,58]}
+{"kind":"shape","id":"sh/twvu1wza","slide":20,"bbox":[840,182,6,434]}
+{"kind":"textbox","id":"sh/y5kv2xgn","slide":20,"text":"Human-authored curriculum  |  AI-assisted labor evidence","textPreview":"Human-authored curriculum  |  AI-assisted labor evidence","textChars":56,"textLines":1,"bbox":[108,590,680,36]}
+{"kind":"image","id":"im/j2hs7ul0","slide":20,"name":"","geometry":"roundRect","alt":"ภาพประกอบแนวคิดสไลด์ 20","bbox":[850,164,350,470]}
+{"kind":"notes","id":"nt/62kd6b","slide":20,"text":"[Sources]\n- D:\\work\\KSU\\AI_EN\\Labor_Growth_Report_Vault\\10_Presentation\\20_Generation_Prompts.md\n- ภาพประกอบสร้างด้วย OpenAI ImageGen สำหรับสไลด์นี้"}

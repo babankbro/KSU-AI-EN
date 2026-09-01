@@ -16,10 +16,12 @@ const sources = [
   "08_Project_and_Seminar.md",
   "09_Field_Experience.md",
 ];
-const cloSource = resolve(
-  repo,
+// CLO มีสองแหล่ง: รายวิชาบังคับอยู่เอกสาร 10 · วิชาชีพเลือกอยู่เอกสาร 10B
+// อ่านทั้งสองไฟล์เข้าโครงเดียวกัน เพื่อให้วอลต์เป็นต้นทางของ CLO ทั้งหลักสูตร
+const cloSources = [
   "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/10_Course_Learning_Outcomes_CLO_Mapping.md",
-);
+  "Labor_Growth_Report_Vault/05_TQF2_Academic_Drafts/10B_Elective_CLO_Mapping.md",
+].map(file => resolve(repo, file));
 
 const courses = {};
 const courseLine = /^#*\s*\**(EN-\d{3}-\d{5})\s+(.+?)\s+(\d+\(\d+-\d+-\d+\))\**\s*$/;
@@ -96,7 +98,9 @@ const normalizeYlos = cell => {
 
 const cloRevision = {};
 let currentCode = null;
-for (const line of readFileSync(cloSource, "utf8").split(/\r?\n/)) {
+// รวมข้อความจากทั้งสองเอกสารก่อน แล้วอ่านทีละบรรทัดด้วยตัวแยกวิเคราะห์เดิม
+const cloText = cloSources.map(file => readFileSync(file, "utf8")).join("\n");
+for (const line of cloText.split(/\r?\n/)) {
   const heading = line.match(/^###\s+(EN-\d{3}-\d{5})\b/);
   if (heading) {
     currentCode = heading[1];
