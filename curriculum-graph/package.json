@@ -23,7 +23,9 @@
     "db:load": "node scripts/db-load.mjs",
     "db:export": "node --max-old-space-size=4096 scripts/export-db-excel.mjs",
     "db:docs": "node scripts/build-db-docs.mjs",
-    "db:lineage": "node scripts/build-db-lineage.mjs"
+    "db:lineage": "node scripts/build-db-lineage.mjs",
+    "draft:bloom": "node scripts/draft-elective-bloom.mjs",
+    "build:elective-clo": "node scripts/build-elective-clo-md.mjs"
   },
   "dependencies": {
     "dagre": "^0.8.5",

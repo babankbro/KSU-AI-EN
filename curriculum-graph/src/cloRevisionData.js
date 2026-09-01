@@ -2562,6 +2562,118 @@ export const CLO_REVISION = {
       "AISK08"
     ]
   },
+  "EN-714-12020": {
+    "clos": [
+      {
+        "n": 1,
+        "t": "ทวนสอบปัญหา ข้อกำหนด และเกณฑ์การยอมรับร่วมกับสถานประกอบการ พร้อมบริหารโครงงานและความเสี่ยงร่วมกับพี่เลี้ยงได้",
+        "ylo": [
+          "YLO4.1"
+        ],
+        "plo": [
+          [
+            1,
+            "M"
+          ],
+          [
+            5,
+            "M"
+          ]
+        ],
+        "bloom": "B4",
+        "sets": [
+          "AISK09",
+          "AISK01",
+          "AISK07"
+        ],
+        "primarySet": "AISK09",
+        "skill": "AISK09, AISK01, AISK07",
+        "evidence": ""
+      },
+      {
+        "n": 2,
+        "t": "ออกแบบ พัฒนา และบูรณาการระบบภายใต้ข้อจำกัดด้านข้อมูล เวลา และทรัพยากรขององค์กรได้",
+        "ylo": [
+          "YLO4.2"
+        ],
+        "plo": [
+          [
+            2,
+            "M"
+          ]
+        ],
+        "bloom": "B5",
+        "sets": [
+          "AISK09",
+          "AISK01",
+          "AISK07"
+        ],
+        "primarySet": "AISK09",
+        "skill": "AISK09, AISK01, AISK07",
+        "evidence": ""
+      },
+      {
+        "n": 3,
+        "t": "ออกแบบและดำเนินการทดลองเพื่อประเมินสมรรถนะ ความน่าเชื่อถือ และความปลอดภัย พร้อมจัดทำหลักฐานด้านจริยธรรมและธรรมาภิบาลข้อมูลได้",
+        "ylo": [
+          "YLO4.2"
+        ],
+        "plo": [
+          [
+            6,
+            "M"
+          ],
+          [
+            4,
+            "M"
+          ]
+        ],
+        "bloom": "B5",
+        "sets": [
+          "AISK09",
+          "AISK01",
+          "AISK07"
+        ],
+        "primarySet": "AISK09",
+        "skill": "AISK09, AISK01, AISK07",
+        "evidence": ""
+      },
+      {
+        "n": 4,
+        "t": "สาธิตและสอบป้องกันโครงงานต่อคณะกรรมการร่วมระหว่างมหาวิทยาลัยและสถานประกอบการได้",
+        "ylo": [
+          "YLO4.3"
+        ],
+        "plo": [
+          [
+            3,
+            "M"
+          ],
+          [
+            7,
+            "M"
+          ]
+        ],
+        "bloom": "B6",
+        "sets": [
+          "AISK09",
+          "AISK01",
+          "AISK07"
+        ],
+        "primarySet": "AISK09",
+        "skill": "AISK09, AISK01, AISK07",
+        "evidence": ""
+      }
+    ],
+    "primarySets": [
+      "AISK09"
+    ],
+    "sets": [
+      "AISK09",
+      "AISK01",
+      "AISK07"
+    ]
+  },
   "EN-714-17001": {
     "clos": [
       {
@@ -2813,7 +2925,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "B3",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -2876,7 +2988,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "B3",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK03",
@@ -3070,7 +3182,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3092,7 +3204,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3118,7 +3230,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3152,7 +3264,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3174,7 +3286,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3200,7 +3312,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3234,7 +3346,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3256,7 +3368,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3282,7 +3394,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3316,7 +3428,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3338,7 +3450,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3364,7 +3476,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3398,7 +3510,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3420,7 +3532,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3442,7 +3554,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3476,7 +3588,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3498,7 +3610,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3524,7 +3636,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3558,7 +3670,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3580,7 +3692,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3602,7 +3714,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3636,7 +3748,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3658,7 +3770,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3684,7 +3796,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3718,7 +3830,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3740,7 +3852,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3762,7 +3874,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3800,7 +3912,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3822,7 +3934,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3848,7 +3960,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3882,7 +3994,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3904,7 +4016,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3930,7 +4042,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3968,7 +4080,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -3990,7 +4102,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4012,7 +4124,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4050,7 +4162,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4072,7 +4184,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4098,7 +4210,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4132,7 +4244,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4154,7 +4266,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4176,7 +4288,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4210,7 +4322,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4232,7 +4344,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4258,7 +4370,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK02",
           "AISK04",
@@ -4296,7 +4408,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4318,7 +4430,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4344,7 +4456,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4382,7 +4494,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4404,7 +4516,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4430,7 +4542,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4464,7 +4576,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4490,7 +4602,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4512,7 +4624,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4546,7 +4658,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4568,7 +4680,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4594,7 +4706,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4632,7 +4744,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4654,7 +4766,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4676,7 +4788,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4710,7 +4822,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4736,7 +4848,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4762,7 +4874,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4796,7 +4908,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4822,7 +4934,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4844,7 +4956,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4878,7 +4990,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4904,7 +5016,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4930,7 +5042,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4964,7 +5076,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -4990,7 +5102,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5012,7 +5124,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5046,7 +5158,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5068,7 +5180,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5094,7 +5206,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5128,7 +5240,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5150,7 +5262,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5176,7 +5288,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5214,7 +5326,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5236,7 +5348,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5262,7 +5374,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5300,7 +5412,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5322,7 +5434,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5348,7 +5460,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5382,7 +5494,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5404,7 +5516,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5426,7 +5538,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5464,7 +5576,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5486,7 +5598,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5512,7 +5624,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5546,7 +5658,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5568,7 +5680,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5590,7 +5702,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5624,7 +5736,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5646,7 +5758,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5672,7 +5784,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK03",
           "AISK04",
@@ -5706,7 +5818,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5732,7 +5844,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5758,7 +5870,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5792,7 +5904,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5814,7 +5926,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5840,7 +5952,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5874,7 +5986,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5900,7 +6012,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5926,7 +6038,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5960,7 +6072,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -5986,7 +6098,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6012,7 +6124,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6046,7 +6158,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6068,7 +6180,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6094,7 +6206,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6128,7 +6240,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6150,7 +6262,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6172,7 +6284,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6206,7 +6318,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6228,7 +6340,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6254,7 +6366,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6288,7 +6400,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6310,7 +6422,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6332,7 +6444,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6366,7 +6478,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6388,7 +6500,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6414,7 +6526,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6452,7 +6564,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6474,7 +6586,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6496,7 +6608,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6530,7 +6642,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6556,7 +6668,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6578,7 +6690,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6612,7 +6724,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6634,7 +6746,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6660,7 +6772,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6698,7 +6810,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6720,7 +6832,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6746,7 +6858,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6784,7 +6896,7 @@ export const CLO_REVISION = {
             "R"
           ]
         ],
-        "bloom": "",
+        "bloom": "B2",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6806,7 +6918,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6828,7 +6940,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6862,7 +6974,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6888,7 +7000,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6914,7 +7026,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK06",
@@ -6952,7 +7064,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK06",
           "AISK07",
@@ -6978,7 +7090,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK06",
           "AISK07",
@@ -7004,7 +7116,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK06",
           "AISK07",
@@ -7042,7 +7154,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK06",
           "AISK07",
@@ -7068,7 +7180,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK06",
           "AISK07",
@@ -7094,7 +7206,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK06",
           "AISK07",
@@ -7132,7 +7244,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7158,7 +7270,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7184,7 +7296,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7222,7 +7334,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B3",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7248,7 +7360,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7274,7 +7386,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7312,7 +7424,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7338,7 +7450,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7364,7 +7476,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7402,7 +7514,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7428,7 +7540,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7454,7 +7566,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7492,7 +7604,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7518,7 +7630,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B4",
         "sets": [
           "AISK01",
           "AISK07",
@@ -7544,7 +7656,7 @@ export const CLO_REVISION = {
             "M"
           ]
         ],
-        "bloom": "",
+        "bloom": "B5",
         "sets": [
           "AISK01",
           "AISK07",
