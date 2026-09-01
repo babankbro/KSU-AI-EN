@@ -132,7 +132,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 17,
   "clos": 19,
-  "electiveCourses": 37,
+  "electiveCourses": 36,
   "strategies": [
    {
     "name": "1. การสอนโดยตรง · (Direct Instruction)",
@@ -396,7 +396,7 @@ export const PLO_TEACHING = [
    },
    {
     "id": "K7",
-    "name": "การมองเห็นของคอมพิวเตอร์ การสำรวจระยะไกล และข้อมูลหลายรูปแบบ"
+    "name": "คอมพิวเตอร์วิทัศน์ การสำรวจระยะไกล และข้อมูลหลายรูปแบบ"
    },
    {
     "id": "K8",
@@ -446,7 +446,7 @@ export const PLO_TEACHING = [
    },
    {
     "id": "S5",
-    "name": "พัฒนาระบบการมองเห็นของคอมพิวเตอร์และการสำรวจระยะไกล"
+    "name": "พัฒนาระบบคอมพิวเตอร์วิทัศน์และการสำรวจระยะไกล"
    },
    {
     "id": "S6",
@@ -718,7 +718,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 17,
   "clos": 21,
-  "electiveCourses": 19,
+  "electiveCourses": 18,
   "strategies": [
    {
     "name": "2. การสอนเชิงปฏิสัมพันธ์ · (Interactive Instruction)",
@@ -914,7 +914,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 30,
   "clos": 30,
-  "electiveCourses": 43,
+  "electiveCourses": 42,
   "strategies": [
    {
     "name": "2. การสอนเชิงปฏิสัมพันธ์ · (Interactive Instruction)",
@@ -1203,7 +1203,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 20,
   "clos": 21,
-  "electiveCourses": 10,
+  "electiveCourses": 9,
   "strategies": [
    {
     "name": "2. การสอนเชิงปฏิสัมพันธ์ · (Interactive Instruction)",
@@ -1404,7 +1404,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 25,
   "clos": 33,
-  "electiveCourses": 55,
+  "electiveCourses": 54,
   "strategies": [
    {
     "name": "3. การเรียนรู้ผ่านประสบการณ์ · (Experiential Learning)",
@@ -1436,7 +1436,7 @@ export const PLO_TEACHING = [
    },
    {
     "id": "K7",
-    "name": "การมองเห็นของคอมพิวเตอร์ การสำรวจระยะไกล และข้อมูลหลายรูปแบบ"
+    "name": "คอมพิวเตอร์วิทัศน์ การสำรวจระยะไกล และข้อมูลหลายรูปแบบ"
    },
    {
     "id": "K10",
@@ -1474,7 +1474,7 @@ export const PLO_TEACHING = [
    },
    {
     "id": "S5",
-    "name": "พัฒนาระบบการมองเห็นของคอมพิวเตอร์และการสำรวจระยะไกล"
+    "name": "พัฒนาระบบคอมพิวเตอร์วิทัศน์และการสำรวจระยะไกล"
    },
    {
     "id": "S7",
@@ -1716,7 +1716,7 @@ export const PLO_TEACHING = [
   "top": "M",
   "courses": 15,
   "clos": 17,
-  "electiveCourses": 11,
+  "electiveCourses": 12,
   "strategies": [
    {
     "name": "4. การเรียนรู้ด้วยตนเอง · (Independent Study)",

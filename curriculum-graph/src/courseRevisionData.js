@@ -266,7 +266,7 @@ export const COURSE_REVISION = {
     "source": "05_Electives_Smart_Agriculture.md"
   },
   "EN-714-14008": {
-    "t": "วิสัยทัศน์คอมพิวเตอร์สำหรับการจำแนกและคัดเกรดทางการเกษตร",
+    "t": "คอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดทางการเกษตร",
     "e": "Computer Vision for Agricultural Classification and Grading",
     "cr": "3(2-2-5)",
     "d": "คอมพิวเตอร์วิทัศน์สำหรับการจำแนกและคัดเกรดผลผลิตเกษตร การออกแบบระบบกล้องและแสง การสร้างและจัดการชุดข้อมูลภาพเพื่อฝึกตัวแบบ การฝึกและปรับแต่งตัวแบบการเรียนรู้เชิงลึกเพื่อจำแนกประเภทและตรวจจับตำหนิ การวัดขนาดด้วยการประมวลผลภาพ การใช้ภาพหลายช่วงคลื่นประเมินคุณภาพภายใน และการบูรณาการกับระบบคัดแยกอัตโนมัติ",
@@ -434,10 +434,10 @@ export const COURSE_REVISION = {
     "source": "06_Electives_Industrial_AI.md"
   },
   "EN-714-14029": {
-    "t": "วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม",
+    "t": "คอมพิวเตอร์วิทัศน์เพื่อการควบคุมคุณภาพในอุตสาหกรรม",
     "e": "Computer Vision for Industrial Quality Control",
     "cr": "3(2-2-5)",
-    "d": "ระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ",
+    "d": "ระบบคอมพิวเตอร์วิทัศน์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ",
     "dEn": "Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects on conveyors; integration with deep learning for defect classification; workpiece dimension measurement and assembly verification; connection to robots and automatic sorting systems; image-data analysis for process improvement",
     "source": "06_Electives_Industrial_AI.md"
   },

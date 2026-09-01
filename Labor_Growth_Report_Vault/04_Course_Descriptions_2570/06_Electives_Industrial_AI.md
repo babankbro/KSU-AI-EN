@@ -72,9 +72,9 @@ Lean and AI-Enabled Process Improvement
 หลักการลีนและซิกซ์ซิกมา การทำแผนที่สายธารคุณค่าและการลดความสูญเปล่า การไหล การดึง และงานมาตรฐาน กระบวนการดีเอ็มเอไอซี การวิเคราะห์ประสิทธิผลโดยรวมของเครื่องจักร เวลารอบงาน และของเสีย การควบคุมกระบวนการเชิงสถิติและการวิเคราะห์สาเหตุที่แท้จริง และการใช้การเรียนรู้ของเครื่องพยากรณ์คุณภาพและจัดลำดับโอกาสปรับปรุง
 Lean and Six Sigma principles; value-stream mapping and waste reduction; flow, pull, and standardized work; the DMAIC process; analysis of overall equipment effectiveness, cycle time, bottlenecks, and scrap; statistical process control, process capability, design of experiments, and root-cause analysis; machine learning for quality prediction and improvement prioritization; before-and-after evaluation with quality, cost, and energy indicators
 
-EN-714-14029 วิสัยทัศน์คอมพิวเตอร์เพื่อการควบคุมคุณภาพในอุตสาหกรรม 3(2-2-5)
+EN-714-14029 คอมพิวเตอร์วิทัศน์เพื่อการควบคุมคุณภาพในอุตสาหกรรม 3(2-2-5)
 Computer Vision for Industrial Quality Control
-ระบบวิสัยทัศน์คอมพิวเตอร์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ
+ระบบคอมพิวเตอร์วิทัศน์อุตสาหกรรม การออกแบบระบบแสงสว่างและการเลือกเลนส์สำหรับการตรวจสอบคุณภาพ การเตรียมภาพและการกำจัดสัญญาณรบกวน การตรวจจับขอบ ตำหนิ และข้อบกพร่องของชิ้นงานบนสายพาน การใช้การเรียนรู้เชิงลึกจำแนกประเภทข้อบกพร่อง การวัดขนาดชิ้นงาน และการเชื่อมต่อกับหุ่นยนต์และระบบคัดแยกอัตโนมัติ
 Principles of industrial computer-vision systems; design of lighting systems and lens selection for quality inspection; image preparation and noise removal; detection of edges, blemishes, and defects on conveyors; integration with deep learning for defect classification; workpiece dimension measurement and assembly verification; connection to robots and automatic sorting systems; image-data analysis for process improvement
 
 EN-714-14030 การจัดการพลังงานอัจฉริยะและระบบพลังงานแสงอาทิตย์ 3(3-0-6)
