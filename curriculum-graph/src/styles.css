@@ -899,3 +899,21 @@ a.gcard-h:hover .gttl b{text-decoration:underline;text-underline-offset:2px}
 .credit-outline .co-sub>td:first-child{padding-left:1.6rem}
 .credit-outline .co-sub>td{color:var(--muted)}
 .credit-outline .co-sub>td.c{color:var(--ink)}
+
+/* ══════════ ปรัชญาของหลักสูตร (หน้าแรก) ══════════ */
+.philosophy{background:var(--card);border-bottom:1px solid var(--line);padding:2.6rem 0 2.4rem}
+.philosophy h2{margin:0 0 1rem;font-size:1.35rem}
+.phil-quote{margin:0;padding:1.1rem 0 1.1rem 1.2rem;border-left:4px solid var(--gold);
+  font-size:1.12rem;line-height:1.9;color:var(--ink);max-width:82ch;quotes:"\201C" "\201D"}
+.phil-quote::before{content:open-quote;color:var(--gold);font-size:1.6em;line-height:0;vertical-align:-.25em;margin-right:.1em}
+.phil-quote::after{content:close-quote;color:var(--gold);font-size:1.6em;line-height:0;vertical-align:-.35em;margin-left:.05em}
+.phil-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:1.5rem}
+@media(max-width:980px){.phil-pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.phil-pillars{grid-template-columns:1fr}}
+.phil-card{display:block;background:var(--bg);border:1px solid var(--line);
+  border-top:3px solid var(--navy);border-radius:11px;padding:.85rem .95rem;transition:.15s}
+.phil-card:hover{border-color:var(--navy);box-shadow:0 6px 18px rgba(16,32,56,.08)}
+.phil-card b{display:block;font-size:.9rem;line-height:1.45}
+.phil-card p{margin:.35rem 0 .55rem;font-size:.82rem;line-height:1.6;color:var(--muted)}
+.phil-link{font-size:.76rem;font-weight:700;color:var(--navy)}
+.phil-src{margin:1.1rem 0 0;font-size:.78rem;color:var(--muted)}

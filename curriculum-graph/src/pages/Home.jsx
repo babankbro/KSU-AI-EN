@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { COURSES, STRUCTURE_TOP, YEAR_CREDITS, YLO_DETAIL, PLO_DETAIL, YEAR_COLOR, TOTAL_CREDITS } from "../data.js";
+import { COURSES, STRUCTURE_TOP, YEAR_CREDITS, YLO_DETAIL, PLO_DETAIL, YEAR_COLOR, TOTAL_CREDITS, PHILOSOPHY } from "../data.js";
 import { Section, PloChip } from "./ui.jsx";
 
 const CARDS = [
@@ -56,6 +56,24 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* ปรัชญาของหลักสูตร — ข้อความที่กำหนดทุกอย่างที่เหลือในหน้านี้ จึงวางไว้ก่อนสิ่งอื่น */}
+      <section className="philosophy">
+        <div className="wrap">
+          <h2>ปรัชญาของหลักสูตร</h2>
+          <blockquote className="phil-quote">{PHILOSOPHY.text}</blockquote>
+          <div className="phil-pillars">
+            {PHILOSOPHY.pillars.map(p => (
+              <Link className="phil-card" to={p.to} key={p.k}>
+                <b>{p.k}</b>
+                <p>{p.d}</p>
+                <span className="phil-link">{p.link} →</span>
+              </Link>
+            ))}
+          </div>
+          <p className="phil-src">{PHILOSOPHY.source}</p>
+        </div>
+      </section>
 
       <div className="wrap">
         <Section title="สำรวจหลักสูตร">
